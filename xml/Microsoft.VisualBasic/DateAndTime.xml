@@ -1,5 +1,5 @@
 <Type Name="DateAndTime" FullName="Microsoft.VisualBasic.DateAndTime">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ee81fb3379b6150389984bab8e498135f8f51793" /><Meta Name="ms.sourcegitcommit" Value="bac13a81377b1c4ebf3990e3287a6f1700f73751" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="03/19/2019" /><Meta Name="ms.locfileid" Value="57931693" /></Metadata><TypeSignature Language="C#" Value="public sealed class DateAndTime" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2c90494f50963965c1fc8cd6dee5ba8348981f13" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67239195" /></Metadata><TypeSignature Language="C#" Value="public sealed class DateAndTime" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DateAndTime extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.DateAndTime" />
   <TypeSignature Language="VB.NET" Value="Public Module DateAndTime" />
@@ -74,14 +74,15 @@ thisDate = Today
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Interval" Type="Microsoft.VisualBasic.DateInterval" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Number" Type="System.Double" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="DateValue" Type="System.DateTime" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Interval" Type="Microsoft.VisualBasic.DateInterval" />
+        <Parameter Name="Number" Type="System.Double" />
+        <Parameter Name="DateValue" Type="System.DateTime" />
       </Parameters>
       <Docs>
         <param name="Interval">Obligatorio. Valor de enumeración <see cref="T:Microsoft.VisualBasic.DateInterval" /> o expresión de cadena que representa el intervalo de tiempo que se desea sumar.</param>
@@ -168,14 +169,15 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Interval" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Number" Type="System.Double" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="DateValue" Type="System.Object" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Interval" Type="System.String" />
+        <Parameter Name="Number" Type="System.Double" />
+        <Parameter Name="DateValue" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="Interval">Obligatorio. Valor de enumeración <see cref="T:Microsoft.VisualBasic.DateInterval" /> o expresión de cadena que representa el intervalo de tiempo que se desea sumar.</param>
@@ -270,23 +272,24 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Interval" Type="Microsoft.VisualBasic.DateInterval" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Date1" Type="System.DateTime" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Date2" Type="System.DateTime" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="DayOfWeek" Type="Microsoft.VisualBasic.FirstDayOfWeek" Index="3" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="WeekOfYear" Type="Microsoft.VisualBasic.FirstWeekOfYear" Index="4" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Interval" Type="Microsoft.VisualBasic.DateInterval" />
+        <Parameter Name="Date1" Type="System.DateTime" />
+        <Parameter Name="Date2" Type="System.DateTime" />
+        <Parameter Name="DayOfWeek" Type="Microsoft.VisualBasic.FirstDayOfWeek" />
+        <Parameter Name="WeekOfYear" Type="Microsoft.VisualBasic.FirstWeekOfYear" />
       </Parameters>
       <Docs>
         <param name="Interval">Obligatorio. Valor de enumeración <see cref="T:Microsoft.VisualBasic.DateInterval" /> o expresión de cadena que representa el intervalo de tiempo que se desea utilizar como unidad de la diferencia entre <paramref name="Date1" /> y <paramref name="Date2" />.</param>
         <param name="Date1">Obligatorio. Primer valor de fecha u hora que se va a utilizar en el cálculo.</param>
         <param name="Date2">Obligatorio. Segundo valor de fecha u hora que se va a utilizar en el cálculo.</param>
         <param name="DayOfWeek">Opcional. Valor elegido de la enumeración <see cref="T:Microsoft.VisualBasic.FirstDayOfWeek" /> que especifica el primer día de la semana. Si no se especifica, se utiliza <see cref="F:Microsoft.VisualBasic.FirstDayOfWeek.Sunday" />.</param>
-        <param name="WeekOfYear">Opcional. Valor elegido de la enumeración <see cref="T:Microsoft.VisualBasic.FirstWeekOfYear" /> que especifica la primera semana del año.  Si no se especifica, se utiliza <see cref="F:Microsoft.VisualBasic.FirstWeekOfYear.Jan1" />.</param>
+        <param name="WeekOfYear">Opcional. Valor elegido de la enumeración <see cref="T:Microsoft.VisualBasic.FirstWeekOfYear" /> que especifica la primera semana del año. Si no se especifica, se utiliza <see cref="F:Microsoft.VisualBasic.FirstWeekOfYear.Jan1" />.</param>
         <summary>Devuelve un valor Long que especifica el número de intervalos de tiempo entre dos valores de <see langword="Date" />.</summary>
         <returns>Valor Long que especifica el número de intervalos de tiempo entre dos valores de <see langword="Date" />.</returns>
         <remarks>
@@ -396,23 +399,24 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Interval" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Date1" Type="System.Object" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Date2" Type="System.Object" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="DayOfWeek" Type="Microsoft.VisualBasic.FirstDayOfWeek" Index="3" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="WeekOfYear" Type="Microsoft.VisualBasic.FirstWeekOfYear" Index="4" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Interval" Type="System.String" />
+        <Parameter Name="Date1" Type="System.Object" />
+        <Parameter Name="Date2" Type="System.Object" />
+        <Parameter Name="DayOfWeek" Type="Microsoft.VisualBasic.FirstDayOfWeek" />
+        <Parameter Name="WeekOfYear" Type="Microsoft.VisualBasic.FirstWeekOfYear" />
       </Parameters>
       <Docs>
         <param name="Interval">Obligatorio. Valor de enumeración <see cref="T:Microsoft.VisualBasic.DateInterval" /> o expresión de cadena que representa el intervalo de tiempo que se desea utilizar como unidad de la diferencia entre <paramref name="Date1" /> y <paramref name="Date2" />.</param>
         <param name="Date1">Obligatorio. Primer valor de fecha u hora que se va a utilizar en el cálculo.</param>
         <param name="Date2">Obligatorio. Segundo valor de fecha u hora que se va a utilizar en el cálculo.</param>
         <param name="DayOfWeek">Opcional. Valor elegido de la enumeración <see cref="T:Microsoft.VisualBasic.FirstDayOfWeek" /> que especifica el primer día de la semana. Si no se especifica, se utiliza <see cref="F:Microsoft.VisualBasic.FirstDayOfWeek.Sunday" />.</param>
-        <param name="WeekOfYear">Opcional. Valor elegido de la enumeración <see cref="T:Microsoft.VisualBasic.FirstWeekOfYear" /> que especifica la primera semana del año.  Si no se especifica, se utiliza <see cref="F:Microsoft.VisualBasic.FirstWeekOfYear.Jan1" />.</param>
+        <param name="WeekOfYear">Opcional. Valor elegido de la enumeración <see cref="T:Microsoft.VisualBasic.FirstWeekOfYear" /> que especifica la primera semana del año. Si no se especifica, se utiliza <see cref="F:Microsoft.VisualBasic.FirstWeekOfYear.Jan1" />.</param>
         <summary>Devuelve un valor Long que especifica el número de intervalos de tiempo entre dos valores de <see langword="Date" />.</summary>
         <returns>Valor Long que especifica el número de intervalos de tiempo entre dos valores de <see langword="Date" />.</returns>
         <remarks>
@@ -531,21 +535,22 @@ NextTime = NextTime.AddDays(3.4)  ' Increment by 3 2/5 days.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Interval" Type="Microsoft.VisualBasic.DateInterval" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="DateValue" Type="System.DateTime" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="FirstDayOfWeekValue" Type="Microsoft.VisualBasic.FirstDayOfWeek" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="FirstWeekOfYearValue" Type="Microsoft.VisualBasic.FirstWeekOfYear" Index="3" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Interval" Type="Microsoft.VisualBasic.DateInterval" />
+        <Parameter Name="DateValue" Type="System.DateTime" />
+        <Parameter Name="FirstDayOfWeekValue" Type="Microsoft.VisualBasic.FirstDayOfWeek" />
+        <Parameter Name="FirstWeekOfYearValue" Type="Microsoft.VisualBasic.FirstWeekOfYear" />
       </Parameters>
       <Docs>
         <param name="Interval">Obligatorio. Valor de enumeración <see cref="T:Microsoft.VisualBasic.DateInterval" /> o expresión de cadena que representa la parte correspondiente al valor de fecha u hora que se desea devolver.</param>
         <param name="DateValue">Obligatorio. Valor de <see langword="Date" /> que se desea evaluar.</param>
         <param name="FirstDayOfWeekValue">Opcional. Valor elegido de la enumeración <see cref="T:Microsoft.VisualBasic.FirstDayOfWeek" /> que especifica el primer día de la semana. Si no se especifica, se utiliza <see cref="F:Microsoft.VisualBasic.FirstDayOfWeek.Sunday" />.</param>
-        <param name="FirstWeekOfYearValue">Opcional. Valor elegido de la enumeración <see cref="T:Microsoft.VisualBasic.FirstWeekOfYear" /> que especifica la primera semana del año.  Si no se especifica, se utiliza <see cref="F:Microsoft.VisualBasic.FirstWeekOfYear.Jan1" />.</param>
+        <param name="FirstWeekOfYearValue">Opcional. Valor elegido de la enumeración <see cref="T:Microsoft.VisualBasic.FirstWeekOfYear" /> que especifica la primera semana del año. Si no se especifica, se utiliza <see cref="F:Microsoft.VisualBasic.FirstWeekOfYear.Jan1" />.</param>
         <summary>Devuelve un valor Integer que contiene el componente especificado de un valor <see langword="Date" /> dado.</summary>
         <returns>Valor Integer que contiene el componente especificado de un valor de <see langword="Date" /> dado.</returns>
         <remarks>
@@ -639,21 +644,22 @@ Dim LastMidnight As Date = CurrDatTim.Date   ' At midnight.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Interval" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="DateValue" Type="System.Object" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="DayOfWeek" Type="Microsoft.VisualBasic.FirstDayOfWeek" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="WeekOfYear" Type="Microsoft.VisualBasic.FirstWeekOfYear" Index="3" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Interval" Type="System.String" />
+        <Parameter Name="DateValue" Type="System.Object" />
+        <Parameter Name="DayOfWeek" Type="Microsoft.VisualBasic.FirstDayOfWeek" />
+        <Parameter Name="WeekOfYear" Type="Microsoft.VisualBasic.FirstWeekOfYear" />
       </Parameters>
       <Docs>
         <param name="Interval">Obligatorio. Valor de enumeración <see cref="T:Microsoft.VisualBasic.DateInterval" /> o expresión de cadena que representa la parte correspondiente al valor de fecha u hora que se desea devolver.</param>
         <param name="DateValue">Obligatorio. Valor <see langword="Date" /> que se desea evaluar.</param>
         <param name="DayOfWeek">Opcional. Valor elegido de la enumeración <see cref="T:Microsoft.VisualBasic.FirstDayOfWeek" /> que especifica el primer día de la semana. Si no se especifica, se utiliza <see cref="F:Microsoft.VisualBasic.FirstDayOfWeek.Sunday" />.</param>
-        <param name="WeekOfYear">Opcional. Valor elegido de la enumeración <see cref="T:Microsoft.VisualBasic.FirstWeekOfYear" /> que especifica la primera semana del año.  Si no se especifica, se utiliza <see cref="F:Microsoft.VisualBasic.FirstWeekOfYear.Jan1" />.</param>
+        <param name="WeekOfYear">Opcional. Valor elegido de la enumeración <see cref="T:Microsoft.VisualBasic.FirstWeekOfYear" /> que especifica la primera semana del año. Si no se especifica, se utiliza <see cref="F:Microsoft.VisualBasic.FirstWeekOfYear.Jan1" />.</param>
         <summary>Devuelve un valor que contiene el componente especificado de un valor de <see langword="Date" /> dado.</summary>
         <returns>Valor Integer que contiene el componente especificado de un valor de <see langword="Date" /> dado.</returns>
         <remarks>
@@ -748,14 +754,15 @@ Dim LastMidnight As Date = CurrDatTim.Date   ' At midnight.
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Year" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Month" Type="System.Int32" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Day" Type="System.Int32" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Year" Type="System.Int32" />
+        <Parameter Name="Month" Type="System.Int32" />
+        <Parameter Name="Day" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="Year">Obligatorio. Expresión de tipo Integer entre 1 y 9999. Sin embargo, también se aceptan los valores no comprendidos en este intervalo. Si el valor de <paramref name="Year" /> está comprendido entre 0 y 99, se interpreta como un año comprendido entre 1930 y 2029, tal como se explica abajo en la sección "Comentarios". Si el valor de <paramref name="Year" /> es menor que 1, se resta del año actual.</param>
@@ -838,6 +845,7 @@ Dim NewDateTime As Date = New Date(1978, 5, 6, 8, 29, 59, 900)
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -898,12 +906,13 @@ MsgBox("The formatted date is " & Format(Now, "dddd, d MMM yyyy"))
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="StringDate" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="StringDate" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="StringDate">Obligatorio. Expresión de tipo String que representa un valor de fecha u hora desde las 00:00:00 horas del 1 de enero del año 1 hasta las 23:59:59 horas del 31 de diciembre de 9999.</param>
@@ -959,12 +968,13 @@ MsgBox("The formatted date is " & Format(Now, "dddd, d MMM yyyy"))
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="DateValue" Type="System.DateTime" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="DateValue" Type="System.DateTime" />
       </Parameters>
       <Docs>
         <param name="DateValue">Obligatorio. Valor <see langword="Date" /> del que se desea extraer el día.</param>
@@ -1019,12 +1029,13 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="TimeValue" Type="System.DateTime" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="TimeValue" Type="System.DateTime" />
       </Parameters>
       <Docs>
         <param name="TimeValue">Obligatorio. Valor <see langword="Date" /> del que se desea extraer la hora.</param>
@@ -1073,12 +1084,13 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="TimeValue" Type="System.DateTime" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="TimeValue" Type="System.DateTime" />
       </Parameters>
       <Docs>
         <param name="TimeValue">Obligatorio. Valor <see langword="Date" /> del que se desea extraer el minuto.</param>
@@ -1127,12 +1139,13 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="DateValue" Type="System.DateTime" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="DateValue" Type="System.DateTime" />
       </Parameters>
       <Docs>
         <param name="DateValue">Obligatorio. Valor <see langword="Date" /> del que se desea extraer el mes.</param>
@@ -1179,13 +1192,14 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Month" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Abbreviate" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Month" Type="System.Int32" />
+        <Parameter Name="Abbreviate" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="Month">Obligatorio. Designación numérica del mes, del 1 al 13; 1 indica el mes de enero y 12 indica el mes de diciembre. El valor 13 se puede utilizar con un calendario de 13 meses. Si el sistema utiliza un calendario de 12 meses y el valor de <paramref name="Month" /> es 13, <c>MonthName</c> devuelve una cadena vacía.</param>
@@ -1284,12 +1298,13 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="TimeValue" Type="System.DateTime" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="TimeValue" Type="System.DateTime" />
       </Parameters>
       <Docs>
         <param name="TimeValue">Obligatorio. Valor <see langword="Date" /> del que se desea extraer el segundo.</param>
@@ -1338,6 +1353,7 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -1387,6 +1403,7 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -1437,14 +1454,15 @@ Dim thisDay As Integer = Microsoft.VisualBasic.DateAndTime.Day(Now)
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Hour" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Minute" Type="System.Int32" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Second" Type="System.Int32" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Hour" Type="System.Int32" />
+        <Parameter Name="Minute" Type="System.Int32" />
+        <Parameter Name="Second" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="Hour">Obligatorio. Expresión de tipo Integer entre 0 y 23. Sin embargo, también se aceptan los valores no comprendidos en este intervalo.</param>
@@ -1517,6 +1535,7 @@ Dim newDateTime As Date = New Date(1978, 5, 6, 8, 29, 59, 900)
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1575,12 +1594,13 @@ MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="StringTime" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="StringTime" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="StringTime">Obligatorio. Expresión de tipo String que representa un valor de fecha y hora desde las 00:00:00 horas del 1 de enero del año 1 hasta las 23:59:59 horas del 31 de diciembre de 9999.</param>
@@ -1680,13 +1700,14 @@ MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="DateValue" Type="System.DateTime" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="DayOfWeek" Type="Microsoft.VisualBasic.FirstDayOfWeek" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="DateValue" Type="System.DateTime" />
+        <Parameter Name="DayOfWeek" Type="Microsoft.VisualBasic.FirstDayOfWeek" />
       </Parameters>
       <Docs>
         <param name="DateValue">Obligatorio. Valor <see langword="Date" /> para el que se desea determinar el día de la semana.</param>
@@ -1749,14 +1770,15 @@ MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Weekday" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Abbreviate" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="FirstDayOfWeekValue" Type="Microsoft.VisualBasic.FirstDayOfWeek" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Weekday" Type="System.Int32" />
+        <Parameter Name="Abbreviate" Type="System.Boolean" />
+        <Parameter Name="FirstDayOfWeekValue" Type="Microsoft.VisualBasic.FirstDayOfWeek" />
       </Parameters>
       <Docs>
         <param name="Weekday">Obligatorio. Integer. Designación numérica del día de la semana, del 1 al 7; 1 indica el primer día de la semana y 7 indica el último día de la semana. Las identidades del primer y último día dependen del valor de <paramref name="FirstDayOfWeekValue" />.</param>
@@ -1821,12 +1843,13 @@ MsgBox("The formatted time is " & Format(Now, "hh.mm.ss.fff tt"))
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="DateValue" Type="System.DateTime" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="DateValue" Type="System.DateTime" />
       </Parameters>
       <Docs>
         <param name="DateValue">Obligatorio. Valor <see langword="Date" /> del que se desea extraer el año.</param>

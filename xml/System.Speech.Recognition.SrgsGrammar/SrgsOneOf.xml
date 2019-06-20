@@ -1,5 +1,5 @@
 <Type Name="SrgsOneOf" FullName="System.Speech.Recognition.SrgsGrammar.SrgsOneOf">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="cdcb45883b25eb177da4035dcb3e96cea5dfe1e2" /><Meta Name="ms.sourcegitcommit" Value="bfce49b3a0c0685f994313d2e44a7c70def1694a" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/05/2019" /><Meta Name="ms.locfileid" Value="66690927" /></Metadata><TypeSignature Language="C#" Value="public class SrgsOneOf : System.Speech.Recognition.SrgsGrammar.SrgsElement" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1274f4e94d6675550cb45592893b07c420adcdbc" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67243905" /></Metadata><TypeSignature Language="C#" Value="public class SrgsOneOf : System.Speech.Recognition.SrgsGrammar.SrgsElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SrgsOneOf extends System.Speech.Recognition.SrgsGrammar.SrgsElement" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsOneOf" />
   <TypeSignature Language="VB.NET" Value="Public Class SrgsOneOf&#xA;Inherits SrgsElement" />
@@ -77,7 +77,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- En el ejemplo siguiente se usa el <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> elemento para crear listas de <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> elementos que contiene los nombres de país o región, cualquier uno de los cuales puede utilizarse para reconocer el que contiene la frase. El ejemplo, a continuación, agrega uno de resultante <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> objetos a sus respectivas reglas para los países europeos y países de América del sur. Además, el ejemplo utiliza la <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> objeto a las referencias de regla de grupo a `ruleEurope` y `ruleSAmerica` en una lista de alternativas, cualquiera de ellos de que se puede usar para reconocer la entrada de voz.  
+ En el ejemplo siguiente se usa el <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> elemento para crear listas de <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> elementos que contiene los nombres de país o región, cualquier uno de los cuales puede utilizarse para reconocer el que contiene la frase. El ejemplo, a continuación, agrega uno de resultante <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> objetos a sus respectivas reglas para países o regiones de Europa y América del sur. Además, el ejemplo utiliza la <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> objeto a las referencias de regla de grupo a `ruleEurope` y `ruleSAmerica` en una lista de alternativas, cualquiera de ellos de que se puede usar para reconocer la entrada de voz.  
   
 ```  
 public void WorldSoccerWinners ()  
@@ -148,7 +148,7 @@ public void WorldSoccerWinners ()
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- En el ejemplo siguiente se crea una gramática que reconoce la frase "es de un país que ha ganado la Copa del mundo" seguido del nombre de un país que ha ganado la Copa del mundo. Crea una regla pública denominada `WorldCupWinner`. A continuación, crea dos <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> objetos mediante <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> objetos que contienen matrices de nuevo <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> objetos. Para ver la gramática que genera este ejemplo, consulte <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.%23ctor%2A>.  
+ En el ejemplo siguiente se crea una gramática que reconoce la frase "es de un país que ha ganado la Copa del mundo" seguido del nombre de un país o región que ha ganado la Copa del mundo. Crea una regla pública denominada `WorldCupWinner`. A continuación, crea dos <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> objetos mediante <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> objetos que contienen matrices de nuevo <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> objetos. Para ver la gramática que genera este ejemplo, consulte <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.%23ctor%2A>.  
   
 ```csharp  
  public void WorldSoccerWinners ()  
@@ -219,7 +219,7 @@ Cualquier elemento de la matriz <paramref name="items" /> es <see langword="null
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- En el ejemplo siguiente se crea una gramática que reconoce la frase "es de un país que ha ganado la Copa del mundo" seguido del nombre de un país que ha ganado la Copa del mundo. El ejemplo se usa el <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> elemento que se va a crear listas de nombres de país aceptable de una matriz de <xref:System.String> objetos. El ejemplo, a continuación, agrega uno de resultante <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> objetos a sus respectivas reglas para los países europeos y países de América del sur.  
+ En el ejemplo siguiente se crea una gramática que reconoce la frase "es de un país que ha ganado la Copa del mundo" seguido del nombre de un país o región que ha ganado la Copa del mundo. El ejemplo se usa el <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> elemento que se va a crear listas de nombres de país o región aceptable de una matriz de <xref:System.String> objetos. El ejemplo, a continuación, agrega uno de resultante <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> objetos a sus respectivas reglas para países o regiones de Europa y América del sur.  
   
 ```  
 public void WorldSoccerWinners ()  
@@ -286,7 +286,7 @@ Cualquier elemento de la matriz <paramref name="items" /> es <see langword="null
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- En el ejemplo siguiente se crea una gramática que reconoce la frase "es de un país que ha ganado la Copa del mundo" seguido del nombre de un país que ha ganado la Copa del mundo. El ejemplo se usa el <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> objeto para crear listas de nombres de país aceptable de una matriz de <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> objetos. Mediante el <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf.Add%2A> método, el ejemplo agrega un <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> que contiene la cadena "Italy" a la <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> objeto `oneOfEurope`.  
+ En el ejemplo siguiente se crea una gramática que reconoce la frase "es de un país que ha ganado la Copa del mundo" seguido del nombre de un país o región que ha ganado la Copa del mundo. El ejemplo se usa el <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> objeto para crear listas de nombres de país o región aceptable de una matriz de <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> objetos. Mediante el <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf.Add%2A> método, el ejemplo agrega un <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> que contiene la cadena "Italy" a la <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf> objeto `oneOfEurope`.  
   
 ```  
 public void WorldSoccerWinners ()  

@@ -1,5 +1,5 @@
 <Type Name="StandardFormat" FullName="System.Buffers.StandardFormat">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="8b64a1e722ed439af9169929498c79cbf785c38c" /><Meta Name="ms.sourcegitcommit" Value="6b9d64332f31de312efea785fbb19e4d80f544d5" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/12/2019" /><Meta Name="ms.locfileid" Value="67026517" /></Metadata><TypeSignature Language="C#" Value="public struct StandardFormat : IEquatable&lt;System.Buffers.StandardFormat&gt;" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="11818d5fba80f705011eb6622d2b03abdae12cd3" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67238450" /></Metadata><TypeSignature Language="C#" Value="public struct StandardFormat : IEquatable&lt;System.Buffers.StandardFormat&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit StandardFormat extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Buffers.StandardFormat&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Buffers.StandardFormat" />
   <TypeSignature Language="VB.NET" Value="Public Structure StandardFormat&#xA;Implements IEquatable(Of StandardFormat)" />
@@ -30,7 +30,7 @@
   </Attributes>
   <Docs>
     <summary>Representa una cadena de formato estándar sin utilizar una cadena real.</summary>
-    <remarks> 
+    <remarks>
       <format type="text/markdown"><![CDATA[  
 
 Un `StandardFormat` objeto consta de un especificador de formato estándar único carácter (por ejemplo, 'G', podría ', o 'X') y un especificador de precisión opcional. El especificador de precisión puede oscilar entre 0 y 9, o puede ser especial <xref:System.Buffers.StandardFormat.NoPrecision?displayProperty=nameWithType> valor.
@@ -85,13 +85,13 @@ O bien
       </AssemblyInfo>
       <Docs>
         <summary>Devuelve un valor que indica si esta instancia equivale a un objeto especificado o <see cref="T:System.Buffers.StandardFormat" />.</summary>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
-Dos instancias de <xref:System.Buffers.StandardFormat> son iguales si sus propiedades <xref:System.Buffers.StandardFormat.Symbol>, <xref:System.Buffers.StandardFormat.Precision>, ,  y  son iguales.
+Dos <xref:System.Buffers.StandardFormat> instancias son iguales si sus <xref:System.Buffers.StandardFormat.Symbol> y <xref:System.Buffers.StandardFormat.Precision> propiedades son iguales.
 
          ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </MemberGroup>
     <Member MemberName="Equals">
@@ -156,7 +156,7 @@ Dos instancias de <xref:System.Buffers.StandardFormat> son iguales si sus propie
         <param name="obj">Objeto que se va a comparar con la instancia actual.</param>
         <summary>Devuelve un valor que indica si el objeto especificado es un objeto <see cref="T:System.Buffers.StandardFormat" /> que equivale a la instancia actual.</summary>
         <returns>Es <see langword="true" /> si las dos instancias son iguales; de lo contrario, es <see langword="false" />.</returns>
-       <remarks>To be added.</remarks>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -238,13 +238,13 @@ Dos instancias de <xref:System.Buffers.StandardFormat> son iguales si sus propie
       <Docs>
         <summary>Obtiene un valor que indica si la instancia actual tiene un formato predeterminado.</summary>
         <value><see langword="true" /> Si la instancia actual es un formato predeterminado. en caso contrario, <see langword="false" />.</value>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 Un formato predeterminado tiene un especificador de formato cuyo <xref:System.Byte> valor es 0 y cuya precisión es <xref:System.Buffers.StandardFormat.NoPrecision>.
 
          ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="MaxPrecision">
@@ -331,13 +331,13 @@ Un formato predeterminado tiene un especificador de formato cuyo <xref:System.By
         <param name="right">El segundo formato que se va a comparar.</param>
         <summary>Devuelve un valor que indica si dos instancias de <see cref="T:System.Buffers.StandardFormat" /> son iguales.</summary>
         <returns>Es <see langword="true" /> si las dos instancias son iguales; de lo contrario, es <see langword="false" />.</returns>
-       <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
-Dos instancias de <xref:System.Buffers.StandardFormat> son iguales si sus propiedades <xref:System.Buffers.StandardFormat.Symbol>, <xref:System.Buffers.StandardFormat.Precision>, ,  y  son iguales.
+Dos <xref:System.Buffers.StandardFormat> instancias son iguales si sus <xref:System.Buffers.StandardFormat.Symbol> y <xref:System.Buffers.StandardFormat.Precision> propiedades son iguales.
 
          ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Implicit">
@@ -401,13 +401,13 @@ Dos instancias de <xref:System.Buffers.StandardFormat> son iguales si sus propie
         <param name="right">El segundo formato que se va a comparar.</param>
         <summary>Determina si dos instancias de <see cref="T:System.Buffers.StandardFormat" /> no son iguales.</summary>
         <returns>Es <see langword="true" /> si los dos formatos son distintos; en caso contrario, es <see langword="false" />.</returns>
-       <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
-Dos instancias de <xref:System.Buffers.StandardFormat> son iguales si sus propiedades <xref:System.Buffers.StandardFormat.Symbol>, <xref:System.Buffers.StandardFormat.Precision>, ,  y  son iguales.
+Dos <xref:System.Buffers.StandardFormat> instancias no son iguales si sus <xref:System.Buffers.StandardFormat.Symbol> y <xref:System.Buffers.StandardFormat.Precision> propiedades no son idénticas.
 
          ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -552,13 +552,13 @@ Dos instancias de <xref:System.Buffers.StandardFormat> son iguales si sus propie
       <Docs>
         <summary>Devuelve la representación en forma de cadena de este formato.</summary>
         <returns>La representación en forma de cadena de este formato.</returns>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 La representación de cadena de un <xref:System.Buffers.StandardFormat> instancia es una cadena de formato estándar. NET.
 
          ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="TryParse">

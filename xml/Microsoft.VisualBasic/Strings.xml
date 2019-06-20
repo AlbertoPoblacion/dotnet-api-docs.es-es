@@ -1,5 +1,5 @@
 <Type Name="Strings" FullName="Microsoft.VisualBasic.Strings">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="55b8e873a26c9d2e0bbbdfd649eab50236389e84" /><Meta Name="ms.sourcegitcommit" Value="95e24aee1283af2f120fc5da4b0bdc0712ab698f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/06/2019" /><Meta Name="ms.locfileid" Value="65156332" /></Metadata><TypeSignature Language="C#" Value="public sealed class Strings" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="658fbfb1c662acb281aac80c9ade7559461114ea" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67238740" /></Metadata><TypeSignature Language="C#" Value="public sealed class Strings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Strings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Strings" />
   <TypeSignature Language="VB.NET" Value="Public Module Strings" />
@@ -25,7 +25,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>El <see langword="Strings" /> módulo contiene procedimientos que se usan para realizar operaciones de cadena.</summary>
+    <summary>El módulo <see langword="Strings" /> contiene procedimientos que se utilizan para llevar a cabo operaciones con cadenas.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -41,7 +41,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+    <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
     <related type="Article" href="~/docs/visual-basic/language-reference/keywords/index.md">Palabras clave de Visual Basic</related>
     <related type="Article" href="~/docs/visual-basic/language-reference/runtime-library-members.md">Miembros de la biblioteca de tiempo de ejecución de Visual Basic</related>
   </Docs>
@@ -80,7 +80,7 @@
         <Parameter Name="String" Type="System.Char" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="String">Obligatorio. Cualquier <see langword="Char" /> o <see langword="String" /> expresión. Si <paramref name="String" /> es un <see langword="String" /> expresión, solo el primer carácter de la cadena se usa para la entrada. Si <paramref name="String" /> es <see langword="Nothing" /> o no contiene ningún carácter, un <see cref="T:System.ArgumentException" /> se produce el error.</param>
+        <param name="String">Obligatorio. Cualquier expresión válida de tipo <see langword="Char" /> o <see langword="String" />. Si <paramref name="String" /> es una expresión de tipo <see langword="String" />, sólo se utiliza el primer carácter de la cadena para la entrada. Si <paramref name="String" /> es <see langword="Nothing" /> o no contiene caracteres, se genera un error <see cref="T:System.ArgumentException" />.</param>
         <summary>Devuelve un valor entero que representa el código de carácter correspondiente a un carácter.</summary>
         <returns>Código de carácter correspondiente a un carácter.</returns>
         <remarks>
@@ -136,7 +136,7 @@
         <Parameter Name="String" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="String">Obligatorio. Cualquier <see langword="Char" /> o <see langword="String" /> expresión. Si <paramref name="String" /> es un <see langword="String" /> expresión, solo el primer carácter de la cadena se usa para la entrada. Si <paramref name="String" /> es <see langword="Nothing" /> o no contiene ningún carácter, un <see cref="T:System.ArgumentException" /> se produce el error.</param>
+        <param name="String">Obligatorio. Cualquier expresión válida de tipo <see langword="Char" /> o <see langword="String" />. Si <paramref name="String" /> es una expresión de tipo <see langword="String" />, sólo se utiliza el primer carácter de la cadena para la entrada. Si <paramref name="String" /> es <see langword="Nothing" /> o no contiene caracteres, se genera un error <see cref="T:System.ArgumentException" />.</param>
         <summary>Devuelve un valor entero que representa el código de carácter correspondiente a un carácter.</summary>
         <returns>Código de carácter correspondiente a un carácter.</returns>
         <remarks>
@@ -202,7 +202,7 @@
         <Parameter Name="String" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="String">Obligatorio. Cualquier <see langword="Char" /> o <see langword="String" /> expresión. Si <paramref name="String" /> es un <see langword="String" /> expresión, solo el primer carácter de la cadena se usa para la entrada. Si <paramref name="String" /> es <see langword="Nothing" /> o no contiene ningún carácter, un <see cref="T:System.ArgumentException" /> se produce el error.</param>
+        <param name="String">Obligatorio. Cualquier expresión válida de tipo <see langword="Char" /> o <see langword="String" />. Si <paramref name="String" /> es una expresión de tipo <see langword="String" />, sólo se utiliza el primer carácter de la cadena para la entrada. Si <paramref name="String" /> es <see langword="Nothing" /> o no contiene caracteres, se genera un error <see cref="T:System.ArgumentException" />.</param>
         <summary>Devuelve un valor entero que representa el código de carácter correspondiente a un carácter.</summary>
         <returns>Código de carácter correspondiente a un carácter.</returns>
         <remarks>
@@ -258,7 +258,7 @@
         <Parameter Name="String" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="String">Obligatorio. Cualquier <see langword="Char" /> o <see langword="String" /> expresión. Si <paramref name="String" /> es un <see langword="String" /> expresión, solo el primer carácter de la cadena se usa para la entrada. Si <paramref name="String" /> es <see langword="Nothing" /> o no contiene ningún carácter, un <see cref="T:System.ArgumentException" /> se produce el error.</param>
+        <param name="String">Obligatorio. Cualquier expresión válida de tipo <see langword="Char" /> o <see langword="String" />. Si <paramref name="String" /> es una expresión de tipo <see langword="String" />, sólo se utiliza el primer carácter de la cadena para la entrada. Si <paramref name="String" /> es <see langword="Nothing" /> o no contiene caracteres, se genera un error <see cref="T:System.ArgumentException" />.</param>
         <summary>Devuelve un valor entero que representa el código de carácter correspondiente a un carácter.</summary>
         <returns>Código de carácter correspondiente a un carácter.</returns>
         <remarks>
@@ -316,7 +316,7 @@
       </Parameters>
       <Docs>
         <param name="CharCode">Obligatorio. Expresión de tipo <see langword="Integer" /> que representa el <c>punto de código</c> o el código del carácter.</param>
-        <summary>Devuelve el carácter asociado con el código de carácter especificado.</summary>
+        <summary>Devuelve el carácter asociado al código de carácter especificado.</summary>
         <returns>Carácter asociado al código de carácter especificado.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -351,7 +351,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Conversion.Str(System.Object)" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.ArgumentException" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <Member MemberName="ChrW">
@@ -380,7 +380,7 @@
       </Parameters>
       <Docs>
         <param name="CharCode">Obligatorio. Expresión de tipo <see langword="Integer" /> que representa el <c>punto de código</c> o el código del carácter.</param>
-        <summary>Devuelve el carácter asociado con el código de carácter especificado.</summary>
+        <summary>Devuelve el carácter asociado al código de carácter especificado.</summary>
         <returns>Carácter asociado al código de carácter especificado.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -415,7 +415,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Conversion.Str(System.Object)" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.ArgumentException" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Filter">
@@ -424,7 +424,7 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Devuelve una matriz de base cero que contiene un subconjunto de un <see langword="String" /> matriz basándose en criterios de filtro especificados.</summary>
+        <summary>Devuelve una matriz basada en cero que contiene un subconjunto de una matriz <see langword="String" /> basada en criterios de filtro especificados.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="Filter">
@@ -460,11 +460,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="Source">Obligatorio. Matriz unidimensional de cadenas que se va a buscar.</param>
-        <param name="Match">Obligatorio. Cadena de búsqueda.</param>
-        <param name="Include">Opcional. <see langword="Boolean" /> valor que indica si se va a devolver subcadenas que incluyen o excluyen <paramref name="Match" />. Si <paramref name="Include" /> es <see langword="True" />, <see langword="Filter" /> función devuelve el subconjunto de la matriz que contiene <paramref name="Match" /> como subcadena. Si <paramref name="Include" /> es <see langword="False" />, <see langword="Filter" /> función devuelve el subconjunto de la matriz que no contenga <paramref name="Match" /> como subcadena.</param>
-        <param name="Compare">Opcional. Valor numérico que indica el tipo de comparación de cadenas para usar. Consulte los valores en "Configuración".</param>
-        <summary>Devuelve una matriz de base cero que contiene un subconjunto de un <see langword="String" /> matriz basándose en criterios de filtro especificados.</summary>
+        <param name="Source">Obligatorio. Matriz unidimensional de cadenas en la que se va a buscar.</param>
+        <param name="Match">Obligatorio. Cadena que se va a buscar.</param>
+        <param name="Include">Opcional. Valor de tipo <see langword="Boolean" /> que indica si se van a devolver subcadenas que incluyen o excluyen <paramref name="Match" />. Si el valor de <paramref name="Include" /> es <see langword="True" />, la función <see langword="Filter" /> devuelve el subconjunto de la matriz que contiene <paramref name="Match" /> como subcadena. Si el valor de <paramref name="Include" /> es <see langword="False" />, la función <see langword="Filter" /> devuelve el subconjunto de la matriz que no contiene <paramref name="Match" /> como subcadena.</param>
+        <param name="Compare">Opcional. Valor numérico que indica el tipo de comparación de cadenas que se va a utilizar. Consulte los valores en "Configuración".</param>
+        <summary>Devuelve una matriz basada en cero que contiene un subconjunto de una matriz <see langword="String" /> basada en criterios de filtro especificados.</summary>
         <returns>Matriz basada en cero que contiene un subconjunto de una matriz <see langword="String" /> basada en criterios de filtro especificados.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -494,7 +494,7 @@
         <exception cref="T:System.ArgumentException"><paramref name="Source" /> es <see langword="Nothing" /> o no es una matriz unidimensional.</exception>
         <altmember cref="M:Microsoft.VisualBasic.Strings.Replace(System.String,System.String,System.String,System.Int32,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
         <altmember cref="T:System.ArgumentException" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -530,11 +530,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="Source">Obligatorio. Matriz unidimensional de cadenas que se va a buscar.</param>
-        <param name="Match">Obligatorio. Cadena de búsqueda.</param>
-        <param name="Include">Opcional. <see langword="Boolean" /> valor que indica si se va a devolver subcadenas que incluyen o excluyen <paramref name="Match" />. Si <paramref name="Include" /> es <see langword="True" />, <see langword="Filter" /> función devuelve el subconjunto de la matriz que contiene <paramref name="Match" /> como subcadena. Si <paramref name="Include" /> es <see langword="False" />, <see langword="Filter" /> función devuelve el subconjunto de la matriz que no contenga <paramref name="Match" /> como subcadena.</param>
-        <param name="Compare">Opcional. Valor numérico que indica el tipo de comparación de cadenas para usar. Consulte los valores en "Configuración".</param>
-        <summary>Devuelve una matriz de base cero que contiene un subconjunto de un <see langword="String" /> matriz basándose en criterios de filtro especificados.</summary>
+        <param name="Source">Obligatorio. Matriz unidimensional de cadenas en la que se va a buscar.</param>
+        <param name="Match">Obligatorio. Cadena que se va a buscar.</param>
+        <param name="Include">Opcional. Valor de tipo <see langword="Boolean" /> que indica si se van a devolver subcadenas que incluyen o excluyen <paramref name="Match" />. Si el valor de <paramref name="Include" /> es <see langword="True" />, la función <see langword="Filter" /> devuelve el subconjunto de la matriz que contiene <paramref name="Match" /> como subcadena. Si el valor de <paramref name="Include" /> es <see langword="False" />, la función <see langword="Filter" /> devuelve el subconjunto de la matriz que no contiene <paramref name="Match" /> como subcadena.</param>
+        <param name="Compare">Opcional. Valor numérico que indica el tipo de comparación de cadenas que se va a utilizar. Consulte los valores en "Configuración".</param>
+        <summary>Devuelve una matriz basada en cero que contiene un subconjunto de una matriz <see langword="String" /> basada en criterios de filtro especificados.</summary>
         <returns>Matriz basada en cero que contiene un subconjunto de una matriz <see langword="String" /> basada en criterios de filtro especificados.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -563,7 +563,7 @@
         <exception cref="T:System.ArgumentException"><paramref name="Source" /> es <see langword="Nothing" /> o no es una matriz unidimensional.</exception>
         <altmember cref="M:Microsoft.VisualBasic.Strings.Replace(System.String,System.String,System.String,System.Int32,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
         <altmember cref="T:System.ArgumentException" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -581,18 +581,19 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.Object" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Style" Type="System.String" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Expression" Type="System.Object" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="Style" Type="System.String" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="Expression">Obligatorio. Cualquier expresión válida.</param>
-        <param name="Style">Opcional. Un formato válido con nombre o definido por el usuario <see langword="String" /> expresión.</param>
-        <summary>Devuelve una cadena con formato según las instrucciones contenidas en un formato <see langword="String" /> expresión.</summary>
+        <param name="Style">Opcional. Expresión válida de formato de tipo <see langword="String" /> con nombre o definida por el usuario.</param>
+        <summary>Devuelve una cadena con el formato que especifiquen las instrucciones contenidas en una expresión <see langword="String" /> de formato.</summary>
         <returns>Cadena con el formato que especifiquen las instrucciones contenidas en una expresión <see langword="String" /> de formato.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -757,10 +758,10 @@
    
   
 ## Examples  
- En este ejemplo se muestra varios usos de la `Format` función a los valores de formato mediante ambos `String` formatos y formatos definidos por el usuario. Para el separador de fecha (`/`), separador de hora (`:`) y los indicadores de A.M./P.M. (`t` y `tt`), el formato de salida que muestre su sistema depende de la configuración regional que use el código. Cuando horas y fechas se muestran en el entorno de desarrollo, se usan el formato de hora corta y el formato de fecha corta de la configuración regional del código.  
+ En este ejemplo se muestran los diversos usos de la función `Format` para dar formato a valores tanto con formatos `String` como otros definidos por el usuario. Para el separador de fecha (`/`), hora (`:`) e indicadores de a.m./p.m. (`t` y `tt`), el formato de salida que muestre su sistema dependerá de la configuración regional que use el código. Cuando las horas y fechas se muestren en el entorno de desarrollo, se utilizará el formato de fecha y hora corta de la configuración regional del código.  
   
 > [!NOTE]
->  Para las configuraciones regionales que utilizan un reloj de 24 horas, los indicadores de A.M./P.M. (`t` y `tt`) no muestran nada.  
+>  Para configuraciones regionales que utilizan un reloj de 24 horas, los indicadores de a.m./p.m. (`t` y `tt`) no muestran nada.  
   
  [!code-vb[VbVbalrStrings#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#27)]  
   
@@ -768,7 +769,7 @@
         </remarks>
         <altmember cref="M:System.String.Format(System.String,System.Object)" />
         <altmember cref="M:Microsoft.VisualBasic.Conversion.Str(System.Object)" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <Member MemberName="FormatCurrency">
@@ -786,24 +787,25 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.Object" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="NumDigitsAfterDecimal" Type="System.Int32" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="IncludeLeadingDigit" Type="Microsoft.VisualBasic.TriState" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="UseParensForNegativeNumbers" Type="Microsoft.VisualBasic.TriState" Index="3" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="GroupDigits" Type="Microsoft.VisualBasic.TriState" Index="4" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Expression" Type="System.Object" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="NumDigitsAfterDecimal" Type="System.Int32" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="IncludeLeadingDigit" Type="Microsoft.VisualBasic.TriState" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="UseParensForNegativeNumbers" Type="Microsoft.VisualBasic.TriState" Index="3" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="GroupDigits" Type="Microsoft.VisualBasic.TriState" Index="4" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="Expression">Obligatorio. Expresión a la que se debe dar formato.</param>
-        <param name="NumDigitsAfterDecimal">Opcional. Valor numérico que indica cuántos lugares se muestran a la derecha del separador decimal. El valor predeterminado es -1, que indica que se utiliza la configuración regional del equipo.</param>
-        <param name="IncludeLeadingDigit">Opcional. <see cref="T:Microsoft.VisualBasic.TriState" /> enumeración que indica si se muestra un cero inicial para los valores fraccionarios. Vea "Comentarios" para los valores.</param>
-        <param name="UseParensForNegativeNumbers">Opcional. <see cref="T:Microsoft.VisualBasic.TriState" /> enumeración que indica si se deben colocar los valores negativos entre paréntesis. Vea "Comentarios" para los valores.</param>
-        <param name="GroupDigits">Opcional. <see cref="T:Microsoft.VisualBasic.TriState" /> enumeración que indica si los números se agrupan mediante el delimitador de grupo especificado en la configuración regional del equipo. Vea "Comentarios" para los valores.</param>
-        <summary>Devuelve una expresión con formato como un valor de moneda mediante el símbolo de moneda definido en el panel de control del sistema.</summary>
+        <param name="NumDigitsAfterDecimal">Opcional. Valor numérico que indica el número de posiciones que se muestran a la derecha del separador decimal. El valor predeterminado es -1, que indica que se utiliza la configuración regional del equipo.</param>
+        <param name="IncludeLeadingDigit">Opcional. Enumeración de <see cref="T:Microsoft.VisualBasic.TriState" /> que indica si se muestra un cero inicial o no para los valores fraccionarios. Vea los valores en la sección "Comentarios".</param>
+        <param name="UseParensForNegativeNumbers">Opcional. Enumeración <see cref="T:Microsoft.VisualBasic.TriState" /> que indica si los valores negativos se van a colocar entre paréntesis o no. Vea los valores en la sección "Comentarios".</param>
+        <param name="GroupDigits">Opcional. Enumeración <see cref="T:Microsoft.VisualBasic.TriState" /> que indica si los números se agrupan o no mediante el delimitador de grupo especificado en la configuración regional del equipo. Vea los valores en la sección "Comentarios".</param>
+        <summary>Devuelve una expresión con formato de moneda en la que se utilizará el símbolo de moneda que se haya definido en el panel de control del sistema.</summary>
         <returns>Expresión con formato de moneda en la que se utilizará el símbolo de moneda que se haya definido en el panel de control del sistema.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -833,7 +835,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">Número de dígitos después del separador decimal es mayor que 99.</exception>
+        <exception cref="T:System.ArgumentException">El número de dígitos situados a continuación del signo decimal es mayor que 99.</exception>
         <exception cref="T:System.InvalidCastException">El tipo no es numérico.</exception>
         <altmember cref="M:Microsoft.VisualBasic.Strings.FormatDateTime(System.DateTime,Microsoft.VisualBasic.DateFormat)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.FormatNumber(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
@@ -860,18 +862,19 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.DateTime" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="NamedFormat" Type="Microsoft.VisualBasic.DateFormat" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Expression" Type="System.DateTime" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="NamedFormat" Type="Microsoft.VisualBasic.DateFormat" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="Expression">Obligatorio. <see langword="Date" /> Expresión que se va a dar formato.</param>
-        <param name="NamedFormat">Opcional. Valor numérico que indica el formato de fecha y hora utilizado. Si se omite, <see langword="DateFormat.GeneralDate" /> se utiliza.</param>
-        <summary>Devuelve una expresión de cadena que representa un valor de fecha y hora.</summary>
+        <param name="Expression">Obligatorio. Expresión de <see langword="Date" /> a la que se va a aplicar formato.</param>
+        <param name="NamedFormat">Opcional. Valor numérico que indica el formato de fecha y hora utilizado. Si se omite, se utiliza <see langword="DateFormat.GeneralDate" />.</param>
+        <summary>Devuelve una expresión de cadena que representa un valor de fecha u hora.</summary>
         <returns>Expresión de cadena que representa un valor de fecha u hora.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -901,14 +904,14 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException"><paramref name="NamedFormat" /> configuración no es válida.</exception>
+        <exception cref="T:System.ArgumentException">El valor de <paramref name="NamedFormat" /> no es válido.</exception>
         <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.FormatCurrency(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.FormatNumber(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.FormatPercent(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="M:Microsoft.VisualBasic.DateAndTime.DatePart(Microsoft.VisualBasic.DateInterval,System.DateTime,Microsoft.VisualBasic.FirstDayOfWeek,Microsoft.VisualBasic.FirstWeekOfYear)" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <Member MemberName="FormatNumber">
@@ -926,22 +929,23 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.Object" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="NumDigitsAfterDecimal" Type="System.Int32" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="IncludeLeadingDigit" Type="Microsoft.VisualBasic.TriState" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="UseParensForNegativeNumbers" Type="Microsoft.VisualBasic.TriState" Index="3" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="GroupDigits" Type="Microsoft.VisualBasic.TriState" Index="4" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Expression" Type="System.Object" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="NumDigitsAfterDecimal" Type="System.Int32" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="IncludeLeadingDigit" Type="Microsoft.VisualBasic.TriState" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="UseParensForNegativeNumbers" Type="Microsoft.VisualBasic.TriState" Index="3" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="GroupDigits" Type="Microsoft.VisualBasic.TriState" Index="4" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="Expression">Obligatorio. Expresión a la que se debe dar formato.</param>
-        <param name="NumDigitsAfterDecimal">Opcional. Valor numérico que indica cuántos lugares se muestran a la derecha del separador decimal. El valor predeterminado es -1, que indica que se utiliza la configuración regional del equipo.</param>
-        <param name="IncludeLeadingDigit">Opcional. <see cref="T:Microsoft.VisualBasic.TriState" /> constante que indica si se muestra un 0 inicial para los valores fraccionarios. Consulte los valores en "Configuración".</param>
-        <param name="UseParensForNegativeNumbers">Opcional. <see cref="T:Microsoft.VisualBasic.TriState" /> constante que indica si se debe colocar los valores negativos entre paréntesis. Consulte los valores en "Configuración".</param>
+        <param name="NumDigitsAfterDecimal">Opcional. Valor numérico que indica el número de posiciones que se muestran a la derecha del separador decimal. El valor predeterminado es -1, que indica que se utiliza la configuración regional del equipo.</param>
+        <param name="IncludeLeadingDigit">Opcional. Constante <see cref="T:Microsoft.VisualBasic.TriState" /> que indica si se muestra un 0 inicial para los valores fraccionarios. Consulte los valores en "Configuración".</param>
+        <param name="UseParensForNegativeNumbers">Opcional. Constante <see cref="T:Microsoft.VisualBasic.TriState" /> que indica si los valores negativos se van a colocar entre paréntesis. Consulte los valores en "Configuración".</param>
         <param name="GroupDigits">Opcional. Constante <see cref="T:Microsoft.VisualBasic.TriState" /> que indica si los números se agrupan o no mediante el delimitador de grupo especificado en la configuración regional. Consulte los valores en "Configuración".</param>
         <summary>Devuelve una expresión con formato de número.</summary>
         <returns>Expresión con formato de número.</returns>
@@ -977,7 +981,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.FormatPercent(System.Object,System.Int32,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState,Microsoft.VisualBasic.TriState)" />
         <altmember cref="T:Microsoft.VisualBasic.TriState" />
         <altmember cref="T:System.InvalidCastException" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <Member MemberName="FormatPercent">
@@ -995,16 +999,17 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.Object" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="NumDigitsAfterDecimal" Type="System.Int32" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="IncludeLeadingDigit" Type="Microsoft.VisualBasic.TriState" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="UseParensForNegativeNumbers" Type="Microsoft.VisualBasic.TriState" Index="3" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="GroupDigits" Type="Microsoft.VisualBasic.TriState" Index="4" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Expression" Type="System.Object" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="NumDigitsAfterDecimal" Type="System.Int32" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="IncludeLeadingDigit" Type="Microsoft.VisualBasic.TriState" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="UseParensForNegativeNumbers" Type="Microsoft.VisualBasic.TriState" Index="3" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="GroupDigits" Type="Microsoft.VisualBasic.TriState" Index="4" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="Expression">Obligatorio. Expresión a la que se debe dar formato.</param>
@@ -1047,7 +1052,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.Format(System.Object,System.String)" />
         <altmember cref="T:Microsoft.VisualBasic.TriState" />
         <altmember cref="T:System.InvalidCastException" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <Member MemberName="GetChar">
@@ -1066,19 +1071,20 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="str" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Index" Type="System.Int32" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="str" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="Index" Type="System.Int32" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="str">Obligatorio. Cualquier expresión <see langword="String" /> válida.</param>
-        <param name="Index">Obligatorio. <see langword="Integer" /> expresión. El índice (basado en 1) del carácter en <paramref name="str" /> va a devolver.</param>
-        <summary>Devuelve un <see langword="Char" /> valor que representa el carácter desde el índice especificado en la cadena proporcionada.</summary>
-        <returns><see langword="Char" /> valor que representa el carácter desde el índice especificado en la cadena proporcionada.</returns>
+        <param name="str">Obligatorio. Cualquier expresión de <see langword="String" /> válida.</param>
+        <param name="Index">Obligatorio. Expresión <see langword="Integer" />. Índice (de base 1) del carácter de <paramref name="str" /> que se va a devolver.</param>
+        <summary>Devuelve un valor de <see langword="Char" /> que representa el carácter correspondiente al índice especificado en la cadena proporcionada.</summary>
+        <returns>Devuelve un valor de <see langword="Char" /> que representa el carácter correspondiente al índice especificado en la cadena proporcionada.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1097,7 +1103,7 @@
         <exception cref="T:System.ArgumentException"><paramref name="str" /> es <see langword="Nothing" />, <paramref name="Index" /> &lt; 1, o <paramref name="Index" /> es mayor que el índice del último carácter de <paramref name="str" />.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Mid" />
         <altmember cref="T:System.ArgumentException" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="InStr">
@@ -1106,7 +1112,7 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Devuelve un entero que especifica la posición inicial de la primera aparición de una cadena dentro de otra.  El entero es un índice basado en uno si se encuentra una coincidencia.  Si no se encuentra ninguna coincidencia, la función devuelve cero.</summary>
+        <summary>Devuelve un entero que especifica la posición inicial de la primera aparición de una cadena dentro de otra.  El entero es un índice basado en uno, si se encuentra una coincidencia.  Si no se encuentra ninguna coincidencia, la función devuelve cero.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="InStr">
@@ -1141,9 +1147,9 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="String1">Obligatorio. <see langword="String" /> Expresión que se está buscando.</param>
-        <param name="String2">Obligatorio. <see langword="String" /> Expresión que se busca.</param>
-        <param name="Compare">Opcional. Especifica el tipo de comparación de cadenas. Si <paramref name="Compare" /> se omite, el <see langword="Option Compare" /> configuración determina el tipo de comparación.</param>
+        <param name="String1">Obligatorio. Expresión de tipo <see langword="String" /> en la que se va a buscar.</param>
+        <param name="String2">Obligatorio. Expresión de tipo <see langword="String" /> que se va a buscar.</param>
+        <param name="Compare">Opcional. Especifica el tipo de comparación de cadenas. Si se omite <paramref name="Compare" />, la configuración de <see langword="Option Compare" /> determina el tipo de comparación.</param>
         <summary>Devuelve un entero que especifica la posición inicial de la primera aparición de una cadena dentro de otra.</summary>
         <returns><list type="table">
             <item>
@@ -1161,21 +1167,21 @@
             <item>
               <term>
                 <paramref name="String2" /> es de longitud cero o <see langword="Nothing" /></term>
-              <description> La posición inicial para la búsqueda, cuyo valor predeterminado es la posición del primer carácter.  
+              <description> La posición inicial para la búsqueda, que establece como valor predeterminado a la posición del primer carácter.  
   
  </description>
             </item>
             <item>
-              <term>
-                <paramref name="String2" /> no se encuentra 
+              <term>No se encuentra 
+                <paramref name="String2" />. 
  </term>
               <description> 0 
  </description>
             </item>
             <item>
               <term>
-                <paramref name="String2" /> se encuentra dentro de <paramref name="String1" /></term>
-              <description> Posición donde comienza la coincidencia 
+                <paramref name="String2" /> se encuentra dentro de <paramref name="String1" />.</term>
+              <description> Posición donde empieza la coincidencia 
  </description>
             </item>
             <item>
@@ -1202,7 +1208,7 @@
    
   
 ## Examples  
- Este ejemplo se usa el `InStr` función para devolver la posición de la primera aparición de una cadena dentro de otra.  
+ En este ejemplo se usa la función `InStr` para devolver la posición de la primera aparición de una cadena dentro de otra.  
   
  [!code-vb[VbVbalrStrings#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#8)]  
   
@@ -1253,11 +1259,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="Start">Opcional. Expresión numérica que establece la posición inicial de cada búsqueda. Si se omite, la búsqueda comienza en la posición del primer carácter. El índice de inicio está basado en 1.</param>
+        <param name="Start">Opcional. Expresión numérica que establece la posición inicial de cada búsqueda. Si se omite, la búsqueda comienza en la posición del primer carácter. El índice de inicio es de base 1.</param>
         <param name="StartPos">To be added.</param>
-        <param name="String1">Obligatorio. <see langword="String" /> Expresión que se está buscando.</param>
-        <param name="String2">Obligatorio. <see langword="String" /> Expresión que se busca.</param>
-        <param name="Compare">Opcional. Especifica el tipo de comparación de cadenas. Si <paramref name="Compare" /> se omite, el <see langword="Option Compare" /> configuración determina el tipo de comparación.</param>
+        <param name="String1">Obligatorio. Expresión de tipo <see langword="String" /> en la que se va a buscar.</param>
+        <param name="String2">Obligatorio. Expresión de tipo <see langword="String" /> que se va a buscar.</param>
+        <param name="Compare">Opcional. Especifica el tipo de comparación de cadenas. Si se omite <paramref name="Compare" />, la configuración de <see langword="Option Compare" /> determina el tipo de comparación.</param>
         <summary>Devuelve un entero que especifica la posición inicial de la primera aparición de una cadena dentro de otra.</summary>
         <returns><list type="table">
             <item>
@@ -1280,16 +1286,16 @@
               </description>
             </item>
             <item>
-              <term>
-                <paramref name="String2" /> no se encuentra 
+              <term>No se encuentra 
+                <paramref name="String2" />. 
  </term>
               <description> 0 
  </description>
             </item>
             <item>
               <term>
-                <paramref name="String2" /> se encuentra dentro de <paramref name="String1" /></term>
-              <description> Posición donde comienza la coincidencia 
+                <paramref name="String2" /> se encuentra dentro de <paramref name="String1" />.</term>
+              <description> Posición donde empieza la coincidencia 
  </description>
             </item>
             <item>
@@ -1318,7 +1324,7 @@
    
   
 ## Examples  
- Este ejemplo se usa el `InStr` función para devolver la posición de la primera aparición de una cadena dentro de otra.  
+ En este ejemplo se usa la función `InStr` para devolver la posición de la primera aparición de una cadena dentro de otra.  
   
  [!code-vb[VbVbalrStrings#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#8)]  
   
@@ -1366,11 +1372,11 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="StringCheck">Obligatorio. Expresión de cadena que se va a buscar.</param>
+        <param name="StringCheck">Obligatorio. Expresión de cadena en la que se va a buscar.</param>
         <param name="StringMatch">Obligatorio. Expresión de cadena que se va a buscar.</param>
-        <param name="Start">Opcional. Expresión numérica que establece la posición inicial basada en uno para cada búsqueda, empezando por el lado izquierdo de la cadena. Si se omite <paramref name="Start" />, se utiliza -1, lo que significa que la búsqueda comienza en la posición del último carácter. Búsqueda, a continuación, se realiza de derecha a izquierda.</param>
-        <param name="Compare">Opcional. Valor numérico que indica el tipo de comparación que se va a utilizar al evaluar subcadenas. Si se omite, se realiza una comparación binaria. Consulte configuración de los valores.</param>
-        <summary>Devuelve la posición de la primera aparición de una cadena dentro de otra, comenzando por el lado derecho de la cadena.</summary>
+        <param name="Start">Opcional. Expresión numérica que establece la posición inicial de base 1 para cada búsqueda, empezando por el lado izquierdo de la cadena. Si se omite <paramref name="Start" />, se utiliza -1, lo que significa que la búsqueda comienza en la posición del último carácter. A continuación, la búsqueda se realiza de derecha a izquierda.</param>
+        <param name="Compare">Opcional. Valor numérico que indica el tipo de comparación que se va a utilizar al evaluar subcadenas. Si se omite, se realiza una comparación binaria. Para obtener los valores, vea Configuración.</param>
+        <summary>Devuelve la posición de la primera aparición de una cadena dentro de otra, comenzando por el extremo derecho de la cadena.</summary>
         <returns><list type="table">
             <item>
               <term> Si 
@@ -1380,30 +1386,30 @@
             </item>
             <item>
               <term>
-                <paramref name="StringCheck" /> es de longitud cero 
+                <paramref name="StringCheck" /> tiene longitud cero 
  </term>
               <description> 0 
  </description>
             </item>
             <item>
               <term>
-                <paramref name="StringMatch" /> es de longitud cero 
+                <paramref name="StringMatch" /> tiene longitud cero 
  </term>
               <description>
                 <paramref name="Start" />
               </description>
             </item>
             <item>
-              <term>
-                <paramref name="StringMatch" /> no se encuentra 
+              <term>No se encuentra 
+                <paramref name="StringMatch" />. 
  </term>
               <description> 0 
  </description>
             </item>
             <item>
               <term>
-                <paramref name="StringMatch" /> se encuentra dentro de <paramref name="StringCheck" /></term>
-              <description> Posición en la que se encuentra la primera coincidencia, empezando por el lado derecho de la cadena.  
+                <paramref name="StringMatch" /> se encuentra dentro de <paramref name="StringCheck" />.</term>
+              <description> La posición en la que se localice la primera coincidencia, comenzando por el extremo derecho de la cadena  
   
  </description>
             </item>
@@ -1448,7 +1454,7 @@
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Devuelve una cadena creada mediante la combinación de varias subcadenas contenidas en una matriz.</summary>
+        <summary>Devuelve una cadena creada a partir de la combinación de varias subcadenas contenidas en una matriz.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="Join">
@@ -1466,18 +1472,19 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="SourceArray" Type="System.Object[]" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Delimiter" Type="System.String" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="SourceArray" Type="System.Object[]" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="Delimiter" Type="System.String" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="SourceArray">Obligatorio. Matriz unidimensional que contiene las subcadenas que se unirán.</param>
-        <param name="Delimiter">Opcional. Cualquier cadena utilizada para separar las subcadenas en la cadena devuelta. Si se omite, el carácter de espacio ("") se utiliza. Si <paramref name="Delimiter" /> es una cadena de longitud cero ("") o <see langword="Nothing" />, todos los elementos de la lista se concatenan sin delimitadores.</param>
-        <summary>Devuelve una cadena creada mediante la combinación de varias subcadenas contenidas en una matriz.</summary>
+        <param name="SourceArray">Obligatorio. Matriz unidimensional que contiene las subcadenas que se van a unir.</param>
+        <param name="Delimiter">Opcional. Cualquier cadena que se utilice para separar las subcadenas en la cadena devuelta. Si se omite, se utiliza el carácter de espacio (" "). Si <paramref name="Delimiter" /> es una cadena de longitud cero ("") o <see langword="Nothing" />, todos los elementos de la lista se concatenan sin delimitadores.</param>
+        <summary>Devuelve una cadena creada a partir de la combinación de varias subcadenas contenidas en una matriz.</summary>
         <returns>Cadena creada a partir de la combinación de varias subcadenas contenidas en una matriz.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1497,7 +1504,7 @@
         <exception cref="T:System.ArgumentException"><paramref name="SourceArray" /> no es unidimensional.</exception>
         <altmember cref="M:Microsoft.VisualBasic.Strings.Split(System.String,System.String,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
         <altmember cref="T:System.ArgumentException" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <Member MemberName="Join">
@@ -1515,18 +1522,19 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="SourceArray" Type="System.String[]" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Delimiter" Type="System.String" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="SourceArray" Type="System.String[]" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="Delimiter" Type="System.String" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="SourceArray">Obligatorio. Matriz unidimensional que contiene las subcadenas que se unirán.</param>
-        <param name="Delimiter">Opcional. Cualquier cadena utilizada para separar las subcadenas en la cadena devuelta. Si se omite, el carácter de espacio ("") se utiliza. Si <paramref name="Delimiter" /> es una cadena de longitud cero ("") o <see langword="Nothing" />, todos los elementos de la lista se concatenan sin delimitadores.</param>
-        <summary>Devuelve una cadena creada mediante la combinación de varias subcadenas contenidas en una matriz.</summary>
+        <param name="SourceArray">Obligatorio. Matriz unidimensional que contiene las subcadenas que se van a unir.</param>
+        <param name="Delimiter">Opcional. Cualquier cadena que se utilice para separar las subcadenas en la cadena devuelta. Si se omite, se utiliza el carácter de espacio (" "). Si <paramref name="Delimiter" /> es una cadena de longitud cero ("") o <see langword="Nothing" />, todos los elementos de la lista se concatenan sin delimitadores.</param>
+        <summary>Devuelve una cadena creada a partir de la combinación de varias subcadenas contenidas en una matriz.</summary>
         <returns>Cadena creada a partir de la combinación de varias subcadenas contenidas en una matriz.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1546,7 +1554,7 @@
         <exception cref="T:System.ArgumentException"><paramref name="SourceArray" /> no es unidimensional.</exception>
         <altmember cref="M:Microsoft.VisualBasic.Strings.Split(System.String,System.String,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
         <altmember cref="T:System.ArgumentException" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="LCase">
@@ -1574,15 +1582,16 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Value" Type="System.Char" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Value" Type="System.Char" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="Value">Obligatorio. Cualquier <see langword="String" /> o <see langword="Char" /> expresión.</param>
+        <param name="Value">Obligatorio. Cualquier expresión válida de tipo <see langword="String" /> o <see langword="Char" />.</param>
         <summary>Devuelve una cadena o un carácter convertidos en minúscula.</summary>
         <returns>Cadena o un carácter convertidos en minúscula.</returns>
         <remarks>
@@ -1626,15 +1635,16 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Value" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Value" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="Value">Obligatorio. Cualquier <see langword="String" /> o <see langword="Char" /> expresión.</param>
+        <param name="Value">Obligatorio. Cualquier expresión válida de tipo <see langword="String" /> o <see langword="Char" />.</param>
         <summary>Devuelve una cadena o un carácter convertidos en minúscula.</summary>
         <returns>Cadena o un carácter convertidos en minúscula.</returns>
         <remarks>
@@ -1688,9 +1698,9 @@
         <Parameter Name="Length" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="str">Obligatorio. <see langword="String" /> expresión de la que se devuelven los caracteres situados más.</param>
-        <param name="Length">Obligatorio. <see langword="Integer" /> expresión. Expresión numérica que indica el número de caracteres que para devolver. Si es 0, una cadena de longitud cero ("") se devuelve. Si el mayor o igual que el número de caracteres de <paramref name="str" />, se devuelve la cadena completa.</param>
-        <summary>Devuelve una cadena que contiene un número especificado de caracteres del lado izquierdo de una cadena.</summary>
+        <param name="str">Obligatorio. Expresión de tipo <see langword="String" /> de la que se devuelven los caracteres situados más a la izquierda.</param>
+        <param name="Length">Obligatorio. Expresión <see langword="Integer" />. Expresión numérica que indica el número de caracteres que se van a devolver. Si es 0, se devuelve una cadena de longitud cero (""). Si es mayor o igual que el número de caracteres en <paramref name="str" />, se devuelve la cadena completa.</param>
+        <summary>Devuelve una cadena que contiene un número especificado de caracteres a partir del lado izquierdo de una cadena.</summary>
         <returns>Cadena que contiene un número especificado de caracteres a partir del lado izquierdo de una cadena.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1715,7 +1725,7 @@
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Mid" />
         <altmember cref="T:System.ArgumentException" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Len">
@@ -1752,7 +1762,7 @@
         <Parameter Name="Expression" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="Expression">Cualquier <see langword="String" /> expresión o nombre de variable. Si <paramref name="Expression" /> es de tipo <see langword="Object" />, <see langword="Len" /> función devuelve el tamaño que se escribirá en el archivo por el <see langword="FilePut" /> función.</param>
+        <param name="Expression">Cualquier expresión de tipo <see langword="String" /> o nombre de variable válidos. Si <paramref name="Expression" /> es del tipo <see langword="Object" />, la función <see langword="Len" /> devuelve el tamaño con el que la función <see langword="FilePut" /> escribirá en el archivo.</param>
         <summary>Devuelve un entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</summary>
         <returns>Número entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</returns>
         <remarks>
@@ -1775,7 +1785,7 @@
    
   
 ## Examples  
- Este ejemplo se utiliza `Len` para devolver el número de caracteres en una cadena.  
+ En este ejemplo se utiliza `Len` para devolver el número de caracteres de una cadena:  
   
  [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
   
@@ -1784,7 +1794,7 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Resumen de tipos de datos (Visual Basic)</related>
       </Docs>
     </Member>
@@ -1813,7 +1823,7 @@
         <Parameter Name="Expression" Type="System.Byte" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="Expression">Cualquier <see langword="String" /> expresión o nombre de variable. Si <paramref name="Expression" /> es de tipo <see langword="Object" />, <see langword="Len" /> función devuelve el tamaño que se escribirá en el archivo por el <see langword="FilePut" /> función.</param>
+        <param name="Expression">Cualquier expresión de tipo <see langword="String" /> o nombre de variable válidos. Si <paramref name="Expression" /> es del tipo <see langword="Object" />, la función <see langword="Len" /> devuelve el tamaño con el que la función <see langword="FilePut" /> escribirá en el archivo.</param>
         <summary>Devuelve un entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</summary>
         <returns>Número entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</returns>
         <remarks>
@@ -1836,7 +1846,7 @@
    
   
 ## Examples  
- Este ejemplo se utiliza `Len` para devolver el número de caracteres en una cadena.  
+ En este ejemplo se utiliza `Len` para devolver el número de caracteres de una cadena:  
   
  [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
   
@@ -1845,7 +1855,7 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Resumen de tipos de datos (Visual Basic)</related>
       </Docs>
     </Member>
@@ -1874,7 +1884,7 @@
         <Parameter Name="Expression" Type="System.Char" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="Expression">Cualquier <see langword="String" /> expresión o nombre de variable. Si <paramref name="Expression" /> es de tipo <see langword="Object" />, <see langword="Len" /> función devuelve el tamaño que se escribirá en el archivo por el <see langword="FilePut" /> función.</param>
+        <param name="Expression">Cualquier expresión de tipo <see langword="String" /> o nombre de variable válidos. Si <paramref name="Expression" /> es del tipo <see langword="Object" />, la función <see langword="Len" /> devuelve el tamaño con el que la función <see langword="FilePut" /> escribirá en el archivo.</param>
         <summary>Devuelve un entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</summary>
         <returns>Número entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</returns>
         <remarks>
@@ -1897,7 +1907,7 @@
    
   
 ## Examples  
- Este ejemplo se utiliza `Len` para devolver el número de caracteres en una cadena.  
+ En este ejemplo se utiliza `Len` para devolver el número de caracteres de una cadena:  
   
  [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
   
@@ -1906,7 +1916,7 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Resumen de tipos de datos (Visual Basic)</related>
       </Docs>
     </Member>
@@ -1935,7 +1945,7 @@
         <Parameter Name="Expression" Type="System.DateTime" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="Expression">Cualquier <see langword="String" /> expresión o nombre de variable. Si <paramref name="Expression" /> es de tipo <see langword="Object" />, <see langword="Len" /> función devuelve el tamaño que se escribirá en el archivo por el <see langword="FilePut" /> función.</param>
+        <param name="Expression">Cualquier expresión de tipo <see langword="String" /> o nombre de variable válidos. Si <paramref name="Expression" /> es del tipo <see langword="Object" />, la función <see langword="Len" /> devuelve el tamaño con el que la función <see langword="FilePut" /> escribirá en el archivo.</param>
         <summary>Devuelve un entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</summary>
         <returns>Número entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</returns>
         <remarks>
@@ -1958,7 +1968,7 @@
    
   
 ## Examples  
- Este ejemplo se utiliza `Len` para devolver el número de caracteres en una cadena.  
+ En este ejemplo se utiliza `Len` para devolver el número de caracteres de una cadena:  
   
  [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
   
@@ -1967,7 +1977,7 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Resumen de tipos de datos (Visual Basic)</related>
       </Docs>
     </Member>
@@ -1996,7 +2006,7 @@
         <Parameter Name="Expression" Type="System.Decimal" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="Expression">Cualquier <see langword="String" /> expresión o nombre de variable. Si <paramref name="Expression" /> es de tipo <see langword="Object" />, <see langword="Len" /> función devuelve el tamaño que se escribirá en el archivo por el <see langword="FilePut" /> función.</param>
+        <param name="Expression">Cualquier expresión de tipo <see langword="String" /> o nombre de variable válidos. Si <paramref name="Expression" /> es del tipo <see langword="Object" />, la función <see langword="Len" /> devuelve el tamaño con el que la función <see langword="FilePut" /> escribirá en el archivo.</param>
         <summary>Devuelve un entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</summary>
         <returns>Número entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</returns>
         <remarks>
@@ -2019,7 +2029,7 @@
    
   
 ## Examples  
- Este ejemplo se utiliza `Len` para devolver el número de caracteres en una cadena.  
+ En este ejemplo se utiliza `Len` para devolver el número de caracteres de una cadena:  
   
  [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
   
@@ -2028,7 +2038,7 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Resumen de tipos de datos (Visual Basic)</related>
       </Docs>
     </Member>
@@ -2057,7 +2067,7 @@
         <Parameter Name="Expression" Type="System.Double" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="Expression">Cualquier <see langword="String" /> expresión o nombre de variable. Si <paramref name="Expression" /> es de tipo <see langword="Object" />, <see langword="Len" /> función devuelve el tamaño que se escribirá en el archivo por el <see langword="FilePut" /> función.</param>
+        <param name="Expression">Cualquier expresión de tipo <see langword="String" /> o nombre de variable válidos. Si <paramref name="Expression" /> es del tipo <see langword="Object" />, la función <see langword="Len" /> devuelve el tamaño con el que la función <see langword="FilePut" /> escribirá en el archivo.</param>
         <summary>Devuelve un entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</summary>
         <returns>Número entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</returns>
         <remarks>
@@ -2080,7 +2090,7 @@
    
   
 ## Examples  
- Este ejemplo se utiliza `Len` para devolver el número de caracteres en una cadena.  
+ En este ejemplo se utiliza `Len` para devolver el número de caracteres de una cadena:  
   
  [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
   
@@ -2089,7 +2099,7 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Resumen de tipos de datos (Visual Basic)</related>
       </Docs>
     </Member>
@@ -2118,7 +2128,7 @@
         <Parameter Name="Expression" Type="System.Int16" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="Expression">Cualquier <see langword="String" /> expresión o nombre de variable. Si <paramref name="Expression" /> es de tipo <see langword="Object" />, <see langword="Len" /> función devuelve el tamaño que se escribirá en el archivo por el <see langword="FilePut" /> función.</param>
+        <param name="Expression">Cualquier expresión de tipo <see langword="String" /> o nombre de variable válidos. Si <paramref name="Expression" /> es del tipo <see langword="Object" />, la función <see langword="Len" /> devuelve el tamaño con el que la función <see langword="FilePut" /> escribirá en el archivo.</param>
         <summary>Devuelve un entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</summary>
         <returns>Número entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</returns>
         <remarks>
@@ -2141,7 +2151,7 @@
    
   
 ## Examples  
- Este ejemplo se utiliza `Len` para devolver el número de caracteres en una cadena.  
+ En este ejemplo se utiliza `Len` para devolver el número de caracteres de una cadena:  
   
  [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
   
@@ -2150,7 +2160,7 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Resumen de tipos de datos (Visual Basic)</related>
       </Docs>
     </Member>
@@ -2179,7 +2189,7 @@
         <Parameter Name="Expression" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="Expression">Cualquier <see langword="String" /> expresión o nombre de variable. Si <paramref name="Expression" /> es de tipo <see langword="Object" />, <see langword="Len" /> función devuelve el tamaño que se escribirá en el archivo por el <see langword="FilePut" /> función.</param>
+        <param name="Expression">Cualquier expresión de tipo <see langword="String" /> o nombre de variable válidos. Si <paramref name="Expression" /> es del tipo <see langword="Object" />, la función <see langword="Len" /> devuelve el tamaño con el que la función <see langword="FilePut" /> escribirá en el archivo.</param>
         <summary>Devuelve un entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</summary>
         <returns>Número entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</returns>
         <remarks>
@@ -2202,7 +2212,7 @@
    
   
 ## Examples  
- Este ejemplo se utiliza `Len` para devolver el número de caracteres en una cadena.  
+ En este ejemplo se utiliza `Len` para devolver el número de caracteres de una cadena:  
   
  [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
   
@@ -2211,7 +2221,7 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Resumen de tipos de datos (Visual Basic)</related>
       </Docs>
     </Member>
@@ -2240,7 +2250,7 @@
         <Parameter Name="Expression" Type="System.Int64" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="Expression">Cualquier <see langword="String" /> expresión o nombre de variable. Si <paramref name="Expression" /> es de tipo <see langword="Object" />, <see langword="Len" /> función devuelve el tamaño que se escribirá en el archivo por el <see langword="FilePut" /> función.</param>
+        <param name="Expression">Cualquier expresión de tipo <see langword="String" /> o nombre de variable válidos. Si <paramref name="Expression" /> es del tipo <see langword="Object" />, la función <see langword="Len" /> devuelve el tamaño con el que la función <see langword="FilePut" /> escribirá en el archivo.</param>
         <summary>Devuelve un entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</summary>
         <returns>Número entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</returns>
         <remarks>
@@ -2263,7 +2273,7 @@
    
   
 ## Examples  
- Este ejemplo se utiliza `Len` para devolver el número de caracteres en una cadena.  
+ En este ejemplo se utiliza `Len` para devolver el número de caracteres de una cadena:  
   
  [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
   
@@ -2272,7 +2282,7 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Resumen de tipos de datos (Visual Basic)</related>
       </Docs>
     </Member>
@@ -2306,7 +2316,7 @@
         <Parameter Name="Expression" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="Expression">Cualquier <see langword="String" /> expresión o nombre de variable. Si <paramref name="Expression" /> es de tipo <see langword="Object" />, <see langword="Len" /> función devuelve el tamaño que se escribirá en el archivo por el <see langword="FilePut" /> función.</param>
+        <param name="Expression">Cualquier expresión de tipo <see langword="String" /> o nombre de variable válidos. Si <paramref name="Expression" /> es del tipo <see langword="Object" />, la función <see langword="Len" /> devuelve el tamaño con el que la función <see langword="FilePut" /> escribirá en el archivo.</param>
         <summary>Devuelve un entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</summary>
         <returns>Número entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</returns>
         <remarks>
@@ -2329,7 +2339,7 @@
    
   
 ## Examples  
- Este ejemplo se utiliza `Len` para devolver el número de caracteres en una cadena.  
+ En este ejemplo se utiliza `Len` para devolver el número de caracteres de una cadena:  
   
  [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
   
@@ -2338,7 +2348,7 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Resumen de tipos de datos (Visual Basic)</related>
       </Docs>
     </Member>
@@ -2371,7 +2381,7 @@
         <Parameter Name="Expression" Type="System.SByte" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="Expression">Cualquier <see langword="String" /> expresión o nombre de variable. Si <paramref name="Expression" /> es de tipo <see langword="Object" />, <see langword="Len" /> función devuelve el tamaño que se escribirá en el archivo por el <see langword="FilePut" /> función.</param>
+        <param name="Expression">Cualquier expresión de tipo <see langword="String" /> o nombre de variable válidos. Si <paramref name="Expression" /> es del tipo <see langword="Object" />, la función <see langword="Len" /> devuelve el tamaño con el que la función <see langword="FilePut" /> escribirá en el archivo.</param>
         <summary>Devuelve un entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</summary>
         <returns>Número entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</returns>
         <remarks>
@@ -2394,7 +2404,7 @@
    
   
 ## Examples  
- Este ejemplo se utiliza `Len` para devolver el número de caracteres en una cadena.  
+ En este ejemplo se utiliza `Len` para devolver el número de caracteres de una cadena:  
   
  [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
   
@@ -2404,7 +2414,7 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Resumen de tipos de datos (Visual Basic)</related>
       </Docs>
     </Member>
@@ -2433,7 +2443,7 @@
         <Parameter Name="Expression" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="Expression">Cualquier <see langword="String" /> expresión o nombre de variable. Si <paramref name="Expression" /> es de tipo <see langword="Object" />, <see langword="Len" /> función devuelve el tamaño que se escribirá en el archivo por el <see langword="FilePut" /> función.</param>
+        <param name="Expression">Cualquier expresión de tipo <see langword="String" /> o nombre de variable válidos. Si <paramref name="Expression" /> es del tipo <see langword="Object" />, la función <see langword="Len" /> devuelve el tamaño con el que la función <see langword="FilePut" /> escribirá en el archivo.</param>
         <summary>Devuelve un entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</summary>
         <returns>Número entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</returns>
         <remarks>
@@ -2456,7 +2466,7 @@
    
   
 ## Examples  
- Este ejemplo se utiliza `Len` para devolver el número de caracteres en una cadena.  
+ En este ejemplo se utiliza `Len` para devolver el número de caracteres de una cadena:  
   
  [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
   
@@ -2465,7 +2475,7 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Resumen de tipos de datos (Visual Basic)</related>
       </Docs>
     </Member>
@@ -2494,7 +2504,7 @@
         <Parameter Name="Expression" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="Expression">Cualquier <see langword="String" /> expresión o nombre de variable. Si <paramref name="Expression" /> es de tipo <see langword="Object" />, <see langword="Len" /> función devuelve el tamaño que se escribirá en el archivo por el <see langword="FilePut" /> función.</param>
+        <param name="Expression">Cualquier expresión de tipo <see langword="String" /> o nombre de variable válidos. Si <paramref name="Expression" /> es del tipo <see langword="Object" />, la función <see langword="Len" /> devuelve el tamaño con el que la función <see langword="FilePut" /> escribirá en el archivo.</param>
         <summary>Devuelve un entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</summary>
         <returns>Número entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</returns>
         <remarks>
@@ -2517,7 +2527,7 @@
    
   
 ## Examples  
- Este ejemplo se utiliza `Len` para devolver el número de caracteres en una cadena.  
+ En este ejemplo se utiliza `Len` para devolver el número de caracteres de una cadena:  
   
  [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
   
@@ -2526,7 +2536,7 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Resumen de tipos de datos (Visual Basic)</related>
       </Docs>
     </Member>
@@ -2559,7 +2569,7 @@
         <Parameter Name="Expression" Type="System.UInt16" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="Expression">Cualquier <see langword="String" /> expresión o nombre de variable. Si <paramref name="Expression" /> es de tipo <see langword="Object" />, <see langword="Len" /> función devuelve el tamaño que se escribirá en el archivo por el <see langword="FilePut" /> función.</param>
+        <param name="Expression">Cualquier expresión de tipo <see langword="String" /> o nombre de variable válidos. Si <paramref name="Expression" /> es del tipo <see langword="Object" />, la función <see langword="Len" /> devuelve el tamaño con el que la función <see langword="FilePut" /> escribirá en el archivo.</param>
         <summary>Devuelve un entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</summary>
         <returns>Número entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</returns>
         <remarks>
@@ -2582,7 +2592,7 @@
    
   
 ## Examples  
- Este ejemplo se utiliza `Len` para devolver el número de caracteres en una cadena.  
+ En este ejemplo se utiliza `Len` para devolver el número de caracteres de una cadena:  
   
  [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
   
@@ -2592,7 +2602,7 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Resumen de tipos de datos (Visual Basic)</related>
       </Docs>
     </Member>
@@ -2625,7 +2635,7 @@
         <Parameter Name="Expression" Type="System.UInt32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="Expression">Cualquier <see langword="String" /> expresión o nombre de variable. Si <paramref name="Expression" /> es de tipo <see langword="Object" />, <see langword="Len" /> función devuelve el tamaño que se escribirá en el archivo por el <see langword="FilePut" /> función.</param>
+        <param name="Expression">Cualquier expresión de tipo <see langword="String" /> o nombre de variable válidos. Si <paramref name="Expression" /> es del tipo <see langword="Object" />, la función <see langword="Len" /> devuelve el tamaño con el que la función <see langword="FilePut" /> escribirá en el archivo.</param>
         <summary>Devuelve un entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</summary>
         <returns>Número entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</returns>
         <remarks>
@@ -2648,7 +2658,7 @@
    
   
 ## Examples  
- Este ejemplo se utiliza `Len` para devolver el número de caracteres en una cadena.  
+ En este ejemplo se utiliza `Len` para devolver el número de caracteres de una cadena:  
   
  [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
   
@@ -2658,7 +2668,7 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Resumen de tipos de datos (Visual Basic)</related>
       </Docs>
     </Member>
@@ -2691,7 +2701,7 @@
         <Parameter Name="Expression" Type="System.UInt64" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="Expression">Cualquier <see langword="String" /> expresión o nombre de variable. Si <paramref name="Expression" /> es de tipo <see langword="Object" />, <see langword="Len" /> función devuelve el tamaño que se escribirá en el archivo por el <see langword="FilePut" /> función.</param>
+        <param name="Expression">Cualquier expresión de tipo <see langword="String" /> o nombre de variable válidos. Si <paramref name="Expression" /> es del tipo <see langword="Object" />, la función <see langword="Len" /> devuelve el tamaño con el que la función <see langword="FilePut" /> escribirá en el archivo.</param>
         <summary>Devuelve un entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</summary>
         <returns>Número entero que contiene el número de caracteres de una cadena o el número nominal de bytes necesarios para almacenar una variable.</returns>
         <remarks>
@@ -2714,7 +2724,7 @@
    
   
 ## Examples  
- Este ejemplo se utiliza `Len` para devolver el número de caracteres en una cadena.  
+ En este ejemplo se utiliza `Len` para devolver el número de caracteres de una cadena:  
   
  [!code-vb[VbVbalrStrings#33](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#33)]  
   
@@ -2724,7 +2734,7 @@
         <altmember cref="Overload:Microsoft.VisualBasic.FileSystem.FilePut" />
         <altmember cref="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Resumen de tipos de datos (Visual Basic)</related>
       </Docs>
     </Member>
@@ -2744,18 +2754,19 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Source" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Length" Type="System.Int32" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Source" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="Length" Type="System.Int32" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="Source">Obligatorio. <see langword="String" /> expresión. Nombre de variable de cadena.</param>
-        <param name="Length">Obligatorio. <see langword="Integer" /> expresión. Longitud de la cadena devuelta.</param>
-        <summary>Devuelve una cadena alineada a la izquierda que contiene la cadena especificada ajustada a la longitud especificada.</summary>
+        <param name="Source">Obligatorio. Expresión <see langword="String" />. Nombre de variable de cadena.</param>
+        <param name="Length">Obligatorio. Expresión <see langword="Integer" />. Longitud de la cadena devuelta.</param>
+        <summary>Devuelve una cadena alineada a la izquierda que contiene la cadena especificada ajustada a la longitud indicada.</summary>
         <returns>Cadena alineada a la izquierda que contiene la cadena especificada ajustada a la longitud indicada.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2773,9 +2784,9 @@
  ]]></format>
         </remarks>
         <altmember cref="M:Microsoft.VisualBasic.Strings.RSet(System.String,System.Int32)" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Resumen de tipos de datos (Visual Basic)</related>
-        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md">Uso eficiente de tipos de datos</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md">Uso eficiente de los tipos de datos</related>
       </Docs>
     </Member>
     <Member MemberName="LTrim">
@@ -2803,8 +2814,8 @@
         <Parameter Name="str" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="str">Obligatorio. Cualquier expresión <see langword="String" /> válida.</param>
-        <summary>Devuelve una cadena que contiene una copia de una cadena especificada sin espacios iniciales (<see langword="LTrim" />), sin espacios finales (<see langword="RTrim" />), o sin espacios iniciales ni finales (<see langword="Trim" />).</summary>
+        <param name="str">Obligatorio. Cualquier expresión de <see langword="String" /> válida.</param>
+        <summary>Devuelve una cadena que contiene una copia de una cadena especificada sin espacios iniciales (<see langword="LTrim" />), sin espacios finales (<see langword="RTrim" />) o sin espacios iniciales ni finales (<see langword="Trim" />).</summary>
         <returns>Cadena que contiene una copia de una cadena especificada sin espacios iniciales (<see langword="LTrim" />), sin espacios finales (<see langword="RTrim" />) o sin espacios iniciales ni finales (<see langword="Trim" />).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2815,7 +2826,7 @@
    
   
 ## Examples  
- Este ejemplo se usa el `LTrim` función para quitar los espacios iniciales y la `RTrim` espacios de función para quitar los finales de una variable de cadena. Usa el `Trim` función para quitar ambos tipos de espacios.  
+ En este ejemplo se usa la función `LTrim` para quitar los espacios iniciales y la función `RTrim` para quitar los espacios finales de una variable de cadena. También se usa la función `Trim` para quitar ambos tipos de espacios.  
   
  [!code-vb[VbVbalrStrings#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#25)]  
   
@@ -2826,7 +2837,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.Left(System.String,System.Int32)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.Right(System.String,System.Int32)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.Space(System.Int32)" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Mid">
@@ -2864,9 +2875,9 @@
         <Parameter Name="Start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="str">Obligatorio. <see langword="String" /> expresión desde el que se devuelven caracteres.</param>
-        <param name="Start">Obligatorio. <see langword="Integer" /> expresión. Posición inicial de los caracteres que se va a devolver. Si <paramref name="Start" /> es mayor que el número de caracteres en <paramref name="str" />, el <see langword="Mid" /> función devuelve una cadena de longitud cero (""). <paramref name="Start" /> está basado en uno.</param>
-        <summary>Devuelve una cadena que contiene todos los caracteres a partir de una posición especificada en una cadena.</summary>
+        <param name="str">Obligatorio. Expresión de tipo <see langword="String" /> de la que se devuelven caracteres.</param>
+        <param name="Start">Obligatorio. Expresión <see langword="Integer" />. Posición inicial de los caracteres que se van a devolver. Si <paramref name="Start" /> es mayor que el número de caracteres de <paramref name="str" />, la función <see langword="Mid" /> devuelve una cadena de longitud cero (""). <paramref name="Start" /> se basa en uno.</param>
+        <summary>Devuelve una cadena que contiene todos los caracteres a partir de la posición especificada de una cadena.</summary>
         <returns>Una cadena que consta de todos los caracteres a partir de la posición especificada en la cadena.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2896,7 +2907,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.RTrim(System.String)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.Right(System.String,System.Int32)" />
         <altmember cref="T:System.ArgumentException" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/index.md">Cadenas en Visual Basic</related>
         <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/introduction-to-strings.md">Introducción a las cadenas en Visual Basic</related>
         <related type="Article" href="~/docs/visual-basic/language-reference/statements/mid-statement.md">Mid (Instrucción)</related>
@@ -2929,10 +2940,10 @@
         <Parameter Name="Length" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="str">Obligatorio. <see langword="String" /> expresión desde el que se devuelven caracteres.</param>
-        <param name="Start">Obligatorio. <see langword="Integer" /> expresión. Posición inicial de los caracteres que se va a devolver. Si <paramref name="Start" /> es mayor que el número de caracteres en <paramref name="str" />, el <see langword="Mid" /> función devuelve una cadena de longitud cero (""). <paramref name="Start" /> se basa en uno.</param>
-        <param name="Length">Opcional. <see langword="Integer" /> expresión. Número de caracteres que se va a devolver. Si se omite o si hay menos de <paramref name="Length" /> caracteres del texto (incluido el carácter que ocupa la posición <paramref name="Start" />), se devuelven todos los caracteres desde la posición inicial hasta el final de la cadena.</param>
-        <summary>Devuelve una cadena que contiene un número especificado de caracteres a partir de una posición especificada en una cadena.</summary>
+        <param name="str">Obligatorio. Expresión de tipo <see langword="String" /> de la que se devuelven caracteres.</param>
+        <param name="Start">Obligatorio. Expresión <see langword="Integer" />. Posición inicial de los caracteres que se van a devolver. Si <paramref name="Start" /> es mayor que el número de caracteres de <paramref name="str" />, la función <see langword="Mid" /> devuelve una cadena de longitud cero (""). <paramref name="Start" /> se basa en uno.</param>
+        <param name="Length">Opcional. Expresión <see langword="Integer" />. Número de caracteres que se van a devolver. Si se omite o si hay un número de caracteres menor que <paramref name="Length" /> en el texto (incluido el carácter situado en la posición <paramref name="Start" />), se devuelven todos los caracteres desde la posición inicial hasta la posición final de la cadena.</param>
+        <summary>Devuelve una cadena que contiene un número de caracteres especificado a partir de una posición especificada de una cadena.</summary>
         <returns>Una cadena que consta del número especificado de caracteres a partir de la posición especificada en la cadena.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2962,7 +2973,7 @@
         <altmember cref="M:Microsoft.VisualBasic.Strings.RTrim(System.String)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.Right(System.String,System.Int32)" />
         <altmember cref="T:System.ArgumentException" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/index.md">Cadenas en Visual Basic</related>
         <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/introduction-to-strings.md">Introducción a las cadenas en Visual Basic</related>
         <related type="Article" href="~/docs/visual-basic/language-reference/statements/mid-statement.md">Mid (Instrucción)</related>
@@ -2983,17 +2994,18 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Find" Type="System.String" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Replacement" Type="System.String" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Start" Type="System.Int32" Index="3" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Count" Type="System.Int32" Index="4" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod" Index="5" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Parameter Name="Expression" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="Find" Type="System.String" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="Replacement" Type="System.String" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="Start" Type="System.Int32" Index="3" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="Count" Type="System.Int32" Index="4" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod" Index="5" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <Attributes>
             <Attribute>
               <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
@@ -3002,19 +3014,19 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="Expression">Obligatorio. Cadena de expresión que contiene la subcadena que se va a reemplazar.</param>
+        <param name="Expression">Obligatorio. Expresión de cadena que contiene la subcadena que se va a reemplazar.</param>
         <param name="Find">Obligatorio. Subcadena que se va a buscar.</param>
         <param name="Replacement">Obligatorio. Subcadena de reemplazo.</param>
-        <param name="Start">Opcional. Posición dentro de <paramref name="Expression" /> que inicia una subcadena usada para el reemplazo. El valor devuelto de <see langword="Replace" /> es una cadena que comienza en <paramref name="Start" />, con las apropiadas sustituciones. Si se omite, se supone que el valor es 1.</param>
-        <param name="Count">Opcional. Número de sustituciones de subcadena para realizar. Si se omite, el valor predeterminado es -1, lo que significa que se van a realizar todos los reemplazos posibles.</param>
-        <param name="Compare">Opcional. Valor numérico que indica el tipo de comparación que se va a utilizar al evaluar subcadenas. Consulte configuración de los valores.</param>
-        <summary>Devuelve una cadena en el que una subcadena especificada se ha reemplazado por otra subcadena un número especificado de veces.</summary>
-        <returns><see langword="Replace" /> Devuelve los valores siguientes.  
+        <param name="Start">Opcional. Posición dentro de <paramref name="Expression" /> que inicia una subcadena usada para el reemplazo. El valor devuelto de <see langword="Replace" /> es una cadena que comienza en <paramref name="Start" />, con substituciones adecuadas. Si se omite, se supone que el valor es 1.</param>
+        <param name="Count">Opcional. Número de reemplazos de subcadena que se van a realizar. Si se omite, el valor predeterminado es -1, lo que significa que se van a realizar todos los reemplazos posibles.</param>
+        <param name="Compare">Opcional. Valor numérico que indica el tipo de comparación que se va a utilizar al evaluar subcadenas. Para obtener los valores, vea Configuración.</param>
+        <summary>Devuelve una cadena en la que la subcadena especificada se reemplaza determinado número de veces por otra subcadena.</summary>
+        <returns><see langword="Replace" /> devuelve los siguientes valores.  
   
  <list type="table"><item><term> Si 
- </term><description> Replace devolverá 
- </description></item><item><term><paramref name="Find" /> es de longitud cero o <see langword="Nothing" /></term><description> Copia de <paramref name="Expression" /></description></item><item><term><paramref name="Replace" /> es de longitud cero 
- </term><description> Copia de <paramref name="Expression" /> sin apariciones de <paramref name="Find" /></description></item><item><term><paramref name="Expression" /> es de longitud cero o <see langword="Nothing" />, o <paramref name="Start" /> es mayor que la longitud de <paramref name="Expression" /></term><description><see langword="Nothing" /></description></item><item><term><paramref name="Count" /> es 0 
+ </term><description> Replace devolverá: 
+ </description></item><item><term><paramref name="Find" /> es de longitud cero o <see langword="Nothing" /></term><description> Copia de <paramref name="Expression" /></description></item><item><term><paramref name="Replace" /> tiene longitud cero 
+ </term><description> Copia de <paramref name="Expression" /> sin apariciones de <paramref name="Find" /></description></item><item><term><paramref name="Expression" /> es de longitud cero o <see langword="Nothing" />, o bien <paramref name="Start" /> es mayor que la longitud de <paramref name="Expression" /></term><description><see langword="Nothing" /></description></item><item><term><paramref name="Count" /> es igual a 0, 
  </term><description> Copia de <paramref name="Expression" /></description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3045,7 +3057,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <exception cref="T:System.ArgumentException"><paramref name="Count" /> &lt; -1 o <paramref name="Start" /> &lt;= 0.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Filter" />
         <altmember cref="T:System.ArgumentException" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -3074,8 +3086,8 @@ Dim aString As String = Replace(TestString, "o", "i")
         <Parameter Name="Length" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="str">Obligatorio. <see langword="String" /> expresión de la que se devuelven los caracteres situados más.</param>
-        <param name="Length">Obligatorio. <see langword="Integer" />. Expresión numérica que indica el número de caracteres que para devolver. Si es 0, una cadena de longitud cero ("") se devuelve. Si el mayor o igual que el número de caracteres de <paramref name="str" />, se devuelve la cadena completa.</param>
+        <param name="str">Obligatorio. Expresión de tipo <see langword="String" /> de la que se devuelven los caracteres situados más a la derecha.</param>
+        <param name="Length">Obligatorio. <see langword="Integer" />. Expresión numérica que indica el número de caracteres que se van a devolver. Si es 0, se devuelve una cadena de longitud cero (""). Si es mayor o igual que el número de caracteres en <paramref name="str" />, se devuelve la cadena completa.</param>
         <summary>Devuelve una cadena que contiene un número especificado de caracteres desde el lado derecho de una cadena.</summary>
         <returns>Cadena que contiene un número especificado de caracteres desde el lado derecho de una cadena.</returns>
         <remarks>
@@ -3101,7 +3113,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Len" />
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Mid" />
         <altmember cref="T:System.ArgumentException" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <Member MemberName="RSet">
@@ -3120,18 +3132,19 @@ Dim aString As String = Replace(TestString, "o", "i")
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Source" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Length" Type="System.Int32" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Source" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="Length" Type="System.Int32" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="Source">Obligatorio. <see langword="String" /> expresión. Nombre de variable de cadena.</param>
-        <param name="Length">Obligatorio. <see langword="Integer" /> expresión. Longitud de la cadena devuelta.</param>
-        <summary>Devuelve una cadena alineada a la derecha que contiene la cadena especificada ajustada a la longitud especificada.</summary>
+        <param name="Source">Obligatorio. Expresión <see langword="String" />. Nombre de variable de cadena.</param>
+        <param name="Length">Obligatorio. Expresión <see langword="Integer" />. Longitud de la cadena devuelta.</param>
+        <summary>Devuelve una cadena alineada a la derecha que contiene la cadena especificada y con la longitud especificada.</summary>
         <returns>Cadena alineada a la derecha que contiene la cadena especificada y con la longitud especificada.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3149,9 +3162,9 @@ Dim aString As String = Replace(TestString, "o", "i")
  ]]></format>
         </remarks>
         <altmember cref="M:Microsoft.VisualBasic.Strings.LSet(System.String,System.Int32)" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/language-reference/data-types/data-type-summary.md">Resumen de tipos de datos (Visual Basic)</related>
-        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md">Uso eficiente de tipos de datos</related>
+        <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md">Uso eficiente de los tipos de datos</related>
       </Docs>
     </Member>
     <Member MemberName="RTrim">
@@ -3179,8 +3192,8 @@ Dim aString As String = Replace(TestString, "o", "i")
         <Parameter Name="str" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="str">Obligatorio. Cualquier expresión <see langword="String" /> válida.</param>
-        <summary>Devuelve una cadena que contiene una copia de una cadena especificada sin espacios iniciales (<see langword="LTrim" />), sin espacios finales (<see langword="RTrim" />), o sin espacios iniciales ni finales (<see langword="Trim" />).</summary>
+        <param name="str">Obligatorio. Cualquier expresión de <see langword="String" /> válida.</param>
+        <summary>Devuelve una cadena que contiene una copia de una cadena especificada sin espacios iniciales (<see langword="LTrim" />), sin espacios finales (<see langword="RTrim" />) o sin espacios iniciales ni finales (<see langword="Trim" />).</summary>
         <returns>Cadena que contiene una copia de una cadena especificada sin espacios iniciales (<see langword="LTrim" />), sin espacios finales (<see langword="RTrim" />) o sin espacios iniciales ni finales (<see langword="Trim" />).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3191,7 +3204,7 @@ Dim aString As String = Replace(TestString, "o", "i")
    
   
 ## Examples  
- Este ejemplo se usa el `LTrim` función para quitar los espacios iniciales y la `RTrim` espacios de función para quitar los finales de una variable de cadena. Usa el `Trim` función para quitar ambos tipos de espacios.  
+ En este ejemplo se usa la función `LTrim` para quitar los espacios iniciales y la función `RTrim` para quitar los espacios finales de una variable de cadena. También se usa la función `Trim` para quitar ambos tipos de espacios.  
   
  [!code-vb[VbVbalrStrings#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#25)]  
   
@@ -3202,7 +3215,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <altmember cref="M:Microsoft.VisualBasic.Strings.Left(System.String,System.Int32)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.Right(System.String,System.Int32)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.Space(System.Int32)" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <Member MemberName="Space">
@@ -3221,15 +3234,16 @@ Dim aString As String = Replace(TestString, "o", "i")
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Number" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Number" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="Number">Obligatorio. <see langword="Integer" /> expresión. El número de espacios deseados en la cadena.</param>
+        <param name="Number">Obligatorio. Expresión <see langword="Integer" />. Número de espacios deseados en la cadena.</param>
         <summary>Devuelve una cadena que consta del número especificado de espacios.</summary>
         <returns>Cadena que consta del número especificado de espacios.</returns>
         <remarks>
@@ -3250,7 +3264,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <exception cref="T:System.ArgumentException"><paramref name="Number" /> &lt; 0.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.SPC(System.Int16)" />
         <altmember cref="T:System.ArgumentException" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <Member MemberName="Split">
@@ -3268,15 +3282,16 @@ Dim aString As String = Replace(TestString, "o", "i")
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Expression" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Delimiter" Type="System.String" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Limit" Type="System.Int32" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod" Index="3" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Parameter Name="Expression" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="Delimiter" Type="System.String" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="Limit" Type="System.Int32" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="Compare" Type="Microsoft.VisualBasic.CompareMethod" Index="3" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <Attributes>
             <Attribute>
               <AttributeName>Microsoft.VisualBasic.CompilerServices.OptionCompare</AttributeName>
@@ -3285,12 +3300,12 @@ Dim aString As String = Replace(TestString, "o", "i")
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="Expression">Obligatorio. <see langword="String" /> Expresión que contiene subcadenas y delimitadores.</param>
-        <param name="Delimiter">Opcional. Cualquier carácter individual que se usa para identificar los límites de la subcadena. Si <paramref name="Delimiter" /> se omite, el carácter de espacio ("") se supone que es el delimitador.</param>
-        <param name="Limit">Opcional. Número máximo de subcadenas en la que se debe dividir la cadena de entrada. El valor predeterminado es -1, que indica que la cadena de entrada se debe dividir cada vez que aparece la cadena <paramref name="Delimiter" />.</param>
-        <param name="Compare">Opcional. Valor numérico que indica la comparación debe utilizar al evaluar subcadenas. Consulte los valores en "Configuración".</param>
-        <summary>Devuelve una matriz unidimensional de base cero que contiene un número especificado de subcadenas.</summary>
-        <returns>Matriz de tipo<see langword="String" /> . Si <paramref name="Expression" /> es una cadena de longitud cero (""), <see langword="Split" /> devuelve una matriz de solo elemento que contiene una cadena de longitud cero. Si <paramref name="Delimiter" /> es una cadena de longitud cero, o si no aparece en cualquier lugar en <paramref name="Expression" />, <see langword="Split" /> devuelve una matriz de solo elemento que contiene toda la <paramref name="Expression" /> cadena.</returns>
+        <param name="Expression">Obligatorio. Expresión de tipo <see langword="String" /> que contiene subcadenas y delimitadores.</param>
+        <param name="Delimiter">Opcional. Cualquier carácter individual que se utilice para identificar los límites de las subcadenas. Si se omite <paramref name="Delimiter" />, se supone que el carácter de espacio (" ") es el delimitador.</param>
+        <param name="Limit">Opcional. Número máximo de subcadenas en las que se debe dividir la cadena de entrada. El valor predeterminado es -1, que indica que la cadena de entrada se debe dividir cada vez que aparece la cadena <paramref name="Delimiter" />.</param>
+        <param name="Compare">Opcional. Valor numérico que indica la comparación que se va a utilizar al evaluar subcadenas. Consulte los valores en "Configuración".</param>
+        <summary>Devuelve una matriz unidimensional basada en cero que contiene un número especificado de subcadenas.</summary>
+        <returns>Matriz de tipo<see langword="String" /> . Si <paramref name="Expression" /> es una cadena de longitud cero (""), <see langword="Split" /> devuelve una matriz de un solo elemento que contiene una cadena de longitud cero. Si <paramref name="Delimiter" /> es una cadena de longitud cero o si no aparece en <paramref name="Expression" />, <see langword="Split" /> devuelve una matriz de un solo elemento que contiene toda la cadena <paramref name="Expression" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3334,7 +3349,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         </remarks>
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.Join" />
         <altmember cref="T:Microsoft.VisualBasic.CompareMethod" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <Member MemberName="StrComp">
@@ -3369,11 +3384,11 @@ Dim aString As String = Replace(TestString, "o", "i")
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="String1">Obligatorio. Cualquier expresión <see langword="String" /> válida.</param>
-        <param name="String2">Obligatorio. Cualquier expresión <see langword="String" /> válida.</param>
-        <param name="Compare">Opcional. Especifica el tipo de comparación de cadenas. Si <paramref name="Compare" /> se omite, el <see langword="Option Compare" /> configuración determina el tipo de comparación.</param>
-        <summary>Devuelve -1, 0 o 1, en función del resultado de una comparación de cadenas.</summary>
-        <returns>El <see langword="StrComp" /> función tiene los siguientes valores devueltos.  
+        <param name="String1">Obligatorio. Cualquier expresión de <see langword="String" /> válida.</param>
+        <param name="String2">Obligatorio. Cualquier expresión de <see langword="String" /> válida.</param>
+        <param name="Compare">Opcional. Especifica el tipo de comparación de cadenas. Si se omite <paramref name="Compare" />, la configuración de <see langword="Option Compare" /> determina el tipo de comparación.</param>
+        <summary>Devuelve un valor, -1, 0 ó 1, que indica el resultado de una comparación de cadena.</summary>
+        <returns>La función <see langword="StrComp" /> devuelve los siguientes valores.  
   
  <list type="table"><item><term> Si 
  </term><description> StrComp devuelve 
@@ -3406,7 +3421,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <exception cref="T:System.ArgumentException">El valor de <paramref name="Compare" /> no es válido.</exception>
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.InStr" />
         <altmember cref="T:System.ArgumentException" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/index.md">Cadenas en Visual Basic</related>
         <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/introduction-to-strings.md">Introducción a las cadenas en Visual Basic</related>
       </Docs>
@@ -3426,20 +3441,21 @@ Dim aString As String = Replace(TestString, "o", "i")
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="str" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Conversion" Type="Microsoft.VisualBasic.VbStrConv" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="LocaleID" Type="System.Int32" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="str" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="Conversion" Type="Microsoft.VisualBasic.VbStrConv" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="LocaleID" Type="System.Int32" Index="2" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="str">Obligatorio. <see langword="String" /> Expresión que se va a convertir.</param>
-        <param name="Conversion">Obligatorio. <see cref="T:Microsoft.VisualBasic.VbStrConv" /> miembro. El valor de enumeración que especifica el tipo de conversión se realiza.</param>
-        <param name="LocaleID">Opcional. El <see langword="LocaleID" /> valor, si difiere del sistema <see langword="LocaleID" /> valor. (El sistema <see langword="LocaleID" /> es el valor predeterminado.)</param>
-        <summary>Devuelve una cadena convertida según lo especificado.</summary>
+        <param name="str">Obligatorio. Expresión de tipo <see langword="String" /> que se va a convertir.</param>
+        <param name="Conversion">Obligatorio. Miembro <see cref="T:Microsoft.VisualBasic.VbStrConv" />. Valor de enumeración que especifica el tipo de conversión que se va a realizar.</param>
+        <param name="LocaleID">Opcional. Valor de <see langword="LocaleID" /> si difiere del valor de <see langword="LocaleID" /> del sistema. (El valor de <see langword="LocaleID" /> del sistema es el valor predeterminado.)</param>
+        <summary>Devuelve una cadena convertida según se ha especificado.</summary>
         <returns>Cadena convertida según se ha especificado.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3491,7 +3507,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <altmember cref="M:Microsoft.VisualBasic.Strings.ChrW(System.Int32)" />
         <altmember cref="T:System.String" />
         <altmember cref="T:System.ArgumentException" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/language-reference/functions/type-conversion-functions.md">Type Conversion Functions</related>
       </Docs>
     </Member>
@@ -3501,7 +3517,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Devuelve una cadena u objeto que se compone del carácter especificado repetido el número de veces especificado.</summary>
+        <summary>Devuelve una cadena o un objeto que se compone del carácter especificado repetido el número de veces especificado.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="StrDup">
@@ -3520,18 +3536,19 @@ Dim aString As String = Replace(TestString, "o", "i")
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Number" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Character" Type="System.Char" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Number" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="Character" Type="System.Char" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="Number">Obligatorio. <see langword="Integer" /> expresión. La longitud de cadena va a devolver.</param>
-        <param name="Character">Obligatorio. Cualquier <see langword="Char" />, <see langword="String" />, o <see langword="Object" /> expresión. Se utilizará sólo el primer carácter de la expresión. Si el carácter es de tipo <see langword="Object" />, debe contener un valor de <see langword="Char" /> o de <see langword="String" />.</param>
-        <summary>Devuelve una cadena u objeto que se compone del carácter especificado repetido el número de veces especificado.</summary>
+        <param name="Number">Obligatorio. Expresión <see langword="Integer" />. Longitud de la cadena que se va a devolver.</param>
+        <param name="Character">Obligatorio. Cualquier expresión válida de tipo <see langword="Char" />, <see langword="String" /> u <see langword="Object" />. Se utilizará sólo el primer carácter de la expresión. Si el carácter es de tipo <see langword="Object" />, debe contener un valor de <see langword="Char" /> o de <see langword="String" />.</param>
+        <summary>Devuelve una cadena o un objeto que se compone del carácter especificado repetido el número de veces especificado.</summary>
         <returns>Cadena o un objeto que se compone del carácter especificado repetido el número de veces especificado.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3548,12 +3565,12 @@ Dim aString As String = Replace(TestString, "o", "i")
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException"><paramref name="Number" /> es menor que 0 o <paramref name="Character" /> tipo no es válido.</exception>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="Character" /> es <see langword="Nothing" />.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="Number" /> es menor que 0 o el tipo <paramref name="Character" /> no es válido.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="Character" /> es <see langword="Nothing" />.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.SPC(System.Int16)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.ArgumentNullException" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <Member MemberName="StrDup">
@@ -3572,18 +3589,19 @@ Dim aString As String = Replace(TestString, "o", "i")
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Number" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Character" Type="System.Object" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Number" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="Character" Type="System.Object" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="Number">Obligatorio. <see langword="Integer" /> expresión. La longitud de cadena va a devolver.</param>
-        <param name="Character">Obligatorio. Cualquier <see langword="Char" />, <see langword="String" />, o <see langword="Object" /> expresión. Se utilizará sólo el primer carácter de la expresión. Si el carácter es de tipo <see langword="Object" />, debe contener un valor de <see langword="Char" /> o de <see langword="String" />.</param>
-        <summary>Devuelve una cadena u objeto que se compone del carácter especificado repetido el número de veces especificado.</summary>
+        <param name="Number">Obligatorio. Expresión <see langword="Integer" />. Longitud de la cadena que se va a devolver.</param>
+        <param name="Character">Obligatorio. Cualquier expresión válida de tipo <see langword="Char" />, <see langword="String" /> u <see langword="Object" />. Se utilizará sólo el primer carácter de la expresión. Si el carácter es de tipo <see langword="Object" />, debe contener un valor de <see langword="Char" /> o de <see langword="String" />.</param>
+        <summary>Devuelve una cadena o un objeto que se compone del carácter especificado repetido el número de veces especificado.</summary>
         <returns>Cadena o un objeto que se compone del carácter especificado repetido el número de veces especificado.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3600,12 +3618,12 @@ Dim aString As String = Replace(TestString, "o", "i")
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException"><paramref name="Number" /> es menor que 0 o <paramref name="Character" /> tipo no es válido.</exception>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="Character" /> es <see langword="Nothing" />.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="Number" /> es menor que 0 o el tipo <paramref name="Character" /> no es válido.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="Character" /> es <see langword="Nothing" />.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.SPC(System.Int16)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.ArgumentNullException" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <Member MemberName="StrDup">
@@ -3624,18 +3642,19 @@ Dim aString As String = Replace(TestString, "o", "i")
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Number" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="Character" Type="System.String" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Number" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+        <Parameter Name="Character" Type="System.String" Index="1" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="Number">Obligatorio. <see langword="Integer" /> expresión. La longitud de cadena va a devolver.</param>
-        <param name="Character">Obligatorio. Cualquier <see langword="Char" />, <see langword="String" />, o <see langword="Object" /> expresión. Se utilizará sólo el primer carácter de la expresión. Si el carácter es de tipo <see langword="Object" />, debe contener un valor de <see langword="Char" /> o de <see langword="String" />.</param>
-        <summary>Devuelve una cadena u objeto que se compone del carácter especificado repetido el número de veces especificado.</summary>
+        <param name="Number">Obligatorio. Expresión <see langword="Integer" />. Longitud de la cadena que se va a devolver.</param>
+        <param name="Character">Obligatorio. Cualquier expresión válida de tipo <see langword="Char" />, <see langword="String" /> u <see langword="Object" />. Se utilizará sólo el primer carácter de la expresión. Si el carácter es de tipo <see langword="Object" />, debe contener un valor de <see langword="Char" /> o de <see langword="String" />.</param>
+        <summary>Devuelve una cadena o un objeto que se compone del carácter especificado repetido el número de veces especificado.</summary>
         <returns>Cadena o un objeto que se compone del carácter especificado repetido el número de veces especificado.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3652,12 +3671,12 @@ Dim aString As String = Replace(TestString, "o", "i")
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException"><paramref name="Number" /> es menor que 0 o <paramref name="Character" /> tipo no es válido.</exception>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="Character" /> es <see langword="Nothing" />.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="Number" /> es menor que 0 o el tipo <paramref name="Character" /> no es válido.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="Character" /> es <see langword="Nothing" />.</exception>
         <altmember cref="M:Microsoft.VisualBasic.FileSystem.SPC(System.Int16)" />
         <altmember cref="T:System.ArgumentException" />
         <altmember cref="T:System.ArgumentNullException" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <Member MemberName="StrReverse">
@@ -3686,7 +3705,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       </Parameters>
       <Docs>
         <param name="Expression">Obligatorio. Expresión de cadena cuyos caracteres se van a invertir. Si <paramref name="Expression" /> es una cadena de longitud cero (""), se devuelve una cadena de longitud cero.</param>
-        <summary>Devuelve una cadena en la que se invierte el orden de los caracteres de una cadena especificada.</summary>
+        <summary>Devuelve una cadena en la que se invierte el orden de los caracteres de la cadena especificada.</summary>
         <returns>Cadena en la que se invierte el orden de los caracteres de la cadena especificada.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3702,7 +3721,7 @@ Dim aString As String = Replace(TestString, "o", "i")
  ]]></format>
         </remarks>
         <altmember cref="M:Microsoft.VisualBasic.Strings.InStrRev(System.String,System.String,System.Int32,Microsoft.VisualBasic.CompareMethod)" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <Member MemberName="Trim">
@@ -3730,8 +3749,8 @@ Dim aString As String = Replace(TestString, "o", "i")
         <Parameter Name="str" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="str">Obligatorio. Cualquier expresión <see langword="String" /> válida.</param>
-        <summary>Devuelve una cadena que contiene una copia de una cadena especificada sin espacios iniciales (<see langword="LTrim" />), sin espacios finales (<see langword="RTrim" />), o sin espacios iniciales ni finales (<see langword="Trim" />).</summary>
+        <param name="str">Obligatorio. Cualquier expresión de <see langword="String" /> válida.</param>
+        <summary>Devuelve una cadena que contiene una copia de una cadena especificada sin espacios iniciales (<see langword="LTrim" />), sin espacios finales (<see langword="RTrim" />) o sin espacios iniciales ni finales (<see langword="Trim" />).</summary>
         <returns>Cadena que contiene una copia de una cadena especificada sin espacios iniciales (<see langword="LTrim" />), sin espacios finales (<see langword="RTrim" />) o sin espacios iniciales ni finales (<see langword="Trim" />).</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3742,7 +3761,7 @@ Dim aString As String = Replace(TestString, "o", "i")
    
   
 ## Examples  
- Este ejemplo se usa el `LTrim` función para quitar los espacios iniciales y la `RTrim` espacios de función para quitar los finales de una variable de cadena. Usa el `Trim` función para quitar ambos tipos de espacios.  
+ En este ejemplo se usa la función `LTrim` para quitar los espacios iniciales y la función `RTrim` para quitar los espacios finales de una variable de cadena. También se usa la función `Trim` para quitar ambos tipos de espacios.  
   
  [!code-vb[VbVbalrStrings#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#25)]  
   
@@ -3753,7 +3772,7 @@ Dim aString As String = Replace(TestString, "o", "i")
         <altmember cref="M:Microsoft.VisualBasic.Strings.Left(System.String,System.Int32)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.Right(System.String,System.Int32)" />
         <altmember cref="M:Microsoft.VisualBasic.Strings.Space(System.Int32)" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="UCase">
@@ -3781,15 +3800,16 @@ Dim aString As String = Replace(TestString, "o", "i")
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Value" Type="System.Char" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Value" Type="System.Char" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="Value">Obligatorio. Cualquier <see langword="String" /> o <see langword="Char" /> expresión.</param>
+        <param name="Value">Obligatorio. Cualquier expresión válida de tipo <see langword="String" /> o <see langword="Char" />.</param>
         <summary>Devuelve una cadena o un carácter que contiene la cadena especificada convertida en mayúsculas.</summary>
         <returns>Cadena o un carácter que contiene la cadena especificada convertida en mayúsculas.</returns>
         <remarks>
@@ -3806,14 +3826,14 @@ Dim aString As String = Replace(TestString, "o", "i")
    
   
 ## Examples  
- Este ejemplo se usa el `UCase` función para devolver una versión de una cadena en mayúsculas.  
+ En este ejemplo se utiliza la función `UCase` para devolver la versión en mayúsculas de una cadena.  
   
  [!code-vb[VbVbalrStrings#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#31)]  
   
  ]]></format>
         </remarks>
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.LCase" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/index.md">Cadenas en Visual Basic</related>
         <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/introduction-to-strings.md">Introducción a las cadenas en Visual Basic</related>
       </Docs>
@@ -3834,15 +3854,16 @@ Dim aString As String = Replace(TestString, "o", "i")
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="Value" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="Value" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="Value">Obligatorio. Cualquier <see langword="String" /> o <see langword="Char" /> expresión.</param>
+        <param name="Value">Obligatorio. Cualquier expresión válida de tipo <see langword="String" /> o <see langword="Char" />.</param>
         <summary>Devuelve una cadena o un carácter que contiene la cadena especificada convertida en mayúsculas.</summary>
         <returns>Cadena o un carácter que contiene la cadena especificada convertida en mayúsculas.</returns>
         <remarks>
@@ -3859,14 +3880,14 @@ Dim aString As String = Replace(TestString, "o", "i")
    
   
 ## Examples  
- Este ejemplo se usa el `UCase` función para devolver una versión de una cadena en mayúsculas.  
+ En este ejemplo se utiliza la función `UCase` para devolver la versión en mayúsculas de una cadena.  
   
  [!code-vb[VbVbalrStrings#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class1.vb#31)]  
   
  ]]></format>
         </remarks>
         <altmember cref="Overload:Microsoft.VisualBasic.Strings.LCase" />
-        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de manipulación de cadenas</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/keywords/string-manipulation-summary.md">Resumen de la manipulación de cadenas</related>
         <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/index.md">Cadenas en Visual Basic</related>
         <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/strings/introduction-to-strings.md">Introducción a las cadenas en Visual Basic</related>
       </Docs>

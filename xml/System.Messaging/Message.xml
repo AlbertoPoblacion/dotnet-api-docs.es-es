@@ -1,5 +1,5 @@
 <Type Name="Message" FullName="System.Messaging.Message">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="a95c4f6d088964d5660b767760d7575f90f4d921" /><Meta Name="ms.sourcegitcommit" Value="0b4deef443af9fe6334aa34b8a17190223bf0486" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/14/2019" /><Meta Name="ms.locfileid" Value="65609749" /></Metadata><TypeSignature Language="C#" Value="public class Message : System.ComponentModel.Component" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0e234b3b0ce5723f1236ecf3b326917ce1c6b59d" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67237945" /></Metadata><TypeSignature Language="C#" Value="public class Message : System.ComponentModel.Component" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Message extends System.ComponentModel.Component" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.Message" />
   <TypeSignature Language="VB.NET" Value="Public Class Message&#xA;Inherits Component" />
@@ -109,7 +109,7 @@
   
  La siguiente tabla muestra los valores de propiedad iniciales de una instancia de <xref:System.Messaging.Message>.  
   
-|Propiedad|Valor inicial|  
+|Propiedad.|Valor inicial|  
 |--------------|-------------------|  
 |<xref:System.Messaging.Message.AcknowledgeType%2A>|`AcknowledgeType.None`|  
 |<xref:System.Messaging.Message.AdministrationQueue%2A>|`null`|  
@@ -192,7 +192,7 @@
   
  La siguiente tabla muestra los valores de propiedad iniciales de una instancia de <xref:System.Messaging.Message>.  
   
-|Propiedad|Valor inicial|  
+|Propiedad.|Valor inicial|  
 |--------------|-------------------|  
 |<xref:System.Messaging.Message.AcknowledgeType%2A>|`AcknowledgeType.None`|  
 |<xref:System.Messaging.Message.AdministrationQueue%2A>|`null`|  
@@ -276,7 +276,7 @@
   
  La siguiente tabla muestra los valores de propiedad iniciales de una instancia de <xref:System.Messaging.Message>.  
   
-|Propiedad|Valor inicial|  
+|Propiedad.|Valor inicial|  
 |--------------|-------------------|  
 |<xref:System.Messaging.Message.AcknowledgeType%2A>|`AcknowledgeType.None`|  
 |<xref:System.Messaging.Message.AdministrationQueue%2A>|`null`|  
@@ -358,7 +358,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece el tipo de mensaje de confirmación que debe devolverse a la aplicación que hace el envío.</summary>
-        <value>Uno de los <see cref="T:System.Messaging.AcknowledgeTypes" /> valores que representan ambos tipos de mensajes de confirmación que publica el sistema en la cola de administración y las condiciones en las que se devuelven a la aplicación emisora. De manera predeterminada, es <see langword="None" />.</value>
+        <value>Uno de los valores de <see cref="T:System.Messaging.AcknowledgeTypes" /> que representa a la vez los tipos de mensajes de confirmación que publica el sistema en la cola de administración y las condiciones según las cuales se devuelven mensajes de confirmación a la aplicación de envío. De manera predeterminada, es <see langword="None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -430,7 +430,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">El mensaje no se ha enviado. Esta propiedad solo puede leerse en mensajes recuperados de una cola.  
   
--o bien- 
+O bien 
 La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messaging.MessagePropertyFilter.Acknowledgment" />.</exception>
         <altmember cref="P:System.Messaging.Message.AcknowledgeType" />
         <altmember cref="P:System.Messaging.Message.AdministrationQueue" />
@@ -471,7 +471,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece la cola utilizada para los mensajes de confirmación generados por Message Queuing.</summary>
-        <value>El <see cref="T:System.Messaging.MessageQueue" /> que especifica la cola de administración que se utiliza para los mensajes de confirmación generados por el sistema. De manera predeterminada, es <see langword="null" />.</value>
+        <value>Objeto <see cref="T:System.Messaging.MessageQueue" /> que especifica la cola de administración utilizada para los mensajes de confirmación generados por el sistema. De manera predeterminada, es <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -571,7 +571,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene la hora en que llegó el mensaje a la cola de destino.</summary>
-        <value>Un <see cref="T:System.DateTime" /> que representa la hora de llegada del mensaje en la cola de destino. La hora se ajusta respecto a GMT a la hora local del equipo en el que reside la cola de destino.</value>
+        <value><see cref="T:System.DateTime" /> que representa la hora de llegada del mensaje a la cola de destino. La hora se ajusta respecto a la hora GMT para reflejar la hora local del equipo donde reside la cola de destino.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -589,7 +589,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
         </remarks>
         <exception cref="T:System.InvalidOperationException">El mensaje no se ha enviado. Esta propiedad solo puede leerse en mensajes recuperados de una cola.  
   
--o bien- 
+O bien 
 La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messaging.Message.ArrivedTime" />.</exception>
         <altmember cref="P:System.Messaging.Message.TimeToBeReceived" />
       </Docs>
@@ -624,7 +624,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece un valor que indica si el identificador del remitente se adjuntará al mensaje.</summary>
-        <value><see langword="true" /> Si el <see cref="P:System.Messaging.Message.SenderId" /> debe estar asociado al mensaje; en caso contrario, <see langword="false" />. De manera predeterminada, es <see langword="true" />.</value>
+        <value><see langword="true" /> si debe adjuntarse <see cref="P:System.Messaging.Message.SenderId" /> al mensaje; en cualquier otro caso, <see langword="false" />. De manera predeterminada, es <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -682,7 +682,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene un valor que indica si se autenticó el mensaje.</summary>
-        <value><see langword="true" /> Si se solicitó autenticación para el mensaje cuando entró en la cola; en caso contrario, <see langword="false" />.</value>
+        <value><see langword="true" /> si se solicitó autenticación para el mensaje cuando entró en la cola; en cualquier otro caso, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -702,7 +702,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
         </remarks>
         <exception cref="T:System.InvalidOperationException">El mensaje no se ha enviado. Esta propiedad solo puede leerse en mensajes recuperados de una cola.  
   
--o bien- 
+O bien 
 La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messaging.Message.Authenticated" />.</exception>
         <altmember cref="P:System.Messaging.Message.UseAuthentication" />
         <altmember cref="P:System.Messaging.Message.ConnectorType" />
@@ -740,7 +740,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece el nombre del proveedor criptográfico que se utiliza para generar la firma digital del mensaje.</summary>
-        <value>El nombre del proveedor criptográfico utilizado para generar la firma digital del mensaje. El valor predeterminado es Microsoft Base Cryptographic Provider versión 1.0.</value>
+        <value>Nombre del proveedor criptográfico que se utiliza para generar la firma digital del mensaje. El valor predeterminado es Microsoft Base Cryptographic Provider, versión 1.0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -755,7 +755,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
         </remarks>
         <exception cref="T:System.InvalidOperationException">No se pudo establecer la propiedad <see cref="P:System.Messaging.Message.AuthenticationProviderName" />.  
   
--o bien- 
+O bien 
 La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messaging.Message.AuthenticationProviderName" />.</exception>
         <exception cref="T:System.ArgumentException">La propiedad <see cref="P:System.Messaging.Message.AuthenticationProviderName" /> se estableció en <see langword="null" />.</exception>
         <altmember cref="P:System.Messaging.Message.Authenticated" />
@@ -810,7 +810,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
         </remarks>
         <exception cref="T:System.InvalidOperationException">No se pudo establecer la propiedad <see cref="P:System.Messaging.Message.AuthenticationProviderType" />.  
   
--o bien- 
+O bien 
 La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messaging.Message.AuthenticationProviderType" />.</exception>
         <altmember cref="P:System.Messaging.Message.Authenticated" />
         <altmember cref="P:System.Messaging.Message.UseAuthentication" />
@@ -847,7 +847,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece el contenido del mensaje.</summary>
-        <value>Objeto que especifica el contenido del mensaje. El objeto puede ser una cadena, una fecha, moneda, un número, una matriz de bytes o cualquier objeto administrado.</value>
+        <value>Objeto que especifica el contenido del mensaje. El objeto puede ser una cadena, una fecha, una divisa, un número, una matriz de bytes o cualquier objeto administrado.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -880,7 +880,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
         </remarks>
         <exception cref="T:System.InvalidOperationException">La propiedad <see cref="P:System.Messaging.Message.Formatter" /> es <see langword="null" />.  
   
--o bien- 
+O bien 
 La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messaging.Message.Body" />.</exception>
         <altmember cref="T:System.Messaging.Message" />
         <altmember cref="P:System.Messaging.Message.BodyStream" />
@@ -931,7 +931,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece la información del cuerpo del mensaje.</summary>
-        <value>Un <see cref="T:System.IO.Stream" /> que contiene la información serializada incluida en el <see cref="P:System.Messaging.Message.Body" /> del mensaje.</value>
+        <value><see cref="T:System.IO.Stream" /> que contiene la información serializada incluida en el cuerpo (<see cref="P:System.Messaging.Message.Body" />) del mensaje.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -987,7 +987,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece el tipo de datos que contiene el cuerpo del mensaje.</summary>
-        <value>Verdadero tipo del cuerpo del mensaje, como una cadena, una fecha, una divisa o un número.</value>
+        <value>El tipo auténtico del cuerpo del mensaje, como por ejemplo una cadena, una fecha, una divisa o un número.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1056,7 +1056,7 @@ if (myObject is float) {
       </ReturnValue>
       <Docs>
         <summary>Obtiene y establece un valor que indica que la aplicación de envío estableció algunas propiedades de mensajes, normalmente establecidas por Message Queuing.</summary>
-        <value>Un <see cref="T:System.Guid" /> definido por la aplicación y se usa junto con las aplicaciones conectoras o el cifrado de mensajes. Esto <see cref="T:System.Guid" /> permite que una aplicación receptora interpretar las propiedades de mensaje que se establecieron por la aplicación emisora aunque normalmente definidas por Message Queue Server.</value>
+        <value>Identificador <see cref="T:System.Guid" /> definido por la aplicación y utilizado en combinación con las aplicaciones conectoras o el cifrado de mensajes. Este identificador <see cref="T:System.Guid" /> permite a una aplicación receptora interpretar las propiedades de los mensajes establecidas por la aplicación de envío, aunque normalmente definidas por Message Queuing.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1122,7 +1122,7 @@ if (myObject is float) {
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece el identificador de mensaje que utilizan los mensajes de confirmación, informe y respuesta para hacer referencia al mensaje original.</summary>
-        <value>El identificador de mensaje especificado por el <see cref="P:System.Messaging.Message.Id" /> propiedad del mensaje original. El identificador de correlación se utiliza Message Queue Server cuando genera un mensaje de confirmación o informe y una aplicación cuando genera un mensaje de respuesta.</value>
+        <value>Identificador de mensaje especificado por la propiedad <see cref="P:System.Messaging.Message.Id" /> del mensaje original. Message Queuing utiliza el identificador de correlación cuando genera un mensaje de confirmación o informe, y lo utiliza una aplicación cuando genera un mensaje de respuesta.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1183,7 +1183,7 @@ if (myObject is float) {
       </ReturnValue>
       <Docs>
         <summary>Obtiene la cola de destino deseada para un mensaje.</summary>
-        <value>Un <see cref="T:System.Messaging.MessageQueue" /> que especifica la cola de destino deseada para el mensaje.</value>
+        <value>Valor <see cref="T:System.Messaging.MessageQueue" /> que especifica la cola de destino deseada para el mensaje.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1201,7 +1201,7 @@ if (myObject is float) {
         </remarks>
         <exception cref="T:System.InvalidOperationException">El mensaje no se ha enviado. Esta propiedad solo puede leerse en mensajes recuperados de una cola.  
   
--o bien- 
+O bien 
 La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messaging.Message.DestinationQueue" />.</exception>
         <altmember cref="P:System.Messaging.Message.UseDeadLetterQueue" />
         <altmember cref="P:System.Messaging.Message.UseJournalQueue" />
@@ -1238,7 +1238,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece la clave simétrica utilizada para cifrar los mensajes cifrados por la aplicación o los enviados a colas externas.</summary>
-        <value>Una matriz de valores de byte que especifica la clave simétrica de destino utilizada para cifrar el mensaje. El valor predeterminado es una matriz de longitud cero.</value>
+        <value>Matriz de bytes que especifica la clave simétrica de destino utilizada para cifrar el mensaje. El valor predeterminado es una matriz de longitud cero.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1291,7 +1291,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece la firma digital que Message Queuing utiliza para autenticar el mensaje.</summary>
-        <value>Una matriz de valores de byte que especifica la firma digital de Message Queuing 1.0 utilizada para autenticar el mensaje. El valor predeterminado es una matriz de longitud cero.</value>
+        <value>Matriz de bytes que especifica la firma digital de Message Queuing 1.0 utilizada para autenticar el mensaje. El valor predeterminado es una matriz de longitud cero.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1394,7 +1394,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece información adicional, definida por la aplicación y asociada al mensaje.</summary>
-        <value>Una matriz de valores de byte que se proporciona información definida por la aplicación asociada al mensaje. El valor predeterminado es una matriz de longitud cero.</value>
+        <value>Matriz de bytes que proporciona información definida por la aplicación y asociada al mensaje. El valor predeterminado es una matriz de longitud cero.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1442,7 +1442,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece el formateador empleado para serializar o deserializar un objeto en el cuerpo de un mensaje.</summary>
-        <value>El <see cref="T:System.Messaging.IMessageFormatter" /> que produce una secuencia que se escribirá o leerá desde el cuerpo del mensaje. De manera predeterminada, es <see cref="T:System.Messaging.XmlMessageFormatter" />.</value>
+        <value>Objeto <see cref="T:System.Messaging.IMessageFormatter" /> que produce una secuencia que se escribirá o leerá desde el cuerpo del mensaje. De manera predeterminada, es <see cref="T:System.Messaging.XmlMessageFormatter" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1508,7 +1508,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece el algoritmo de hash que Message Queuing utiliza al autenticar mensajes o al crear una firma digital para un mensaje.</summary>
-        <value>Uno de los valores de enumeración de <see cref="T:System.Messaging.HashAlgorithm" />. Para Windows XP, el valor predeterminado es <see langword="SHA" />. De lo contrario, el valor predeterminado es <see langword="MD5" />.</value>
+        <value>Uno de los valores de enumeración de <see cref="T:System.Messaging.HashAlgorithm" />. En Windows XP, el valor predeterminado es <see langword="SHA" />. De lo contrario, el valor predeterminado es <see langword="MD5" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1555,7 +1555,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene el identificador del mensaje.</summary>
-        <value>El identificador del mensaje único, generado por Message Queue Server.</value>
+        <value>Identificador único del mensaje, generado por Message Queuing.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1579,7 +1579,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
         </remarks>
         <exception cref="T:System.InvalidOperationException">El mensaje no se ha enviado. Esta propiedad solo puede leerse en mensajes recuperados de una cola.  
   
--o bien- 
+O bien 
 La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messaging.Message.Id" />.</exception>
         <altmember cref="P:System.Messaging.Message.CorrelationId" />
       </Docs>
@@ -1649,7 +1649,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene un valor que indica si el mensaje era el primer mensaje enviado en una transacción.</summary>
-        <value><see langword="true" /> Si el mensaje fue el primer mensaje enviado en una transacción; en caso contrario, <see langword="false" />.</value>
+        <value><see langword="true" /> si el mensaje fue el primer mensaje enviado en una transacción; en cualquier otro caso, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1673,7 +1673,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
         </remarks>
         <exception cref="T:System.InvalidOperationException">El mensaje no se ha enviado. Esta propiedad solo puede leerse en mensajes recuperados de una cola.  
   
--o bien- 
+O bien 
 La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messaging.Message.IsFirstInTransaction" />.</exception>
         <altmember cref="P:System.Messaging.Message.IsLastInTransaction" />
         <altmember cref="P:System.Messaging.Message.TransactionId" />
@@ -1707,7 +1707,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene un valor que indica si el mensaje era el último mensaje enviado en una transacción.</summary>
-        <value><see langword="true" /> Si el mensaje fue el último mensaje enviado en una sola transacción; en caso contrario, <see langword="false" />.</value>
+        <value><see langword="true" /> si el mensaje fue el último mensaje enviado en una transacción; en cualquier otro caso, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1731,7 +1731,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
         </remarks>
         <exception cref="T:System.InvalidOperationException">El mensaje no se ha enviado. Esta propiedad solo puede leerse en mensajes recuperados de una cola.  
   
--o bien- 
+O bien 
 La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messaging.Message.IsLastInTransaction" />.</exception>
         <altmember cref="P:System.Messaging.Message.IsFirstInTransaction" />
         <altmember cref="P:System.Messaging.Message.TransactionId" />
@@ -1768,7 +1768,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece una cadena Unicode definida por la aplicación que describe el mensaje.</summary>
-        <value>La etiqueta del mensaje. El valor predeterminado es una cadena vacía ("").</value>
+        <value>Etiqueta del mensaje. El valor predeterminado es una cadena vacía ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1808,7 +1808,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Introducido en MSMQ 3.0. Obtiene el identificador de búsqueda del mensaje.</summary>
-        <value>Identificador de búsqueda del mensaje, que es generado por Message Queuing y es único para la cola donde reside el mensaje.</value>
+        <value>El identificador de búsqueda del mensaje, generado por Message Queuing y único para la cola donde reside el mensaje.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1830,7 +1830,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
         <exception cref="T:System.PlatformNotSupportedException">MSMQ 3.0 no está instalado.</exception>
         <exception cref="T:System.InvalidOperationException">El mensaje no se ha enviado. Esta propiedad solo puede leerse en mensajes recuperados de una cola.  
   
--o bien- 
+O bien 
 La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messaging.Message.LookupId" />.</exception>
         <altmember cref="Overload:System.Messaging.MessageQueue.PeekByLookupId" />
         <altmember cref="Overload:System.Messaging.MessageQueue.ReceiveByLookupId" />
@@ -1887,7 +1887,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
         </remarks>
         <exception cref="T:System.InvalidOperationException">El mensaje no se ha enviado. Esta propiedad solo puede leerse en mensajes recuperados de una cola.  
   
--o bien- 
+O bien 
 La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messaging.Message.MessageType" />.</exception>
         <altmember cref="T:System.Messaging.MessageType" />
         <altmember cref="P:System.Messaging.MessagePropertyFilter.Acknowledgment" />
@@ -1925,7 +1925,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece la prioridad del mensaje, que determina en qué punto de la cola se ubica el mensaje.</summary>
-        <value>Uno de los <see cref="T:System.Messaging.MessagePriority" /> valores que representan los niveles de prioridad de mensajes no transaccionales. De manera predeterminada, es <see langword="Normal" />.</value>
+        <value>Uno de los valores <see cref="T:System.Messaging.MessagePriority" />, que representan los niveles de prioridad de mensajes no transaccionales. De manera predeterminada, es <see langword="Normal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1981,7 +1981,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece un valor que indica si se garantiza la entrega del mensaje en caso de haber errores en el equipo o problemas en la red.</summary>
-        <value><see langword="true" /> Si se garantiza la entrega del mensaje (a través de guardar el mensaje en el disco durante el tránsito); <see langword="false" /> si no se garantiza la entrega. De manera predeterminada, es <see langword="false" />.</value>
+        <value><see langword="true" /> si se garantiza la entrega del mensaje guardándolo en disco mientras se encuentra en tránsito; <see langword="false" /> si no se garantiza. De manera predeterminada, es <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2035,7 +2035,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece la cola que recibe los mensajes de respuesta generados por la aplicación.</summary>
-        <value>El <see cref="T:System.Messaging.MessageQueue" /> a qué respuesta generados por la aplicación se devuelven los mensajes. De manera predeterminada, es <see langword="null" />.</value>
+        <value>Objeto <see cref="T:System.Messaging.MessageQueue" /> al cual se devuelven los mensajes de respuesta generados por la aplicación. De manera predeterminada, es <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2085,7 +2085,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece el contexto de seguridad para un mensaje.</summary>
-        <value>Un <see cref="T:System.Messaging.SecurityContext" /> objeto que contiene el contexto de seguridad para un mensaje, si previamente se ha establecido la propiedad; en caso contrario, NULL.</value>
+        <value>Objeto <see cref="T:System.Messaging.SecurityContext" /> que contiene el contexto de seguridad para un mensaje, si la propiedad se ha establecido anteriormente; de lo contrario NULL.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2119,7 +2119,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece el certificado de seguridad que se utilizará para autenticar mensajes.</summary>
-        <value>Una matriz de valores de byte que representa un certificado de seguridad, que Message Queuing utiliza para comprobar el remitente del mensaje. El valor predeterminado es una matriz de longitud cero.</value>
+        <value>Matriz de valores de byte que representa un certificado de seguridad, que Message Queuing utiliza para comprobar el remitente de un mensaje. El valor predeterminado es una matriz de longitud cero.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2165,7 +2165,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene el identificador del usuario remitente.</summary>
-        <value>Una matriz de valores de byte que identifica al remitente. El Administrador de colas receptor utiliza el identificador cuando autentica el mensaje para comprobar el remitente del mensaje y los derechos de acceso a la cola.</value>
+        <value>Matriz de valores de byte que identifica al remitente. El administrador de colas receptor utiliza el identificador cuando autentica el mensaje, para comprobar el remitente del mensaje y sus derechos de acceso a la cola.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2178,7 +2178,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
         </remarks>
         <exception cref="T:System.InvalidOperationException">El mensaje no se ha enviado. Esta propiedad solo puede leerse en mensajes recuperados de una cola.  
   
--o bien- 
+O bien 
 La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messaging.Message.SenderId" />.</exception>
         <altmember cref="P:System.Messaging.Message.Authenticated" />
         <altmember cref="P:System.Messaging.Message.AttachSenderId" />
@@ -2217,7 +2217,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene la versión de Message Queuing que se utilizó para enviar el mensaje.</summary>
-        <value>La versión de Message Queue Server usa para enviar el mensaje.</value>
+        <value>Versión de Message Queuing que se utilizó para enviar el mensaje.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2237,7 +2237,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
         </remarks>
         <exception cref="T:System.InvalidOperationException">El mensaje no se ha enviado. Esta propiedad solo puede leerse en mensajes recuperados de una cola.  
   
--o bien- 
+O bien 
 La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messaging.Message.SenderVersion" />.</exception>
         <altmember cref="P:System.Messaging.Message.TransactionId" />
         <altmember cref="P:System.Messaging.Message.IsFirstInTransaction" />
@@ -2276,7 +2276,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene la fecha y hora del equipo de envío en las que el administrador de colas de origen envió el mensaje.</summary>
-        <value>Un <see cref="T:System.DateTime" /> que representa la hora en que se envió el mensaje.</value>
+        <value>Valor <see cref="T:System.DateTime" /> que representa la hora a la que se envió el mensaje.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2294,7 +2294,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
         </remarks>
         <exception cref="T:System.InvalidOperationException">El mensaje no se ha enviado. Esta propiedad solo puede leerse en mensajes recuperados de una cola.  
   
--o bien- 
+O bien 
 La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messaging.Message.SentTime" />.</exception>
       </Docs>
     </Member>
@@ -2325,7 +2325,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene el equipo donde se originó el mensaje.</summary>
-        <value>El nombre del equipo desde el que se envió el mensaje.</value>
+        <value>Nombre del equipo desde el que se envió el mensaje.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2343,7 +2343,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
         </remarks>
         <exception cref="T:System.InvalidOperationException">El mensaje no se ha enviado. Esta propiedad solo puede leerse en mensajes recuperados de una cola.  
   
--o bien- 
+O bien 
 La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messaging.Message.SourceMachine" />.</exception>
         <exception cref="T:System.Messaging.MessageQueueException">No se ha podido obtener acceso a la información de equipo o al servicio de directorio.</exception>
         <altmember cref="P:System.Messaging.MessageQueue.MachineName" />
@@ -2385,7 +2385,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece el límite máximo de tiempo para recibir el mensaje de la cola de destino.</summary>
-        <value>El tiempo total para un mensaje enviado se recibe de la cola de destino. De manera predeterminada, es <see cref="F:System.Messaging.Message.InfiniteTimeout" />.</value>
+        <value>Tiempo total requerido para recibir un mensaje enviado desde la cola de destino. De manera predeterminada, es <see cref="F:System.Messaging.Message.InfiniteTimeout" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2454,7 +2454,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece el límite máximo de tiempo para que el mensaje alcance la cola.</summary>
-        <value>El límite de tiempo para el mensaje alcance la cola de destino, comenzando desde el momento en el mensaje se envía. De manera predeterminada, es <see cref="F:System.Messaging.Message.InfiniteTimeout" />.</value>
+        <value>Límite de tiempo para que el mensaje alcance la cola de destino, desde el momento en que se envía. De manera predeterminada, es <see cref="F:System.Messaging.Message.InfiniteTimeout" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2511,7 +2511,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene el identificador de la transacción a la que pertenecía el mensaje.</summary>
-        <value>El identificador de la transacción asociada al mensaje.</value>
+        <value>Identificador de la transacción asociada al mensaje.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2535,7 +2535,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
         </remarks>
         <exception cref="T:System.InvalidOperationException">El mensaje no se ha enviado. Esta propiedad solo puede leerse en mensajes recuperados de una cola.  
   
--o bien- 
+O bien 
 La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messaging.Message.TransactionId" />.</exception>
         <altmember cref="P:System.Messaging.Message.IsFirstInTransaction" />
         <altmember cref="P:System.Messaging.Message.IsLastInTransaction" />
@@ -2572,7 +2572,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene la cola de estado de transacción del equipo de origen.</summary>
-        <value>La cola de estado de transacción en el equipo de origen, que se usa para enviar los mensajes de confirmación a la aplicación de envío. De manera predeterminada, es <see langword="null" />.</value>
+        <value>Cola de estado de transacción del equipo de origen, que se utiliza para devolver mensajes de confirmación a la aplicación de envío. De manera predeterminada, es <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2594,7 +2594,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
         </remarks>
         <exception cref="T:System.InvalidOperationException">El mensaje no se ha enviado. Esta propiedad solo puede leerse en mensajes recuperados de una cola.  
   
--o bien- 
+O bien 
 La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messaging.Message.TransactionStatusQueue" />.</exception>
         <altmember cref="P:System.Messaging.Message.TransactionId" />
         <altmember cref="P:System.Messaging.Message.AdministrationQueue" />
@@ -2634,7 +2634,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece un valor que indica si se autenticó (o debe autenticarse) el mensaje antes de enviarse.</summary>
-        <value><see langword="true" /> Si la aplicación de envío solicitó autenticación para el mensaje; en caso contrario, <see langword="false" />.</value>
+        <value><see langword="true" /> si la aplicación de envío solicitó autenticación del mensaje; <see langword="false" /> en cualquier otro caso.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2688,7 +2688,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece un valor que indica si debe enviarse una copia del mensaje que no pudo entregarse a la cola de mensajes no enviados.</summary>
-        <value><see langword="true" /> Si el error en la entrega del mensaje debe dar como resultado de una copia del mensaje que se envían a una cola de mensajes no enviados; en caso contrario, <see langword="false" />. De manera predeterminada, es <see langword="false" />.</value>
+        <value><see langword="true" /> si el error en la entrega del mensaje debe dar como resultado el envío de una copia del mensaje a una cola de mensajes no enviados; <see langword="false" /> en cualquier otro caso. De manera predeterminada, es <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2745,7 +2745,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece un valor que indica si el mensaje debe ser privado.</summary>
-        <value><see langword="true" /> para requerir que Message Queue Server cifrar el mensaje; en caso contrario, <see langword="false" />. De manera predeterminada, es <see langword="false" />.</value>
+        <value><see langword="true" /> para requerir que Message Queuing cifre el mensaje; <see langword="false" /> en cualquier otro caso. De manera predeterminada, es <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2798,7 +2798,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece un valor que indica si debe conservarse una copia del mensaje en un diario del equipo de origen.</summary>
-        <value><see langword="true" /> para requerir que se conserve una copia de un mensaje en el diario del equipo de origen después del mensaje se ha transmitido correctamente (desde el equipo de origen al servidor siguiente); en caso contrario, <see langword="false" />. De manera predeterminada, es <see langword="false" />.</value>
+        <value><see langword="true" /> para requerir que se conserve una copia del mensaje en el diario del equipo de origen después de transmitirse con éxito (desde este último al servidor siguiente); <see langword="false" /> en cualquier otro caso. De manera predeterminada, es <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2857,7 +2857,7 @@ La cola de mensajes se filtra para omitir la propiedad <see cref="P:System.Messa
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece un valor que indica si se debe seguir la traza de un mensaje mientras se traslada a su cola de destino.</summary>
-        <value><see langword="true" /> Si cada pasos intermedios realizados por el mensaje original en la ruta a la cola de destino generan un informe para enviarlo a la cola de informes del sistema; en caso contrario, <see langword="false" />. De manera predeterminada, es <see langword="false" />.</value>
+        <value><see langword="true" /> si cada uno de los pasos intermedios realizados por el mensaje original en su tránsito hacia la cola de destino genera un informe para enviarlo a la cola de informes del sistema; <see langword="false" /> en cualquier otro caso. De manera predeterminada, es <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

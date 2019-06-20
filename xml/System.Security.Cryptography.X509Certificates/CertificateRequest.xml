@@ -1,5 +1,5 @@
 <Type Name="CertificateRequest" FullName="System.Security.Cryptography.X509Certificates.CertificateRequest">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="9fcc4eab576a05d15ee6952c8d214c8e92617d7f" /><Meta Name="ms.sourcegitcommit" Value="3575d47a0ba065e8986f03d99279f478811907b8" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/20/2019" /><Meta Name="ms.locfileid" Value="65922634" /></Metadata><TypeSignature Language="C#" Value="public sealed class CertificateRequest" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="531cfe29ecb25e053f155bb6dbcebd62088c0fec" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67247101" /></Metadata><TypeSignature Language="C#" Value="public sealed class CertificateRequest" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CertificateRequest extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.CertificateRequest" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CertificateRequest" />
@@ -74,11 +74,11 @@
         <param name="hashAlgorithm">Algoritmo hash que se debe usar al firmar el certificado o la solicitud de certificado.</param>
         <summary>Inicializa una instancia de la clase <see cref="T:System.Security.Cryptography.X509Certificates.CertificateRequest" /> con el nombre de firmante especificado, la clave ECDSA y el algoritmo hash.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="subjectName" /> es <see langword="null" />.
+        <exception cref="T:System.ArgumentNullException"><paramref name="subjectName" /> es <see langword="null" />.
 
--o bien-
+O bien
 
-El valor de <paramref name="key" /> es <see langword="null" />.</exception>
+<paramref name="key" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="hashAlgorithm" />.<see cref="P:System.Security.Cryptography.HashAlgorithmName.Name" /> es <see langword="null" /> o <see cref="F:System.String.Empty" />.</exception>
       </Docs>
     </Member>
@@ -113,11 +113,11 @@ El valor de <paramref name="key" /> es <see langword="null" />.</exception>
         <param name="hashAlgorithm">Algoritmo hash que se debe usar al firmar el certificado o la solicitud de certificado.</param>
         <summary>Inicializa una instancia de la clase <see cref="T:System.Security.Cryptography.X509Certificates.CertificateRequest" /> con el nombre de firmante especificado, la clave pública codificada y el algoritmo hash.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="subjectName" /> es <see langword="null" />.
+        <exception cref="T:System.ArgumentNullException"><paramref name="subjectName" /> es <see langword="null" />.
 
--o bien-
+O bien
 
-El valor de <paramref name="publicKey" /> es <see langword="null" />.</exception>
+<paramref name="publicKey" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="hashAlgorithm" />.<see cref="P:System.Security.Cryptography.HashAlgorithmName.Name" /> es <see langword="null" /> o <see cref="F:System.String.Empty" />.</exception>
       </Docs>
     </Member>
@@ -153,11 +153,11 @@ El valor de <paramref name="publicKey" /> es <see langword="null" />.</exception
         <param name="hashAlgorithm">Algoritmo hash que se debe usar al firmar el certificado o la solicitud de certificado.</param>
         <summary>Inicializa una instancia de la clase <see cref="T:System.Security.Cryptography.X509Certificates.CertificateRequest" /> con el nombre de firmante especificado, la clave ECDSA y el algoritmo hash.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="subjectName" /> es <see langword="null" />.
+        <exception cref="T:System.ArgumentNullException"><paramref name="subjectName" /> es <see langword="null" />.
 
--o bien-
+O bien
 
-El valor de <paramref name="key" /> es <see langword="null" />.</exception>
+<paramref name="key" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="hashAlgorithm" />.<see cref="P:System.Security.Cryptography.HashAlgorithmName.Name" /> es <see langword="null" /> o <see cref="F:System.String.Empty" />.</exception>
         <altmember cref="M:System.Security.Cryptography.X509Certificates.X500DistinguishedName.#ctor(System.String)" />
       </Docs>
@@ -196,15 +196,15 @@ El valor de <paramref name="key" /> es <see langword="null" />.</exception>
         <param name="padding">Relleno de firma RSA que se aplicará si se efectúa la firma automática o se firma con un <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" />.</param>
         <summary>Inicializa una instancia de la clase <see cref="T:System.Security.Cryptography.X509Certificates.CertificateRequest" /> con el nombre de firmante especificado, la clave RSA y el algoritmo hash.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="subjectName" /> es <see langword="null" />.
+        <exception cref="T:System.ArgumentNullException"><paramref name="subjectName" /> es <see langword="null" />.
 
--o bien-
+O bien
 
-El valor de <paramref name="key" /> es <see langword="null" />.
+<paramref name="key" /> es <see langword="null" />.
 
--o bien-
+O bien
 
-El valor de <paramref name="padding" /> es <see langword="null" />.</exception>
+<paramref name="padding" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="hashAlgorithm" />.<see cref="P:System.Security.Cryptography.HashAlgorithmName.Name" /> es <see langword="null" /> o <see cref="F:System.String.Empty" />.</exception>
       </Docs>
     </Member>
@@ -242,15 +242,15 @@ El valor de <paramref name="padding" /> es <see langword="null" />.</exception>
         <param name="padding">Relleno de firma RSA que se aplicará si se efectúa la firma automática o se firma con un <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" />.</param>
         <summary>Inicializa una instancia de la clase <see cref="T:System.Security.Cryptography.X509Certificates.CertificateRequest" /> con el nombre de firmante especificado, la clave RSA y el algoritmo hash.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="subjectName" /> es <see langword="null" />.
+        <exception cref="T:System.ArgumentNullException"><paramref name="subjectName" /> es <see langword="null" />.
 
--o bien-
+O bien
 
-El valor de <paramref name="key" /> es <see langword="null" />.
+<paramref name="key" /> es <see langword="null" />.
 
--o bien-
+O bien
 
-El valor de <paramref name="padding" /> es <see langword="null" />.</exception>
+<paramref name="padding" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="hashAlgorithm" />.<see cref="P:System.Security.Cryptography.HashAlgorithmName.Name" /> es <see langword="null" /> o <see cref="F:System.String.Empty" />.</exception>
         <altmember cref="M:System.Security.Cryptography.X509Certificates.X500DistinguishedName.#ctor(System.String)" />
       </Docs>
@@ -331,22 +331,22 @@ El valor de <paramref name="padding" /> es <see langword="null" />.</exception>
         <summary>Crea un certificado con el firmante y la clave establecidos y con extensiones opcionales mediante el certificado especificado como emisor.</summary>
         <returns>Objeto <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> con los valores especificados. El objeto devuelto no impondrá <see cref="P:System.Security.Cryptography.X509Certificates.X509Certificate2.HasPrivateKey" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="issuerCertificate" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="issuerCertificate" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="issuerCertificate" /> no contiene ninguna clave privada.
 
--o bien-
+O bien
 
 No se pudo determinar el tipo de clave de firma representado por <paramref name="issuerCertificate" />.
 
--o bien-
+O bien
 
 <paramref name="notAfter" /> representa una fecha y hora anteriores a <paramref name="notBefore" />.
 
--o bien-
+O bien
 
 <paramref name="serialNumber" /> tiene una longitud cero o <see langword="null" />.
 
--o bien-
+O bien
 
 <paramref name="issuerCertificate" /> tiene un algoritmo de clave diferente del certificado solicitado.</exception>
         <exception cref="T:System.InvalidOperationException"><paramref name="issuerCertificate" /> es un certificado RSA y el objeto actual se creó con un constructor que no acepta los parámetros <paramref name="padding" />.</exception>
@@ -392,14 +392,14 @@ No se pudo determinar el tipo de clave de firma representado por <paramref name=
         <summary>Firma la solicitud de certificado actual para crear un certificado autofirmado o firmado mediante cadena.</summary>
         <returns>Objeto <see cref="T:System.Security.Cryptography.X509Certificates.X509Certificate2" /> con los valores especificados. El objeto devuelto no impondrá <see cref="P:System.Security.Cryptography.X509Certificates.X509Certificate2.HasPrivateKey" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="issuerCertificate" /> es <see langword="null" />.
+        <exception cref="T:System.ArgumentNullException"><paramref name="issuerCertificate" /> es <see langword="null" />.
 
--o bien-
+O bien
 
-El valor de <paramref name="generator" /> es <see langword="null" />.</exception>
+<paramref name="generator" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="notAfter" /> representa una fecha y hora anteriores a <paramref name="notBefore" />.
 
--o bien-
+O bien
 
 <paramref name="serialNumber" /> tiene una longitud cero o <see langword="null" />.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">Se produce un error durante la operación de firma.</exception>
@@ -549,7 +549,7 @@ public static string PemEncodeSigningRequest(CertificateRequest request, PkcsSig
         <summary>Crea un objeto PKCS#10 CertificationRequest con codificación ASN.1 DER que representa el estado actual del objeto actual mediante el generador de firmas proporcionado.</summary>
         <returns>Solicitud de firma de certificado con codificación DER.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="signatureGenerator" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="signatureGenerator" /> es <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="HashAlgorithm">

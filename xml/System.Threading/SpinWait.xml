@@ -1,5 +1,5 @@
 <Type Name="SpinWait" FullName="System.Threading.SpinWait">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="abb7bbb7dbaa77dbfde0e2229f83e792d539dc8b" /><Meta Name="ms.sourcegitcommit" Value="312579b66a6a983587a84f05c419be8fb0df7326" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/09/2019" /><Meta Name="ms.locfileid" Value="65473668" /></Metadata><TypeSignature Language="C#" Value="public struct SpinWait" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="57ceefc45d875b50a1029cd4ac7ac8c022e3318c" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67243314" /></Metadata><TypeSignature Language="C#" Value="public struct SpinWait" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SpinWait extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Threading.SpinWait" />
   <TypeSignature Language="VB.NET" Value="Public Structure SpinWait" />
@@ -27,7 +27,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Proporciona compatibilidad para la espera basada en ciclos.</summary>
+    <summary>Proporciona compatibilidad con la espera basada en ciclos.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -48,7 +48,7 @@
     </remarks>
     <threadsafe>Mientras <see cref="T:System.Threading.SpinWait" /> está diseñado para usarse en aplicaciones simultáneas, no está diseñado para utilizarse desde varios subprocesos simultáneamente. <see cref="T:System.Threading.SpinWait" /> los miembros no son seguros para subprocesos. Si varios subprocesos deben girar, cada uno debe usar su propia instancia de <see cref="T:System.Threading.SpinWait" />.</threadsafe>
     <related type="Article" href="~/docs/standard/threading/spinwait.md">SpinWait</related>
-    <related type="Article" href="~/docs/standard/threading/how-to-use-spinwait-to-implement-a-two-phase-wait-operation.md">Procedimiento para usar SpinWait para implementar una operación de espera de dos fases</related>
+    <related type="Article" href="~/docs/standard/threading/how-to-use-spinwait-to-implement-a-two-phase-wait-operation.md">Cómo: Usar SpinWait para implementar una operación de espera de dos fases</related>
   </Docs>
   <Members>
     <Member MemberName="Count">
@@ -80,11 +80,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el número de veces <see cref="M:System.Threading.SpinWait.SpinOnce" /> se ha llamado en esta instancia.</summary>
-        <value>Devuelve un entero que representa el número de veces <see cref="M:System.Threading.SpinWait.SpinOnce" /> se ha llamado en esta instancia.</value>
+        <summary>Obtiene el número de veces que se ha llamado a <see cref="M:System.Threading.SpinWait.SpinOnce" /> en esta instancia.</summary>
+        <value>Devuelve un entero que representa el número de veces que <see cref="M:System.Threading.SpinWait.SpinOnce" /> se ha llamado en esta instancia.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">Procedimiento para usar SpinWait para implementar una operación de espera de dos fases</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">Cómo: Usar SpinWait para implementar una operación de espera de dos fases</related>
       </Docs>
     </Member>
     <Member MemberName="NextSpinWillYield">
@@ -116,8 +116,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene si la siguiente llamada a <see cref="M:System.Threading.SpinWait.SpinOnce" /> dará como resultado del procesador, lo que activa un cambio de contexto forzado.</summary>
-        <value>Si la siguiente llamada a <see cref="M:System.Threading.SpinWait.SpinOnce" /> dará como resultado del procesador, lo que activa un cambio de contexto forzado.</value>
+        <summary>Obtiene si la llamada siguiente a <see cref="M:System.Threading.SpinWait.SpinOnce" /> da paso al procesador, lo que activa un cambio de contexto forzado.</summary>
+        <value>Si la llamada siguiente a <see cref="M:System.Threading.SpinWait.SpinOnce" /> da paso al procesador, lo que activa un cambio de contexto forzado.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -127,7 +127,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">Procedimiento para usar SpinWait para implementar una operación de espera de dos fases</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">Cómo: Usar SpinWait para implementar una operación de espera de dos fases</related>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -178,7 +178,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">Procedimiento para usar SpinWait para implementar una operación de espera de dos fases</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">Cómo: Usar SpinWait para implementar una operación de espera de dos fases</related>
       </Docs>
     </Member>
     <Member MemberName="SpinOnce">
@@ -221,7 +221,7 @@
  ]]></format>
         </remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">Procedimiento para usar SpinWait para implementar una operación de espera de dos fases</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">Cómo: Usar SpinWait para implementar una operación de espera de dos fases</related>
       </Docs>
     </Member>
     <Member MemberName="SpinOnce">
@@ -264,7 +264,7 @@
       <Docs>
         <summary>Itera en ciclos hasta que se satisface la condición especificada.</summary>
         <related type="Article" href="https://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">Procedimiento para usar SpinWait para implementar una operación de espera de dos fases</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">Cómo: Usar SpinWait para implementar una operación de espera de dos fases</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="SpinUntil">
@@ -299,12 +299,12 @@
         <Parameter Name="condition" Type="System.Func&lt;System.Boolean&gt;" />
       </Parameters>
       <Docs>
-        <param name="condition">Un delegado que se ejecutará una y otra vez hasta que se devuelve true.</param>
+        <param name="condition">Delegado que se va a ejecutar una y otra vez hasta que devuelva true.</param>
         <summary>Itera en ciclos hasta que se satisface la condición especificada.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="condition" /> es null.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">Procedimiento para usar SpinWait para implementar una operación de espera de dos fases</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">Cómo: Usar SpinWait para implementar una operación de espera de dos fases</related>
       </Docs>
     </Member>
     <Member MemberName="SpinUntil">
@@ -340,15 +340,15 @@
         <Parameter Name="millisecondsTimeout" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="condition">Un delegado que se ejecutará una y otra vez hasta que se devuelve true.</param>
+        <param name="condition">Delegado que se va a ejecutar una y otra vez hasta que devuelva true.</param>
         <param name="millisecondsTimeout">Número de milisegundos de espera o <see cref="F:System.Threading.Timeout.Infinite" /> (-1) para esperar indefinidamente.</param>
-        <summary>Itera en ciclos hasta que se satisface la condición especificada, o hasta que venza el tiempo de espera especificado.</summary>
-        <returns>True si se cumple la condición en el tiempo de espera; en caso contrario, false</returns>
+        <summary>Itera en ciclos hasta que se satisface la condición especificada o se agota el tiempo de espera indicado.</summary>
+        <returns>Es true si la condición se satisface dentro del tiempo de espera; de lo contrario, es false.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="condition" /> es null.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="millisecondsTimeout" /> es un número negativo distinto de-1, que representa un tiempo de espera infinito.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">Procedimiento para usar SpinWait para implementar una operación de espera de dos fases</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">Cómo: Usar SpinWait para implementar una operación de espera de dos fases</related>
       </Docs>
     </Member>
     <Member MemberName="SpinUntil">
@@ -384,15 +384,15 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="condition">Un delegado que se ejecutará una y otra vez hasta que se devuelve true.</param>
-        <param name="timeout">Un <see cref="T:System.TimeSpan" /> que representa el número de milisegundos de espera o TimeSpan que representa-1 milisegundos para esperar indefinidamente.</param>
-        <summary>Itera en ciclos hasta que se satisface la condición especificada, o hasta que venza el tiempo de espera especificado.</summary>
-        <returns>True si se cumple la condición en el tiempo de espera; en caso contrario, false</returns>
+        <param name="condition">Delegado que se va a ejecutar una y otra vez hasta que devuelva true.</param>
+        <param name="timeout">Estructura <see cref="T:System.TimeSpan" /> que representa el número de milisegundos de espera o TimeSpan que representa -1 milisegundo para esperar indefinidamente.</param>
+        <summary>Itera en ciclos hasta que se satisface la condición especificada o se agota el tiempo de espera indicado.</summary>
+        <returns>Es true si la condición se satisface dentro del tiempo de espera; de lo contrario, es false.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="condition" /> es null.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="timeout" /> es un número negativo distinto de-1 milisegundo, que representa un tiempo de espera infinito - o bien - tiempo de espera es mayor que <see cref="F:System.Int32.MaxValue" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="timeout" /> es un número negativo distinto de -1 milisegundo, que representa un tiempo de espera infinito, o el tiempo de espera es mayor que <see cref="F:System.Int32.MaxValue" />.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">Procedimiento para usar SpinWait para implementar una operación de espera de dos fases</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">Cómo: Usar SpinWait para implementar una operación de espera de dos fases</related>
       </Docs>
     </Member>
   </Members>

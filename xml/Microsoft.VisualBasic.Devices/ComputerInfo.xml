@@ -1,5 +1,5 @@
 <Type Name="ComputerInfo" FullName="Microsoft.VisualBasic.Devices.ComputerInfo">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="88b0858ae40bc6da198596f515cb4c93e827a716" /><Meta Name="ms.sourcegitcommit" Value="95e24aee1283af2f120fc5da4b0bdc0712ab698f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/06/2019" /><Meta Name="ms.locfileid" Value="65155877" /></Metadata><TypeSignature Language="C#" Value="public class ComputerInfo" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bb2e870fbb1edbb7fc3e8a34d5484ab756e2623f" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67239340" /></Metadata><TypeSignature Language="C#" Value="public class ComputerInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ComputerInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.ComputerInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class ComputerInfo" />
@@ -86,9 +86,10 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -99,8 +100,8 @@
         <ReturnType>System.UInt64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene la cantidad total de memoria física disponible para el equipo.</summary>
-        <value>Un <see langword="ULong" /> que contiene el número de bytes de memoria física disponible en el equipo.</value>
+        <summary>Obtiene la cantidad total de memoria física disponible en el equipo.</summary>
+        <value>Un valor de tipo <see langword="ULong" /> que contiene el número de bytes de la memoria física disponible en el equipo.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -135,9 +136,10 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -148,8 +150,8 @@
         <ReturnType>System.UInt64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene la cantidad total de espacio de direcciones virtual del equipo.</summary>
-        <value>Un <see langword="ULong" /> que contiene el número de bytes de espacio de direcciones virtual del equipo.</value>
+        <summary>Obtiene la cantidad total del espacio de direcciones virtual que está disponible en el equipo.</summary>
+        <value>Un valor de tipo <see langword="ULong" /> que contiene el número de bytes correspondientes al espacio de direcciones virtual que está disponible en el equipo.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -190,8 +192,8 @@
         <ReturnType>System.Globalization.CultureInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene la actual referencia cultural de interfaz de usuario instalada con el sistema operativo.</summary>
-        <value>Un <see cref="T:System.Globalization.CultureInfo" /> objeto representa la referencia cultural de interfaz de usuario instalada en el equipo.</value>
+        <summary>Obtiene la actual referencia cultural de la interfaz de usuario que está instalada con el sistema operativo.</summary>
+        <value>Un objeto <see cref="T:System.Globalization.CultureInfo" /> que representa la referencia cultural de la interfaz de usuario instalada en el equipo.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -238,8 +240,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el nombre de sistema operativo completo.</summary>
-        <value>Un <see langword="String" /> que contiene el nombre del sistema operativo.</value>
+        <summary>Obtiene el nombre completo del sistema operativo.</summary>
+        <value>Un valor de tipo <see langword="String" /> que contiene el nombre del sistema operativo.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -281,8 +283,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el identificador de plataforma para el sistema operativo del equipo.</summary>
-        <value>Un <see langword="String" /> que contiene el identificador de plataforma para el sistema operativo del equipo, elige de los nombres de miembro de la <see cref="T:System.PlatformID" /> enumeración.</value>
+        <summary>Obtiene el identificador de plataforma correspondiente al sistema operativo del equipo.</summary>
+        <value>Un valor de tipo <see langword="String" /> que contiene el identificador de plataforma correspondiente al sistema operativo del equipo, el cual se elige entre los nombres de los miembros de la enumeración <see cref="T:System.PlatformID" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -326,7 +328,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene la versión del sistema operativo del equipo.</summary>
-        <value>Un <see langword="String" /> que contiene el número de versión actual del sistema operativo.</value>
+        <value>Un valor de tipo <see langword="String" /> que contiene el actual número de versión del sistema operativo.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -363,9 +365,10 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -376,8 +379,8 @@
         <ReturnType>System.UInt64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene la cantidad total de memoria física del equipo.</summary>
-        <value>Un <see langword="ULong" /> que contiene el número de bytes de memoria física del equipo.</value>
+        <summary>Obtiene la cantidad total de memoria física en el equipo.</summary>
+        <value>Un valor de tipo <see langword="ULong" /> que contiene el número de bytes de la memoria física en el equipo.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -412,9 +415,10 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -425,8 +429,8 @@
         <ReturnType>System.UInt64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene la cantidad total de espacio de direcciones virtuales disponible para el equipo.</summary>
-        <value>Un <see langword="ULong" /> que contiene el número de bytes de espacio de direcciones virtuales disponible para el equipo.</value>
+        <summary>Obtiene la cantidad total de espacio de direcciones virtual que está disponible en el equipo.</summary>
+        <value>Un valor de tipo <see langword="ULong" /> que contiene el número de bytes correspondientes al espacio de direcciones virtual que está disponible en el equipo.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

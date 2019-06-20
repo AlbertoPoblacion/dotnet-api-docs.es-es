@@ -1,5 +1,5 @@
 <Type Name="BaseDataListDesigner" FullName="System.Web.UI.Design.WebControls.BaseDataListDesigner">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="80ad23fc80fbef41e745127c55febf776e3fc9ce" /><Meta Name="ms.sourcegitcommit" Value="5ebd9691c6f7d50c4730e997fba69e54bdd7cc0c" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="65829911" /></Metadata><TypeSignature Language="C#" Value="public abstract class BaseDataListDesigner : System.Web.UI.Design.TemplatedControlDesigner, System.Web.UI.Design.IDataBindingSchemaProvider, System.Web.UI.Design.IDataSourceProvider" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="197cde02eca3ec777cdc3c46ec292a5cf71b5e1c" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67243020" /></Metadata><TypeSignature Language="C#" Value="public abstract class BaseDataListDesigner : System.Web.UI.Design.TemplatedControlDesigner, System.Web.UI.Design.IDataBindingSchemaProvider, System.Web.UI.Design.IDataSourceProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BaseDataListDesigner extends System.Web.UI.Design.TemplatedControlDesigner implements class System.Web.UI.Design.IDataBindingSchemaProvider, class System.Web.UI.Design.IDataSourceProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.BaseDataListDesigner" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BaseDataListDesigner&#xA;Inherits TemplatedControlDesigner&#xA;Implements IDataBindingSchemaProvider, IDataSourceProvider" />
@@ -147,7 +147,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece el valor del campo de clave de datos del control asociado.</summary>
-        <value>El <see cref="P:System.Web.UI.WebControls.BaseDataList.DataKeyField" /> valor del control asociado.</value>
+        <value>Valor <see cref="P:System.Web.UI.WebControls.BaseDataList.DataKeyField" /> del control asociado.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -179,7 +179,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece el valor del campo de miembro de datos del control asociado.</summary>
-        <value>El <see cref="P:System.Web.UI.WebControls.BaseDataList.DataMember" /> valor del control asociado.</value>
+        <value>Valor <see cref="P:System.Web.UI.WebControls.BaseDataList.DataMember" /> del control asociado.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -210,8 +210,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el valor de la propiedad de origen de datos del control asociado.</summary>
-        <value>El <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" /> valor del control asociado.</value>
+        <summary>Obtiene o establece el valor de la propiedad del origen de datos del control asociado.</summary>
+        <value>Valor <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" /> del control asociado.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -248,7 +248,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene el diseñador del origen de datos, cuando se selecciona uno para el enlace de datos.</summary>
-        <value>El diseñador para el origen de datos del control asociado.</value>
+        <value>Diseñador del origen de datos del control asociado.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -279,8 +279,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece la versión del Diseñador de la propiedad de Id. de origen de datos y realizar copias sombra de la propiedad correspondiente del control asociado.</summary>
-        <value>Un <see cref="T:System.String" /> que es el identificador de origen de datos del control asociado.</value>
+        <summary>Obtiene o establece la versión del diseñador de la propiedad de id. del origen de datos, y se utiliza para realizar una copia sombra de la propiedad correspondiente del control asociado.</summary>
+        <value><see cref="T:System.String" /> que es el id. del origen de datos del control asociado.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -312,8 +312,8 @@
         <ReturnType>System.Web.UI.Design.DesignerDataSourceView</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene la vista predeterminada del origen de datos que está enlazado al control asociado.</summary>
-        <value>El <see cref="T:System.Web.UI.Design.DesignerDataSourceView" /> que representa la vista predeterminada del origen de datos.</value>
+        <summary>Obtiene la vista predeterminada del origen de datos enlazado al control asociado.</summary>
+        <value><see cref="T:System.Web.UI.Design.DesignerDataSourceView" /> que representa la vista predeterminada del origen de datos.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -355,7 +355,7 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
 
 ]]></format>
         </remarks>
-        <altmember cref="T:System.Web.UI.Design.WebControls.BaseDataList" />
+        <altmember cref="T:System.Web.UI.WebControls.BaseDataList" />
         <altmember cref="P:System.Web.UI.Design.WebControls.BaseDataListDesigner.DataSource" />
       </Docs>
     </Member>
@@ -381,7 +381,7 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
       </Parameters>
       <Docs>
         <param name="disposing">Es <see langword="true" /> para liberar tanto recursos administrados como no administrados; es <see langword="false" /> para liberar únicamente recursos no administrados.</param>
-        <summary>Libera los recursos no administrados utilizados por el diseñador y, opcionalmente, libera los recursos administrados.</summary>
+        <summary>Libera los recursos no administrados utilizados por el diseñador y, de forma opcional, libera los recursos administrados.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -408,7 +408,7 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Genera un objeto que puede usarse como un origen de datos en tiempo de diseño.</summary>
+        <summary>Genera un objeto que se puede utilizar como origen de datos en tiempo de diseño.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetDesignTimeDataSource">
@@ -433,10 +433,10 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
         <Parameter Name="dummyDataSource" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="minimumRows">El número mínimo de filas de datos de ejemplo que debe contener el origen de datos.</param>
-        <param name="dummyDataSource"><see langword="true" /> Si el origen de datos devuelto contiene datos ficticios; <see langword="false" /> si el origen de datos devuelto contiene datos de un origen de datos reales.</param>
-        <summary>Genera un objeto que puede usarse como un origen de datos en tiempo de diseño.</summary>
-        <returns>Un objeto que implementa un <see cref="T:System.Collections.IEnumerable" /> interfaz que actúa como un origen de datos para su uso en tiempo de diseño.</returns>
+        <param name="minimumRows">Número mínimo de filas de datos de muestra que debe contener el origen de datos.</param>
+        <param name="dummyDataSource">Es <see langword="true" /> si el origen de datos devuelto contiene datos ficticios; es <see langword="false" /> si el origen de datos devuelto contiene datos de un origen de datos real.</param>
+        <summary>Genera un objeto que se puede utilizar como origen de datos en tiempo de diseño.</summary>
+        <returns>Objeto que implementa una interfaz <see cref="T:System.Collections.IEnumerable" /> que actúa como origen de datos para su uso en tiempo de diseño.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -475,11 +475,11 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
         <Parameter Name="dummyDataSource" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="selectedDataSource">Un objeto que implementa un <see cref="T:System.Collections.IEnumerable" /> que se utiliza como plantilla para el formato de datos.</param>
-        <param name="minimumRows">El número mínimo de filas de datos de ejemplo que deben contener los datos de origen de datos.</param>
-        <param name="dummyDataSource"><see langword="true" /> Si el origen de datos devuelto contiene datos ficticios; <see langword="false" /> si el origen de datos devuelto contiene datos de un origen de datos reales.</param>
-        <summary>Genera un objeto que puede usarse como un origen de datos en tiempo de diseño.</summary>
-        <returns>Un objeto que implementa un <see cref="T:System.Collections.IEnumerable" /> interfaz que actúa como un origen de datos para su uso en tiempo de diseño.</returns>
+        <param name="selectedDataSource">Objeto que implementa <see cref="T:System.Collections.IEnumerable" />, que se utiliza como plantilla para el formato de datos.</param>
+        <param name="minimumRows">Número mínimo de filas de datos de muestra que deben contener los datos del origen de datos.</param>
+        <param name="dummyDataSource">Es <see langword="true" /> si el origen de datos devuelto contiene datos ficticios; es <see langword="false" /> si el origen de datos devuelto contiene datos de un origen de datos real.</param>
+        <summary>Genera un objeto que se puede utilizar como origen de datos en tiempo de diseño.</summary>
+        <returns>Objeto que implementa una interfaz <see cref="T:System.Collections.IEnumerable" /> que actúa como origen de datos para su uso en tiempo de diseño.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -515,8 +515,8 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Obtiene el componente de origen de datos del contenedor del control asociado, resuelto en un miembro de datos específicos.</summary>
-        <returns>Un objeto que implementa un <see cref="T:System.Collections.IEnumerable" /> interfaz que contiene el tiempo de diseño <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" /> del control asociado, resuelto para el <see cref="P:System.Web.UI.WebControls.BaseDataList.DataMember" /> parámetro; en caso contrario, <see langword="null" /> si no se encuentra un origen de datos.</returns>
+        <summary>Obtiene el componente de origen de datos desde el contenedor de control asociado, resuelto en un miembro de datos concreto.</summary>
+        <returns>Objeto que implementa una interfaz <see cref="T:System.Collections.IEnumerable" /> que contiene el <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" /> en tiempo de diseño del control asociado, resuelto en el parámetro <see cref="P:System.Web.UI.WebControls.BaseDataList.DataMember" />; de lo contrario, si no se encuentra ningún origen de datos, es <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -557,7 +557,7 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
       <Parameters />
       <Docs>
         <summary>Obtiene el componente de origen de datos del contenedor del control asociado.</summary>
-        <returns>Un objeto que implementa un <see cref="T:System.Collections.IEnumerable" /> interfaz que contiene el tiempo de diseño <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" /> propiedad del control asociado; en caso contrario, <see langword="null" /> si no se encuentra un origen de datos.</returns>
+        <returns>Objeto que implementa una interfaz <see cref="T:System.Collections.IEnumerable" /> que contiene la propiedad <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" /> en tiempo de diseño del control asociado; de lo contrario, si no se encuentra ningún origen de datos, es <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -603,9 +603,9 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
         <Parameter Name="templateName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="templateName">Un <see cref="T:System.String" /> que especifica el nombre de la plantilla para que se va a obtener el origen de datos.</param>
+        <param name="templateName"><see cref="T:System.String" /> que especifica el nombre de la plantilla para la que se va a obtener el origen de datos.</param>
         <summary>Obtiene el origen de datos del contenedor de la plantilla.</summary>
-        <returns>Un objeto que implementa un <see cref="T:System.Collections.IEnumerable" /> interfaz que contiene un tiempo de diseño <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" /> propiedad.</returns>
+        <returns>Objeto que implementa una interfaz <see cref="T:System.Collections.IEnumerable" /> que contiene una propiedad <see cref="P:System.Web.UI.WebControls.BaseDataList.DataSource" /> en tiempo de diseño.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -643,7 +643,7 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">Un control derivado de la <see cref="T:System.Web.UI.WebControls.BaseDataList" />, que implementa un <see cref="T:System.ComponentModel.IComponent" />.</param>
+        <param name="component">Control derivado de <see cref="T:System.Web.UI.WebControls.BaseDataList" />, que implementa <see cref="T:System.ComponentModel.IComponent" />.</param>
         <summary>Prepara el diseñador para poder ver, modificar y diseñar el control asociado.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -686,7 +686,7 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
         <Parameter Name="initialPage" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="initialPage">El índice de la página con la que se va a inicializar el editor de componentes.</param>
+        <param name="initialPage">Índice de la página con la que se inicializará el editor de componentes.</param>
         <summary>Invoca un editor de componentes para el control asociado.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -731,7 +731,7 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
       <Docs>
         <param name="sender"><see cref="T:System.Object" /> que provocó el evento.</param>
         <param name="e">Objeto <see cref="T:System.EventArgs" /> que contiene los datos del evento.</param>
-        <summary>Controla el <see langword="AutoFormat" /> eventos.</summary>
+        <summary>Controla el evento <see langword="AutoFormat" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -764,7 +764,7 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
         <Parameter Name="appliedAutoFormat" Type="System.Web.UI.Design.DesignerAutoFormat" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="appliedAutoFormat">Un <see cref="T:System.Web.UI.Design.DesignerAutoFormat" /> objeto que define un estilo.</param>
+        <param name="appliedAutoFormat">Objeto <see cref="T:System.Web.UI.Design.DesignerAutoFormat" /> que define un estilo.</param>
         <summary>Se llama cuando se ha aplicado un esquema de formato automático al control asociado.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -804,9 +804,9 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
         <Parameter Name="e" Type="System.ComponentModel.Design.ComponentChangedEventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">El <see cref="T:System.Object" /> que es el origen del evento.</param>
+        <param name="sender"><see cref="T:System.Object" /> que es el origen del evento.</param>
         <param name="e">Objeto <see cref="T:System.ComponentModel.Design.ComponentChangedEventArgs" /> que contiene los datos del evento.</param>
-        <summary>Se llama cuando hay un cambio en el control asociado.</summary>
+        <summary>Se llama a este método cuando hay un cambio en el control asociado.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -841,7 +841,7 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Se llama cuando ha cambiado el origen de datos para el control asociado.</summary>
+        <summary>Se llama cuando ha cambiado el origen de datos del control asociado.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -882,7 +882,7 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="sender">Un <see cref="T:System.Object" /> que es el origen del evento.</param>
+        <param name="sender"><see cref="T:System.Object" /> que es el origen del evento.</param>
         <param name="e">Objeto <see cref="T:System.EventArgs" /> que contiene los datos del evento.</param>
         <summary>Representa el método que controla el evento del generador de propiedades.</summary>
         <remarks>
@@ -917,7 +917,7 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Se llama cuando cambia el esquema del origen de datos correspondiente al control asociado.</summary>
+        <summary>Se llama a este método cuando cambia el esquema del origen de datos correspondiente al control asociado.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -955,7 +955,7 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Se puede invalidar para implementar funcionalidad que es necesaria cuando ha cambiado un estilo del control asociado.</summary>
+        <summary>Se puede reemplazar para implementar funcionalidad que es necesaria cuando ha cambiado un estilo del control asociado.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -987,7 +987,7 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Se puede invalidar para implementar funcionalidad que es necesaria cuando han cambiado los verbos de edición de plantillas de diseñador.</summary>
+        <summary>Se puede reemplazar para implementar funcionalidad que es necesaria cuando han cambiado los verbos de edición de plantillas del diseñador.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1023,7 +1023,7 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
         <Parameter Name="properties" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
-        <param name="properties">Colección que implementa un <see cref="T:System.Collections.IDictionary" /> interfaz de las propiedades agregadas y reemplazadas.</param>
+        <param name="properties">Colección que implementa una interfaz <see cref="T:System.Collections.IDictionary" /> de las propiedades agregadas y propiedades reemplazadas.</param>
         <summary>La usa el diseñador para quitar o agregar propiedades en la presentación de la cuadrícula **Propiedades**, o para reemplazar propiedades del control asociado.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1062,8 +1062,8 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Para una descripción de este miembro, vea <see cref="P:System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema" />.</summary>
-        <value><see langword="true" /> Si se puede actualizar el esquema; en caso contrario, <see langword="false" />.</value>
+        <summary>Para obtener una descripción de este miembro, vea <see cref="P:System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema" />.</summary>
+        <value>Es <see langword="true" /> si se puede actualizar el esquema; de lo contrario, es <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1074,7 +1074,7 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
         </remarks>
         <altmember cref="T:System.Web.UI.Design.IDataBindingSchemaProvider" />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Ampliar compatibilidad en tiempo de diseño</related>
-        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">Procedimiento Extender la apariencia y comportamiento de los controles en modo de diseño</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">Cómo: Extender la apariencia y el comportamiento de los controles en modo de diseño</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataBindingSchemaProvider.RefreshSchema">
@@ -1099,8 +1099,8 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
         <Parameter Name="preferSilent" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="preferSilent"><see langword="true" /> Para deshabilitar los eventos de enlace de datos hasta después del esquema se han actualizado; <see langword="false" /> para habilitar los eventos.</param>
-        <summary>Para una descripción de este miembro, vea <see cref="M:System.Web.UI.Design.IDataBindingSchemaProvider.RefreshSchema(System.Boolean)" />.</summary>
+        <param name="preferSilent"><see langword="true" /> para deshabilitar los eventos de enlace de datos hasta después de que se haya actualizado el esquema; <see langword="false" /> para habilitar los eventos.</param>
+        <summary>Para obtener una descripción de este miembro, vea <see cref="M:System.Web.UI.Design.IDataBindingSchemaProvider.RefreshSchema(System.Boolean)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1111,7 +1111,7 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
         </remarks>
         <altmember cref="T:System.Web.UI.Design.IDataBindingSchemaProvider" />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Ampliar compatibilidad en tiempo de diseño</related>
-        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">Procedimiento Extender la apariencia y comportamiento de los controles en modo de diseño</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">Cómo: Extender la apariencia y el comportamiento de los controles en modo de diseño</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataBindingSchemaProvider.Schema">
@@ -1134,7 +1134,7 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
         <ReturnType>System.Web.UI.Design.IDataSourceViewSchema</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Para una descripción de este miembro, vea <see cref="P:System.Web.UI.Design.IDataBindingSchemaProvider.Schema" />.</summary>
+        <summary>Para obtener una descripción de este miembro, vea <see cref="P:System.Web.UI.Design.IDataBindingSchemaProvider.Schema" />.</summary>
         <value>Un objeto <see cref="T:System.Web.UI.Design.IDataSourceViewSchema" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1146,7 +1146,7 @@ El `DesignTimeHtmlRequiresLoadComplete` propiedad devuelve `true` si el <xref:Sy
         </remarks>
         <altmember cref="T:System.Web.UI.Design.IDataBindingSchemaProvider" />
         <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/37899azc(v=vs.100)">Ampliar compatibilidad en tiempo de diseño</related>
-        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">Procedimiento Extender la apariencia y comportamiento de los controles en modo de diseño</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171820(v=vs.120)">Cómo: Extender la apariencia y el comportamiento de los controles en modo de diseño</related>
       </Docs>
     </Member>
     <Member MemberName="Verbs">

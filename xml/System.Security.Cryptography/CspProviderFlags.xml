@@ -1,5 +1,5 @@
 <Type Name="CspProviderFlags" FullName="System.Security.Cryptography.CspProviderFlags">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="bbcf30153fa7a3b414fd3ed0bb2386f797bac519" /><Meta Name="ms.sourcegitcommit" Value="f61362e4134a78bac27d2c8136823a467216f4ab" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/15/2019" /><Meta Name="ms.locfileid" Value="65629311" /></Metadata><TypeSignature Language="C#" Value="public enum CspProviderFlags" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0a0c14514bc414bc344530cf9db847dfc5bee32f" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67246964" /></Metadata><TypeSignature Language="C#" Value="public enum CspProviderFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed CspProviderFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CspProviderFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum CspProviderFlags" />
@@ -38,9 +38,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Especifica las marcas que modifican el comportamiento de los proveedores de servicios criptográficos (CSP).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
+    <summary>Especifica marcas que modifican el comportamiento de los proveedores de servicios criptográficos (CSP).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
@@ -48,7 +48,7 @@
 >  El `CreateEphemeralKey` marca proporciona las claves temporales con la limpieza más confiable. Si no se usa esta marca, common language runtime (CLR) genera una clave con nombre aleatorio cuando se crea un objeto RSA. Cuando se finaliza o eliminado el objeto, se elimina la clave. Cuando la suplantación está en vigor, no llamar explícitamente a `Dispose` potencialmente puede crear un problema. Por ejemplo, si utilizar la suplantación, cree un objeto RSA y no la elimina, el subproceso del finalizador (que no está realizando la suplantación) puede dar error al eliminar la clave y, a continuación, produce una excepción. Esta excepción está controlada y puede finalizar el proceso. No se recuperan los recursos asignados a la clave, lo que produce una pérdida de memoria. El <xref:System.Security.Permissions.KeyContainerPermission> esta marca suprime la demanda.  
   
  ]]></format>
-        </remarks>
+    </remarks>
     <related type="Article" href="~/docs/standard/security/cryptographic-services.md">servicios criptográficos</related>
   </Docs>
   <Members>
@@ -81,7 +81,7 @@
       </ReturnValue>
       <MemberValue>128</MemberValue>
       <Docs>
-        <summary>Permite crear una clave temporal que se libera cuando se cierra el objeto Rivest-Shamir-Adleman (RSA) asociado. No use esta marca si quiere que la clave sea independiente del objeto RSA.</summary>
+        <summary>Cree una clave temporal que se libera cuando se cierra el objeto Rivest-Shamir-Adleman (RSA) asociado. No utilice esta marca si desea que su clave sea independiente del objeto RSA.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,7 +115,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Permite no especificar ninguna configuración.</summary>
+        <summary>No especifique ninguna configuración.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoPrompt">
@@ -148,7 +148,7 @@
       </ReturnValue>
       <MemberValue>64</MemberValue>
       <Docs>
-        <summary>Permite impedir que el CSP muestre interfaces de usuario para este contexto.</summary>
+        <summary>Evite que el CSP muestre las interfaces de usuario (IU) de este contexto.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseArchivableKey">
@@ -181,7 +181,7 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>Permite exportar una clave para archivado o recuperación.</summary>
+        <summary>Permita que se exporte una clave para archivado o recuperación.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseDefaultKeyContainer">
@@ -215,7 +215,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Permite usar la información de clave del contenedor de claves predeterminado.</summary>
+        <summary>Utilice la información de clave del contenedor de claves predeterminado.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseExistingKey">
@@ -249,7 +249,7 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>Permite usar la información de clave de la clave actual.</summary>
+        <summary>Utilice la información de clave de la clave actual.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseMachineKeyStore">
@@ -283,7 +283,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Permite usar la información de clave del almacén de claves del equipo.</summary>
+        <summary>Utilice la información de clave del almacén de claves del equipo.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseNonExportableKey">
@@ -316,7 +316,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Permite usar la información de clave que no se puede exportar.</summary>
+        <summary>Utilice la información de clave que no se puede exportar.</summary>
       </Docs>
     </Member>
     <Member MemberName="UseUserProtectedKey">
@@ -349,7 +349,7 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>Permite notificar al usuario a través de un cuadro de diálogo u otro método cuando algunas acciones intentan usar una clave.  Esta marca no es compatible con la marca <see cref="F:System.Security.Cryptography.CspProviderFlags.NoPrompt" />.</summary>
+        <summary>Notifique al usuario mediante un cuadro de diálogo u otro método cuando algunas acciones intenten usar una clave.  Esta marca no es compatible con la marca <see cref="F:System.Security.Cryptography.CspProviderFlags.NoPrompt" />.</summary>
       </Docs>
     </Member>
   </Members>

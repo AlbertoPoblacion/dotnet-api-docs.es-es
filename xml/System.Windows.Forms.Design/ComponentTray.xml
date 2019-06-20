@@ -1,5 +1,5 @@
 <Type Name="ComponentTray" FullName="System.Windows.Forms.Design.ComponentTray">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="140335deace24d8b4745e0f7060a6cd63a47f524" /><Meta Name="ms.sourcegitcommit" Value="0609891c89ddaa91e4c02970acb00072fcc29baf" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/13/2019" /><Meta Name="ms.locfileid" Value="65558851" /></Metadata><TypeSignature Language="C#" Value="public class ComponentTray : System.Windows.Forms.ScrollableControl, System.ComponentModel.IExtenderProvider" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="eca7a0f3b23b7de7307e137e75a0e3772e74ffc9" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67242779" /></Metadata><TypeSignature Language="C#" Value="public class ComponentTray : System.Windows.Forms.ScrollableControl, System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComponentTray extends System.Windows.Forms.ScrollableControl implements class System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ComponentTray" />
   <TypeSignature Language="VB.NET" Value="Public Class ComponentTray&#xA;Inherits ScrollableControl&#xA;Implements IExtenderProvider" />
@@ -38,7 +38,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Proporciona el comportamiento de la Bandeja de componentes de un diseñador.</summary>
+    <summary>Proporciona el comportamiento de la bandeja de componentes de un diseñador.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -76,9 +76,9 @@
         <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="mainDesigner">El <see cref="T:System.ComponentModel.Design.IDesigner" /> que es el principal o el Diseñador de documentos para el proyecto actual.</param>
-        <param name="serviceProvider">Un <see cref="T:System.IServiceProvider" /> que se puede utilizar para obtener servicios en tiempo de diseño.</param>
-        <summary>Inicializa una nueva instancia de la <see cref="T:System.Windows.Forms.Design.ComponentTray" /> clase mediante el proveedor de servicio y el diseñador especificado.</summary>
+        <param name="mainDesigner"><see cref="T:System.ComponentModel.Design.IDesigner" /> que es el diseñador principal o de documentos del proyecto actual.</param>
+        <param name="serviceProvider"><see cref="T:System.IServiceProvider" /> que se puede utilizar para obtener servicios en tiempo de diseño.</param>
+        <summary>Inicializa una nueva instancia de la clase <see cref="T:System.Windows.Forms.Design.ComponentTray" /> mediante el proveedor de servicios y el diseñador especificados.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -114,7 +114,7 @@
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">El <see cref="T:System.ComponentModel.IComponent" /> para agregar a la bandeja.</param>
+        <param name="component"><see cref="T:System.ComponentModel.IComponent" /> que se va a agregar a la bandeja.</param>
         <summary>Agrega un componente a la bandeja.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.Design.ComponentTray.RemoveComponent(System.ComponentModel.IComponent)" />
@@ -148,7 +148,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece un valor que indica si los elementos de la bandeja se alinean automáticamente.</summary>
-        <value><see langword="true" /> Si los elementos de la bandeja se organizan automáticamente; en caso contrario, <see langword="false" />.</value>
+        <value>Es <see langword="true" /> si los elementos de la bandeja se organizan automáticamente; en caso contrario, es <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -183,8 +183,8 @@
       </Parameters>
       <Docs>
         <param name="tool"><see cref="T:System.Drawing.Design.ToolboxItem" /> que se va a probar.</param>
-        <summary>Obtiene un valor que indica si la herramienta especificada se puede usar para crear un nuevo componente.</summary>
-        <returns><see langword="true" /> Si la herramienta especificada se puede usar para crear un componente; en caso contrario, <see langword="false" />.</returns>
+        <summary>Obtiene un valor que indica si la herramienta especificada se puede utilizar para crear un componente nuevo.</summary>
+        <returns>Es <see langword="true" /> si la herramienta especificada se puede utilizar para crear un componente; en caso contrario, es <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,8 +214,8 @@
       </Parameters>
       <Docs>
         <param name="component"><see cref="T:System.ComponentModel.IComponent" /> que se va a probar.</param>
-        <summary>Obtiene un valor que indica si se puede mostrar el componente especificado.</summary>
-        <returns><see langword="true" /> Si el componente se puede mostrar; en caso contrario, <see langword="false" />.</returns>
+        <summary>Obtiene un valor que indica si el componente especificado se puede mostrar.</summary>
+        <returns>Es <see langword="true" /> si el componente se puede mostrar; en caso contrario, es <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -248,8 +248,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el número de componentes incluidos en la bandeja.</summary>
-        <value>El número de componentes de la bandeja.</value>
+        <summary>Obtiene el número de componentes que contiene la bandeja.</summary>
+        <value>Número de componentes de la bandeja.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -283,8 +283,8 @@
         <Parameter Name="tool" Type="System.Drawing.Design.ToolboxItem" />
       </Parameters>
       <Docs>
-        <param name="tool">El <see cref="T:System.Drawing.Design.ToolboxItem" /> para crear un componente de.</param>
-        <summary>Crea un componente desde el elemento especificado, el componente se agrega al documento actual y muestra una representación para el componente en la Bandeja de componentes.</summary>
+        <param name="tool"><see cref="T:System.Drawing.Design.ToolboxItem" /> a partir del cual se va a crear un componente.</param>
+        <summary>Crea un componente a partir del elemento de cuadro de herramientas especificado, lo agrega al documento actual y muestra una representación suya en la bandeja de componentes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -320,8 +320,8 @@
         <Parameter Name="e" Type="System.Exception" />
       </Parameters>
       <Docs>
-        <param name="e">La excepción que se va a mostrar información.</param>
-        <summary>Muestra un mensaje de error al usuario con información sobre la excepción especificada.</summary>
+        <param name="e">Excepción acerca de la cual se va a mostrar información.</param>
+        <summary>Muestra un mensaje de error al usuario con información acerca de la excepción especificada.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -410,9 +410,9 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
         <Parameter Name="receiver" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="receiver">El <see cref="T:System.ComponentModel.IComponent" /> para recuperar la ubicación de.</param>
-        <summary>Obtiene la ubicación del componente especificado, relativo a la esquina superior izquierda de la Bandeja de componentes.</summary>
-        <returns>Un <see cref="T:System.Drawing.Point" /> que indica las coordenadas del componente especificado o un valor vacío <see cref="T:System.Drawing.Point" /> si no se encontró el componente especificado en la Bandeja de componentes. Un valor vacío <see cref="T:System.Drawing.Point" /> tiene un <see cref="P:System.Drawing.Point.IsEmpty" /> propiedad igual a <see langword="true" /> y normalmente tiene <see cref="P:System.Drawing.Point.X" /> y <see cref="P:System.Drawing.Point.Y" /> propiedades que son iguales a cero.</returns>
+        <param name="receiver"><see cref="T:System.ComponentModel.IComponent" /> cuya ubicación se va a recuperar.</param>
+        <summary>Obtiene la ubicación del componente especificado con relación a la esquina superior izquierda de la bandeja de componentes.</summary>
+        <returns><see cref="T:System.Drawing.Point" /> que indica las coordenadas del componente especificado, o un <see cref="T:System.Drawing.Point" /> vacío si el componente especificado no se encontró en la bandeja de componentes. En un <see cref="T:System.Drawing.Point" /> vacío, su propiedad <see cref="P:System.Drawing.Point.IsEmpty" /> es igual a <see langword="true" /> y, normalmente, sus propiedades <see cref="P:System.Drawing.Point.X" /> y <see cref="P:System.Drawing.Point.Y" /> son igual a cero.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -448,10 +448,10 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
         <Parameter Name="forward" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="component">El componente desde el que se va a empezar a enumerar.</param>
-        <param name="forward"><see langword="true" /> para enumerar hacia delante a través de la lista. en caso contrario, <see langword="false" /> para enumerar hacia atrás.</param>
-        <summary>Similar a <see cref="M:System.Windows.Forms.Control.GetNextControl(System.Windows.Forms.Control,System.Boolean)" />, este método devuelve el componente siguiente en la bandeja, dado un componente de inicio.</summary>
-        <returns>El siguiente componente de la Bandeja de componentes, o <see langword="null" />, si se encuentra el final de la lista (o el principio, si <paramref name="forward" /> es <see langword="false" />).</returns>
+        <param name="component">El componente por el que se empieza a enumerar.</param>
+        <param name="forward">Es <see langword="true" /> para enumerar hacia delante en la lista; de lo contrario, es <see langword="false" /> para enumerar hacia atrás.</param>
+        <summary>Este método, similar a <see cref="M:System.Windows.Forms.Control.GetNextControl(System.Windows.Forms.Control,System.Boolean)" />, devuelve el siguiente componente de la bandeja, dado un componente de inicio.</summary>
+        <returns>El componente siguiente en la bandeja de componentes o <see langword="null" />, si se encuentra el final de la lista (o el principio, si <paramref name="forward" /> es <see langword="false" />).</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -480,9 +480,9 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
         <Parameter Name="serviceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serviceType">El tipo del servicio que se va a recuperar.</param>
+        <param name="serviceType">Tipo de servicio que se va a recuperar.</param>
         <summary>Obtiene el tipo de servicio solicitado.</summary>
-        <returns>Una instancia del servicio solicitado, o <see langword="null" /> si no se encontró el servicio.</returns>
+        <returns>Instancia del servicio solicitado, o <see langword="null" /> si no se encuentra ningún servicio.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -524,9 +524,9 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
         <Parameter Name="receiver" Type="System.ComponentModel.IComponent" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="receiver">El <see cref="T:System.ComponentModel.IComponent" /> que recibe la propiedad extensora location.</param>
-        <summary>Obtiene el valor de la <see langword="Location" /> propiedad extensora.</summary>
-        <returns>Un <see cref="T:System.Drawing.Point" /> que representa la ubicación de <paramref name="receiver" />.</returns>
+        <param name="receiver">La interfaz <see cref="T:System.ComponentModel.IComponent" /> que recibe la propiedad extensora location.</param>
+        <summary>Obtiene el valor de la propiedad extensora <see langword="Location" />.</summary>
+        <returns><see cref="T:System.Drawing.Point" /> que representa la ubicación de <paramref name="receiver" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -564,9 +564,9 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
         <Parameter Name="comp" Type="System.ComponentModel.IComponent" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="comp">El componente para comprobar la presencia en la Bandeja de componentes.</param>
-        <summary>Pruebas de un componente aparece en la Bandeja de componentes.</summary>
-        <returns><see langword="true" /> Si <paramref name="comp" /> se muestran en la bandeja; en caso contrario, <see langword="false" />.</returns>
+        <param name="comp">El componente cuya presencia en la bandeja de componentes se va a probar.</param>
+        <summary>Prueba si un componente aparece en la bandeja de componentes.</summary>
+        <returns>Es <see langword="true" /> si se muestra <paramref name="comp" /> en la bandeja; de lo contrario, es <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -593,7 +593,7 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
       </Parameters>
       <Docs>
         <param name="e">Datos del evento.</param>
-        <summary>Se llama cuando el mouse se doble clic en a través de la Bandeja de componentes.</summary>
+        <summary>Se le llama cuando se hace doble clic en la bandeja de componentes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -623,7 +623,7 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
       </Parameters>
       <Docs>
         <param name="de"><see cref="T:System.Windows.Forms.DragEventArgs" /> que proporciona datos para el evento.</param>
-        <summary>Se llama cuando un objeto que se ha arrastrado se coloca en la Bandeja de componentes.</summary>
+        <summary>Se le llama cuando se suelta un objeto arrastrado en la bandeja de componentes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -653,7 +653,7 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
       </Parameters>
       <Docs>
         <param name="de"><see cref="T:System.Windows.Forms.DragEventArgs" /> que proporciona datos para el evento.</param>
-        <summary>Se llama cuando se arrastra sobre un objeto y ha entrado en el área en la Bandeja de componentes.</summary>
+        <summary>Se le llama cuando se arrastra un objeto y este entra en el área de la bandeja de componentes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -682,8 +682,8 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
         <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
-        <param name="e">Un <see cref="T:System.EventArgs" /> que proporciona datos para el evento.</param>
-        <summary>Se llama cuando se arrastra un objeto fuera del área de la Bandeja de componentes.</summary>
+        <param name="e"><see cref="T:System.EventArgs" /> que proporciona datos para el evento.</param>
+        <summary>Se le llama cuando se arrastra un objeto fuera del área de la bandeja de componentes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -713,7 +713,7 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
       </Parameters>
       <Docs>
         <param name="de"><see cref="T:System.Windows.Forms.DragEventArgs" /> que proporciona datos para el evento.</param>
-        <summary>Se llama cuando se arrastra un objeto a través de la Bandeja de componentes.</summary>
+        <summary>Se le llama cuando se arrastra un objeto sobre la bandeja de componentes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -743,7 +743,7 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
       </Parameters>
       <Docs>
         <param name="gfevent"><see cref="T:System.Windows.Forms.GiveFeedbackEventArgs" /> que proporciona datos para el evento.</param>
-        <summary>Se llama durante una OLE arrastrar y colocar operación para proporcionar una oportunidad para que la Bandeja de componentes proporcionar información al usuario sobre el resultado de colocar el objeto en un momento concreto.</summary>
+        <summary>Se le llama durante una operación de arrastrar y colocar OLE para que la bandeja de componentes pueda ofrecer información al usuario sobre el resultado de colocar el objeto en un punto específico.</summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides"><para>Al reemplazar <see cref="M:System.Windows.Forms.Design.ComponentTray.OnGiveFeedback(System.Windows.Forms.GiveFeedbackEventArgs)" /> en una clase derivada, asegúrese de llamar al método <see cref="M:System.Windows.Forms.Design.ComponentTray.OnGiveFeedback(System.Windows.Forms.GiveFeedbackEventArgs)" /> de la clase base para que los delegados registrados reciban el evento.</para></block>
       </Docs>
@@ -801,7 +801,7 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Se llama cuando se cancela una operación de selección de arrastre del mouse.</summary>
+        <summary>Se le llama cuando se cancela una operación de selección mediante arrastre del mouse.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -829,8 +829,8 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
         <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="e">Un <see cref="T:System.EventArgs" /> que proporciona datos para el evento.</param>
-        <summary>Se llama cuando el mouse se doble clic en a través de la Bandeja de componentes.</summary>
+        <param name="e"><see cref="T:System.EventArgs" /> que proporciona datos para el evento.</param>
+        <summary>Se le llama cuando se hace doble clic en la bandeja de componentes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -860,7 +860,7 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
       </Parameters>
       <Docs>
         <param name="e"><see cref="T:System.Windows.Forms.MouseEventArgs" /> que proporciona datos para el evento.</param>
-        <summary>Se llama cuando se presiona el botón del mouse.</summary>
+        <summary>Se le llama cuando se presiona un botón del mouse.</summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides"><para>Al reemplazar <see cref="M:System.Windows.Forms.Design.ComponentTray.OnMouseDown(System.Windows.Forms.MouseEventArgs)" /> en una clase derivada, asegúrese de llamar al método <see cref="M:System.Windows.Forms.Design.ComponentTray.OnMouseDown(System.Windows.Forms.MouseEventArgs)" /> de la clase base para que los delegados registrados reciban el evento.</para></block>
       </Docs>
@@ -891,7 +891,7 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
       </Parameters>
       <Docs>
         <param name="e"><see cref="T:System.Windows.Forms.MouseEventArgs" /> que proporciona datos para el evento.</param>
-        <summary>Se llama cuando ha cambiado la posición del cursor del mouse.</summary>
+        <summary>Se le llama cuando cambia la posición del cursor del mouse.</summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides"><para>Al reemplazar <see cref="M:System.Windows.Forms.Design.ComponentTray.OnMouseMove(System.Windows.Forms.MouseEventArgs)" /> en una clase derivada, asegúrese de llamar al método <see cref="M:System.Windows.Forms.Design.ComponentTray.OnMouseMove(System.Windows.Forms.MouseEventArgs)" /> de la clase base para que los delegados registrados reciban el evento.</para></block>
       </Docs>
@@ -922,7 +922,7 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
       </Parameters>
       <Docs>
         <param name="e"><see cref="T:System.Windows.Forms.MouseEventArgs" /> que proporciona datos para el evento.</param>
-        <summary>Se llama cuando se ha liberado el botón del mouse.</summary>
+        <summary>Se le llama cuando se libera el botón del mouse.</summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides"><para>Al reemplazar <see cref="M:System.Windows.Forms.Design.ComponentTray.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> en una clase derivada, asegúrese de llamar al método <see cref="M:System.Windows.Forms.Design.ComponentTray.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> de la clase base para que los delegados registrados reciban el evento.</para></block>
       </Docs>
@@ -953,7 +953,7 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
       </Parameters>
       <Docs>
         <param name="pe"><see cref="T:System.Windows.Forms.PaintEventArgs" /> que proporciona datos para el evento.</param>
-        <summary>Se llama cuando se debe actualizar la vista de la Bandeja de componentes.</summary>
+        <summary>Se le llama cuando es necesario actualizar la vista de la bandeja de componentes.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -980,7 +980,7 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Se llama para establecer el cursor del mouse.</summary>
+        <summary>Se le llama para establecer el cursor del mouse.</summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides"><para>Puede invalidar este método para establecer su propio cursor del mouse.</para></block>
       </Docs>
@@ -1010,7 +1010,7 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
         <Parameter Name="component" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
-        <param name="component">El <see cref="T:System.ComponentModel.IComponent" /> para quitar de la bandeja.</param>
+        <param name="component"><see cref="T:System.ComponentModel.IComponent" /> que se quita de la bandeja.</param>
         <summary>Quita el componente especificado de la bandeja.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.Design.ComponentTray.AddComponent(System.ComponentModel.IComponent)" />
@@ -1042,9 +1042,9 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
         <Parameter Name="location" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
-        <param name="receiver">El <see cref="T:System.ComponentModel.IComponent" /> para establecer la ubicación de.</param>
-        <param name="location">Un <see cref="T:System.Drawing.Point" /> que indica la nueva ubicación para el componente especificado.</param>
-        <summary>Establece la ubicación del componente especificado en la ubicación especificada.</summary>
+        <param name="receiver"><see cref="T:System.ComponentModel.IComponent" /> cuya ubicación se va a establecer.</param>
+        <param name="location"><see cref="T:System.Drawing.Point" /> que indica la nueva ubicación del componente especificado.</param>
+        <summary>Establece el componente especificado en la ubicación especificada.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1073,9 +1073,9 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
         <Parameter Name="location" Type="System.Drawing.Point" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="receiver">El <see cref="T:System.ComponentModel.IComponent" /> que recibe la propiedad extensora location.</param>
-        <param name="location">Un <see cref="T:System.Drawing.Point" /> que representa la ubicación de <paramref name="receiver" />.</param>
-        <summary>Establece el valor de la <see langword="Location" /> propiedad extensora.</summary>
+        <param name="receiver">La interfaz <see cref="T:System.ComponentModel.IComponent" /> que recibe la propiedad extensora location.</param>
+        <param name="location"><see cref="T:System.Drawing.Point" /> que representa la ubicación de <paramref name="receiver" />.</param>
+        <summary>Establece el valor de la propiedad extensora <see langword="Location" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1116,8 +1116,8 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece un valor que indica si la bandeja muestra un icono grande para representar cada componente en la bandeja.</summary>
-        <value><see langword="true" /> Si se muestran iconos grandes; en caso contrario, <see langword="false" />.</value>
+        <summary>Obtiene o establece un valor que indica si la bandeja muestra un icono grande para representar cada componente de la bandeja.</summary>
+        <value>Es <see langword="true" /> si se muestran iconos grandes; en caso contrario, es <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1129,7 +1129,7 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.ComponentModel.IExtenderProvider.CanExtend(System::Object ^ extendee) = System::ComponentModel::IExtenderProvider::CanExtend;" FrameworkAlternate="netcore-3.0" />
       <MemberSignature Language="C#" Value="bool IExtenderProvider.CanExtend (object component);" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.ComponentModel.IExtenderProvider.CanExtend(object component) cil managed" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.System#ComponentModel#IExtenderProvider#CanExtend(System.Object)" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.System#ComponentModel#IExtenderProvider#CanExtend(System.Object)" FrameworkAlternate="netframework-1.1;netcore-3.0" />
       <MemberSignature Language="VB.NET" Value="Function CanExtend (component As Object) As Boolean Implements IExtenderProvider.CanExtend" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.ComponentModel.IExtenderProvider.CanExtend(System::Object ^ component) = System::ComponentModel::IExtenderProvider::CanExtend;" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberType>Method</MemberType>
@@ -1154,9 +1154,9 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
         <Parameter Name="component" Type="System.Object" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="component">Objeto que se va a recibir las propiedades extensoras.</param>
-        <param name="extendee">Objeto que se va a recibir las propiedades extensoras.</param>
-        <summary>Para una descripción de este miembro, vea <see cref="M:System.ComponentModel.IExtenderProvider.CanExtend(System.Object)" />.</summary>
+        <param name="component">Objeto que va a recibir las propiedades extensoras.</param>
+        <param name="extendee">Objeto que va a recibir las propiedades extensoras.</param>
+        <summary>Para obtener una descripción de este miembro, vea <see cref="M:System.ComponentModel.IExtenderProvider.CanExtend(System.Object)" />.</summary>
         <returns><see langword="true" />si este objeto puede proporcionar propiedades extensoras al objeto especificado; en caso contrario, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

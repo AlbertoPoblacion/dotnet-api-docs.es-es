@@ -1,5 +1,5 @@
 <Type Name="ReaderWriterLockSlim" FullName="System.Threading.ReaderWriterLockSlim">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ba249b86c9e38696438690262b884a5bac97ef6b" /><Meta Name="ms.sourcegitcommit" Value="95e24aee1283af2f120fc5da4b0bdc0712ab698f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/06/2019" /><Meta Name="ms.locfileid" Value="65155814" /></Metadata><TypeSignature Language="C#" Value="public class ReaderWriterLockSlim : IDisposable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c3e503580cc18f61ffa36ad86b1bdd97a305369d" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67243330" /></Metadata><TypeSignature Language="C#" Value="public class ReaderWriterLockSlim : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReaderWriterLockSlim extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ReaderWriterLockSlim" />
   <TypeSignature Language="VB.NET" Value="Public Class ReaderWriterLockSlim&#xA;Implements IDisposable" />
@@ -32,7 +32,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Representa un bloqueo que se usa para administrar el acceso a un recurso y que permite que varios subprocesos lean o tengan acceso exclusivo a escritura.</summary>
+    <summary>Representa un bloqueo que se utiliza para administrar el acceso a un recurso y que permite varios subprocesos para la lectura o acceso exclusivo para la escritura.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -430,10 +430,10 @@
         </remarks>
         <exception cref="T:System.Threading.SynchronizationLockException"><see cref="P:System.Threading.ReaderWriterLockSlim.WaitingReadCount" /> es mayor que cero.  
   
--o bien- 
+O bien 
  <see cref="P:System.Threading.ReaderWriterLockSlim.WaitingUpgradeCount" /> es mayor que cero.  
   
--o bien- 
+O bien 
  <see cref="P:System.Threading.ReaderWriterLockSlim.WaitingWriteCount" /> es mayor que cero.</exception>
       </Docs>
     </Member>
@@ -500,10 +500,10 @@
         </remarks>
         <exception cref="T:System.Threading.LockRecursionException">La propiedad <see cref="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" /> es <see cref="F:System.Threading.LockRecursionPolicy.NoRecursion" /> y el subproceso actual ha intentado adquirir el bloqueo de lectura cuando ya lo tenía.  
   
--o bien- 
+O bien 
 La propiedad <see cref="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" /> es <see cref="F:System.Threading.LockRecursionPolicy.NoRecursion" /> y el subproceso actual ha intentado adquirir el bloqueo de lectura cuando ya tenía el bloqueo de escritura.  
   
--o bien- 
+O bien 
 El número de recursividad superaría la capacidad del contador. Este límite es tan grande que en las aplicaciones no debe aparecer nunca esta excepción.</exception>
         <exception cref="T:System.ObjectDisposedException">Se eliminó el objeto <see cref="T:System.Threading.ReaderWriterLockSlim" />.</exception>
       </Docs>
@@ -575,13 +575,13 @@ El número de recursividad superaría la capacidad del contador. Este límite es
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Threading.LockRecursionException">El <see cref="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" /> propiedad es <see cref="F:System.Threading.LockRecursionPolicy.NoRecursion" /> y el subproceso actual ya ha entrado en el bloqueo en cualquier modo.  
+        <exception cref="T:System.Threading.LockRecursionException">La propiedad <see cref="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" /> es <see cref="F:System.Threading.LockRecursionPolicy.NoRecursion" /> y el subproceso actual ya ha entrado en el bloqueo en cualquier modo.  
   
--o bien- 
-El subproceso actual ha entrado en modo de lectura, por lo que al intentar entrar en modo de actualización, existiría la posibilidad de un interbloqueo.  
+O bien 
+El subproceso actual ha entrado en modo de lectura, por lo que, al intentar entrar en modo de actualización, existiría la posibilidad de interbloqueo.  
   
--o bien- 
-El número de recursividad superaría la capacidad del contador. El límite es tan grande que las aplicaciones nunca deberían alcanzarlo.</exception>
+O bien 
+El número de recursividad superaría la capacidad del contador. El límite es tan amplio que las aplicaciones nunca deben alcanzarlo.</exception>
         <exception cref="T:System.ObjectDisposedException">Se eliminó el objeto <see cref="T:System.Threading.ReaderWriterLockSlim" />.</exception>
       </Docs>
     </Member>
@@ -642,13 +642,13 @@ El número de recursividad superaría la capacidad del contador. El límite es t
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Threading.LockRecursionException">El <see cref="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" /> propiedad es <see cref="F:System.Threading.LockRecursionPolicy.NoRecursion" /> y el subproceso actual ya ha entrado en el bloqueo en cualquier modo.  
+        <exception cref="T:System.Threading.LockRecursionException">La propiedad <see cref="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" /> es <see cref="F:System.Threading.LockRecursionPolicy.NoRecursion" /> y el subproceso actual ya ha entrado en el bloqueo en cualquier modo.  
   
--o bien- 
+O bien 
 El subproceso actual ha entrado en modo de lectura y ya no posee un bloqueo de escritura, por lo que, si se intenta entrar en el bloqueo en modo de escritura, existiría la posibilidad de un interbloqueo.  
   
--o bien- 
-El número de recursividad superaría la capacidad del contador. El límite es tan grande que las aplicaciones nunca deberían alcanzarlo.</exception>
+O bien 
+El número de recursividad superaría la capacidad del contador. El límite es tan amplio que las aplicaciones nunca deben alcanzarlo.</exception>
         <exception cref="T:System.ObjectDisposedException">Se eliminó el objeto <see cref="T:System.Threading.ReaderWriterLockSlim" />.</exception>
       </Docs>
     </Member>
@@ -860,7 +860,7 @@ El número de recursividad superaría la capacidad del contador. El límite es t
       </ReturnValue>
       <Docs>
         <summary>Obtiene un valor que indica si el subproceso actual ha entrado en el bloqueo en modo de lectura.</summary>
-        <value><see langword="true" /> si el subproceso actual entró en modo Lectura; en caso contrario, <see langword="false" />.</value>
+        <value><see langword="true" /> si el subproceso actual ha entrado en modo de lectura; de lo contrario, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -911,8 +911,8 @@ El número de recursividad superaría la capacidad del contador. El límite es t
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un valor que indica si el subproceso actual entró en el bloqueo en modo de actualización.</summary>
-        <value><see langword="true" /> si el subproceso actual entró en modo de actualización; en caso contrario, <see langword="false" />.</value>
+        <summary>Obtiene un valor que indica si el subproceso actual ha entrado en el bloqueo en modo de actualización.</summary>
+        <value><see langword="true" /> si el subproceso actual ha entrado en modo de actualización; de lo contrario, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -964,7 +964,7 @@ El número de recursividad superaría la capacidad del contador. El límite es t
       </ReturnValue>
       <Docs>
         <summary>Obtiene un valor que indica si el subproceso actual ha entrado en el bloqueo en modo de escritura.</summary>
-        <value><see langword="true" /> si el subproceso actual entró en modo de escritura; en caso contrario, <see langword="false" />.</value>
+        <value><see langword="true" /> si el subproceso actual ha entrado en modo de escritura; de lo contrario, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1205,9 +1205,9 @@ El número de recursividad superaría la capacidad del contador. El límite es t
         <Parameter Name="millisecondsTimeout" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="millisecondsTimeout">Número de milisegundos de espera o -1 (<see cref="F:System.Threading.Timeout.Infinite" />) para esperar indefinidamente.</param>
+        <param name="millisecondsTimeout">Número de milisegundos de espera, o -1 (<see cref="F:System.Threading.Timeout.Infinite" />) para esperar indefinidamente.</param>
         <summary>Intenta entrar en el bloqueo en modo de lectura, con un tiempo de espera entero opcional.</summary>
-        <returns><see langword="true" /> si el subproceso que realiza la llamada entró en modo Lectura; en caso contrario, <see langword="false" />.</returns>
+        <returns><see langword="true" /> si el subproceso que realiza la llamada entró en modo de lectura, de lo contrario, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1225,11 +1225,11 @@ El número de recursividad superaría la capacidad del contador. El límite es t
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Threading.LockRecursionException">El <see cref="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" /> propiedad es <see cref="F:System.Threading.LockRecursionPolicy.NoRecursion" /> y el subproceso actual ya ha entrado en el bloqueo.  
+        <exception cref="T:System.Threading.LockRecursionException">La propiedad <see cref="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" /> es <see cref="F:System.Threading.LockRecursionPolicy.NoRecursion" /> y el subproceso actual ya ha entrado en el bloqueo.  
   
--o bien- 
-El número de recursividad superaría la capacidad del contador. El límite es tan grande que las aplicaciones nunca deberían alcanzarlo.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El valor de <paramref name="millisecondsTimeout" /> es negativo, pero no es igual a <see cref="F:System.Threading.Timeout.Infinite" /> (-1), que es el único valor negativo permitido.</exception>
+O bien 
+El número de recursividad superaría la capacidad del contador. El límite es tan amplio que las aplicaciones nunca deben alcanzarlo.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El valor de <paramref name="millisecondsTimeout" /> es negativo, pero no es igual que <see cref="F:System.Threading.Timeout.Infinite" /> (-1), que es el único valor negativo permitido.</exception>
         <exception cref="T:System.ObjectDisposedException">Se eliminó el objeto <see cref="T:System.Threading.ReaderWriterLockSlim" />.</exception>
       </Docs>
     </Member>
@@ -1268,7 +1268,7 @@ El número de recursividad superaría la capacidad del contador. El límite es t
       <Docs>
         <param name="timeout">Intervalo de espera, o -1 milisegundo para esperar indefinidamente.</param>
         <summary>Intenta entrar en el bloqueo en modo de lectura, con tiempo de espera opcional.</summary>
-        <returns><see langword="true" /> si el subproceso que realiza la llamada entró en modo Lectura; en caso contrario, <see langword="false" />.</returns>
+        <returns><see langword="true" /> si el subproceso que realiza la llamada entró en modo de lectura, de lo contrario, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1286,13 +1286,13 @@ El número de recursividad superaría la capacidad del contador. El límite es t
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Threading.LockRecursionException">El <see cref="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" /> propiedad es <see cref="F:System.Threading.LockRecursionPolicy.NoRecursion" /> y el subproceso actual ya ha entrado en el bloqueo.  
+        <exception cref="T:System.Threading.LockRecursionException">La propiedad <see cref="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" /> es <see cref="F:System.Threading.LockRecursionPolicy.NoRecursion" /> y el subproceso actual ya ha entrado en el bloqueo.  
   
--o bien- 
-El número de recursividad superaría la capacidad del contador. El límite es tan grande que las aplicaciones nunca deberían alcanzarlo.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El valor de <paramref name="timeout" /> es negativo, pero no es igual a-1 milisegundo, que es el único valor negativo permitido.  
+O bien 
+El número de recursividad superaría la capacidad del contador. El límite es tan amplio que las aplicaciones nunca deben alcanzarlo.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El valor de <paramref name="timeout" /> es negativo, pero no es igual a -1 milisegundo, que es el único valor negativo permitido.  
   
--o bien- 
+O bien 
 El valor de <paramref name="timeout" /> es mayor que <see cref="F:System.Int32.MaxValue" /> milisegundos.</exception>
         <exception cref="T:System.ObjectDisposedException">Se eliminó el objeto <see cref="T:System.Threading.ReaderWriterLockSlim" />.</exception>
       </Docs>
@@ -1341,9 +1341,9 @@ El valor de <paramref name="timeout" /> es mayor que <see cref="F:System.Int32.M
         <Parameter Name="millisecondsTimeout" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="millisecondsTimeout">Número de milisegundos de espera o -1 (<see cref="F:System.Threading.Timeout.Infinite" />) para esperar indefinidamente.</param>
+        <param name="millisecondsTimeout">Número de milisegundos de espera, o -1 (<see cref="F:System.Threading.Timeout.Infinite" />) para esperar indefinidamente.</param>
         <summary>Intenta entrar en el bloqueo en modo de actualización, con tiempo de espera opcional.</summary>
-        <returns><see langword="true" /> si el subproceso que realiza la llamada entró en modo de actualización; en caso contrario, <see langword="false" />.</returns>
+        <returns><see langword="true" /> si el subproceso que realiza la llamada entró en modo de actualización, de lo contrario, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1361,14 +1361,14 @@ El valor de <paramref name="timeout" /> es mayor que <see cref="F:System.Int32.M
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Threading.LockRecursionException">El <see cref="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" /> propiedad es <see cref="F:System.Threading.LockRecursionPolicy.NoRecursion" /> y el subproceso actual ya ha entrado en el bloqueo.  
+        <exception cref="T:System.Threading.LockRecursionException">La propiedad <see cref="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" /> es <see cref="F:System.Threading.LockRecursionPolicy.NoRecursion" /> y el subproceso actual ya ha entrado en el bloqueo.  
   
--o bien- 
-El subproceso actual entró inicialmente en el bloqueo en modo de lectura y, por lo tanto, al intentar entrar en modo, existiría la posibilidad de un interbloqueo.  
+O bien 
+El subproceso actual entró inicialmente en el bloqueo en modo de lectura y, por lo tanto, al intentar entrar en modo de actualización, existiría la posibilidad de un interbloqueo.  
   
--o bien- 
-El número de recursividad superaría la capacidad del contador. El límite es tan grande que las aplicaciones nunca deberían alcanzarlo.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El valor de <paramref name="millisecondsTimeout" /> es negativo, pero no es igual a <see cref="F:System.Threading.Timeout.Infinite" /> (-1), que es el único valor negativo permitido.</exception>
+O bien 
+El número de recursividad superaría la capacidad del contador. El límite es tan amplio que las aplicaciones nunca deben alcanzarlo.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El valor de <paramref name="millisecondsTimeout" /> es negativo, pero no es igual que <see cref="F:System.Threading.Timeout.Infinite" /> (-1), que es el único valor negativo permitido.</exception>
         <exception cref="T:System.ObjectDisposedException">Se eliminó el objeto <see cref="T:System.Threading.ReaderWriterLockSlim" />.</exception>
       </Docs>
     </Member>
@@ -1407,7 +1407,7 @@ El número de recursividad superaría la capacidad del contador. El límite es t
       <Docs>
         <param name="timeout">Intervalo de espera, o -1 milisegundo para esperar indefinidamente.</param>
         <summary>Intenta entrar en el bloqueo en modo de actualización, con tiempo de espera opcional.</summary>
-        <returns><see langword="true" /> si el subproceso que realiza la llamada entró en modo de actualización; en caso contrario, <see langword="false" />.</returns>
+        <returns><see langword="true" /> si el subproceso que realiza la llamada entró en modo de actualización, de lo contrario, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1425,16 +1425,16 @@ El número de recursividad superaría la capacidad del contador. El límite es t
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Threading.LockRecursionException">El <see cref="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" /> propiedad es <see cref="F:System.Threading.LockRecursionPolicy.NoRecursion" /> y el subproceso actual ya ha entrado en el bloqueo.  
+        <exception cref="T:System.Threading.LockRecursionException">La propiedad <see cref="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" /> es <see cref="F:System.Threading.LockRecursionPolicy.NoRecursion" /> y el subproceso actual ya ha entrado en el bloqueo.  
   
--o bien- 
-El subproceso actual entró inicialmente en el bloqueo en modo de lectura y, por lo tanto, al intentar entrar en modo, existiría la posibilidad de un interbloqueo.  
+O bien 
+El subproceso actual entró inicialmente en el bloqueo en modo de lectura y, por lo tanto, al intentar entrar en modo de actualización, existiría la posibilidad de un interbloqueo.  
   
--o bien- 
-El número de recursividad superaría la capacidad del contador. El límite es tan grande que las aplicaciones nunca deberían alcanzarlo.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El valor de <paramref name="timeout" /> es negativo, pero no es igual a-1 milisegundo, que es el único valor negativo permitido.  
+O bien 
+El número de recursividad superaría la capacidad del contador. El límite es tan amplio que las aplicaciones nunca deben alcanzarlo.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El valor de <paramref name="timeout" /> es negativo, pero no es igual a -1 milisegundo, que es el único valor negativo permitido.  
   
--o bien- 
+O bien 
 El valor de <paramref name="timeout" /> es mayor que <see cref="F:System.Int32.MaxValue" /> milisegundos.</exception>
         <exception cref="T:System.ObjectDisposedException">Se eliminó el objeto <see cref="T:System.Threading.ReaderWriterLockSlim" />.</exception>
       </Docs>
@@ -1483,9 +1483,9 @@ El valor de <paramref name="timeout" /> es mayor que <see cref="F:System.Int32.M
         <Parameter Name="millisecondsTimeout" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="millisecondsTimeout">Número de milisegundos de espera o -1 (<see cref="F:System.Threading.Timeout.Infinite" />) para esperar indefinidamente.</param>
+        <param name="millisecondsTimeout">Número de milisegundos de espera, o -1 (<see cref="F:System.Threading.Timeout.Infinite" />) para esperar indefinidamente.</param>
         <summary>Intenta entrar en el bloqueo en modo de escritura, con tiempo de espera opcional.</summary>
-        <returns><see langword="true" /> si el subproceso que realiza la llamada entró en modo de escritura; en caso contrario, <see langword="false" />.</returns>
+        <returns><see langword="true" /> si el subproceso que realiza la llamada entró en modo de escritura, de lo contrario, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1513,14 +1513,14 @@ El valor de <paramref name="timeout" /> es mayor que <see cref="F:System.Int32.M
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Threading.LockRecursionException">El <see cref="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" /> propiedad es <see cref="F:System.Threading.LockRecursionPolicy.NoRecursion" /> y el subproceso actual ya ha entrado en el bloqueo.  
+        <exception cref="T:System.Threading.LockRecursionException">La propiedad <see cref="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" /> es <see cref="F:System.Threading.LockRecursionPolicy.NoRecursion" /> y el subproceso actual ya ha entrado en el bloqueo.  
   
--o bien- 
+O bien 
 El subproceso actual entró inicialmente en el bloqueo en modo de lectura y, por lo tanto, al intentar entrar en modo de escritura, existiría la posibilidad de un interbloqueo.  
   
--o bien- 
-El número de recursividad superaría la capacidad del contador. El límite es tan grande que las aplicaciones nunca deberían alcanzarlo.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El valor de <paramref name="millisecondsTimeout" /> es negativo, pero no es igual a <see cref="F:System.Threading.Timeout.Infinite" /> (-1), que es el único valor negativo permitido.</exception>
+O bien 
+El número de recursividad superaría la capacidad del contador. El límite es tan amplio que las aplicaciones nunca deben alcanzarlo.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El valor de <paramref name="millisecondsTimeout" /> es negativo, pero no es igual que <see cref="F:System.Threading.Timeout.Infinite" /> (-1), que es el único valor negativo permitido.</exception>
         <exception cref="T:System.ObjectDisposedException">Se eliminó el objeto <see cref="T:System.Threading.ReaderWriterLockSlim" />.</exception>
       </Docs>
     </Member>
@@ -1559,7 +1559,7 @@ El número de recursividad superaría la capacidad del contador. El límite es t
       <Docs>
         <param name="timeout">Intervalo de espera, o -1 milisegundo para esperar indefinidamente.</param>
         <summary>Intenta entrar en el bloqueo en modo de escritura, con tiempo de espera opcional.</summary>
-        <returns><see langword="true" /> si el subproceso que realiza la llamada entró en modo de escritura; en caso contrario, <see langword="false" />.</returns>
+        <returns><see langword="true" /> si el subproceso que realiza la llamada entró en modo de escritura, de lo contrario, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1573,16 +1573,16 @@ El número de recursividad superaría la capacidad del contador. El límite es t
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Threading.LockRecursionException">El <see cref="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" /> propiedad es <see cref="F:System.Threading.LockRecursionPolicy.NoRecursion" /> y el subproceso actual ya ha entrado en el bloqueo.  
+        <exception cref="T:System.Threading.LockRecursionException">La propiedad <see cref="P:System.Threading.ReaderWriterLockSlim.RecursionPolicy" /> es <see cref="F:System.Threading.LockRecursionPolicy.NoRecursion" /> y el subproceso actual ya ha entrado en el bloqueo.  
   
--o bien- 
+O bien 
 El subproceso actual entró inicialmente en el bloqueo en modo de lectura y, por lo tanto, al intentar entrar en modo de escritura, existiría la posibilidad de un interbloqueo.  
   
--o bien- 
-El número de recursividad superaría la capacidad del contador. El límite es tan grande que las aplicaciones nunca deberían alcanzarlo.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El valor de <paramref name="timeout" /> es negativo, pero no es igual a-1 milisegundo, que es el único valor negativo permitido.  
+O bien 
+El número de recursividad superaría la capacidad del contador. El límite es tan amplio que las aplicaciones nunca deben alcanzarlo.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El valor de <paramref name="timeout" /> es negativo, pero no es igual a -1 milisegundo, que es el único valor negativo permitido.  
   
--o bien- 
+O bien 
 El valor de <paramref name="timeout" /> es mayor que <see cref="F:System.Int32.MaxValue" /> milisegundos.</exception>
         <exception cref="T:System.ObjectDisposedException">Se eliminó el objeto <see cref="T:System.Threading.ReaderWriterLockSlim" />.</exception>
       </Docs>
