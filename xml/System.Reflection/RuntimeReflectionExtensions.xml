@@ -1,5 +1,5 @@
 <Type Name="RuntimeReflectionExtensions" FullName="System.Reflection.RuntimeReflectionExtensions">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="5ec8d53d6e1cfcc108425d84e1f029104658202c" /><Meta Name="ms.sourcegitcommit" Value="0b4deef443af9fe6334aa34b8a17190223bf0486" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/14/2019" /><Meta Name="ms.locfileid" Value="65609445" /></Metadata><TypeSignature Language="C#" Value="public static class RuntimeReflectionExtensions" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fb58ca0ea7cf9864d8a420e0c0de9654220cb01e" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67248823" /></Metadata><TypeSignature Language="C#" Value="public static class RuntimeReflectionExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RuntimeReflectionExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.RuntimeReflectionExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module RuntimeReflectionExtensions" />
@@ -29,7 +29,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Proporciona los métodos que recuperan información sobre los tipos en tiempo de ejecución.</summary>
+    <summary>Proporciona métodos que recuperan información sobre tipos en tiempo de ejecución.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -67,11 +67,11 @@
         <Parameter Name="del" Type="System.Delegate" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="del">El delegado que se va a examinar.</param>
+        <param name="del">Delegado al que se va a examinar.</param>
         <summary>Obtiene un objeto que representa el método representado por el delegado especificado.</summary>
-        <returns>Un objeto que representa el método.</returns>
+        <returns>Objeto que representa el método.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="del" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="del" /> es <see langword="null" />.</exception>
         <exception cref="T:System.MemberAccessException">El llamador no tiene acceso al método representado por el delegado (por ejemplo, si el método es privado).</exception>
         <altmember cref="P:System.Delegate.Method" />
       </Docs>
@@ -110,11 +110,11 @@
         <Parameter Name="method" Type="System.Reflection.MethodInfo" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="method">Para recuperar información sobre el método.</param>
+        <param name="method">Método para recuperar la información.</param>
         <summary>Recupera un objeto que representa el método especificado en la clase base directa o indirecta donde el método se declaró por primera vez.</summary>
         <returns>Un objeto que representa la declaración inicial del método especificado en una clase base.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="method" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="method" /> es <see langword="null" />.</exception>
         <altmember cref="M:System.Reflection.MethodInfo.GetBaseDefinition" />
       </Docs>
     </Member>
@@ -155,13 +155,13 @@
         <param name="type">El tipo que contiene el evento.</param>
         <param name="name">Nombre del evento.</param>
         <summary>Recupera un objeto que representa el evento especificado.</summary>
-        <returns>Un objeto que representa el evento especificado, o <see langword="null" /> si no se encuentra el evento.</returns>
+        <returns>Objeto que representa el evento especificado o <see langword="null" /> si no se encuentra el evento.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="type" /> es <see langword="null" />.
+        <exception cref="T:System.ArgumentNullException"><paramref name="type" /> es <see langword="null" />.
 
--o bien-
+O bien
 
-El valor de <paramref name="name" /> es <see langword="null" />.</exception>
+<paramref name="name" /> es <see langword="null" />.</exception>
         <altmember cref="M:System.Type.GetEvent(System.String)" />
       </Docs>
     </Member>
@@ -200,7 +200,7 @@ El valor de <paramref name="name" /> es <see langword="null" />.</exception>
       <Docs>
         <param name="type">El tipo que contiene los eventos.</param>
         <summary>Recupera una colección que representa todos los eventos definidos en un tipo especificado.</summary>
-        <returns>Una colección de eventos para el tipo especificado.</returns>
+        <returns>Colección de eventos para el tipo especificado.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -209,7 +209,7 @@ El valor de <paramref name="name" /> es <see langword="null" />.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="type" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="type" /> es <see langword="null" />.</exception>
         <altmember cref="M:System.Type.GetEvents(System.Reflection.BindingFlags)" />
       </Docs>
     </Member>
@@ -247,16 +247,16 @@ El valor de <paramref name="name" /> es <see langword="null" />.</exception>
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="type">El tipo que contiene el campo.</param>
+        <param name="type">Tipo que contiene el campo.</param>
         <param name="name">Nombre del campo.</param>
         <summary>Recupera un objeto que representa un campo especificado.</summary>
-        <returns>Un objeto que representa el campo especificado, o <see langword="null" /> si no se encuentra el campo.</returns>
+        <returns>Objeto que representa el campo especificado o <see langword="null" /> si no se encuentra el campo.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="type" /> es <see langword="null" />.
+        <exception cref="T:System.ArgumentNullException"><paramref name="type" /> es <see langword="null" />.
 
--o bien-
+O bien
 
-El valor de <paramref name="name" /> es <see langword="null" />.</exception>
+<paramref name="name" /> es <see langword="null" />.</exception>
         <altmember cref="M:System.Type.GetField(System.String)" />
       </Docs>
     </Member>
@@ -293,9 +293,9 @@ El valor de <paramref name="name" /> es <see langword="null" />.</exception>
         <Parameter Name="type" Type="System.Type" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="type">El tipo que contiene los campos.</param>
+        <param name="type">Tipo que contiene los campos.</param>
         <summary>Recupera una colección que representa todos los campos definidos en un tipo especificado.</summary>
-        <returns>Una colección de campos para el tipo especificado.</returns>
+        <returns>Colección de campos para el tipo especificado.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -304,7 +304,7 @@ El valor de <paramref name="name" /> es <see langword="null" />.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="type" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="type" /> es <see langword="null" />.</exception>
         <altmember cref="M:System.Type.GetFields(System.Reflection.BindingFlags)" />
       </Docs>
     </Member>
@@ -342,33 +342,33 @@ El valor de <paramref name="name" /> es <see langword="null" />.</exception>
         <Parameter Name="interfaceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="typeInfo">Para recuperar una asignación para el tipo.</param>
-        <param name="interfaceType">La interfaz para recuperar una asignación.</param>
-        <summary>Devuelve una asignación de interfaz para el tipo especificado y la interfaz especificada.</summary>
-        <returns>Un objeto que representa la asignación de interfaz para la interfaz especificada y el tipo.</returns>
+        <param name="typeInfo">Tipo para el que recuperar una asignación.</param>
+        <param name="interfaceType">Interfaz para la que recuperar una asignación.</param>
+        <summary>Devuelve una asignación de interfaz para el tipo de interfaz y la interfaz especificada.</summary>
+        <returns>Objeto que representa la asignación de interfaz para la interfaz y el tipo especificados.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="typeInfo" /> es <see langword="null" />.
+        <exception cref="T:System.ArgumentNullException"><paramref name="typeInfo" /> es <see langword="null" />.
         
--o bien-
+O bien
 
-El valor de <paramref name="interfaceType" /> es <see langword="null" />.</exception>
+<paramref name="interfaceType" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="typeInfo" /> no implementa <paramref name="interfaceType" />.
 
--o bien-
+O bien
 
 <paramref name="interfaceType" /> no hace referencia a una interfaz.
 
--o bien-
+O bien
 
 <paramref name="typeInfo" /> o <paramref name="interfaceType" /> es un tipo genérico abierto.
 
--o bien-
+O bien
 
 <paramref name="interfaceType" /> es una interfaz genérica y <paramref name="typeInfo" /> es un tipo de matriz.</exception>
         <exception cref="T:System.InvalidOperationException"><paramref name="typeInfo" /> representa un parámetro de tipo genérico.</exception>
         <exception cref="T:System.NotSupportedException"><paramref name="typeInfo" /> es una instancia de <see cref="T:System.Reflection.Emit.TypeBuilder" /> a cuyo método <see cref="M:System.Reflection.Emit.TypeBuilder.CreateType" /> aún no se ha llamado.
 
--o bien-
+O bien
 
 El método invocado no se admite en la clase base. Las clases derivadas deben proporcionar una implementación.</exception>
         <altmember cref="M:System.Type.GetInterfaceMap(System.Type)" />
@@ -409,17 +409,17 @@ El método invocado no se admite en la clase base. Las clases derivadas deben pr
         <Parameter Name="parameters" Type="System.Type[]" />
       </Parameters>
       <Docs>
-        <param name="type">El tipo que contiene el método.</param>
+        <param name="type">Tipo que contiene el método.</param>
         <param name="name">Nombre del método.</param>
-        <param name="parameters">Una matriz que contiene los parámetros del método.</param>
+        <param name="parameters">Matriz que contiene los parámetros del método.</param>
         <summary>Recupera un objeto que representa un método especificado.</summary>
-        <returns>Un objeto que representa el método especificado, o <see langword="null" /> si no se encuentra el método.</returns>
+        <returns>Objeto que representa el método especificado o <see langword="null" /> si no se encuentra el método.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="type" /> es <see langword="null" />.
+        <exception cref="T:System.ArgumentNullException"><paramref name="type" /> es <see langword="null" />.
 
--o bien-
+O bien
 
-El valor de <paramref name="name" /> es <see langword="null" />.</exception>
+<paramref name="name" /> es <see langword="null" />.</exception>
         <exception cref="T:System.AmbiguousMatchException">Se encontró más de un método con el nombre especificado.</exception>
         <altmember cref="M:System.Type.GetMethod(System.String,System.Type[])" />
       </Docs>
@@ -457,9 +457,9 @@ El valor de <paramref name="name" /> es <see langword="null" />.</exception>
         <Parameter Name="type" Type="System.Type" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="type">El tipo que contiene los métodos.</param>
+        <param name="type">Tipo que contiene los métodos.</param>
         <summary>Recupera una colección que representa todos los métodos definidos en un tipo especificado.</summary>
-        <returns>Una colección de métodos para el tipo especificado.</returns>
+        <returns>Colección de métodos para el tipo especificado.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -468,7 +468,7 @@ El valor de <paramref name="name" /> es <see langword="null" />.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="type" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="type" /> es <see langword="null" />.</exception>
         <altmember cref="M:System.Type.GetMethods(System.Reflection.BindingFlags)" />
       </Docs>
     </Member>
@@ -505,9 +505,9 @@ El valor de <paramref name="name" /> es <see langword="null" />.</exception>
         <Parameter Name="type" Type="System.Type" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="type">El tipo que contiene las propiedades.</param>
+        <param name="type">Tipo que contiene las propiedades.</param>
         <summary>Recupera una colección que representa todas las propiedades definidas en un tipo especificado.</summary>
-        <returns>Una colección de propiedades para el tipo especificado.</returns>
+        <returns>Colección de propiedades del tipo especificado.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -516,7 +516,7 @@ El valor de <paramref name="name" /> es <see langword="null" />.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="type" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="type" /> es <see langword="null" />.</exception>
         <altmember cref="M:System.Type.GetProperties(System.Reflection.BindingFlags)" />
       </Docs>
     </Member>
@@ -557,13 +557,13 @@ El valor de <paramref name="name" /> es <see langword="null" />.</exception>
         <param name="type">El tipo que contiene la propiedad.</param>
         <param name="name">Nombre de la propiedad.</param>
         <summary>Recupera un objeto que representa una propiedad especificada.</summary>
-        <returns>Un objeto que representa la propiedad especificada, o <see langword="null" /> si no se encuentra la propiedad.</returns>
+        <returns>Objeto que representa la propiedad especificada o <see langword="null" /> si no se encuentra la propiedad.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="type" /> es <see langword="null" />.
+        <exception cref="T:System.ArgumentNullException"><paramref name="type" /> es <see langword="null" />.
 
--o bien-
+O bien
 
-El valor de <paramref name="name" /> es <see langword="null" />.</exception>
+<paramref name="name" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="type" /> no es un <see langword="RuntimeType" />.</exception>
         <exception cref="T:System.Reflection.AmbiguousMatchException">Se encontró más de una propiedad con el nombre solicitado.</exception>
         <altmember cref="M:System.Type.GetProperty(System.String)" />

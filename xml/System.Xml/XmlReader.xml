@@ -1,5 +1,5 @@
 <Type Name="XmlReader" FullName="System.Xml.XmlReader">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="e238900692b43d96b898200bf5e6eec7305dc99f" /><Meta Name="ms.sourcegitcommit" Value="312579b66a6a983587a84f05c419be8fb0df7326" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/09/2019" /><Meta Name="ms.locfileid" Value="65473698" /></Metadata><TypeSignature Language="C#" Value="public abstract class XmlReader : IDisposable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7b37dd47dea8989a159f7561f95e3485a3b3d8fc" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67245071" /></Metadata><TypeSignature Language="C#" Value="public abstract class XmlReader : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlReader extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlReader" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlReader&#xA;Implements IDisposable" />
@@ -39,7 +39,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa un lector que proporciona acceso rápido a datos XML, sin almacenamiento en caché y con desplazamiento solo hacia delante.</summary>
+    <summary>Representa un lector que proporciona acceso rápido a datos XML, sin almacenamiento en caché y con desplazamiento sólo hacia delante.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -97,12 +97,12 @@
   
 |Use esta <xref:System.Xml.XmlReaderSettings> miembro|Para especificar|  
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|  
-|Propiedad <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>|Si se permite el procesamiento de DTD. El valor predeterminado es no permitir el procesamiento de DTD.|  
-|Propiedad <xref:System.Xml.XmlReaderSettings.ValidationType%2A>|Si el lector debe validar los datos y qué tipo de validación que se debe realizar (DTD o esquema). El valor predeterminado es que no hay validación de datos.|  
-|Evento<xref:System.Xml.XmlReaderSettings.ValidationEventHandler> |Un controlador de eventos para recibir información sobre los eventos de validación. Si no se proporciona un controlador de eventos, se inicia una <xref:System.Xml.XmlException> en el primer error de validación.|  
-|Propiedad <xref:System.Xml.XmlReaderSettings.ValidationFlags%2A>|Opciones de validación adicional a través de la <xref:System.Xml.Schema.XmlSchemaValidationFlags> miembros de enumeración:<br /><br /> -   `AllowXmlAttributes`--Permitir atributos XML (`xml:*`) en documentos de instancia, incluso cuando no se han definido en el esquema. Los atributos se validan basándose en su tipo de datos. Consulte la <xref:System.Xml.Schema.XmlSchemaValidationFlags> página de referencia de la configuración para usar en escenarios concretos. (Deshabilitado de forma predeterminada).<br />-   `ProcessIdentityConstraints` --Procesa las restricciones de identidad (`xs:ID`, `xs:IDREF`, `xs:key`, `xs:keyref`, `xs:unique`) encontrado durante la validación. (Habilitada de forma predeterminada).<br />-   `ProcessSchemaLocation` --Procesar esquemas que especifican el `xsi:schemaLocation` o `xsi:noNamespaceSchemaLocation` atributo. (Habilitada de forma predeterminada).<br />-   `ProcessInlineSchema`--Procesar insertada esquemas XML durante la validación. (Deshabilitado de forma predeterminada).<br />-   `ReportValidationWarnings`--Informar de eventos si se produce una advertencia de validación. Normalmente se produce una advertencia cuando no hay ninguna DTD ni esquema XML para validar un elemento o atributo en particular. <xref:System.Xml.XmlReaderSettings.ValidationEventHandler> se utiliza para las notificaciones. (Deshabilitado de forma predeterminada).|  
+|Propiedad<xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>|Si se permite el procesamiento de DTD. El valor predeterminado es no permitir el procesamiento de DTD.|  
+|Propiedad<xref:System.Xml.XmlReaderSettings.ValidationType%2A>|Si el lector debe validar los datos y qué tipo de validación que se debe realizar (DTD o esquema). El valor predeterminado es que no hay validación de datos.|  
+|Evento<xref:System.Xml.XmlReaderSettings.ValidationEventHandler>|Un controlador de eventos para recibir información sobre los eventos de validación. Si no se proporciona un controlador de eventos, se inicia una <xref:System.Xml.XmlException> en el primer error de validación.|  
+|Propiedad<xref:System.Xml.XmlReaderSettings.ValidationFlags%2A>|Opciones de validación adicional a través de la <xref:System.Xml.Schema.XmlSchemaValidationFlags> miembros de enumeración:<br /><br /> -   `AllowXmlAttributes`--Permitir atributos XML (`xml:*`) en documentos de instancia, incluso cuando no se han definido en el esquema. Los atributos se validan basándose en su tipo de datos. Consulte la <xref:System.Xml.Schema.XmlSchemaValidationFlags> página de referencia de la configuración para usar en escenarios concretos. (Deshabilitado de forma predeterminada).<br />-   `ProcessIdentityConstraints` --Procesa las restricciones de identidad (`xs:ID`, `xs:IDREF`, `xs:key`, `xs:keyref`, `xs:unique`) encontrado durante la validación. (Habilitada de forma predeterminada).<br />-   `ProcessSchemaLocation` --Procesar esquemas que especifican el `xsi:schemaLocation` o `xsi:noNamespaceSchemaLocation` atributo. (Habilitada de forma predeterminada).<br />-   `ProcessInlineSchema`--Procesar insertada esquemas XML durante la validación. (Deshabilitado de forma predeterminada).<br />-   `ReportValidationWarnings`--Informar de eventos si se produce una advertencia de validación. Normalmente se produce una advertencia cuando no hay ninguna DTD ni esquema XML para validar un elemento o atributo en particular. <xref:System.Xml.XmlReaderSettings.ValidationEventHandler> se utiliza para las notificaciones. (Deshabilitado de forma predeterminada).|  
 |<xref:System.Xml.XmlReaderSettings.Schemas%2A>|<xref:System.Xml.Schema.XmlSchemaSet> que se va a usar para validación.|  
-|Propiedad <xref:System.Xml.XmlReaderSettings.XmlResolver%2A>|El <xref:System.Xml.XmlResolver> para resolver y tener acceso a recursos externos. Esto puede incluir entidades externas, como DTD y esquemas y cualquier `xs:include` o `xs:import` elementos contenidos en el esquema XML. Si no especifica un <xref:System.Xml.XmlResolver>, <xref:System.Xml.XmlReader> usa un valor predeterminado <xref:System.Xml.XmlUrlResolver> sin credenciales de usuario.|  
+|Propiedad<xref:System.Xml.XmlReaderSettings.XmlResolver%2A>|El <xref:System.Xml.XmlResolver> para resolver y tener acceso a recursos externos. Esto puede incluir entidades externas, como DTD y esquemas y cualquier `xs:include` o `xs:import` elementos contenidos en el esquema XML. Si no especifica un <xref:System.Xml.XmlResolver>, <xref:System.Xml.XmlReader> usa un valor predeterminado <xref:System.Xml.XmlUrlResolver> sin credenciales de usuario.|  
   
 <a name="xmlreader_data"></a>   
 ## <a name="data-conformance"></a>Cumplimiento en datos  
@@ -122,8 +122,8 @@
   
 |Use esta <xref:System.Xml.XmlReaderSettings> propiedad|En|Default|  
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|-------------|  
-|Propiedad <xref:System.Xml.XmlReaderSettings.CheckCharacters%2A>|Habilitar o deshabilitar comprueba lo siguiente:<br /><br /> -Caracteres están dentro del intervalo de caracteres XML legales, tal como se define por la [2.2 Characters](https://www.w3.org/TR/2006/REC-xml-20060816/#charsets) sección de la recomendación W3C XML 1.0.<br />-Todos los nombres XML son válidos, tal como se define por la [2.3 Common Syntactic Constructs construcciones](https://www.w3.org/TR/2006/REC-xml-20060816/#NT-Name) sección de la recomendación W3C XML 1.0.<br /><br /> Cuando esta propiedad se establece en `true` (valor predeterminado), un <xref:System.Xml.XmlException> excepción se produce si el archivo XML contiene caracteres no válidos o los nombres XML no válidos (por ejemplo, un nombre de elemento se inicia con un número).|Carácter y comprobación de nombres está habilitada.<br /><br /> Establecer <xref:System.Xml.XmlReaderSettings.CheckCharacters%2A> a `false` desactiva la comprobación de caracteres de las referencias de entidad de carácter. Si el lector está procesando datos de texto, siempre comprueba que los nombres XML son válidos, independientemente de esta configuración. **Nota:**  La recomendación de XML 1.0 requiere que haya cumplimiento a nivel del documento cuando hay una DTD. Por lo tanto, si el lector está configurado para admitir <xref:System.Xml.ConformanceLevel.Fragment?displayProperty=nameWithType>, pero los datos XML contienen una definición de tipo de documento (DTD), un <xref:System.Xml.XmlException> se produce.|  
-|Propiedad <xref:System.Xml.XmlReaderSettings.ConformanceLevel%2A>|Elija el nivel de conformidad para aplicar:<br /><br /> -   <xref:System.Xml.ConformanceLevel.Document>. Se ajusta a las reglas para un [documento XML 1.0 correcto](https://www.w3.org/TR/2006/REC-xml-20060816/#sec-well-formed).<br />-   <xref:System.Xml.ConformanceLevel.Fragment>. Se ajusta a las reglas para un fragmento de documento con formato correcto que pueden utilizarse como un [externo entidad analizada](https://www.w3.org/TR/2006/REC-xml-20060816/#wf-entities).<br />-   <xref:System.Xml.ConformanceLevel.Auto>. Se ajusta al nivel decidido por el lector.<br /><br /> Si los datos no cumplen las reglas, un <xref:System.Xml.XmlException> es una excepción.|<xref:System.Xml.ConformanceLevel.Document>|  
+|Propiedad<xref:System.Xml.XmlReaderSettings.CheckCharacters%2A>|Habilitar o deshabilitar comprueba lo siguiente:<br /><br /> -Caracteres están dentro del intervalo de caracteres XML legales, tal como se define por la [2.2 Characters](https://www.w3.org/TR/2006/REC-xml-20060816/#charsets) sección de la recomendación W3C XML 1.0.<br />-Todos los nombres XML son válidos, tal como se define por la [2.3 Common Syntactic Constructs construcciones](https://www.w3.org/TR/2006/REC-xml-20060816/#NT-Name) sección de la recomendación W3C XML 1.0.<br /><br /> Cuando esta propiedad se establece en `true` (valor predeterminado), un <xref:System.Xml.XmlException> excepción se produce si el archivo XML contiene caracteres no válidos o los nombres XML no válidos (por ejemplo, un nombre de elemento se inicia con un número).|Carácter y comprobación de nombres está habilitada.<br /><br /> Al establecer la propiedad <xref:System.Xml.XmlReaderSettings.CheckCharacters%2A> en `false`, se desactiva la comprobación de caracteres en las referencias a entidades de caracteres. Si el lector está procesando datos de texto, siempre comprueba que los nombres XML son válidos, independientemente de esta configuración. **Nota:**  La recomendación de XML 1.0 requiere que haya cumplimiento a nivel del documento cuando hay una DTD. Por lo tanto, si el lector está configurado para admitir <xref:System.Xml.ConformanceLevel.Fragment?displayProperty=nameWithType>, pero los datos XML contienen una definición de tipo de documento (DTD), un <xref:System.Xml.XmlException> se produce.|  
+|Propiedad<xref:System.Xml.XmlReaderSettings.ConformanceLevel%2A>|Elija el nivel de conformidad para aplicar:<br /><br /> -   <xref:System.Xml.ConformanceLevel.Document>. Se ajusta a las reglas para un [documento XML 1.0 correcto](https://www.w3.org/TR/2006/REC-xml-20060816/#sec-well-formed).<br />-   <xref:System.Xml.ConformanceLevel.Fragment>. Se ajusta a las reglas para un fragmento de documento con formato correcto que pueden utilizarse como un [externo entidad analizada](https://www.w3.org/TR/2006/REC-xml-20060816/#wf-entities).<br />-   <xref:System.Xml.ConformanceLevel.Auto>. Se ajusta al nivel decidido por el lector.<br /><br /> Si los datos no cumplen las reglas, un <xref:System.Xml.XmlException> es una excepción.|<xref:System.Xml.ConformanceLevel.Document>|  
   
 <a name="xmlreader_nodes"></a>   
 ## <a name="navigating-through-nodes"></a>Navegar por los nodos  
@@ -157,7 +157,7 @@
 |Método <xref:System.Xml.XmlReader.ReadElementString%2A>|Leer un elemento de sólo texto.|  
 |Método <xref:System.Xml.XmlReader.ReadToDescendant%2A>|Avanzar el lector XML al siguiente elemento descendiente (secundario) que tiene el nombre especificado.|  
 |Método <xref:System.Xml.XmlReader.ReadToNextSibling%2A>|Avanzar el lector XML para el siguiente elemento relacionado que tenga el nombre especificado.|  
-|Propiedad <xref:System.Xml.XmlReader.IsEmptyElement%2A>|Compruebe si el elemento actual tiene una etiqueta de elemento final. Por ejemplo:<br /><br /> -   `<item num="123"/>` (<xref:System.Xml.XmlReader.IsEmptyElement%2A> es `true`.)<br />-   `<item num="123"> </item>` (<xref:System.Xml.XmlReader.IsEmptyElement%2A> es `false`, aunque el contenido del elemento está vacío.)|  
+|Propiedad<xref:System.Xml.XmlReader.IsEmptyElement%2A>|Compruebe si el elemento actual tiene una etiqueta de elemento final. Por ejemplo:<br /><br /> -   `<item num="123"/>` (<xref:System.Xml.XmlReader.IsEmptyElement%2A> es `true`.)<br />-   `<item num="123"> </item>` (<xref:System.Xml.XmlReader.IsEmptyElement%2A> es `false`, aunque el contenido del elemento está vacío.)|  
   
  Para obtener un ejemplo de leer el contenido de texto de elementos, vea el <xref:System.Xml.XmlReader.ReadString%2A> método. El ejemplo siguiente procesa elementos utilizando un `while` bucle.  
   
@@ -174,13 +174,13 @@
   
 |Use esta <xref:System.Xml.XmlReader> miembro|En|  
 |---------------------------------------------------------------------------------------------------------------------------------------------------|--------|  
-|Propiedad <xref:System.Xml.XmlReader.HasAttributes%2A>|Comprobar si el nodo actual tiene atributos.|  
-|Propiedad <xref:System.Xml.XmlReader.AttributeCount%2A>|Obtiene el número de atributos en el elemento actual.|  
+|Propiedad<xref:System.Xml.XmlReader.HasAttributes%2A>|Comprobar si el nodo actual tiene atributos.|  
+|Propiedad<xref:System.Xml.XmlReader.AttributeCount%2A>|Obtiene el número de atributos en el elemento actual.|  
 |Método <xref:System.Xml.XmlReader.MoveToFirstAttribute%2A>|Mover hasta el primer atributo en un elemento.|  
 |Método <xref:System.Xml.XmlReader.MoveToNextAttribute%2A>|Mover hasta el siguiente atributo en un elemento.|  
 |Método <xref:System.Xml.XmlReader.MoveToAttribute%2A>|Mover a un atributo especificado.|  
 |<xref:System.Xml.XmlReader.GetAttribute%2A> método o <xref:System.Xml.XmlReader.Item%2A> propiedad|Obtiene el valor de un atributo especificado.|  
-|Propiedad <xref:System.Xml.XmlReader.IsDefault%2A>|Compruebe si el nodo actual es un atributo que se generó a partir del valor predeterminado definido en la DTD o esquema.|  
+|Propiedad<xref:System.Xml.XmlReader.IsDefault%2A>|Compruebe si el nodo actual es un atributo que se generó a partir del valor predeterminado definido en la DTD o esquema.|  
 |Método <xref:System.Xml.XmlReader.MoveToElement%2A>|Desplazarse al elemento que posee el atributo actual. Utilice este método para devolver a un elemento después de navegar a través de sus atributos.|  
 |Método <xref:System.Xml.XmlReader.ReadAttributeValue%2A>|Analizar el valor del atributo en uno o varios `Text`, `EntityReference`, o `EndEntity` nodos.|  
   
@@ -214,7 +214,7 @@
   
 |Use esta <xref:System.Xml.XmlReader> miembro|En|  
 |---------------------------------------------------------------------------------------------------------------------------------------------------|--------|  
-|Propiedad <xref:System.Xml.XmlReader.Value%2A>|Obtener el contenido de texto del nodo actual. El valor devuelto depende del tipo de nodo; Consulte la <xref:System.Xml.XmlReader.Value%2A> página de referencia para obtener más información.|  
+|Propiedad<xref:System.Xml.XmlReader.Value%2A>|Obtener el contenido de texto del nodo actual. El valor devuelto depende del tipo de nodo; Consulte la <xref:System.Xml.XmlReader.Value%2A> página de referencia para obtener más información.|  
 |Método <xref:System.Xml.XmlReader.ReadString%2A>|Obtener el contenido de un nodo de elemento o de texto como una cadena. Este método detiene en instrucciones de procesamiento y comentarios.<br /><br /> Para obtener más información acerca de cómo este método controla los tipos de nodo específico, consulte la <xref:System.Xml.XmlReader.ReadString%2A> página de referencia.|  
 |Métodos <xref:System.Xml.XmlReader.ReadInnerXml%2A> y <xref:System.Xml.XmlReader.ReadInnerXmlAsync%2A>|Obtenga todo el contenido del nodo actual, incluido el marcado, pero sin incluir etiquetas inicial y final. Por ejemplo, para:<br /><br /> `<node>this<child id="123"/></node>`<br /><br /> <xref:System.Xml.XmlReader.ReadInnerXml%2A> Devuelve:<br /><br /> `this<child id="123"/>`|  
 |Métodos <xref:System.Xml.XmlReader.ReadOuterXml%2A> y <xref:System.Xml.XmlReader.ReadOuterXmlAsync%2A>|Obtenga todo el contenido del nodo actual y sus elementos secundarios, incluidas las etiquetas de marcado y el inicio y fin. Por ejemplo, para:<br /><br /> `<node>this<child id="123"/></node>`<br /><br /> <xref:System.Xml.XmlReader.ReadOuterXml%2A> Devuelve:<br /><br /> `<node>this<child id="123"/></node>`|  
@@ -671,7 +671,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cuando se invalida en una clase derivada, cambia el <see cref="P:System.Xml.XmlReader.ReadState" /> a <see cref="F:System.Xml.ReadState.Closed" />.</summary>
+        <summary>Cuando se invalida en una clase derivada, cambia <see cref="P:System.Xml.XmlReader.ReadState" /> a <see cref="F:System.Xml.ReadState.Closed" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -750,7 +750,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
   
 -   Establecer <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> a un <xref:System.Xml.XmlSecureResolver> objeto para restringir los recursos que puede tener acceso el lector XML.  
   
- -o bien-  
+ O bien  
   
 -   Establecer <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> a `null` para evitar que el lector XML abra ningún recurso externo.  
   
@@ -822,7 +822,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <Docs>
         <param name="input">Flujo que contiene los datos XML.  
   
-<see cref="T:System.Xml.XmlReader" /> examina los primeros bytes del flujo buscando una marca de orden de bytes u otro signo de codificación. Cuando se especifica la codificación, esta se usa para seguir leyendo el flujo, y el procesamiento continúa analizando la entrada como un flujo de caracteres (Unicode).</param>
+<see cref="T:System.Xml.XmlReader" /> examina los primeros bytes de la secuencia buscando una marca de orden de bytes u otro signo de codificación. Cuando se especifica la codificación, esta se utiliza para seguir leyendo la secuencia, y el procesamiento continúa analizando la entrada como una secuencia de caracteres (Unicode).</param>
         <summary>Crea una nueva instancia <see cref="T:System.Xml.XmlReader" /> mediante el flujo especificado con la configuración predeterminada.</summary>
         <returns>Objeto usado para leer los datos XML del flujo.</returns>
         <remarks>
@@ -958,7 +958,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
         <Parameter Name="inputUri" Type="System.String" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="inputUri">URI del archivo que contiene los datos XML. La clase <see cref="T:System.Xml.XmlUrlResolver" /> se usa para convertir la ruta de acceso en una representación de datos canónicos.</param>
+        <param name="inputUri">URI del archivo que contiene los datos XML. La clase <see cref="T:System.Xml.XmlUrlResolver" /> se utiliza para convertir la ruta de acceso en una representación de datos canónicos.</param>
         <summary>Crea una nueva instancia de <see cref="T:System.Xml.XmlReader" /> con el URI especificado.</summary>
         <returns>Objeto usado para leer los datos XML del flujo.</returns>
         <remarks>
@@ -1036,7 +1036,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
       <Docs>
         <param name="input">Flujo que contiene los datos XML.  
   
-<see cref="T:System.Xml.XmlReader" /> examina los primeros bytes del flujo buscando una marca de orden de bytes u otro signo de codificación. Cuando se especifica la codificación, esta se usa para seguir leyendo el flujo, y el procesamiento continúa analizando la entrada como un flujo de caracteres (Unicode).</param>
+<see cref="T:System.Xml.XmlReader" /> examina los primeros bytes de la secuencia buscando una marca de orden de bytes u otro signo de codificación. Cuando se especifica la codificación, esta se utiliza para seguir leyendo la secuencia, y el procesamiento continúa analizando la entrada como una secuencia de caracteres (Unicode).</param>
         <param name="settings">Configuración de la nueva instancia <see cref="T:System.Xml.XmlReader" />. Este valor puede ser <see langword="null" />.</param>
         <summary>Crea una nueva instancia de <see cref="T:System.Xml.XmlReader" /> con el flujo y la configuración especificados.</summary>
         <returns>Objeto usado para leer los datos XML del flujo.</returns>
@@ -1056,7 +1056,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
 >   
 >  -   Restrinja los recursos a los que puede tener acceso <xref:System.Xml.XmlReader> estableciendo la propiedad <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> en un objeto <xref:System.Xml.XmlSecureResolver>.  
 >   
->  -o bien-  
+>  O bien  
 >   
 >  -   No permita que <xref:System.Xml.XmlReader> abra ningún recurso externo estableciendo la propiedad <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> en `null`.  
   
@@ -1122,7 +1122,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
 >   
 >  -   Restrinja los recursos a los que puede tener acceso <xref:System.Xml.XmlReader> estableciendo la propiedad <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> en un objeto <xref:System.Xml.XmlSecureResolver>.  
 >   
->  -o bien-  
+>  O bien  
 >   
 >  -   No permita que <xref:System.Xml.XmlReader> abra ningún recurso externo estableciendo la propiedad <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> en `null`.  
   
@@ -1173,7 +1173,7 @@ Six Month Review Date:  7/8/2003 12:00:00 AM
         <Parameter Name="settings" Type="System.Xml.XmlReaderSettings" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="inputUri">URI del archivo que contiene los datos XML. El objeto <see cref="T:System.Xml.XmlResolver" /> en el objeto <see cref="T:System.Xml.XmlReaderSettings" /> se usa para convertir la ruta de acceso en una representación de datos canónicos. Si <see cref="P:System.Xml.XmlReaderSettings.XmlResolver" /> es <see langword="null" />, se usa un nuevo objeto <see cref="T:System.Xml.XmlUrlResolver" />.</param>
+        <param name="inputUri">URI del archivo que contiene los datos XML. El objeto <see cref="T:System.Xml.XmlResolver" /> del objeto <see cref="T:System.Xml.XmlReaderSettings" /> se utiliza para convertir la ruta de acceso en una representación de datos canónicos. Si <see cref="P:System.Xml.XmlReaderSettings.XmlResolver" /> es <see langword="null" />, se utiliza un nuevo objeto <see cref="T:System.Xml.XmlUrlResolver" />.</param>
         <param name="settings">Configuración de la nueva instancia <see cref="T:System.Xml.XmlReader" />. Este valor puede ser <see langword="null" />.</param>
         <summary>Crea una nueva instancia de <see cref="T:System.Xml.XmlReader" /> usando el URI y la configuración especificados.</summary>
         <returns>Objeto usado para leer los datos XML del flujo.</returns>
@@ -1274,7 +1274,7 @@ El nivel de conformidad del objeto <see cref="T:System.Xml.XmlReaderSettings" />
 >   
 >  -   Restrinja los recursos a los que puede tener acceso <xref:System.Xml.XmlReader> estableciendo la propiedad <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> en un objeto <xref:System.Xml.XmlSecureResolver>.  
 >   
->  -o bien-  
+>  O bien  
 >   
 >  -   No permita que <xref:System.Xml.XmlReader> abra ningún recurso externo estableciendo la propiedad <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> en `null`.  
   
@@ -1293,7 +1293,7 @@ El nivel de conformidad del objeto <see cref="T:System.Xml.XmlReaderSettings" />
         <exception cref="T:System.ArgumentNullException">El valor <paramref name="reader" /> es <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">Si el objeto <see cref="T:System.Xml.XmlReaderSettings" /> especifica un nivel de conformidad que no es coherente con el nivel de conformidad del lector subyacente.  
   
--o bien- 
+O bien 
 El objeto <see cref="T:System.Xml.XmlReader" /> subyacente se encuentra en un estado <see cref="F:System.Xml.ReadState.Error" /> o <see cref="F:System.Xml.ReadState.Closed" />.</exception>
       </Docs>
     </Member>
@@ -1332,7 +1332,7 @@ El objeto <see cref="T:System.Xml.XmlReader" /> subyacente se encuentra en un es
       <Docs>
         <param name="input">Flujo que contiene los datos XML.  
   
-<see cref="T:System.Xml.XmlReader" /> examina los primeros bytes del flujo buscando una marca de orden de bytes u otro signo de codificación. Cuando se especifica la codificación, esta se usa para seguir leyendo el flujo, y el procesamiento continúa analizando la entrada como un flujo de caracteres (Unicode).</param>
+<see cref="T:System.Xml.XmlReader" /> examina los primeros bytes de la secuencia buscando una marca de orden de bytes u otro signo de codificación. Cuando se especifica la codificación, esta se utiliza para seguir leyendo la secuencia, y el procesamiento continúa analizando la entrada como una secuencia de caracteres (Unicode).</param>
         <param name="settings">Configuración de la nueva instancia <see cref="T:System.Xml.XmlReader" />. Este valor puede ser <see langword="null" />.</param>
         <param name="baseUri">URI base de la entidad o documento que se lee. Este valor puede ser <see langword="null" />.  
   
@@ -1355,7 +1355,7 @@ El objeto <see cref="T:System.Xml.XmlReader" /> subyacente se encuentra en un es
 >   
 >  -   Restrinja los recursos a los que puede tener acceso <xref:System.Xml.XmlReader> estableciendo la propiedad <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> en un objeto <xref:System.Xml.XmlSecureResolver>.  
 >   
->  -o bien-  
+>  O bien  
 >   
 >  -   No permita que <xref:System.Xml.XmlReader> abra ningún recurso externo estableciendo la propiedad <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> en `null`.  
   
@@ -1404,7 +1404,7 @@ El objeto <see cref="T:System.Xml.XmlReader" /> subyacente se encuentra en un es
       <Docs>
         <param name="input">Flujo que contiene los datos XML.  
   
-<see cref="T:System.Xml.XmlReader" /> examina los primeros bytes del flujo buscando una marca de orden de bytes u otro signo de codificación. Cuando se especifica la codificación, esta se usa para seguir leyendo el flujo, y el procesamiento continúa analizando la entrada como un flujo de caracteres (Unicode).</param>
+<see cref="T:System.Xml.XmlReader" /> examina los primeros bytes de la secuencia buscando una marca de orden de bytes u otro signo de codificación. Cuando se especifica la codificación, esta se utiliza para seguir leyendo la secuencia, y el procesamiento continúa analizando la entrada como una secuencia de caracteres (Unicode).</param>
         <param name="settings">Configuración de la nueva instancia <see cref="T:System.Xml.XmlReader" />. Este valor puede ser <see langword="null" />.</param>
         <param name="inputContext">Información de contexto necesaria para analizar el fragmento XML. La información de contexto puede incluir la <see cref="T:System.Xml.XmlNameTable" /> que se va a usar, la codificación, el ámbito del espacio de nombres, el ámbito actual de <c>xml:lang</c> y <c>xml:space</c>, el URI base y la definición de tipo de documento.  
   
@@ -1427,7 +1427,7 @@ Este valor puede ser <see langword="null" />.</param>
 >   
 >  -   Restrinja los recursos a los que puede tener acceso <xref:System.Xml.XmlReader> estableciendo la propiedad <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> en un objeto <xref:System.Xml.XmlSecureResolver>.  
 >   
->  -o bien-  
+>  O bien  
 >   
 >  -   No permita que <xref:System.Xml.XmlReader> abra ningún recurso externo estableciendo la propiedad <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> en `null`.  
   
@@ -1494,7 +1494,7 @@ Este valor puede ser <see langword="null" />.</param>
 >   
 >  -   Restrinja los recursos a los que puede tener acceso <xref:System.Xml.XmlReader> estableciendo la propiedad <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> en un objeto <xref:System.Xml.XmlSecureResolver>.  
 >   
->  -o bien-  
+>  O bien  
 >   
 >  -   No permita que <xref:System.Xml.XmlReader> abra ningún recurso externo estableciendo la propiedad <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> en `null`.  
   
@@ -1564,7 +1564,7 @@ Este valor puede ser <see langword="null" />.</param>
 >   
 >  -   Restrinja los recursos a los que puede tener acceso <xref:System.Xml.XmlReader> estableciendo la propiedad <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> en un objeto <xref:System.Xml.XmlSecureResolver>.  
 >   
->  -o bien-  
+>  O bien  
 >   
 >  -   No permita que <xref:System.Xml.XmlReader> abra ningún recurso externo estableciendo la propiedad <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> en `null`.  
   
@@ -1581,7 +1581,7 @@ Este valor puede ser <see langword="null" />.</param>
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">El valor <paramref name="input" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">El <see cref="P:System.Xml.XmlReaderSettings.NameTable" /> y <see cref="P:System.Xml.XmlParserContext.NameTable" /> ambas propiedades contienen valores. (Solo se puede establecer y usar una de estas propiedades <see langword="NameTable" />).</exception>
+        <exception cref="T:System.ArgumentException">Tanto la propiedad <see cref="P:System.Xml.XmlReaderSettings.NameTable" /> como la propiedad <see cref="P:System.Xml.XmlParserContext.NameTable" /> contienen valores. (Solo se puede establecer y usar una de estas propiedades <see langword="NameTable" />).</exception>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -1617,7 +1617,7 @@ Este valor puede ser <see langword="null" />.</param>
         <Parameter Name="inputContext" Type="System.Xml.XmlParserContext" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="inputUri">URI del archivo que contiene los datos XML. El objeto <see cref="T:System.Xml.XmlResolver" /> en el objeto <see cref="T:System.Xml.XmlReaderSettings" /> se usa para convertir la ruta de acceso en una representación de datos canónicos. Si <see cref="P:System.Xml.XmlReaderSettings.XmlResolver" /> es <see langword="null" />, se usa un nuevo objeto <see cref="T:System.Xml.XmlUrlResolver" />.</param>
+        <param name="inputUri">URI del archivo que contiene los datos XML. El objeto <see cref="T:System.Xml.XmlResolver" /> del objeto <see cref="T:System.Xml.XmlReaderSettings" /> se utiliza para convertir la ruta de acceso en una representación de datos canónicos. Si <see cref="P:System.Xml.XmlReaderSettings.XmlResolver" /> es <see langword="null" />, se utiliza un nuevo objeto <see cref="T:System.Xml.XmlUrlResolver" />.</param>
         <param name="settings">Configuración de la nueva instancia <see cref="T:System.Xml.XmlReader" />. Este valor puede ser <see langword="null" />.</param>
         <param name="inputContext">Información de contexto necesaria para analizar el fragmento XML. La información de contexto puede incluir la <see cref="T:System.Xml.XmlNameTable" /> que se va a usar, la codificación, el ámbito del espacio de nombres, el ámbito actual de <c>xml:lang</c> y <c>xml:space</c>, el URI base y la definición de tipo de documento.  
   
@@ -1644,7 +1644,7 @@ Este valor puede ser <see langword="null" />.</param>
         </remarks>
         <exception cref="T:System.ArgumentNullException">El valor <see langword="inputUri" /> es <see langword="null" />.</exception>
         <exception cref="T:System.Security.SecurityException"><see cref="T:System.Xml.XmlReader" /> no tiene permisos suficientes para obtener acceso a la ubicación de los datos XML.</exception>
-        <exception cref="T:System.ArgumentException">El <see cref="P:System.Xml.XmlReaderSettings.NameTable" /> y <see cref="P:System.Xml.XmlParserContext.NameTable" /> ambas propiedades contienen valores. (Solo se puede establecer y usar una de estas propiedades <see langword="NameTable" />).</exception>
+        <exception cref="T:System.ArgumentException">Tanto la propiedad <see cref="P:System.Xml.XmlReaderSettings.NameTable" /> como la propiedad <see cref="P:System.Xml.XmlParserContext.NameTable" /> contienen valores. (Solo se puede establecer y usar una de estas propiedades <see langword="NameTable" />).</exception>
         <exception cref="T:System.IO.FileNotFoundException">No se encuentra el archivo especificado por el URI.</exception>
         <exception cref="T:System.UriFormatException">El formato del URI no es correcto.</exception>
       </Docs>
@@ -1818,7 +1818,7 @@ Este valor puede ser <see langword="null" />.</param>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se invalida en una clase derivada, obtiene un valor que indica si el lector está situado al final del flujo.</summary>
+        <summary>Cuando se invalida en una clase derivada, obtiene un valor que indica si el lector está situado al final de la secuencia.</summary>
         <value>Es <see langword="true" /> si el lector está situado al final del flujo; en caso contrario, es <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
@@ -1926,8 +1926,8 @@ Este valor puede ser <see langword="null" />.</param>
       </Parameters>
       <Docs>
         <param name="name">Nombre completo del atributo.</param>
-        <summary>Cuando se invalida en una clase derivada, obtiene el valor del atributo con los valores especificados <see cref="P:System.Xml.XmlReader.Name" />.</summary>
-        <returns>Valor del atributo especificado. Si no se encuentra el atributo o el valor es <see langword="String.Empty" />, <see langword="null" /> se devuelve.</returns>
+        <summary>Cuando se invalida en una clase derivada, obtiene el valor del atributo con la propiedad <see cref="P:System.Xml.XmlReader.Name" /> especificada.</summary>
+        <returns>Valor del atributo especificado. Si no se encuentra el atributo o el valor es <see langword="String.Empty" />, se devuelve <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1946,7 +1946,7 @@ Este valor puede ser <see langword="null" />.</param>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="name" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="name" /> es <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
       </Docs>
     </Member>
@@ -1988,8 +1988,8 @@ Este valor puede ser <see langword="null" />.</param>
       <Docs>
         <param name="name">Nombre local del atributo.</param>
         <param name="namespaceURI">URI de espacio de nombres del atributo.</param>
-        <summary>Cuando se invalida en una clase derivada, obtiene el valor del atributo con los valores especificados <see cref="P:System.Xml.XmlReader.LocalName" /> y <see cref="P:System.Xml.XmlReader.NamespaceURI" />.</summary>
-        <returns>Valor del atributo especificado. Si no se encuentra el atributo o el valor es <see langword="String.Empty" />, <see langword="null" /> se devuelve. Este método no desplaza el lector.</returns>
+        <summary>Cuando se invalida en una clase derivada, obtiene el valor del atributo con las propiedades <see cref="P:System.Xml.XmlReader.LocalName" /> y <see cref="P:System.Xml.XmlReader.NamespaceURI" /> especificadas.</summary>
+        <returns>Valor del atributo especificado. Si no se encuentra el atributo o el valor es <see langword="String.Empty" />, se devuelve <see langword="null" />. Este método no desplaza el lector.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2018,7 +2018,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="name" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="name" /> es <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
       </Docs>
     </Member>
@@ -2065,7 +2065,7 @@ String dt4 = reader.GetAttribute("dt",http://www.w3.org/2000/xmlns/);
         </remarks>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.
 
--o bien-
+O bien
 
 Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin establecer la marca <see cref="P:System.Xml.XmlReaderSettings.Async" /> en <see langword="true" />. En este caso, se produce <see cref="T:System.InvalidOperationException" /> con el mensaje "Establezca XmlReaderSettings.Async en true si quiere usar métodos asincrónicos".</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Programación asincrónica con Async y Await (C# y Visual Basic)</related>
@@ -2151,8 +2151,8 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se invalida en una clase derivada, obtiene un valor que indica si el nodo actual puede tener un <see cref="P:System.Xml.XmlReader.Value" />.</summary>
-        <value>Es <see langword="true" /> si el nodo en el que está situado actualmente el lector puede tener un <see langword="Value" />; en caso contrario, es <see langword="false" />. Si <see langword="false" />, el nodo tiene un valor de <see langword="String.Empty" />.</value>
+        <summary>Cuando se invalida en una clase derivada, obtiene un valor que indica si el nodo actual puede tener una propiedad <see cref="P:System.Xml.XmlReader.Value" />.</summary>
+        <value>Es <see langword="true" /> si el nodo en el que está situado actualmente el lector puede tener un <see langword="Value" />; en caso contrario, es <see langword="false" />. Si es <see langword="false" />, el nodo tiene un valor de <see langword="String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2166,7 +2166,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
 |`Comment`|El contenido del comentario.|  
 |`DocumentType`|El subconjunto interno.|  
 |`ProcessingInstruction`|El contenido completo, sin incluir el destino.|  
-|`SignificantWhitespace`|El espacio en blanco entre marcas en un modelo de contenido mixto.|  
+|`SignificantWhitespace`|Espacio en blanco entre marcas en un modelo de contenido mixto.|  
 |`Text`|El contenido del nodo de texto.|  
 |`Whitespace`|El espacio en blanco entre marcado.|  
 |`XmlDeclaration`|El contenido de la declaración.|  
@@ -2384,7 +2384,7 @@ public class Sample
       <Docs>
         <param name="str">Nombre que se va a validar.</param>
         <summary>Devuelve un valor que indica si el argumento de cadena es un nombre XML válido.</summary>
-        <returns><see langword="true" /> Si el nombre es válido; en caso contrario, <see langword="false" />.</returns>
+        <returns>Es <see langword="true" /> si el nombre es válido; en caso contrario, es <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2433,7 +2433,7 @@ public class Sample
       <Docs>
         <param name="str">Token de nombre que se va a validar.</param>
         <summary>Devuelve un valor que indica si el argumento de cadena es un token de nombre XML válido.</summary>
-        <returns><see langword="true" /> Si es un token de nombre válido. en caso contrario <see langword="false" />.</returns>
+        <returns>Es <see langword="true" /> si es un token de nombre válido; en caso contrario, es <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2491,8 +2491,8 @@ public class Sample
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Las llamadas <see cref="M:System.Xml.XmlReader.MoveToContent" /> y comprueba si el nodo de contenido actual es una etiqueta de apertura o una etiqueta de elemento vacío.</summary>
-        <returns><see langword="true" /> Si <see cref="M:System.Xml.XmlReader.MoveToContent" /> encuentra una etiqueta de apertura o una etiqueta de elemento vacío; <see langword="false" /> si un tipo de nodo distinto <see langword="XmlNodeType.Element" /> se encontró.</returns>
+        <summary>Llama al método <see cref="M:System.Xml.XmlReader.MoveToContent" /> y comprueba si el nodo de contenido actual es una etiqueta de apertura o una etiqueta de elemento vacío.</summary>
+        <returns>Es <see langword="true" /> si <see cref="M:System.Xml.XmlReader.MoveToContent" /> encuentra una etiqueta de apertura o una etiqueta de elemento vacío; es <see langword="false" /> si se encuentra un tipo de nodo que no sea <see langword="XmlNodeType.Element" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2553,9 +2553,9 @@ public class Sample
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">Cadena que se compara con el <see langword="Name" /> propiedad del elemento encontrado.</param>
-        <summary>Las llamadas <see cref="M:System.Xml.XmlReader.MoveToContent" /> y comprueba si el nodo de contenido actual es una etiqueta de apertura o una etiqueta de elemento vacío y si la <see cref="P:System.Xml.XmlReader.Name" /> propiedad del elemento encontrado coincide con el argumento especificado.</summary>
-        <returns><see langword="true" /> Si el nodo resultante es un elemento y el <see langword="Name" /> propiedad coincide con la cadena especificada. <see langword="false" /> Si un tipo de nodo distinto <see langword="XmlNodeType.Element" /> se encuentra o si el elemento <see langword="Name" /> propiedad no coincide con la cadena especificada.</returns>
+        <param name="name">Cadena que se compara con la propiedad <see langword="Name" /> del elemento encontrado.</param>
+        <summary>Llama al método <see cref="M:System.Xml.XmlReader.MoveToContent" /> y comprueba si el nodo de contenido actual es una etiqueta de apertura o una etiqueta de elemento vacío y si la propiedad <see cref="P:System.Xml.XmlReader.Name" /> del elemento encontrado coincide con el argumento especificado.</summary>
+        <returns><see langword="true" /> si el nodo resultante es un elemento y la propiedad <see langword="Name" /> coincide con la cadena especificada. <see langword="false" /> si se encuentra un tipo de nodo que no sea <see langword="XmlNodeType.Element" /> o si la propiedad <see langword="Name" /> del elemento no coincide con la cadena especificada.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2613,10 +2613,10 @@ public class Sample
         <Parameter Name="ns" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="localname">La cadena que debe coincidir con el <see langword="LocalName" /> propiedad del elemento encontrado.</param>
-        <param name="ns">La cadena que debe coincidir con el <see langword="NamespaceURI" /> propiedad del elemento encontrado.</param>
-        <summary>Las llamadas <see cref="M:System.Xml.XmlReader.MoveToContent" /> y comprueba si el nodo de contenido actual es una etiqueta de apertura o una etiqueta de elemento vacío y si la <see cref="P:System.Xml.XmlReader.LocalName" /> y <see cref="P:System.Xml.XmlReader.NamespaceURI" /> propiedades del elemento encontrado coinciden con las cadenas especificadas.</summary>
-        <returns><see langword="true" /> Si el nodo resultante es un elemento. <see langword="false" /> Si un tipo de nodo distinto <see langword="XmlNodeType.Element" /> se encuentra o si la <see langword="LocalName" /> y <see langword="NamespaceURI" /> propiedades del elemento no coinciden con las cadenas especificadas.</returns>
+        <param name="localname">Cadena con la que se compara la propiedad <see langword="LocalName" /> del elemento encontrado.</param>
+        <param name="ns">Cadena con la que se compara la propiedad <see langword="NamespaceURI" /> del elemento encontrado.</param>
+        <summary>Llama al método <see cref="M:System.Xml.XmlReader.MoveToContent" /> y comprueba si el nodo de contenido actual es una etiqueta de apertura o una etiqueta de elemento vacío y si las propiedades <see cref="P:System.Xml.XmlReader.LocalName" /> y <see cref="P:System.Xml.XmlReader.NamespaceURI" /> del elemento encontrado coinciden con las cadenas especificadas.</summary>
+        <returns><see langword="true" /> si el nodo resultante es un elemento. <see langword="false" /> si se encuentra un tipo de nodo que no sea <see langword="XmlNodeType.Element" /> o si las propiedades <see langword="LocalName" /> y <see langword="NamespaceURI" /> del elemento no coinciden con la cadena especificada.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2747,7 +2747,7 @@ public class Sample
       </Parameters>
       <Docs>
         <param name="name">Nombre completo del atributo.</param>
-        <summary>Cuando se invalida en una clase derivada, obtiene el valor del atributo con los valores especificados <see cref="P:System.Xml.XmlReader.Name" />.</summary>
+        <summary>Cuando se invalida en una clase derivada, obtiene el valor del atributo con la propiedad <see cref="P:System.Xml.XmlReader.Name" /> especificada.</summary>
         <value>Valor del atributo especificado. Si no se encuentra el atributo, se devuelve <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2814,7 +2814,7 @@ public class Sample
       <Docs>
         <param name="name">Nombre local del atributo.</param>
         <param name="namespaceURI">URI de espacio de nombres del atributo.</param>
-        <summary>Cuando se invalida en una clase derivada, obtiene el valor del atributo con los valores especificados <see cref="P:System.Xml.XmlReader.LocalName" /> y <see cref="P:System.Xml.XmlReader.NamespaceURI" />.</summary>
+        <summary>Cuando se invalida en una clase derivada, obtiene el valor del atributo con las propiedades <see cref="P:System.Xml.XmlReader.LocalName" /> y <see cref="P:System.Xml.XmlReader.NamespaceURI" /> especificadas.</summary>
         <value>Valor del atributo especificado. Si no se encuentra el atributo, se devuelve <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3041,7 +3041,7 @@ Para los tipos de nodo sin nombre (por ejemplo, <see langword="Text" />, <see la
       </Parameters>
       <Docs>
         <param name="name">Nombre completo del atributo.</param>
-        <summary>Cuando se invalida en una clase derivada, se desplaza al atributo con los valores especificados <see cref="P:System.Xml.XmlReader.Name" />.</summary>
+        <summary>Cuando se invalida en una clase derivada, se desplaza al atributo con la propiedad <see cref="P:System.Xml.XmlReader.Name" /> especificada.</summary>
         <returns>Es <see langword="true" /> si se encuentra el atributo; en caso contrario, es <see langword="false" />. Si es <see langword="false" />, no cambia la posición del lector.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3093,7 +3093,7 @@ Para los tipos de nodo sin nombre (por ejemplo, <see langword="Text" />, <see la
       <Docs>
         <param name="name">Nombre local del atributo.</param>
         <param name="ns">URI de espacio de nombres del atributo.</param>
-        <summary>Cuando se invalida en una clase derivada, se desplaza al atributo con los valores especificados <see cref="P:System.Xml.XmlReader.LocalName" /> y <see cref="P:System.Xml.XmlReader.NamespaceURI" />.</summary>
+        <summary>Cuando se invalida en una clase derivada, se desplaza al atributo con las propiedades <see cref="P:System.Xml.XmlReader.LocalName" /> y <see cref="P:System.Xml.XmlReader.NamespaceURI" /> especificadas.</summary>
         <returns>Es <see langword="true" /> si se encuentra el atributo; en caso contrario, es <see langword="false" />. Si es <see langword="false" />, no cambia la posición del lector.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3140,7 +3140,7 @@ Para los tipos de nodo sin nombre (por ejemplo, <see langword="Text" />, <see la
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Comprueba si el nodo actual es un contenido (texto sin espacios en blanco, <see langword="CDATA" />, <see langword="Element" />, <see langword="EndElement" />, <see langword="EntityReference" />, o <see langword="EndEntity" />) nodo. Si el nodo no es un nodo de contenido, el lector salta hasta el siguiente nodo de contenido o el final del archivo. Omite los siguientes tipos de nodo: <see langword="ProcessingInstruction" />, <see langword="DocumentType" />, <see langword="Comment" />, <see langword="Whitespace" /> o <see langword="SignificantWhitespace" />.</summary>
+        <summary>Comprueba si el nodo actual es un nodo de contenido (texto sin espacios en blanco, <see langword="CDATA" />, <see langword="Element" />, <see langword="EndElement" />, <see langword="EntityReference" /> o <see langword="EndEntity" />). Si el nodo no es un nodo de contenido, el lector salta hasta el siguiente nodo de contenido o el final del archivo. Omite los siguientes tipos de nodo: <see langword="ProcessingInstruction" />, <see langword="DocumentType" />, <see langword="Comment" />, <see langword="Whitespace" /> o <see langword="SignificantWhitespace" />.</summary>
         <returns>El <see cref="P:System.Xml.XmlReader.NodeType" /> del nodo actual encontrado por el método o <see langword="XmlNodeType.None" /> si el lector alcanzó el final del flujo de entrada.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3241,7 +3241,7 @@ Para los tipos de nodo sin nombre (por ejemplo, <see langword="Text" />, <see la
         </remarks>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.
 
--o bien-
+O bien
 
 Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin establecer la marca <see cref="P:System.Xml.XmlReaderSettings.Async" /> en <see langword="true" />. En este caso, se produce <see cref="T:System.InvalidOperationException" /> con el mensaje "Establezca XmlReaderSettings.Async en true si quiere usar métodos asincrónicos".</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Programación asincrónica con Async y Await (C# y Visual Basic)</related>
@@ -3439,13 +3439,13 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
         <summary>Cuando se invalida en una clase derivada, obtiene el nombre completo del nodo actual.</summary>
         <value>Nombre completo del nodo actual. Por ejemplo, <see langword="Name" /> es <see langword="bk:book" /> para el elemento <c>&lt;bk: book&gt;</c>.  
   
-El nombre devuelto depende de la propiedad <see cref="P:System.Xml.XmlReader.NodeType" /> del nodo:  Los siguientes tipos de nodo devuelven los valores que figuran en la lista. Todos los demás tipos de nodo devuelven una cadena vacía.  
+El nombre devuelto depende de la propiedad <see cref="P:System.Xml.XmlReader.NodeType" /> del nodo: Los siguientes tipos de nodo devuelven los valores que figuran en la lista. Todos los demás tipos de nodo devuelven una cadena vacía.  
   
  <list type="table"><listheader><term> Tipo de nodo 
- </term><description> Name 
+ </term><description> nombre 
  </description></listheader><item><term><see langword="Attribute" /></term><description> El nombre del atributo.  
   
- </description></item><item><term><see langword="DocumentType" /></term><description> El nombre de tipo de documento.  
+ </description></item><item><term><see langword="DocumentType" /></term><description> Nombre del tipo de documento.  
   
  </description></item><item><term><see langword="Element" /></term><description> Nombre de la etiqueta.  
   
@@ -3453,7 +3453,7 @@ El nombre devuelto depende de la propiedad <see cref="P:System.Xml.XmlReader.Nod
   
  </description></item><item><term><see langword="ProcessingInstruction" /></term><description> Destino de la instrucción de procesamiento.  
   
- </description></item><item><term><see langword="XmlDeclaration" /></term><description> La cadena literal <see langword="xml" />.  
+ </description></item><item><term><see langword="XmlDeclaration" /></term><description> Cadena literal <see langword="xml" />.  
   
  </description></item></list></value>
         <remarks>
@@ -3564,7 +3564,7 @@ El nombre devuelto depende de la propiedad <see cref="P:System.Xml.XmlReader.Nod
         <ReturnType>System.Xml.XmlNameTable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se invalida en una clase derivada, obtiene el <see cref="T:System.Xml.XmlNameTable" /> asociado a esta implementación.</summary>
+        <summary>Cuando se invalida en una clase derivada, obtiene el objeto <see cref="T:System.Xml.XmlNameTable" /> que está asociado a esta implementación.</summary>
         <value><see langword="XmlNameTable" /> que permite obtener la versión subdividida de una cadena en el nodo.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3787,7 +3787,7 @@ El nombre devuelto depende de la propiedad <see cref="P:System.Xml.XmlReader.Nod
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Xml.XmlException">Se produjo un error al analizar el XML.</exception>
+        <exception cref="T:System.Xml.XmlException">Se ha producido un error al analizar el fragmento de XML.</exception>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
       </Docs>
     </Member>
@@ -3834,7 +3834,7 @@ El nombre devuelto depende de la propiedad <see cref="P:System.Xml.XmlReader.Nod
         </remarks>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.
 
--o bien-
+O bien
 
 Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin establecer la marca <see cref="P:System.Xml.XmlReaderSettings.Async" /> en <see langword="true" />. En este caso, se produce <see cref="T:System.InvalidOperationException" /> con el mensaje "Establezca XmlReaderSettings.Async en true si quiere usar métodos asincrónicos".</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Programación asincrónica con Async y Await (C# y Visual Basic)</related>
@@ -3873,7 +3873,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cuando se invalida en una clase derivada, analiza el valor del atributo en uno o más <see langword="Text" />, <see langword="EntityReference" />, o <see langword="EndEntity" /> nodos.</summary>
+        <summary>Cuando se invalida en una clase derivada, analiza el valor de atributo en uno o varios nodos <see langword="Text" />, <see langword="EntityReference" /> o <see langword="EndEntity" />.</summary>
         <returns><see langword="true" /> si hay nodos para devolver.  
   
  <see langword="false" /> si el lector no está situado en un nodo de atributo cuando se realiza la llamada inicial o si se leyeron todos los valores de atributo.  
@@ -3928,7 +3928,7 @@ Un atributo vacío, como <c>misc=""</c>, devuelve <see langword="true" /> con un
         <param name="returnType">Tipo del valor que se va a devolver.  
   
  **Nota** Con el lanzamiento de .NET Framework 3.5, el valor del parámetro <paramref name="returnType" /> ahora puede ser el tipo <see cref="T:System.DateTimeOffset" />.</param>
-        <param name="namespaceResolver">Objeto <see cref="T:System.Xml.IXmlNamespaceResolver" /> que se utiliza para resolver prefijos de espacios de nombres relacionados con la conversión de tipos. Por ejemplo, se puede utilizar al convertir un objeto <see cref="T:System.Xml.XmlQualifiedName" /> en <c>xs:string</c>.  
+        <param name="namespaceResolver">Objeto <see cref="T:System.Xml.IXmlNamespaceResolver" /> que se utiliza para resolver prefijos de espacios de nombres relacionados con la conversión de tipo. Por ejemplo, se puede utilizar al convertir un objeto <see cref="T:System.Xml.XmlQualifiedName" /> en <c>xs:string</c>.  
   
 Este valor puede ser <see langword="null" />.</param>
         <summary>Lee el contenido como objeto del tipo especificado.</summary>
@@ -3989,12 +3989,12 @@ Este valor puede ser <see langword="null" />.</param>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.FormatException">El contenido no está en el formato correcto para el tipo de destino.</exception>
+        <exception cref="T:System.FormatException">El formato del contenido no es correcto para el tipo de destino.</exception>
         <exception cref="T:System.InvalidCastException">La conversión intentada no es válida.</exception>
         <exception cref="T:System.ArgumentNullException">El valor <paramref name="returnType" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">El nodo actual no es un tipo de nodo compatible. Consulte la tabla siguiente para obtener más información.
+        <exception cref="T:System.InvalidOperationException">El nodo actual no es un tipo de nodo compatible. Vea la siguiente tabla para obtener información detallada.
 
--o bien-
+O bien
 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.OverflowException">Lea <see langword="Decimal.MaxValue" />.</exception>
@@ -4040,7 +4040,7 @@ Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termi
       </Parameters>
       <Docs>
         <param name="returnType">Tipo del valor que se va a devolver.</param>
-        <param name="namespaceResolver">Objeto <see cref="T:System.Xml.IXmlNamespaceResolver" /> que se utiliza para resolver prefijos de espacios de nombres relacionados con la conversión de tipos.</param>
+        <param name="namespaceResolver">Objeto <see cref="T:System.Xml.IXmlNamespaceResolver" /> que se utiliza para resolver prefijos de espacios de nombres relacionados con la conversión de tipo.</param>
         <summary>Lee asincrónicamente el contenido como objeto del tipo especificado.</summary>
         <returns>Contenido de texto concatenado o valor de atributo convertido en el tipo solicitado.</returns>
         <remarks>
@@ -4053,7 +4053,7 @@ Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termi
         </remarks>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.
 
--o bien-
+O bien
 
 Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin establecer la marca <see cref="P:System.Xml.XmlReaderSettings.Async" /> en <see langword="true" />. En este caso, se produce <see cref="T:System.InvalidOperationException" /> con el mensaje "Establezca XmlReaderSettings.Async en true si quiere usar métodos asincrónicos".</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Programación asincrónica con Async y Await (C# y Visual Basic)</related>
@@ -4122,13 +4122,13 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">El valor <paramref name="buffer" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException"><see cref="M:System.Xml.XmlReader.ReadContentAsBase64(System.Byte[],System.Int32,System.Int32)" /> no se admite en el nodo actual.
+        <exception cref="T:System.InvalidOperationException">El método <see cref="M:System.Xml.XmlReader.ReadContentAsBase64(System.Byte[],System.Int32,System.Int32)" /> no es compatible con el nodo actual.
 
--o bien-
+O bien
 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El índice en el búfer o índice + recuento es mayor que el tamaño de búfer asignado.</exception>
-        <exception cref="T:System.NotSupportedException">El <see cref="T:System.Xml.XmlReader" /> implementación no admite este método.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El índice del búfer (index) o la suma del índice y el recuento (index + count) es mayor que el tamaño de búfer asignado.</exception>
+        <exception cref="T:System.NotSupportedException">La implementación de <see cref="T:System.Xml.XmlReader" /> no admite este método.</exception>
         <altmember cref="M:System.Xml.XmlReader.ReadElementContentAsBase64(System.Byte[],System.Int32,System.Int32)" />
         <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
@@ -4183,7 +4183,7 @@ Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termi
         </remarks>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.
 
--o bien-
+O bien
 
 Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin establecer la marca <see cref="P:System.Xml.XmlReaderSettings.Async" /> en <see langword="true" />. En este caso, se produce <see cref="T:System.InvalidOperationException" /> con el mensaje "Establezca XmlReaderSettings.Async en true si quiere usar métodos asincrónicos".</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Programación asincrónica con Async y Await (C# y Visual Basic)</related>
@@ -4252,13 +4252,13 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">El valor <paramref name="buffer" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException"><see cref="M:System.Xml.XmlReader.ReadContentAsBinHex(System.Byte[],System.Int32,System.Int32)" /> no se admite en el nodo actual.
+        <exception cref="T:System.InvalidOperationException">El método <see cref="M:System.Xml.XmlReader.ReadContentAsBinHex(System.Byte[],System.Int32,System.Int32)" /> no es compatible con el nodo actual.
 
--o bien-
+O bien
 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El índice en el búfer o índice + recuento es mayor que el tamaño de búfer asignado.</exception>
-        <exception cref="T:System.NotSupportedException">El <see cref="T:System.Xml.XmlReader" /> implementación no admite este método.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El índice del búfer (index) o la suma del índice y el recuento (index + count) es mayor que el tamaño de búfer asignado.</exception>
+        <exception cref="T:System.NotSupportedException">La implementación de <see cref="T:System.Xml.XmlReader" /> no admite este método.</exception>
         <altmember cref="M:System.Xml.XmlReader.ReadElementContentAsBinHex(System.Byte[],System.Int32,System.Int32)" />
         <altmember cref="T:System.Xml.XmlNodeType" />
       </Docs>
@@ -4301,7 +4301,7 @@ Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termi
         <param name="buffer">Búfer donde se va a copiar el texto resultante. Este valor no puede ser <see langword="null" />.</param>
         <param name="index">Posición de desplazamiento en el búfer donde debe comenzar la copia del resultado.</param>
         <param name="count">Número máximo de bytes que se van a copiar en el búfer. El número real de bytes copiados se devuelve a partir de este método.</param>
-        <summary>Lee el contenido de forma asincrónica y devuelve el <see langword="BinHex" /> bytes binarios descodificados.</summary>
+        <summary>Lee asincrónicamente el contenido y devuelve los bytes binarios descodificados de <see langword="BinHex" />.</summary>
         <returns>Número de bytes escritos en el búfer.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4313,7 +4313,7 @@ Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termi
         </remarks>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.
 
--o bien-
+O bien
 
 Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin establecer la marca <see cref="P:System.Xml.XmlReaderSettings.Async" /> en <see langword="true" />. En este caso, se produce <see cref="T:System.InvalidOperationException" /> con el mensaje "Establezca XmlReaderSettings.Async en true si quiere usar métodos asincrónicos".</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Programación asincrónica con Async y Await (C# y Visual Basic)</related>
@@ -4351,8 +4351,8 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Lee el contenido de texto en la posición actual como un <see langword="Boolean" />.</summary>
-        <returns>El contenido del texto como un <see cref="T:System.Boolean" /> objeto.</returns>
+        <summary>Lee el contenido de texto en la posición actual como valor <see langword="Boolean" />.</summary>
+        <returns>El contenido del texto como objeto <see cref="T:System.Boolean" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4388,7 +4388,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">La conversión intentada no es válida.</exception>
-        <exception cref="T:System.FormatException">El formato de cadena no es válido.</exception>
+        <exception cref="T:System.FormatException">El formato de la cadena no es válido.</exception>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
       </Docs>
     </Member>
@@ -4421,8 +4421,8 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Lee el contenido de texto en la posición actual como un <see cref="T:System.DateTime" /> objeto.</summary>
-        <returns>El contenido del texto como un <see cref="T:System.DateTime" /> objeto.</returns>
+        <summary>Lee el contenido de texto en la posición actual como un objeto <see cref="T:System.DateTime" />.</summary>
+        <returns>El contenido del texto como objeto <see cref="T:System.DateTime" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4449,7 +4449,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">La conversión intentada no es válida.</exception>
-        <exception cref="T:System.FormatException">El formato de cadena no es válido.</exception>
+        <exception cref="T:System.FormatException">El formato de la cadena no es válido.</exception>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
       </Docs>
     </Member>
@@ -4484,8 +4484,8 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Lee el contenido de texto en la posición actual como un <see cref="T:System.DateTimeOffset" /> objeto.</summary>
-        <returns>El contenido del texto como un <see cref="T:System.DateTimeOffset" /> objeto.</returns>
+        <summary>Lee el contenido de texto en la posición actual como un objeto <see cref="T:System.DateTimeOffset" />.</summary>
+        <returns>El contenido del texto como objeto <see cref="T:System.DateTimeOffset" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
       </Docs>
@@ -4522,8 +4522,8 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Lee el contenido de texto en la posición actual como un <see cref="T:System.Decimal" /> objeto.</summary>
-        <returns>El contenido de texto en la posición actual como un <see cref="T:System.Decimal" /> objeto.</returns>
+        <summary>Lee el contenido de texto en la posición actual como un objeto <see cref="T:System.Decimal" />.</summary>
+        <returns>El contenido de texto en la posición actual como objeto <see cref="T:System.Decimal" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4547,7 +4547,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">La conversión intentada no es válida.</exception>
-        <exception cref="T:System.FormatException">El formato de cadena no es válido.</exception>
+        <exception cref="T:System.FormatException">El formato de la cadena no es válido.</exception>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
       </Docs>
     </Member>
@@ -4608,7 +4608,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">La conversión intentada no es válida.</exception>
-        <exception cref="T:System.FormatException">El formato de cadena no es válido.</exception>
+        <exception cref="T:System.FormatException">El formato de la cadena no es válido.</exception>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
       </Docs>
     </Member>
@@ -4669,7 +4669,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">La conversión intentada no es válida.</exception>
-        <exception cref="T:System.FormatException">El formato de cadena no es válido.</exception>
+        <exception cref="T:System.FormatException">El formato de la cadena no es válido.</exception>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
       </Docs>
     </Member>
@@ -4730,7 +4730,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">La conversión intentada no es válida.</exception>
-        <exception cref="T:System.FormatException">El formato de cadena no es válido.</exception>
+        <exception cref="T:System.FormatException">El formato de la cadena no es válido.</exception>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
       </Docs>
     </Member>
@@ -4791,7 +4791,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">La conversión intentada no es válida.</exception>
-        <exception cref="T:System.FormatException">El formato de cadena no es válido.</exception>
+        <exception cref="T:System.FormatException">El formato de la cadena no es válido.</exception>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
       </Docs>
     </Member>
@@ -4827,7 +4827,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Lee el contenido de texto en la posición actual como un <see cref="T:System.Object" />.</summary>
+        <summary>Lee el contenido de texto en la posición actual como <see cref="T:System.Object" />.</summary>
         <returns>El contenido de texto como el objeto de Common Language Runtime (CLR) más adecuado.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4859,7 +4859,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">La conversión intentada no es válida.</exception>
-        <exception cref="T:System.FormatException">El formato de cadena no es válido.</exception>
+        <exception cref="T:System.FormatException">El formato de la cadena no es válido.</exception>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
       </Docs>
     </Member>
@@ -4899,7 +4899,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Lee asincrónicamente el contenido de texto en la posición actual como un <see cref="T:System.Object" />.</summary>
+        <summary>Lee asincrónicamente el contenido de texto en la posición actual como un objeto <see cref="T:System.Object" />.</summary>
         <returns>El contenido de texto como el objeto de Common Language Runtime (CLR) más adecuado.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4911,7 +4911,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
         </remarks>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.
 
--o bien-
+O bien
 
 Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin establecer la marca <see cref="P:System.Xml.XmlReaderSettings.Async" /> en <see langword="true" />. En este caso, se produce <see cref="T:System.InvalidOperationException" /> con el mensaje "Establezca XmlReaderSettings.Async en true si quiere usar métodos asincrónicos".</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Programación asincrónica con Async y Await (C# y Visual Basic)</related>
@@ -4949,8 +4949,8 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Lee el contenido de texto en la posición actual como un <see cref="T:System.String" /> objeto.</summary>
-        <returns>El contenido del texto como un <see cref="T:System.String" /> objeto.</returns>
+        <summary>Lee el contenido de texto en la posición actual como un objeto <see cref="T:System.String" />.</summary>
+        <returns>El contenido del texto como objeto <see cref="T:System.String" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4976,7 +4976,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">La conversión intentada no es válida.</exception>
-        <exception cref="T:System.FormatException">El formato de cadena no es válido.</exception>
+        <exception cref="T:System.FormatException">El formato de la cadena no es válido.</exception>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
       </Docs>
     </Member>
@@ -5011,8 +5011,8 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Lee asincrónicamente el contenido de texto en la posición actual como un <see cref="T:System.String" /> objeto.</summary>
-        <returns>El contenido del texto como un <see cref="T:System.String" /> objeto.</returns>
+        <summary>Lee asincrónicamente el contenido de texto en la posición actual como un objeto <see cref="T:System.String" />.</summary>
+        <returns>El contenido del texto como objeto <see cref="T:System.String" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5023,7 +5023,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
         </remarks>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.
 
--o bien-
+O bien
 
 Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin establecer la marca <see cref="P:System.Xml.XmlReaderSettings.Async" /> en <see langword="true" />. En este caso, se produce <see cref="T:System.InvalidOperationException" /> con el mensaje "Establezca XmlReaderSettings.Async en true si quiere usar métodos asincrónicos".</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Programación asincrónica con Async y Await (C# y Visual Basic)</related>
@@ -5080,7 +5080,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
         <param name="returnType">Tipo del valor que se va a devolver.  
   
  **Nota** Con el lanzamiento de .NET Framework 3.5, el valor del parámetro <paramref name="returnType" /> ahora puede ser el tipo <see cref="T:System.DateTimeOffset" />.</param>
-        <param name="namespaceResolver">Objeto <see cref="T:System.Xml.IXmlNamespaceResolver" /> que se utiliza para resolver prefijos de espacios de nombres relacionados con la conversión de tipos.</param>
+        <param name="namespaceResolver">Objeto <see cref="T:System.Xml.IXmlNamespaceResolver" /> que se utiliza para resolver prefijos de espacios de nombres relacionados con la conversión de tipo.</param>
         <summary>Lee el contenido de los elementos como el tipo solicitado.</summary>
         <returns>Contenido de elementos convertido en el objeto con tipo solicitado.</returns>
         <remarks>
@@ -5107,16 +5107,17 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento.
+        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en ningún elemento.
 
--o bien-
+O bien
 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.Xml.XmlException">El elemento actual contiene elementos secundarios.  
   
--o bien- 
-El contenido del elemento no se puede convertir al tipo solicitado.</exception>
-        <exception cref="T:System.ArgumentNullException">Se llama al método con <see langword="null" /> argumentos.</exception>
+ O bien  
+  
+ El contenido del elemento no se puede convertir en el tipo solicitado.</exception>
+        <exception cref="T:System.ArgumentNullException">Se llama al método con argumentos <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">Lea <see langword="Decimal.MaxValue" />.</exception>
       </Docs>
     </Member>
@@ -5160,7 +5161,7 @@ El contenido del elemento no se puede convertir al tipo solicitado.</exception>
         <param name="returnType">Tipo del valor que se va a devolver.  
   
  **Nota** Con el lanzamiento de .NET Framework 3.5, el valor del parámetro <paramref name="returnType" /> ahora puede ser el tipo <see cref="T:System.DateTimeOffset" />.</param>
-        <param name="namespaceResolver">Objeto <see cref="T:System.Xml.IXmlNamespaceResolver" /> que se utiliza para resolver prefijos de espacios de nombres relacionados con la conversión de tipos.</param>
+        <param name="namespaceResolver">Objeto <see cref="T:System.Xml.IXmlNamespaceResolver" /> que se utiliza para resolver prefijos de espacios de nombres relacionados con la conversión de tipo.</param>
         <param name="localName">Nombre local del elemento.</param>
         <param name="namespaceURI">Identificador URI de espacio de nombres del elemento.</param>
         <summary>Comprueba que el nombre local especificado y el URI de espacio de nombres coinciden con los del elemento actual y, a continuación, lee el contenido de los elementos como el tipo solicitado.</summary>
@@ -5175,17 +5176,18 @@ El contenido del elemento no se puede convertir al tipo solicitado.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento.
+        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en ningún elemento.
 
--o bien-
+O bien
 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.Xml.XmlException">El elemento actual contiene elementos secundarios.  
   
--o bien- 
-El contenido del elemento no se puede convertir al tipo solicitado.</exception>
-        <exception cref="T:System.ArgumentNullException">Se llama al método con <see langword="null" /> argumentos.</exception>
-        <exception cref="T:System.ArgumentException">El nombre local especificado y el URI de espacio de nombres no coinciden con los del elemento actual que se va a leer.</exception>
+ O bien  
+  
+ El contenido del elemento no se puede convertir en el tipo solicitado.</exception>
+        <exception cref="T:System.ArgumentNullException">Se llama al método con argumentos <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">El nombre local y el identificador URI del espacio de nombres especificados no coinciden con los del elemento que se está leyendo.</exception>
         <exception cref="T:System.OverflowException">Lea <see langword="Decimal.MaxValue" />.</exception>
       </Docs>
     </Member>
@@ -5229,7 +5231,7 @@ El contenido del elemento no se puede convertir al tipo solicitado.</exception>
       </Parameters>
       <Docs>
         <param name="returnType">Tipo del valor que se va a devolver.</param>
-        <param name="namespaceResolver">Objeto <see cref="T:System.Xml.IXmlNamespaceResolver" /> que se utiliza para resolver prefijos de espacios de nombres relacionados con la conversión de tipos.</param>
+        <param name="namespaceResolver">Objeto <see cref="T:System.Xml.IXmlNamespaceResolver" /> que se utiliza para resolver prefijos de espacios de nombres relacionados con la conversión de tipo.</param>
         <summary>Lee asincrónicamente el contenido del elemento como el tipo solicitado.</summary>
         <returns>Contenido de elementos convertido en el objeto con tipo solicitado.</returns>
         <remarks>
@@ -5241,7 +5243,7 @@ El contenido del elemento no se puede convertir al tipo solicitado.</exception>
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.
--o bien-
+O bien
 
 Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin establecer la marca <see cref="P:System.Xml.XmlReaderSettings.Async" /> en <see langword="true" />. En este caso, se produce <see cref="T:System.InvalidOperationException" /> con el mensaje "Establezca XmlReaderSettings.Async en true si quiere usar métodos asincrónicos".</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Programación asincrónica con Async y Await (C# y Visual Basic)</related>
@@ -5317,13 +5319,13 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
         <exception cref="T:System.ArgumentNullException">El valor <paramref name="buffer" /> es <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">El nodo actual no es un nodo de elemento.
 
--o bien-
+O bien
 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El índice en el búfer o índice + recuento es mayor que el tamaño de búfer asignado.</exception>
-        <exception cref="T:System.NotSupportedException">El <see cref="T:System.Xml.XmlReader" /> implementación no admite este método.</exception>
-        <exception cref="T:System.Xml.XmlException">El elemento contiene contenido mixto.</exception>
-        <exception cref="T:System.FormatException">El contenido no se puede convertir al tipo solicitado.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El índice del búfer (index) o la suma del índice y el recuento (index + count) es mayor que el tamaño de búfer asignado.</exception>
+        <exception cref="T:System.NotSupportedException">La implementación de <see cref="T:System.Xml.XmlReader" /> no admite este método.</exception>
+        <exception cref="T:System.Xml.XmlException">El elemento contiene un contenido mixto.</exception>
+        <exception cref="T:System.FormatException">El contenido no puede convertirse en el tipo solicitado.</exception>
         <altmember cref="M:System.Xml.XmlReader.ReadContentAsBase64(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
@@ -5377,7 +5379,7 @@ Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termi
         </remarks>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.
 
--o bien-
+O bien
 
 Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin establecer la marca <see cref="P:System.Xml.XmlReaderSettings.Async" /> en <see langword="true" />. En este caso, se produce <see cref="T:System.InvalidOperationException" /> con el mensaje "Establezca XmlReaderSettings.Async en true si quiere usar métodos asincrónicos".</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Programación asincrónica con Async y Await (C# y Visual Basic)</related>
@@ -5453,13 +5455,13 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
         <exception cref="T:System.ArgumentNullException">El valor <paramref name="buffer" /> es <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">El nodo actual no es un nodo de elemento.
 
--o bien-
+O bien
 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El índice en el búfer o índice + recuento es mayor que el tamaño de búfer asignado.</exception>
-        <exception cref="T:System.NotSupportedException">El <see cref="T:System.Xml.XmlReader" /> implementación no admite este método.</exception>
-        <exception cref="T:System.Xml.XmlException">El elemento contiene contenido mixto.</exception>
-        <exception cref="T:System.FormatException">El contenido no se puede convertir al tipo solicitado.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El índice del búfer (index) o la suma del índice y el recuento (index + count) es mayor que el tamaño de búfer asignado.</exception>
+        <exception cref="T:System.NotSupportedException">La implementación de <see cref="T:System.Xml.XmlReader" /> no admite este método.</exception>
+        <exception cref="T:System.Xml.XmlException">El elemento contiene un contenido mixto.</exception>
+        <exception cref="T:System.FormatException">El contenido no puede convertirse en el tipo solicitado.</exception>
         <altmember cref="M:System.Xml.XmlReader.ReadContentAsBinHex(System.Byte[],System.Int32,System.Int32)" />
       </Docs>
     </Member>
@@ -5513,7 +5515,7 @@ Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termi
         </remarks>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.
 
--o bien-
+O bien
 
 Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin establecer la marca <see cref="P:System.Xml.XmlReaderSettings.Async" /> en <see langword="true" />. En este caso, se produce <see cref="T:System.InvalidOperationException" /> con el mensaje "Establezca XmlReaderSettings.Async en true si quiere usar métodos asincrónicos".</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Programación asincrónica con Async y Await (C# y Visual Basic)</related>
@@ -5529,7 +5531,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
       </AssemblyInfo>
       <Docs>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
-        <summary>Lee el valor del elemento actual como un <see cref="T:System.Boolean" /> objeto.</summary>
+        <summary>Lee el valor del elemento actual como un objeto <see cref="T:System.Boolean" />.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="ReadElementContentAsBoolean">
@@ -5564,8 +5566,8 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Lee el elemento actual y devuelve el contenido como un <see cref="T:System.Boolean" /> objeto.</summary>
-        <returns>Contenido de elemento como un <see cref="T:System.Boolean" /> objeto.</returns>
+        <summary>Lee el elemento actual y devuelve el contenido como un objeto <see cref="T:System.Boolean" />.</summary>
+        <returns>Contenido de elemento como objeto <see cref="T:System.Boolean" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5578,16 +5580,16 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento.
+        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en ningún elemento.
 
--o bien-
+O bien
 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.Xml.XmlException">El elemento actual contiene elementos secundarios.  
   
--o bien- 
-El contenido del elemento no se puede convertir a un <see cref="T:System.Boolean" /> objeto.</exception>
-        <exception cref="T:System.ArgumentNullException">Se llama al método con <see langword="null" /> argumentos.</exception>
+O bien 
+El contenido de elemento no puede convertirse en un objeto <see cref="T:System.Boolean" />.</exception>
+        <exception cref="T:System.ArgumentNullException">Se llama al método con argumentos <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsBoolean">
@@ -5627,8 +5629,8 @@ El contenido del elemento no se puede convertir a un <see cref="T:System.Boolean
       <Docs>
         <param name="localName">Nombre local del elemento.</param>
         <param name="namespaceURI">Identificador URI de espacio de nombres del elemento.</param>
-        <summary>Comprueba que el nombre local especificado y el URI de espacio de nombres coinciden con los del elemento actual, a continuación, lee el elemento actual y devuelve el contenido como un <see cref="T:System.Boolean" /> objeto.</summary>
-        <returns>Contenido de elemento como un <see cref="T:System.Boolean" /> objeto.</returns>
+        <summary>Comprueba que el nombre local especificado y el URI del espacio de nombres coinciden con los del elemento actual y, a continuación, lee este elemento y devuelve el contenido como objeto <see cref="T:System.Boolean" />.</summary>
+        <returns>Contenido de elemento como objeto <see cref="T:System.Boolean" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5641,17 +5643,18 @@ El contenido del elemento no se puede convertir a un <see cref="T:System.Boolean
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento.
+        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en ningún elemento.
 
--o bien-
+O bien
 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.Xml.XmlException">El elemento actual contiene elementos secundarios.  
   
--o bien- 
-El contenido del elemento no se puede convertir al tipo solicitado.</exception>
-        <exception cref="T:System.ArgumentNullException">Se llama al método con <see langword="null" /> argumentos.</exception>
-        <exception cref="T:System.ArgumentException">El nombre local especificado y el URI de espacio de nombres no coinciden con los del elemento actual que se va a leer.</exception>
+ O bien  
+  
+ El contenido del elemento no se puede convertir en el tipo solicitado.</exception>
+        <exception cref="T:System.ArgumentNullException">Se llama al método con argumentos <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">El nombre local y el identificador URI del espacio de nombres especificados no coinciden con los del elemento que se está leyendo.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReadElementContentAsDateTime">
@@ -5662,7 +5665,7 @@ El contenido del elemento no se puede convertir al tipo solicitado.</exception>
       </AssemblyInfo>
       <Docs>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
-        <summary>Lee el elemento actual y devuelve el contenido como un <see cref="T:System.DateTime" /> objeto.</summary>
+        <summary>Lee el elemento actual y devuelve el contenido como un objeto <see cref="T:System.DateTime" />.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="ReadElementContentAsDateTime">
@@ -5694,8 +5697,8 @@ El contenido del elemento no se puede convertir al tipo solicitado.</exception>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Lee el elemento actual y devuelve el contenido como un <see cref="T:System.DateTime" /> objeto.</summary>
-        <returns>Contenido de elemento como un <see cref="T:System.DateTime" /> objeto.</returns>
+        <summary>Lee el elemento actual y devuelve el contenido como un objeto <see cref="T:System.DateTime" />.</summary>
+        <returns>Contenido de elemento como objeto <see cref="T:System.DateTime" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5723,16 +5726,16 @@ El contenido del elemento no se puede convertir al tipo solicitado.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento.
+        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en ningún elemento.
 
--o bien-
+O bien
 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.Xml.XmlException">El elemento actual contiene elementos secundarios.  
   
--o bien- 
-El contenido del elemento no se puede convertir a un <see cref="T:System.DateTime" /> objeto.</exception>
-        <exception cref="T:System.ArgumentNullException">Se llama al método con <see langword="null" /> argumentos.</exception>
+O bien 
+El contenido de elemento no puede convertirse en un objeto <see cref="T:System.DateTime" />.</exception>
+        <exception cref="T:System.ArgumentNullException">Se llama al método con argumentos <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsDateTime">
@@ -5769,8 +5772,8 @@ El contenido del elemento no se puede convertir a un <see cref="T:System.DateTim
       <Docs>
         <param name="localName">Nombre local del elemento.</param>
         <param name="namespaceURI">Identificador URI de espacio de nombres del elemento.</param>
-        <summary>Comprueba que el nombre local especificado y el URI de espacio de nombres coinciden con los del elemento actual, a continuación, lee el elemento actual y devuelve el contenido como un <see cref="T:System.DateTime" /> objeto.</summary>
-        <returns>El contenido del elemento como un <see cref="T:System.DateTime" /> objeto.</returns>
+        <summary>Comprueba que el nombre local especificado y el URI del espacio de nombres coinciden con los del elemento actual y, a continuación, lee este elemento y devuelve el contenido como objeto <see cref="T:System.DateTime" />.</summary>
+        <returns>El contenido del elemento como objeto <see cref="T:System.DateTime" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5786,17 +5789,18 @@ El contenido del elemento no se puede convertir a un <see cref="T:System.DateTim
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento.
+        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en ningún elemento.
 
--o bien-
+O bien
 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.Xml.XmlException">El elemento actual contiene elementos secundarios.  
   
--o bien- 
-El contenido del elemento no se puede convertir al tipo solicitado.</exception>
-        <exception cref="T:System.ArgumentNullException">Se llama al método con <see langword="null" /> argumentos.</exception>
-        <exception cref="T:System.ArgumentException">El nombre local especificado y el URI de espacio de nombres no coinciden con los del elemento actual que se va a leer.</exception>
+ O bien  
+  
+ El contenido del elemento no se puede convertir en el tipo solicitado.</exception>
+        <exception cref="T:System.ArgumentNullException">Se llama al método con argumentos <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">El nombre local y el identificador URI del espacio de nombres especificados no coinciden con los del elemento que se está leyendo.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReadElementContentAsDecimal">
@@ -5809,7 +5813,7 @@ El contenido del elemento no se puede convertir al tipo solicitado.</exception>
       </AssemblyInfo>
       <Docs>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
-        <summary>Lee el valor del elemento actual como un <see cref="T:System.Decimal" /> objeto.</summary>
+        <summary>Lee el valor del elemento actual como un objeto <see cref="T:System.Decimal" />.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="ReadElementContentAsDecimal">
@@ -5844,8 +5848,8 @@ El contenido del elemento no se puede convertir al tipo solicitado.</exception>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Lee el elemento actual y devuelve el contenido como un <see cref="T:System.Decimal" /> objeto.</summary>
-        <returns>Contenido de elemento como un <see cref="T:System.Decimal" /> objeto.</returns>
+        <summary>Lee el elemento actual y devuelve el contenido como un objeto <see cref="T:System.Decimal" />.</summary>
+        <returns>Contenido de elemento como objeto <see cref="T:System.Decimal" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5858,16 +5862,16 @@ El contenido del elemento no se puede convertir al tipo solicitado.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento.
+        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en ningún elemento.
 
--o bien-
+O bien
 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.Xml.XmlException">El elemento actual contiene elementos secundarios.  
   
--o bien- 
-El contenido del elemento no se puede convertir a un <see cref="T:System.Decimal" />.</exception>
-        <exception cref="T:System.ArgumentNullException">Se llama al método con <see langword="null" /> argumentos.</exception>
+O bien 
+El contenido de elemento no puede convertirse en <see cref="T:System.Decimal" />.</exception>
+        <exception cref="T:System.ArgumentNullException">Se llama al método con argumentos <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsDecimal">
@@ -5907,8 +5911,8 @@ El contenido del elemento no se puede convertir a un <see cref="T:System.Decimal
       <Docs>
         <param name="localName">Nombre local del elemento.</param>
         <param name="namespaceURI">Identificador URI de espacio de nombres del elemento.</param>
-        <summary>Comprueba que el nombre local especificado y el URI de espacio de nombres coinciden con los del elemento actual, a continuación, lee el elemento actual y devuelve el contenido como un <see cref="T:System.Decimal" /> objeto.</summary>
-        <returns>Contenido de elemento como un <see cref="T:System.Decimal" /> objeto.</returns>
+        <summary>Comprueba que el nombre local especificado y el URI del espacio de nombres coinciden con los del elemento actual y, a continuación, lee este elemento y devuelve el contenido como objeto <see cref="T:System.Decimal" />.</summary>
+        <returns>Contenido de elemento como objeto <see cref="T:System.Decimal" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5921,17 +5925,17 @@ El contenido del elemento no se puede convertir a un <see cref="T:System.Decimal
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento.
+        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en ningún elemento.
 
--o bien-
+O bien
 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.Xml.XmlException">El elemento actual contiene elementos secundarios.  
   
--o bien- 
-El contenido del elemento no se puede convertir a un <see cref="T:System.Decimal" />.</exception>
-        <exception cref="T:System.ArgumentNullException">Se llama al método con <see langword="null" /> argumentos.</exception>
-        <exception cref="T:System.ArgumentException">El nombre local especificado y el URI de espacio de nombres no coinciden con los del elemento actual que se va a leer.</exception>
+O bien 
+El contenido de elemento no puede convertirse en <see cref="T:System.Decimal" />.</exception>
+        <exception cref="T:System.ArgumentNullException">Se llama al método con argumentos <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">El nombre local y el identificador URI del espacio de nombres especificados no coinciden con los del elemento que se está leyendo.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReadElementContentAsDouble">
@@ -6005,16 +6009,17 @@ El contenido del elemento no se puede convertir a un <see cref="T:System.Decimal
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento.
+        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en ningún elemento.
 
--o bien-
+O bien
 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.Xml.XmlException">El elemento actual contiene elementos secundarios.  
   
--o bien- 
-El contenido del elemento no se puede convertir un número de punto flotante de precisión doble.</exception>
-        <exception cref="T:System.ArgumentNullException">Se llama al método con <see langword="null" /> argumentos.</exception>
+ O bien  
+  
+ El contenido del elemento no se puede convertir en número de punto flotante de precisión doble.</exception>
+        <exception cref="T:System.ArgumentNullException">Se llama al método con argumentos <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsDouble">
@@ -6068,17 +6073,18 @@ El contenido del elemento no se puede convertir un número de punto flotante de 
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento.
+        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en ningún elemento.
 
--o bien-
+O bien
 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.Xml.XmlException">El elemento actual contiene elementos secundarios.  
   
--o bien- 
-El contenido del elemento no se puede convertir al tipo solicitado.</exception>
-        <exception cref="T:System.ArgumentNullException">Se llama al método con <see langword="null" /> argumentos.</exception>
-        <exception cref="T:System.ArgumentException">El nombre local especificado y el URI de espacio de nombres no coinciden con los del elemento actual que se va a leer.</exception>
+ O bien  
+  
+ El contenido del elemento no se puede convertir en el tipo solicitado.</exception>
+        <exception cref="T:System.ArgumentNullException">Se llama al método con argumentos <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">El nombre local y el identificador URI del espacio de nombres especificados no coinciden con los del elemento que se está leyendo.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReadElementContentAsFloat">
@@ -6140,16 +6146,17 @@ El contenido del elemento no se puede convertir al tipo solicitado.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento.
+        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en ningún elemento.
 
--o bien-
+O bien
 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.Xml.XmlException">El elemento actual contiene elementos secundarios.  
   
--o bien- 
-El contenido del elemento no se puede convertir un número de punto flotante de precisión sencilla.</exception>
-        <exception cref="T:System.ArgumentNullException">Se llama al método con <see langword="null" /> argumentos.</exception>
+ O bien  
+  
+ El contenido del elemento no se puede convertir en número de punto flotante de precisión sencilla.</exception>
+        <exception cref="T:System.ArgumentNullException">Se llama al método con argumentos <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsFloat">
@@ -6203,16 +6210,17 @@ El contenido del elemento no se puede convertir un número de punto flotante de 
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento.
+        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en ningún elemento.
 
--o bien- 
+O bien 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.Xml.XmlException">El elemento actual contiene elementos secundarios.  
   
--o bien- 
-El contenido del elemento no se puede convertir un número de punto flotante de precisión sencilla.</exception>
-        <exception cref="T:System.ArgumentNullException">Se llama al método con <see langword="null" /> argumentos.</exception>
-        <exception cref="T:System.ArgumentException">El nombre local especificado y el URI de espacio de nombres no coinciden con los del elemento actual que se va a leer.</exception>
+ O bien  
+  
+ El contenido del elemento no se puede convertir en número de punto flotante de precisión sencilla.</exception>
+        <exception cref="T:System.ArgumentNullException">Se llama al método con argumentos <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">El nombre local y el identificador URI del espacio de nombres especificados no coinciden con los del elemento que se está leyendo.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReadElementContentAsInt">
@@ -6274,14 +6282,15 @@ El contenido del elemento no se puede convertir un número de punto flotante de 
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento.
+        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en ningún elemento.
 
--o bien- 
+O bien 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.Xml.XmlException">El elemento actual contiene elementos secundarios.  
   
--o bien- 
-El contenido del elemento no se puede convertir en un entero con signo de 32 bits.</exception>
+ O bien  
+  
+ El contenido del elemento no se puede convertir en un entero de 32 bits con signo.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsInt">
@@ -6335,16 +6344,17 @@ El contenido del elemento no se puede convertir en un entero con signo de 32 bit
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento.
+        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en ningún elemento.
 
--o bien- 
+O bien 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.Xml.XmlException">El elemento actual contiene elementos secundarios.  
   
--o bien- 
-El contenido del elemento no se puede convertir en un entero con signo de 32 bits.</exception>
-        <exception cref="T:System.ArgumentNullException">Se llama al método con <see langword="null" /> argumentos.</exception>
-        <exception cref="T:System.ArgumentException">El nombre local especificado y el URI de espacio de nombres no coinciden con los del elemento actual que se va a leer.</exception>
+ O bien  
+  
+ El contenido del elemento no se puede convertir en un entero de 32 bits con signo.</exception>
+        <exception cref="T:System.ArgumentNullException">Se llama al método con argumentos <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">El nombre local y el identificador URI del espacio de nombres especificados no coinciden con los del elemento que se está leyendo.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReadElementContentAsLong">
@@ -6418,15 +6428,16 @@ El contenido del elemento no se puede convertir en un entero con signo de 32 bit
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento.
+        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en ningún elemento.
 
--o bien- 
+O bien 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.Xml.XmlException">El elemento actual contiene elementos secundarios.  
   
--o bien- 
-El contenido del elemento no se puede convertir en un entero de 64 bits con signo.</exception>
-        <exception cref="T:System.ArgumentNullException">Se llama al método con <see langword="null" /> argumentos.</exception>
+ O bien  
+  
+ El contenido del elemento no se puede convertir en un entero de 64 bits con signo.</exception>
+        <exception cref="T:System.ArgumentNullException">Se llama al método con argumentos <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsLong">
@@ -6480,16 +6491,17 @@ El contenido del elemento no se puede convertir en un entero de 64 bits con sign
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento.
+        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en ningún elemento.
 
--o bien- 
+O bien 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.Xml.XmlException">El elemento actual contiene elementos secundarios.  
   
--o bien- 
-El contenido del elemento no se puede convertir en un entero de 64 bits con signo.</exception>
-        <exception cref="T:System.ArgumentNullException">Se llama al método con <see langword="null" /> argumentos.</exception>
-        <exception cref="T:System.ArgumentException">El nombre local especificado y el URI de espacio de nombres no coinciden con los del elemento actual que se va a leer.</exception>
+ O bien  
+  
+ El contenido del elemento no se puede convertir en un entero de 64 bits con signo.</exception>
+        <exception cref="T:System.ArgumentNullException">Se llama al método con argumentos <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">El nombre local y el identificador URI del espacio de nombres especificados no coinciden con los del elemento que se está leyendo.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReadElementContentAsObject">
@@ -6502,7 +6514,7 @@ El contenido del elemento no se puede convertir en un entero de 64 bits con sign
       </AssemblyInfo>
       <Docs>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
-        <summary>Lee el elemento actual y devuelve el contenido como un <see cref="T:System.Object" />.</summary>
+        <summary>Lee el elemento actual y devuelve el contenido como objeto <see cref="T:System.Object" />.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="ReadElementContentAsObject">
@@ -6537,8 +6549,8 @@ El contenido del elemento no se puede convertir en un entero de 64 bits con sign
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Lee el elemento actual y devuelve el contenido como un <see cref="T:System.Object" />.</summary>
-        <returns>Objeto de Common Language Runtime (CLR) del tipo más adecuado al que se le ha aplicado la conversión boxing. El <see cref="P:System.Xml.XmlReader.ValueType" /> propiedad determina el tipo CLR adecuado. Si el contenido se escribe como tipo de lista, este método devuelve una matriz de objetos del tipo adecuado a los que se les ha aplicado la conversión boxing.</returns>
+        <summary>Lee el elemento actual y devuelve el contenido como objeto <see cref="T:System.Object" />.</summary>
+        <returns>Objeto de Common Language Runtime (CLR) del tipo más adecuado al que se le ha aplicado la conversión boxing. La propiedad <see cref="P:System.Xml.XmlReader.ValueType" /> determina el tipo CLR adecuado. Si el contenido se escribe como tipo de lista, este método devuelve una matriz de objetos del tipo adecuado a los que se les ha aplicado la conversión boxing.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -6569,15 +6581,16 @@ El contenido del elemento no se puede convertir en un entero de 64 bits con sign
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento.
+        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en ningún elemento.
 
--o bien- 
+O bien 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.Xml.XmlException">El elemento actual contiene elementos secundarios.  
   
--o bien- 
-El contenido del elemento no se puede convertir al tipo solicitado</exception>
-        <exception cref="T:System.ArgumentNullException">Se llama al método con <see langword="null" /> argumentos.</exception>
+ O bien  
+  
+ El contenido del elemento no se puede convertir en el tipo solicitado.</exception>
+        <exception cref="T:System.ArgumentNullException">Se llama al método con argumentos <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsObject">
@@ -6617,8 +6630,8 @@ El contenido del elemento no se puede convertir al tipo solicitado</exception>
       <Docs>
         <param name="localName">Nombre local del elemento.</param>
         <param name="namespaceURI">Identificador URI de espacio de nombres del elemento.</param>
-        <summary>Comprueba que el nombre local especificado y el URI de espacio de nombres coinciden con los del elemento actual, a continuación, lee el elemento actual y devuelve el contenido como un <see cref="T:System.Object" />.</summary>
-        <returns>Objeto de Common Language Runtime (CLR) del tipo más adecuado al que se le ha aplicado la conversión boxing. El <see cref="P:System.Xml.XmlReader.ValueType" /> propiedad determina el tipo CLR adecuado. Si el contenido se escribe como tipo de lista, este método devuelve una matriz de objetos del tipo adecuado a los que se les ha aplicado la conversión boxing.</returns>
+        <summary>Comprueba que el nombre local especificado y el URI del espacio de nombres coinciden con los del elemento actual y, a continuación, lee este elemento y devuelve el contenido como objeto <see cref="T:System.Object" />.</summary>
+        <returns>Objeto de Common Language Runtime (CLR) del tipo más adecuado al que se le ha aplicado la conversión boxing. La propiedad <see cref="P:System.Xml.XmlReader.ValueType" /> determina el tipo CLR adecuado. Si el contenido se escribe como tipo de lista, este método devuelve una matriz de objetos del tipo adecuado a los que se les ha aplicado la conversión boxing.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -6629,16 +6642,17 @@ El contenido del elemento no se puede convertir al tipo solicitado</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento.
+        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en ningún elemento.
 
--o bien- 
+O bien 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.Xml.XmlException">El elemento actual contiene elementos secundarios.  
   
--o bien- 
-El contenido del elemento no se puede convertir al tipo solicitado.</exception>
-        <exception cref="T:System.ArgumentNullException">Se llama al método con <see langword="null" /> argumentos.</exception>
-        <exception cref="T:System.ArgumentException">El nombre local especificado y el URI de espacio de nombres no coinciden con los del elemento actual que se va a leer.</exception>
+ O bien  
+  
+ El contenido del elemento no se puede convertir en el tipo solicitado.</exception>
+        <exception cref="T:System.ArgumentNullException">Se llama al método con argumentos <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">El nombre local y el identificador URI del espacio de nombres especificados no coinciden con los del elemento que se está leyendo.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsObjectAsync">
@@ -6677,8 +6691,8 @@ El contenido del elemento no se puede convertir al tipo solicitado.</exception>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>De forma asincrónica lee el elemento actual y devuelve el contenido como un <see cref="T:System.Object" />.</summary>
-        <returns>Objeto de Common Language Runtime (CLR) del tipo más adecuado al que se le ha aplicado la conversión boxing. El <see cref="P:System.Xml.XmlReader.ValueType" /> propiedad determina el tipo CLR adecuado. Si el contenido se escribe como tipo de lista, este método devuelve una matriz de objetos del tipo adecuado a los que se les ha aplicado la conversión boxing.</returns>
+        <summary>Lee asincrónicamente el elemento actual y devuelve el contenido como objeto <see cref="T:System.Object" />.</summary>
+        <returns>Objeto de Common Language Runtime (CLR) del tipo más adecuado al que se le ha aplicado la conversión boxing. La propiedad <see cref="P:System.Xml.XmlReader.ValueType" /> determina el tipo CLR adecuado. Si el contenido se escribe como tipo de lista, este método devuelve una matriz de objetos del tipo adecuado a los que se les ha aplicado la conversión boxing.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -6689,7 +6703,7 @@ El contenido del elemento no se puede convertir al tipo solicitado.</exception>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.
 
--o bien-
+O bien
 
 Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin establecer la marca <see cref="P:System.Xml.XmlReaderSettings.Async" /> en <see langword="true" />. En este caso, se produce <see cref="T:System.InvalidOperationException" /> con el mensaje "Establezca XmlReaderSettings.Async en true si quiere usar métodos asincrónicos".</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Programación asincrónica con Async y Await (C# y Visual Basic)</related>
@@ -6705,7 +6719,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
       </AssemblyInfo>
       <Docs>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
-        <summary>Lee el elemento actual y devuelve el contenido como un <see cref="T:System.String" /> objeto.</summary>
+        <summary>Lee el elemento actual y devuelve el contenido como un objeto <see cref="T:System.String" />.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="ReadElementContentAsString">
@@ -6740,8 +6754,8 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Lee el elemento actual y devuelve el contenido como un <see cref="T:System.String" /> objeto.</summary>
-        <returns>Contenido de elemento como un <see cref="T:System.String" /> objeto.</returns>
+        <summary>Lee el elemento actual y devuelve el contenido como un objeto <see cref="T:System.String" />.</summary>
+        <returns>Contenido de elemento como objeto <see cref="T:System.String" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -6766,16 +6780,16 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento.
+        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en ningún elemento.
 
--o bien-
+O bien
 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.Xml.XmlException">El elemento actual contiene elementos secundarios.  
   
--o bien- 
-El contenido del elemento no se puede convertir a un <see cref="T:System.String" /> objeto.</exception>
-        <exception cref="T:System.ArgumentNullException">Se llama al método con <see langword="null" /> argumentos.</exception>
+O bien 
+El contenido de elemento no puede convertirse en un objeto <see cref="T:System.String" />.</exception>
+        <exception cref="T:System.ArgumentNullException">Se llama al método con argumentos <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsString">
@@ -6815,8 +6829,8 @@ El contenido del elemento no se puede convertir a un <see cref="T:System.String"
       <Docs>
         <param name="localName">Nombre local del elemento.</param>
         <param name="namespaceURI">Identificador URI de espacio de nombres del elemento.</param>
-        <summary>Comprueba que el nombre local especificado y el URI de espacio de nombres coinciden con los del elemento actual, a continuación, lee el elemento actual y devuelve el contenido como un <see cref="T:System.String" /> objeto.</summary>
-        <returns>Contenido de elemento como un <see cref="T:System.String" /> objeto.</returns>
+        <summary>Comprueba que el nombre local especificado y el URI del espacio de nombres coinciden con los del elemento actual y, a continuación, lee este elemento y devuelve el contenido como objeto <see cref="T:System.String" />.</summary>
+        <returns>Contenido de elemento como objeto <see cref="T:System.String" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -6839,17 +6853,17 @@ El contenido del elemento no se puede convertir a un <see cref="T:System.String"
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento.
+        <exception cref="T:System.InvalidOperationException">El <see cref="T:System.Xml.XmlReader" /> no está situado en ningún elemento.
 
--o bien-
+O bien
 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.Xml.XmlException">El elemento actual contiene elementos secundarios.  
   
--o bien- 
-El contenido del elemento no se puede convertir a un <see cref="T:System.String" /> objeto.</exception>
-        <exception cref="T:System.ArgumentNullException">Se llama al método con <see langword="null" /> argumentos.</exception>
-        <exception cref="T:System.ArgumentException">El nombre local especificado y el URI de espacio de nombres no coinciden con los del elemento actual que se va a leer.</exception>
+O bien 
+El contenido de elemento no puede convertirse en un objeto <see cref="T:System.String" />.</exception>
+        <exception cref="T:System.ArgumentNullException">Se llama al método con argumentos <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">El nombre local y el identificador URI del espacio de nombres especificados no coinciden con los del elemento que se está leyendo.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadElementContentAsStringAsync">
@@ -6888,8 +6902,8 @@ El contenido del elemento no se puede convertir a un <see cref="T:System.String"
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>De forma asincrónica lee el elemento actual y devuelve el contenido como un <see cref="T:System.String" /> objeto.</summary>
-        <returns>Contenido de elemento como un <see cref="T:System.String" /> objeto.</returns>
+        <summary>Lee asincrónicamente el elemento actual y devuelve el contenido como un objeto <see cref="T:System.String" />.</summary>
+        <returns>Contenido de elemento como objeto <see cref="T:System.String" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -6911,7 +6925,7 @@ El contenido del elemento no se puede convertir a un <see cref="T:System.String"
       <Docs>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.
 
--o bien-
+O bien
 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <summary>Lee los elementos sencillos de solo texto. Sin embargo, se recomienda usar el método <see cref="Overload:System.Xml.XmlReader.ReadElementContentAsString" /> en su lugar, porque proporciona una manera más sencilla de controlar esta operación.</summary>
@@ -6960,7 +6974,7 @@ Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termi
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Lee un elemento de solo texto. Sin embargo, se recomienda usar el método <see cref="M:System.Xml.XmlReader.ReadElementContentAsString" /> en su lugar, porque proporciona una manera más sencilla de controlar esta operación.</summary>
+        <summary>Lee un elemento de sólo texto. Sin embargo, se recomienda usar el método <see cref="M:System.Xml.XmlReader.ReadElementContentAsString" /> en su lugar, porque proporciona una manera más sencilla de controlar esta operación.</summary>
         <returns>Texto que contiene el elemento leído. Una cadena vacía si el elemento está vacío.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -7012,7 +7026,7 @@ Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termi
       </Parameters>
       <Docs>
         <param name="name">Nombre que se va a comprobar.</param>
-        <summary>Comprueba que el <see cref="P:System.Xml.XmlReader.Name" /> propiedad del elemento encontrado coincide con la cadena especificada antes de leer un elemento de sólo texto. Sin embargo, se recomienda usar el método <see cref="M:System.Xml.XmlReader.ReadElementContentAsString" /> en su lugar, porque proporciona una manera más sencilla de controlar esta operación.</summary>
+        <summary>Comprueba si la propiedad <see cref="P:System.Xml.XmlReader.Name" /> del elemento encontrado coincide con la cadena especificada antes de leer un elemento de sólo texto. Sin embargo, se recomienda usar el método <see cref="M:System.Xml.XmlReader.ReadElementContentAsString" /> en su lugar, porque proporciona una manera más sencilla de controlar esta operación.</summary>
         <returns>Texto que contiene el elemento leído. Una cadena vacía si el elemento está vacío.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -7022,7 +7036,7 @@ Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termi
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Xml.XmlException">Si el siguiente nodo de contenido no es una etiqueta de apertura Si el elemento <see langword="Name" /> no coincide con el argumento especificado o si el elemento encontrado no contiene un valor de texto simple.</exception>
+        <exception cref="T:System.Xml.XmlException">Si el siguiente nodo de contenido no es una etiqueta de apertura; si el elemento <see langword="Name" /> no coincide con el argumento especificado o si el elemento encontrado no contiene un valor de texto simple.</exception>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
       </Docs>
     </Member>
@@ -7066,7 +7080,7 @@ Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termi
       <Docs>
         <param name="localname">Nombre local que se va a comprobar.</param>
         <param name="ns">Identificador URI de espacio de nombres que se va a comprobar.</param>
-        <summary>Comprueba que el <see cref="P:System.Xml.XmlReader.LocalName" /> y <see cref="P:System.Xml.XmlReader.NamespaceURI" /> propiedades del elemento encontrado coinciden con las cadenas especificadas antes de leer un elemento de sólo texto. Sin embargo, se recomienda usar el método <see cref="M:System.Xml.XmlReader.ReadElementContentAsString(System.String,System.String)" /> en su lugar, porque proporciona una manera más sencilla de controlar esta operación.</summary>
+        <summary>Comprueba si las propiedades <see cref="P:System.Xml.XmlReader.LocalName" /> y <see cref="P:System.Xml.XmlReader.NamespaceURI" /> del elemento encontrado coinciden con las cadenas especificadas antes de leer un elemento de sólo texto. Sin embargo, se recomienda usar el método <see cref="M:System.Xml.XmlReader.ReadElementContentAsString(System.String,System.String)" /> en su lugar, porque proporciona una manera más sencilla de controlar esta operación.</summary>
         <returns>Texto que contiene el elemento leído. Una cadena vacía si el elemento está vacío.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -7076,7 +7090,7 @@ Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termi
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Xml.XmlException">Si el siguiente nodo de contenido no es una etiqueta de apertura Si el elemento <see langword="LocalName" /> o <see langword="NamespaceURI" /> no coinciden con los argumentos especificados, o si el elemento encontrado no contiene un valor de texto simple.</exception>
+        <exception cref="T:System.Xml.XmlException">Si el siguiente nodo de contenido no es una etiqueta de apertura; si el elemento <see langword="LocalName" /> o <see langword="NamespaceURI" /> no coincide con los argumentos especificados o si el elemento encontrado no contiene un valor de texto simple.</exception>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
       </Docs>
     </Member>
@@ -7170,7 +7184,7 @@ Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termi
         <summary>Cuando se invalida en una clase derivada, lee todo el contenido, incluido el marcado, como una cadena.</summary>
         <returns>Todo el contenido XML, incluido el marcado, del nodo actual. Si el nodo actual no tiene nodos secundarios, se devuelve una cadena vacía.  
   
-Si el nodo actual no es un elemento ni un atributo, se devuelve una cadena vacía.</returns>
+ Si el nodo actual no es un elemento ni un atributo, se devuelve una cadena vacía.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -7214,7 +7228,7 @@ Si el nodo actual no es un elemento ni un atributo, se devuelve una cadena vací
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Xml.XmlException">El XML no era correcto o se produjo un error al analizar el XML.</exception>
+        <exception cref="T:System.Xml.XmlException">El fragmento de XML no está bien formado o se ha producido un error al analizarlo.</exception>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
       </Docs>
     </Member>
@@ -7266,7 +7280,7 @@ Si el nodo actual no es un elemento ni un atributo, se devuelve una cadena vací
         </remarks>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.
 
--o bien-
+O bien
 
 Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin establecer la marca <see cref="P:System.Xml.XmlReaderSettings.Async" /> en <see langword="true" />. En este caso, se produce <see cref="T:System.InvalidOperationException" /> con el mensaje "Establezca XmlReaderSettings.Async en true si quiere usar métodos asincrónicos".</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Programación asincrónica con Async y Await (C# y Visual Basic)</related>
@@ -7342,7 +7356,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Xml.XmlException">El XML no era correcto o se produjo un error al analizar el XML.</exception>
+        <exception cref="T:System.Xml.XmlException">El fragmento de XML no está bien formado o se ha producido un error al analizarlo.</exception>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
       </Docs>
     </Member>
@@ -7406,7 +7420,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
       </AssemblyInfo>
       <Docs>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
-        <summary>Comprueba si el nodo actual es un elemento y hace avanzar el sistema de lectura hasta el siguiente nodo.</summary>
+        <summary>Comprueba si el nodo actual es un elemento y desplaza el lector hasta el siguiente nodo.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="ReadStartElement">
@@ -7442,7 +7456,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Comprueba si el nodo actual es un elemento y hace avanzar el sistema de lectura hasta el siguiente nodo.</summary>
+        <summary>Comprueba si el nodo actual es un elemento y desplaza el lector hasta el siguiente nodo.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -7492,7 +7506,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
       </Parameters>
       <Docs>
         <param name="name">Nombre completo del elemento.</param>
-        <summary>Comprueba que el nodo de contenido actual es un elemento con el dado <see cref="P:System.Xml.XmlReader.Name" /> y desplaza el lector hasta el siguiente nodo.</summary>
+        <summary>Comprueba si el nodo de contenido actual es un elemento con la propiedad <see cref="P:System.Xml.XmlReader.Name" /> especificada y desplaza el lector hasta el siguiente nodo.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -7515,8 +7529,8 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
         </remarks>
         <exception cref="T:System.Xml.XmlException">Se detectó XML incorrecto en el flujo de entrada.  
   
--o bien- 
-El <see cref="P:System.Xml.XmlReader.Name" /> del elemento no coincide con el dado <paramref name="name" />.</exception>
+O bien 
+El objeto <see cref="P:System.Xml.XmlReader.Name" /> del elemento no coincide con el <paramref name="name" /> especificado.</exception>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <altmember cref="M:System.Xml.XmlReader.ReadEndElement" />
       </Docs>
@@ -7559,7 +7573,7 @@ El <see cref="P:System.Xml.XmlReader.Name" /> del elemento no coincide con el da
       <Docs>
         <param name="localname">Nombre local del elemento.</param>
         <param name="ns">Identificador URI de espacio de nombres del elemento.</param>
-        <summary>Comprueba que el nodo de contenido actual es un elemento con el dado <see cref="P:System.Xml.XmlReader.LocalName" /> y <see cref="P:System.Xml.XmlReader.NamespaceURI" /> y desplaza el lector hasta el siguiente nodo.</summary>
+        <summary>Comprueba si el nodo de contenido actual es un elemento con las propiedades <see cref="P:System.Xml.XmlReader.LocalName" /> y <see cref="P:System.Xml.XmlReader.NamespaceURI" /> especificadas y desplaza el lector hasta el siguiente nodo.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -7570,8 +7584,8 @@ El <see cref="P:System.Xml.XmlReader.Name" /> del elemento no coincide con el da
         </remarks>
         <exception cref="T:System.Xml.XmlException">Se detectó XML incorrecto en el flujo de entrada.  
   
--o bien- 
-El <see cref="P:System.Xml.XmlReader.LocalName" /> y <see cref="P:System.Xml.XmlReader.NamespaceURI" /> propiedades del elemento encontrado no coinciden con los argumentos especificados.</exception>
+O bien 
+Las propiedades <see cref="P:System.Xml.XmlReader.LocalName" /> y <see cref="P:System.Xml.XmlReader.NamespaceURI" /> del elemento encontrado no coinciden con los argumentos especificados.</exception>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <altmember cref="M:System.Xml.XmlReader.ReadEndElement" />
       </Docs>
@@ -7676,7 +7690,7 @@ El <see cref="P:System.Xml.XmlReader.LocalName" /> y <see cref="P:System.Xml.Xml
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Xml.XmlException">Se produjo un error al analizar el XML.</exception>
+        <exception cref="T:System.Xml.XmlException">Se ha producido un error al analizar el fragmento de XML.</exception>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
       </Docs>
     </Member>
@@ -7712,7 +7726,7 @@ El <see cref="P:System.Xml.XmlReader.LocalName" /> y <see cref="P:System.Xml.Xml
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Devuelve un nuevo <see langword="XmlReader" /> instancia que puede utilizarse para leer el nodo actual y todos sus descendientes.</summary>
+        <summary>Devuelve una nueva instancia de <see langword="XmlReader" /> que se puede utilizar para leer el nodo actual y todos sus descendientes.</summary>
         <returns>Una nueva instancia del lector XML establecida en <see cref="F:System.Xml.ReadState.Initial" />. Al llamar al método <see cref="M:System.Xml.XmlReader.Read" />, se coloca el nuevo lector en el nodo que era el actual antes de la llamada al método <see cref="M:System.Xml.XmlReader.ReadSubtree" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -7764,7 +7778,7 @@ El <see cref="P:System.Xml.XmlReader.LocalName" /> y <see cref="P:System.Xml.Xml
         </remarks>
         <exception cref="T:System.InvalidOperationException">El lector XML no se colocó sobre un elemento al llamar a este método.
 
--o bien-
+O bien
 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
       </Docs>
@@ -7779,7 +7793,7 @@ Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termi
       </AssemblyInfo>
       <Docs>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
-        <summary>Hace avanzar el <see cref="T:System.Xml.XmlReader" /> hasta el siguiente elemento descendiente coincidente.</summary>
+        <summary>Hace avanzar el objeto <see cref="T:System.Xml.XmlReader" /> hasta el siguiente elemento descendiente coincidente.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="ReadToDescendant">
@@ -7817,10 +7831,10 @@ Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termi
       </Parameters>
       <Docs>
         <param name="name">Nombre completo del elemento al que se desea desplazar.</param>
-        <summary>Hace avanzar el <see cref="T:System.Xml.XmlReader" /> hasta el siguiente elemento descendiente con el nombre completo especificado.</summary>
-        <returns><see langword="true" /> Si se encuentra un elemento descendiente; en caso contrario <see langword="false" />. Si no se encuentra ningún elemento secundario relacionado, el <see cref="T:System.Xml.XmlReader" /> está situado en la etiqueta de cierre (<see cref="P:System.Xml.XmlReader.NodeType" /> es <see langword="XmlNodeType.EndElement" />) del elemento.  
+        <summary>Hace avanzar el objeto <see cref="T:System.Xml.XmlReader" /> hasta al siguiente elemento descendiente con el nombre completo especificado.</summary>
+        <returns>Es <see langword="true" /> si se encuentra un elemento descendiente; en caso contrario, es <see langword="false" />. Si no se encuentra ningún elemento secundario relacionado, el objeto <see cref="T:System.Xml.XmlReader" /> se coloca en la etiqueta de cierre (<see cref="P:System.Xml.XmlReader.NodeType" /> es <see langword="XmlNodeType.EndElement" />) del elemento.  
   
-Si el <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento cuando <see cref="M:System.Xml.XmlReader.ReadToDescendant(System.String)" /> llama, este método devuelve <see langword="false" /> y la posición de la <see cref="T:System.Xml.XmlReader" /> no cambia.</returns>
+Si <see cref="T:System.Xml.XmlReader" /> no está en un elemento cuando se llama a <see cref="M:System.Xml.XmlReader.ReadToDescendant(System.String)" />, este método devuelve <see langword="false" /> y la posición de <see cref="T:System.Xml.XmlReader" /> no cambia.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -7877,10 +7891,10 @@ Si el <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento cuan
       <Docs>
         <param name="localName">Nombre local del elemento al que se desea desplazar.</param>
         <param name="namespaceURI">URI del espacio de nombres del elemento al que se desea desplazar.</param>
-        <summary>Hace avanzar el <see cref="T:System.Xml.XmlReader" /> hasta el siguiente elemento descendiente con el nombre local especificado y el URI de espacio de nombres.</summary>
-        <returns><see langword="true" /> Si se encuentra un elemento descendiente; en caso contrario <see langword="false" />. Si no se encuentra ningún elemento secundario relacionado, el <see cref="T:System.Xml.XmlReader" /> está situado en la etiqueta de cierre (<see cref="P:System.Xml.XmlReader.NodeType" /> es <see langword="XmlNodeType.EndElement" />) del elemento.  
+        <summary>Hace avanzar el objeto <see cref="T:System.Xml.XmlReader" /> hasta el siguiente elemento descendiente que tenga el URI de espacio de nombres y el nombre local especificados.</summary>
+        <returns>Es <see langword="true" /> si se encuentra un elemento descendiente; en caso contrario, es <see langword="false" />. Si no se encuentra ningún elemento secundario relacionado, el objeto <see cref="T:System.Xml.XmlReader" /> se coloca en la etiqueta de cierre (<see cref="P:System.Xml.XmlReader.NodeType" /> es <see langword="XmlNodeType.EndElement" />) del elemento.  
   
-Si el <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento cuando <see cref="M:System.Xml.XmlReader.ReadToDescendant(System.String,System.String)" /> llama, este método devuelve <see langword="false" /> y la posición de la <see cref="T:System.Xml.XmlReader" /> no cambia.</returns>
+Si <see cref="T:System.Xml.XmlReader" /> no está en un elemento cuando se llama a <see cref="M:System.Xml.XmlReader.ReadToDescendant(System.String,System.String)" />, este método devuelve <see langword="false" /> y la posición de <see cref="T:System.Xml.XmlReader" /> no cambia.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.ArgumentNullException">Ambos valores del parámetro son <see langword="null" />.</exception>
@@ -7935,7 +7949,7 @@ Si el <see cref="T:System.Xml.XmlReader" /> no está situado en un elemento cuan
       <Docs>
         <param name="name">Nombre completo del elemento.</param>
         <summary>Lee hasta que encuentra un elemento con el nombre completo especificado.</summary>
-        <returns><see langword="true" /> Si se encuentra un elemento coincidente; en caso contrario <see langword="false" /> y <see cref="T:System.Xml.XmlReader" /> está en un estado final del archivo.</returns>
+        <returns>Es <see langword="true" /> si se encuentra un elemento coincidente; de lo contrario, es <see langword="false" /> y el objeto <see cref="T:System.Xml.XmlReader" /> está en un estado de final de archivo.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -8005,7 +8019,7 @@ reader.ReadToFollowing("item");
         <param name="localName">Nombre local del elemento.</param>
         <param name="namespaceURI">Identificador URI de espacio de nombres del elemento.</param>
         <summary>Lee hasta que encuentra un elemento con el nombre local y el URI de espacio de nombres especificados.</summary>
-        <returns><see langword="true" /> Si se encuentra un elemento coincidente; en caso contrario <see langword="false" /> y <see cref="T:System.Xml.XmlReader" /> está en un estado final del archivo.</returns>
+        <returns>Es <see langword="true" /> si se encuentra un elemento coincidente; de lo contrario, es <see langword="false" /> y el objeto <see cref="T:System.Xml.XmlReader" /> está en un estado de final de archivo.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -8047,7 +8061,7 @@ reader.ReadToFollowing("item", "urn:1");
       </AssemblyInfo>
       <Docs>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
-        <summary>Hace avanzar el <see langword="XmlReader" /> hasta el siguiente elemento relacionado coincidente.</summary>
+        <summary>Hace avanzar el objeto <see langword="XmlReader" /> hasta el siguiente elemento relacionado coincidente.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="ReadToNextSibling">
@@ -8085,8 +8099,8 @@ reader.ReadToFollowing("item", "urn:1");
       </Parameters>
       <Docs>
         <param name="name">Nombre completo del elemento relacionado al que se desea desplazar.</param>
-        <summary>Hace avanzar el <see langword="XmlReader" /> hasta el siguiente elemento relacionado con el nombre completo especificado.</summary>
-        <returns><see langword="true" /> Si se encuentra un elemento relacionado; en caso contrario <see langword="false" />. Si no se encuentra un elemento relacionado, el <see langword="XmlReader" /> está situado en la etiqueta de cierre (<see cref="P:System.Xml.XmlReader.NodeType" /> es <see langword="XmlNodeType.EndElement" />) del elemento primario.</returns>
+        <summary>Hace avanzar el objeto <see langword="XmlReader" /> hasta al siguiente elemento relacionado con el nombre completo especificado.</summary>
+        <returns>Es <see langword="true" /> si se encuentra un elemento relacionado; en caso contrario, es <see langword="false" />. Si no se encuentra ningún elemento relacionado, el objeto <see langword="XmlReader" /> se coloca en la etiqueta de cierre (<see cref="P:System.Xml.XmlReader.NodeType" /> es <see langword="XmlNodeType.EndElement" />) del elemento principal.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -8147,7 +8161,7 @@ reader.ReadToFollowing("item", "urn:1");
         <param name="localName">Nombre local del elemento relacionado al que se desea desplazar.</param>
         <param name="namespaceURI">URI del espacio de nombres del elemento relacionado al que se desea desplazar.</param>
         <summary>Hace avanzar el objeto <see langword="XmlReader" /> al siguiente elemento del mismo nivel que tenga el URI del espacio de nombres y el nombre local especificados.</summary>
-        <returns><see langword="true" /> Si se encuentra un elemento relacionado; en caso contrario, <see langword="false" />. Si no se encuentra un elemento relacionado, el <see langword="XmlReader" /> está situado en la etiqueta de cierre (<see cref="P:System.Xml.XmlReader.NodeType" /> es <see langword="XmlNodeType.EndElement" />) del elemento primario.</returns>
+        <returns>Es <see langword="true" /> si se encuentra un elemento relacionado; en caso contrario, es <see langword="false" />. Si no se encuentra ningún elemento relacionado, el objeto <see langword="XmlReader" /> se coloca en la etiqueta de cierre (<see cref="P:System.Xml.XmlReader.NodeType" /> es <see langword="XmlNodeType.EndElement" />) del elemento principal.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -8199,9 +8213,9 @@ reader.ReadToFollowing("item", "urn:1");
       </Parameters>
       <Docs>
         <param name="buffer">Matriz de caracteres que sirve como búfer en el que se escribe el contenido de texto. Este valor no puede ser <see langword="null" />.</param>
-        <param name="index">El desplazamiento dentro del búfer donde la <see cref="T:System.Xml.XmlReader" /> puede empezar a copiar los resultados.</param>
+        <param name="index">Desplazamiento en el búfer en el que <see cref="T:System.Xml.XmlReader" /> puede empezar a copiar los resultados.</param>
         <param name="count">Número máximo de caracteres que se van a copiar en el búfer. El número real de caracteres copiados se devuelve desde este método.</param>
-        <summary>Lee grandes flujos de texto incrustados en un documento XML.</summary>
+        <summary>Lee grandes secuencias de texto incrustadas en un documento XML.</summary>
         <returns>Número de caracteres leídos en el búfer. Si no hay más contenido de texto, se devuelve el valor cero.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -8223,14 +8237,14 @@ reader.ReadToFollowing("item", "urn:1");
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El nodo actual no tiene un valor (<see cref="P:System.Xml.XmlReader.HasValue" /> es <see langword="false" />).
+        <exception cref="T:System.InvalidOperationException">El nodo actual no tiene ningún valor (<see cref="P:System.Xml.XmlReader.HasValue" /> es <see langword="false" />).
 
--o bien- 
+O bien 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <exception cref="T:System.ArgumentNullException">El valor <paramref name="buffer" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El índice del búfer, o índice + recuento es mayor que el tamaño de búfer asignado.</exception>
-        <exception cref="T:System.NotSupportedException">El <see cref="T:System.Xml.XmlReader" /> implementación no admite este método.</exception>
-        <exception cref="T:System.Xml.XmlException">Los datos XML no estén bien formados.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El índice del búfer (index) o la suma del índice y el recuento (index + count) es mayor que el tamaño de búfer asignado.</exception>
+        <exception cref="T:System.NotSupportedException">La implementación de <see cref="T:System.Xml.XmlReader" /> no admite este método.</exception>
+        <exception cref="T:System.Xml.XmlException">El formato de los datos XML no es correcto.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadValueChunkAsync">
@@ -8269,9 +8283,9 @@ Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termi
       </Parameters>
       <Docs>
         <param name="buffer">Matriz de caracteres que sirve como búfer en el que se escribe el contenido de texto. Este valor no puede ser <see langword="null" />.</param>
-        <param name="index">El desplazamiento dentro del búfer donde la <see cref="T:System.Xml.XmlReader" /> puede empezar a copiar los resultados.</param>
+        <param name="index">Desplazamiento en el búfer en el que <see cref="T:System.Xml.XmlReader" /> puede empezar a copiar los resultados.</param>
         <param name="count">Número máximo de caracteres que se van a copiar en el búfer. El número real de caracteres copiados se devuelve desde este método.</param>
-        <summary>Lee asincrónicamente grandes flujos de texto incrustados en un documento XML.</summary>
+        <summary>Lee asincrónicamente grandes secuencias de texto incrustadas en un documento XML.</summary>
         <returns>Número de caracteres leídos en el búfer. Si no hay más contenido de texto, se devuelve el valor cero.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -8282,7 +8296,7 @@ Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termi
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.
--o bien-
+O bien
 
 Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin establecer la marca <see cref="P:System.Xml.XmlReaderSettings.Async" /> en <see langword="true" />. En este caso, se produce <see cref="T:System.InvalidOperationException" /> con el mensaje "Establezca XmlReaderSettings.Async en true si quiere usar métodos asincrónicos".</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Programación asincrónica con Async y Await (C# y Visual Basic)</related>
@@ -8321,7 +8335,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cuando se invalida en una clase derivada, resuelve la referencia de entidad de <see langword="EntityReference" /> nodos.</summary>
+        <summary>Cuando se invalida en una clase derivada, resuelve la referencia a entidad para los nodos <see langword="EntityReference" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -8333,9 +8347,9 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El lector no está situado en un <see langword="EntityReference" /> nodo; esta implementación del lector no puede resolver entidades (<see cref="P:System.Xml.XmlReader.CanResolveEntity" /> devuelve <see langword="false" />).
+        <exception cref="T:System.InvalidOperationException">El lector no está situado en un nodo <see langword="EntityReference" />; esta implementación del lector no puede resolver entidades (<see cref="P:System.Xml.XmlReader.CanResolveEntity" /> devuelve <see langword="false" />).
 
--o bien-
+O bien
 
 Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.</exception>
         <altmember cref="T:System.Xml.EntityHandling" />
@@ -8371,14 +8385,14 @@ Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termi
       </ReturnValue>
       <Docs>
         <summary>Obtiene la información de esquema asignada al nodo actual como resultado de la validación del esquema.</summary>
-        <value>Un <see cref="T:System.Xml.Schema.IXmlSchemaInfo" /> objeto que contiene la información de esquema para el nodo actual. Información de esquema se puede establecer en elementos, atributos o nodos de texto con un valor no null <see cref="P:System.Xml.XmlReader.ValueType" /> (valores con tipo).  
+        <value>Objeto <see cref="T:System.Xml.Schema.IXmlSchemaInfo" /> que contiene la información de esquema del nodo actual. La información del esquema se puede establecer en elementos, atributos o nodos de texto con un <see cref="P:System.Xml.XmlReader.ValueType" /> no nulo (valores con tipo).  
   
-Si el nodo actual no es uno de los tipos de nodo anteriores, o si el <see langword="XmlReader" /> instancia no proporciona la información de esquema, esta propiedad devuelve <see langword="null" />.  
+Si el nodo actual no es ninguno de los tipos de nodo anteriores, o si la instancia de <see langword="XmlReader" /> no proporciona la información del esquema, esta propiedad devuelve <see langword="null" />.  
   
-Si esta propiedad se llama desde un <see cref="T:System.Xml.XmlTextReader" /> o un <see cref="T:System.Xml.XmlValidatingReader" /> de objeto, esta propiedad siempre devuelve <see langword="null" />. Estos <see langword="XmlReader" /> implementaciones exponer información de esquema a través de la <see langword="SchemaInfo" /> propiedad.  
+Si los objetos <see cref="T:System.Xml.XmlTextReader" /> y <see cref="T:System.Xml.XmlValidatingReader" /> llaman a esta propiedad, siempre devuelve <see langword="null" />. Estas implementaciones de <see langword="XmlReader" /> no exponen ninguna información de esquema a través de la propiedad <see langword="SchemaInfo" />.  
   
  <block subset="none" type="note"><para>  
- Si tiene que obtener el conjunto de información de validación posterior de esquema (PSVI) para un elemento, sitúe el lector en la etiqueta de cierre del elemento, en lugar de en la etiqueta de apertura. El PSVI se obtiene a través de la <see langword="SchemaInfo" /> propiedad de un lector. El lector de validación que se crea mediante <see cref="Overload:System.Xml.XmlReader.Create" /> con el <see cref="P:System.Xml.XmlReaderSettings.ValidationType" /> propiedad establecida en <see cref="F:System.Xml.ValidationType.Schema" /> tiene el PSVI completo para un elemento solo cuando el lector está situado en la etiqueta de cierre de un elemento.  
+ Si tiene que obtener el conjunto de información de validación posterior de esquema (PSVI) para un elemento, sitúe el lector en la etiqueta de cierre del elemento, en lugar de en la etiqueta de apertura. El PSVI se obtiene mediante la propiedad <see langword="SchemaInfo" /> de un lector. El lector de validación que se crea mediante <see cref="Overload:System.Xml.XmlReader.Create" /> con la propiedad <see cref="P:System.Xml.XmlReaderSettings.ValidationType" /> establecida en <see cref="F:System.Xml.ValidationType.Schema" /> tiene el PSVI completo para un elemento solo cuando el lector se coloca en la etiqueta de cierre de un elemento.  
   
 </para></block></value>
         <remarks>
@@ -8424,7 +8438,7 @@ Si esta propiedad se llama desde un <see cref="T:System.Xml.XmlTextReader" /> o 
       </ReturnValue>
       <Docs>
         <summary>Obtiene el objeto <see cref="T:System.Xml.XmlReaderSettings" /> que se usa para crear esta instancia de <see cref="T:System.Xml.XmlReader" />.</summary>
-        <value>La <see cref="T:System.Xml.XmlReaderSettings" /> objeto utilizado para crear esta instancia del lector. Si este lector no se creó mediante la <see cref="Overload:System.Xml.XmlReader.Create" /> método, esta propiedad devuelve <see langword="null" />.</value>
+        <value>Objeto <see cref="T:System.Xml.XmlReaderSettings" /> utilizado para crear esta instancia del lector. Si este lector no se creó utilizando el método <see cref="Overload:System.Xml.XmlReader.Create" />, esta propiedad devuelve <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -8570,7 +8584,7 @@ Si esta propiedad se llama desde un <see cref="T:System.Xml.XmlTextReader" /> o 
         </remarks>
         <exception cref="T:System.InvalidOperationException">Se llamó un método <see cref="T:System.Xml.XmlReader" /> antes de que se termine una operación asincrónica anterior. En este caso, se genera <see cref="T:System.InvalidOperationException" /> con el mensaje “Ya hay una operación asincrónica en curso”.
 
--o bien-
+O bien
 
 Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin establecer la marca <see cref="P:System.Xml.XmlReaderSettings.Async" /> en <see langword="true" />. En este caso, se produce <see cref="T:System.InvalidOperationException" /> con el mensaje "Establezca XmlReaderSettings.Async en true si quiere usar métodos asincrónicos".</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/db854f91-ccef-4035-ae4d-0911fde808c7">Programación asincrónica con Async y Await (C# y Visual Basic)</related>
@@ -8607,7 +8621,7 @@ Se llamó un método asincrónico de <see cref="T:System.Xml.XmlReader" /> sin e
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Para una descripción de este miembro, vea <see cref="M:System.IDisposable.Dispose" />.</summary>
+        <summary>Para obtener una descripción de este miembro, vea <see cref="M:System.IDisposable.Dispose" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -8654,7 +8668,7 @@ Este miembro puede comportarse de manera diferente cuando se usa en un [bibliote
       </ReturnValue>
       <Docs>
         <summary>Cuando se invalida en una clase derivada, obtiene el valor de texto del nodo actual.</summary>
-        <value>El valor devuelto depende de la propiedad <see cref="P:System.Xml.XmlReader.NodeType" /> del nodo:  En la siguiente tabla se recogen los tipos de nodo que tienen un valor para devolver. Todos los demás tipos de nodo devuelven <see langword="String.Empty" />.  
+        <value>El valor devuelto depende de la propiedad <see cref="P:System.Xml.XmlReader.NodeType" /> del nodo: En la siguiente tabla se recogen los tipos de nodo que tienen un valor para devolver. Todos los demás tipos de nodo devuelven <see langword="String.Empty" />.  
   
  <list type="table"><listheader><term> Tipo de nodo 
  </term><description> Valor 
@@ -8668,7 +8682,7 @@ Este miembro puede comportarse de manera diferente cuando se usa en un [bibliote
   
  </description></item><item><term><see langword="ProcessingInstruction" /></term><description> El contenido completo, sin incluir el destino.  
   
- </description></item><item><term><see langword="SignificantWhitespace" /></term><description> El espacio en blanco entre marcas en un modelo de contenido mixto.  
+ </description></item><item><term><see langword="SignificantWhitespace" /></term><description> Espacio en blanco entre marcas en un modelo de contenido mixto.  
   
  </description></item><item><term><see langword="Text" /></term><description> El contenido del nodo de texto.  
   
@@ -8786,7 +8800,7 @@ Este miembro puede comportarse de manera diferente cuando se usa en un [bibliote
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se invalida en una clase derivada, obtiene la actual <see langword="xml:lang" /> ámbito.</summary>
+        <summary>Cuando se invalida en una clase derivada, obtiene el ámbito de <see langword="xml:lang" /> actual.</summary>
         <value>Ámbito de <see langword="xml:lang" /> actual.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -8845,7 +8859,7 @@ Este miembro puede comportarse de manera diferente cuando se usa en un [bibliote
         <ReturnType>System.Xml.XmlSpace</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Cuando se invalida en una clase derivada, obtiene la actual <see langword="xml:space" /> ámbito.</summary>
+        <summary>Cuando se invalida en una clase derivada, obtiene el ámbito de <see langword="xml:space" /> actual.</summary>
         <value>Uno de los valores de <see cref="T:System.Xml.XmlSpace" />. Si no existe ningún ámbito de <see langword="xml:space" />, el valor predeterminado de esta propiedad será <see langword="XmlSpace.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

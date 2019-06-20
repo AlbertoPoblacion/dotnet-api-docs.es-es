@@ -1,5 +1,5 @@
 <Type Name="IAsyncDisposable" FullName="System.IAsyncDisposable">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="82cd5c9467041839fb2a2b2ffffd03ea382f82f6" /><Meta Name="ms.sourcegitcommit" Value="1bb00d2f4343e73ae8d58668f02297a3cf10a4c1" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/14/2019" /><Meta Name="ms.locfileid" Value="67134667" /></Metadata><TypeSignature Language="C#" Value="public interface IAsyncDisposable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bbd87cb9c175eb0c4d5aa893ad32101018b03b5b" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67245148" /></Metadata><TypeSignature Language="C#" Value="public interface IAsyncDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAsyncDisposable" />
   <TypeSignature Language="DocId" Value="T:System.IAsyncDisposable" />
   <TypeSignature Language="VB.NET" Value="Public Interface IAsyncDisposable" />
@@ -25,24 +25,24 @@ En. NET, las clases que poseen recursos no administrados normalmente implementan
 
 El <xref:System.IAsyncDisposable.DisposeAsync%2A?displayProperty=nameWithType> método de esta interfaz devuelve un <xref:System.Threading.Tasks.ValueTask> que representa la operación asincrónica dispose. Las clases que poseen recursos no administrados implementan este método y el consumidor de estas clases llama a este método en un objeto cuando ya no es necesario.
 
-Los métodos asincrónicos se usan junto con la `async` y `await` palabras clave en C# y Visual Basic. Para obtener más información, vea [Programación asincrónica con Async y Await (C#)](/dotnet/csharp/programming-guide/concepts/async/index) y [Programación asincrónica con Async y Await (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/async/).
+Los métodos asincrónicos se usan junto con la `async` y `await` palabras clave en C# y Visual Basic. Para obtener más insformation, consulte [modelo de programación asincrónica de la tarea en C# ](/dotnet/csharp/programming-guide/concepts/async/index) o [programación asincrónica con Async y Await (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/async/).
 
 ### <a name="using-an-object-that-implements-iasyncdisposable"></a>Uso de un objeto que implementa IAsyncDisposable
 
-Cuando termine de usar un objeto que implemente `IAsyncDisposable`, debe llamar a la implementación <xref:System.IAsyncDisposable.DisposeAsync%2A> del objeto. Para asegurarse de que se liberan los recursos incluso en el caso de una excepción, llame a la <xref:System.IAsyncDisposable.DisposeAsync%2A> método dentro de un `finally` cláusula de la `try` / `finally` instrucción. Para obtener más información sobre la `try` / `finally` de patrón, vea [try-finally](~/docs/csharp/language-reference/keywords/try-finally.md) (C#) o [intente... atrapar... Finally (instrucción)](~/docs/visual-basic/language-reference/statements/try-catch-finally-statement.md) (Visual Basic).
+Si la aplicación utiliza un objeto que implementa `IAsyncDisposable`, debe llamar al objeto <xref:System.IAsyncDisposable.DisposeAsync%2A> implementación cuando haya terminado de utilizarlo. Para asegurarse de que se liberan los recursos incluso en el caso de una excepción, llame a la <xref:System.IAsyncDisposable.DisposeAsync%2A> método dentro de un `finally` cláusula de la `try` / `finally` instrucción. Para obtener más información sobre la `try` / `finally` de patrón, vea [try-finally](~/docs/csharp/language-reference/keywords/try-finally.md) (C#) o [intente... atrapar... Finally (instrucción)](~/docs/visual-basic/language-reference/statements/try-catch-finally-statement.md) (Visual Basic).
 
 ### <a name="implementing-iasyncdisposable"></a>Implementar IAsyncDisposable   
     
 Podría implementar `IAsyncDisposable` en las situaciones siguientes:
 
-- Al desarrollar un enumerador asincrónico que posee los recursos no administrados. Los enumeradores asincrónicos se utilizan con el C# 8.0 característica de secuencias asincrónicas. Para obtener más información sobre los flujos asincrónicos, vea [Tutorial: generar y consumir los flujos asincrónicos mediante C# 8.0 y .NET Core 3.0](/dotnet/csharp/tutorials/generate-consume-asynchronous-stream).
+- Al desarrollar un enumerador asincrónico que posee los recursos no administrados. Los enumeradores asincrónicos se utilizan con el C# 8.0 característica de secuencias asincrónicas. Para obtener más información sobre los flujos asincrónicos, vea [Tutorial: Generar y consumir los flujos asincrónicos mediante C# 8.0 y .NET Core 3.0](/dotnet/csharp/tutorials/generate-consume-asynchronous-stream).
 
 - Cuando la clase tiene recursos no administrados y liberarlas requiere una operación de E/S que consumen muchos recursos, como vaciar el contenido de un búfer intermedio en un archivo o el envío de un paquete a través de una red para cerrar una conexión.
 
 Use el <xref:System.IAsyncDisposable.DisposeAsync%2A> método para realizar cualquier limpieza es necesario después de usar los recursos no administrados, como la liberación o restablecimiento de los recursos no administrados. Para obtener más información acerca de los recursos no administrados en. NET, consulte [limpiar recursos no administrados](/dotnet/standard/garbage-collection/unmanaged).
  
  ]]></format>
-</remarks>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="DisposeAsync">
@@ -69,11 +69,11 @@ Use el <xref:System.IAsyncDisposable.DisposeAsync%2A> método para realizar cual
         <summary>Realiza tareas definidas por la aplicación asociadas a la liberación o al restablecimiento de recursos no administrados de forma asincrónica.</summary>
         <returns>Tarea que representa la operación de descarte asincrónica.</returns>
         <remarks>
-      <format type="text/markdown"><![CDATA[  
+          <format type="text/markdown"><![CDATA[  
 
 ## Remarks
 
-Utilice este método para cerrar o liberar recursos no administrados como archivos, secuencias e identificadores mantenidos por una instancia de la clase que implementa esta interfaz. Con este método en lugar de <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> le permite realizar una operación que consume muchos recursos dispose sin bloquear el subproceso principal de una aplicación de interfaz gráfica de usuario durante mucho tiempo.
+Utilice este método para cerrar o liberar recursos no administrados como archivos, secuencias e identificadores mantenidos por una instancia de la clase que implementa esta interfaz de forma asincrónica. Con este método en lugar de <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> le permite realizar una operación que consume muchos recursos dispose sin bloquear el subproceso principal de una aplicación de interfaz gráfica de usuario durante mucho tiempo.
 
 > [!WARNING]
 >  Si usa una clase que implementa el <xref:System.IAsyncDisposable> interfaz, debe llamar a su `DisposeAsync` cuando haya terminado de utilizar la clase de implementación. Para obtener más información, vea la sección "Uso de un objeto que implementa IAsyncDisposable" en el <xref:System.IAsyncDisposable> tema.
@@ -83,7 +83,7 @@ Al implementar este método, asegúrese de que todos mantienen se liberan los re
 Si un objeto `DisposeAsync` método se llama más de una vez, el objeto debe omitir todas las llamadas posteriores a la primera y devuelven sincrónicamente completada correctamente <xref:System.Threading.Tasks.ValueTask>. El objeto no debe producir una excepción si su `DisposeAsync` método se llama varias veces. Métodos de instancia distinto `DisposeAsync` puede producir un <xref:System.ObjectDisposedException> cuando ya se eliminen los recursos.
  
  ]]></format>
-</remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

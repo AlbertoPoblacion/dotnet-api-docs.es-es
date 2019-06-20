@@ -1,5 +1,5 @@
 <Type Name="HttpClientHandler" FullName="System.Net.Http.HttpClientHandler">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="333edac56c7d30336b93943355dba960d3ff71e3" /><Meta Name="ms.sourcegitcommit" Value="ddce15914650a504a7399d539ac1f7cfed3c2caa" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/07/2019" /><Meta Name="ms.locfileid" Value="66759603" /></Metadata><TypeSignature Language="C#" Value="public class HttpClientHandler : System.Net.Http.HttpMessageHandler" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="95994d533bcb81b3f598d13c25891e26f095a249" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67237847" /></Metadata><TypeSignature Language="C#" Value="public class HttpClientHandler : System.Net.Http.HttpMessageHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpClientHandler extends System.Net.Http.HttpMessageHandler" />
   <TypeSignature Language="DocId" Value="T:System.Net.Http.HttpClientHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpClientHandler&#xA;Inherits HttpMessageHandler" />
@@ -384,7 +384,7 @@ Después de v4.3.2 del paquete de NuGet, el valor predeterminado de <xref:System
  El <xref:System.Net.Http.HttpClientHandler.DangerousAcceptAnyServerCertificateValidator%2A> propiedad soluciona esta limitación. El delegado devuelto por la <xref:System.Net.Http.HttpClientHandler.DangerousAcceptAnyServerCertificateValidator%2A> propiedad puede asignarse a la <xref:System.Net.Http.HttpClientHandler.ServerCertificateCustomValidationCallback%2A> propiedad, como en el ejemplo siguiente se hace:
 
 ```cs
-handler.ServerCertificateCustomValidationCallback = httpClientHandler.DangerousAcceptAnyServerCertificateValidator;
+handler.ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator;
 ```
 
  Esto proporciona <xref:System.Net.Http.HttpClientHandler> implementaciones una identidad de referencia de objeto conocido que expresa la intención del desarrollador. Si el objeto almacenado en el <xref:System.Net.Http.HttpClientHandler.DangerousAcceptAnyServerCertificateValidator%2A> propiedad es igual a la referencia a <xref:System.Net.Http.HttpClientHandler.DangerousAcceptAnyServerCertificateValidator%2A>, el tiempo de ejecución es capaz de deshabilitar completamente la validación en una plataforma que de lo contrario se iniciaba una <xref:System.PlatformNotSupportedException>.

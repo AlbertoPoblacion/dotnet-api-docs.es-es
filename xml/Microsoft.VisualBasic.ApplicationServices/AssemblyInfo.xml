@@ -1,5 +1,5 @@
 <Type Name="AssemblyInfo" FullName="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="1c92eb2ed7ee964df743e3ff49348e25cd1bb5d7" /><Meta Name="ms.sourcegitcommit" Value="adc8598fd19d91438cacaa8fa7ce613e28c8218e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="12/11/2018" /><Meta Name="ms.locfileid" Value="53232306" /></Metadata><TypeSignature Language="C#" Value="public class AssemblyInfo" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="af5ffcc1e938bbe1c5cc21065bcb9c29e5d91a1f" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67238486" /></Metadata><TypeSignature Language="C#" Value="public class AssemblyInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi AssemblyInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class AssemblyInfo" />
@@ -9,6 +9,10 @@
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+    <AssemblyVersion>10.0.4.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -53,6 +57,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="currentAssembly" Type="System.Reflection.Assembly" />
       </Parameters>
@@ -76,6 +84,10 @@
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -128,6 +140,10 @@
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -182,6 +198,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -234,6 +254,10 @@
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -288,6 +312,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -338,6 +366,10 @@
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Reflection.Assembly&gt;</ReturnType>
@@ -395,6 +427,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -448,6 +484,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -473,7 +513,7 @@
 |*FullClassName*|El nombre completo de la clase, incluido el espacio de nombres.|  
 |*MethodName*|Nombre del método.|  
 |*MethodParams*|La lista de pares de nombre del tipo de parámetro. Cada par se separa por una coma (,). Esta información se omite si *MethodName* toma ningún parámetro.|  
-|*Nombre de archivo*|El nombre del origen de archivo donde el *MethodName* se declara el método. Esta información se omite si los símbolos de depuración no están disponibles.|  
+|*FileName*|El nombre del origen de archivo donde el *MethodName* se declara el método. Esta información se omite si los símbolos de depuración no están disponibles.|  
 |*LineNumber*|El número de la línea en *FileName* que contiene el código fuente de *MethodName* para la instrucción que se encuentra en la pila de llamadas. Esta información se omite si los símbolos de depuración no están disponibles.|  
   
  El `My.Applicaiton.Info.StackTrace` propiedad proporciona una funcionalidad similar a la <xref:System.Environment.StackTrace%2A> propiedad.  
@@ -518,6 +558,10 @@
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -572,6 +616,10 @@
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -624,6 +672,10 @@
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Version</ReturnType>
@@ -681,6 +733,10 @@
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
         <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>

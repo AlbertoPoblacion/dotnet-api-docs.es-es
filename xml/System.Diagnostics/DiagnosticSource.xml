@@ -1,5 +1,5 @@
 <Type Name="DiagnosticSource" FullName="System.Diagnostics.DiagnosticSource">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="8cbc4935d264c7be30193ce6ff6c9af0cdfd4331" /><Meta Name="ms.sourcegitcommit" Value="f55040f35c19a83c85beb55243330558f6e369be" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/10/2019" /><Meta Name="ms.locfileid" Value="66817919" /></Metadata><TypeSignature Language="C#" Value="public abstract class DiagnosticSource" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7f83117f0aeffb8d575e4d2b554cd5421a13a5bb" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67239420" /></Metadata><TypeSignature Language="C#" Value="public abstract class DiagnosticSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DiagnosticSource extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.DiagnosticSource" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DiagnosticSource" />
@@ -72,13 +72,13 @@
         <param name="name">Nombre del evento que se va a escribir.</param>
         <summary>Comprueba que el evento de notificación esté habilitado.</summary>
         <returns><see langword="true" /> si el evento de notificación está habilitado; de lo contrario, <see langword="false" />.</returns>
-         <remarks>
-           <format type="text/markdown"><![CDATA[
+        <remarks>
+          <format type="text/markdown"><![CDATA[
 
 Si no hay configuración es costosa para la notificación, puede llamar a IsEnabled antes de realizar esta configuración. Los consumidores no deben suponer que solo obtener notificaciones para el que IsEnabled es true. Sin embargo, es opcional para los productores llamar a esta API. El nombre debe ser el mismo que se pasa a <see cref="M:System.Diagnostics.DiagnosticSource.Write(System.String,System.Object)" />.
 
            ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -109,13 +109,13 @@ Si no hay configuración es costosa para la notificación, puede llamar a IsEnab
         <param name="arg2">Opcional. Objeto que representa el contexto adicional de IsEnabled. <see langword="null" /> es el valor predeterminado. Los consumidores pueden recibir <see langword="null" />, lo que puede indicar que el productor ha llamado a IsEnabled(string) puro o ha pasado todo el contexto necesario en <paramref name="arg1" />.</param>
         <summary>Comprueba que el evento de notificación esté habilitado.</summary>
         <returns><see langword="true" /> si el evento de notificación está habilitado; de lo contrario, <see langword="false" />.</returns>
-         <remarks>
-           <format type="text/markdown"><![CDATA[
+        <remarks>
+          <format type="text/markdown"><![CDATA[
           
 Si no hay configuración es costosa para la notificación, puede llamar a este método y proporcionar un contexto antes de realizar la instalación.
           
            ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnActivityExport">
@@ -194,8 +194,8 @@ Si no hay configuración es costosa para la notificación, puede llamar a este m
         <param name="args">Objeto que representa el valor que se va a pasar como una carga para el evento.</param>
         <summary>Inicia <see cref="T:System.Diagnostics.Activity" /> y escribe un evento de inicio.</summary>
         <returns>Actividad iniciada para un encadenamiento práctico.</returns>
-         <remarks>
-           <format type="text/markdown"><![CDATA[
+        <remarks>
+          <format type="text/markdown"><![CDATA[
            
 El <xref:System.Diagnostics.Activity> describe la operación lógica, su contexto y la relación primaria; actual <xref:System.Diagnostics.Activity> fluye a través del procesamiento de la operación.
 
@@ -204,7 +204,7 @@ Este método inicia el determinado <xref:System.Diagnostics.Activity>, mantiene 
 Los productores pueden pasar detalles adicionales para el consumidor en la carga.
 
            ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StopActivity">
@@ -232,7 +232,7 @@ Los productores pueden pasar detalles adicionales para el consumidor en la carga
         <param name="activity">Actividad que se va a detener.</param>
         <param name="args">Objeto que representa el valor pasado como una carga para el evento.</param>
         <summary>Detiene el elemento <see cref="T:System.Diagnostics.Activity" /> dado, mantiene la actividad global <see cref="P:System.Diagnostics.Activity.Current" /> y notifica a los consumidores que <see cref="T:System.Diagnostics.Activity" /> se ha detenido.</summary>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 Los productores pueden pasar detalles adicionales para el consumidor en la carga.
@@ -241,7 +241,7 @@ Pueden tener acceso los consumidores <xref:System.Diagnostics.Activity.Current?d
 
 
          ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -272,7 +272,7 @@ Pueden tener acceso los consumidores <xref:System.Diagnostics.Activity.Current?d
         <param name="name">Nombre del evento que se va a escribir.</param>
         <param name="value">Objeto que representa el valor que se va a pasar como una carga para el evento. Suele ser un tipo anónimo que contiene varios subvalores.</param>
         <summary>Proporciona una manera genérica de registrar cargas complejas.</summary>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 Cada notificación se asigna un nombre que identifica, así como un objeto (normalmente un tipo anónimo) que proporciona información arbitraria para pasar a la notificación.  
@@ -284,7 +284,7 @@ No deben tener nombres de notificación `.` en ellos porque los nombres de compo
 Se supone que los agentes de escucha usará un prefijo de cadena para filtrar los grupos. Por lo tanto, tener una jerarquía de nombres de componente es una buena práctica.
 
          ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
   </Members>

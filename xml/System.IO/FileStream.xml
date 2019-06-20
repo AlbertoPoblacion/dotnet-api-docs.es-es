@@ -1,5 +1,5 @@
 <Type Name="FileStream" FullName="System.IO.FileStream">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ef4f5192898fd886f87cb3f256ae8fbf8c30ae1e" /><Meta Name="ms.sourcegitcommit" Value="75eca440f8f4d595506405f48961f38649e160d7" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/01/2019" /><Meta Name="ms.locfileid" Value="66458033" /></Metadata><TypeSignature Language="C#" Value="public class FileStream : System.IO.Stream" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="595f99a23a8fc79ed0779d6c36d3ae2638121941" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67238153" /></Metadata><TypeSignature Language="C#" Value="public class FileStream : System.IO.Stream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileStream extends System.IO.Stream" />
   <TypeSignature Language="DocId" Value="T:System.IO.FileStream" />
   <TypeSignature Language="VB.NET" Value="Public Class FileStream&#xA;Inherits Stream" />
@@ -167,8 +167,9 @@
         <exception cref="T:System.Security.SecurityException">El llamador no dispone del permiso requerido.</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error de E/S, como un error de disco.  
   
-O bien 
-Se ha cerrado la secuencia.</exception>
+ O bien  
+  
+ Se ha cerrado la secuencia.</exception>
         <exception cref="T:System.UnauthorizedAccessException">El <paramref name="access" /> solicitado no está permitido por el sistema operativo para el identificador de archivo especificado, como cuando <paramref name="access" /> es <see langword="Write" /> o <see langword="ReadWrite" /> y el identificador de archivo está establecido para el acceso de solo lectura.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">para leer, escribir y anexar a archivos. Enumeraciones asociadas: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" />, y <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Append" />.</permission>
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
@@ -247,8 +248,9 @@ Se ha cerrado la secuencia.</exception>
         <exception cref="T:System.Security.SecurityException">El llamador no dispone del permiso requerido.</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error de E/S, como un error de disco.  
   
-O bien 
-Se ha cerrado la secuencia.</exception>
+ O bien  
+  
+ Se ha cerrado la secuencia.</exception>
         <exception cref="T:System.UnauthorizedAccessException">El <paramref name="access" /> solicitado no está permitido por el sistema operativo para el identificador de archivo especificado, como cuando <paramref name="access" /> es <see langword="Write" /> o <see langword="ReadWrite" /> y el identificador de archivo está establecido para el acceso de solo lectura.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">para leer, escribir y anexar a archivos. Enumeraciones asociadas: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" />, y <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Append" />.</permission>
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
@@ -427,8 +429,9 @@ El parámetro <paramref name="handle" /> es un identificador sincrónico y se us
         <exception cref="T:System.ArgumentOutOfRangeException">El parámetro <paramref name="bufferSize" /> es negativo.</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error de E/S, como un error de disco.  
   
-O bien 
-Se ha cerrado la secuencia.</exception>
+ O bien  
+  
+ Se ha cerrado la secuencia.</exception>
         <exception cref="T:System.Security.SecurityException">El llamador no dispone del permiso requerido.</exception>
         <exception cref="T:System.UnauthorizedAccessException">El <paramref name="access" /> solicitado no está permitido por el sistema operativo para el identificador de archivo especificado, como cuando <paramref name="access" /> es <see langword="Write" /> o <see langword="ReadWrite" /> y el identificador de archivo está establecido para el acceso de solo lectura.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">para leer, escribir y anexar a archivos. Enumeraciones asociadas: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" />, y <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Append" />.</permission>
@@ -511,8 +514,9 @@ Se ha cerrado la secuencia.</exception>
         <exception cref="T:System.Security.SecurityException">El llamador no dispone del permiso requerido.</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error de E/S, como un error de disco.  
   
-O bien 
-Se ha cerrado la secuencia.</exception>
+ O bien  
+  
+ Se ha cerrado la secuencia.</exception>
         <exception cref="T:System.UnauthorizedAccessException">El <paramref name="access" /> solicitado no está permitido por el sistema operativo para el identificador de archivo especificado, como cuando <paramref name="access" /> es <see langword="Write" /> o <see langword="ReadWrite" /> y el identificador de archivo está establecido para el acceso de solo lectura.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">para leer, escribir y anexar a archivos. Enumeraciones asociadas: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" />, y <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Append" />.</permission>
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
@@ -681,8 +685,9 @@ El parámetro <paramref name="handle" /> es un identificador sincrónico y se us
         <exception cref="T:System.ArgumentOutOfRangeException">El parámetro <paramref name="bufferSize" /> es negativo.</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error de E/S, como un error de disco.  
   
-O bien 
-Se ha cerrado la secuencia.</exception>
+ O bien  
+  
+ Se ha cerrado la secuencia.</exception>
         <exception cref="T:System.Security.SecurityException">El llamador no dispone del permiso requerido.</exception>
         <exception cref="T:System.UnauthorizedAccessException">El <paramref name="access" /> solicitado no está permitido por el sistema operativo para el identificador de archivo especificado, como cuando <paramref name="access" /> es <see langword="Write" /> o <see langword="ReadWrite" /> y el identificador de archivo está establecido para el acceso de solo lectura.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">para leer, escribir y anexar a archivos. Enumeraciones asociadas: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" />, y <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Append" />.</permission>
@@ -766,8 +771,9 @@ Se ha cerrado la secuencia.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="bufferSize" /> es negativo.</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error de E/S, como un error de disco.  
   
-O bien 
-Se ha cerrado la secuencia.</exception>
+ O bien  
+  
+ Se ha cerrado la secuencia.</exception>
         <exception cref="T:System.Security.SecurityException">El llamador no dispone del permiso requerido.</exception>
         <exception cref="T:System.UnauthorizedAccessException">El <paramref name="access" /> solicitado no está permitido por el sistema operativo para el identificador de archivo especificado, como cuando <paramref name="access" /> es <see langword="Write" /> o <see langword="ReadWrite" /> y el identificador de archivo está establecido para el acceso de solo lectura.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">para leer, escribir y anexar a archivos. Enumeraciones asociadas: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" />, y <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Append" />.</permission>
@@ -956,8 +962,9 @@ Se ha cerrado la secuencia.</exception>
         <exception cref="T:System.ArgumentException">El identificador no es válido.</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error de E/S, como un error de disco.  
   
-O bien 
-Se ha cerrado la secuencia.</exception>
+ O bien  
+  
+ Se ha cerrado la secuencia.</exception>
         <exception cref="T:System.Security.SecurityException">El llamador no dispone del permiso requerido.</exception>
         <exception cref="T:System.UnauthorizedAccessException">El <paramref name="access" /> solicitado no está permitido por el sistema operativo para el identificador de archivo especificado, como cuando <paramref name="access" /> es <see langword="Write" /> o <see langword="ReadWrite" /> y el identificador de archivo está establecido para el acceso de solo lectura.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Para obtener acceso a código no administrado. Enumeración asociada: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
@@ -1491,12 +1498,12 @@ O bien
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-3.0;netstandard-2.1" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginRead (array As Byte(), offset As Integer, numBytes As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginRead(cli::array &lt;System::Byte&gt; ^ array, int offset, int numBytes, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
-      <MemberSignature Language="F#" Value="override this.BeginRead : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="fileStream.BeginRead (array, offset, numBytes, callback, state)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="override this.BeginRead : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="fileStream.BeginRead (array, offset, numBytes, callback, state)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1" />
       <MemberSignature Language="C#" Value="public override IAsyncResult BeginRead (byte[] array, int offset, int numBytes, AsyncCallback userCallback, object stateObject);" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginRead(unsigned int8[] array, int32 offset, int32 numBytes, class System.AsyncCallback userCallback, object stateObject) cil managed" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginRead (array As Byte(), offset As Integer, numBytes As Integer, userCallback As AsyncCallback, stateObject As Object) As IAsyncResult" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginRead(cli::array &lt;System::Byte&gt; ^ array, int offset, int numBytes, AsyncCallback ^ userCallback, System::Object ^ stateObject);" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="override this.BeginRead : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="fileStream.BeginRead (array, offset, numBytes, userCallback, stateObject)" FrameworkAlternate="netcore-2.0;netcore-3.0;netframework-1.1" />
+      <MemberSignature Language="F#" Value="override this.BeginRead : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="fileStream.BeginRead (array, offset, numBytes, userCallback, stateObject)" FrameworkAlternate="netcore-2.0;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C#" Value="public override IAsyncResult BeginRead (byte[] buffer, int offset, int count, AsyncCallback callback, object state);" FrameworkAlternate="netcore-2.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginRead(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="netcore-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginRead (buffer As Byte(), offset As Integer, count As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="netcore-2.0" />
@@ -1566,12 +1573,12 @@ O bien
       <MemberSignature Language="DocId" Value="M:System.IO.FileStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-3.0;netstandard-2.1" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginWrite (array As Byte(), offset As Integer, numBytes As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginWrite(cli::array &lt;System::Byte&gt; ^ array, int offset, int numBytes, AsyncCallback ^ callback, System::Object ^ state);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netstandard-2.1" />
-      <MemberSignature Language="F#" Value="override this.BeginWrite : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="fileStream.BeginWrite (array, offset, numBytes, callback, state)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="override this.BeginWrite : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="fileStream.BeginWrite (array, offset, numBytes, callback, state)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netframework-1.1" />
       <MemberSignature Language="C#" Value="public override IAsyncResult BeginWrite (byte[] array, int offset, int numBytes, AsyncCallback userCallback, object stateObject);" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginWrite(unsigned int8[] array, int32 offset, int32 numBytes, class System.AsyncCallback userCallback, object stateObject) cil managed" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginWrite (array As Byte(), offset As Integer, numBytes As Integer, userCallback As AsyncCallback, stateObject As Object) As IAsyncResult" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginWrite(cli::array &lt;System::Byte&gt; ^ array, int offset, int numBytes, AsyncCallback ^ userCallback, System::Object ^ stateObject);" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
-      <MemberSignature Language="F#" Value="override this.BeginWrite : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="fileStream.BeginWrite (array, offset, numBytes, userCallback, stateObject)" FrameworkAlternate="netcore-2.0;netcore-3.0;netframework-1.1" />
+      <MemberSignature Language="F#" Value="override this.BeginWrite : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="fileStream.BeginWrite (array, offset, numBytes, userCallback, stateObject)" FrameworkAlternate="netcore-2.0;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberSignature Language="C#" Value="public override IAsyncResult BeginWrite (byte[] buffer, int offset, int count, AsyncCallback callback, object state);" FrameworkAlternate="netcore-2.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginWrite(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback callback, object state) cil managed" FrameworkAlternate="netcore-2.0" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginWrite (buffer As Byte(), offset As Integer, count As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" FrameworkAlternate="netcore-2.0" />
@@ -2439,8 +2446,9 @@ Para obtener más información acerca de <see cref="M:System.ComponentModel.Comp
         <exception cref="T:System.SystemException">No se encuentra el archivo.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Esta operación no es compatible con la plataforma actual.  
   
-O bien 
-El llamador no dispone del permiso requerido.</exception>
+ O bien  
+  
+ El llamador no dispone del permiso requerido.</exception>
       </Docs>
     </Member>
     <Member MemberName="Handle">
@@ -2841,8 +2849,9 @@ Si no se conoce la ruta de acceso absoluta, esta propiedad devuelve una cadena s
         <exception cref="T:System.NotSupportedException">La secuencia no admite búsqueda.</exception>
         <exception cref="T:System.IO.IOException">Error de E/S.  
   
-O bien 
-La posición se estableció en un valor muy grande más allá del final de la secuencia en Windows 98 o versiones anteriores.</exception>
+O bien
+  
+ La posición se estableció en un valor muy grande más allá del final de la secuencia en Windows 98 o versiones anteriores.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">Se intentó establecer la posición en un valor negativo.</exception>
         <exception cref="T:System.IO.EndOfStreamException">Se intentó buscar más allá del final de una secuencia que no admite esto.</exception>
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
@@ -3604,8 +3613,9 @@ Enumeración asociada: <see cref="F:System.Security.Permissions.SecurityPermissi
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="offset" /> o <paramref name="count" /> es negativo.</exception>
         <exception cref="T:System.IO.IOException">Error de E/S.  
   
-O bien 
-Otro subproceso puede haber producido un cambio inesperado en la posición del identificador de archivo del sistema operativo.</exception>
+O bien
+  
+ Otro subproceso puede haber producido un cambio inesperado en la posición del identificador de archivo del sistema operativo.</exception>
         <exception cref="T:System.ObjectDisposedException">La secuencia está cerrada.</exception>
         <exception cref="T:System.NotSupportedException">La instancia actual de la secuencia no admite la escritura.</exception>
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>

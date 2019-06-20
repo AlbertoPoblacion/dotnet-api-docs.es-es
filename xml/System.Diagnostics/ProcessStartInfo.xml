@@ -1,5 +1,5 @@
 <Type Name="ProcessStartInfo" FullName="System.Diagnostics.ProcessStartInfo">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ceb087ee2a19df0fbce2c0e86e86ebada4b3dbd6" /><Meta Name="ms.sourcegitcommit" Value="1bb00d2f4343e73ae8d58668f02297a3cf10a4c1" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/15/2019" /><Meta Name="ms.locfileid" Value="63887565" /></Metadata><TypeSignature Language="C#" Value="public sealed class ProcessStartInfo" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6aae3e941442390152c0bfe1dc86dcbf1bc45ead" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67239386" /></Metadata><TypeSignature Language="C#" Value="public sealed class ProcessStartInfo" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ProcessStartInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.ProcessStartInfo" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProcessStartInfo" />
@@ -237,7 +237,24 @@
         <summary>Obtiene una colección de argumentos de línea de comandos que se van a usar al iniciar la aplicación.</summary>
         <value>Una colección de argumentos de línea de comandos.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[Si utiliza esta propiedad para establecer los argumentos de línea de comandos, <xref:System.Diagnostics.ProcessStartInfo.Arguments> debe establecerse en una cadena vacía.
+          <format type="text/markdown"><![CDATA[
+          
+`ArgumentList`, que se admite a partir de .NET Core 2.1 y .NET 2.1 estándar y el <xref:System.Diagnostics.ProcessStartInfo.Arguments> propiedad son independientes entre sí. Es decir, las cadenas que se asigna a la `ArgumentList` colección no se usan para rellenar el <xref:System.Diagnostics.ProcessStartInfo.Arguments> propiedad y la cadena asignada a la <xref:System.Diagnostics.ProcessStartInfo.Arguments> propiedad no se analiza en las cadenas individuales que se asignan a `ArgumentList` colección. 
+
+`ArgumentList` es más fácil de usar que la <xref:System.Diagnostics.ProcessStartInfo.Arguments> propiedad. Puesto que cada cadena se asigna a un miembro de la colección, se pueden unidimensionales en lugar de cadenas de escape de triple que están delimitadas por comillas. Por ejemplo, en el ejemplo siguiente se incluyen `-full "Mary Smith"` como un miembro de la `ArgumentList` colección:
+
+```csharp
+info.ArgumentList.Add("-full \"Mary Smith\"";
+```
+
+La asignación correspondiente a la <xref:System.Diagnostics.ProcessStartInfo.Arguments> propiedad es:
+
+```csharp
+info.Arguments = "-full \"\"\"Mary Smith\"\"\""
+```
+
+Si utiliza esta propiedad para establecer los argumentos de línea de comandos, <xref:System.Diagnostics.ProcessStartInfo.Arguments> debe establecerse en una cadena vacía.
+
 ## Examples
 
 Este ejemplo agrega dos argumentos a la información de inicio del proceso.
@@ -322,14 +339,19 @@ info.ArgumentList.Add("-last Smith")
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece el conjunto de argumentos de línea de comandos que se van a usar al iniciar la aplicación.</summary>
-        <value>Cadena única que contiene los argumentos para pasar a la aplicación de destino especificada en la propiedad <see cref="P:System.Diagnostics.ProcessStartInfo.FileName" />. El valor predeterminado es una cadena vacía (""). En Windows Vista y versiones anteriores del sistema operativo Windows, la longitud de los argumentos sumada a la longitud de la ruta de acceso completa al proceso debe ser inferior a 2080. En Windows 7 y versiones posteriores, la longitud debe ser inferior a 32.699.  
-  
-Los argumentos se analizan e interpretan mediante la aplicación de destino, por lo que deben estar en línea con las expectativas de la aplicación. En las aplicaciones .NET, como se muestra en los ejemplos siguientes, los espacios se interpretan como una separación entre varios argumentos. Un solo argumento que incluye espacios debe incluirse entre comillas, pero las comillas no se llevan a cabo en la aplicación de destino. En las comillas incluidas en el argumento final analizado, se elude triplemente cada marca.</value>
+        <value>Cadena única que contiene los argumentos para pasar a la aplicación de destino especificada en la propiedad <see cref="P:System.Diagnostics.ProcessStartInfo.FileName" />. El valor predeterminado es una cadena vacía ("").</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[Si utiliza esta propiedad para establecer los argumentos de línea de comandos, <xref:System.Diagnostics.ProcessStartInfo.ArgumentList*> no debe contener todos los elementos.
+          <format type="text/markdown"><![CDATA[
+
+La longitud de la cadena asignada a la `Arguments` propiedad debe ser menor que 32,699.
   
+Los argumentos se analizan e interpretan mediante la aplicación de destino, por lo que deben estar en línea con las expectativas de la aplicación. Para las aplicaciones de .NET como se muestra en los ejemplos siguientes, los espacios se interpretan como un separador entre varios argumentos. Un solo argumento que incluye espacios debe incluirse entre comillas, pero las comillas no se llevan a cabo en la aplicación de destino. Para incluir las comillas en el argumento final analizado, triplemente cada marca.
+Si utiliza esta propiedad para establecer los argumentos de línea de comandos, <xref:System.Diagnostics.ProcessStartInfo.ArgumentList> no debe contener todos los elementos.
+  
+`Arguments` y <xref:System.Diagnostics.ProcessStartInfo.ArgumentList>, que se admite a partir de .NET Core 2.1 y 2.1 estándar. NET, son independientes entre sí. Es decir, la cadena asignada a la `Arguments` no rellena la propiedad la <xref:System.Diagnostics.ProcessStartInfo.ArgumentList> colección y los miembros de la <xref:System.Diagnostics.ProcessStartInfo.ArgumentList> colección no están asignados a la `Arguments` propiedad.
+
 ## Examples  
- El primer ejemplo siguiente crea una pequeña aplicación (argsecho.exe) que lo transmite de sus argumentos a la consola. El segundo ejemplo crea una aplicación que invoca argsecho.exe para demostrar las distintas variaciones de la propiedad de Arguments.  
+ El primer ejemplo crea una pequeña aplicación (argsecho.exe) que transmite sus argumentos a la consola. El segundo ejemplo crea una aplicación que invoca argsecho.exe para demostrar las distintas variaciones de la `Arguments` propiedad.  
   
  [!code-cpp[Process.Start_static#3](~/samples/snippets/cpp/VS_Snippets_CLR/Process.Start_static/CPP/processstartstatic.cpp#3)]
  [!code-csharp[Process.Start_static#3](~/samples/snippets/csharp/VS_Snippets_CLR/Process.Start_static/CS/processstartstatic.cs#3)]

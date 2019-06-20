@@ -1,5 +1,5 @@
 <Type Name="ProjectTargetFrameworkAttribute" FullName="System.ComponentModel.Design.ProjectTargetFrameworkAttribute">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="a68f3b0e12295496c869faf11c5d0c8a71addbc7" /><Meta Name="ms.sourcegitcommit" Value="2767b5903996fbd7e2b81eda1114dfc9d0d9db63" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/02/2019" /><Meta Name="ms.locfileid" Value="65000995" /></Metadata><TypeSignature Language="C#" Value="public sealed class ProjectTargetFrameworkAttribute : Attribute" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f000975135d1467846848fb205df32bc8c042279" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67241215" /></Metadata><TypeSignature Language="C#" Value="public sealed class ProjectTargetFrameworkAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProjectTargetFrameworkAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ProjectTargetFrameworkAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProjectTargetFrameworkAttribute&#xA;Inherits Attribute" />
@@ -18,15 +18,12 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Interface)</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netcore-3.0">
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Interface | System.AttributeTargets.Struct)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Especifica la plataforma de destino para un proyecto.</summary>
+    <summary>Especifica la versión de .NET Framework de destino de un proyecto.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -55,7 +52,7 @@
         <Parameter Name="targetFrameworkMoniker" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="targetFrameworkMoniker">La plataforma de destino para el proyecto.</param>
+        <param name="targetFrameworkMoniker">Versión de .NET Framework de destino del proyecto.</param>
         <summary>Inicializa una nueva instancia de la clase <see cref="T:System.ComponentModel.Design.ProjectTargetFrameworkAttribute" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -85,8 +82,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene la plataforma de destino para el proyecto.</summary>
-        <value>La plataforma de destino para el proyecto.</value>
+        <summary>Obtiene la versión de .NET Framework de destino del proyecto.</summary>
+        <value>Versión de .NET Framework de destino del proyecto.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

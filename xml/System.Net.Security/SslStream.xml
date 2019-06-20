@@ -1,5 +1,5 @@
 <Type Name="SslStream" FullName="System.Net.Security.SslStream">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3bd96220f9854c09c9943f8347355091f0552a52" /><Meta Name="ms.sourcegitcommit" Value="0b4deef443af9fe6334aa34b8a17190223bf0486" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/14/2019" /><Meta Name="ms.locfileid" Value="65609634" /></Metadata><TypeSignature Language="C#" Value="public class SslStream : System.Net.Security.AuthenticatedStream" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="834ebe680ae42dbf668b153a59750e0a313c3437" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67244379" /></Metadata><TypeSignature Language="C#" Value="public class SslStream : System.Net.Security.AuthenticatedStream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SslStream extends System.Net.Security.AuthenticatedStream implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Net.Security.SslStream" />
   <TypeSignature Language="VB.NET" Value="Public Class SslStream&#xA;Inherits AuthenticatedStream" />
@@ -149,7 +149,7 @@
         <Parameter Name="innerStream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="innerStream">Un <see cref="T:System.IO.Stream" /> objeto utilizado por el <see cref="T:System.Net.Security.SslStream" /> para enviar y recibir datos.</param>
+        <param name="innerStream">Objeto <see cref="T:System.IO.Stream" /> que la clase <see cref="T:System.Net.Security.SslStream" /> utiliza para enviar y recibir datos.</param>
         <summary>Inicializa una nueva instancia de la clase <see cref="T:System.Net.Security.SslStream" /> utilizando la clase <see cref="T:System.IO.Stream" /> especificada.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -163,11 +163,11 @@
         </remarks>
         <exception cref="T:System.ArgumentException">No se puede leer en <paramref name="innerStream" />.  
   
--o bien- 
+O bien 
  No se puede escribir en <paramref name="innerStream" />.</exception>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="innerStream" /> es <see langword="null" />.  
+        <exception cref="T:System.ArgumentNullException"><paramref name="innerStream" /> es <see langword="null" />.  
   
--o bien- 
+O bien 
  <paramref name="innerStream" /> es igual a <see cref="F:System.IO.Stream.Null" />.</exception>
       </Docs>
     </Member>
@@ -206,9 +206,9 @@
         <Parameter Name="leaveInnerStreamOpen" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="innerStream">Un <see cref="T:System.IO.Stream" /> objeto utilizado por el <see cref="T:System.Net.Security.SslStream" /> para enviar y recibir datos.</param>
-        <param name="leaveInnerStreamOpen">Un valor booleano que indica el comportamiento de cierre de la <see cref="T:System.IO.Stream" /> objeto utilizado por el <see cref="T:System.Net.Security.SslStream" /> para enviar y recibir datos. Este parámetro indica si la secuencia interna está abierta.</param>
-        <summary>Inicializa una nueva instancia de la <see cref="T:System.Net.Security.SslStream" /> usando la interfaz de clase <see cref="T:System.IO.Stream" /> y comportamiento de cierre de secuencias.</summary>
+        <param name="innerStream">Objeto <see cref="T:System.IO.Stream" /> que la clase <see cref="T:System.Net.Security.SslStream" /> utiliza para enviar y recibir datos.</param>
+        <param name="leaveInnerStreamOpen">Valor booleano que indica el comportamiento de cierre del objeto <see cref="T:System.IO.Stream" /> usado por <see cref="T:System.Net.Security.SslStream" /> para enviar y recibir datos. Este parámetro indica si se ha dejado abierta la secuencia interna.</param>
+        <summary>Inicializa una nueva instancia de la clase <see cref="T:System.Net.Security.SslStream" /> utilizando el objeto <see cref="T:System.IO.Stream" /> especificado y el comportamiento de cierre de secuencias.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -232,11 +232,11 @@
         </remarks>
         <exception cref="T:System.ArgumentException">No se puede leer en <paramref name="innerStream" />.  
   
--o bien- 
+O bien 
  No se puede escribir en <paramref name="innerStream" />.</exception>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="innerStream" /> es <see langword="null" />.  
+        <exception cref="T:System.ArgumentNullException"><paramref name="innerStream" /> es <see langword="null" />.  
   
--o bien- 
+O bien 
  <paramref name="innerStream" /> es igual a <see cref="F:System.IO.Stream.Null" />.</exception>
       </Docs>
     </Member>
@@ -276,10 +276,10 @@
         <Parameter Name="userCertificateValidationCallback" Type="System.Net.Security.RemoteCertificateValidationCallback" />
       </Parameters>
       <Docs>
-        <param name="innerStream">Un <see cref="T:System.IO.Stream" /> objeto utilizado por el <see cref="T:System.Net.Security.SslStream" /> para enviar y recibir datos.</param>
-        <param name="leaveInnerStreamOpen">Un valor booleano que indica el comportamiento de cierre de la <see cref="T:System.IO.Stream" /> objeto utilizado por el <see cref="T:System.Net.Security.SslStream" /> para enviar y recibir datos. Este parámetro indica si la secuencia interna está abierta.</param>
-        <param name="userCertificateValidationCallback">Un <see cref="T:System.Net.Security.RemoteCertificateValidationCallback" /> delegado responsable de validar el certificado proporcionado por la parte remota.</param>
-        <summary>Inicializa una nueva instancia de la <see cref="T:System.Net.Security.SslStream" /> usando la interfaz de clase <see cref="T:System.IO.Stream" />, comportamiento de cierre de secuencias y el delegado de validación de certificados.</summary>
+        <param name="innerStream">Objeto <see cref="T:System.IO.Stream" /> que la clase <see cref="T:System.Net.Security.SslStream" /> utiliza para enviar y recibir datos.</param>
+        <param name="leaveInnerStreamOpen">Valor booleano que indica el comportamiento de cierre del objeto <see cref="T:System.IO.Stream" /> usado por <see cref="T:System.Net.Security.SslStream" /> para enviar y recibir datos. Este parámetro indica si se ha dejado abierta la secuencia interna.</param>
+        <param name="userCertificateValidationCallback">Delegado de <see cref="T:System.Net.Security.RemoteCertificateValidationCallback" /> responsable de la validación del certificado proporcionado por la parte remota.</param>
+        <summary>Inicializa una nueva instancia de la clase <see cref="T:System.Net.Security.SslStream" /> utilizando el objeto <see cref="T:System.IO.Stream" />, el comportamiento de cierre de secuencias y el delegado de validación de certificados especificados.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -313,11 +313,11 @@
         </remarks>
         <exception cref="T:System.ArgumentException">No se puede leer en <paramref name="innerStream" />.  
   
--o bien- 
+O bien 
  No se puede escribir en <paramref name="innerStream" />.</exception>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="innerStream" /> es <see langword="null" />.  
+        <exception cref="T:System.ArgumentNullException"><paramref name="innerStream" /> es <see langword="null" />.  
   
--o bien- 
+O bien 
  <paramref name="innerStream" /> es igual a <see cref="F:System.IO.Stream.Null" />.</exception>
       </Docs>
     </Member>
@@ -358,11 +358,11 @@
         <Parameter Name="userCertificateSelectionCallback" Type="System.Net.Security.LocalCertificateSelectionCallback" />
       </Parameters>
       <Docs>
-        <param name="innerStream">Un <see cref="T:System.IO.Stream" /> objeto utilizado por el <see cref="T:System.Net.Security.SslStream" /> para enviar y recibir datos.</param>
-        <param name="leaveInnerStreamOpen">Un valor booleano que indica el comportamiento de cierre de la <see cref="T:System.IO.Stream" /> objeto utilizado por el <see cref="T:System.Net.Security.SslStream" /> para enviar y recibir datos. Este parámetro indica si la secuencia interna está abierta.</param>
-        <param name="userCertificateValidationCallback">Un <see cref="T:System.Net.Security.RemoteCertificateValidationCallback" /> delegado responsable de validar el certificado proporcionado por la parte remota.</param>
-        <param name="userCertificateSelectionCallback">Un <see cref="T:System.Net.Security.LocalCertificateSelectionCallback" /> delegado responsable de seleccionar el certificado usado para la autenticación.</param>
-        <summary>Inicializa una nueva instancia de la <see cref="T:System.Net.Security.SslStream" /> usando la interfaz de clase <see cref="T:System.IO.Stream" />, secuencias de comportamiento de cierre, el delegado de validación de certificado y el delegado de selección de certificado.</summary>
+        <param name="innerStream">Objeto <see cref="T:System.IO.Stream" /> que la clase <see cref="T:System.Net.Security.SslStream" /> utiliza para enviar y recibir datos.</param>
+        <param name="leaveInnerStreamOpen">Valor booleano que indica el comportamiento de cierre del objeto <see cref="T:System.IO.Stream" /> usado por <see cref="T:System.Net.Security.SslStream" /> para enviar y recibir datos. Este parámetro indica si se ha dejado abierta la secuencia interna.</param>
+        <param name="userCertificateValidationCallback">Delegado de <see cref="T:System.Net.Security.RemoteCertificateValidationCallback" /> responsable de la validación del certificado proporcionado por la parte remota.</param>
+        <param name="userCertificateSelectionCallback">Delegado de <see cref="T:System.Net.Security.LocalCertificateSelectionCallback" /> responsable de seleccionar el certificado utilizado para la autenticación.</param>
+        <summary>Inicializa una nueva instancia de la clase <see cref="T:System.Net.Security.SslStream" /> utilizando el objeto <see cref="T:System.IO.Stream" />, el delegado de validación de certificados y el delegado de selección de certificados especificados.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -395,11 +395,11 @@
         </remarks>
         <exception cref="T:System.ArgumentException">No se puede leer en <paramref name="innerStream" />.  
   
--o bien- 
+O bien 
  No se puede escribir en <paramref name="innerStream" />.</exception>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="innerStream" /> es <see langword="null" />.  
+        <exception cref="T:System.ArgumentNullException"><paramref name="innerStream" /> es <see langword="null" />.  
   
--o bien- 
+O bien 
  <paramref name="innerStream" /> es igual a <see cref="F:System.IO.Stream.Null" />.</exception>
       </Docs>
     </Member>
@@ -439,12 +439,12 @@
         <Parameter Name="encryptionPolicy" Type="System.Net.Security.EncryptionPolicy" Index="4" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="innerStream">Un <see cref="T:System.IO.Stream" /> objeto utilizado por el <see cref="T:System.Net.Security.SslStream" /> para enviar y recibir datos.</param>
-        <param name="leaveInnerStreamOpen">Un valor booleano que indica el comportamiento de cierre de la <see cref="T:System.IO.Stream" /> objeto utilizado por el <see cref="T:System.Net.Security.SslStream" /> para enviar y recibir datos. Este parámetro indica si la secuencia interna está abierta.</param>
-        <param name="userCertificateValidationCallback">Un <see cref="T:System.Net.Security.RemoteCertificateValidationCallback" /> delegado responsable de validar el certificado proporcionado por la parte remota.</param>
-        <param name="userCertificateSelectionCallback">Un <see cref="T:System.Net.Security.LocalCertificateSelectionCallback" /> delegado responsable de seleccionar el certificado usado para la autenticación.</param>
+        <param name="innerStream">Objeto <see cref="T:System.IO.Stream" /> que la clase <see cref="T:System.Net.Security.SslStream" /> utiliza para enviar y recibir datos.</param>
+        <param name="leaveInnerStreamOpen">Valor booleano que indica el comportamiento de cierre del objeto <see cref="T:System.IO.Stream" /> usado por <see cref="T:System.Net.Security.SslStream" /> para enviar y recibir datos. Este parámetro indica si se ha dejado abierta la secuencia interna.</param>
+        <param name="userCertificateValidationCallback">Delegado de <see cref="T:System.Net.Security.RemoteCertificateValidationCallback" /> responsable de la validación del certificado proporcionado por la parte remota.</param>
+        <param name="userCertificateSelectionCallback">Delegado de <see cref="T:System.Net.Security.LocalCertificateSelectionCallback" /> responsable de seleccionar el certificado utilizado para la autenticación.</param>
         <param name="encryptionPolicy">Objeto <see cref="T:System.Net.Security.EncryptionPolicy" /> que se va a usar.</param>
-        <summary>Inicializa una nueva instancia de la <see cref="T:System.Net.Security.SslStream" /> usando la interfaz de clase <see cref="T:System.IO.Stream" /></summary>
+        <summary>Inicializa una nueva instancia de la clase <see cref="T:System.Net.Security.SslStream" /> usando el objeto <see cref="T:System.IO.Stream" /> especificado.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -455,14 +455,14 @@
         </remarks>
         <exception cref="T:System.ArgumentException">No se puede leer en <paramref name="innerStream" />.  
   
--o bien- 
+O bien 
  No se puede escribir en <paramref name="innerStream" />.  
   
--o bien- 
+O bien 
  <paramref name="encryptionPolicy" /> no es válido.</exception>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="innerStream" /> es <see langword="null" />.  
+        <exception cref="T:System.ArgumentNullException"><paramref name="innerStream" /> es <see langword="null" />.  
   
--o bien- 
+O bien 
  <paramref name="innerStream" /> es igual a <see cref="F:System.IO.Stream.Null" />.</exception>
       </Docs>
     </Member>
@@ -473,7 +473,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Autenticar el cliente de una conexión cliente / servidor.</summary>
+        <summary>Autentique el cliente de una conexión cliente-servidor.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="AuthenticateAsClient">
@@ -524,14 +524,14 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="targetHost" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="targetHost" /> es <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">No se pudo realizar la autenticación y este objeto queda en un estado no utilizable.</exception>
         <exception cref="T:System.InvalidOperationException">Ya se ha producido la autenticación.  
   
--o bien- 
+O bien 
 La autenticación de servidor con esta <see cref="T:System.Net.Security.SslStream" /> se intentó con anterioridad.  
   
--o bien- 
+O bien 
 La autenticación ya está en curso.</exception>
         <exception cref="T:System.ObjectDisposedException">Este objeto se ha cerrado.</exception>
       </Docs>
@@ -626,7 +626,7 @@ La autenticación ya está en curso.</exception>
       <Docs>
         <param name="targetHost">El nombre del servidor que compartirá esta clase <see cref="T:System.Net.Security.SslStream" />.</param>
         <param name="clientCertificates">La clase <see cref="T:System.Security.Cryptography.X509Certificates.X509CertificateCollection" /> que contiene certificados de cliente.</param>
-        <param name="enabledSslProtocols">El <see cref="T:System.Security.Authentication.SslProtocols" /> valor que representa el protocolo utilizado para la autenticación.</param>
+        <param name="enabledSslProtocols">Valor de <see cref="T:System.Security.Authentication.SslProtocols" /> que representa el protocolo utilizado para la autenticación.</param>
         <param name="checkCertificateRevocation">Valor <see cref="T:System.Boolean" /> que especifica si se comprueba la lista de revocación de certificados durante la autenticación.</param>
         <summary>Lo llaman los clientes para autenticar el servidor y, de forma opcional, el cliente en una conexión cliente-servidor. El proceso de autenticación utiliza la colección de certificados especificada y el protocolo SSL.</summary>
         <remarks>
@@ -653,7 +653,7 @@ La autenticación ya está en curso.</exception>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Autenticar el cliente de una conexión cliente-servidor como una operación asincrónica.</summary>
+        <summary>Autentica el cliente de una conexión cliente-servidor como una operación asincrónica.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="AuthenticateAsClientAsync">
@@ -705,14 +705,14 @@ La autenticación ya está en curso.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="targetHost" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="targetHost" /> es <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">No se pudo realizar la autenticación y este objeto queda en un estado no utilizable.</exception>
         <exception cref="T:System.InvalidOperationException">Ya se ha producido la autenticación.  
   
--o bien- 
+O bien 
 La autenticación de servidor con esta <see cref="T:System.Net.Security.SslStream" /> se intentó con anterioridad.  
   
--o bien- 
+O bien 
 La autenticación ya está en curso.</exception>
         <exception cref="T:System.ObjectDisposedException">Este objeto se ha cerrado.</exception>
       </Docs>
@@ -841,7 +841,7 @@ La autenticación ya está en curso.</exception>
       <Docs>
         <param name="targetHost">El nombre del servidor que compartirá esta clase <see cref="T:System.Net.Security.SslStream" />.</param>
         <param name="clientCertificates">La clase <see cref="T:System.Security.Cryptography.X509Certificates.X509CertificateCollection" /> que contiene certificados de cliente.</param>
-        <param name="enabledSslProtocols">El <see cref="T:System.Security.Authentication.SslProtocols" /> valor que representa el protocolo utilizado para la autenticación.</param>
+        <param name="enabledSslProtocols">Valor de <see cref="T:System.Security.Authentication.SslProtocols" /> que representa el protocolo utilizado para la autenticación.</param>
         <param name="checkCertificateRevocation">Valor <see cref="T:System.Boolean" /> que especifica si se comprueba la lista de revocación de certificados durante la autenticación.</param>
         <summary>Lo llaman los clientes para autenticar el servidor y, de forma opcional, el cliente en una conexión cliente-servidor como operación asincrónica. El proceso de autenticación utiliza la colección de certificados especificada y el protocolo SSL.</summary>
         <returns>Objeto de tarea que representa la operación asincrónica.</returns>
@@ -869,7 +869,7 @@ La autenticación ya está en curso.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Lo llaman los servidores para autenticar el servidor y, opcionalmente, el cliente en una conexión cliente / servidor.</summary>
+        <summary>Lo llaman los servidores para autenticar el servidor, y opcionalmente el cliente, en una conexión cliente-servidor.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="AuthenticateAsServer">
@@ -911,8 +911,8 @@ La autenticación ya está en curso.</exception>
         <Parameter Name="serverCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="serverCertificate">El certificado usado para autenticar el servidor.</param>
-        <summary>Lo llaman los servidores para autenticar el servidor y, opcionalmente, el cliente en una conexión cliente-servidor utilizando el certificado especificado.</summary>
+        <param name="serverCertificate">Certificado utilizado para autenticar el servidor.</param>
+        <summary>Lo llaman los servidores para autenticar el servidor, y opcionalmente el cliente, en una conexión cliente-servidor utilizando el certificado especificado.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -925,14 +925,14 @@ La autenticación ya está en curso.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="serverCertificate" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="serverCertificate" /> es <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">No se pudo realizar la autenticación y este objeto queda en un estado no utilizable.</exception>
         <exception cref="T:System.InvalidOperationException">Ya se ha producido la autenticación.  
   
--o bien- 
+O bien 
 La autenticación de cliente con esta <see cref="T:System.Net.Security.SslStream" /> se intentó con anterioridad.  
   
--o bien- 
+O bien 
 La autenticación ya está en curso.</exception>
         <exception cref="T:System.ObjectDisposedException">Este objeto se ha cerrado.</exception>
         <exception cref="T:System.PlatformNotSupportedException">El método <see cref="Overload:System.Net.Security.SslStream.AuthenticateAsServer" /> no se admite en Windows 95, Windows 98 o Windows Millennium.</exception>
@@ -984,14 +984,14 @@ La autenticación ya está en curso.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="serverCertificate" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="serverCertificate" /> es <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">No se pudo realizar la autenticación y este objeto queda en un estado no utilizable.</exception>
         <exception cref="T:System.InvalidOperationException">Ya se ha producido la autenticación.  
   
--o bien- 
+O bien 
 La autenticación de cliente con esta <see cref="T:System.Net.Security.SslStream" /> se intentó con anterioridad.  
   
--o bien- 
+O bien 
 La autenticación ya está en curso.</exception>
         <exception cref="T:System.ObjectDisposedException">Este objeto se ha cerrado.</exception>
         <exception cref="T:System.PlatformNotSupportedException">El método <see cref="Overload:System.Net.Security.SslStream.AuthenticateAsServer" /> no se admite en Windows 95, Windows 98 o Windows Millennium.</exception>
@@ -1036,7 +1036,7 @@ La autenticación ya está en curso.</exception>
       <Docs>
         <param name="serverCertificate">X509Certificate utilizado para autenticar el servidor.</param>
         <param name="clientCertificateRequired">Valor <see cref="T:System.Boolean" /> que especifica si se le pide al cliente un certificado para la autenticación. Tenga en cuenta que esto es solo una solicitud; si no se proporciona ningún certificado, el servidor todavía acepta la solicitud de conexión.</param>
-        <param name="enabledSslProtocols">El <see cref="T:System.Security.Authentication.SslProtocols" /> valor que representa el protocolo utilizado para la autenticación.</param>
+        <param name="enabledSslProtocols">Valor de <see cref="T:System.Security.Authentication.SslProtocols" /> que representa el protocolo utilizado para la autenticación.</param>
         <param name="checkCertificateRevocation">Valor <see cref="T:System.Boolean" /> que especifica si se comprueba la lista de revocación de certificados durante la autenticación.</param>
         <summary>Los llaman los servidores para autenticar el servidor y, opcionalmente, el cliente en una conexión cliente/servidor mediante los certificados, los requisitos y el protocolo de seguridad.</summary>
         <remarks>
@@ -1051,15 +1051,15 @@ La autenticación ya está en curso.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="serverCertificate" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="serverCertificate" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="enabledSslProtocols" /> no es un valor <see cref="T:System.Security.Authentication.SslProtocols" /> válido.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">No se pudo realizar la autenticación y este objeto queda en un estado no utilizable.</exception>
         <exception cref="T:System.InvalidOperationException">Ya se ha producido la autenticación.  
   
--o bien- 
+O bien 
 La autenticación de cliente con esta <see cref="T:System.Net.Security.SslStream" /> se intentó con anterioridad.  
   
--o bien- 
+O bien 
 La autenticación ya está en curso.</exception>
         <exception cref="T:System.ObjectDisposedException">Este objeto se ha cerrado.</exception>
         <exception cref="T:System.PlatformNotSupportedException">El método <see cref="Overload:System.Net.Security.SslStream.AuthenticateAsServer" /> no se admite en Windows 95, Windows 98 o Windows Millennium.</exception>
@@ -1072,7 +1072,7 @@ La autenticación ya está en curso.</exception>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Lo llaman los servidores para autenticar el servidor y, opcionalmente, el cliente en una conexión cliente-servidor como una operación asincrónica.</summary>
+        <summary>Lo llaman los servidores con el fin de autenticar el servidor, y opcionalmente el cliente, en una conexión cliente-servidor como una operación asincrónica.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="AuthenticateAsServerAsync">
@@ -1109,8 +1109,8 @@ La autenticación ya está en curso.</exception>
         <Parameter Name="serverCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="serverCertificate">El certificado usado para autenticar el servidor.</param>
-        <summary>Lo llaman los servidores para autenticar el servidor y, opcionalmente, el cliente en una conexión cliente-servidor utilizando el certificado especificado como una operación asincrónica.</summary>
+        <param name="serverCertificate">Certificado utilizado para autenticar el servidor.</param>
+        <summary>Lo llaman los servidores para autenticar el servidor, y opcionalmente el cliente, en una conexión cliente-servidor utilizando el certificado especificado como una operación asincrónica.</summary>
         <returns>Objeto de tarea que representa la operación asincrónica.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1124,14 +1124,14 @@ La autenticación ya está en curso.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="serverCertificate" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="serverCertificate" /> es <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">No se pudo realizar la autenticación y este objeto queda en un estado no utilizable.</exception>
         <exception cref="T:System.InvalidOperationException">Ya se ha producido la autenticación.  
   
--o bien- 
+O bien 
 La autenticación de cliente con esta <see cref="T:System.Net.Security.SslStream" /> se intentó con anterioridad.  
   
--o bien- 
+O bien 
 La autenticación ya está en curso.</exception>
         <exception cref="T:System.ObjectDisposedException">Este objeto se ha cerrado.</exception>
         <exception cref="T:System.PlatformNotSupportedException">El método <see cref="Overload:System.Net.Security.SslStream.AuthenticateAsServerAsync" /> no se admite en Windows 95, Windows 98 o Windows Millennium.</exception>
@@ -1256,7 +1256,7 @@ La autenticación ya está en curso.</exception>
       <Docs>
         <param name="serverCertificate">X509Certificate utilizado para autenticar el servidor.</param>
         <param name="clientCertificateRequired">Valor <see cref="T:System.Boolean" /> que especifica si se le pide al cliente un certificado para la autenticación. Tenga en cuenta que esto es solo una solicitud; si no se proporciona ningún certificado, el servidor todavía acepta la solicitud de conexión.</param>
-        <param name="enabledSslProtocols">El <see cref="T:System.Security.Authentication.SslProtocols" /> valor que representa el protocolo utilizado para la autenticación.</param>
+        <param name="enabledSslProtocols">Valor de <see cref="T:System.Security.Authentication.SslProtocols" /> que representa el protocolo utilizado para la autenticación.</param>
         <param name="checkCertificateRevocation">Valor <see cref="T:System.Boolean" /> que especifica si se comprueba la lista de revocación de certificados durante la autenticación.</param>
         <summary>Los llaman los servidores para autenticar el servidor y, opcionalmente, el cliente en una conexión cliente/servidor mediante los certificados, los requisitos y el protocolo de seguridad especificados como una operación asincrónica.</summary>
         <returns>Objeto de tarea que representa la operación asincrónica.</returns>
@@ -1279,7 +1279,7 @@ La autenticación ya está en curso.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Comienza una operación para autenticar el cliente de una conexión cliente / servidor.</summary>
+        <summary>Comienza una operación para autenticar el cliente de una conexión cliente-servidor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1328,7 +1328,7 @@ La autenticación ya está en curso.</exception>
         <param name="targetHost">El nombre del servidor que comparte esta clase <see cref="T:System.Net.Security.SslStream" />.</param>
         <param name="asyncCallback">Delegado de <see cref="T:System.AsyncCallback" /> que hace referencia al método que se invocará cuando la autenticación se complete.</param>
         <param name="asyncState">Objeto definido por el usuario que contiene información sobre la operación. Este objeto se pasa al delegado de <paramref name="asyncCallback" /> cuando la operación ha terminado.</param>
-        <summary>Llamado por los clientes para comenzar una operación asincrónica para autenticar el servidor y, opcionalmente, el cliente.</summary>
+        <summary>Lo llaman clientes para empezar una operación asincrónica con el fin de autenticar el servidor y opcionalmente el cliente.</summary>
         <returns>Un objeto <see cref="T:System.IAsyncResult" /> que indica el estado de la operación asincrónica.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1348,14 +1348,14 @@ La autenticación ya está en curso.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="targetHost" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="targetHost" /> es <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">No se pudo realizar la autenticación y este objeto queda en un estado no utilizable.</exception>
         <exception cref="T:System.InvalidOperationException">Ya se ha producido la autenticación.  
   
--o bien- 
+O bien 
 La autenticación de servidor con esta <see cref="T:System.Net.Security.SslStream" /> se intentó con anterioridad.  
   
--o bien- 
+O bien 
 La autenticación ya está en curso.</exception>
         <exception cref="T:System.ObjectDisposedException">Este objeto se ha cerrado.</exception>
       </Docs>
@@ -1419,14 +1419,14 @@ La autenticación ya está en curso.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="targetHost" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="targetHost" /> es <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">No se pudo realizar la autenticación y este objeto queda en un estado no utilizable.</exception>
         <exception cref="T:System.InvalidOperationException">Ya se ha producido la autenticación.  
   
--o bien- 
+O bien 
 La autenticación de servidor con esta <see cref="T:System.Net.Security.SslStream" /> se intentó con anterioridad.  
   
--o bien- 
+O bien 
 La autenticación ya está en curso.</exception>
         <exception cref="T:System.ObjectDisposedException">Este objeto se ha cerrado.</exception>
       </Docs>
@@ -1471,11 +1471,11 @@ La autenticación ya está en curso.</exception>
       <Docs>
         <param name="targetHost">El nombre del servidor que comparte esta clase <see cref="T:System.Net.Security.SslStream" />.</param>
         <param name="clientCertificates">La clase <see cref="T:System.Security.Cryptography.X509Certificates.X509CertificateCollection" /> que contiene certificados de cliente.</param>
-        <param name="enabledSslProtocols">El <see cref="T:System.Security.Authentication.SslProtocols" /> valor que representa el protocolo utilizado para la autenticación.</param>
+        <param name="enabledSslProtocols">Valor de <see cref="T:System.Security.Authentication.SslProtocols" /> que representa el protocolo utilizado para la autenticación.</param>
         <param name="checkCertificateRevocation">Valor <see cref="T:System.Boolean" /> que especifica si se comprueba la lista de revocación de certificados durante la autenticación.</param>
         <param name="asyncCallback">Delegado de <see cref="T:System.AsyncCallback" /> que hace referencia al método que se invocará cuando la autenticación se complete.</param>
         <param name="asyncState">Objeto definido por el usuario que contiene información sobre la operación. Este objeto se pasa al delegado de <paramref name="asyncCallback" /> cuando la operación ha terminado.</param>
-        <summary>Llamado por los clientes para comenzar una operación asincrónica para autenticar el servidor y, opcionalmente, el cliente mediante el protocolo de seguridad y certificados especificados.</summary>
+        <summary>Lo llaman los clientes para empezar una operación asincrónica con el fin de autenticar el servidor y, opcionalmente el cliente, mediante los certificados, los requisitos y el protocolo de seguridad especificados.</summary>
         <returns>Un objeto <see cref="T:System.IAsyncResult" /> que indica el estado de la operación asincrónica.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1498,15 +1498,15 @@ La autenticación ya está en curso.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="targetHost" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="targetHost" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="enabledSslProtocols" /> no es un valor <see cref="T:System.Security.Authentication.SslProtocols" /> válido.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">No se pudo realizar la autenticación y este objeto queda en un estado no utilizable.</exception>
         <exception cref="T:System.InvalidOperationException">Ya se ha producido la autenticación.  
   
--o bien- 
+O bien 
 La autenticación de servidor con esta <see cref="T:System.Net.Security.SslStream" /> se intentó con anterioridad.  
   
--o bien- 
+O bien 
 La autenticación ya está en curso.</exception>
         <exception cref="T:System.ObjectDisposedException">Este objeto se ha cerrado.</exception>
       </Docs>
@@ -1518,7 +1518,7 @@ La autenticación ya está en curso.</exception>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Comienza una operación asincrónica para controlar la autenticación del servidor de una conexión cliente / servidor.</summary>
+        <summary>Comienza una operación asincrónica para controlar la autenticación del servidor de una conexión cliente-servidor.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1572,8 +1572,8 @@ La autenticación ya está en curso.</exception>
         <param name="serverCertificate">X509Certificate utilizado para autenticar el servidor.</param>
         <param name="asyncCallback">Delegado de <see cref="T:System.AsyncCallback" /> que hace referencia al método que se invocará cuando la autenticación se complete.</param>
         <param name="asyncState">Objeto definido por el usuario que contiene información sobre la operación. Este objeto se pasa al delegado de <paramref name="asyncCallback" /> cuando la operación ha terminado.</param>
-        <summary>Lo llaman los servidores para comenzar una operación asincrónica para autenticar al cliente y, opcionalmente, el servidor en una conexión cliente / servidor.</summary>
-        <returns>Un <see cref="T:System.IAsyncResult" /> objeto que indica el estado de la operación asincrónica.</returns>
+        <summary>Lo llaman los servidores para comenzar una operación asincrónica con el fin de autenticar el cliente, y opcionalmente el servidor, en una conexión cliente-servidor.</summary>
+        <returns>Objeto <see cref="T:System.IAsyncResult" /> que indica el estado de la operación asincrónica.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1590,14 +1590,14 @@ La autenticación ya está en curso.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="serverCertificate" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="serverCertificate" /> es <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">No se pudo realizar la autenticación y este objeto queda en un estado no utilizable.</exception>
         <exception cref="T:System.InvalidOperationException">Ya se ha producido la autenticación.  
   
--o bien- 
+O bien 
 La autenticación de cliente con esta <see cref="T:System.Net.Security.SslStream" /> se intentó con anterioridad.  
   
--o bien- 
+O bien 
 La autenticación ya está en curso.</exception>
         <exception cref="T:System.ObjectDisposedException">Este objeto se ha cerrado.</exception>
         <exception cref="T:System.PlatformNotSupportedException">El método <see cref="Overload:System.Net.Security.SslStream.BeginAuthenticateAsServer" /> no se admite en Windows 95, Windows 98 o Windows Millennium.</exception>
@@ -1657,14 +1657,14 @@ La autenticación ya está en curso.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="serverCertificate" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="serverCertificate" /> es <see langword="null" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">No se pudo realizar la autenticación y este objeto queda en un estado no utilizable.</exception>
         <exception cref="T:System.InvalidOperationException">Ya se ha producido la autenticación.  
   
--o bien- 
+O bien 
 La autenticación de servidor con esta <see cref="T:System.Net.Security.SslStream" /> se intentó con anterioridad.  
   
--o bien- 
+O bien 
 La autenticación ya está en curso.</exception>
         <exception cref="T:System.ObjectDisposedException">Este objeto se ha cerrado.</exception>
         <exception cref="T:System.PlatformNotSupportedException">El método <see cref="Overload:System.Net.Security.SslStream.BeginAuthenticateAsServer" /> no se admite en Windows 95, Windows 98 o Windows Millennium.</exception>
@@ -1710,7 +1710,7 @@ La autenticación ya está en curso.</exception>
       <Docs>
         <param name="serverCertificate">X509Certificate utilizado para autenticar el servidor.</param>
         <param name="clientCertificateRequired">Valor <see cref="T:System.Boolean" /> que especifica si se le pide al cliente un certificado para la autenticación. Tenga en cuenta que esto es solo una solicitud; si no se proporciona ningún certificado, el servidor todavía acepta la solicitud de conexión.</param>
-        <param name="enabledSslProtocols">El <see cref="T:System.Security.Authentication.SslProtocols" /> valor que representa el protocolo utilizado para la autenticación.</param>
+        <param name="enabledSslProtocols">Valor de <see cref="T:System.Security.Authentication.SslProtocols" /> que representa el protocolo utilizado para la autenticación.</param>
         <param name="checkCertificateRevocation">Valor <see cref="T:System.Boolean" /> que especifica si se comprueba la lista de revocación de certificados durante la autenticación.</param>
         <param name="asyncCallback">Delegado de <see cref="T:System.AsyncCallback" /> que hace referencia al método que se invocará cuando la autenticación se complete.</param>
         <param name="asyncState">Objeto definido por el usuario que contiene información sobre la operación. Este objeto se pasa al delegado de <paramref name="asyncCallback" /> cuando la operación ha terminado.</param>
@@ -1732,15 +1732,15 @@ La autenticación ya está en curso.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="serverCertificate" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="serverCertificate" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="enabledSslProtocols" /> no es un valor <see cref="T:System.Security.Authentication.SslProtocols" /> válido.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">No se pudo realizar la autenticación y este objeto queda en un estado no utilizable.</exception>
         <exception cref="T:System.InvalidOperationException">Ya se ha producido la autenticación.  
   
--o bien- 
+O bien 
 La autenticación de servidor con esta <see cref="T:System.Net.Security.SslStream" /> se intentó con anterioridad.  
   
--o bien- 
+O bien 
 La autenticación ya está en curso.</exception>
         <exception cref="T:System.ObjectDisposedException">Este objeto se ha cerrado.</exception>
         <exception cref="T:System.PlatformNotSupportedException">El método <see cref="Overload:System.Net.Security.SslStream.BeginAuthenticateAsServer" /> no se admite en Windows 95, Windows 98 o Windows Millennium.</exception>
@@ -1783,12 +1783,12 @@ La autenticación ya está en curso.</exception>
         <Parameter Name="asyncState" Type="System.Object" Index="4" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="buffer">Un <see cref="T:System.Byte" /> matriz que recibe los bytes leídos de la secuencia.</param>
-        <param name="offset">La ubicación de base cero en <paramref name="buffer" /> donde se comienzan a almacenar los datos leídos de esta secuencia.</param>
-        <param name="count">El número máximo de bytes que se leen de la secuencia.</param>
-        <param name="asyncCallback">Un <see cref="T:System.AsyncCallback" /> delegado que hace referencia al método para invocar una vez completada la operación de lectura.</param>
-        <param name="asyncState">Un objeto definido por el usuario que contiene información sobre la operación de lectura. Este objeto se pasa al delegado de <paramref name="asyncCallback" /> cuando la operación ha terminado.</param>
-        <summary>Comienza una operación de lectura asincrónica que lee datos de la secuencia y lo almacena en la matriz especificada.</summary>
+        <param name="buffer">Matriz <see cref="T:System.Byte" /> que recibe los bytes leídos de la secuencia.</param>
+        <param name="offset">Posición de base cero de <paramref name="buffer" /> donde se comienzan a almacenar los datos leídos de esta secuencia.</param>
+        <param name="count">Número máximo de bytes que se van a leer de la secuencia.</param>
+        <param name="asyncCallback">Delegado de <see cref="T:System.AsyncCallback" /> que hace referencia al método que se va a invocar una vez finalizada la operación de lectura.</param>
+        <param name="asyncState">Objeto definido por el usuario que contiene información sobre la operación de lectura. Este objeto se pasa al delegado de <paramref name="asyncCallback" /> cuando la operación ha terminado.</param>
+        <summary>Inicia una operación de lectura asincrónica que lee los datos de la secuencia y los almacena en la matriz especificada.</summary>
         <returns>Un objeto <see cref="T:System.IAsyncResult" /> que indica el estado de la operación asincrónica.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1826,19 +1826,20 @@ La autenticación ya está en curso.</exception>
 
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="buffer" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="offset" />
           <paramref name="&lt;" />
           <paramref name="0" />.  
   
  <paramref name="-or-" /><paramref name="offset" /> &gt; la longitud de <paramref name="buffer" />.  
   
--o bien- 
+O bien 
  <paramref name="offset" /> + count &gt; la longitud de <paramref name="buffer" />.</exception>
-        <exception cref="T:System.IO.IOException">Error en la operación de lectura.  
+        <exception cref="T:System.IO.IOException">Se ha producido un error en la operación de lectura.  
   
--o bien- 
-El cifrado está en uso, pero no se podrían descifrar los datos.</exception>
+ O bien  
+  
+ El cifrado está en uso, pero los datos no se pudieron descifrar.</exception>
         <exception cref="T:System.NotSupportedException">Ya hay una operación de lectura en curso.</exception>
         <exception cref="T:System.ObjectDisposedException">Este objeto se ha cerrado.</exception>
         <exception cref="T:System.InvalidOperationException">No se ha producido la autenticación.</exception>
@@ -1881,13 +1882,13 @@ El cifrado está en uso, pero no se podrían descifrar los datos.</exception>
         <Parameter Name="asyncState" Type="System.Object" Index="4" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="buffer">Un <see cref="T:System.Byte" /> matriz que proporciona los bytes se escriban en la secuencia.</param>
+        <param name="buffer">Matriz <see cref="T:System.Byte" /> que proporciona los bytes que se van a escribir en la secuencia.</param>
         <param name="offset">La ubicación de base cero de <paramref name="buffer" /> en la que se va a empezar a leer los bytes que se van a escribir en la secuencia.</param>
-        <param name="count">Un <see cref="T:System.Int32" /> valor que especifica el número de bytes que se leen desde <paramref name="buffer" />.</param>
-        <param name="asyncCallback">Un <see cref="T:System.AsyncCallback" /> delegado que hace referencia al método para invocar una vez completada la operación de escritura.</param>
-        <param name="asyncState">Un objeto definido por el usuario que contiene información sobre la operación de escritura. Este objeto se pasa al delegado de <paramref name="asyncCallback" /> cuando la operación ha terminado.</param>
-        <summary>Comienza una operación de escritura asincrónica que escribe <see cref="T:System.Byte" />s desde el búfer especificado en la secuencia.</summary>
-        <returns>Un <see cref="T:System.IAsyncResult" /> objeto que indica el estado de la operación asincrónica.</returns>
+        <param name="count">Valor de <see cref="T:System.Int32" /> que especifica el número de bytes que se van a al leer desde <paramref name="buffer" />.</param>
+        <param name="asyncCallback">Delegado de <see cref="T:System.AsyncCallback" /> que hace referencia al método que se va a invocar una vez finalizada la operación de escritura.</param>
+        <param name="asyncState">Objeto definido por el usuario que contiene información sobre la operación de escritura. Este objeto se pasa al delegado de <paramref name="asyncCallback" /> cuando la operación ha terminado.</param>
+        <summary>Inicia una operación de escritura asincrónica que escribe <see cref="T:System.Byte" />s desde el búfer especificado en la secuencia.</summary>
+        <returns>Objeto <see cref="T:System.IAsyncResult" /> que indica el estado de la operación asincrónica.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1899,16 +1900,16 @@ El cifrado está en uso, pero no se podrían descifrar los datos.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="buffer" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="offset" />
           <paramref name="&lt;" />
           <paramref name="0" />.  
   
  <paramref name="-or-" /><paramref name="offset" /> &gt; la longitud de <paramref name="buffer" />.  
   
--o bien- 
+O bien 
  <paramref name="offset" /> + count &gt; la longitud de <paramref name="buffer" />.</exception>
-        <exception cref="T:System.IO.IOException">Error en la operación de escritura.</exception>
+        <exception cref="T:System.IO.IOException">No se pudo realizar la operación de escritura.</exception>
         <exception cref="T:System.NotSupportedException">Ya hay una operación de escritura en curso.</exception>
         <exception cref="T:System.ObjectDisposedException">Este objeto se ha cerrado.</exception>
         <exception cref="T:System.InvalidOperationException">No se ha producido la autenticación.</exception>
@@ -1946,8 +1947,8 @@ El cifrado está en uso, pero no se podrían descifrar los datos.</exception>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:System.Boolean" /> valor que indica si la secuencia subyacente es legible.</summary>
-        <value><see langword="true" /> Si se produjo la autenticación y la secuencia subyacente es legible; en caso contrario <see langword="false" />.</value>
+        <summary>Obtiene un valor <see cref="T:System.Boolean" /> que indica si se puede leer la secuencia subyacente.</summary>
+        <value>Es <see langword="true" /> si se produjo la autenticación y se puede leer la secuencia subyacente; en caso contrario, es <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1998,7 +1999,7 @@ El cifrado está en uso, pero no se podrían descifrar los datos.</exception>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:System.Boolean" /> valor que indica si se puede buscar la secuencia subyacente.</summary>
+        <summary>Obtiene un valor <see cref="T:System.Boolean" /> que indica si se puede buscar en la secuencia subyacente.</summary>
         <value>Esta propiedad devuelve siempre <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2046,8 +2047,8 @@ El cifrado está en uso, pero no se podrían descifrar los datos.</exception>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:System.Boolean" /> valor que indica si la secuencia subyacente admite tiempos de espera.</summary>
-        <value><see langword="true" /> Si la secuencia subyacente admite tiempos de espera; en caso contrario, <see langword="false" />.</value>
+        <summary>Obtiene un valor <see cref="T:System.Boolean" /> que indica si la secuencia subyacente admite tiempos de espera.</summary>
+        <value>Es <see langword="true" /> si la secuencia subyacente admite tiempos de espera; en caso contrario, es <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2101,8 +2102,8 @@ El cifrado está en uso, pero no se podrían descifrar los datos.</exception>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:System.Boolean" /> valor que indica si se puede escribir la secuencia subyacente.</summary>
-        <value><see langword="true" /> Si se produjo la autenticación y la secuencia subyacente es modificable; en caso contrario <see langword="false" />.</value>
+        <summary>Obtiene un valor <see cref="T:System.Boolean" /> que indica si se puede escribir en la secuencia subyacente.</summary>
+        <value>Es <see langword="true" /> si se produjo la autenticación y se puede escribir en la secuencia subyacente; en caso contrario, es <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2156,7 +2157,7 @@ El cifrado está en uso, pero no se podrían descifrar los datos.</exception>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:System.Boolean" /> valor que indica si la lista de revocación de certificados se coteja durante el proceso de validación de certificados.</summary>
+        <summary>Obtiene un valor <see cref="T:System.Boolean" /> que indica si la lista de revocación de certificados se coteja durante el proceso de validación de certificados.</summary>
         <value>Es <see langword="true" /> si la lista de revocación de certificados se comprueba; en caso contrario, es <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2209,7 +2210,7 @@ El cifrado está en uso, pero no se podrían descifrar los datos.</exception>
         <ReturnType>System.Security.Authentication.CipherAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un valor que identifica el algoritmo de cifrado masivo utilizado por esta <see cref="T:System.Net.Security.SslStream" />.</summary>
+        <summary>Obtiene un valor que identifica el algoritmo de cifrado masivo utilizado por esta secuencia <see cref="T:System.Net.Security.SslStream" />.</summary>
         <value>Un valor que identifica el algoritmo de cifrado masivo utilizado por esta <see cref="T:System.Net.Security.SslStream" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2230,7 +2231,7 @@ El cifrado está en uso, pero no se podrían descifrar los datos.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="P:System.Net.Security.SslStream.CipherAlgorithm" /> se tiene acceso a propiedad antes de que no se pudo finalizar el proceso de autenticación o el proceso de autenticación.</exception>
+        <exception cref="T:System.InvalidOperationException">Se ha tenido acceso a la propiedad <see cref="P:System.Net.Security.SslStream.CipherAlgorithm" /> antes de finalizar el proceso de autenticación o se ha producido un error de dicho proceso.</exception>
       </Docs>
     </Member>
     <Member MemberName="CipherStrength">
@@ -2265,8 +2266,8 @@ El cifrado está en uso, pero no se podrían descifrar los datos.</exception>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un valor que identifica la intensidad del algoritmo de cifrado usado por este <see cref="T:System.Net.Security.SslStream" />.</summary>
-        <value>Un <see cref="T:System.Int32" /> valor que especifica la intensidad del algoritmo, en bits.</value>
+        <summary>Obtiene un valor que identifica la intensidad del algoritmo de cifrado utilizado por esta secuencia <see cref="T:System.Net.Security.SslStream" />.</summary>
+        <value>Valor de <see cref="T:System.Int32" /> que especifica la intensidad del algoritmo, en bits.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2416,8 +2417,8 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
         <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">Un <see cref="T:System.IAsyncResult" /> instancia devuelta por una llamada a <see cref="Overload:System.Net.Security.SslStream.BeginAuthenticateAsClient" />.</param>
-        <summary>Finaliza una operación de autenticación de servidor asincrónica iniciada con una llamada anterior a <see cref="Overload:System.Net.Security.SslStream.BeginAuthenticateAsClient" />.</summary>
+        <param name="asyncResult">Una instancia <see cref="T:System.IAsyncResult" /> devuelta por una llamada a <see cref="Overload:System.Net.Security.SslStream.BeginAuthenticateAsClient" />.</param>
+        <summary>Finaliza una operación de autenticación de servidor asincrónica iniciada con una llamada previa a <see cref="Overload:System.Net.Security.SslStream.BeginAuthenticateAsClient" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2430,10 +2431,10 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="asyncResult" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="asyncResult" /> no se creó mediante una llamada a <see cref="Overload:System.Net.Security.SslStream.BeginAuthenticateAsClient" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="asyncResult" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">El parámetro <paramref name="asyncResult" /> no se creó mediante una llamada a <see cref="Overload:System.Net.Security.SslStream.BeginAuthenticateAsClient" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">No se pudo realizar la autenticación y este objeto queda en un estado no utilizable.</exception>
-        <exception cref="T:System.InvalidOperationException">No hay ninguna autenticación de servidor para completar.</exception>
+        <exception cref="T:System.InvalidOperationException">No queda ninguna autenticación de servidor sin finalizar.</exception>
       </Docs>
     </Member>
     <Member MemberName="EndAuthenticateAsServer">
@@ -2470,8 +2471,8 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
         <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">Un <see cref="T:System.IAsyncResult" /> instancia devuelta por una llamada a <see cref="Overload:System.Net.Security.SslStream.BeginAuthenticateAsClient" />.</param>
-        <summary>Finaliza una operación de autenticación de cliente asincrónica pendiente iniciada con una llamada anterior a <see cref="Overload:System.Net.Security.SslStream.BeginAuthenticateAsClient" />.</summary>
+        <param name="asyncResult">Una instancia <see cref="T:System.IAsyncResult" /> devuelta por una llamada a <see cref="Overload:System.Net.Security.SslStream.BeginAuthenticateAsClient" />.</param>
+        <summary>Finaliza una operación de autenticación de cliente asincrónica iniciada con una llamada previa a <see cref="Overload:System.Net.Security.SslStream.BeginAuthenticateAsClient" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2484,10 +2485,10 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="asyncResult" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="asyncResult" /> no se creó mediante una llamada a <see cref="Overload:System.Net.Security.SslStream.BeginAuthenticateAsClient" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="asyncResult" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">El parámetro <paramref name="asyncResult" /> no se creó mediante una llamada a <see cref="Overload:System.Net.Security.SslStream.BeginAuthenticateAsClient" />.</exception>
         <exception cref="T:System.Security.Authentication.AuthenticationException">No se pudo realizar la autenticación y este objeto queda en un estado no utilizable.</exception>
-        <exception cref="T:System.InvalidOperationException">No hay ninguna autenticación de cliente pendientes en completarse.</exception>
+        <exception cref="T:System.InvalidOperationException">No queda ninguna autenticación de cliente sin finalizar.</exception>
       </Docs>
     </Member>
     <Member MemberName="EndRead">
@@ -2524,9 +2525,9 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
         <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">Un <see cref="T:System.IAsyncResult" /> instancia devuelta por una llamada a <see cref="M:System.Net.Security.SslStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /></param>
-        <summary>Finaliza una operación de lectura asincrónica iniciada con una llamada anterior a <see cref="M:System.Net.Security.SslStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />.</summary>
-        <returns>Un <see cref="T:System.Int32" /> valor que especifica el número de bytes leídos de la secuencia subyacente.</returns>
+        <param name="asyncResult">Una instancia <see cref="T:System.IAsyncResult" /> devuelta por una llamada a <see cref="M:System.Net.Security.SslStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /></param>
+        <summary>Finaliza una operación de lectura asincrónica iniciada con una llamada previa a <see cref="M:System.Net.Security.SslStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />.</summary>
+        <returns>Valor <see cref="T:System.Int32" /> que especifica el número de bytes leídos de la secuencia subyacente.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2548,14 +2549,14 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
 
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="asyncResult" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="asyncResult" /> no se creó mediante una llamada a <see cref="M:System.Net.Security.SslStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />.</exception>
-        <exception cref="T:System.InvalidOperationException">No hay ninguna operación de lectura en completarse.
+        <exception cref="T:System.ArgumentNullException"><paramref name="asyncResult" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">El parámetro <paramref name="asyncResult" /> no se creó mediante una llamada a <see cref="M:System.Net.Security.SslStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />.</exception>
+        <exception cref="T:System.InvalidOperationException">No queda ninguna operación de lectura sin finalizar.
 
--o bien-
+O bien
 
 No se ha producido la autenticación.</exception>
-        <exception cref="T:System.IO.IOException">Error en la operación de lectura.</exception>
+        <exception cref="T:System.IO.IOException">Se ha producido un error en la operación de lectura.</exception>
       </Docs>
     </Member>
     <Member MemberName="EndWrite">
@@ -2592,8 +2593,8 @@ No se ha producido la autenticación.</exception>
         <Parameter Name="asyncResult" Type="System.IAsyncResult" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">Un <see cref="T:System.IAsyncResult" /> instancia devuelta por una llamada a <see cref="M:System.Net.Security.SslStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /></param>
-        <summary>Finaliza una operación de escritura asincrónica iniciada con una llamada anterior a <see cref="M:System.Net.Security.SslStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />.</summary>
+        <param name="asyncResult">Una instancia <see cref="T:System.IAsyncResult" /> devuelta por una llamada a <see cref="M:System.Net.Security.SslStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" /></param>
+        <summary>Finaliza una operación de escritura asincrónica iniciada con una llamada previa a <see cref="M:System.Net.Security.SslStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2614,14 +2615,14 @@ No se ha producido la autenticación.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="asyncResult" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="asyncResult" /> no se creó mediante una llamada a <see cref="M:System.Net.Security.SslStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />.</exception>
-        <exception cref="T:System.InvalidOperationException">No hay ninguna operación de escritura pendiente de finalizar.
+        <exception cref="T:System.ArgumentNullException"><paramref name="asyncResult" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">El parámetro <paramref name="asyncResult" /> no se creó mediante una llamada a <see cref="M:System.Net.Security.SslStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />.</exception>
+        <exception cref="T:System.InvalidOperationException">No queda ninguna operación de escritura sin finalizar.
 
--o bien-
+O bien
 
 No se ha producido la autenticación.</exception>
-        <exception cref="T:System.IO.IOException">Error en la operación de escritura.</exception>
+        <exception cref="T:System.IO.IOException">No se pudo realizar la operación de escritura.</exception>
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -2657,7 +2658,7 @@ No se ha producido la autenticación.</exception>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Hace que los datos almacenados en búfer se escriban en el dispositivo subyacente.</summary>
+        <summary>Provoca la escritura de los datos almacenados en el búfer del dispositivo subyacente.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2741,7 +2742,7 @@ No se ha producido la autenticación.</exception>
         <ReturnType>System.Security.Authentication.HashAlgorithmType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el algoritmo utilizado para generar códigos de autenticación de mensajes (Mac).</summary>
+        <summary>Obtiene el algoritmo utilizado para generar códigos de autenticación de mensajes (MAC).</summary>
         <value>El algoritmo utilizado para generar códigos de autenticación de mensajes (Mac).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2760,7 +2761,7 @@ No se ha producido la autenticación.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="P:System.Net.Security.SslStream.HashAlgorithm" /> se tiene acceso a propiedad antes de que no se pudo finalizar el proceso de autenticación o el proceso de autenticación.</exception>
+        <exception cref="T:System.InvalidOperationException">Se ha tenido acceso a la propiedad <see cref="P:System.Net.Security.SslStream.HashAlgorithm" /> antes de finalizar el proceso de autenticación o se ha producido un error de dicho proceso.</exception>
       </Docs>
     </Member>
     <Member MemberName="HashStrength">
@@ -2795,8 +2796,8 @@ No se ha producido la autenticación.</exception>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un valor que identifica la intensidad del algoritmo hash utilizado por esta instancia.</summary>
-        <value>Un <see cref="T:System.Int32" /> valor que especifica la intensidad de la <see cref="T:System.Security.Authentication.HashAlgorithmType" /> algoritmo, en bits. Los valores válidos son 128 ó 160.</value>
+        <summary>Obtiene un valor que identifica la intensidad del algoritmo de hash utilizado por esta instancia.</summary>
+        <value>Valor <see cref="T:System.Int32" /> que especifica la intensidad del algoritmo <see cref="T:System.Security.Authentication.HashAlgorithmType" />, en bits. Los valores válidos son 128 ó 160.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2848,8 +2849,8 @@ No se ha producido la autenticación.</exception>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:System.Boolean" /> valor que indica si la autenticación fue correcta.</summary>
-        <value><see langword="true" /> Si se produce una autenticación correcta; en caso contrario, <see langword="false" />.</value>
+        <summary>Obtiene un valor <see cref="T:System.Boolean" /> que indica si la autenticación se realizó correctamente.</summary>
+        <value>Es <see langword="true" /> si la autenticación se realizó correctamente; en caso contrario, es <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2901,8 +2902,8 @@ No se ha producido la autenticación.</exception>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:System.Boolean" /> valor que indica si este <see cref="T:System.Net.Security.SslStream" /> usa el cifrado de datos.</summary>
-        <value><see langword="true" /> Si los datos se cifran antes de transmitirse a través de la red y se descifran al llegar al extremo remoto; en caso contrario <see langword="false" />.</value>
+        <summary>Obtiene un valor <see cref="T:System.Boolean" /> que indica si esta clase <see cref="T:System.Net.Security.SslStream" /> utiliza el cifrado de datos.</summary>
+        <value>Es <see langword="true" /> si los datos se cifran antes de transmitirse a través de la red y se descifran al llegar al extremo remoto; en caso contrario, es <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2954,8 +2955,8 @@ No se ha producido la autenticación.</exception>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:System.Boolean" /> valor que indica si se ha autenticado el servidor y cliente.</summary>
-        <value><see langword="true" /> Si se ha autenticado el servidor; en caso contrario <see langword="false" />.</value>
+        <summary>Obtiene un valor de <see cref="T:System.Boolean" /> que indica si se autenticaron tanto el cliente como el servidor.</summary>
+        <value>Es <see langword="true" /> si se ha autenticado el servidor; en caso contrario, es <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3009,8 +3010,8 @@ No se ha producido la autenticación.</exception>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:System.Boolean" /> valor que indica si el lado local de la conexión usa esto <see cref="T:System.Net.Security.SslStream" /> se autenticó como el servidor.</summary>
-        <value><see langword="true" /> Si el extremo local se autenticó correctamente como el lado del servidor de la conexión autenticada; en caso contrario <see langword="false" />.</value>
+        <summary>Obtiene un valor <see cref="T:System.Boolean" /> que indica si el lado local de la conexión utilizada por <see cref="T:System.Net.Security.SslStream" /> se autenticó como el servidor.</summary>
+        <value>Es <see langword="true" /> si el extremo local se autenticó correctamente como servidor de la conexión autenticada; en caso contrario, es <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3064,8 +3065,8 @@ No se ha producido la autenticación.</exception>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un <see cref="T:System.Boolean" /> valor que indica si los datos enviados utilizando esta secuencia está firmados.</summary>
-        <value><see langword="true" /> Si los datos se firman antes de transmitirse; en caso contrario <see langword="false" />.</value>
+        <summary>Obtiene un valor <see cref="T:System.Boolean" /> que indica si los datos enviados utilizando esta secuencia tienen signo.</summary>
+        <value>Es <see langword="true" /> si los datos se firman antes de transmitirse; en caso contrario, es <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3173,7 +3174,7 @@ No se ha producido la autenticación.</exception>
       </ReturnValue>
       <Docs>
         <summary>Obtiene un valor que identifica la intensidad del algoritmo de intercambio de claves utilizado por esta instancia.</summary>
-        <value>Un <see cref="T:System.Int32" /> valor que especifica la intensidad de la <see cref="T:System.Security.Authentication.ExchangeAlgorithmType" /> algoritmo, en bits.</value>
+        <value>Valor <see cref="T:System.Int32" /> que especifica la intensidad del algoritmo <see cref="T:System.Security.Authentication.ExchangeAlgorithmType" />, en bits.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3236,7 +3237,7 @@ No se ha producido la autenticación.</exception>
       </ReturnValue>
       <Docs>
         <summary>Obtiene la longitud de la secuencia subyacente.</summary>
-        <value>La longitud de la secuencia subyacente.</value>
+        <value>Longitud de la secuencia subyacente.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3245,7 +3246,7 @@ No se ha producido la autenticación.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotSupportedException">Obtener el valor de esta propiedad no se admite cuando la secuencia subyacente es un <see cref="T:System.Net.Sockets.NetworkStream" />.</exception>
+        <exception cref="T:System.NotSupportedException">La obtención del valor de esta propiedad no se admite cuando la secuencia subyacente es una <see cref="T:System.Net.Sockets.NetworkStream" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="LocalCertificate">
@@ -3281,7 +3282,7 @@ No se ha producido la autenticación.</exception>
       </ReturnValue>
       <Docs>
         <summary>Obtiene el certificado utilizado para autenticar el extremo local.</summary>
-        <value>Un objeto X509Certificate que representa el certificado proporcionado para autenticación o <see langword="null" /> si se ha proporcionado ningún certificado.</value>
+        <value>Objeto X509Certificate que representa el certificado proporcionado para autenticación o <see langword="null" /> si no se proporciona ningún certificado.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3294,7 +3295,7 @@ No se ha producido la autenticación.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">Autenticación no se pudo o no se ha producido.</exception>
+        <exception cref="T:System.InvalidOperationException">Se produjo un error de autenticación o ésta no se produjo.</exception>
       </Docs>
     </Member>
     <Member MemberName="NegotiatedApplicationProtocol">
@@ -3396,10 +3397,10 @@ No se ha producido la autenticación.</exception>
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotSupportedException">Al establecer esta propiedad no se admite.  
+        <exception cref="T:System.NotSupportedException">No se admite el establecimiento de esta propiedad.  
   
--o bien- 
-Obtener el valor de esta propiedad no se admite cuando la secuencia subyacente es un <see cref="T:System.Net.Sockets.NetworkStream" />.</exception>
+O bien 
+La obtención del valor de esta propiedad no se admite cuando la secuencia subyacente es una <see cref="T:System.Net.Sockets.NetworkStream" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -3439,11 +3440,11 @@ Obtener el valor de esta propiedad no se admite cuando la secuencia subyacente e
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">Un <see cref="T:System.Byte" /> matriz que recibe los bytes leídos de esta secuencia.</param>
-        <param name="offset">Un <see cref="T:System.Int32" /> que contiene la ubicación de base cero en <paramref name="buffer" /> donde se comienzan a almacenar los datos leídos de esta secuencia.</param>
-        <param name="count">Un <see cref="T:System.Int32" /> que contiene el número máximo de bytes que se lee en esta secuencia.</param>
-        <summary>Lee datos de esta secuencia y lo almacena en la matriz especificada.</summary>
-        <returns>Un <see cref="T:System.Int32" /> valor que especifica el número de bytes leídos. Cuando no hay ningún dato más para leerse, devuelve 0.</returns>
+        <param name="buffer">Matriz de <see cref="T:System.Byte" /> que recibe los bytes leídos de esta secuencia.</param>
+        <param name="offset"><see cref="T:System.Int32" /> que contiene la posición de base cero de <paramref name="buffer" /> donde se empiezan a almacenar los datos leídos de esta secuencia.</param>
+        <param name="count"><see cref="T:System.Int32" /> que contiene un número máximo de bytes que se van a leer de esta secuencia.</param>
+        <summary>Lee datos de esta secuencia y los almacena en la matriz especificada.</summary>
+        <returns>Valor de <see cref="T:System.Int32" /> que especifica el número de bytes leídos. Cuando ya no quedan datos por leer, devuelve 0.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3465,16 +3466,16 @@ Obtener el valor de esta propiedad no se admite cuando la secuencia subyacente e
 
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="buffer" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="offset" />
           <paramref name="&lt;" />
           <paramref name="0" />.  
   
  <paramref name="-or-" /><paramref name="offset" /> &gt; la longitud de <paramref name="buffer" />.  
   
--o bien- 
+O bien 
  <paramref name="offset" /> + count &gt; la longitud de <paramref name="buffer" />.</exception>
-        <exception cref="T:System.IO.IOException">Error en la operación de lectura. Compruebe la excepción interna, si está presente para determinar la causa del error.</exception>
+        <exception cref="T:System.IO.IOException">Se ha producido un error en la operación de lectura. Compruebe la excepción interna, si existe para determinar la causa del error.</exception>
         <exception cref="T:System.NotSupportedException">Ya hay una operación de lectura en curso.</exception>
         <exception cref="T:System.ObjectDisposedException">Este objeto se ha cerrado.</exception>
         <exception cref="T:System.InvalidOperationException">No se ha producido la autenticación.</exception>
@@ -3607,7 +3608,7 @@ Obtener el valor de esta propiedad no se admite cuando la secuencia subyacente e
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece la cantidad de tiempo que una operación de lectura bloquea mientras espera datos.</summary>
+        <summary>Obtiene o establece el período de tiempo que se bloquea una operación de lectura mientras espera datos.</summary>
         <value>Se produce un error en la cantidad de tiempo que transcurre antes de operación de lectura sincrónica.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3663,7 +3664,7 @@ Obtener el valor de esta propiedad no se admite cuando la secuencia subyacente e
       </ReturnValue>
       <Docs>
         <summary>Obtiene el certificado utilizado para autenticar el extremo remoto.</summary>
-        <value>Un objeto X509Certificate que representa el certificado proporcionado para autenticación o <see langword="null" /> si se ha proporcionado ningún certificado.</value>
+        <value>Objeto X509Certificate que representa el certificado proporcionado para autenticación o <see langword="null" /> si no se proporciona ningún certificado.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3676,7 +3677,7 @@ Obtener el valor de esta propiedad no se admite cuando la secuencia subyacente e
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">Autenticación no se pudo o no se ha producido.</exception>
+        <exception cref="T:System.InvalidOperationException">Se produjo un error de autenticación o ésta no se produjo.</exception>
       </Docs>
     </Member>
     <Member MemberName="Seek">
@@ -3715,7 +3716,7 @@ Obtener el valor de esta propiedad no se admite cuando la secuencia subyacente e
         <param name="offset">Este valor se omite.</param>
         <param name="origin">Este valor se omite.</param>
         <summary>Produce una excepción <see cref="T:System.NotSupportedException" />.</summary>
-        <returns>Siempre inicia una <see cref="T:System.NotSupportedException" />.</returns>
+        <returns>Siempre inicia una excepción <see cref="T:System.NotSupportedException" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3724,7 +3725,7 @@ Obtener el valor de esta propiedad no se admite cuando la secuencia subyacente e
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.NotSupportedException">No se admite la búsqueda por <see cref="T:System.Net.Security.SslStream" /> objetos.</exception>
+        <exception cref="T:System.NotSupportedException">Los objetos <see cref="T:System.Net.Security.SslStream" /> no admiten búsquedas.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetLength">
@@ -3762,7 +3763,7 @@ Obtener el valor de esta propiedad no se admite cuando la secuencia subyacente e
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
-        <param name="value">Un <see cref="T:System.Int64" /> valor que especifica la longitud de la secuencia.</param>
+        <param name="value">Valor de <see cref="T:System.Int64" /> que especifica la longitud de la secuencia.</param>
         <summary>Establece la longitud de la secuencia subyacente.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3838,7 +3839,7 @@ Obtener el valor de esta propiedad no se admite cuando la secuencia subyacente e
       </ReturnValue>
       <Docs>
         <summary>Obtiene un valor que indica el protocolo de seguridad utilizado para autenticar esta conexión.</summary>
-        <value>El <see cref="T:System.Security.Authentication.SslProtocols" /> valor que representa el protocolo utilizado para la autenticación.</value>
+        <value>Valor de <see cref="T:System.Security.Authentication.SslProtocols" /> que representa el protocolo utilizado para la autenticación.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3890,8 +3891,8 @@ Obtener el valor de esta propiedad no se admite cuando la secuencia subyacente e
         <ReturnType>System.Net.TransportContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el <see cref="T:System.Net.TransportContext" /> utilizado para la autenticación mediante la protección extendida.</summary>
-        <value>La <see cref="T:System.Net.TransportContext" /> objeto que contiene el token de enlace de canal (CBT) utilizado para la protección extendida.</value>
+        <summary>Obtiene el objeto <see cref="T:System.Net.TransportContext" /> utilizado para la autenticación utilizando la protección extendida.</summary>
+        <value>El objeto <see cref="T:System.Net.TransportContext" /> que contiene el token de enlace de canal (CBT) utilizado para la protección extendida.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Security.Authentication.ExtendedProtection.ChannelBinding" />
         <related type="Article" href="~/docs/framework/network-programming/integrated-windows-authentication-with-extended-protection.md">Autenticación de Windows integrada con protección ampliada</related>
@@ -3942,7 +3943,7 @@ Obtener el valor de esta propiedad no se admite cuando la secuencia subyacente e
         <Parameter Name="buffer" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="buffer">Un <see cref="T:System.Byte" /> matriz que proporciona los bytes escritos en la secuencia.</param>
+        <param name="buffer">Matriz de <see cref="T:System.Byte" /> que proporciona los bytes escritos en la secuencia.</param>
         <summary>Escribe los datos especificados en esta secuencia.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3965,8 +3966,8 @@ Obtener el valor de esta propiedad no se admite cuando la secuencia subyacente e
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="buffer" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.IO.IOException">Error en la operación de escritura.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.IO.IOException">No se pudo realizar la operación de escritura.</exception>
         <exception cref="T:System.NotSupportedException">Ya hay una operación de escritura en curso.</exception>
         <exception cref="T:System.ObjectDisposedException">Este objeto se ha cerrado.</exception>
         <exception cref="T:System.InvalidOperationException">No se ha producido la autenticación.</exception>
@@ -4009,10 +4010,10 @@ Obtener el valor de esta propiedad no se admite cuando la secuencia subyacente e
         <Parameter Name="count" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">Un <see cref="T:System.Byte" /> matriz que proporciona los bytes escritos en la secuencia.</param>
-        <param name="offset">Un <see cref="T:System.Int32" /> que contiene la ubicación de base cero en <paramref name="buffer" /> donde se comienzan a leer los bytes que se escriben en la secuencia.</param>
-        <param name="count">Un <see cref="T:System.Int32" /> que contiene el número de bytes que se leen <paramref name="buffer" />.</param>
-        <summary>Escriba el número especificado de <see cref="T:System.Byte" />s en la secuencia subyacente mediante el búfer especificado y el desplazamiento.</summary>
+        <param name="buffer">Matriz de <see cref="T:System.Byte" /> que proporciona los bytes escritos en la secuencia.</param>
+        <param name="offset"><see cref="T:System.Int32" /> que contiene la ubicación de base cero de <paramref name="buffer" /> donde empieza la lectura de los bytes que se van a escribir en la secuencia.</param>
+        <param name="count"><see cref="T:System.Int32" /> que contiene un número de bytes que se van a leer del <paramref name="buffer" />.</param>
+        <summary>Escriba el número especificado de <see cref="T:System.Byte" />s en la secuencia subyacente mediante el búfer y el desplazamiento especificados.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4025,16 +4026,16 @@ Obtener el valor de esta propiedad no se admite cuando la secuencia subyacente e
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="buffer" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="offset" />
           <paramref name="&lt;" />
           <paramref name="0" />.  
   
  <paramref name="-or-" /><paramref name="offset" /> &gt; la longitud de <paramref name="buffer" />.  
   
--o bien- 
+O bien 
  <paramref name="offset" /> + count &gt; la longitud de <paramref name="buffer" />.</exception>
-        <exception cref="T:System.IO.IOException">Error en la operación de escritura.</exception>
+        <exception cref="T:System.IO.IOException">No se pudo realizar la operación de escritura.</exception>
         <exception cref="T:System.NotSupportedException">Ya hay una operación de escritura en curso.</exception>
         <exception cref="T:System.ObjectDisposedException">Este objeto se ha cerrado.</exception>
         <exception cref="T:System.InvalidOperationException">No se ha producido la autenticación.</exception>
@@ -4139,7 +4140,7 @@ Obtener el valor de esta propiedad no se admite cuando la secuencia subyacente e
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece la cantidad de tiempo que una operación de escritura bloquea mientras espera datos.</summary>
+        <summary>Obtiene o establece el período de tiempo que se bloquea una operación de escritura mientras espera datos.</summary>
         <value>La cantidad de tiempo que transcurre antes de que se produce un error en una operación de escritura sincrónica.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

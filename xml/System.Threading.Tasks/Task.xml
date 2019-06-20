@@ -1,5 +1,5 @@
 <Type Name="Task" FullName="System.Threading.Tasks.Task">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="398b44801e870ca6454ac741f9a2c20b26ee3f96" /><Meta Name="ms.sourcegitcommit" Value="2767b5903996fbd7e2b81eda1114dfc9d0d9db63" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/02/2019" /><Meta Name="ms.locfileid" Value="65014256" /></Metadata><TypeSignature Language="C#" Value="public class Task : IAsyncResult, IDisposable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1b3a892e619a7f6b33870dc717111e8aa3c53be5" /><Meta Name="ms.sourcegitcommit" Value="b70421b26e0c5afdfde405f0a610fcabac2bb088" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/18/2019" /><Meta Name="ms.locfileid" Value="67169499" /></Metadata><TypeSignature Language="C#" Value="public class Task : IAsyncResult, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Task extends System.Object implements class System.IAsyncResult, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Task" />
   <TypeSignature Language="VB.NET" Value="Public Class Task&#xA;Implements IAsyncResult, IDisposable" />
@@ -194,7 +194,7 @@
         <Parameter Name="action" Type="System.Action" />
       </Parameters>
       <Docs>
-        <param name="action">Delegado que representa el código que se va a ejecutar en la tarea.</param>
+        <param name="action">El delegado que representa el código que se va a ejecutar en la tarea.</param>
         <summary>Inicializa una nueva instancia de <see cref="T:System.Threading.Tasks.Task" /> con la acción especificada.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -257,9 +257,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="action">Delegado que representa el código que se va a ejecutar en la tarea.</param>
+        <param name="action">El delegado que representa el código que se va a ejecutar en la tarea.</param>
         <param name="cancellationToken">El <see cref="T:System.Threading.CancellationToken" /> que observará la nueva tarea.</param>
-        <summary>Inicializa una nueva instancia de <see cref="T:System.Threading.Tasks.Task" /> con la acción especificada y <see cref="T:System.Threading.CancellationToken" />.</summary>
+        <summary>Inicializa una nueva instancia de <see cref="T:System.Threading.Tasks.Task" /> con la acción y <see cref="T:System.Threading.CancellationToken" /> especificados.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -278,7 +278,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">Ya se eliminó el <see cref="T:System.Threading.CancellationToken" /> proporcionado.</exception>
+        <exception cref="T:System.ObjectDisposedException">El <see cref="T:System.Threading.CancellationToken" /> proporcionado ya se ha eliminado.</exception>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="action" /> es null.</exception>
       </Docs>
     </Member>
@@ -314,7 +314,7 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <param name="action">Delegado que representa el código que se va a ejecutar en la tarea.</param>
+        <param name="action">El delegado que representa el código que se va a ejecutar en la tarea.</param>
         <param name="creationOptions">El objeto <see cref="T:System.Threading.Tasks.TaskCreationOptions" /> que se usa para personalizar el comportamiento de la tarea.</param>
         <summary>Inicializa un nuevo objeto <see cref="T:System.Threading.Tasks.Task" /> con la acción y las opciones de creación especificadas.</summary>
         <remarks>
@@ -326,7 +326,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="action" /> es null.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El <paramref name="creationOptions" /> argumento especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskCreationOptions" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El argumento <paramref name="creationOptions" /> especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskCreationOptions" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -362,9 +362,9 @@
         <Parameter Name="state" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="action">Delegado que representa el código que se va a ejecutar en la tarea.</param>
+        <param name="action">El delegado que representa el código que se va a ejecutar en la tarea.</param>
         <param name="state">Objeto que representa los datos que la acción va a usar.</param>
-        <summary>Inicializa una nueva instancia de <see cref="T:System.Threading.Tasks.Task" /> con la acción y el estado especificados.</summary>
+        <summary>Inicializa un nuevo objeto <see cref="T:System.Threading.Tasks.Task" /> con la acción y el estado especificados.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -418,8 +418,8 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <param name="action">Delegado que representa el código que se va a ejecutar en la tarea.</param>
-        <param name="cancellationToken">El <see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> que observará la nueva tarea.</param>
+        <param name="action">El delegado que representa el código que se va a ejecutar en la tarea.</param>
+        <param name="cancellationToken"><see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> que la nueva tarea observará.</param>
         <param name="creationOptions">El objeto <see cref="T:System.Threading.Tasks.TaskCreationOptions" /> que se usa para personalizar el comportamiento de la tarea.</param>
         <summary>Inicializa un nuevo objeto <see cref="T:System.Threading.Tasks.Task" /> con la acción y las opciones de creación especificadas.</summary>
         <remarks>
@@ -432,9 +432,9 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">El <see cref="T:System.Threading.CancellationTokenSource" /> creados <paramref name="cancellationToken" /> ya se ha desechado.</exception>
+        <exception cref="T:System.ObjectDisposedException">El <see cref="T:System.Threading.CancellationTokenSource" /> que creó <paramref name="cancellationToken" /> ya se ha eliminado.</exception>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="action" /> es null.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El <paramref name="creationOptions" /> argumento especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskCreationOptions" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El argumento <paramref name="creationOptions" /> especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskCreationOptions" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -470,9 +470,9 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="action">Delegado que representa el código que se va a ejecutar en la tarea.</param>
+        <param name="action">El delegado que representa el código que se va a ejecutar en la tarea.</param>
         <param name="state">Objeto que representa los datos que la acción va a usar.</param>
-        <param name="cancellationToken">El <see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> que observará la nueva tarea.</param>
+        <param name="cancellationToken"><see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> que la nueva tarea observará.</param>
         <summary>Inicializa un nuevo objeto <see cref="T:System.Threading.Tasks.Task" /> con la acción, el estado y las opciones especificados.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -482,7 +482,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">El <see cref="T:System.Threading.CancellationTokenSource" /> creados <paramref name="cancellationToken" /> ya se ha desechado.</exception>
+        <exception cref="T:System.ObjectDisposedException">El <see cref="T:System.Threading.CancellationTokenSource" /> que creó <paramref name="cancellationToken" /> ya se ha eliminado.</exception>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="action" /> es null.</exception>
       </Docs>
     </Member>
@@ -520,7 +520,7 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <param name="action">Delegado que representa el código que se va a ejecutar en la tarea.</param>
+        <param name="action">El delegado que representa el código que se va a ejecutar en la tarea.</param>
         <param name="state">Objeto que representa los datos que la acción va a usar.</param>
         <param name="creationOptions">El objeto <see cref="T:System.Threading.Tasks.TaskCreationOptions" /> que se usa para personalizar el comportamiento de la tarea.</param>
         <summary>Inicializa un nuevo objeto <see cref="T:System.Threading.Tasks.Task" /> con la acción, el estado y las opciones especificados.</summary>
@@ -533,7 +533,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="action" /> es null.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El <paramref name="creationOptions" /> argumento especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskCreationOptions" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El argumento <paramref name="creationOptions" /> especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskCreationOptions" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -570,9 +570,9 @@
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
       </Parameters>
       <Docs>
-        <param name="action">Delegado que representa el código que se va a ejecutar en la tarea.</param>
+        <param name="action">El delegado que representa el código que se va a ejecutar en la tarea.</param>
         <param name="state">Objeto que representa los datos que la acción va a usar.</param>
-        <param name="cancellationToken">El <see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> que observará la nueva tarea.</param>
+        <param name="cancellationToken"><see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> que la nueva tarea observará.</param>
         <param name="creationOptions">El objeto <see cref="T:System.Threading.Tasks.TaskCreationOptions" /> que se usa para personalizar el comportamiento de la tarea.</param>
         <summary>Inicializa un nuevo objeto <see cref="T:System.Threading.Tasks.Task" /> con la acción, el estado y las opciones especificados.</summary>
         <remarks>
@@ -583,9 +583,9 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">El <see cref="T:System.Threading.CancellationTokenSource" /> creados <paramref name="cancellationToken" /> ya se ha desechado.</exception>
+        <exception cref="T:System.ObjectDisposedException">El <see cref="T:System.Threading.CancellationTokenSource" /> que creó <paramref name="cancellationToken" /> ya se ha eliminado.</exception>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="action" /> es null.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El <paramref name="creationOptions" /> argumento especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskCreationOptions" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El argumento <paramref name="creationOptions" /> especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskCreationOptions" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsyncState">
@@ -885,7 +885,7 @@
       </Parameters>
       <Docs>
         <param name="continuationAction">Acción que se va a ejecutar cuando se complete el objeto <see cref="T:System.Threading.Tasks.Task" />. Cuando se ejecute, al delegado se le pasará la tarea completada como un argumento.</param>
-        <param name="cancellationToken"><see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> que se asignará a la nueva tarea de continuación.</param>
+        <param name="cancellationToken"><see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> que se va a asignar a la nueva tarea de continuación.</param>
         <summary>Crea una continuación que recibe un token de cancelación y se ejecuta de forma asincrónica cuando el elemento <see cref="T:System.Threading.Tasks.Task" /> de destino se completa.</summary>
         <returns>Nuevo objeto <see cref="T:System.Threading.Tasks.Task" /> de continuación.</returns>
         <remarks>
@@ -896,7 +896,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">El <see cref="T:System.Threading.CancellationTokenSource" /> que creó el token ya se ha desechado.</exception>
+        <exception cref="T:System.ObjectDisposedException">El <see cref="T:System.Threading.CancellationTokenSource" /> que creó el token ya se ha eliminado.</exception>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="continuationAction" /> es null.</exception>
       </Docs>
     </Member>
@@ -936,7 +936,7 @@
         <Parameter Name="continuationOptions" Type="System.Threading.Tasks.TaskContinuationOptions" />
       </Parameters>
       <Docs>
-        <param name="continuationAction">Una acción para ejecutarse según el <paramref name="continuationOptions" /> especificado. Cuando se ejecute, al delegado se le pasará la tarea completada como un argumento.</param>
+        <param name="continuationAction">Una acción para ejecutarse según el <paramref name="continuationOptions" />especificado. Cuando se ejecute, al delegado se le pasará la tarea completada como un argumento.</param>
         <param name="continuationOptions">Opciones para la programación y el comportamiento de la continuación. Incluye criterios, como <see cref="F:System.Threading.Tasks.TaskContinuationOptions.OnlyOnCanceled" />, y opciones de ejecución, como <see cref="F:System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously" />.</param>
         <summary>Crea una continuación que se ejecuta cuando se completa la tarea de destino según el elemento <see cref="T:System.Threading.Tasks.TaskContinuationOptions" /> especificado.</summary>
         <returns>Nuevo objeto <see cref="T:System.Threading.Tasks.Task" /> de continuación.</returns>
@@ -995,7 +995,7 @@ End Class
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="continuationAction" /> es null.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El <paramref name="continuationOptions" /> argumento especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El argumento <paramref name="continuationOptions" /> especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith">
@@ -1049,7 +1049,7 @@ End Class
         <exception cref="T:System.ObjectDisposedException">Se ha eliminado <see cref="T:System.Threading.Tasks.Task" />.</exception>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="continuationAction" /> es <see langword="null" />.  
   
--o bien- 
+O bien 
 El argumento <paramref name="scheduler" /> es null.</exception>
       </Docs>
     </Member>
@@ -1091,7 +1091,7 @@ El argumento <paramref name="scheduler" /> es null.</exception>
       <Docs>
         <param name="continuationAction">Acción que se va a ejecutar cuando se complete el objeto <see cref="T:System.Threading.Tasks.Task" />. Cuando se ejecute, se pasarán al delegado la tarea completada y el objeto de estado proporcionado por el llamador como argumentos.</param>
         <param name="state">Objeto que representa los datos que la acción de continuación va a usar.</param>
-        <param name="cancellationToken"><see cref="T:System.Threading.CancellationToken" /> que se asignará a la nueva tarea de continuación.</param>
+        <param name="cancellationToken"><see cref="T:System.Threading.CancellationToken" /> que se va a asignar a la nueva tarea de continuación.</param>
         <summary>Crea una continuación que recibe información de estado proporcionada por el autor de la llamada y un token de cancelación y que se ejecuta de forma asincrónica cuando el elemento <see cref="T:System.Threading.Tasks.Task" /> de destino se completa.</summary>
         <returns>Nuevo objeto <see cref="T:System.Threading.Tasks.Task" /> de continuación.</returns>
         <remarks>
@@ -1103,7 +1103,7 @@ El argumento <paramref name="scheduler" /> es null.</exception>
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="continuationAction" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">Ya se eliminó el <see cref="T:System.Threading.CancellationToken" /> proporcionado.</exception>
+        <exception cref="T:System.ObjectDisposedException">El <see cref="T:System.Threading.CancellationToken" /> proporcionado ya se ha eliminado.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith">
@@ -1157,7 +1157,7 @@ El argumento <paramref name="scheduler" /> es null.</exception>
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="continuationAction" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El <paramref name="continuationOptions" /> argumento especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El argumento <paramref name="continuationOptions" /> especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith">
@@ -1250,8 +1250,8 @@ El argumento <paramref name="scheduler" /> es null.</exception>
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
       <Docs>
-        <param name="continuationAction">Una acción para ejecutarse según el <paramref name="continuationOptions" /> especificado. Cuando se ejecute, al delegado se le pasará la tarea completada como un argumento.</param>
-        <param name="cancellationToken"><see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> que se asignará a la nueva tarea de continuación.</param>
+        <param name="continuationAction">Una acción para ejecutarse según el <paramref name="continuationOptions" />especificado. Cuando se ejecute, al delegado se le pasará la tarea completada como un argumento.</param>
+        <param name="cancellationToken"><see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> que se va a asignar a la nueva tarea de continuación.</param>
         <param name="continuationOptions">Opciones para la programación y el comportamiento de la continuación. Incluye criterios, como <see cref="F:System.Threading.Tasks.TaskContinuationOptions.OnlyOnCanceled" />, y opciones de ejecución, como <see cref="F:System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously" />.</param>
         <param name="scheduler">Objeto <see cref="T:System.Threading.Tasks.TaskScheduler" /> que se va a asociar a la tarea de continuación y se va a usar para su ejecución.</param>
         <summary>Crea una continuación que se ejecuta cuando se completa la tarea de destino según el elemento <see cref="T:System.Threading.Tasks.TaskContinuationOptions" /> especificado. La continuación recibe un token de cancelación y usa un programador especificado.</summary>
@@ -1305,12 +1305,12 @@ End Sub
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">El <see cref="T:System.Threading.CancellationTokenSource" /> que creó el token ya se ha desechado.</exception>
+        <exception cref="T:System.ObjectDisposedException">El <see cref="T:System.Threading.CancellationTokenSource" /> que creó el token ya se ha eliminado.</exception>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="continuationAction" /> es null.  
   
--o bien- 
+O bien 
 El argumento <paramref name="scheduler" /> es null.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El <paramref name="continuationOptions" /> argumento especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El argumento <paramref name="continuationOptions" /> especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith">
@@ -1353,7 +1353,7 @@ El argumento <paramref name="scheduler" /> es null.</exception>
       <Docs>
         <param name="continuationAction">Acción que se va a ejecutar cuando se complete el objeto <see cref="T:System.Threading.Tasks.Task" />. Cuando se ejecute, se pasarán al delegado la tarea completada y el objeto de estado proporcionado por el llamador como argumentos.</param>
         <param name="state">Objeto que representa los datos que la acción de continuación va a usar.</param>
-        <param name="cancellationToken"><see cref="T:System.Threading.CancellationToken" /> que se asignará a la nueva tarea de continuación.</param>
+        <param name="cancellationToken"><see cref="T:System.Threading.CancellationToken" /> que se va a asignar a la nueva tarea de continuación.</param>
         <param name="continuationOptions">Opciones para la programación y el comportamiento de la continuación. Incluye criterios, como <see cref="F:System.Threading.Tasks.TaskContinuationOptions.OnlyOnCanceled" />, y opciones de ejecución, como <see cref="F:System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously" />.</param>
         <param name="scheduler">Objeto <see cref="T:System.Threading.Tasks.TaskScheduler" /> que se va a asociar a la tarea de continuación y se va a usar para su ejecución.</param>
         <summary>Crea una continuación que recibe información de estado proporcionada por el autor de la llamada y un token de cancelación y que se ejecuta cuando el elemento <see cref="T:System.Threading.Tasks.Task" /> de destino se completa. La continuación se ejecuta según un conjunto de condiciones especificadas y usa un programador especificado.</summary>
@@ -1367,8 +1367,8 @@ El argumento <paramref name="scheduler" /> es null.</exception>
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="scheduler" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El <paramref name="continuationOptions" /> argumento especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">Ya se eliminó el <see cref="T:System.Threading.CancellationToken" /> proporcionado.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El argumento <paramref name="continuationOptions" /> especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">El <see cref="T:System.Threading.CancellationToken" /> proporcionado ya se ha eliminado.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TResult&gt;">
@@ -1528,7 +1528,7 @@ El argumento <paramref name="scheduler" /> es null.</exception>
       <Docs>
         <typeparam name="TResult">Tipo de resultado generado por la continuación.</typeparam>
         <param name="continuationFunction">Función que se va a ejecutar cuando se complete el objeto <see cref="T:System.Threading.Tasks.Task" />. Cuando se ejecute, al delegado se le pasará la tarea completada como un argumento.</param>
-        <param name="cancellationToken"><see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> que se asignará a la nueva tarea de continuación.</param>
+        <param name="cancellationToken"><see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> que se va a asignar a la nueva tarea de continuación.</param>
         <summary>Crea una continuación que se ejecuta de forma asincrónica cuando el elemento <see cref="T:System.Threading.Tasks.Task" /> de destino se completa y devuelve un valor. La continuación recibe un token de cancelación.</summary>
         <returns>Nuevo objeto <see cref="T:System.Threading.Tasks.Task`1" /> de continuación.</returns>
         <remarks>
@@ -1541,8 +1541,8 @@ El argumento <paramref name="scheduler" /> es null.</exception>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">Se ha eliminado <see cref="T:System.Threading.Tasks.Task" />.  
   
--o bien- 
-El <see cref="T:System.Threading.CancellationTokenSource" /> que creó el token ya se ha desechado.</exception>
+O bien 
+El <see cref="T:System.Threading.CancellationTokenSource" /> que creó el token ya se ha eliminado.</exception>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="continuationFunction" /> es null.</exception>
       </Docs>
     </Member>
@@ -1586,7 +1586,7 @@ El <see cref="T:System.Threading.CancellationTokenSource" /> que creó el token 
       </Parameters>
       <Docs>
         <typeparam name="TResult">Tipo de resultado generado por la continuación.</typeparam>
-        <param name="continuationFunction">Función que se ejecuta según la condición especificada en <paramref name="continuationOptions" />. Cuando se ejecute, al delegado se le pasará la tarea completada como un argumento.</param>
+        <param name="continuationFunction">Una función para ejecutar según la condición especificada en <paramref name="continuationOptions" />. Cuando se ejecute, al delegado se le pasará la tarea completada como un argumento.</param>
         <param name="continuationOptions">Opciones para la programación y el comportamiento de la continuación. Incluye criterios, como <see cref="F:System.Threading.Tasks.TaskContinuationOptions.OnlyOnCanceled" />, y opciones de ejecución, como <see cref="F:System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously" />.</param>
         <summary>Crea una continuación que se ejecuta según las opciones de continuación especificadas y devuelve un valor.</summary>
         <returns>Nuevo objeto <see cref="T:System.Threading.Tasks.Task`1" /> de continuación.</returns>
@@ -1600,7 +1600,7 @@ El <see cref="T:System.Threading.CancellationTokenSource" /> que creó el token 
         </remarks>
         <exception cref="T:System.ObjectDisposedException">Se ha eliminado <see cref="T:System.Threading.Tasks.Task" />.</exception>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="continuationFunction" /> es null.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El <paramref name="continuationOptions" /> argumento especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El argumento <paramref name="continuationOptions" /> especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TResult&gt;">
@@ -1658,7 +1658,7 @@ El <see cref="T:System.Threading.CancellationTokenSource" /> que creó el token 
         <exception cref="T:System.ObjectDisposedException">Se ha eliminado <see cref="T:System.Threading.Tasks.Task" />.</exception>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="continuationFunction" /> es null.  
   
--o bien- 
+O bien 
 El argumento <paramref name="scheduler" /> es null.</exception>
       </Docs>
     </Member>
@@ -1704,7 +1704,7 @@ El argumento <paramref name="scheduler" /> es null.</exception>
         <typeparam name="TResult">Tipo de resultado generado por la continuación.</typeparam>
         <param name="continuationFunction">Función que se va a ejecutar cuando se complete el objeto <see cref="T:System.Threading.Tasks.Task" />. Cuando se ejecute, se pasarán al delegado la tarea completada y el objeto de estado proporcionado por el llamador como argumentos.</param>
         <param name="state">Objeto que representa los datos que la función de continuación va a usar.</param>
-        <param name="cancellationToken"><see cref="T:System.Threading.CancellationToken" /> que se asignará a la nueva tarea de continuación.</param>
+        <param name="cancellationToken"><see cref="T:System.Threading.CancellationToken" /> que se va a asignar a la nueva tarea de continuación.</param>
         <summary>Crea una continuación que se ejecuta de forma asincrónica cuando el elemento <see cref="T:System.Threading.Tasks.Task" /> de destino se completa y devuelve un valor. La continuación recibe información de estado proporcionada por el autor de la llamada y un token de cancelación.</summary>
         <returns>Nuevo objeto <see cref="T:System.Threading.Tasks.Task`1" /> de continuación.</returns>
         <remarks>
@@ -1716,7 +1716,7 @@ El argumento <paramref name="scheduler" /> es null.</exception>
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="continuationFunction" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">Ya se eliminó el <see cref="T:System.Threading.CancellationToken" /> proporcionado.</exception>
+        <exception cref="T:System.ObjectDisposedException">El <see cref="T:System.Threading.CancellationToken" /> proporcionado ya se ha eliminado.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TResult&gt;">
@@ -1774,7 +1774,7 @@ El argumento <paramref name="scheduler" /> es null.</exception>
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="continuationFunction" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El <paramref name="continuationOptions" /> argumento especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El argumento <paramref name="continuationOptions" /> especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TResult&gt;">
@@ -1876,7 +1876,7 @@ El argumento <paramref name="scheduler" /> es null.</exception>
       <Docs>
         <typeparam name="TResult">Tipo de resultado generado por la continuación.</typeparam>
         <param name="continuationFunction">Una función que se ejecutará según el parámetro <c>continuationOptions</c> especificado. Cuando se ejecute, al delegado se le pasará la tarea completada como un argumento.</param>
-        <param name="cancellationToken"><see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> que se asignará a la nueva tarea de continuación.</param>
+        <param name="cancellationToken"><see cref="P:System.Threading.Tasks.TaskFactory.CancellationToken" /> que se va a asignar a la nueva tarea de continuación.</param>
         <param name="continuationOptions">Opciones para la programación y el comportamiento de la continuación. Incluye criterios, como <see cref="F:System.Threading.Tasks.TaskContinuationOptions.OnlyOnCanceled" />, y opciones de ejecución, como <see cref="F:System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously" />.</param>
         <param name="scheduler">Objeto <see cref="T:System.Threading.Tasks.TaskScheduler" /> que se va a asociar a la tarea de continuación y se va a usar para su ejecución.</param>
         <summary>Crea una continuación que se ejecuta según las opciones de continuación especificadas y devuelve un valor. Se pasa un token de cancelación a la continuación y usa un programador especificado.</summary>
@@ -1899,13 +1899,13 @@ El argumento <paramref name="scheduler" /> es null.</exception>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">Se ha eliminado <see cref="T:System.Threading.Tasks.Task" />.  
   
--o bien- 
-El <see cref="T:System.Threading.CancellationTokenSource" /> que creó el token ya se ha desechado.</exception>
+O bien 
+El <see cref="T:System.Threading.CancellationTokenSource" /> que creó el token ya se ha eliminado.</exception>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="continuationFunction" /> es null.  
   
--o bien- 
+O bien 
 El argumento <paramref name="scheduler" /> es null.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El <paramref name="continuationOptions" /> argumento especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El argumento <paramref name="continuationOptions" /> especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWith&lt;TResult&gt;">
@@ -1952,7 +1952,7 @@ El argumento <paramref name="scheduler" /> es null.</exception>
         <typeparam name="TResult">Tipo de resultado generado por la continuación.</typeparam>
         <param name="continuationFunction">Función que se va a ejecutar cuando se complete el objeto <see cref="T:System.Threading.Tasks.Task" />. Cuando se ejecute, se pasarán al delegado la tarea completada y el objeto de estado proporcionado por el llamador como argumentos.</param>
         <param name="state">Objeto que representa los datos que la función de continuación va a usar.</param>
-        <param name="cancellationToken">El <see cref="T:System.Threading.CancellationToken" /> que se asignará a la nueva tarea de continuación.</param>
+        <param name="cancellationToken"><see cref="T:System.Threading.CancellationToken" /> que se va a asignar a la nueva tarea de continuación.</param>
         <param name="continuationOptions">Opciones para la programación y el comportamiento de la continuación. Incluye criterios, como <see cref="F:System.Threading.Tasks.TaskContinuationOptions.OnlyOnCanceled" />, y opciones de ejecución, como <see cref="F:System.Threading.Tasks.TaskContinuationOptions.ExecuteSynchronously" />.</param>
         <param name="scheduler">Objeto <see cref="T:System.Threading.Tasks.TaskScheduler" /> que se va a asociar a la tarea de continuación y se va a usar para su ejecución.</param>
         <summary>Crea una continuación que se ejecuta según las opciones de continuación de la tarea especificadas cuando el elemento <see cref="T:System.Threading.Tasks.Task" /> de destino se completa y devuelve un valor. La continuación recibe información de estado proporcionada por el autor de la llamada y un token de cancelación y usa el programador especificado.</summary>
@@ -1966,8 +1966,8 @@ El argumento <paramref name="scheduler" /> es null.</exception>
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="scheduler" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El <paramref name="continuationOptions" /> argumento especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
-        <exception cref="T:System.ObjectDisposedException">Ya se eliminó el <see cref="T:System.Threading.CancellationToken" /> proporcionado.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El argumento <paramref name="continuationOptions" /> especifica un valor no válido para <see cref="T:System.Threading.Tasks.TaskContinuationOptions" />.</exception>
+        <exception cref="T:System.ObjectDisposedException">El <see cref="T:System.Threading.CancellationToken" /> proporcionado ya se ha eliminado.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreationOptions">
@@ -2061,7 +2061,7 @@ El argumento <paramref name="scheduler" /> es null.</exception>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Crea una tarea que se completará después de un retraso.</summary>
+        <summary>Crea una tarea que se completará después de un retardo.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="Delay">
@@ -2195,7 +2195,7 @@ El argumento <paramref name="scheduler" /> es null.</exception>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="delay" /> representa un intervalo de tiempo negativo distinto de <see langword="TimeSpan.FromMilliseconds(-1)" />.  
   
--o bien- 
+O bien 
 La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <paramref name="delay" /> es mayor que <see cref="F:System.Int32.MaxValue" />.</exception>
       </Docs>
     </Member>
@@ -2260,7 +2260,7 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">El argumento <paramref name="millisecondsDelay" /> es menor que -1.</exception>
         <exception cref="T:System.Threading.Tasks.TaskCanceledException">La tarea se canceló.</exception>
-        <exception cref="T:System.ObjectDisposedException">Ya se eliminó el <paramref name="cancellationToken" /> proporcionado.</exception>
+        <exception cref="T:System.ObjectDisposedException">El <paramref name="cancellationToken" /> proporcionado ya se ha eliminado.</exception>
       </Docs>
     </Member>
     <Member MemberName="Delay">
@@ -2330,10 +2330,10 @@ Task t Status: RanToCompletion, Result: 42
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="delay" /> representa un intervalo de tiempo negativo distinto de <see langword="TimeSpan.FromMilliseconds(-1)" />.  
   
--o bien- 
+O bien 
 La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <paramref name="delay" /> es mayor que <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.Threading.Tasks.TaskCanceledException">La tarea se canceló.</exception>
-        <exception cref="T:System.ObjectDisposedException">Ya se eliminó el <paramref name="cancellationToken" /> proporcionado.</exception>
+        <exception cref="T:System.ObjectDisposedException">El <paramref name="cancellationToken" /> proporcionado ya se ha eliminado.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">
@@ -2523,7 +2523,7 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
 ## Remarks  
  Esta propiedad devuelve una instancia predeterminada de la <xref:System.Threading.Tasks.TaskFactory> que es idéntica a la que se crean mediante una llamada sin parámetros <xref:System.Threading.Tasks.TaskFactory.%23ctor?displayProperty=nameWithType> constructor. Tiene los siguientes valores de propiedad:  
   
-|Propiedad|Valor|  
+|Propiedad.|Valor|  
 |--------------|-----------|  
 |<xref:System.Threading.Tasks.TaskFactory.CancellationToken%2A?displayProperty=nameWithType>|<xref:System.Threading.CancellationToken.None%2A?displayProperty=nameWithType>|  
 |<xref:System.Threading.Tasks.TaskFactory.ContinuationOptions%2A?displayProperty=nameWithType>|<xref:System.Threading.Tasks.TaskContinuationOptions.None?displayProperty=nameWithType>|  
@@ -2772,7 +2772,7 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
       </Parameters>
       <Docs>
         <typeparam name="TResult">Tipo de resultado devuelto por la tarea.</typeparam>
-        <param name="result">Resultado que se va a almacenar en la tarea completada.</param>
+        <param name="result">El resultado que se va a almacenar en la tarea completada.</param>
         <summary>Crea un objeto <see cref="T:System.Threading.Tasks.Task`1" /> que se ha completado correctamente con el resultado especificado.</summary>
         <returns>Tarea completada correctamente.</returns>
         <remarks>
@@ -2834,7 +2834,7 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Obtiene un awaiter utilizado para esperar a este objeto <see cref="T:System.Threading.Tasks.Task" />.</summary>
+        <summary>Obtiene un awaiter utilizado para esperar este objeto <see cref="T:System.Threading.Tasks.Task" />.</summary>
         <returns>Una instancia de awaiter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2925,8 +2925,8 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un valor que indica si esta instancia de <see cref="T:System.Threading.Tasks.Task" /> ha completado su ejecución debido a una cancelación.</summary>
-        <value><see langword="true" /> si la tarea se ha completado debido a su cancelación; en caso contrario, <see langword="false" />.</value>
+        <summary>Obtiene un valor que indica si esta instancia de <see cref="T:System.Threading.Tasks.Task" /> ha dejado de ejecutarse debido a una cancelación.</summary>
+        <value>Es <see langword="true" /> si la tarea se ha completado debido a su cancelación; de lo contrario, es <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3065,7 +3065,7 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
       </ReturnValue>
       <Docs>
         <summary>Obtiene un valor que indica si el objeto <see cref="T:System.Threading.Tasks.Task" /> se ha completado debido a una excepción no controlada.</summary>
-        <value><see langword="true" /> si la tarea inició una excepción no controlada; en caso contrario, <see langword="false" />.</value>
+        <value>Es <see langword="true" /> si la tarea ha producido una excepción no controlada; de lo contrario, es <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3086,7 +3086,7 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Pone en cola el trabajo especificado para ejecutarlo en ThreadPool y devuelve una tarea o controlador  <see cref="T:System.Threading.Tasks.Task`1" /> para dicho trabajo.</summary>
+        <summary>Pone en cola el trabajo especificado para ejecutarlo en ThreadPool y devuelve una tarea o controlador <see cref="T:System.Threading.Tasks.Task`1" /> para dicho trabajo.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3893,7 +3893,7 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
       </ReturnValue>
       <Docs>
         <summary>Obtiene el objeto <see cref="T:System.Threading.Tasks.TaskStatus" /> de esta tarea.</summary>
-        <value>Valor actual de la propiedad <see cref="T:System.Threading.Tasks.TaskStatus" /> de esta instancia de la tarea.</value>
+        <value><see cref="T:System.Threading.Tasks.TaskStatus" /> actual de esta instancia de la tarea.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3998,7 +3998,7 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
       </ReturnValue>
       <Docs>
         <summary>Obtiene un valor que indica si la operación se ha completado sincrónicamente.</summary>
-        <value><see langword="true" /> si la operación se completó de forma sincrónica; en caso contrario, <see langword="false" />.</value>
+        <value>Es <see langword="true" /> si la operación se completó sincrónicamente; de lo contrario, es <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -4063,7 +4063,7 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
         <exception cref="T:System.ObjectDisposedException">Se ha eliminado <see cref="T:System.Threading.Tasks.Task" />.</exception>
         <exception cref="T:System.AggregateException">Se canceló la tarea. La colección <see cref="P:System.AggregateException.InnerExceptions" /> contiene un objeto <see cref="T:System.Threading.Tasks.TaskCanceledException" />.  
   
--o bien- 
+O bien 
 Se inició una excepción durante la ejecución de la tarea. La colección <see cref="P:System.AggregateException.InnerExceptions" /> contiene información sobre la excepción o excepciones.</exception>
         <related type="ExternalDocumentation" href="https://devblogs.microsoft.com/pfxteam/task-wait-and-inlining/">Task.Wait y "Inserción"</related>
       </Docs>
@@ -4132,7 +4132,7 @@ Se inició una excepción durante la ejecución de la tarea. La colección <see 
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="millisecondsTimeout" /> es un número negativo distinto de-1, que representa un tiempo de espera infinito.</exception>
         <exception cref="T:System.AggregateException">Se canceló la tarea. La colección <see cref="P:System.AggregateException.InnerExceptions" /> contiene un objeto <see cref="T:System.Threading.Tasks.TaskCanceledException" />.  
   
--o bien- 
+O bien 
 Se inició una excepción durante la ejecución de la tarea. La colección <see cref="P:System.AggregateException.InnerExceptions" /> contiene información sobre la excepción o excepciones.</exception>
       </Docs>
     </Member>
@@ -4199,7 +4199,7 @@ Se inició una excepción durante la ejecución de la tarea. La colección <see 
         <exception cref="T:System.ObjectDisposedException">Se ha desechado la tarea.</exception>
         <exception cref="T:System.AggregateException">Se canceló la tarea. La colección <see cref="P:System.AggregateException.InnerExceptions" /> contiene un objeto <see cref="T:System.Threading.Tasks.TaskCanceledException" />.  
   
--o bien- 
+O bien 
 Se inició una excepción durante la ejecución de la tarea. La colección <see cref="P:System.AggregateException.InnerExceptions" /> contiene información sobre la excepción o excepciones.</exception>
       </Docs>
     </Member>
@@ -4265,11 +4265,11 @@ Se inició una excepción durante la ejecución de la tarea. La colección <see 
         </remarks>
         <exception cref="T:System.ObjectDisposedException">Se ha eliminado <see cref="T:System.Threading.Tasks.Task" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="timeout" /> es un número negativo distinto de -1 milisegundos, que representa un tiempo de espera infinito. 
--o bien- 
+O bien 
  <paramref name="timeout" /> es mayor que <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.AggregateException">Se canceló la tarea. La colección <see cref="P:System.AggregateException.InnerExceptions" /> contiene un objeto <see cref="T:System.Threading.Tasks.TaskCanceledException" />.  
   
--o bien- 
+O bien 
 Se inició una excepción durante la ejecución de la tarea. La colección <see cref="P:System.AggregateException.InnerExceptions" /> contiene información sobre la excepción o excepciones.</exception>
       </Docs>
     </Member>
@@ -4346,7 +4346,7 @@ Se inició una excepción durante la ejecución de la tarea. La colección <see 
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="millisecondsTimeout" /> es un número negativo distinto de-1, que representa un tiempo de espera infinito.</exception>
         <exception cref="T:System.AggregateException">Se canceló la tarea. La colección <see cref="P:System.AggregateException.InnerExceptions" /> contiene un objeto <see cref="T:System.Threading.Tasks.TaskCanceledException" />.  
   
--o bien- 
+O bien 
 Se inició una excepción durante la ejecución de la tarea. La colección <see cref="P:System.AggregateException.InnerExceptions" /> contiene información sobre la excepción o excepciones.</exception>
       </Docs>
     </Member>
@@ -4416,13 +4416,10 @@ Se inició una excepción durante la ejecución de la tarea. La colección <see 
         </remarks>
         <exception cref="T:System.ObjectDisposedException">Se eliminaron uno o varios de los objetos <see cref="T:System.Threading.Tasks.Task" /> de <paramref name="tasks" />.</exception>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="tasks" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">El argumento <paramref name="tasks" /> contiene un elemento null.  
-  
--o bien- 
-El argumento <paramref name="tasks" /> es una matriz vacía.</exception>
+        <exception cref="T:System.ArgumentException">El argumento <paramref name="tasks" /> contiene un elemento null.</exception>
         <exception cref="T:System.AggregateException">Se canceló al menos una de las instancias <see cref="T:System.Threading.Tasks.Task" />. Si se canceló una tarea, la excepción <see cref="T:System.AggregateException" /> contiene una excepción <see cref="T:System.OperationCanceledException" /> en su colección <see cref="P:System.AggregateException.InnerExceptions" />.  
   
--o bien- 
+O bien 
 Se inició una excepción durante la ejecución de al menos una de las instancias <see cref="T:System.Threading.Tasks.Task" />.</exception>
       </Docs>
     </Member>
@@ -4471,13 +4468,10 @@ Se inició una excepción durante la ejecución de al menos una de las instancia
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="tasks" /> es <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">Se canceló al menos una de las instancias <see cref="T:System.Threading.Tasks.Task" />. Si se canceló una tarea, la <see cref="T:System.AggregateException" /> contiene una <see cref="T:System.OperationCanceledException" /> en su colección <see cref="P:System.AggregateException.InnerExceptions" />.  
   
--o bien- 
+O bien 
 Se inició una excepción durante la ejecución de al menos una de las instancias <see cref="T:System.Threading.Tasks.Task" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="millisecondsTimeout" /> es un número negativo distinto de-1, que representa un tiempo de espera infinito.</exception>
-        <exception cref="T:System.ArgumentException">El argumento <paramref name="tasks" /> contiene un elemento null.  
-  
--o bien- 
-El argumento <paramref name="tasks" /> es una matriz vacía.</exception>
+        <exception cref="T:System.ArgumentException">El argumento <paramref name="tasks" /> contiene un elemento null.</exception>
       </Docs>
     </Member>
     <Member MemberName="WaitAll">
@@ -4530,12 +4524,9 @@ El argumento <paramref name="tasks" /> es una matriz vacía.</exception>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="tasks" /> es <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">Se canceló al menos una de las instancias <see cref="T:System.Threading.Tasks.Task" />. Si se canceló una tarea, la <see cref="T:System.AggregateException" /> contiene una <see cref="T:System.OperationCanceledException" /> en su colección <see cref="P:System.AggregateException.InnerExceptions" />.  
   
--o bien- 
+O bien 
 Se inició una excepción durante la ejecución de al menos una de las instancias <see cref="T:System.Threading.Tasks.Task" />.</exception>
-        <exception cref="T:System.ArgumentException">El argumento <paramref name="tasks" /> contiene un elemento null.  
-  
--o bien- 
-El argumento <paramref name="tasks" /> es una matriz vacía.</exception>
+        <exception cref="T:System.ArgumentException">El argumento <paramref name="tasks" /> contiene un elemento null.</exception>
         <exception cref="T:System.ObjectDisposedException">Se eliminaron uno o varios de los objetos <see cref="T:System.Threading.Tasks.Task" /> de <paramref name="tasks" />.</exception>
       </Docs>
     </Member>
@@ -4584,15 +4575,12 @@ El argumento <paramref name="tasks" /> es una matriz vacía.</exception>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="tasks" /> es <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">Se canceló al menos una de las instancias <see cref="T:System.Threading.Tasks.Task" />. Si se canceló una tarea, la <see cref="T:System.AggregateException" /> contiene una <see cref="T:System.OperationCanceledException" /> en su colección <see cref="P:System.AggregateException.InnerExceptions" />.  
   
--o bien- 
+O bien 
 Se inició una excepción durante la ejecución de al menos una de las instancias <see cref="T:System.Threading.Tasks.Task" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="timeout" /> es un número negativo distinto de -1 milisegundos, que representa un tiempo de espera infinito. 
--o bien- 
+O bien 
  <paramref name="timeout" /> es mayor que <see cref="F:System.Int32.MaxValue" />.</exception>
-        <exception cref="T:System.ArgumentException">El argumento <paramref name="tasks" /> contiene un elemento null.  
-  
--o bien- 
-El argumento <paramref name="tasks" /> es una matriz vacía.</exception>
+        <exception cref="T:System.ArgumentException">El argumento <paramref name="tasks" /> contiene un elemento null.</exception>
       </Docs>
     </Member>
     <Member MemberName="WaitAll">
@@ -4648,13 +4636,10 @@ El argumento <paramref name="tasks" /> es una matriz vacía.</exception>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="tasks" /> es <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">Se canceló al menos una de las instancias <see cref="T:System.Threading.Tasks.Task" />. Si se canceló una tarea, la <see cref="T:System.AggregateException" /> contiene una <see cref="T:System.OperationCanceledException" /> en su colección <see cref="P:System.AggregateException.InnerExceptions" />.  
   
--o bien- 
+O bien 
 Se inició una excepción durante la ejecución de al menos una de las instancias <see cref="T:System.Threading.Tasks.Task" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="millisecondsTimeout" /> es un número negativo distinto de-1, que representa un tiempo de espera infinito.</exception>
-        <exception cref="T:System.ArgumentException">El argumento <paramref name="tasks" /> contiene un elemento null.  
-  
--o bien- 
-El argumento <paramref name="tasks" /> es una matriz vacía.</exception>
+        <exception cref="T:System.ArgumentException">El argumento <paramref name="tasks" /> contiene un elemento null.</exception>
         <exception cref="T:System.OperationCanceledException"><paramref name="cancellationToken" /> se canceló.</exception>
       </Docs>
     </Member>
@@ -4865,7 +4850,7 @@ El argumento <paramref name="tasks" /> es una matriz vacía.</exception>
         <exception cref="T:System.ObjectDisposedException">Se ha eliminado <see cref="T:System.Threading.Tasks.Task" />.</exception>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="tasks" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <paramref name="timeout" /> es un número negativo distinto de -1 que representa un tiempo de espera infinito. 
--o bien- 
+O bien 
 La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <paramref name="timeout" /> es mayor que <see cref="F:System.Int32.MaxValue" />.</exception>
         <exception cref="T:System.ArgumentException">El argumento <paramref name="tasks" /> contiene un elemento null.</exception>
       </Docs>
@@ -4926,7 +4911,7 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Crea una tarea que finalizará cuando se hayan completado todas las tareas proporcionadas.</summary>
+        <summary>Crea una tarea que se completará cuando se hayan completado todas las tareas proporcionadas.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="WhenAll">
@@ -4995,7 +4980,7 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="tasks" /> era <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">La colección <paramref name="tasks" /> contenía una tarea <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">La colección <paramref name="tasks" /> contiene una tarea <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WhenAll">
@@ -5070,7 +5055,7 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="tasks" /> era <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">La matriz <paramref name="tasks" /> contenía una tarea <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">La matriz <paramref name="tasks" /> contiene una tarea <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WhenAll&lt;TResult&gt;">
@@ -5142,7 +5127,7 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="tasks" /> era <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">La colección <paramref name="tasks" /> contenía una tarea <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">La colección <paramref name="tasks" /> contiene una tarea <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WhenAll&lt;TResult&gt;">
@@ -5218,7 +5203,7 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="tasks" /> era <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">La matriz <paramref name="tasks" /> contenía una tarea <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">La matriz <paramref name="tasks" /> contiene una tarea <see langword="null" />.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="WhenAny">
@@ -5228,7 +5213,7 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Crea una tarea que finalizará cuando se haya completado cualquiera de las tareas proporcionadas.</summary>
+        <summary>Crea una tarea que se completará cuando se haya completado cualquiera de las tareas proporcionadas.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="WhenAny">
@@ -5267,7 +5252,7 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
       </Parameters>
       <Docs>
         <param name="tasks">Tareas cuya finalización hay que esperar.</param>
-        <summary>Crea una tarea que finalizará cuando se haya completado cualquiera de las tareas proporcionadas.</summary>
+        <summary>Crea una tarea que se completará cuando se haya completado cualquiera de las tareas proporcionadas.</summary>
         <returns>Tarea que representa la finalización de una de las tareas proporcionadas.  El resultado de la tarea devuelto es la tarea completada.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5278,7 +5263,7 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="tasks" /> era <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">El <paramref name="tasks" /> matriz contenía una tarea nula o estaba vacío.</exception>
+        <exception cref="T:System.ArgumentException">La matriz <paramref name="tasks" /> contenía una tarea NULL o estaba vacía.</exception>
       </Docs>
     </Member>
     <Member MemberName="WhenAny">
@@ -5323,7 +5308,7 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
       </Parameters>
       <Docs>
         <param name="tasks">Tareas cuya finalización hay que esperar.</param>
-        <summary>Crea una tarea que finalizará cuando se haya completado cualquiera de las tareas proporcionadas.</summary>
+        <summary>Crea una tarea que se completará cuando se haya completado cualquiera de las tareas proporcionadas.</summary>
         <returns>Tarea que representa la finalización de una de las tareas proporcionadas.  El resultado de la tarea devuelto es la tarea completada.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5333,8 +5318,8 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El <paramref name="tasks" /> argumento era null.</exception>
-        <exception cref="T:System.ArgumentException">El <paramref name="tasks" /> matriz contenía una tarea nula o estaba vacío.</exception>
+        <exception cref="T:System.ArgumentNullException">El argumento de <paramref name="tasks" /> fue nulo.</exception>
+        <exception cref="T:System.ArgumentException">La matriz <paramref name="tasks" /> contenía una tarea NULL o estaba vacía.</exception>
       </Docs>
     </Member>
     <Member MemberName="WhenAny&lt;TResult&gt;">
@@ -5377,7 +5362,7 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
       <Docs>
         <typeparam name="TResult">Tipo de la tarea completada.</typeparam>
         <param name="tasks">Tareas cuya finalización hay que esperar.</param>
-        <summary>Crea una tarea que finalizará cuando se haya completado cualquiera de las tareas proporcionadas.</summary>
+        <summary>Crea una tarea que se completará cuando se haya completado cualquiera de las tareas proporcionadas.</summary>
         <returns>Tarea que representa la finalización de una de las tareas proporcionadas.  El resultado de la tarea devuelto es la tarea completada.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5388,7 +5373,7 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">El argumento <paramref name="tasks" /> era <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">El <paramref name="tasks" /> matriz contenía una tarea nula o estaba vacío.</exception>
+        <exception cref="T:System.ArgumentException">La matriz <paramref name="tasks" /> contenía una tarea NULL o estaba vacía.</exception>
       </Docs>
     </Member>
     <Member MemberName="WhenAny&lt;TResult&gt;">
@@ -5437,7 +5422,7 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
       <Docs>
         <typeparam name="TResult">Tipo de la tarea completada.</typeparam>
         <param name="tasks">Tareas cuya finalización hay que esperar.</param>
-        <summary>Crea una tarea que finalizará cuando se haya completado cualquiera de las tareas proporcionadas.</summary>
+        <summary>Crea una tarea que se completará cuando se haya completado cualquiera de las tareas proporcionadas.</summary>
         <returns>Tarea que representa la finalización de una de las tareas proporcionadas.  El resultado de la tarea devuelto es la tarea completada.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5447,8 +5432,8 @@ La propiedad <see cref="P:System.TimeSpan.TotalMilliseconds" /> del argumento <p
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El <paramref name="tasks" /> argumento era null.</exception>
-        <exception cref="T:System.ArgumentException">El <paramref name="tasks" /> matriz contenía una tarea nula o estaba vacío.</exception>
+        <exception cref="T:System.ArgumentNullException">El argumento de <paramref name="tasks" /> fue nulo.</exception>
+        <exception cref="T:System.ArgumentException">La matriz <paramref name="tasks" /> contenía una tarea NULL o estaba vacía.</exception>
       </Docs>
     </Member>
     <Member MemberName="Yield">

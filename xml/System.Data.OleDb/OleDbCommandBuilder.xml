@@ -1,5 +1,5 @@
 <Type Name="OleDbCommandBuilder" FullName="System.Data.OleDb.OleDbCommandBuilder">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2fb0be02eae9b4252fb84672f220080c2c9a6f1b" /><Meta Name="ms.sourcegitcommit" Value="2767b5903996fbd7e2b81eda1114dfc9d0d9db63" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/02/2019" /><Meta Name="ms.locfileid" Value="65006466" /></Metadata><TypeSignature Language="C#" Value="public sealed class OleDbCommandBuilder : System.Data.Common.DbCommandBuilder" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="82c32704b44d26b5890df9110f8e06a634f9f5b1" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67240695" /></Metadata><TypeSignature Language="C#" Value="public sealed class OleDbCommandBuilder : System.Data.Common.DbCommandBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OleDbCommandBuilder extends System.Data.Common.DbCommandBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbCommandBuilder" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OleDbCommandBuilder&#xA;Inherits DbCommandBuilder" />
@@ -11,13 +11,17 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Data.OleDb</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Data.Common.DbCommandBuilder</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-1.1">System.ComponentModel.Component</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Genera automáticamente comandos de tabla única utilizados para conciliar los cambios realizados en un <see cref="T:System.Data.DataSet" /> con la base de datos asociada. Esta clase no puede heredarse.</summary>
+    <summary>Genera de manera automática comandos de tabla única utilizados para conciliar los cambios realizados en un objeto <see cref="T:System.Data.DataSet" /> con la base de datos asociada. Esta clase no puede heredarse.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -68,6 +72,10 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Inicializa una nueva instancia de la clase <see cref="T:System.Data.OleDb.OleDbCommandBuilder" />.</summary>
@@ -89,12 +97,16 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="adapter" Type="System.Data.OleDb.OleDbDataAdapter" />
       </Parameters>
       <Docs>
         <param name="adapter">Una clase <see cref="T:System.Data.OleDb.OleDbDataAdapter" />.</param>
-        <summary>Inicializa una nueva instancia de la <see cref="T:System.Data.OleDb.OleDbCommandBuilder" /> clase con el asociado <see cref="T:System.Data.OleDb.OleDbDataAdapter" /> objeto.</summary>
+        <summary>Inicializa una nueva instancia de la clase <see cref="T:System.Data.OleDb.OleDbCommandBuilder" /> con el objeto <see cref="T:System.Data.OleDb.OleDbDataAdapter" /> asociado.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -120,14 +132,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameter" Type="System.Data.Common.DbParameter" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
-        <Parameter Name="datarow" Type="System.Data.DataRow" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
-        <Parameter Name="statementType" Type="System.Data.StatementType" Index="2" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
-        <Parameter Name="whereClause" Type="System.Boolean" Index="3" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="parameter" Type="System.Data.Common.DbParameter" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="datarow" Type="System.Data.DataRow" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="statementType" Type="System.Data.StatementType" Index="2" FrameworkAlternate="dotnet-plat-ext-3.0;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="whereClause" Type="System.Boolean" Index="3" FrameworkAlternate="dotnet-plat-ext-3.0;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="parameter">To be added.</param>
@@ -152,8 +168,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8">
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netframework-4.8;dotnet-plat-ext-3.0;netcore-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-1.1">
@@ -164,7 +184,7 @@
         <ReturnType>System.Data.OleDb.OleDbDataAdapter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece un <see cref="T:System.Data.OleDb.OleDbDataAdapter" /> para que SQL se generan automáticamente instrucciones de objeto.</summary>
+        <summary>Obtiene o establece un objeto <see cref="T:System.Data.OleDb.OleDbDataAdapter" /> para el que se generan instrucciones SQL automáticamente.</summary>
         <value>Un objeto <see cref="T:System.Data.OleDb.OleDbDataAdapter" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -193,6 +213,10 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -200,8 +224,8 @@
         <Parameter Name="command" Type="System.Data.OleDb.OleDbCommand" />
       </Parameters>
       <Docs>
-        <param name="command">El <see cref="T:System.Data.OleDb.OleDbCommand" /> hace referencia al procedimiento almacenado desde el que la información de parámetros es va a derivar. Los parámetros derivados se agregan a la <see cref="P:System.Data.OleDb.OleDbCommand.Parameters" /> colección de la <see cref="T:System.Data.OleDb.OleDbCommand" />.</param>
-        <summary>Recupera información de parámetros de procedimiento almacenado especificado en el <see cref="T:System.Data.OleDb.OleDbCommand" /> y rellena el <see cref="P:System.Data.OleDb.OleDbCommand.Parameters" /> colección del elemento especificado <see cref="T:System.Data.OleDb.OleDbCommand" /> objeto.</summary>
+        <param name="command"><see cref="T:System.Data.OleDb.OleDbCommand" /> que hace referencia al procedimiento almacenado del que se va a derivar la información de parámetros. Los parámetros derivados se agregan a la colección de <see cref="P:System.Data.OleDb.OleDbCommand.Parameters" /> del objeto <see cref="T:System.Data.OleDb.OleDbCommand" />.</param>
+        <summary>Recupera información de parámetro del procedimiento almacenado especificado en <see cref="T:System.Data.OleDb.OleDbCommand" /> y rellena la colección de <see cref="P:System.Data.OleDb.OleDbCommand.Parameters" /> del objeto <see cref="T:System.Data.OleDb.OleDbCommand" /> especificado.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -216,7 +240,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">El proveedor OLE DB subyacente no admite devolver información de parámetros de procedimiento almacenado, el texto del comando no es un nombre válido de procedimiento almacenado, o el <see cref="P:System.Data.OleDb.OleDbCommand.CommandType" /> especificado no era <see langword="StoredProcedure" />.</exception>
+        <exception cref="T:System.InvalidOperationException">El proveedor OLE DB subyacente no admite la devolución de información de parámetro del procedimiento almacenado, el texto del comando no es un nombre válido de procedimiento almacenado o el valor especificado de <see cref="P:System.Data.OleDb.OleDbCommand.CommandType" /> no era <see langword="StoredProcedure" />.</exception>
         <related type="Article" href="https://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Generación automática de comandos</related>
       </Docs>
     </Member>
@@ -231,6 +255,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -250,7 +277,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Obtiene generado automáticamente <see cref="T:System.Data.OleDb.OleDbCommand" /> objeto necesario para realizar eliminaciones en el origen de datos.</summary>
+        <summary>Obtiene el objeto <see cref="T:System.Data.OleDb.OleDbCommand" /> generado automáticamente que es necesario para realizar eliminaciones en el origen de datos.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -280,13 +307,17 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbCommand</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Obtiene generado automáticamente <see cref="T:System.Data.OleDb.OleDbCommand" /> objeto necesario para realizar eliminaciones en el origen de datos.</summary>
-        <returns>Generado automáticamente <see cref="T:System.Data.OleDb.OleDbCommand" /> objeto necesario para realizar eliminaciones.</returns>
+        <summary>Obtiene el objeto <see cref="T:System.Data.OleDb.OleDbCommand" /> generado automáticamente que es necesario para realizar eliminaciones en el origen de datos.</summary>
+        <returns>Objeto <see cref="T:System.Data.OleDb.OleDbCommand" /> generado automáticamente que es necesario para realizar eliminaciones.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -315,16 +346,20 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbCommand</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="useColumnsForParameterNames" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="useColumnsForParameterNames" Type="System.Boolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="useColumnsForParameterNames">Si <see langword="true" />, generar nombres de parámetro que coincidan con los nombres de columna, si es posible. Si es <see langword="false" />, genera <c>@p1</c>, <c>@p2</c>, etc.</param>
-        <summary>Obtiene generado automáticamente <see cref="T:System.Data.OleDb.OleDbCommand" /> objeto necesario para realizar eliminaciones en el origen de datos.</summary>
-        <returns>Generado automáticamente <see cref="T:System.Data.OleDb.OleDbCommand" /> objeto necesario para realizar eliminaciones.</returns>
+        <param name="useColumnsForParameterNames">Si es <see langword="true" />, genere nombres de parámetro que coincidan con los nombres de columna, si es posible. Si es <see langword="false" />, genera <c>@p1</c>, <c>@p2</c>, etc.</param>
+        <summary>Obtiene el objeto <see cref="T:System.Data.OleDb.OleDbCommand" /> generado automáticamente que es necesario para realizar eliminaciones en el origen de datos.</summary>
+        <returns>Objeto <see cref="T:System.Data.OleDb.OleDbCommand" /> generado automáticamente que es necesario para realizar eliminaciones.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -354,7 +389,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Obtiene generado automáticamente <see cref="T:System.Data.OleDb.OleDbCommand" /> objeto necesario para realizar inserciones en el origen de datos.</summary>
+        <summary>Obtiene el objeto <see cref="T:System.Data.OleDb.OleDbCommand" /> generado automáticamente que es necesario para realizar inserciones en el origen de datos.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -384,13 +419,17 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbCommand</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Obtiene generado automáticamente <see cref="T:System.Data.OleDb.OleDbCommand" /> objeto necesario para realizar inserciones en el origen de datos.</summary>
-        <returns>Generado automáticamente <see cref="T:System.Data.OleDb.OleDbCommand" /> objeto necesario para realizar inserciones.</returns>
+        <summary>Obtiene el objeto <see cref="T:System.Data.OleDb.OleDbCommand" /> generado automáticamente que es necesario para realizar inserciones en el origen de datos.</summary>
+        <returns>Objeto <see cref="T:System.Data.OleDb.OleDbCommand" /> generado automáticamente que es necesario para realizar inserciones.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -419,16 +458,20 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbCommand</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="useColumnsForParameterNames" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="useColumnsForParameterNames" Type="System.Boolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="useColumnsForParameterNames">Si <see langword="true" />, generar nombres de parámetro que coincidan con los nombres de columna, si es posible. Si es <see langword="false" />, genera <c>@p1</c>, <c>@p2</c>, etc.</param>
-        <summary>Obtiene generado automáticamente <see cref="T:System.Data.OleDb.OleDbCommand" /> objeto necesario para realizar inserciones en el origen de datos.</summary>
-        <returns>Generado automáticamente <see cref="T:System.Data.OleDb.OleDbCommand" /> objeto necesario para realizar inserciones.</returns>
+        <param name="useColumnsForParameterNames">Si es <see langword="true" />, genere nombres de parámetro que coincidan con los nombres de columna, si es posible. Si es <see langword="false" />, genera <c>@p1</c>, <c>@p2</c>, etc.</param>
+        <summary>Obtiene el objeto <see cref="T:System.Data.OleDb.OleDbCommand" /> generado automáticamente que es necesario para realizar inserciones en el origen de datos.</summary>
+        <returns>Objeto <see cref="T:System.Data.OleDb.OleDbCommand" /> generado automáticamente que es necesario para realizar inserciones.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -465,11 +508,15 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameterOrdinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="parameterOrdinal" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="parameterOrdinal">To be added.</param>
@@ -491,11 +538,15 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameterName" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="parameterName" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="parameterName">To be added.</param>
@@ -517,11 +568,15 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="parameterOrdinal" Type="System.Int32" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="parameterOrdinal" Type="System.Int32" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="parameterOrdinal">To be added.</param>
@@ -536,7 +591,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Obtiene generado automáticamente <see cref="T:System.Data.OleDb.OleDbCommand" /> objeto necesario para realizar actualizaciones en el origen de datos.</summary>
+        <summary>Obtiene el objeto <see cref="T:System.Data.OleDb.OleDbCommand" /> generado automáticamente que es necesario para realizar actualizaciones en el origen de datos.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -566,13 +621,17 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbCommand</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Obtiene generado automáticamente <see cref="T:System.Data.OleDb.OleDbCommand" /> objeto necesario para realizar actualizaciones en el origen de datos.</summary>
-        <returns>Generado automáticamente <see cref="T:System.Data.OleDb.OleDbCommand" /> objeto necesario para realizar actualizaciones.</returns>
+        <summary>Obtiene el objeto <see cref="T:System.Data.OleDb.OleDbCommand" /> generado automáticamente que es necesario para realizar actualizaciones en el origen de datos.</summary>
+        <returns>Objeto <see cref="T:System.Data.OleDb.OleDbCommand" /> generado automáticamente que es necesario para realizar actualizaciones.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -601,16 +660,20 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.OleDb.OleDbCommand</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="useColumnsForParameterNames" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="useColumnsForParameterNames" Type="System.Boolean" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="useColumnsForParameterNames">Si <see langword="true" />, generar nombres de parámetro que coincidan con los nombres de columna, si es posible. Si es <see langword="false" />, genera <c>@p1</c>, <c>@p2</c>, etc.</param>
-        <summary>Obtiene generado automáticamente <see cref="T:System.Data.OleDb.OleDbCommand" /> objeto necesario para realizar actualizaciones en el origen de datos, utilizando opcionalmente columnas para los nombres de parámetro.</summary>
-        <returns>Generado automáticamente <see cref="T:System.Data.OleDb.OleDbCommand" /> objeto necesario para realizar actualizaciones.</returns>
+        <param name="useColumnsForParameterNames">Si es <see langword="true" />, genere nombres de parámetro que coincidan con los nombres de columna, si es posible. Si es <see langword="false" />, genera <c>@p1</c>, <c>@p2</c>, etc.</param>
+        <summary>Obtiene el objeto <see cref="T:System.Data.OleDb.OleDbCommand" /> generado automáticamente que es necesario para realizar actualizaciones en el origen de datos, utilizando opcionalmente columnas para los nombres de parámetro.</summary>
+        <returns>Objeto <see cref="T:System.Data.OleDb.OleDbCommand" /> generado automáticamente que es necesario para realizar actualizaciones.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -640,7 +703,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Dado un identificador sin comillas en el caso de un catálogo correcto, devuelve el valor correcto entrecomillado de ese identificador. Esto incluye las comillas incrustadas en el identificador de secuencia de escape correcta.</summary>
+        <summary>Dado un identificador sin comillas en el caso de un catálogo correcto, devuelve el formato correcto del entrecomillado de ese identificador. Incluye una secuencia de escape correcta de las comillas incrustadas que pueda haber en el identificador.</summary>
         <related type="Article" href="https://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Generación automática de comandos</related>
       </Docs>
     </MemberGroup>
@@ -657,16 +720,20 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="unquotedIdentifier" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="unquotedIdentifier" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="unquotedIdentifier">El identificador original sin comillas.</param>
-        <summary>Dado un identificador sin comillas en el caso de un catálogo correcto, devuelve el valor correcto entrecomillado de ese identificador. Esto incluye las comillas incrustadas en el identificador de secuencia de escape correcta.</summary>
-        <returns>Versión entrecomillada del identificador. Las comillas incrustadas dentro del identificador son el escape adecuado.</returns>
+        <param name="unquotedIdentifier">Identificador original sin comillas.</param>
+        <summary>Dado un identificador sin comillas en el caso de un catálogo correcto, devuelve el formato correcto del entrecomillado de ese identificador. Incluye una secuencia de escape correcta de las comillas incrustadas que pueda haber en el identificador.</summary>
+        <returns>Versión entrecomillada del identificador. Se crea una secuencia de escape correcta de las comillas incrustadas en el identificador.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Generación automática de comandos</related>
       </Docs>
@@ -684,18 +751,22 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="unquotedIdentifier" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
-        <Parameter Name="connection" Type="System.Data.OleDb.OleDbConnection" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="unquotedIdentifier" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="connection" Type="System.Data.OleDb.OleDbConnection" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="unquotedIdentifier">El identificador sin comillas que se devuelven en formato entrecomillado.</param>
-        <param name="connection">Cuando se pasa una conexión, hace que el contenedor administrado Obtiene el carácter de comilla del proveedor OLE DB. Cuando no se pasa conexión, la cadena se entrecomilla usando valores de <see cref="P:System.Data.Common.DbCommandBuilder.QuotePrefix" /> y <see cref="P:System.Data.Common.DbCommandBuilder.QuoteSuffix" />.</param>
-        <summary>Dado un identificador sin comillas en el caso de un catálogo correcto, devuelve el valor correcto entrecomillado de ese identificador. Esto incluye las comillas incrustadas en el identificador de secuencia de escape correcta.</summary>
-        <returns>Versión entrecomillada del identificador. Las comillas incrustadas dentro del identificador son el escape adecuado.</returns>
+        <param name="unquotedIdentifier">Identificador sin comillas que se va a devolver en formato entrecomillado.</param>
+        <param name="connection">Cuando se pasa una conexión, el contenedor administrado obtiene el carácter de comilla del proveedor OLE DB. Cuando no se pasa ninguna conexión, la cadena se entrecomilla usando valores de <see cref="P:System.Data.Common.DbCommandBuilder.QuotePrefix" /> y de <see cref="P:System.Data.Common.DbCommandBuilder.QuoteSuffix" />.</param>
+        <summary>Dado un identificador sin comillas en el caso de un catálogo correcto, devuelve el formato correcto del entrecomillado de ese identificador. Incluye una secuencia de escape correcta de las comillas incrustadas que pueda haber en el identificador.</summary>
+        <returns>Versión entrecomillada del identificador. Se crea una secuencia de escape correcta de las comillas incrustadas en el identificador.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Generación automática de comandos</related>
       </Docs>
@@ -712,6 +783,9 @@
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+      </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-1.1">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
@@ -727,8 +801,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el carácter o caracteres iniciales que se utilizará al especificar objetos de base de datos (por ejemplo, tablas o columnas) cuyos nombres contengan caracteres como espacios o símbolos (tokens) reservados.</summary>
-        <value>El carácter inicial o caracteres que se va a usar. El valor predeterminado es una cadena vacía.</value>
+        <summary>Obtiene o establece el carácter o los caracteres iniciales que se van a utilizar al especificar objetos de base de datos (por ejemplo, tablas o columnas), cuyos nombres contengan caracteres como espacios o símbolos (token) reservados.</summary>
+        <value>Caracteres iniciales que se van a utilizar. El valor predeterminado es una cadena vacía.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -743,6 +817,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
       </AssemblyInfo>
       <Attributes>
         <Attribute FrameworkAlternate="netframework-1.1">
@@ -759,8 +836,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el carácter o caracteres que se va a usar al especificar objetos de base de datos (por ejemplo, tablas o columnas) cuyos nombres contengan caracteres como espacios o tokens reservados finales.</summary>
-        <value>El carácter o caracteres que se usan finales. El valor predeterminado es una cadena vacía.</value>
+        <summary>Obtiene o establece el carácter o los caracteres finales que se van a usar al especificar los objetos de base de datos (por ejemplo, tablas o columnas) cuyos nombres contienen caracteres como espacios o tokens reservados.</summary>
+        <value>Caracteres finales que se van a utilizar. El valor predeterminado es una cadena vacía.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -776,12 +853,15 @@
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Borra los comandos asociados con este <see cref="T:System.Data.OleDb.OleDbCommandBuilder" />.</summary>
+        <summary>Borra los comandos asociados a este <see cref="T:System.Data.OleDb.OleDbCommandBuilder" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -798,11 +878,15 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="adapter" Type="System.Data.Common.DbDataAdapter" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="adapter" Type="System.Data.Common.DbDataAdapter" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="adapter">To be added.</param>
@@ -816,7 +900,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Dado un identificador entre comillas, devuelve el formato correcto sin comillas de ese identificador. Esto incluye correctamente una secuencia sin escape las comillas incrustadas en el identificador.</summary>
+        <summary>Dado in identificador entre comillas, devuelve el formato correcto sin comillas de ese identificador. Incluye una secuencia sin escape correcta de las comillas incrustadas que pueda haber en el identificador.</summary>
         <related type="Article" href="https://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Generación automática de comandos</related>
       </Docs>
     </MemberGroup>
@@ -833,16 +917,20 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="quotedIdentifier" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="quotedIdentifier" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="quotedIdentifier">El identificador que tendrá quitar las comillas incrustadas.</param>
-        <summary>Dado un identificador entre comillas, devuelve el formato correcto sin comillas de ese identificador. Esto incluye correctamente una secuencia sin escape las comillas incrustadas en el identificador.</summary>
-        <returns>El identificador sin comillas, con las comillas incrustadas correctamente.</returns>
+        <param name="quotedIdentifier">Identificador del que se van a quitar las comillas incrustadas.</param>
+        <summary>Dado in identificador entre comillas, devuelve el formato correcto sin comillas de ese identificador. Incluye una secuencia sin escape correcta de las comillas incrustadas que pueda haber en el identificador.</summary>
+        <returns>Identificador sin comillas, del que también se han quitado correctamente las comillas incrustadas.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Generación automática de comandos</related>
       </Docs>
@@ -860,18 +948,22 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OleDb</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="quotedIdentifier" Type="System.String" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
-        <Parameter Name="connection" Type="System.Data.OleDb.OleDbConnection" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="quotedIdentifier" Type="System.String" Index="0" FrameworkAlternate="dotnet-plat-ext-3.0;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
+        <Parameter Name="connection" Type="System.Data.OleDb.OleDbConnection" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="quotedIdentifier">El identificador que tendrá quitar las comillas incrustadas.</param>
+        <param name="quotedIdentifier">Identificador del que se van a quitar las comillas incrustadas.</param>
         <param name="connection"><see cref="T:System.Data.OleDb.OleDbConnection" />.</param>
-        <summary>Dado un identificador entre comillas, devuelve el formato correcto sin comillas de ese identificador. Esto incluye correctamente una secuencia sin escape las comillas incrustadas en el identificador.</summary>
-        <returns>El identificador sin comillas, con las comillas incrustadas correctamente.</returns>
+        <summary>Dado in identificador entre comillas, devuelve el formato correcto sin comillas de ese identificador. Incluye una secuencia sin escape correcta de las comillas incrustadas que pueda haber en el identificador.</summary>
+        <returns>Identificador sin comillas, del que también se han quitado correctamente las comillas incrustadas.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Generación automática de comandos</related>
       </Docs>

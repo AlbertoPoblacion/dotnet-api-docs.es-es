@@ -1,5 +1,5 @@
 <Type Name="ApplicationBase" FullName="Microsoft.VisualBasic.ApplicationServices.ApplicationBase">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="44cc5d4edb46d14e1bdae5b0599c1571a7911ba2" /><Meta Name="ms.sourcegitcommit" Value="95e24aee1283af2f120fc5da4b0bdc0712ab698f" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/06/2019" /><Meta Name="ms.locfileid" Value="65156054" /></Metadata><TypeSignature Language="C#" Value="public class ApplicationBase" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="59207f70cdb1fe00f9e1fee43318c7f7556e3bb3" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67238511" /></Metadata><TypeSignature Language="C#" Value="public class ApplicationBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ApplicationBase extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.ApplicationBase" />
   <TypeSignature Language="VB.NET" Value="Public Class ApplicationBase" />
@@ -19,7 +19,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Proporciona propiedades, métodos y eventos relacionados con la aplicación actual.</summary>
+    <summary>Proporciona las propiedades, los métodos y los eventos relacionados con la aplicación actual.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -101,8 +101,8 @@
         <Parameter Name="cultureName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="cultureName"><see langword="String" />. Nombre de la referencia cultural como una cadena. Para obtener una lista de nombres posibles, consulte <see cref="T:System.Globalization.CultureInfo" />.</param>
-        <summary>Cambia la referencia cultural utilizada por el subproceso actual para manipular las cadenas y el formato de cadena.</summary>
+        <param name="cultureName"><see langword="String" />. Nombre de la referencia cultural en forma de cadena. Para obtener una lista de posibles nombres, vea <see cref="T:System.Globalization.CultureInfo" />.</param>
+        <summary>Cambia la referencia cultural utilizada por el actual subproceso para manipular las cadenas y aplicarles un formato.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -139,7 +139,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="cultureName" /> es <see langword="Nothing" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="cultureName" /> es <see langword="Nothing" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="cultureName" /> no es un nombre de referencia cultural válido.</exception>
         <altmember cref="P:System.Threading.Thread.CurrentCulture" />
         <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objetos (Visual Basic)</related>
@@ -169,8 +169,8 @@
         <Parameter Name="cultureName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="cultureName"><see langword="String" />. Nombre de la referencia cultural como una cadena. Para obtener una lista de nombres posibles, consulte <see cref="T:System.Globalization.CultureInfo" />.</param>
-        <summary>Cambia la referencia cultural que utiliza el subproceso actual para recuperar recursos específicos de la referencia cultural.</summary>
+        <param name="cultureName"><see langword="String" />. Nombre de la referencia cultural en forma de cadena. Para obtener una lista de posibles nombres, vea <see cref="T:System.Globalization.CultureInfo" />.</param>
+        <summary>Cambia la referencia cultural que utiliza el subproceso actual para recuperar los recursos específicos de la referencia cultural.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -206,7 +206,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="cultureName" /> es <see langword="Nothing" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="cultureName" /> es <see langword="Nothing" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="cultureName" /> no es un nombre de referencia cultural válido.</exception>
         <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objetos (Visual Basic)</related>
       </Docs>
@@ -232,8 +232,8 @@
         <ReturnType>System.Globalization.CultureInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene la referencia cultural que utiliza el subproceso actual para la manipulación de cadenas y aplicarles un formato.</summary>
-        <value>Un <see cref="T:System.Globalization.CultureInfo" /> usa el objeto que representa la referencia cultural del subproceso actual para la manipulación de cadenas y aplicarles un formato.</value>
+        <summary>Obtiene la referencia cultural que utiliza el subproceso actual para manipular las cadenas y aplicarles un formato.</summary>
+        <value>Objeto <see cref="T:System.Globalization.CultureInfo" /> que representa la referencia cultural que el subproceso actual usa para manipular las cadenas y aplicarles un formato.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -296,9 +296,9 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="name">Un <see langword="String" /> que contiene el nombre de la variable de entorno.</param>
+        <param name="name"><see langword="String" /> que contiene el nombre de la variable de entorno.</param>
         <summary>Devuelve el valor de la variable de entorno especificada.</summary>
-        <returns>Un <see langword="String" /> que contiene el valor de la variable de entorno con el nombre <paramref name="name" />.</returns>
+        <returns><see langword="String" /> que contiene el valor de la variable de entorno con el parámetro <paramref name="name" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -326,9 +326,9 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="name" /> es <see langword="Nothing" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="name" /> es <see langword="Nothing" />.</exception>
         <exception cref="T:System.ArgumentException">La variable de entorno especificada por <paramref name="name" /> no existe.</exception>
-        <exception cref="T:System.Security.SecurityException">El código de llamada no tiene <see cref="T:System.Security.Permissions.EnvironmentPermission" /> con <see langword="Read" /> acceso.</exception>
+        <exception cref="T:System.Security.SecurityException">El código de llamada no tiene permisos <see cref="T:System.Security.Permissions.EnvironmentPermission" /> con acceso <see langword="Read" />.</exception>
         <altmember cref="M:System.Environment.GetEnvironmentVariable(System.String)" />
         <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objetos (Visual Basic)</related>
       </Docs>
@@ -348,13 +348,14 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Core</AssemblyName>
+        <AssemblyVersion>10.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.ApplicationServices.AssemblyInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un objeto que proporciona propiedades para obtener información sobre el ensamblado de la aplicación, como el número de versión, descripción y así sucesivamente.</summary>
-        <value>La <see cref="T:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo" /> objeto de la aplicación actual.</value>
+        <summary>Obtiene un objeto que proporciona las propiedades para obtener información sobre el ensamblado de la aplicación, como el número de versión, la descripción, etc.</summary>
+        <value>Objeto <see cref="T:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo" /> de la aplicación actual.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -389,8 +390,8 @@
         <ReturnType>Microsoft.VisualBasic.Logging.Log</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un objeto que proporciona propiedades y métodos para escribir información de eventos y excepciones en los agentes de escucha de registro de la aplicación.</summary>
-        <value>La <see cref="T:Microsoft.VisualBasic.Logging.Log" /> objeto de la aplicación actual.</value>
+        <summary>Obtiene un objeto que proporciona las propiedades y los métodos para escribir la información de los eventos y excepciones en los agentes de escucha de registro de la aplicación.</summary>
+        <value>Objeto <see cref="T:Microsoft.VisualBasic.Logging.Log" /> de la aplicación actual.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -427,7 +428,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene la referencia cultural que utiliza el subproceso actual para recuperar los recursos específicos de la referencia cultural.</summary>
-        <value>Un <see cref="T:System.Globalization.CultureInfo" /> objeto que representa la referencia cultural que utiliza el subproceso actual para recuperar recursos específicos de la referencia cultural.</value>
+        <value>Objeto <see cref="T:System.Globalization.CultureInfo" /> que representa la referencia cultural que el subproceso actual usa para recuperar recursos específicos de la referencia cultural.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -1,5 +1,5 @@
 <Type Name="Activity" FullName="System.Diagnostics.Activity">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="359f3ec3e2c4ab4a1b4dae520bcd30394973fc26" /><Meta Name="ms.sourcegitcommit" Value="f55040f35c19a83c85beb55243330558f6e369be" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/10/2019" /><Meta Name="ms.locfileid" Value="66817832" /></Metadata><TypeSignature Language="C#" Value="public class Activity" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="447d0b7c665242e9f520c6575a55767cbd659554" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67239656" /></Metadata><TypeSignature Language="C#" Value="public class Activity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Activity extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Activity" />
   <TypeSignature Language="VB.NET" Value="Public Class Activity" />
@@ -42,7 +42,7 @@
       <Docs>
         <param name="operationName">Nombre de la operación.</param>
         <summary>Inicializa una nueva instancia de la clase <see cref="T:System.Diagnostics.Activity" />.</summary>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -50,7 +50,7 @@
 Tenga en cuenta que <xref:System.Diagnostics.Activity> tiene un patrón de "generador": se llame al constructor, un número de `Set*` y `Add*` API y, a continuación, llame <xref:System.Diagnostics.Activity.Start> para compilar la actividad. Le **debe** llamar <xref:System.Diagnostics.Activity.Start> antes de usar la nueva instancia.
 
  ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ActivityTraceFlags">
@@ -101,7 +101,7 @@ Tenga en cuenta que <xref:System.Diagnostics.Activity> tiene un patrón de "gene
         <param name="value">Valor de equipaje.</param>
         <summary>Actualiza <see cref="T:System.Diagnostics.Activity" /> para tener un nuevo elemento de equipaje con la clave y el valor especificados.</summary>
         <returns><see langword="this" /> para un encadenamiento práctico.</returns>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -111,7 +111,7 @@ Este par clave/valor se incluye en la colección devuelta por la <see cref="P:Sy
 `Baggage` está pensado para la información necesaria para el control de tiempo de ejecución. Para obtener información que le resulte útil se muestran en el registro con el <xref:System.Diagnostics.Activity>, utilice el <xref:System.Diagnostics.Activity.Tags> propiedad.
 
  ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddTag">
@@ -175,7 +175,7 @@ Este par clave/valor se incluye en la colección devuelta por la <see cref="P:Sy
       <Docs>
         <summary>Obtiene una colección de pares clave-valor que representa la información que se pasa a los elementos secundarios de este <see cref="T:System.Diagnostics.Activity" />.</summary>
         <value>Una enumeración de pares clave-valor de cadena de la cadena.</value>
-         <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -183,7 +183,7 @@ Este par clave/valor se incluye en la colección devuelta por la <see cref="P:Sy
 `Baggage` se puede serializar cuando las solicitudes de dejar el proceso (junto con el Id.). Por lo general, `Baggage` se usa para un mayor control sobre el registro de la actividad y los elementos secundarios.  En general, si no usa los datos en tiempo de ejecución, debería utilizar <xref:System.Diagnostics.Activity.Tags> en su lugar.
 
 ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Current">
@@ -325,7 +325,7 @@ Este par clave/valor se incluye en la colección devuelta por la <see cref="P:Sy
       <Docs>
         <summary>Obtiene un identificador específico de una solicitud determinada.</summary>
         <value>El id. de la actividad.</value>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -333,7 +333,7 @@ Este par clave/valor se incluye en la colección devuelta por la <see cref="P:Sy
 Un identificador tiene una estructura jerárquica: `root-id.id1_id2.id3_`. El identificador se genera cuando <xref:System.Diagnostics.Activity.Start> se denomina anexando un sufijo para el `Activity.Parent.Id` o <xref:System.Diagnostics.Activity.ParentId>. Un <xref:System.Diagnostics.Activity> no tiene ningún identificador hasta que se inicia. Para obtener más información, consulte [formato de identificador](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.DiagnosticSource/src/ActivityUserGuide.md#id-format).
 
 ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="IdFormat">
@@ -378,7 +378,7 @@ Un identificador tiene una estructura jerárquica: `root-id.id1_id2.id3_`. El id
       <Docs>
         <summary>Obtiene el nombre de la operación.</summary>
         <value>Nombre de la operación.</value>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -386,7 +386,7 @@ Un identificador tiene una estructura jerárquica: `root-id.id1_id2.id3_`. El id
 Un nombre de la operación es el *menos detallado* nombre que es útil para la agrupación y filtrado. El nombre suele ser una constante de tiempo de compilación. Los nombres de las API de Rest son razonables, pero no deben ser argumentos (por ejemplo, cuentas específicas) en el nombre, sino en las etiquetas.
 
 ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -434,7 +434,7 @@ Un nombre de la operación es el *menos detallado* nombre que es útil para la a
       <Docs>
         <summary>Obtiene el identificador del elemento primario de esta actividad.</summary>
         <value>El identificador de elemento primario, si existe alguno, o <see langword="null" /> si no es así.</value>
-      <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -444,7 +444,7 @@ Si el elemento primario de este <xref:System.Diagnostics.Activity> proviene de f
 Este valor de propiedad puede ser `null` si se trata de una raíz <see cref="T:System.Diagnostics.Activity" /> (es decir, no tiene ningún <xref:System.Diagnostics.Activity.Parent>).  Consulte [formato de identificador](href="https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.DiagnosticSource/src/ActivityUserGuide.md#id-format) para obtener más detalles.
 
 ]]></format>
-      </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ParentSpanId">
@@ -510,7 +510,7 @@ Este valor de propiedad puede ser `null` si se trata de una raíz <see cref="T:S
       <Docs>
         <summary>Obtiene el identificador de raíz de este <see cref="T:System.Diagnostics.Activity" />.</summary>
         <value>El identificador de la raíz, o <see langword="null" /> si la instancia actual tiene un <see cref="P:System.Diagnostics.Activity.ParentId" /> o <see cref="P:System.Diagnostics.Activity.Id" />.</value>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -518,7 +518,7 @@ Este valor de propiedad puede ser `null` si se trata de una raíz <see cref="T:S
 El identificador de la raíz es una subcadena de la <xref:System.Diagnostics.Activity.Id> o <xref:System.Diagnostics.Activity.ParentId>) entre ' |' (o al principio) y la primera `.`. Filtrar por Id. de raíz permite buscar todas las actividades implicadas en el procesamiento de la operación. Para obtener más información, consulte [formato de identificador](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.DiagnosticSource/src/ActivityUserGuide.md#id-format).
 
 ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetEndTime">
@@ -574,7 +574,7 @@ El identificador de la raíz es una subcadena de la <xref:System.Diagnostics.Act
         <param name="parentId">Identificador de la operación principal.</param>
         <summary>Actualiza <see cref="T:System.Diagnostics.Activity" /> para indicar que el elemento <see cref="T:System.Diagnostics.Activity" /> con un identificador <paramref name="parentId" /> ha producido <see cref="T:System.Diagnostics.Activity" />.</summary>
         <returns><see langword="this" /> para un encadenamiento práctico.</returns>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -582,7 +582,7 @@ El identificador de la raíz es una subcadena de la <xref:System.Diagnostics.Act
 Esta propiedad sólo debe usarse en escenarios de "límite" donde un <see cref="T:System.Diagnostics.Activity" /> de otro proceso iniciado lógicamente esta <see cref="T:System.Diagnostics.Activity" />. El `parentId` , se abrirá el <xref:System.Diagnostics.Activity.Tags> (así como el <xref:System.Diagnostics.Activity.ParentId> propiedad) y se puede usar para reconstruir el árbol causal.
 
 ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="SetParentId">
@@ -683,7 +683,7 @@ Esta propiedad sólo debe usarse en escenarios de "límite" donde un <see cref="
       <Docs>
         <summary>Inicia la actividad.</summary>
         <returns><see langword="this" /> para un encadenamiento práctico.</returns>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -697,7 +697,7 @@ Una llamada a la `Start` método hace lo siguiente:
 Use <xref:System.Diagnostics.DiagnosticSource.StartActivity%2A?displayProperty=nameWithType> para iniciar el <see cref="T:System.Diagnostics.Activity" /> y escribir el evento de inicio.
 
 ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="StartTimeUtc">
@@ -721,7 +721,7 @@ Use <xref:System.Diagnostics.DiagnosticSource.StartActivity%2A?displayProperty=n
       <Docs>
         <summary>Obtiene la hora a la que se ha iniciado la operación.</summary>
         <value>La hora UTC que inició la operación.</value>
-        <remarks>  
+        <remarks>
           <format type="text/markdown"><![CDATA[  
 
 ## Remarks
@@ -729,7 +729,7 @@ Use <xref:System.Diagnostics.DiagnosticSource.StartActivity%2A?displayProperty=n
 El `StartTimeUtc` suele ser propiedad inicializado cuando <xref:System.Diagnostics.Activity.Start> se llama, pero se puede establecer en cualquier momento mediante una llamada a <xref:System.Diagnostics.Activity.SetStartTime%2A>.
 
 ]]></format>
-         </remarks>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Stop">

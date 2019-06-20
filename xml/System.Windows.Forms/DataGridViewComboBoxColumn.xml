@@ -1,5 +1,5 @@
 <Type Name="DataGridViewComboBoxColumn" FullName="System.Windows.Forms.DataGridViewComboBoxColumn">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="1a333b9eeb51648f6664602e1480d84cbe29a850" /><Meta Name="ms.sourcegitcommit" Value="2767b5903996fbd7e2b81eda1114dfc9d0d9db63" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/02/2019" /><Meta Name="ms.locfileid" Value="65015889" /></Metadata><TypeSignature Language="C#" Value="public class DataGridViewComboBoxColumn : System.Windows.Forms.DataGridViewColumn" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bcc2da16cb4e959cf927c729dcecf352a9b29f42" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67242593" /></Metadata><TypeSignature Language="C#" Value="public class DataGridViewComboBoxColumn : System.Windows.Forms.DataGridViewColumn" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewComboBoxColumn extends System.Windows.Forms.DataGridViewColumn" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewComboBoxColumn" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewComboBoxColumn&#xA;Inherits DataGridViewColumn" />
@@ -18,15 +18,18 @@
     <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.DataGridViewComboBoxColumnDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Windows.Forms.DataGridViewComboBoxColumn), "DataGridViewComboBoxColumn.bmp")</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
       <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.DataGridViewComboBoxColumnDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
+    <Attribute FrameworkAlternate="netcore-3.0">
+      <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Windows.Forms.DataGridViewComboBoxColumn), "DataGridViewComboBoxColumn")</AttributeName>
+    </Attribute>
   </Attributes>
   <Docs>
-    <summary>Representa una columna de <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" /> objetos.</summary>
+    <summary>Representa una columna de objetos <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -71,7 +74,7 @@
     <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />
     <altmember cref="T:System.Windows.Forms.DataGridViewComboBoxEditingControl" />
     <altmember cref="P:System.Windows.Forms.DataGridViewColumn.SortMode" />
-    <related type="Article" href="https://msdn.microsoft.com/library/bcbe794a-d1fa-47f8-b5a3-5f085b32097d">Procedimiento para obtener acceso a objetos de una lista desplegable DataGridViewComboBoxCell en formularios Windows Forms</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/bcbe794a-d1fa-47f8-b5a3-5f085b32097d">Cómo: Obtener acceso a objetos de una lista desplegable DataGridViewComboBoxCell en Windows Forms</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -88,7 +91,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Inicializa una nueva instancia de la <see cref="T:System.Windows.Forms.DataGridViewTextBoxColumn" /> clase al estado predeterminado.</summary>
+        <summary>Inicializa una nueva instancia de la clase <see cref="T:System.Windows.Forms.DataGridViewTextBoxColumn" /> con el estado predeterminado.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -127,8 +130,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece un valor que indica si las celdas de la columna coincidirán con los caracteres que se está escribiendo en la celda con una de las posibles selecciones.</summary>
-        <value><see langword="true" /> Si se activa la característica de Autocompletar; en caso contrario, <see langword="false" />. De manera predeterminada, es <see langword="true" />.</value>
+        <summary>Obtiene o establece un valor que indica si las celdas de la columna coincidirán con los caracteres que se estén escribiendo en la celda con una de las posibles selecciones.</summary>
+        <value>Es <see langword="true" /> si está activada la característica de autocompletar; de lo contrario, es <see langword="false" />. De manera predeterminada, es <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -170,7 +173,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece la plantilla utilizada para crear celdas.</summary>
-        <value>Un <see cref="T:System.Windows.Forms.DataGridViewCell" /> que se modelan todas las demás celdas de la columna. El valor predeterminado es un nuevo <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />.</value>
+        <value>Una celda <see cref="T:System.Windows.Forms.DataGridViewCell" /> según la cual se modelan todas las demás celdas de la columna. El valor predeterminado es un nuevo <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -191,7 +194,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidCastException">Al establecer esta propiedad en un valor que no es de tipo <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />.</exception>
+        <exception cref="T:System.InvalidCastException">Cuando se establece esta propiedad en un valor que no es de tipo <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />.</exception>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
         <altmember cref="M:System.Windows.Forms.DataGridViewComboBoxColumn.#ctor" />
         <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
@@ -325,7 +328,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece una cadena que especifica la propiedad o columna de la que recuperar las cadenas para la presentación en los cuadros combinados.</summary>
-        <value>Un <see cref="T:System.String" /> que especifica el nombre de una propiedad o columna en el origen de datos especificado en el <see cref="P:System.Windows.Forms.DataGridViewComboBoxColumn.DataSource" /> propiedad. De manera predeterminada, es <see cref="F:System.String.Empty" />.</value>
+        <value>Una cadena <see cref="T:System.String" /> que especifica el nombre de una propiedad o columna en el origen de datos especificado en la propiedad <see cref="P:System.Windows.Forms.DataGridViewComboBoxColumn.DataSource" />. De manera predeterminada, es <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -382,7 +385,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece un valor que determina cómo se muestra el cuadro combinado cuando no se está en modo de edición.</summary>
-        <value>Un <see cref="T:System.Windows.Forms.DataGridViewComboBoxDisplayStyle" /> valor que indica el aspecto del cuadro combinado. De manera predeterminada, es <see cref="F:System.Windows.Forms.DataGridViewComboBoxDisplayStyle.DropDownButton" />.</value>
+        <value>Un valor de <see cref="T:System.Windows.Forms.DataGridViewComboBoxDisplayStyle" /> que indica el aspecto del cuadro combinado. De manera predeterminada, es <see cref="F:System.Windows.Forms.DataGridViewComboBoxDisplayStyle.DropDownButton" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -430,8 +433,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece un valor que indica si el <see cref="P:System.Windows.Forms.DataGridViewComboBoxColumn.DisplayStyle" /> valor de propiedad solo se aplica a la celda actual en el <see cref="T:System.Windows.Forms.DataGridView" /> controlar cuando la celda actual está en esta columna.</summary>
-        <value><see langword="true" /> Si el estilo de presentación sólo se aplica a la celda actual; en caso contrario <see langword="false" />. De manera predeterminada, es <see langword="false" />.</value>
+        <summary>Obtiene o establece un valor que indica si el valor de la propiedad <see cref="P:System.Windows.Forms.DataGridViewComboBoxColumn.DisplayStyle" /> sólo se aplica a la celda actual del control <see cref="T:System.Windows.Forms.DataGridView" /> cuando la celda actual está en esta columna.</summary>
+        <value>Es <see langword="true" /> si el estilo de presentación sólo se aplica a la celda actual; de lo contrario, es <see langword="false" />. De manera predeterminada, es <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -524,7 +527,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece la apariencia de estilo plano de las celdas de la columna.</summary>
-        <value>Un <see cref="T:System.Windows.Forms.FlatStyle" /> valor que indica el aspecto de la celda. De manera predeterminada, es <see cref="F:System.Windows.Forms.FlatStyle.Standard" />.</value>
+        <value>Valor de <see cref="T:System.Windows.Forms.FlatStyle" /> que indica el aspecto de la celda. De manera predeterminada, es <see cref="F:System.Windows.Forms.FlatStyle.Standard" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -591,7 +594,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene la colección de objetos utilizada como selecciones en los cuadros combinados.</summary>
-        <value>Un <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection" /> que representa las selecciones en los cuadros combinados.</value>
+        <value>Colección <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection" /> que representa las selecciones realizadas en los cuadros combinados.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -700,7 +703,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece un valor que indica si los elementos del cuadro combinado están ordenados.</summary>
-        <value><see langword="true" /> si el cuadro combinado está ordenado; de lo contrario, <see langword="false" />. De manera predeterminada, es <see langword="false" />.</value>
+        <value>Es <see langword="true" /> si el cuadro combinado está ordenado; en caso contrario, es <see langword="false" />. De manera predeterminada, es <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -784,7 +787,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece una cadena que especifica la propiedad o columna de la que obtener los valores que corresponden a las selecciones de la lista desplegable.</summary>
-        <value>Un <see cref="T:System.String" /> que especifica el nombre de una propiedad o columna utilizado en el <see cref="P:System.Windows.Forms.DataGridViewComboBoxColumn.DataSource" /> propiedad. De manera predeterminada, es <see cref="F:System.String.Empty" />.</value>
+        <value>Cadena <see cref="T:System.String" /> que especifica el nombre de una propiedad o columna utilizado en la propiedad <see cref="P:System.Windows.Forms.DataGridViewComboBoxColumn.DataSource" />. De manera predeterminada, es <see cref="F:System.String.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

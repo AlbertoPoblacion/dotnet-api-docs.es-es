@@ -1,5 +1,5 @@
 <Type Name="DataGridColumnStyle" FullName="System.Windows.Forms.DataGridColumnStyle">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="a7aca9dff420f6829c2ffc9db9683a69277b8aa4" /><Meta Name="ms.sourcegitcommit" Value="2767b5903996fbd7e2b81eda1114dfc9d0d9db63" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/02/2019" /><Meta Name="ms.locfileid" Value="65005879" /></Metadata><TypeSignature Language="C#" Value="public abstract class DataGridColumnStyle : System.ComponentModel.Component, System.Windows.Forms.IDataGridColumnStyleEditingNotificationService" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="c2c6e5b3a7b9d4541ce9547279175b57718a9423" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67242651" /></Metadata><TypeSignature Language="C#" Value="public abstract class DataGridColumnStyle : System.ComponentModel.Component, System.Windows.Forms.IDataGridColumnStyleEditingNotificationService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataGridColumnStyle extends System.ComponentModel.Component implements class System.Windows.Forms.IDataGridColumnStyleEditingNotificationService" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridColumnStyle" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataGridColumnStyle&#xA;Inherits Component&#xA;Implements IDataGridColumnStyleEditingNotificationService" />
@@ -20,7 +20,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
       <AttributeName>System.ComponentModel.DefaultProperty("Header")</AttributeName>
     </Attribute>
     <Attribute>
@@ -29,9 +29,12 @@
     <Attribute>
       <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
     </Attribute>
+    <Attribute FrameworkAlternate="netcore-3.0">
+      <AttributeName>System.ComponentModel.DefaultProperty("HeaderText")</AttributeName>
+    </Attribute>
   </Attributes>
   <Docs>
-    <summary>Especifica el aspecto, el formato del texto y el comportamiento de una columna de control <see cref="T:System.Windows.Forms.DataGrid" />. Esta clase es abstracta.</summary>
+    <summary>Especifica la apariencia, el formato de texto y el comportamiento de una columna de un control <see cref="T:System.Windows.Forms.DataGrid" />. Esta clase es abstracta.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -113,7 +116,7 @@
 ## Remarks  
  Cuando se crea una instancia de un <xref:System.Windows.Forms.DataGridColumnStyle>, se inicializan las propiedades siguientes.  
   
-|Propiedad|Valor predeterminado|  
+|Propiedad.|Valor predeterminado|  
 |--------------|-------------------|  
 |<xref:System.Windows.Forms.DataGridColumnStyle.Alignment%2A>|`HorizontalAlignment.Left`|  
 |<xref:System.Windows.Forms.DataGridColumnStyle.DataGridTableStyle%2A>|`null`|  
@@ -146,7 +149,7 @@
         <Parameter Name="prop" Type="System.ComponentModel.PropertyDescriptor" />
       </Parameters>
       <Docs>
-        <param name="prop"><see cref="T:System.ComponentModel.PropertyDescriptor" /> que proporciona los atributos de la columna.</param>
+        <param name="prop"><see cref="T:System.ComponentModel.PropertyDescriptor" /> que proporciona los atributos para la columna.</param>
         <summary>Inicializa una nueva instancia de la clase <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> con el objeto <see cref="T:System.ComponentModel.PropertyDescriptor" /> especificado.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -158,7 +161,7 @@
   
  Cuando se crea una instancia de un <xref:System.Windows.Forms.DataGridColumnStyle>, se inicializan las siguientes propiedades de lectura/escritura.  
   
-|Propiedad|Valor inicial|  
+|Propiedad.|Valor inicial|  
 |--------------|-------------------|  
 |<xref:System.Windows.Forms.DataGridColumnStyle.Alignment%2A>|`HorizontalAlignment.Left`|  
 |<xref:System.Windows.Forms.DataGridColumnStyle.DataGridTableStyle%2A>|`null`|  
@@ -350,7 +353,7 @@
       </Parameters>
       <Docs>
         <param name="value"><see cref="T:System.Windows.Forms.CurrencyManager" /> que se va a comprobar.</param>
-        <summary>Se produce una excepción si <see cref="T:System.Windows.Forms.DataGrid" /> no tiene un origen de datos válido, o si esta columna no está asignada a una propiedad válida en el origen de datos.</summary>
+        <summary>Produce una excepción si <see cref="T:System.Windows.Forms.DataGrid" /> no tiene un origen de datos válido o si esta columna no está asignada a una propiedad válida en el origen de datos.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -364,7 +367,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">El valor de <paramref name="value" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ApplicationException">El <see cref="T:System.ComponentModel.PropertyDescriptor" /> para esta columna es <see langword="null" />.</exception>
+        <exception cref="T:System.ApplicationException"><see cref="T:System.ComponentModel.PropertyDescriptor" /> para esta columna es <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ColumnStartedEditing">
@@ -428,7 +431,7 @@
         <param name="dataSource"><see cref="T:System.Windows.Forms.CurrencyManager" /> para <see cref="T:System.Windows.Forms.DataGridColumnStyle" />.</param>
         <param name="rowNum">Número de la fila que se está editando.</param>
         <summary>Cuando se reemplaza en una clase derivada, inicia una solicitud para completar un procedimiento de edición.</summary>
-        <returns><see langword="true" /> Si el procedimiento de edición se confirma correctamente; en caso contrario, <see langword="false" />.</returns>
+        <returns>Es <see langword="true" /> si el procedimiento de edición se confirma correctamente; en caso contrario, es <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -555,7 +558,7 @@ El <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.F
       </ReturnValue>
       <Docs>
         <summary>Obtiene el <see cref="T:System.Windows.Forms.DataGridTableStyle" /> de la columna.</summary>
-        <value><see cref="P:System.Windows.Forms.DataGridColumnStyle.DataGridTableStyle" /> que contiene el <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> actual.</value>
+        <value><see cref="P:System.Windows.Forms.DataGridColumnStyle.DataGridTableStyle" /> que contiene el objeto <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> actual.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -608,9 +611,9 @@ El <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.F
       </Parameters>
       <Docs>
         <param name="source"><see cref="T:System.Windows.Forms.CurrencyManager" /> para <see cref="T:System.Windows.Forms.DataGridColumnStyle" />.</param>
-        <param name="rowNum">Número de fila que se va a editar.</param>
-        <param name="bounds"><see cref="T:System.Drawing.Rectangle" />delimitador donde se va a situar el control.</param>
-        <param name="readOnly">Valor que indica si la columna es de solo lectura. <see langword="true" /> Si el valor es de solo lectura. en caso contrario, <see langword="false" />.</param>
+        <param name="rowNum">Número de la fila que se va a editar.</param>
+        <param name="bounds"><see cref="T:System.Drawing.Rectangle" /> delimitador en el que se colocará el control.</param>
+        <param name="readOnly">Un valor que indica si la columna es de solo lectura. Es <see langword="true" /> si el valor es de solo lectura; en caso contrario, es <see langword="false" />.</param>
         <summary>Prepara una celda para que pueda editarse.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -661,11 +664,11 @@ El <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.F
       <Docs>
         <param name="source"><see cref="T:System.Windows.Forms.CurrencyManager" /> para <see cref="T:System.Windows.Forms.DataGridColumnStyle" />.</param>
         <param name="displayText">Texto que se va a mostrar en el control.</param>
-        <param name="rowNum">Número de fila en esta columna que se está editando.</param>
+        <param name="rowNum">Número de fila de la columna que se está editando.</param>
         <param name="bounds"><see cref="T:System.Drawing.Rectangle" />donde se va a situar el control.</param>
-        <param name="readOnly">Valor que indica si la columna es de solo lectura. <see langword="true" /> Si el valor es de solo lectura. en caso contrario, <see langword="false" />.</param>
+        <param name="readOnly">Un valor que indica si la columna es de solo lectura. Es <see langword="true" /> si el valor es de solo lectura; en caso contrario, es <see langword="false" />.</param>
         <param name="instantText">Texto que se va a mostrar en el control.</param>
-        <summary>Prepara la celda para la edición con el <see cref="T:System.Windows.Forms.CurrencyManager" />, el número de fila y los parámetros <see cref="T:System.Drawing.Rectangle" /> especificados.</summary>
+        <summary>Prepara la celda para su edición mediante los parámetros especificados para <see cref="T:System.Windows.Forms.CurrencyManager" />, <see cref="T:System.Drawing.Rectangle" /> y número de fila.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -720,11 +723,11 @@ El <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.F
       <Docs>
         <param name="source"><see cref="T:System.Windows.Forms.CurrencyManager" /> para <see cref="T:System.Windows.Forms.DataGridColumnStyle" />.</param>
         <param name="displayText">Texto que se va a mostrar en el control.</param>
-        <param name="rowNum">Número de fila en esta columna que se está editando.</param>
+        <param name="rowNum">Número de fila de la columna que se está editando.</param>
         <param name="bounds"><see cref="T:System.Drawing.Rectangle" />donde se va a situar el control.</param>
-        <param name="readOnly">Valor que indica si la columna es de solo lectura. <see langword="true" /> Si el valor es de solo lectura. en caso contrario, <see langword="false" />.</param>
+        <param name="readOnly">Un valor que indica si la columna es de solo lectura. Es <see langword="true" /> si el valor es de solo lectura; en caso contrario, es <see langword="false" />.</param>
         <param name="instantText">Texto que se va a mostrar en el control.</param>
-        <param name="cellIsVisible">Valor que indica si la celda está visible. <see langword="true" /> Si la celda está visible; en caso contrario, <see langword="false" />.</param>
+        <param name="cellIsVisible">Un valor que indica si la celda está visible. Es <see langword="true" /> si la celda está visible; en caso contrario, es <see langword="false" />.</param>
         <summary>Cuando se reemplaza en una clase derivada, prepara una celda para su edición.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -755,7 +758,7 @@ El <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.F
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reinicia el proceso de pintar las columnas que se suspendió al llamar al método <see cref="M:System.Windows.Forms.DataGridColumnStyle.BeginUpdate" />.</summary>
+        <summary>Reanuda la pintura de las columnas que se suspendió mediante la llamada al método <see cref="M:System.Windows.Forms.DataGridColumnStyle.BeginUpdate" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -849,7 +852,7 @@ El <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.F
       </ReturnValue>
       <Docs>
         <summary>Obtiene el alto de la fuente de la columna.</summary>
-        <value>El alto de la fuente, expresado en píxeles. Si no se ha establecido un alto de fuente, la propiedad devuelve el alto de fuente del control <see cref="T:System.Windows.Forms.DataGrid" />; si no se ha establecido esa propiedad, se devuelve el valor del alto de fuente predeterminado para el control <see cref="T:System.Windows.Forms.DataGrid" />.</value>
+        <value>El alto de la fuente, expresado en píxeles. Si no se ha establecido el alto de la fuente, la propiedad devuelve el alto de la fuente del control <see cref="T:System.Windows.Forms.DataGrid" />; si no se ha establecido esa propiedad, se devuelve el alto de fuente predeterminado para el control <see cref="T:System.Windows.Forms.DataGrid" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -876,8 +879,8 @@ El <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.F
       </Parameters>
       <Docs>
         <param name="source"><see cref="T:System.Windows.Forms.CurrencyManager" /> que contiene los datos.</param>
-        <param name="rowNum">Número de fila que contiene los datos.</param>
-        <summary>Obtiene el valor de la fila especificada del <see cref="T:System.Windows.Forms.CurrencyManager" /> especificado.</summary>
+        <param name="rowNum">Número de la fila que contiene los datos.</param>
+        <summary>Obtiene el valor en la fila especificada a partir del objeto <see cref="T:System.Windows.Forms.CurrencyManager" /> especificado.</summary>
         <returns><see cref="T:System.Object" /> que contiene el valor.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -887,7 +890,7 @@ El <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.F
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ApplicationException">El <see cref="T:System.Data.DataColumn" /> para este <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> no se ha establecido aún.</exception>
+        <exception cref="T:System.ApplicationException">Todavía no se ha establecido <see cref="T:System.Data.DataColumn" /> para <see cref="T:System.Windows.Forms.DataGridColumnStyle" />.</exception>
         <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.SetColumnValueAtRow(System.Windows.Forms.CurrencyManager,System.Int32,System.Object)" />
       </Docs>
     </Member>
@@ -951,7 +954,7 @@ El <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.F
       </Parameters>
       <Docs>
         <param name="g">Objeto <see cref="T:System.Drawing.Graphics" />.</param>
-        <param name="value">Valor de objeto cuyo alto y ancho de pantalla se desea saber.</param>
+        <param name="value">Valor de objeto para el que se desea conocer el alto y el ancho en la pantalla.</param>
         <summary>Cuando se reemplaza en una clase derivada, obtiene el alto que se utiliza para cambiar automáticamente el tamaño de las columnas.</summary>
         <returns>Alto que se utiliza para cambiar automáticamente el tamaño de una celda.</returns>
         <remarks>
@@ -998,8 +1001,8 @@ El <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.F
       </Parameters>
       <Docs>
         <param name="g">Objeto <see cref="T:System.Drawing.Graphics" />.</param>
-        <param name="value">Valor de objeto cuyo alto y ancho de pantalla se desea saber.</param>
-        <summary>Cuando se reemplaza en una clase derivada, obtiene el ancho y el alto del valor especificado. El ancho y el alto se usan cuando el usuario se desplaza hasta <see cref="T:System.Windows.Forms.DataGridTableStyle" /> mediante <see cref="T:System.Windows.Forms.DataGridColumnStyle" />.</summary>
+        <param name="value">Valor de objeto para el que se desea conocer el alto y el ancho en la pantalla.</param>
+        <summary>Cuando se reemplaza en una clase derivada, obtiene el ancho y el alto del valor especificado. El ancho y el alto se utilizan cuando el usuario navega hasta <see cref="T:System.Windows.Forms.DataGridTableStyle" /> mediante <see cref="T:System.Windows.Forms.DataGridColumnStyle" />.</summary>
         <returns><see cref="T:System.Drawing.Size" /> que contiene las dimensiones de la celda.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1077,7 +1080,7 @@ El <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.F
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece el texto del encabezado de columna.</summary>
-        <value>Cadena que se muestra como encabezado de columna. Si la crea <see cref="T:System.Windows.Forms.DataGrid" />, el valor predeterminado es el nombre del <see cref="T:System.ComponentModel.PropertyDescriptor" /> usado para crear la columna. Si la crea el usuario, el valor predeterminado es una cadena vacía ("").</value>
+        <value>Cadena que se muestra como encabezado de columna. Si la crea <see cref="T:System.Windows.Forms.DataGrid" />, el valor predeterminado es el nombre de <see cref="T:System.ComponentModel.PropertyDescriptor" /> que se utiliza para crear la columna. Si la crea el usuario, el valor predeterminado es una cadena vacía ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1285,8 +1288,8 @@ El <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.F
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el texto que se muestra cuando la columna contiene <see langword="null" />.</summary>
-        <value>Cadena que se muestra en una columna que contiene <see cref="F:System.DBNull.Value" />.</value>
+        <summary>Obtiene o establece el texto que se muestra cuando la columna contiene un valor <see langword="null" />.</summary>
+        <value>Cadena que se muestra en una columna que contiene un valor <see cref="F:System.DBNull.Value" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1377,8 +1380,8 @@ El <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.F
         <param name="g"><see cref="T:System.Drawing.Graphics" /> en el que se va a dibujar.</param>
         <param name="bounds"><see cref="T:System.Drawing.Rectangle" /> delimitador en el que se va a pintar.</param>
         <param name="source"><see cref="T:System.Windows.Forms.CurrencyManager" /> del control <see cref="T:System.Windows.Forms.DataGrid" /> al que pertenece la columna.</param>
-        <param name="rowNum">Número de la fila en los datos subyacentes a los que se hace referencia.</param>
-        <summary>Pinta el <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> con el <see cref="T:System.Drawing.Graphics" />, <see cref="T:System.Drawing.Rectangle" />, <see cref="T:System.Windows.Forms.CurrencyManager" /> y número de fila determinados.</summary>
+        <param name="rowNum">Número de la fila de los datos subyacentes a la que se hace referencia.</param>
+        <summary>Pinta <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> con los valores especificados para <see cref="T:System.Drawing.Graphics" />, <see cref="T:System.Drawing.Rectangle" />, <see cref="T:System.Windows.Forms.CurrencyManager" /> y número de fila.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1410,9 +1413,9 @@ El <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.F
         <param name="g"><see cref="T:System.Drawing.Graphics" /> en el que se va a dibujar.</param>
         <param name="bounds"><see cref="T:System.Drawing.Rectangle" /> delimitador en el que se va a pintar.</param>
         <param name="source"><see cref="T:System.Windows.Forms.CurrencyManager" /> del control <see cref="T:System.Windows.Forms.DataGrid" /> al que pertenece la columna.</param>
-        <param name="rowNum">Número de la fila en los datos subyacentes a los que se hace referencia.</param>
-        <param name="alignToRight">Valor que indica si se va a alinear a la derecha el contenido de la columna. <see langword="true" /> Si el contenido debe alinearse a la derecha; en caso contrario <see langword="false" />.</param>
-        <summary>Cuando se reemplaza en una clase derivada, pinta un <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> con el <see cref="T:System.Drawing.Graphics" />, <see cref="T:System.Drawing.Rectangle" />, <see cref="T:System.Windows.Forms.CurrencyManager" />, número de fila y alineación predeterminados.</summary>
+        <param name="rowNum">Número de la fila de los datos subyacentes a la que se hace referencia.</param>
+        <param name="alignToRight">Valor que indica si debe alinearse a la derecha el contenido de la columna. <see langword="true" /> si el contenido debe alinearse a la derecha; de lo contrario, <see langword="false" />.</param>
+        <summary>Cuando se reemplaza en una clase derivada, pinta <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> con los valores especificados para <see cref="T:System.Drawing.Graphics" />, <see cref="T:System.Drawing.Rectangle" />, <see cref="T:System.Windows.Forms.CurrencyManager" />, número de fila y alineación.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1454,8 +1457,8 @@ El <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.F
         <param name="rowNum">Número de la fila de la tabla de datos subyacentes a la que se hace referencia.</param>
         <param name="backBrush"><see cref="T:System.Drawing.Brush" /> usado para pintar el color de fondo.</param>
         <param name="foreBrush"><see cref="T:System.Drawing.Color" /> usado para pintar el color de primer plano.</param>
-        <param name="alignToRight">Valor que indica si se va a alinear a la derecha el contenido. <see langword="true" /> Si el contenido se alinea a la derecha, en caso contrario, <see langword="false" />.</param>
-        <summary>Pinta un <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> con el <see cref="T:System.Drawing.Graphics" />, <see cref="T:System.Drawing.Rectangle" />, <see cref="T:System.Windows.Forms.CurrencyManager" />, número de fila, color de fondo, color de primer plano y alineación especificados.</summary>
+        <param name="alignToRight">Valor que indica si se va a alinear a la derecha el contenido. <see langword="true" /> si el contenido se alinea a la derecha; de lo contrario, <see langword="false" />.</param>
+        <summary>Pinta <see cref="T:System.Windows.Forms.DataGridColumnStyle" /> con los valores especificados para <see cref="T:System.Drawing.Graphics" />, <see cref="T:System.Drawing.Rectangle" />, <see cref="T:System.Windows.Forms.CurrencyManager" />, número de fila, color de fondo, color de primer plano y alineación.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1491,8 +1494,8 @@ El <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.F
         <ReturnType>System.ComponentModel.PropertyDescriptor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el <see cref="T:System.ComponentModel.PropertyDescriptor" /> que determina los atributos de los datos mostrados por el <see cref="T:System.Windows.Forms.DataGridColumnStyle" />.</summary>
-        <value><see cref="T:System.ComponentModel.PropertyDescriptor" /> que contiene datos acerca de los atributos de la columna.</value>
+        <summary>Obtiene o establece el objeto <see cref="T:System.ComponentModel.PropertyDescriptor" /> que determina los atributos de los datos que muestra <see cref="T:System.Windows.Forms.DataGridColumnStyle" />.</summary>
+        <value><see cref="T:System.ComponentModel.PropertyDescriptor" /> que contiene datos sobre los atributos de la columna.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1584,7 +1587,7 @@ El <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.F
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece un valor que indica si se pueden editar los datos de la columna.</summary>
-        <value><see langword="true" />, si no se puede editar los datos; en caso contrario, <see langword="false" />.</value>
+        <value>Es <see langword="true" /> si no se pueden editar los datos; de lo contrario, es <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1660,7 +1663,7 @@ El <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.F
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Permite que la columna libere recursos cuando el control contenido en esta no es necesario.</summary>
+        <summary>Permite que la columna libere recursos cuando el control contenido en la misma no es necesario.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1695,7 +1698,7 @@ El <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.F
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Restablece <see cref="P:System.Windows.Forms.DataGridColumnStyle.HeaderText" /> a su valor predeterminado, <see langword="null" />.</summary>
+        <summary>Restablece el valor predeterminado <see langword="null" /> en la propiedad <see cref="P:System.Windows.Forms.DataGridColumnStyle.HeaderText" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1738,12 +1741,12 @@ El <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.F
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="source"><see cref="T:System.Windows.Forms.CurrencyManager" /> asociado al <see cref="T:System.Windows.Forms.DataGridColumnStyle" />.</param>
+        <param name="source"><see cref="T:System.Windows.Forms.CurrencyManager" /> asociado a <see cref="T:System.Windows.Forms.DataGridColumnStyle" />.</param>
         <param name="rowNum">Número de la fila.</param>
         <param name="value">Valor que se va a establecer.</param>
-        <summary>Establece el valor de una fila especificada con el valor de un <see cref="T:System.Windows.Forms.CurrencyManager" /> especificado.</summary>
+        <summary>Establece el valor de una fila especificada con el valor de un objeto <see cref="T:System.Windows.Forms.CurrencyManager" /> especificado.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">El <see cref="T:System.Windows.Forms.CurrencyManager" /> del objeto <see cref="P:System.Windows.Forms.BindingManagerBase.Position" /> no coincide con <paramref name="rowNum" />.</exception>
+        <exception cref="T:System.ArgumentException">La propiedad <see cref="T:System.Windows.Forms.CurrencyManager" /> del objeto <see cref="P:System.Windows.Forms.BindingManagerBase.Position" /> no coincide con <paramref name="rowNum" />.</exception>
         <altmember cref="M:System.Windows.Forms.DataGridColumnStyle.GetColumnValueAtRow(System.Windows.Forms.CurrencyManager,System.Int32)" />
       </Docs>
     </Member>
@@ -1808,7 +1811,7 @@ El <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.F
       </Parameters>
       <Docs>
         <param name="value">Objeto <see cref="T:System.Windows.Forms.DataGrid" />.</param>
-        <summary>Establece el <see cref="T:System.Windows.Forms.DataGrid" /> para la columna.</summary>
+        <summary>Establece <see cref="T:System.Windows.Forms.DataGrid" /> para la columna.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1848,7 +1851,7 @@ El <see cref="M:System.Windows.Forms.DataGridColumnStyle.Commit(System.Windows.F
       </Parameters>
       <Docs>
         <param name="editingControl"><see cref="T:System.Windows.Forms.Control" /> que está editando la columna.</param>
-        <summary>Informa al control <see cref="T:System.Windows.Forms.DataGrid" /> de que el usuario ha empezado a editar la columna.</summary>
+        <summary>Informa al control <see cref="T:System.Windows.Forms.DataGrid" /> de que el usuario ha comenzado a editar la columna.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

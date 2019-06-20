@@ -1,5 +1,5 @@
 <Type Name="ComboBox" FullName="System.Windows.Forms.ComboBox">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="6be11c4ed2f35e10e7639165155b0517a044fc7b" /><Meta Name="ms.sourcegitcommit" Value="2767b5903996fbd7e2b81eda1114dfc9d0d9db63" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/02/2019" /><Meta Name="ms.locfileid" Value="65005960" /></Metadata><TypeSignature Language="C#" Value="public class ComboBox : System.Windows.Forms.ListControl" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bbf4233529f09da01298590e28ab04bd5e2f3d3d" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67242697" /></Metadata><TypeSignature Language="C#" Value="public class ComboBox : System.Windows.Forms.ListControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComboBox extends System.Windows.Forms.ListControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ComboBox" />
   <TypeSignature Language="VB.NET" Value="Public Class ComboBox&#xA;Inherits ListControl" />
@@ -243,7 +243,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">El valor especificado no es uno de los valores de <see cref="T:System.Windows.Forms.AutoCompleteMode" />.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">El valor especificado no es ninguno de los valores de <see cref="T:System.Windows.Forms.AutoCompleteMode" />.</exception>
         <altmember cref="P:System.Windows.Forms.ComboBox.AutoCompleteCustomSource" />
         <altmember cref="P:System.Windows.Forms.ComboBox.AutoCompleteSource" />
       </Docs>
@@ -306,7 +306,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">El valor especificado no es uno de los valores de <see cref="T:System.Windows.Forms.AutoCompleteSource" />.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">El valor especificado no es ninguno de los valores de <see cref="T:System.Windows.Forms.AutoCompleteSource" />.</exception>
         <altmember cref="P:System.Windows.Forms.ComboBox.AutoCompleteCustomSource" />
         <altmember cref="P:System.Windows.Forms.ComboBox.AutoCompleteMode" />
       </Docs>
@@ -444,7 +444,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">El valor especificado no es uno de los valores de <see cref="T:System.Windows.Forms.ImageLayout" />.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">El valor especificado no es ninguno de los valores de <see cref="T:System.Windows.Forms.ImageLayout" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="BackgroundImageLayoutChanged">
@@ -826,7 +826,7 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">El valor no es válido <see cref="T:System.Windows.Forms.DrawMode" /> valor de enumeración.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">El valor no es un valor de enumeración <see cref="T:System.Windows.Forms.DrawMode" /> válido.</exception>
         <altmember cref="T:System.Windows.Forms.DrawMode" />
         <altmember cref="E:System.Windows.Forms.ComboBox.DrawItem" />
         <altmember cref="E:System.Windows.Forms.ComboBox.MeasureItem" />
@@ -950,7 +950,7 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">El valor especificado es menor que uno.</exception>
+        <exception cref="T:System.ArgumentException">El valor especificado es menor que 1.</exception>
       </Docs>
     </Member>
     <Member MemberName="DropDownStyle">
@@ -1081,7 +1081,7 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">El valor especificado es menor que uno.</exception>
+        <exception cref="T:System.ArgumentException">El valor especificado es menor que 1.</exception>
       </Docs>
     </Member>
     <Member MemberName="DroppedDown">
@@ -1111,7 +1111,7 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece un valor que indica si el cuadro combinado está mostrando la parte desplegable.</summary>
-        <value><see langword="true" /> si se muestra la parte desplegable; de lo contrario, <see langword="false" />. El valor predeterminado es false.</value>
+        <value>Es <see langword="true" /> si se muestra la parte desplegable; en caso contrario, es <see langword="false" />. El valor predeterminado es false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1247,8 +1247,8 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="startIndex" /> es menor que -1.  
   
--o bien- 
-El <paramref name="startIndex" /> es mayor que el último índice de la colección.</exception>
+O bien 
+<paramref name="startIndex" /> es mayor que el último índice de la colección.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="FindStringExact">
@@ -1360,8 +1360,8 @@ El <paramref name="startIndex" /> es mayor que el último índice de la colecci�
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="startIndex" /> es menor que -1.  
   
--o bien- 
-El <paramref name="startIndex" /> es igual que el último índice de la colección.</exception>
+O bien 
+<paramref name="startIndex" /> es igual que el último índice de la colección.</exception>
       </Docs>
     </Member>
     <Member MemberName="FlatStyle">
@@ -1408,7 +1408,7 @@ El <paramref name="startIndex" /> es igual que el último índice de la colecci�
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">El valor especificado no es uno de los valores de <see cref="T:System.Windows.Forms.FlatStyle" />.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">El valor especificado no es ninguno de los valores de <see cref="T:System.Windows.Forms.FlatStyle" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Focused">
@@ -1493,8 +1493,8 @@ El <paramref name="startIndex" /> es igual que el último índice de la colecci�
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="index" /> es menor que cero.  
   
--o bien- 
-El <paramref name="index" /> es mayor que el número de elementos de la lista.</exception>
+O bien 
+<paramref name="index" /> es mayor que el número de elementos de la lista.</exception>
       </Docs>
     </Member>
     <Member MemberName="IntegralHeight">
@@ -1612,7 +1612,7 @@ El <paramref name="index" /> es mayor que el número de elementos de la lista.</
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">El valor del alto de elemento es menor que cero.</exception>
+        <exception cref="T:System.ArgumentException">El valor del alto del elemento es menor que cero.</exception>
       </Docs>
     </Member>
     <Member MemberName="Items">
@@ -1661,7 +1661,7 @@ El <paramref name="index" /> es mayor que el número de elementos de la lista.</
 ## Remarks  
  Esta propiedad permite obtener una referencia a la lista de elementos que están almacenados actualmente en el <xref:System.Windows.Forms.ComboBox>. Con esta referencia, puede agregar elementos, quitarlos y obtener un recuento de los elementos de la colección.  
   
- Aunque el <xref:System.Windows.Forms.ComboBox> es normalmente se usa para mostrar los elementos de texto, puede agregar cualquier objeto a la <xref:System.Windows.Forms.ComboBox>. Normalmente, la representación de un objeto en el <xref:System.Windows.Forms.ComboBox> es la cadena devuelta por ese objeto <xref:System.Object.ToString%2A> método. Si desea tener un miembro del objeto mostrado en su lugar, seleccione el miembro que se mostrará estableciendo el <xref:System.Windows.Forms.ListControl.DisplayMember%2A> propiedad en el nombre del miembro adecuado. También puede elegir un miembro del objeto que representa el valor devuelto por el objeto estableciendo el <xref:System.Windows.Forms.ListControl.ValueMember%2A> propiedad. Para obtener más información, consulta <xref:System.Windows.Forms.ListControl>.  
+ Aunque el <xref:System.Windows.Forms.ComboBox> es normalmente se usa para mostrar los elementos de texto, puede agregar cualquier objeto a la <xref:System.Windows.Forms.ComboBox>. Normalmente, la representación de un objeto en el <xref:System.Windows.Forms.ComboBox> es la cadena devuelta por ese objeto <xref:System.Object.ToString%2A> método. Si desea tener un miembro del objeto mostrado en su lugar, seleccione el miembro que se mostrará estableciendo el <xref:System.Windows.Forms.ListControl.DisplayMember%2A> propiedad en el nombre del miembro adecuado. También puede elegir un miembro del objeto que representa el valor devuelto por el objeto estableciendo el <xref:System.Windows.Forms.ListControl.ValueMember%2A> propiedad. Para obtener más información, vea <xref:System.Windows.Forms.ListControl>.  
   
  Para obtener más información acerca de las tareas que se pueden realizar con la colección de elementos, vea el <xref:System.Windows.Forms.ComboBox.ObjectCollection?displayProperty=nameWithType> temas de referencia de la clase.  
   
@@ -1721,7 +1721,7 @@ El <paramref name="index" /> es mayor que el número de elementos de la lista.</
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">El número máximo es establecer menor que uno o mayor que 100.</exception>
+        <exception cref="T:System.ArgumentException">El número máximo se establece en un valor menor que 1 o mayor que 100.</exception>
       </Docs>
     </Member>
     <Member MemberName="MaximumSize">
@@ -1944,7 +1944,7 @@ El <paramref name="index" /> es mayor que el número de elementos de la lista.</
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Este método se llama cada vez que un dibujado <xref:System.Windows.Forms.ComboBox> debe dibujarse el elemento y después <xref:System.Windows.Forms.ComboBox.OnMeasureItem%2A> se llama. Para obtener más información, consulta <xref:System.Windows.Forms.ComboBox.DrawItem>.  
+ Este método se llama cada vez que un dibujado <xref:System.Windows.Forms.ComboBox> debe dibujarse el elemento y después <xref:System.Windows.Forms.ComboBox.OnMeasureItem%2A> se llama. Para obtener más información, vea <xref:System.Windows.Forms.ComboBox.DrawItem>.  
   
  Cuando se genera un evento, se invoca el controlador de eventos a través de un delegado. Para obtener más información, consulte [controlar y provocar eventos](~/docs/standard/events/index.md).  
   
@@ -2375,7 +2375,7 @@ El <paramref name="index" /> es mayor que el número de elementos de la lista.</
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Este método se llama cada vez que un dibujado <xref:System.Windows.Forms.ComboBox> debe dibujarse el elemento y antes de <xref:System.Windows.Forms.ComboBox.OnDrawItem%2A> se llama. Para obtener más información, consulta <xref:System.Windows.Forms.ComboBox.MeasureItem>.  
+ Este método se llama cada vez que un dibujado <xref:System.Windows.Forms.ComboBox> debe dibujarse el elemento y antes de <xref:System.Windows.Forms.ComboBox.OnDrawItem%2A> se llama. Para obtener más información, vea <xref:System.Windows.Forms.ComboBox.MeasureItem>.  
   
  Cuando se genera un evento, se invoca el controlador de eventos a través de un delegado. Para obtener más información, consulte [controlar y provocar eventos](~/docs/standard/events/index.md).  
   
@@ -2956,6 +2956,33 @@ El <paramref name="index" /> es mayor que el número de elementos de la lista.</
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="ProcessCmdKey">
+      <MemberSignature Language="C#" Value="protected override bool ProcessCmdKey (ref System.Windows.Forms.Message msg, System.Windows.Forms.Keys keyData);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessCmdKey(valuetype System.Windows.Forms.Message&amp; msg, valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessCmdKey (ByRef msg As Message, keyData As Keys) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessCmdKey(System::Windows::Forms::Message % msg, System::Windows::Forms::Keys keyData);" />
+      <MemberSignature Language="F#" Value="override this.ProcessCmdKey :  * System.Windows.Forms.Keys -&gt; bool" Usage="comboBox.ProcessCmdKey (msg, keyData)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="msg" Type="System.Windows.Forms.Message" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="keyData" Type="System.Windows.Forms.Keys" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="msg">To be added.</param>
+        <param name="keyData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ProcessKeyEventArgs">
       <MemberSignature Language="C#" Value="protected override bool ProcessKeyEventArgs (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessKeyEventArgs(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
@@ -3117,8 +3144,8 @@ El <paramref name="index" /> es mayor que el número de elementos de la lista.</
         </remarks>
         <exception cref="T:System.ArgumentException"><paramref name="start" /> es menor que cero.  
   
--o bien- 
- <paramref name="start" /> Además de <paramref name="length" /> es menor que cero.</exception>
+O bien 
+ <paramref name="start" /> y <paramref name="length" /> es menor que cero.</exception>
         <altmember cref="P:System.Windows.Forms.ComboBox.SelectionStart" />
       </Docs>
     </Member>
@@ -3204,10 +3231,11 @@ El <paramref name="index" /> es mayor que el número de elementos de la lista.</
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">El índice especificado es menor o igual a -2.  
+        <exception cref="T:System.ArgumentOutOfRangeException">El índice especificado es menor o igual que -2.  
   
--o bien- 
-El índice especificado es mayor o igual que el número de elementos en el cuadro combinado.</exception>
+ O bien  
+  
+ El índice especificado es mayor o igual que el número de elementos del cuadro combinado.</exception>
         <altmember cref="P:System.Windows.Forms.CurrencyManager.Position" />
         <altmember cref="P:System.Windows.Forms.ListControl.FormattingEnabled" />
         <altmember cref="P:System.Windows.Forms.ListControl.SelectedValue" />
@@ -3587,7 +3615,7 @@ El índice especificado es mayor o igual que el número de elementos en el cuadr
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece un valor que indica si los elementos del cuadro combinado están ordenados.</summary>
-        <value><see langword="true" /> si el cuadro combinado está ordenado; de lo contrario, <see langword="false" />. De manera predeterminada, es <see langword="false" />.</value>
+        <value>Es <see langword="true" /> si el cuadro combinado está ordenado; en caso contrario, es <see langword="false" />. De manera predeterminada, es <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3598,7 +3626,7 @@ El índice especificado es mayor o igual que el número de elementos en el cuadr
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">Se ha intentado ordenar un <see cref="T:System.Windows.Forms.ComboBox" /> que está asociado a un origen de datos.</exception>
+        <exception cref="T:System.ArgumentException">Se ha intentado ordenar un <see cref="T:System.Windows.Forms.ComboBox" /> asociado a un origen de datos.</exception>
       </Docs>
     </Member>
     <Member MemberName="Text">

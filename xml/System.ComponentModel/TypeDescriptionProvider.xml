@@ -1,5 +1,5 @@
 <Type Name="TypeDescriptionProvider" FullName="System.ComponentModel.TypeDescriptionProvider">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ca1aa60f7485f80f21130a2d69cd85c00fd950b0" /><Meta Name="ms.sourcegitcommit" Value="0609891c89ddaa91e4c02970acb00072fcc29baf" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/13/2019" /><Meta Name="ms.locfileid" Value="65558634" /></Metadata><TypeSignature Language="C#" Value="public abstract class TypeDescriptionProvider" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fc87522d5ea0549d801332e5645baf4e1d05f762" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67241024" /></Metadata><TypeSignature Language="C#" Value="public abstract class TypeDescriptionProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TypeDescriptionProvider extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.TypeDescriptionProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class TypeDescriptionProvider" />
@@ -27,7 +27,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Proporciona metadatos complementarios a la <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
+    <summary>Proporciona metadatos complementarios a la clase <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -139,8 +139,8 @@
         <Parameter Name="parent" Type="System.ComponentModel.TypeDescriptionProvider" />
       </Parameters>
       <Docs>
-        <param name="parent">El proveedor de descripción de tipo primario.</param>
-        <summary>Inicializa una nueva instancia de la <see cref="T:System.ComponentModel.TypeDescriptionProvider" /> clase mediante un proveedor de descripción de tipo primario.</summary>
+        <param name="parent">Proveedor de descripción de tipo primario.</param>
+        <summary>Inicializa una nueva instancia de la clase <see cref="T:System.ComponentModel.TypeDescriptionProvider" /> con un proveedor de descripción de tipo primario.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -199,10 +199,10 @@
       <Docs>
         <param name="provider">Proveedor de servicios opcional.</param>
         <param name="objectType">Tipo de objeto que se va a crear. Este parámetro nunca es <see langword="null" />.</param>
-        <param name="argTypes">Una matriz opcional de tipos que representan los tipos de parámetros que se pasarán al constructor del objeto. Esta matriz puede ser <see langword="null" /> o de longitud cero.</param>
+        <param name="argTypes">Matriz opcional de tipos que representan los tipos de parámetro que se van a pasar al constructor del objeto. Esta matriz puede ser <see langword="null" /> o de longitud cero.</param>
         <param name="args">Matriz opcional de valores de parámetros que se pasarán al constructor del objeto.</param>
         <summary>Crea un objeto que puede sustituir a otro tipo de datos.</summary>
-        <returns>El sustituto <see cref="T:System.Object" />.</returns>
+        <returns>Objeto <see cref="T:System.Object" /> sustituto.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -249,9 +249,9 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">El objeto que se va a obtener la memoria caché.</param>
-        <summary>Obtiene una memoria caché por cada objeto, puede tener acceso como una <see cref="T:System.Collections.IDictionary" /> de pares clave/valor.</summary>
-        <returns>Un <see cref="T:System.Collections.IDictionary" /> si el objeto proporcionado admite almacenamiento en caché; en caso contrario, <see langword="null" />.</returns>
+        <param name="instance">Objeto para el que se va a obtener la memoria caché.</param>
+        <summary>Obtiene una memoria caché por cada objeto, a la que se obtiene acceso como una interfaz <see cref="T:System.Collections.IDictionary" /> de pares de clave y valor.</summary>
+        <returns>Interfaz <see cref="T:System.Collections.IDictionary" /> si el objeto proporcionado admite almacenamiento en caché; de lo contrario, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -298,9 +298,9 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">El objeto que se va a obtener el descriptor de tipo extendido.</param>
+        <param name="instance">Objeto para el que se va a obtener el descriptor de tipos extendido.</param>
         <summary>Obtiene un descriptor de tipos extendido personalizado para el objeto dado.</summary>
-        <returns>Un <see cref="T:System.ComponentModel.ICustomTypeDescriptor" /> que puede proporcionar metadatos extendidos para el objeto.</returns>
+        <returns>Interfaz <see cref="T:System.ComponentModel.ICustomTypeDescriptor" /> que puede proporcionar metadatos extendidos para el objeto.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -346,11 +346,11 @@
         <Parameter Name="instance" Type="System.Object" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="instance">Objeto que se va a obtener proveedores extensores.</param>
+        <param name="instance">Objeto para el que se van a obtener proveedores extensores.</param>
         <summary>Obtiene los proveedores extensores del objeto especificado.</summary>
-        <returns>Una matriz de proveedores extensores para <paramref name="instance" />.</returns>
+        <returns>Matriz de proveedores extensores para <paramref name="instance" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="instance" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="instance" /> es <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetFullComponentName">
@@ -385,11 +385,11 @@
         <Parameter Name="component" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="component">El componente especificado.</param>
-        <summary>Obtiene el nombre del componente especificado, o <see langword="null" /> si el componente no tiene nombre.</summary>
-        <returns>El nombre del componente especificado.</returns>
+        <param name="component">Componente especificado.</param>
+        <summary>Obtiene el nombre del componente especificado o <see langword="null" /> si el componente no tiene nombre.</summary>
+        <returns>Nombre del componente especificado.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="component" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="component" /> es <see langword="null" />.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetReflectionType">
@@ -434,8 +434,8 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">Una instancia del tipo (no debe ser <see langword="null" />).</param>
-        <summary>Realiza una reflexión normal en el objeto especificado.</summary>
+        <param name="instance">Instancia del tipo (no debe ser <see langword="null" />).</param>
+        <summary>Realiza una reflexión normal en el objeto indicado.</summary>
         <returns>El tipo de reflexión para esta <paramref name="instance" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -447,7 +447,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="instance" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="instance" /> es <see langword="null" />.</exception>
         <altmember cref="Overload:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor" />
       </Docs>
     </Member>
@@ -488,7 +488,7 @@
         <Parameter Name="objectType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="objectType">El tipo de objeto para el que se va a recuperar el <see cref="T:System.Reflection.IReflect" />.</param>
+        <param name="objectType">Tipo de objeto para el que va a recuperar la interfaz <see cref="T:System.Reflection.IReflect" />.</param>
         <summary>Realiza una reflexión normal en un tipo.</summary>
         <returns>El tipo de reflexión para esta <paramref name="objectType" />.</returns>
         <remarks>
@@ -501,7 +501,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="objectType" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="objectType" /> es <see langword="null" />.</exception>
         <altmember cref="Overload:System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor" />
       </Docs>
     </Member>
@@ -538,9 +538,9 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="objectType">El tipo de objeto para el que se va a recuperar el <see cref="T:System.Reflection.IReflect" />.</param>
-        <param name="instance">Una instancia del tipo. Puede ser <see langword="null" />.</param>
-        <summary>Realiza una reflexión normal en el objeto especificado con el tipo especificado.</summary>
+        <param name="objectType">Tipo de objeto para el que va a recuperar la interfaz <see cref="T:System.Reflection.IReflect" />.</param>
+        <param name="instance">Instancia del tipo. Puede ser <see langword="null" />.</param>
+        <summary>Realiza una reflexión normal en el objeto indicado con el tipo especificado.</summary>
         <returns>El tipo de reflexión para esta <paramref name="objectType" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -585,9 +585,9 @@
         <Parameter Name="reflectionType" Type="System.Type" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="reflectionType">El tipo para convertir en su equivalente en tiempo de ejecución.</param>
+        <param name="reflectionType">Tipo que se va a convertir en su equivalente en tiempo de ejecución.</param>
         <summary>Convierte un tipo de reflexión en un tipo en tiempo de ejecución.</summary>
-        <returns>Un <see cref="T:System.Type" /> que representa el equivalente en tiempo de ejecución de <paramref name="reflectionType" />.</returns>
+        <returns><see cref="T:System.Type" /> que representa el equivalente en tiempo de ejecución de <paramref name="reflectionType" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -596,7 +596,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="reflectionType" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="reflectionType" /> es <see langword="null" />.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetTypeDescriptor">
@@ -606,7 +606,7 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Obtiene un descriptor de tipos personalizado para el tipo especificado o el objeto.</summary>
+        <summary>Obtiene un descriptor de tipos personalizado para el tipo o el objeto indicado.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetTypeDescriptor">
@@ -641,11 +641,11 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="instance">Una instancia del tipo. Puede ser <see langword="null" /> si se ha pasado ninguna instancia de la <see cref="T:System.ComponentModel.TypeDescriptor" />.</param>
-        <summary>Obtiene un descriptor de tipos personalizado para el objeto dado.</summary>
-        <returns>Un <see cref="T:System.ComponentModel.ICustomTypeDescriptor" /> que puede proporcionar metadatos para el tipo.</returns>
+        <param name="instance">Instancia del tipo. Puede ser <see langword="null" /> si no se ha pasado ninguna instancia a la clase <see cref="T:System.ComponentModel.TypeDescriptor" />.</param>
+        <summary>Obtiene un descriptor de tipos personalizado para el objeto indicado.</summary>
+        <returns>Interfaz <see cref="T:System.ComponentModel.ICustomTypeDescriptor" /> que puede proporcionar metadatos para el tipo.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="instance" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="instance" /> es <see langword="null" />.</exception>
         <altmember cref="M:System.ComponentModel.TypeDescriptionProvider.GetExtendedTypeDescriptor(System.Object)" />
       </Docs>
     </Member>
@@ -686,9 +686,9 @@
         <Parameter Name="objectType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="objectType">El tipo de objeto para el que se va a recuperar el descriptor de tipos.</param>
-        <summary>Obtiene un descriptor de tipos personalizado para el tipo especificado.</summary>
-        <returns>Un <see cref="T:System.ComponentModel.ICustomTypeDescriptor" /> que puede proporcionar metadatos para el tipo.</returns>
+        <param name="objectType">Tipo de objeto para el que se va a recuperar el descriptor de tipos.</param>
+        <summary>Obtiene un descriptor de tipos personalizado para el tipo indicado.</summary>
+        <returns>Interfaz <see cref="T:System.ComponentModel.ICustomTypeDescriptor" /> que puede proporcionar metadatos para el tipo.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.ComponentModel.TypeDescriptionProvider.GetExtendedTypeDescriptor(System.Object)" />
       </Docs>
@@ -726,10 +726,10 @@
         <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="objectType">El tipo de objeto para el que se va a recuperar el descriptor de tipos.</param>
-        <param name="instance">Una instancia del tipo. Puede ser <see langword="null" /> si se ha pasado ninguna instancia de la <see cref="T:System.ComponentModel.TypeDescriptor" />.</param>
-        <summary>Obtiene un descriptor de tipos personalizado para el tipo especificado y el objeto.</summary>
-        <returns>Un <see cref="T:System.ComponentModel.ICustomTypeDescriptor" /> que puede proporcionar metadatos para el tipo.</returns>
+        <param name="objectType">Tipo de objeto para el que se va a recuperar el descriptor de tipos.</param>
+        <param name="instance">Instancia del tipo. Puede ser <see langword="null" /> si no se ha pasado ninguna instancia a la clase <see cref="T:System.ComponentModel.TypeDescriptor" />.</param>
+        <summary>Obtiene un descriptor de tipos personalizado para el tipo y el objeto indicados.</summary>
+        <returns>Interfaz <see cref="T:System.ComponentModel.ICustomTypeDescriptor" /> que puede proporcionar metadatos para el tipo.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -772,11 +772,11 @@
         <Parameter Name="type" Type="System.Type" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;netstandard-2.1;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="type">El tipo para comprobar la compatibilidad.</param>
-        <summary>Obtiene un valor que indica si el tipo especificado es compatible con la descripción del tipo y su cadena de proveedores de descripción de tipo.</summary>
-        <returns><see langword="true" /> Si <paramref name="type" /> es compatible con la descripción del tipo y su cadena de proveedores de descripción de tipos; en caso contrario, <see langword="false" />.</returns>
+        <param name="type">Tipo cuya compatibilidad se va a probar.</param>
+        <summary>Obtiene un valor que indica si el tipo especificado es compatible con la descripción de tipos y su cadena de proveedores de descripción de tipos.</summary>
+        <returns>Es <see langword="true" /> si <paramref name="type" /> es compatible con la descripción de tipos y su cadena de proveedores de descripción de tipos; de lo contrario, es <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="type" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="type" /> es <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

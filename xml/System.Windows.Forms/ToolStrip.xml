@@ -1,5 +1,5 @@
 <Type Name="ToolStrip" FullName="System.Windows.Forms.ToolStrip">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7fb6ddb7084b73c910828c9ef50b3ffba80c4e6c" /><Meta Name="ms.sourcegitcommit" Value="2767b5903996fbd7e2b81eda1114dfc9d0d9db63" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/02/2019" /><Meta Name="ms.locfileid" Value="65005206" /></Metadata><TypeSignature Language="C#" Value="public class ToolStrip : System.Windows.Forms.ScrollableControl, IDisposable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="52b2b96e0f368ff3fed561d4649a4863d7a82cfe" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67242387" /></Metadata><TypeSignature Language="C#" Value="public class ToolStrip : System.Windows.Forms.ScrollableControl, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStrip extends System.Windows.Forms.ScrollableControl implements class System.ComponentModel.IComponent, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStrip" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolStrip&#xA;Inherits ScrollableControl&#xA;Implements IDisposable" />
@@ -255,7 +255,7 @@
         <altmember cref="E:System.Windows.Forms.Control.DragEnter" />
         <altmember cref="E:System.Windows.Forms.Control.DragLeave" />
         <altmember cref="E:System.Windows.Forms.Control.DragDrop" />
-        <related type="Article" href="https://msdn.microsoft.com/library/8480b69a-379f-4dc2-8dcf-365ed93692b2">Procedimiento Habilitar la reordenación de elementos ToolStrip en tiempo de ejecución en Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8480b69a-379f-4dc2-8dcf-365ed93692b2">Cómo: Habilitar la reordenación de elementos ToolStrip en tiempo de ejecución en un formulario Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="AllowMerge">
@@ -757,7 +757,7 @@
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/fa10e0ad-4cbf-4c0d-9082-359c2f855d4e">Procedimiento Administrar el desbordamiento de ToolStrip en Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fa10e0ad-4cbf-4c0d-9082-359c2f855d4e">Cómo: Administrar el desbordamiento de ToolStrip en formularios Windows Forms</related>
       </Docs>
     </Member>
     <Member MemberName="CausesValidation">
@@ -1478,7 +1478,7 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/8b595429-ba9f-46af-9c55-3d5cc53f7fff">Procedimiento para definir el orden Z de los controles ToolStrip acoplados</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8b595429-ba9f-46af-9c55-3d5cc53f7fff">Cómo: Definir el orden Z de los controles ToolStrip acoplados</related>
       </Docs>
     </Member>
     <Member MemberName="EndDrag">
@@ -3461,10 +3461,10 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
  ]]></format>
         </remarks>
         <block subset="none" type="overrides"><para>Al reemplazar <see cref="M:System.Windows.Forms.ToolStrip.OnRendererChanged(System.EventArgs)" /> en una clase derivada, asegúrese de llamar al método <see cref="M:System.Windows.Forms.ToolStrip.OnRendererChanged(System.EventArgs)" /> de la clase base para que los delegados registrados reciban el evento.</para></block>
-        <related type="Article" href="https://msdn.microsoft.com/library/88a804ba-679f-4ba3-938a-0dc396199c5b">Cómo para crear y establecer un representador personalizado para el control ToolStrip de formularios Windows Forms</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/525e2347-0804-49aa-b9a3-9b2cabbf1c35">Procedimiento para establecer el representador de ToolStrip en tiempo de ejecución</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/46acef3e-9844-4ae8-9a2e-3006fe99cadf">Procedimiento para establecer el representador de ToolStrip para una aplicación</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/c208b2f6-8105-474b-9075-d582e1792870">Procedimiento para crear un control ToolStrip de estilo profesional</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/88a804ba-679f-4ba3-938a-0dc396199c5b">Cómo: Crear y establecer un representador personalizado para el control ToolStrip de Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/525e2347-0804-49aa-b9a3-9b2cabbf1c35">Cómo: Establecer la representación de ToolStrip en tiempo de ejecución</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/46acef3e-9844-4ae8-9a2e-3006fe99cadf">Cómo: Establecer la representación de ToolStrip para una aplicación</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c208b2f6-8105-474b-9075-d582e1792870">Cómo: Crear un control ToolStrip de estilo profesional</related>
       </Docs>
     </Member>
     <Member MemberName="OnRightToLeftChanged">
@@ -3839,10 +3839,10 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/88a804ba-679f-4ba3-938a-0dc396199c5b">Cómo para crear y establecer un representador personalizado para el control ToolStrip de formularios Windows Forms</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/525e2347-0804-49aa-b9a3-9b2cabbf1c35">Procedimiento para establecer el representador de ToolStrip en tiempo de ejecución</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/46acef3e-9844-4ae8-9a2e-3006fe99cadf">Procedimiento para establecer el representador de ToolStrip para una aplicación</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/c208b2f6-8105-474b-9075-d582e1792870">Procedimiento para crear un control ToolStrip de estilo profesional</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/88a804ba-679f-4ba3-938a-0dc396199c5b">Cómo: Crear y establecer un representador personalizado para el control ToolStrip de Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/525e2347-0804-49aa-b9a3-9b2cabbf1c35">Cómo: Establecer la representación de ToolStrip en tiempo de ejecución</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/46acef3e-9844-4ae8-9a2e-3006fe99cadf">Cómo: Establecer la representación de ToolStrip para una aplicación</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c208b2f6-8105-474b-9075-d582e1792870">Cómo: Crear un control ToolStrip de estilo profesional</related>
       </Docs>
     </Member>
     <Member MemberName="RendererChanged">
@@ -3881,10 +3881,10 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/88a804ba-679f-4ba3-938a-0dc396199c5b">Cómo para crear y establecer un representador personalizado para el control ToolStrip de formularios Windows Forms</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/525e2347-0804-49aa-b9a3-9b2cabbf1c35">Procedimiento para establecer el representador de ToolStrip en tiempo de ejecución</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/46acef3e-9844-4ae8-9a2e-3006fe99cadf">Procedimiento para establecer el representador de ToolStrip para una aplicación</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/c208b2f6-8105-474b-9075-d582e1792870">Procedimiento para crear un control ToolStrip de estilo profesional</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/88a804ba-679f-4ba3-938a-0dc396199c5b">Cómo: Crear y establecer un representador personalizado para el control ToolStrip de Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/525e2347-0804-49aa-b9a3-9b2cabbf1c35">Cómo: Establecer la representación de ToolStrip en tiempo de ejecución</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/46acef3e-9844-4ae8-9a2e-3006fe99cadf">Cómo: Establecer la representación de ToolStrip para una aplicación</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c208b2f6-8105-474b-9075-d582e1792870">Cómo: Crear un control ToolStrip de estilo profesional</related>
       </Docs>
     </Member>
     <Member MemberName="RenderMode">
@@ -3925,10 +3925,10 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">El valor que se está estableciendo no es ninguno de los valores de <see cref="T:System.Windows.Forms.ToolStripRenderMode" />.</exception>
         <exception cref="T:System.NotSupportedException"><see cref="T:System.Windows.Forms.ToolStripRenderMode" /> se establece en <see cref="F:System.Windows.Forms.ToolStripRenderMode.Custom" /> sin que la propiedad <see cref="P:System.Windows.Forms.ToolStrip.Renderer" /> se asigne a una nueva instancia de <see cref="T:System.Windows.Forms.ToolStripRenderer" />.</exception>
         <altmember cref="P:System.Windows.Forms.ToolStrip.Renderer" />
-        <related type="Article" href="https://msdn.microsoft.com/library/88a804ba-679f-4ba3-938a-0dc396199c5b">Cómo para crear y establecer un representador personalizado para el control ToolStrip de formularios Windows Forms</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/525e2347-0804-49aa-b9a3-9b2cabbf1c35">Procedimiento para establecer el representador de ToolStrip en tiempo de ejecución</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/46acef3e-9844-4ae8-9a2e-3006fe99cadf">Procedimiento para establecer el representador de ToolStrip para una aplicación</related>
-        <related type="Article" href="https://msdn.microsoft.com/library/c208b2f6-8105-474b-9075-d582e1792870">Procedimiento para crear un control ToolStrip de estilo profesional</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/88a804ba-679f-4ba3-938a-0dc396199c5b">Cómo: Crear y establecer un representador personalizado para el control ToolStrip de Windows Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/525e2347-0804-49aa-b9a3-9b2cabbf1c35">Cómo: Establecer la representación de ToolStrip en tiempo de ejecución</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/46acef3e-9844-4ae8-9a2e-3006fe99cadf">Cómo: Establecer la representación de ToolStrip para una aplicación</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c208b2f6-8105-474b-9075-d582e1792870">Cómo: Crear un control ToolStrip de estilo profesional</related>
       </Docs>
     </Member>
     <Member MemberName="RescaleConstantsForDpi">
@@ -3947,8 +3947,8 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="deviceDpiOld" Type="System.Int32" Index="0" FrameworkAlternate="netframework-4.8" />
-        <Parameter Name="deviceDpiNew" Type="System.Int32" Index="1" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="deviceDpiOld" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.8" />
+        <Parameter Name="deviceDpiNew" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="deviceDpiOld">Valor de PPP anterior.</param>
@@ -4212,7 +4212,7 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
       </Parameters>
       <Docs>
         <param name="item"><see cref="T:System.Windows.Forms.ToolStripItem" /> cuya propiedad <see cref="P:System.Windows.Forms.Control.Parent" /> se va a cambiar.</param>
-        <param name="parent"><see cref="T:System.Windows.Forms.ToolStrip" /> que es el elemento primario del elemento <see cref="T:System.Windows.Forms.ToolStripItem" /> al que hace referencia el parámetro <paramref name="item" />.</param>
+        <param name="parent"><see cref="T:System.Windows.Forms.ToolStrip" /> que es el elemento primario del <see cref="T:System.Windows.Forms.ToolStripItem" /> al que hace referencia el parámetro <paramref name="item" />.</param>
         <summary>Le permite cambiar el elemento <see cref="T:System.Windows.Forms.ToolStrip" /> primario de un elemento <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4299,7 +4299,7 @@ Para obtener más información acerca de <see langword="Dispose" /> y <see cref=
   
  ]]></format>
         </remarks>
-        <related type="Article" href="https://msdn.microsoft.com/library/c5d86024-a7c5-44ee-8b3f-2daf53d80d3e">Procedimiento para usar la información sobre herramientas en los controles ToolStrip</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c5d86024-a7c5-44ee-8b3f-2daf53d80d3e">Cómo: Utilizar la información sobre herramientas en los controles ToolStrip</related>
       </Docs>
     </Member>
     <Member MemberName="Stretch">

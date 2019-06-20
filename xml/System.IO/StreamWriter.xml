@@ -1,5 +1,5 @@
 <Type Name="StreamWriter" FullName="System.IO.StreamWriter">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="59ed0cd3458ef430b9b9faac88721ff228724793" /><Meta Name="ms.sourcegitcommit" Value="2767b5903996fbd7e2b81eda1114dfc9d0d9db63" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/02/2019" /><Meta Name="ms.locfileid" Value="64996668" /></Metadata><TypeSignature Language="C#" Value="public class StreamWriter : System.IO.TextWriter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8950df3197d8807f20c2dca17e09051a09ae77f6" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67238117" /></Metadata><TypeSignature Language="C#" Value="public class StreamWriter : System.IO.TextWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit StreamWriter extends System.IO.TextWriter" />
   <TypeSignature Language="DocId" Value="T:System.IO.StreamWriter" />
   <TypeSignature Language="VB.NET" Value="Public Class StreamWriter&#xA;Inherits TextWriter" />
@@ -72,9 +72,9 @@
     <altmember cref="T:System.Text.Encoder" />
     <altmember cref="T:System.Text.Encoding" />
     <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
-    <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Procedimiento para leer texto de un archivo</related>
-    <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Procedimiento para escribir texto en un archivo</related>
-    <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">Procedimiento para leer y escribir en un archivo de datos recién creado</related>
+    <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Cómo: Leer texto de un archivo</related>
+    <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Cómo: Escribir texto en un archivo</related>
+    <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">Cómo: Leer y escribir en un archivo de datos recién creado</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -153,10 +153,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">No se puede escribir en <paramref name="stream" />.</exception>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="stream" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="stream" /> es <see langword="null" />.</exception>
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Procedimiento para leer texto de un archivo</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Procedimiento para escribir texto en un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Cómo: Leer texto de un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Cómo: Escribir texto en un archivo</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -196,7 +196,7 @@
         <Parameter Name="path" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="path">Ruta de acceso completa al archivo donde se puede escribir. <paramref name="path" /> puede ser un nombre de archivo.</param>
+        <param name="path">Ruta de acceso al archivo donde se puede escribir. <paramref name="path" /> puede ser un nombre de archivo.</param>
         <summary>Inicializa una nueva instancia de la clase <see cref="T:System.IO.StreamWriter" /> para el archivo especificado usando la codificación y tamaño de búfer especificados.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -226,17 +226,17 @@
         <exception cref="T:System.UnauthorizedAccessException">Se denegó el acceso.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="path" /> es una cadena vacía ("").  
   
--o bien- 
- <paramref name="path" /> contiene el nombre de un dispositivo del sistema (com1, com2 etc.).</exception>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="path" /> es <see langword="null" />.</exception>
+O bien 
+ <paramref name="path" /> contiene el nombre de un dispositivo del sistema (com1, com2, etc.).</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="path" /> es <see langword="null" />.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">La ruta de acceso especificada no es válida (por ejemplo, está en una unidad no asignada).</exception>
         <exception cref="T:System.IO.PathTooLongException">La ruta de acceso especificada, el nombre de archivo o ambos superan la longitud máxima definida por el sistema.</exception>
-        <exception cref="T:System.IO.IOException"><paramref name="path" /> incluye una sintaxis incorrecta o no es válida para el nombre de archivo, nombre de directorio o etiqueta del volumen.</exception>
+        <exception cref="T:System.IO.IOException"><paramref name="path" /> incluye una sintaxis no correcta o no válida para el nombre de archivo, el nombre de directorio o la etiqueta de volumen.</exception>
         <exception cref="T:System.Security.SecurityException">El llamador no dispone del permiso requerido.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">para leer y escribir archivos. Enumeración asociada: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Procedimiento para leer texto de un archivo</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Procedimiento para escribir texto en un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Cómo: Leer texto de un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Cómo: Escribir texto en un archivo</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -309,8 +309,8 @@
         <exception cref="T:System.ArgumentException">No se puede escribir en <paramref name="stream" />.</exception>
         <altmember cref="T:System.Text.Encoding" />
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Procedimiento para leer texto de un archivo</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Procedimiento para escribir texto en un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Cómo: Leer texto de un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Cómo: Escribir texto en un archivo</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -351,9 +351,9 @@
         <Parameter Name="append" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="path">Ruta de acceso completa al archivo donde se puede escribir.</param>
-        <param name="append">Es <see langword="true" /> para anexar datos al archivo; es <see langword="false" /> para sobrescribir el archivo. Si el archivo especificado no existe, este parámetro no tiene ningún efecto y el constructor crea un nuevo archivo.</param>
-        <summary>Inicializa una nueva instancia de la clase <see cref="T:System.IO.StreamWriter" /> para el archivo especificado usando la codificación y tamaño de búfer especificados. Si el archivo ya existe, es posible sobrescribirlo o anexarle datos. Si el archivo no existe, este constructor crea uno nuevo.</summary>
+        <param name="path">Ruta de acceso al archivo donde se puede escribir.</param>
+        <param name="append"><see langword="true" /> para anexar datos al archivo; <see langword="false" /> para sobrescribir el archivo. Si el archivo especificado no existe, este parámetro no tiene ningún efecto y el constructor crea un nuevo archivo.</param>
+        <summary>Inicializa una nueva instancia de la clase <see cref="T:System.IO.StreamWriter" /> para el archivo especificado usando la codificación y tamaño de búfer especificados. Si el archivo ya existe, es posible sobrescribir o anexar datos al mismo. Si el archivo no existe, este constructor crea uno nuevo.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -382,17 +382,17 @@
         <exception cref="T:System.UnauthorizedAccessException">Se denegó el acceso.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="path" /> está vacía.  
   
--o bien- 
- <paramref name="path" /> contiene el nombre de un dispositivo del sistema (com1, com2 etc.).</exception>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="path" /> es <see langword="null" />.</exception>
+O bien 
+ <paramref name="path" /> contiene el nombre de un dispositivo del sistema (com1, com2, etc.).</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="path" /> es <see langword="null" />.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">La ruta de acceso especificada no es válida (por ejemplo, está en una unidad no asignada).</exception>
-        <exception cref="T:System.IO.IOException"><paramref name="path" /> incluye una sintaxis incorrecta o no es válida para el nombre de archivo, nombre de directorio o etiqueta del volumen.</exception>
+        <exception cref="T:System.IO.IOException"><paramref name="path" /> incluye una sintaxis no correcta o no válida para el nombre de archivo, el nombre de directorio o la etiqueta de volumen.</exception>
         <exception cref="T:System.IO.PathTooLongException">La ruta de acceso especificada, el nombre de archivo o ambos superan la longitud máxima definida por el sistema.</exception>
         <exception cref="T:System.Security.SecurityException">El llamador no dispone del permiso requerido.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">para leer y escribir archivos. Enumeración asociada: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Procedimiento para leer texto de un archivo</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Procedimiento para escribir texto en un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Cómo: Leer texto de un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Cómo: Escribir texto en un archivo</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -468,8 +468,8 @@
         <exception cref="T:System.ArgumentException">No se puede escribir en <paramref name="stream" />.</exception>
         <altmember cref="T:System.Text.Encoding" />
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Procedimiento para leer texto de un archivo</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Procedimiento para escribir texto en un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Cómo: Leer texto de un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Cómo: Escribir texto en un archivo</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -510,10 +510,10 @@
         <Parameter Name="encoding" Type="System.Text.Encoding" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="path">Ruta de acceso completa al archivo donde se puede escribir.</param>
-        <param name="append">Es <see langword="true" /> para anexar datos al archivo; es <see langword="false" /> para sobrescribir el archivo. Si el archivo especificado no existe, este parámetro no tiene ningún efecto y el constructor crea un nuevo archivo.</param>
+        <param name="path">Ruta de acceso al archivo donde se puede escribir.</param>
+        <param name="append"><see langword="true" /> para anexar datos al archivo; <see langword="false" /> para sobrescribir el archivo. Si el archivo especificado no existe, este parámetro no tiene ningún efecto y el constructor crea un nuevo archivo.</param>
         <param name="encoding">Codificación de caracteres que se utilizará.</param>
-        <summary>Inicializa una nueva instancia de la clase <see cref="T:System.IO.StreamWriter" /> para el archivo especificado usando la codificación especificada y tamaño de búfer predeterminado. Si el archivo ya existe, es posible sobrescribirlo o anexarle datos. Si el archivo no existe, este constructor crea uno nuevo.</summary>
+        <summary>Inicializa una nueva instancia de la clase <see cref="T:System.IO.StreamWriter" /> para el archivo especificado usando la codificación especificada y tamaño de búfer predeterminado. Si el archivo ya existe, es posible sobrescribir o anexar datos al mismo. Si el archivo no existe, este constructor crea uno nuevo.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -542,18 +542,18 @@
         <exception cref="T:System.UnauthorizedAccessException">Se denegó el acceso.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="path" /> está vacía.  
   
--o bien- 
- <paramref name="path" /> contiene el nombre de un dispositivo del sistema (com1, com2 etc.).</exception>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="path" /> es <see langword="null" />.</exception>
+O bien 
+ <paramref name="path" /> contiene el nombre de un dispositivo del sistema (com1, com2, etc.).</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="path" /> es <see langword="null" />.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">La ruta de acceso especificada no es válida (por ejemplo, está en una unidad no asignada).</exception>
-        <exception cref="T:System.IO.IOException"><paramref name="path" /> incluye una sintaxis incorrecta o no es válida para el nombre de archivo, nombre de directorio o etiqueta del volumen.</exception>
+        <exception cref="T:System.IO.IOException"><paramref name="path" /> incluye una sintaxis no correcta o no válida para el nombre de archivo, el nombre de directorio o la etiqueta de volumen.</exception>
         <exception cref="T:System.IO.PathTooLongException">La ruta de acceso especificada, el nombre de archivo o ambos superan la longitud máxima definida por el sistema.</exception>
         <exception cref="T:System.Security.SecurityException">El llamador no dispone del permiso requerido.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">para leer y escribir archivos. Enumeración asociada: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.Text.Encoding" />
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Procedimiento para leer texto de un archivo</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Procedimiento para escribir texto en un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Cómo: Leer texto de un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Cómo: Escribir texto en un archivo</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -661,11 +661,11 @@
         <Parameter Name="bufferSize" Type="System.Int32" Index="3" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netstandard-2.1" />
       </Parameters>
       <Docs>
-        <param name="path">Ruta de acceso completa al archivo donde se puede escribir.</param>
-        <param name="append">Es <see langword="true" /> para anexar datos al archivo; es <see langword="false" /> para sobrescribir el archivo. Si el archivo especificado no existe, este parámetro no tiene ningún efecto y el constructor crea un nuevo archivo.</param>
+        <param name="path">Ruta de acceso al archivo donde se puede escribir.</param>
+        <param name="append"><see langword="true" /> para anexar datos al archivo; <see langword="false" /> para sobrescribir el archivo. Si el archivo especificado no existe, este parámetro no tiene ningún efecto y el constructor crea un nuevo archivo.</param>
         <param name="encoding">Codificación de caracteres que se utilizará.</param>
         <param name="bufferSize">Tamaño del búfer en bytes.</param>
-        <summary>Inicializa una nueva instancia de la clase <see cref="T:System.IO.StreamWriter" /> para el archivo especificado en la ruta de acceso especificada, con la codificación y el tamaño de búfer especificados. Si el archivo ya existe, es posible sobrescribirlo o anexarle datos. Si el archivo no existe, este constructor crea uno nuevo.</summary>
+        <summary>Inicializa una nueva instancia de la clase <see cref="T:System.IO.StreamWriter" /> para el archivo especificado en la ruta de acceso especificada, con la codificación y el tamaño de búfer especificados. Si el archivo ya existe, es posible sobrescribir o anexar datos al mismo. Si el archivo no existe, este constructor crea uno nuevo.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -693,11 +693,11 @@
         </remarks>
         <exception cref="T:System.ArgumentException"><paramref name="path" /> es una cadena vacía ("").  
   
--o bien- 
- <paramref name="path" /> contiene el nombre de un dispositivo del sistema (com1, com2 etc.).</exception>
+O bien 
+ <paramref name="path" /> contiene el nombre de un dispositivo del sistema (com1, com2, etc.).</exception>
         <exception cref="T:System.ArgumentNullException"><paramref name="path" /> o <paramref name="encoding" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="bufferSize" /> es negativo.</exception>
-        <exception cref="T:System.IO.IOException"><paramref name="path" /> incluye una sintaxis incorrecta o no es válida para el nombre de archivo, nombre de directorio o etiqueta del volumen.</exception>
+        <exception cref="T:System.IO.IOException"><paramref name="path" /> incluye una sintaxis no correcta o no válida para el nombre de archivo, el nombre de directorio o la etiqueta de volumen.</exception>
         <exception cref="T:System.Security.SecurityException">El llamador no dispone del permiso requerido.</exception>
         <exception cref="T:System.UnauthorizedAccessException">Se denegó el acceso.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">La ruta de acceso especificada no es válida (por ejemplo, está en una unidad no asignada).</exception>
@@ -705,8 +705,8 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">para leer y escribir archivos. Enumeración asociada: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /></permission>
         <altmember cref="T:System.Text.Encoding" />
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Procedimiento para leer texto de un archivo</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Procedimiento para escribir texto en un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Cómo: Leer texto de un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Cómo: Escribir texto en un archivo</related>
       </Docs>
     </Member>
     <Member MemberName="AutoFlush">
@@ -770,8 +770,8 @@
  ]]></format>
         </remarks>
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Procedimiento para leer texto de un archivo</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Procedimiento para escribir texto en un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Cómo: Leer texto de un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Cómo: Escribir texto en un archivo</related>
       </Docs>
     </Member>
     <Member MemberName="BaseStream">
@@ -820,8 +820,8 @@
  ]]></format>
         </remarks>
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Procedimiento para leer texto de un archivo</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Procedimiento para escribir texto en un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Cómo: Leer texto de un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Cómo: Escribir texto en un archivo</related>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -881,10 +881,10 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Text.EncoderFallbackException">La codificación actual no admite muestre la mitad de un par suplente Unicode.</exception>
+        <exception cref="T:System.Text.EncoderFallbackException">La codificación actual no admite que se muestre la mitad de un par suplente Unicode.</exception>
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Procedimiento para leer texto de un archivo</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Procedimiento para escribir texto en un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Cómo: Leer texto de un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Cómo: Escribir texto en un archivo</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -935,14 +935,14 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Text.EncoderFallbackException">La codificación actual no admite muestre la mitad de un par suplente Unicode.</exception>
+        <exception cref="T:System.Text.EncoderFallbackException">La codificación actual no admite que se muestre la mitad de un par suplente Unicode.</exception>
         <block subset="none" type="overrides"><para>
             <see langword="Dispose" /> puede recibir varias llamadas de otros objetos. Cuando se reemplaza <see langword="Dispose" />, tenga cuidado de no hacer referencia a objetos que se hayan eliminado en una llamada anterior a <see langword="Dispose" />.  
   
 Este método llama al método dispose de la clase base, <see cref="M:System.IO.TextWriter.Dispose(System.Boolean)" />.</para></block>
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Procedimiento para leer texto de un archivo</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Procedimiento para escribir texto en un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Cómo: Leer texto de un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Cómo: Escribir texto en un archivo</related>
       </Docs>
     </Member>
     <Member MemberName="DisposeAsync">
@@ -1034,8 +1034,8 @@ Este método llama al método dispose de la clase base, <see cref="M:System.IO.T
  ]]></format>
         </remarks>
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Procedimiento para leer texto de un archivo</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Procedimiento para escribir texto en un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Cómo: Leer texto de un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Cómo: Escribir texto en un archivo</related>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -1074,8 +1074,8 @@ Para obtener una lista de tareas de E/S comunes, consulte [tareas de E/S comunes
 ]]></format>
         </remarks>
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Procedimiento para leer texto de un archivo</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Procedimiento para escribir texto en un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Cómo: Leer texto de un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Cómo: Escribir texto en un archivo</related>
       </Docs>
     </Member>
     <Member MemberName="Flush">
@@ -1129,11 +1129,11 @@ Para obtener una lista de tareas de E/S comunes, consulte [tareas de E/S comunes
         </remarks>
         <exception cref="T:System.ObjectDisposedException">El sistema de escritura actual está cerrado.</exception>
         <exception cref="T:System.IO.IOException">Error de E/S.</exception>
-        <exception cref="T:System.Text.EncoderFallbackException">La codificación actual no admite muestre la mitad de un par suplente Unicode.</exception>
+        <exception cref="T:System.Text.EncoderFallbackException">La codificación actual no admite que se muestre la mitad de un par suplente Unicode.</exception>
         <altmember cref="M:System.IO.Stream.Close" />
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Procedimiento para leer texto de un archivo</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Procedimiento para escribir texto en un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Cómo: Leer texto de un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Cómo: Escribir texto en un archivo</related>
       </Docs>
     </Member>
     <Member MemberName="FlushAsync">
@@ -1175,7 +1175,7 @@ Para obtener una lista de tareas de E/S comunes, consulte [tareas de E/S comunes
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Borra todos los búferes para esta secuencia de forma asincrónica y hace que los datos almacenados en búfer se escriban en el dispositivo subyacente.</summary>
+        <summary>Borra todos los búferes para este flujo de forma asincrónica y hace que los datos almacenados en búfer se escriban en el dispositivo subyacente.</summary>
         <returns>Tarea que representa la operación de vaciado asincrónico.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">Se ha eliminado la secuencia.</exception>
@@ -1239,8 +1239,8 @@ Para obtener una lista de tareas de E/S comunes, consulte [tareas de E/S comunes
  ]]></format>
         </remarks>
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Procedimiento para leer texto de un archivo</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Procedimiento para escribir texto en un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Cómo: Leer texto de un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Cómo: Escribir texto en un archivo</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Write">
@@ -1307,11 +1307,11 @@ Para obtener una lista de tareas de E/S comunes, consulte [tareas de E/S comunes
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">Error de E/S.</exception>
-        <exception cref="T:System.ObjectDisposedException"><see cref="P:System.IO.StreamWriter.AutoFlush" /> es true o el <see cref="T:System.IO.StreamWriter" /> búfer está lleno y se cierra el sistema de escritura actual.</exception>
-        <exception cref="T:System.NotSupportedException"><see cref="P:System.IO.StreamWriter.AutoFlush" /> es true o el <see cref="T:System.IO.StreamWriter" /> búfer está lleno y no se puede escribir el contenido del búfer en la secuencia de tamaño fijo subyacente porque el <see cref="T:System.IO.StreamWriter" /> está al final de la secuencia.</exception>
+        <exception cref="T:System.ObjectDisposedException"><see cref="P:System.IO.StreamWriter.AutoFlush" /> es true o el búfer <see cref="T:System.IO.StreamWriter" /> está lleno, y el sistema de escritura actual está cerrado.</exception>
+        <exception cref="T:System.NotSupportedException"><see cref="P:System.IO.StreamWriter.AutoFlush" /> es true o el búfer <see cref="T:System.IO.StreamWriter" /> está lleno, y el contenido del búfer no puede escribirse en la secuencia de tamaño fijo subyacente porque <see cref="T:System.IO.StreamWriter" /> se encuentra al final de la secuencia.</exception>
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Procedimiento para leer texto de un archivo</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Procedimiento para escribir texto en un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Cómo: Leer texto de un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Cómo: Escribir texto en un archivo</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1374,11 +1374,11 @@ Para obtener una lista de tareas de E/S comunes, consulte [tareas de E/S comunes
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">Error de E/S.</exception>
-        <exception cref="T:System.ObjectDisposedException"><see cref="P:System.IO.StreamWriter.AutoFlush" /> es true o el <see cref="T:System.IO.StreamWriter" /> búfer está lleno y se cierra el sistema de escritura actual.</exception>
-        <exception cref="T:System.NotSupportedException"><see cref="P:System.IO.StreamWriter.AutoFlush" /> es true o el <see cref="T:System.IO.StreamWriter" /> búfer está lleno y no se puede escribir el contenido del búfer en la secuencia de tamaño fijo subyacente porque el <see cref="T:System.IO.StreamWriter" /> está al final de la secuencia.</exception>
+        <exception cref="T:System.ObjectDisposedException"><see cref="P:System.IO.StreamWriter.AutoFlush" /> es true o el búfer <see cref="T:System.IO.StreamWriter" /> está lleno, y el sistema de escritura actual está cerrado.</exception>
+        <exception cref="T:System.NotSupportedException"><see cref="P:System.IO.StreamWriter.AutoFlush" /> es true o el búfer <see cref="T:System.IO.StreamWriter" /> está lleno, y el contenido del búfer no puede escribirse en la secuencia de tamaño fijo subyacente porque <see cref="T:System.IO.StreamWriter" /> se encuentra al final de la secuencia.</exception>
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Procedimiento para leer texto de un archivo</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Procedimiento para escribir texto en un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Cómo: Leer texto de un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Cómo: Escribir texto en un archivo</related>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1474,12 +1474,88 @@ Para obtener una lista de tareas de E/S comunes, consulte [tareas de E/S comunes
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException"><see cref="P:System.IO.StreamWriter.AutoFlush" /> es true o el <see cref="T:System.IO.StreamWriter" /> búfer está lleno y se cierra el sistema de escritura actual.</exception>
-        <exception cref="T:System.NotSupportedException"><see cref="P:System.IO.StreamWriter.AutoFlush" /> es true o el <see cref="T:System.IO.StreamWriter" /> búfer está lleno y no se puede escribir el contenido del búfer en la secuencia de tamaño fijo subyacente porque el <see cref="T:System.IO.StreamWriter" /> está al final de la secuencia.</exception>
+        <exception cref="T:System.ObjectDisposedException"><see cref="P:System.IO.StreamWriter.AutoFlush" /> es true o el búfer <see cref="T:System.IO.StreamWriter" /> está lleno, y el sistema de escritura actual está cerrado.</exception>
+        <exception cref="T:System.NotSupportedException"><see cref="P:System.IO.StreamWriter.AutoFlush" /> es true o el búfer <see cref="T:System.IO.StreamWriter" /> está lleno, y el contenido del búfer no puede escribirse en la secuencia de tamaño fijo subyacente porque <see cref="T:System.IO.StreamWriter" /> se encuentra al final de la secuencia.</exception>
         <exception cref="T:System.IO.IOException">Error de E/S.</exception>
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Procedimiento para leer texto de un archivo</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Procedimiento para escribir texto en un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Cómo: Leer texto de un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Cómo: Escribir texto en un archivo</related>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public override void Write (string format, object arg0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object arg0) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Write(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, arg0 As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, System::Object ^ arg0);" />
+      <MemberSignature Language="F#" Value="override this.Write : string * obj -&gt; unit" Usage="streamWriter.Write (format, arg0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="arg0">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public override void Write (string format, params object[] arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object[] arg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Write(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, ParamArray arg As Object())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ arg);" />
+      <MemberSignature Language="F#" Value="override this.Write : string * obj[] -&gt; unit" Usage="streamWriter.Write (format, arg)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg" Type="System.Object[]" Index="1" FrameworkAlternate="netcore-3.0">
+          <Attributes>
+            <Attribute FrameworkAlternate="netcore-3.0">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Write">
@@ -1552,15 +1628,91 @@ Para obtener una lista de tareas de E/S comunes, consulte [tareas de E/S comunes
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="buffer" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">La longitud del búfer menos <paramref name="index" /> es menor que <paramref name="count" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="index" /> o <paramref name="count" /> es negativo.</exception>
         <exception cref="T:System.IO.IOException">Error de E/S.</exception>
-        <exception cref="T:System.ObjectDisposedException"><see cref="P:System.IO.StreamWriter.AutoFlush" /> es true o el <see cref="T:System.IO.StreamWriter" /> búfer está lleno y se cierra el sistema de escritura actual.</exception>
-        <exception cref="T:System.NotSupportedException"><see cref="P:System.IO.StreamWriter.AutoFlush" /> es true o el <see cref="T:System.IO.StreamWriter" /> búfer está lleno y no se puede escribir el contenido del búfer en la secuencia de tamaño fijo subyacente porque el <see cref="T:System.IO.StreamWriter" /> está al final de la secuencia.</exception>
+        <exception cref="T:System.ObjectDisposedException"><see cref="P:System.IO.StreamWriter.AutoFlush" /> es true o el búfer <see cref="T:System.IO.StreamWriter" /> está lleno, y el sistema de escritura actual está cerrado.</exception>
+        <exception cref="T:System.NotSupportedException"><see cref="P:System.IO.StreamWriter.AutoFlush" /> es true o el búfer <see cref="T:System.IO.StreamWriter" /> está lleno, y el contenido del búfer no puede escribirse en la secuencia de tamaño fijo subyacente porque <see cref="T:System.IO.StreamWriter" /> se encuentra al final de la secuencia.</exception>
         <related type="Article" href="~/docs/standard/io/index.md">E/S de archivos y secuencias</related>
-        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Procedimiento para leer texto de un archivo</related>
-        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Procedimiento para escribir texto en un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">Cómo: Leer texto de un archivo</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">Cómo: Escribir texto en un archivo</related>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public override void Write (string format, object arg0, object arg1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object arg0, object arg1) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Write(System.String,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, arg0 As Object, arg1 As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
+      <MemberSignature Language="F#" Value="override this.Write : string * obj * obj -&gt; unit" Usage="streamWriter.Write (format, arg0, arg1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg1" Type="System.Object" Index="2" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="arg0">To be added.</param>
+        <param name="arg1">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public override void Write (string format, object arg0, object arg1, object arg2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string format, object arg0, object arg1, object arg2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.Write(System.String,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (format As String, arg0 As Object, arg1 As Object, arg2 As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2);" />
+      <MemberSignature Language="F#" Value="override this.Write : string * obj * obj * obj -&gt; unit" Usage="streamWriter.Write (format, arg0, arg1, arg2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg1" Type="System.Object" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg2" Type="System.Object" Index="3" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="arg0">To be added.</param>
+        <param name="arg1">To be added.</param>
+        <param name="arg2">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteAsync">
@@ -1616,7 +1768,7 @@ Para obtener una lista de tareas de E/S comunes, consulte [tareas de E/S comunes
       </Parameters>
       <Docs>
         <param name="value">Carácter que se va a escribir en la secuencia.</param>
-        <summary>Escribe un carácter en la secuencia de forma asincrónica.</summary>
+        <summary>Escribe una matriz de caracteres en la secuencia de forma asincrónica.</summary>
         <returns>Tarea que representa la operación de escritura asincrónica.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1629,7 +1781,7 @@ Para obtener una lista de tareas de E/S comunes, consulte [tareas de E/S comunes
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">Se ha eliminado el escritor de secuencias.</exception>
+        <exception cref="T:System.ObjectDisposedException">Se desecha el sistema de escritura de secuencias.</exception>
         <exception cref="T:System.InvalidOperationException">El escritor de secuencias está actualmente en uso por una operación de escritura anterior.</exception>
       </Docs>
     </Member>
@@ -1688,7 +1840,7 @@ Para obtener una lista de tareas de E/S comunes, consulte [tareas de E/S comunes
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">Se ha eliminado el escritor de secuencias.</exception>
+        <exception cref="T:System.ObjectDisposedException">Se desecha el sistema de escritura de secuencias.</exception>
         <exception cref="T:System.InvalidOperationException">El escritor de secuencias está actualmente en uso por una operación de escritura anterior.</exception>
       </Docs>
     </Member>
@@ -1786,10 +1938,10 @@ Para obtener una lista de tareas de E/S comunes, consulte [tareas de E/S comunes
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="buffer" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="index" /> más <paramref name="count" /> es mayor que la longitud del búfer.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="index" /> o <paramref name="count" /> es negativo.</exception>
-        <exception cref="T:System.ObjectDisposedException">Se ha eliminado el escritor de secuencias.</exception>
+        <exception cref="T:System.ObjectDisposedException">Se desecha el sistema de escritura de secuencias.</exception>
         <exception cref="T:System.InvalidOperationException">El escritor de secuencias está actualmente en uso por una operación de escritura anterior.</exception>
       </Docs>
     </Member>
@@ -1860,6 +2012,158 @@ Para obtener una lista de tareas de E/S comunes, consulte [tareas de E/S comunes
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="WriteLine">
+      <MemberSignature Language="C#" Value="public override void WriteLine (string format, object arg0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object arg0) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLine(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, arg0 As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0);" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : string * obj -&gt; unit" Usage="streamWriter.WriteLine (format, arg0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="arg0">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLine">
+      <MemberSignature Language="C#" Value="public override void WriteLine (string format, params object[] arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object[] arg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLine(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, ParamArray arg As Object())" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ arg);" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : string * obj[] -&gt; unit" Usage="streamWriter.WriteLine (format, arg)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg" Type="System.Object[]" Index="1" FrameworkAlternate="netcore-3.0">
+          <Attributes>
+            <Attribute FrameworkAlternate="netcore-3.0">
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLine">
+      <MemberSignature Language="C#" Value="public override void WriteLine (string format, object arg0, object arg1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object arg0, object arg1) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLine(System.String,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, arg0 As Object, arg1 As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : string * obj * obj -&gt; unit" Usage="streamWriter.WriteLine (format, arg0, arg1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg1" Type="System.Object" Index="2" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="arg0">To be added.</param>
+        <param name="arg1">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteLine">
+      <MemberSignature Language="C#" Value="public override void WriteLine (string format, object arg0, object arg1, object arg2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string format, object arg0, object arg1, object arg2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IO.StreamWriter.WriteLine(System.String,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (format As String, arg0 As Object, arg1 As Object, arg2 As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2);" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : string * obj * obj * obj -&gt; unit" Usage="streamWriter.WriteLine (format, arg0, arg1, arg2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg0" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg1" Type="System.Object" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="arg2" Type="System.Object" Index="3" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="format">To be added.</param>
+        <param name="arg0">To be added.</param>
+        <param name="arg1">To be added.</param>
+        <param name="arg2">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <MemberGroup MemberName="WriteLineAsync">
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1868,7 +2172,7 @@ Para obtener una lista de tareas de E/S comunes, consulte [tareas de E/S comunes
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Escribe datos seguidos de un terminador de línea de forma asincrónica en la secuencia.</summary>
+        <summary>Escribe datos seguidos de un terminador de línea asincrónico en la secuencia.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="WriteLineAsync">
@@ -1910,7 +2214,7 @@ Para obtener una lista de tareas de E/S comunes, consulte [tareas de E/S comunes
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Escribe un terminador de línea de forma asincrónica en la secuencia.</summary>
+        <summary>Escribe un terminador de línea en la secuencia de forma asincrónica.</summary>
         <returns>Tarea que representa la operación de escritura asincrónica.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1920,7 +2224,7 @@ Para obtener una lista de tareas de E/S comunes, consulte [tareas de E/S comunes
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">Se ha eliminado el escritor de secuencias.</exception>
+        <exception cref="T:System.ObjectDisposedException">Se desecha el sistema de escritura de secuencias.</exception>
         <exception cref="T:System.InvalidOperationException">El escritor de secuencias está actualmente en uso por una operación de escritura anterior.</exception>
       </Docs>
     </Member>
@@ -1966,7 +2270,7 @@ Para obtener una lista de tareas de E/S comunes, consulte [tareas de E/S comunes
       </Parameters>
       <Docs>
         <param name="value">Carácter que se va a escribir en la secuencia.</param>
-        <summary>Escribe un carácter seguido de un terminador de línea de forma asincrónica en la secuencia.</summary>
+        <summary>Escribe un carácter seguido de un terminador de forma asincrónica de línea en la secuencia.</summary>
         <returns>Tarea que representa la operación de escritura asincrónica.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1984,7 +2288,7 @@ Para obtener una lista de tareas de E/S comunes, consulte [tareas de E/S comunes
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">Se ha eliminado el escritor de secuencias.</exception>
+        <exception cref="T:System.ObjectDisposedException">Se desecha el sistema de escritura de secuencias.</exception>
         <exception cref="T:System.InvalidOperationException">El escritor de secuencias está actualmente en uso por una operación de escritura anterior.</exception>
       </Docs>
     </Member>
@@ -2030,7 +2334,7 @@ Para obtener una lista de tareas de E/S comunes, consulte [tareas de E/S comunes
       </Parameters>
       <Docs>
         <param name="value">Cadena que se va a escribir. Si el valor es <see langword="null" />, solo se escribe el terminador de línea.</param>
-        <summary>Escribe una cadena seguida de un terminador de línea de forma asincrónica en la secuencia.</summary>
+        <summary>Escribe una cadena seguida de un terminador de línea en la secuencia de forma asincrónica.</summary>
         <returns>Tarea que representa la operación de escritura asincrónica.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2048,7 +2352,7 @@ Para obtener una lista de tareas de E/S comunes, consulte [tareas de E/S comunes
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">Se ha eliminado el escritor de secuencias.</exception>
+        <exception cref="T:System.ObjectDisposedException">Se desecha el sistema de escritura de secuencias.</exception>
         <exception cref="T:System.InvalidOperationException">El escritor de secuencias está actualmente en uso por una operación de escritura anterior.</exception>
       </Docs>
     </Member>
@@ -2133,7 +2437,7 @@ Para obtener una lista de tareas de E/S comunes, consulte [tareas de E/S comunes
         <param name="buffer">Matriz de caracteres de la que se escriben los datos.</param>
         <param name="index">Posición del carácter en el búfer donde comenzar la lectura de datos.</param>
         <param name="count">Número máximo de caracteres que se van a escribir.</param>
-        <summary>Escribe una submatriz de caracteres seguida de un terminador de línea de forma asincrónica en la secuencia.</summary>
+        <summary>Escribe una submatriz de caracteres seguida de un terminador de línea en la secuencia de forma asincrónica.</summary>
         <returns>Tarea que representa la operación de escritura asincrónica.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2151,10 +2455,10 @@ Para obtener una lista de tareas de E/S comunes, consulte [tareas de E/S comunes
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="buffer" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="index" /> más <paramref name="count" /> es mayor que la longitud del búfer.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="index" /> o <paramref name="count" /> es negativo.</exception>
-        <exception cref="T:System.ObjectDisposedException">Se ha eliminado el escritor de secuencias.</exception>
+        <exception cref="T:System.ObjectDisposedException">Se desecha el sistema de escritura de secuencias.</exception>
         <exception cref="T:System.InvalidOperationException">El escritor de secuencias está actualmente en uso por una operación de escritura anterior.</exception>
       </Docs>
     </Member>
