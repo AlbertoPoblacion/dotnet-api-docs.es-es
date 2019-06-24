@@ -1,5 +1,5 @@
 <Type Name="Cer" FullName="System.Runtime.ConstrainedExecution.Cer">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="23cdbbda92dc12a56457f1d88e9fa3cae6c7ff8a" /><Meta Name="ms.sourcegitcommit" Value="a3e01ec36374fac54a55add0dcc1e754e394abeb" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="03/30/2019" /><Meta Name="ms.locfileid" Value="58725613" /></Metadata><TypeSignature Language="C#" Value="public enum Cer" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1eb1ed20f5e5985c10eeb6e49f20c175f5b80e35" /><Meta Name="ms.sourcegitcommit" Value="feb111e137a41d186aef01d83f04819d820520eb" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/21/2019" /><Meta Name="ms.locfileid" Value="67307767" /></Metadata><TypeSignature Language="C#" Value="public enum Cer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed Cer extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.ConstrainedExecution.Cer" />
   <TypeSignature Language="VB.NET" Value="Public Enum Cer" />
@@ -34,18 +34,28 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- El <xref:System.Runtime.ConstrainedExecution.Cer> enumeración especifica el comportamiento de un método, tipo o ensamblado dentro de una región de ejecución restringida (CER). Use uno de los tres valores disponibles para indicar que la entidad se realizará correctamente, no tiene conocimiento de una CER, o (de manera determinista) podría ser capaz de informes de éxito o error.  
+## Remarks
+ 
+El <xref:System.Runtime.ConstrainedExecution.Cer> enumeración especifica el comportamiento de un método, tipo o ensamblado dentro de una región de ejecución restringida (CER). Use uno de los tres valores disponibles para indicar que la entidad se realizará correctamente, no tiene conocimiento de una CER, o (de manera determinista) podría ser capaz de informes de éxito o error.  
   
- Una CER proporciona garantías de que la región de código se ejecutará sin interrupciones incluso si se produce una excepción asincrónica, como una excepción de subproceso anulado de memoria insuficiente o desbordamiento de pila.  
+Una CER proporciona garantías de que la región de código se ejecutará sin interrupciones incluso si se produce una excepción asincrónica, como una excepción de subproceso anulado de memoria insuficiente o desbordamiento de pila.  
   
-   
+Sin embargo, la `Cer.None` valor de enumeración indica que el método, tipo o ensamblado no tiene ningún concepto de una CER. No se aprovecha de las garantías de la CER. Esto implica lo siguiente:
+
+- Ante condiciones excepcionales, el método podría generar errores.  
   
-## Examples  
- En el ejemplo de código siguiente se muestra el uso de la <xref:System.Runtime.ConstrainedExecution.Cer> al especificar una región de ejecución restringida para un método de enumeración. Este ejemplo de código forma parte de un ejemplo más extenso proporcionado para el <xref:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute.%23ctor%2A> constructor.  
+- El método podría o no los informes que se produjo un error (es no determinista).  
   
- [!code-csharp[System.Runtime.ConstrainedExecution#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Runtime.ConstrainedExecution/cs/program.cs#3)]
- [!code-vb[System.Runtime.ConstrainedExecution#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Runtime.ConstrainedExecution/vb/program.vb#3)]  
+- El método no se escribe con las CER en mente (que es el escenario más probable).  
+  
+Si un método, tipo o ensamblado no está marcado explícitamente para que se realice correctamente, se marca implícitamente como `Cer.None`.  
+
+## Examples
+
+En el ejemplo de código siguiente se muestra el uso de la <xref:System.Runtime.ConstrainedExecution.Cer> al especificar una región de ejecución restringida para un método de enumeración. Este ejemplo de código forma parte de un ejemplo más extenso proporcionado para el <xref:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute.%23ctor%2A> constructor.  
+  
+[!code-csharp[System.Runtime.ConstrainedExecution#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Runtime.ConstrainedExecution/cs/program.cs#3)]
+[!code-vb[System.Runtime.ConstrainedExecution#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Runtime.ConstrainedExecution/vb/program.vb#3)]  
   
  ]]></format>
     </remarks>
@@ -116,22 +126,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>El método, tipo o ensamblado no tiene ningún concepto de CER. No se aprovecha de las garantías de la CER. Esto implica lo siguiente:</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
--   Ante condiciones excepcionales, el método podría generar errores.  
-  
--   El método podría o no los informes que se produjo un error (es no determinista).  
-  
--   El método no se escribe con las CER en mente (que es el escenario más probable).  
-  
- Si un método, tipo o ensamblado no está marcado explícitamente para que se realice correctamente, se marca implícitamente como `Cer.None`.  
-  
- ]]></format>
-        </remarks>
+        <summary>El método, tipo o ensamblado no tiene ningún concepto de CER. No se aprovecha de las garantías de la CER.</summary>
       </Docs>
     </Member>
     <Member MemberName="Success">

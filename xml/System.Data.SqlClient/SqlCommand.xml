@@ -1,5 +1,5 @@
 <Type Name="SqlCommand" FullName="System.Data.SqlClient.SqlCommand">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="f0181382441e1661d976dbae0ffd433f9ed5713d" /><Meta Name="ms.sourcegitcommit" Value="2767b5903996fbd7e2b81eda1114dfc9d0d9db63" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/02/2019" /><Meta Name="ms.locfileid" Value="65006405" /></Metadata><TypeSignature Language="C#" Value="public sealed class SqlCommand : System.Data.Common.DbCommand, ICloneable, IDisposable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6800810f74d89543757e694dff504111ee83f5b4" /><Meta Name="ms.sourcegitcommit" Value="feb111e137a41d186aef01d83f04819d820520eb" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/21/2019" /><Meta Name="ms.locfileid" Value="67308048" /></Metadata><TypeSignature Language="C#" Value="public sealed class SqlCommand : System.Data.Common.DbCommand, ICloneable, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlCommand extends System.Data.Common.DbCommand implements class System.Data.IDbCommand, class System.ICloneable, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlCommand" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlCommand&#xA;Inherits DbCommand&#xA;Implements ICloneable, IDisposable" />
@@ -107,7 +107,7 @@
   
  En primer lugar debe crear la base de datos de ejemplo, ejecutando el siguiente script:  
   
-```  
+```sql
 USE [master]  
 GO  
   
@@ -298,7 +298,7 @@ GO
   
  A continuación, compile y ejecute lo siguiente:  
   
-```  
+```csharp
 using System;  
 using System.Data;  
 using System.Data.SqlClient;  
@@ -711,7 +711,7 @@ class Program {
       <Docs>
         <param name="cmdText">Texto de la consulta.</param>
         <param name="connection"><see cref="T:System.Data.SqlClient.SqlConnection" /> que representa la conexión a una instancia de SQL Server.</param>
-        <param name="transaction"><see cref="T:System.Data.SqlClient.SqlTransaction" /> donde se ejecuta <see cref="T:System.Data.SqlClient.SqlCommand" />.</param>
+        <param name="transaction"><see cref="T:System.Data.SqlClient.SqlTransaction" /> donde se ejecuta <see cref="T:System.Data.SqlClient.SqlCommand" /> .</param>
         <param name="columnEncryptionSetting">Configuración de cifrado. Para obtener más información, vea [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine).</param>
         <summary>Inicializa una nueva instancia de la clase <see cref="T:System.Data.SqlClient.SqlCommand" /> con texto de comando especificado, conexión, transacción y configuración de cifrado.</summary>
         <remarks>To be added.</remarks>
@@ -776,15 +776,23 @@ class Program {
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Binary** o **VarBinary** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.Stream" />. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+o bien
+
 Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Char**, **NChar**, **NVarChar**, **VarChar** o **Xml** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.TextReader" />.  
-  
+
+o bien
+
 Se usó un <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto de **Xml** cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.Xml.XmlReader" />.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">Cualquier error que se produjo al ejecutar el texto del comando.  
-  
-Se agotó el tiempo de espera durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
+
+o bien
+
+Se agotó el tiempo de espera durante una operación de streaming. Para más información sobre el streaming, vea [Compatibilidad con el streaming de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.InvalidOperationException">El par nombre/valor "Asynchronous Processing=true" no se incluyó dentro de la cadena de conexión que define la conexión para este <see cref="T:System.Data.SqlClient.SqlCommand" />.  
-  
+
+o bien
+
 La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrumpió durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error en un objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.ObjectDisposedException">El objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> se cerró durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
@@ -854,15 +862,23 @@ La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrump
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Binary** o **VarBinary** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.Stream" />. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+O bien
+
 Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Char**, **NChar**, **NVarChar**, **VarChar** o **Xml** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.TextReader" />.  
-  
+
+O bien
+
 Se usó un <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto de **Xml** cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.Xml.XmlReader" />.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">Cualquier error que se produjo al ejecutar el texto del comando.  
-  
-Se agotó el tiempo de espera durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
+
+O bien
+
+Se agotó el tiempo de espera durante una operación de streaming. Para más información sobre el streaming, vea [Compatibilidad con el streaming de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.InvalidOperationException">El par nombre/valor "Asynchronous Processing=true" no se incluyó dentro de la cadena de conexión que define la conexión para este <see cref="T:System.Data.SqlClient.SqlCommand" />.  
-  
+
+o bien
+
 La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrumpió durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error en un objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.ObjectDisposedException">El objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> se cerró durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
@@ -930,15 +946,23 @@ La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrump
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Binary** o **VarBinary** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.Stream" />. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+O bien
+
 Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Char**, **NChar**, **NVarChar**, **VarChar** o **Xml** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.TextReader" />.  
-  
+
+o bien
+
 Se usó un <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto de **Xml** cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.Xml.XmlReader" />.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">Cualquier error que se produjo al ejecutar el texto del comando.  
-  
-Se agotó el tiempo de espera durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
+
+O bien
+
+Se agotó el tiempo de espera durante una operación de streaming. Para más información sobre el streaming, vea [Compatibilidad con el streaming de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.InvalidOperationException">El par nombre/valor "Asynchronous Processing=true" no se incluyó dentro de la cadena de conexión que define la conexión para este <see cref="T:System.Data.SqlClient.SqlCommand" />.  
-  
+
+o bien
+
 La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrumpió durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error en un objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.ObjectDisposedException">El objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> se cerró durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
@@ -1002,15 +1026,23 @@ La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrump
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Binary** o **VarBinary** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.Stream" />. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+o bien
+
 Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Char**, **NChar**, **NVarChar**, **VarChar** o **Xml** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.TextReader" />.  
-  
+
+o bien
+
 Se usó un <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto de **Xml** cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.Xml.XmlReader" />.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">Cualquier error que se produjo al ejecutar el texto del comando.  
-  
-Se agotó el tiempo de espera durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
+
+O bien
+
+Se agotó el tiempo de espera durante una operación de streaming. Para más información sobre el streaming, vea [Compatibilidad con el streaming de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.InvalidOperationException">El par nombre/valor "Asynchronous Processing=true" no se incluyó dentro de la cadena de conexión que define la conexión para este <see cref="T:System.Data.SqlClient.SqlCommand" />.  
-  
+
+O bien
+
 La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrumpió durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error en un objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.ObjectDisposedException">El objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> se cerró durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
@@ -1080,15 +1112,23 @@ La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrump
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Binary** o **VarBinary** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.Stream" />. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+o bien
+
 Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Char**, **NChar**, **NVarChar**, **VarChar** o **Xml** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.TextReader" />.  
-  
+
+O bien
+
 Se usó un <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto de **Xml** cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.Xml.XmlReader" />.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">Cualquier error que se produjo al ejecutar el texto del comando.  
-  
-Se agotó el tiempo de espera durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
+
+o bien
+
+Se agotó el tiempo de espera durante una operación de streaming. Para más información sobre el streaming, vea [Compatibilidad con el streaming de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.InvalidOperationException">El par nombre/valor "Asynchronous Processing=true" no se incluyó dentro de la cadena de conexión que define la conexión para este <see cref="T:System.Data.SqlClient.SqlCommand" />.  
-  
+
+o bien
+
 La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrumpió durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error en un objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.ObjectDisposedException">El objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> se cerró durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
@@ -1164,15 +1204,23 @@ La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrump
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Binary** o **VarBinary** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.Stream" />. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+O bien
+
 Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Char**, **NChar**, **NVarChar**, **VarChar** o **Xml** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.TextReader" />.  
-  
+
+O bien
+
 Se usó un <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto de **Xml** cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.Xml.XmlReader" />.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">Cualquier error que se produjo al ejecutar el texto del comando.  
-  
-Se agotó el tiempo de espera durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
+
+O bien
+
+Se agotó el tiempo de espera durante una operación de streaming. Para más información sobre el streaming, vea [Compatibilidad con el streaming de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.InvalidOperationException">El par nombre/valor "Asynchronous Processing=true" no se incluyó dentro de la cadena de conexión que define la conexión para este <see cref="T:System.Data.SqlClient.SqlCommand" />.  
-  
+
+O bien
+
 La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrumpió durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error en un objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.ObjectDisposedException">El objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> se cerró durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
@@ -1229,7 +1277,7 @@ La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrump
   
  Una típica <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> consulta se puede dar formato como se muestra en el siguiente ejemplo de C#:  
   
-```  
+```csharp
 SqlCommand command = new SqlCommand("SELECT ContactID, FirstName, LastName FROM dbo.Contact FOR XML AUTO, XMLDATA", SqlConn);  
 ```  
   
@@ -1254,15 +1302,23 @@ SqlCommand command = new SqlCommand("SELECT ContactID, FirstName, LastName FROM 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Binary** o **VarBinary** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.Stream" />. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+O bien
+
 Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Char**, **NChar**, **NVarChar**, **VarChar** o **Xml** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.TextReader" />.  
-  
+
+O bien
+
 Se usó un <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto de **Xml** cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.Xml.XmlReader" />.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">Cualquier error que se produjo al ejecutar el texto del comando.  
-  
-Se agotó el tiempo de espera durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
+
+O bien
+
+Se agotó el tiempo de espera durante una operación de streaming. Para más información sobre el streaming, vea [Compatibilidad con el streaming de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.InvalidOperationException">El par nombre/valor "Asynchronous Processing=true" no se incluyó dentro de la cadena de conexión que define la conexión para este <see cref="T:System.Data.SqlClient.SqlCommand" />.  
-  
+
+O bien
+
 La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrumpió durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error en un objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.ObjectDisposedException">El objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> se cerró durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
@@ -1313,7 +1369,7 @@ La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrump
   
  Una típica <xref:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader%2A> consulta se puede dar formato como se muestra en el siguiente ejemplo de C#:  
   
-```  
+```csharp
 SqlCommand command = new SqlCommand("SELECT ContactID, FirstName, LastName FROM Contact FOR XML AUTO, XMLDATA", SqlConn);  
 ```  
   
@@ -1344,15 +1400,23 @@ SqlCommand command = new SqlCommand("SELECT ContactID, FirstName, LastName FROM 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Binary** o **VarBinary** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.Stream" />. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+O bien
+
 Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Char**, **NChar**, **NVarChar**, **VarChar** o **Xml** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.TextReader" />.  
-  
+
+o bien
+
 Se usó un <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto de **Xml** cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.Xml.XmlReader" />.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">Cualquier error que se produjo al ejecutar el texto del comando.  
-  
-Se agotó el tiempo de espera durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
+
+o bien
+
+Se agotó el tiempo de espera durante una operación de streaming. Para más información sobre el streaming, vea [Compatibilidad con el streaming de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.InvalidOperationException">El par nombre/valor "Asynchronous Processing=true" no se incluyó dentro de la cadena de conexión que define la conexión para este <see cref="T:System.Data.SqlClient.SqlCommand" />.  
-  
+
+o bien
+
 La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrumpió durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error en un objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.ObjectDisposedException">El objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> se cerró durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
@@ -1556,7 +1620,7 @@ La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrump
   
  El proveedor de datos de Microsoft .NET Framework para SQL Server no admite el marcador de posición de signo de interrogación (?) para pasar parámetros a una instrucción Transact-SQL o un procedimiento almacenado llamado por un comando de `CommandType.Text`. En este caso, se deben usar parámetros con nombre. Por ejemplo:  
   
-```  
+```sql
 SELECT * FROM dbo.Customers WHERE CustomerID = @CustomerID  
 ```  
   
@@ -1637,7 +1701,7 @@ SELECT * FROM dbo.Customers WHERE CustomerID = @CustomerID
 >   
 >  Por ejemplo, con un tiempo de 30 segundos, out si <xref:System.Data.SqlClient.SqlDataReader.Read%2A> requiere dos paquetes de red y, después, tiene 30 segundos para leer tanto los paquetes de red. Si se llama a <xref:System.Data.SqlClient.SqlDataReader.Read%2A> nuevo, tendrá otro 30 segundos en leer los datos que necesita.  
   
-```  
+```csharp
 using System;  
 using System.Data.SqlClient;  
 ///   
@@ -2150,8 +2214,10 @@ public class A {
         <exception cref="T:System.ArgumentException">El parámetro <paramref name="asyncResult" /> es nulo (<see langword="Nothing" /> en Microsoft Visual Basic)</exception>
         <exception cref="T:System.InvalidOperationException">Se llamó a <see cref="M:System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(System.IAsyncResult)" /> más de una vez para una única ejecución de comando o el método no coincidía con su método de ejecución (por ejemplo, el código llamó a <see cref="M:System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(System.IAsyncResult)" /> para que finalizara la ejecución de una llamada a <see cref="M:System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader" />).</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">La cantidad de tiempo especificado en <see cref="P:System.Data.SqlClient.SqlCommand.CommandTimeout" /> transcurrió y la operación asincrónica se especificada con <see cref="Overload:System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery" /> no se ha completado.  
-  
-En algunas situaciones, <see cref="T:System.IAsyncResult" /> se puede establecer en <see langword="IsCompleted" /> incorrectamente. Si esto ocurre y se llama a <see cref="M:System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(System.IAsyncResult)" />, EndExecuteNonQuery podría generar un error de SqlException si la cantidad de tiempo especificada en <see cref="P:System.Data.SqlClient.SqlCommand.CommandTimeout" /> transcurrió y la operación asincrónica especificada con <see cref="Overload:System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery" /> no se completó. Para corregir esta situación, debe incrementar el valor de CommandTimeout o reducir el trabajo realizado por la operación asincrónica.</exception>
+ 
+O bien
+
+En algunas situaciones, <see cref="T:System.IAsyncResult" /> se puede establecer en <see langword="IsCompleted" /> incorrectamente. Si esto ocurre y se llama a <see cref="M:System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(System.IAsyncResult)" /> , EndExecuteNonQuery podría generar un error de SqlException si la cantidad de tiempo especificada en <see cref="P:System.Data.SqlClient.SqlCommand.CommandTimeout" /> transcurrió y la operación asincrónica especificada con <see cref="Overload:System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery" /> no se completó. Para corregir esta situación, debe incrementar el valor de CommandTimeout o reducir el trabajo realizado por la operación asincrónica.</exception>
         <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Conectarse y recuperar datos en ADO.NET</related>
         <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">Mediante el proveedor de datos de .NET Framework para SQL Server</related>
         <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">Información general sobre ADO.NET</related>
@@ -2377,7 +2443,7 @@ En algunas situaciones, <see cref="T:System.IAsyncResult" /> se puede establecer
   
  Aunque el <xref:System.Data.SqlClient.SqlCommand.ExecuteNonQuery%2A> devuelve ninguna fila, los parámetros de salida o devolver los valores asignados a los parámetros se rellenan con datos.  
   
- Para las instrucciones UPDATE, INSERT y DELETE, el valor devuelto es el número de filas afectadas por el comando. Para los demás tipos de instrucciones, el valor devuelto es -1.
+ Para las instrucciones UPDATE, INSERT y DELETE, el valor devuelto corresponde al número de filas afectadas por el comando. Para los demás tipos de instrucciones, el valor devuelto es -1.
 
 Cuando existe un desencadenador en una tabla que se va a insertar o actualizar, el valor devuelto incluye el número de filas afectadas por la operación de inserción o actualización y el número de filas afectadas por el desencadenador o desencadenadores.
 
@@ -2396,12 +2462,18 @@ Si no se detecta ninguna de las instrucciones que contribuyen al recuento, el va
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Binary** o **VarBinary** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.Stream" />. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+o bien
+
 Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Char**, **NChar**, **NVarChar**, **VarChar** o **Xml** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.TextReader" />.  
-  
+
+O bien
+
 Se usó un <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto de **Xml** cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.Xml.XmlReader" />.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">Se produjo una excepción al ejecutar el comando contra una fila bloqueada. Esta excepción no se genera cuando se usa Microsoft .NET Framework versión 1.0.  
-  
+
+o bien
+
 Se agotó el tiempo de espera durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error en un objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.InvalidOperationException">La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrumpió durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
@@ -2453,17 +2525,25 @@ Se agotó el tiempo de espera durante una operación de streaming. Para obtener 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Binary** o **VarBinary** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.Stream" />. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+O bien
+
 Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Char**, **NChar**, **NVarChar**, **VarChar** o **Xml** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.TextReader" />.  
-  
+
+o bien
+
 Se usó un <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto de **Xml** cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.Xml.XmlReader" />.</exception>
         <exception cref="T:System.InvalidOperationException">Llamar a <see cref="M:System.Data.SqlClient.SqlCommand.ExecuteNonQueryAsync(System.Threading.CancellationToken)" /> más de una vez para la misma instancia antes de la finalización de la tarea.  
-  
+
+O bien
+
 La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrumpió durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+O bien 
  <see langword="Context Connection=true" /> se especifica en la cadena de conexión.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">SQL Server informó de un error al ejecutar el texto del comando.  
-  
+
+o bien 
 Se agotó el tiempo de espera durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error en un objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.ObjectDisposedException">El objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> se cerró durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
@@ -2539,15 +2619,23 @@ Se agotó el tiempo de espera durante una operación de streaming. Para obtener 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Binary** o **VarBinary** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.Stream" />. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+O bien
+
 Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Char**, **NChar**, **NVarChar**, **VarChar** o **Xml** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.TextReader" />.  
-  
+
+o bien
+
 Se usó un <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto de **Xml** cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.Xml.XmlReader" />.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">Se produjo una excepción al ejecutar el comando contra una fila bloqueada. Esta excepción no se genera cuando se usa Microsoft .NET Framework versión 1.0.  
-  
+
+O bien
+
 Se agotó el tiempo de espera durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.InvalidOperationException">El estado actual de la conexión es cerrado. <see cref="M:System.Data.SqlClient.SqlCommand.ExecuteReader" /> requiere una <see cref="T:System.Data.SqlClient.SqlConnection" /> abierta.  
-  
+
+o bien
+
 La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrumpió durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error en un objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.ObjectDisposedException">El objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> se cerró durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
@@ -2617,9 +2705,13 @@ La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrump
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Binary** o **VarBinary** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.Stream" />. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+O bien
+
 Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Char**, **NChar**, **NVarChar**, **VarChar** o **Xml** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.TextReader" />.  
-  
+
+o bien
+
 Se usó un <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto de **Xml** cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.Xml.XmlReader" />.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">Se agotó el tiempo de espera durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error en un objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
@@ -2689,18 +2781,28 @@ Se usó un <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distint
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Binary** o **VarBinary** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.Stream" />. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+o bien
+
 Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Char**, **NChar**, **NVarChar**, **VarChar** o **Xml** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.TextReader" />.  
-  
+
+o bien
+
 Se usó un <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto de **Xml** cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.Xml.XmlReader" />.</exception>
         <exception cref="T:System.ArgumentException">Hay un valor de <see cref="T:System.Data.CommandBehavior" /> no válido.</exception>
         <exception cref="T:System.InvalidOperationException">Llamar a <see cref="M:System.Data.SqlClient.SqlCommand.ExecuteReaderAsync" /> más de una vez para la misma instancia antes de la finalización de la tarea.  
-  
+
+O bien
+
 La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrumpió durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+O bien
+
  <see langword="Context Connection=true" /> se especifica en la cadena de conexión.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">SQL Server informó de un error al ejecutar el texto del comando.  
-  
+
+O bien
+
 Se agotó el tiempo de espera durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error en un objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.ObjectDisposedException">El objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> se cerró durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
@@ -2751,18 +2853,28 @@ Se agotó el tiempo de espera durante una operación de streaming. Para obtener 
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Binary** o **VarBinary** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.Stream" />. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+o bien
+
 Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Char**, **NChar**, **NVarChar**, **VarChar** o **Xml** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.TextReader" />.  
-  
+
+O bien
+
 Se usó un <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto de **Xml** cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.Xml.XmlReader" />.</exception>
         <exception cref="T:System.ArgumentException">Hay un valor de <see cref="T:System.Data.CommandBehavior" /> no válido.</exception>
         <exception cref="T:System.InvalidOperationException">Llamar a <see cref="M:System.Data.SqlClient.SqlCommand.ExecuteReaderAsync(System.Data.CommandBehavior)" /> más de una vez para la misma instancia antes de la finalización de la tarea.  
-  
+
+O bien
+
 La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrumpió durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+o bien
+
  <see langword="Context Connection=true" /> se especifica en la cadena de conexión.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">SQL Server informó de un error al ejecutar el texto del comando.  
-  
+
+O bien
+
 Se agotó el tiempo de espera durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error en un objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.ObjectDisposedException">El objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> se cerró durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
@@ -2814,18 +2926,27 @@ Token de cancelación que se puede usar para solicitar que se abandone la operac
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Binary** o **VarBinary** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.Stream" />. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+o bien
+
 Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Char**, **NChar**, **NVarChar**, **VarChar** o **Xml** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.TextReader" />.  
-  
+
+o bien 
 Se usó un <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto de **Xml** cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.Xml.XmlReader" />.</exception>
         <exception cref="T:System.ArgumentException">Hay un valor de <see cref="T:System.Data.CommandBehavior" /> no válido.</exception>
         <exception cref="T:System.InvalidOperationException">Llamar a <see cref="M:System.Data.SqlClient.SqlCommand.ExecuteReaderAsync(System.Data.CommandBehavior,System.Threading.CancellationToken)" /> más de una vez para la misma instancia antes de la finalización de la tarea.  
-  
+
+o bien
+
 La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrumpió durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+O bien
+
  <see langword="Context Connection=true" /> se especifica en la cadena de conexión.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">SQL Server informó de un error al ejecutar el texto del comando.  
-  
+
+O bien
+
 Se agotó el tiempo de espera durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error en un objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.ObjectDisposedException">El objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> se cerró durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
@@ -2879,18 +3000,28 @@ Token de cancelación que se puede usar para solicitar que se abandone la operac
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Binary** o **VarBinary** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.Stream" />. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+o bien
+
 Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Char**, **NChar**, **NVarChar**, **VarChar** o **Xml** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.TextReader" />.  
-  
+
+O bien
+
 Se usó un <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto de **Xml** cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.Xml.XmlReader" />.</exception>
         <exception cref="T:System.ArgumentException">Hay un valor de <see cref="T:System.Data.CommandBehavior" /> no válido.</exception>
         <exception cref="T:System.InvalidOperationException">Llamar a <see cref="M:System.Data.SqlClient.SqlCommand.ExecuteReaderAsync(System.Data.CommandBehavior,System.Threading.CancellationToken)" /> más de una vez para la misma instancia antes de la finalización de la tarea.  
-  
+
+O bien
+
 La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrumpió durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
- <see langword="Context Connection=true" /> se especifica en la cadena de conexión.</exception>
+
+o bien
+
+<see langword="Context Connection=true" /> se especifica en la cadena de conexión.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">SQL Server informó de un error al ejecutar el texto del comando.  
-  
+
+O bien
+
 Se agotó el tiempo de espera durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error en un objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.ObjectDisposedException">El objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> se cerró durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
@@ -2942,12 +3073,10 @@ Se agotó el tiempo de espera durante una operación de streaming. Para obtener 
   
  Una típica <xref:System.Data.SqlClient.SqlCommand.ExecuteScalar%2A> consulta se puede dar formato como se muestra en el siguiente ejemplo de C#:  
   
-```  
+```csharp
 cmd.CommandText = "SELECT COUNT(*) FROM dbo.region";  
 Int32 count = (Int32) cmd.ExecuteScalar();  
 ```  
-  
-   
   
 ## Examples  
  En el ejemplo siguiente se crea un <xref:System.Data.SqlClient.SqlCommand> y, a continuación, se ejecuta mediante <xref:System.Data.SqlClient.SqlCommand.ExecuteScalar%2A>. En el ejemplo se pasa una cadena que representa un nuevo valor va a insertar en una tabla y una cadena que se utiliza para conectarse al origen de datos. La función devuelve el nuevo **identidad** valor de la columna si se ha insertado una nueva fila, de 0 en caso de error.  
@@ -2958,12 +3087,18 @@ Int32 count = (Int32) cmd.ExecuteScalar();
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Binary** o **VarBinary** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.Stream" />. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+o bien
+
 Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Char**, **NChar**, **NVarChar**, **VarChar** o **Xml** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.TextReader" />.  
-  
+
+o bien
+
 Se usó un <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto de **Xml** cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.Xml.XmlReader" />.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">Se produjo una excepción al ejecutar el comando contra una fila bloqueada. Esta excepción no se genera cuando se usa Microsoft .NET Framework versión 1.0.  
-  
+
+O bien
+
 Se agotó el tiempo de espera durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.InvalidOperationException">La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrumpió durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error en un objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
@@ -3017,17 +3152,27 @@ Token de cancelación que se puede usar para solicitar que se abandone la operac
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Binary** o **VarBinary** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.Stream" />. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+O bien
+
 Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Char**, **NChar**, **NVarChar**, **VarChar** o **Xml** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.TextReader" />.  
-  
+
+O bien
+
 Se usó un <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto de **Xml** cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.Xml.XmlReader" />.</exception>
         <exception cref="T:System.InvalidOperationException">Llamar a <see cref="M:System.Data.SqlClient.SqlCommand.ExecuteScalarAsync(System.Threading.CancellationToken)" /> más de una vez para la misma instancia antes de la finalización de la tarea.  
-  
+
+o bien
+
 La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrumpió durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
- <see langword="Context Connection=true" /> se especifica en la cadena de conexión.</exception>
+
+o bien
+
+<see langword="Context Connection=true" /> se especifica en la cadena de conexión.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">SQL Server informó de un error al ejecutar el texto del comando.  
-  
+
+O bien
+
 Se agotó el tiempo de espera durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error en un objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.ObjectDisposedException">El objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> se cerró durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
@@ -3078,7 +3223,7 @@ Se agotó el tiempo de espera durante una operación de streaming. Para obtener 
   
  Una típica <xref:System.Data.SqlClient.SqlCommand.ExecuteXmlReader%2A> consulta se puede dar formato como en el siguiente ejemplo de Microsoft Visual C#:  
   
-```  
+```csharp
 SqlCommand command = new SqlCommand("SELECT * FROM dbo.Customers FOR XML AUTO, XMLDATA", SqlConn);  
 ```  
   
@@ -3098,12 +3243,18 @@ SqlCommand command = new SqlCommand("SELECT * FROM dbo.Customers FOR XML AUTO, X
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Binary** o **VarBinary** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.Stream" />. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+o bien
+
 Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Char**, **NChar**, **NVarChar**, **VarChar** o **Xml** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.TextReader" />.  
-  
+
+O bien
+
 Se usó un <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto de **Xml** cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.Xml.XmlReader" />.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">Se produjo una excepción al ejecutar el comando contra una fila bloqueada. Esta excepción no se genera cuando se usa Microsoft .NET Framework versión 1.0.  
-  
+
+o bien
+
 Se agotó el tiempo de espera durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.InvalidOperationException">La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrumpió durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error en un objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
@@ -3170,17 +3321,27 @@ Para obtener más información sobre la programación asincrónica en el proveed
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Binary** o **VarBinary** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.Stream" />. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+O bien
+
 Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Char**, **NChar**, **NVarChar**, **VarChar** o **Xml** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.TextReader" />.  
-  
+
+O bien
+
 Se usó un <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto de **Xml** cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.Xml.XmlReader" />.</exception>
         <exception cref="T:System.InvalidOperationException">Llamar a <see cref="M:System.Data.SqlClient.SqlCommand.ExecuteScalarAsync(System.Threading.CancellationToken)" /> más de una vez para la misma instancia antes de la finalización de la tarea.  
-  
+
+O bien
+
 La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrumpió durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
- <see langword="Context Connection=true" /> se especifica en la cadena de conexión.</exception>
+
+o bien
+
+<see langword="Context Connection=true" /> se especifica en la cadena de conexión.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">SQL Server informó de un error al ejecutar el texto del comando.  
-  
+
+o bien
+
 Se agotó el tiempo de espera durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error en un objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.ObjectDisposedException">El objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> se cerró durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
@@ -3235,17 +3396,27 @@ Para obtener más información sobre la programación asincrónica en el proveed
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Binary** o **VarBinary** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.Stream" />. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
+
+O bien
+
 Un valor <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto a **Char**, **NChar**, **NVarChar**, **VarChar** o **Xml** se usó cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.IO.TextReader" />.  
-  
+
+O bien
+
 Se usó un <see cref="P:System.Data.SqlClient.SqlParameter.SqlDbType" /> distinto de **Xml** cuando <see cref="P:System.Data.SqlClient.SqlParameter.Value" /> se estableció en <see cref="T:System.Xml.XmlReader" />.</exception>
         <exception cref="T:System.InvalidOperationException">Llamar a <see cref="M:System.Data.SqlClient.SqlCommand.ExecuteScalarAsync(System.Threading.CancellationToken)" /> más de una vez para la misma instancia antes de la finalización de la tarea.  
-  
+
+o bien
+
 La <see cref="T:System.Data.SqlClient.SqlConnection" /> se cerró o se interrumpió durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).  
-  
- <see langword="Context Connection=true" /> se especifica en la cadena de conexión.</exception>
+
+O bien
+
+<see langword="Context Connection=true" /> se especifica en la cadena de conexión.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">SQL Server informó de un error al ejecutar el texto del comando.  
-  
+
+o bien
+
 Se agotó el tiempo de espera durante una operación de streaming. Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.IO.IOException">Se produjo un error en un objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
         <exception cref="T:System.ObjectDisposedException">El objeto <see cref="T:System.IO.Stream" />, <see cref="T:System.Xml.XmlReader" /> o <see cref="T:System.IO.TextReader" /> se cerró durante una operación de streaming.  Para obtener más información sobre el streaming, vea [Compatibilidad de transmisión de datos de SqlClient](~/docs/framework/data/adonet/sqlclient-streaming-support.md).</exception>
@@ -3398,8 +3569,6 @@ Se agotó el tiempo de espera durante una operación de streaming. Para obtener 
   
  Para obtener más información, consulte [configurar parámetros y tipos de datos de parámetro](~/docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md).  
   
-   
-  
 ## Examples  
  En el ejemplo siguiente se muestra cómo crear un <xref:System.Data.SqlClient.SqlCommand> y agregar parámetros a la <xref:System.Data.SqlClient.SqlParameterCollection>.  
   
@@ -3465,8 +3634,6 @@ Se agotó el tiempo de espera durante una operación de streaming. Para obtener 
  Parámetros de salida (si está preparado o no) debe tener un tipo de datos especificado por el usuario. Si especifica un tipo de datos de longitud variable, también debe especificar el número máximo <xref:System.Data.SqlClient.SqlParameter.Size%2A>.  
   
  Antes de Visual Studio 2010, <xref:System.Data.SqlClient.SqlCommand.Prepare%2A> produjo una excepción.  A partir de Visual Studio 2010, este método no produce una excepción.  
-  
-   
   
 ## Examples  
  En el siguiente ejemplo se muestra el uso del método <xref:System.Data.SqlClient.SqlCommand.Prepare%2A>.  

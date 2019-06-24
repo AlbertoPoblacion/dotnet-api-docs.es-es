@@ -1,5 +1,5 @@
 <Type Name="ValidationState" FullName="System.Activities.Presentation.Validation.ValidationState">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="028745c8029ffb1714305710f34fcef196549b47" /><Meta Name="ms.sourcegitcommit" Value="f1d16425528e237257ca3b58eb49217a514849ea" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="04/24/2019" /><Meta Name="ms.locfileid" Value="63924829" /></Metadata><TypeSignature Language="C#" Value="public enum ValidationState" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2899463a8ed34e9a7ba140edf718a2ca25a77ed6" /><Meta Name="ms.sourcegitcommit" Value="feb111e137a41d186aef01d83f04819d820520eb" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/21/2019" /><Meta Name="ms.locfileid" Value="67308159" /></Metadata><TypeSignature Language="C#" Value="public enum ValidationState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ValidationState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Validation.ValidationState" />
   <TypeSignature Language="VB.NET" Value="Public Enum ValidationState" />
@@ -43,14 +43,6 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>Valor que indica que la validación encontró una actividad secundaria no válida.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Los valores numéricos de cada uno de los valores de la enumeración indican la gravedad del error. El valor asociado a la actividad secundaria no válida es 1.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Error">
@@ -71,14 +63,6 @@
       <MemberValue>3</MemberValue>
       <Docs>
         <summary>Valor que indica que se produjo un error durante la validación de una actividad.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Los valores numéricos de cada uno de los valores de la enumeración indican la gravedad del error. El valor asociado con el estado de error es 3.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Valid">
@@ -99,14 +83,6 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>Valor que indica que una actividad es válida.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Los valores numéricos de cada uno de los valores de la enumeración indican la gravedad del error. El valor asociado con el estado válido es 0.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -127,14 +103,6 @@
       <MemberValue>2</MemberValue>
       <Docs>
         <summary>Valor que indica que se produjo una advertencia durante la validación de una actividad.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Los valores numéricos de cada uno de los valores de la enumeración indican la gravedad del error. El valor asociado con el estado de advertencia es 2.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
   </Members>
