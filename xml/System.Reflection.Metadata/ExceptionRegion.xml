@@ -1,5 +1,5 @@
 <Type Name="ExceptionRegion" FullName="System.Reflection.Metadata.ExceptionRegion">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="b1c4154103c67c350f934db82187b271e573f4b4" /><Meta Name="ms.sourcegitcommit" Value="7555c040bd7cb677d117ddf03e647aa7bf625bfc" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/08/2019" /><Meta Name="ms.locfileid" Value="65440048" /></Metadata><TypeSignature Language="C#" Value="public struct ExceptionRegion" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dc267fc52f5695bfa863ab1e808eae281ab6d6f7" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67249772" /></Metadata><TypeSignature Language="C#" Value="public struct ExceptionRegion" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ExceptionRegion extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ExceptionRegion" />
   <TypeSignature Language="VB.NET" Value="Public Structure ExceptionRegion" />
@@ -49,7 +49,7 @@
         <ReturnType>System.Reflection.Metadata.EntityHandle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un identificador de TypeRef, TypeDef o TypeSpec si la región en caso contrario, representa un bloque catch o un token nulo (<see langword="default" />(<see cref="T:System.Reflection.Metadata.EntityHandle" />)).</summary>
+        <summary>Obtiene un controlador TypeRef, TypeDef o TypeSpec si la región representa una captura o, de lo contrario, un token nulo (<see langword="default" />(<see cref="T:System.Reflection.Metadata.EntityHandle" />)).</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -75,7 +75,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el desplazamiento IL del principio del bloque de filtro, o -1 si la región no es un filtro.</summary>
+        <summary>Obtiene el desplazamiento IL del principio del bloque de filtros, o -1 si la región no es un filtro.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -101,7 +101,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene la longitud en bytes del controlador de excepciones.</summary>
+        <summary>Obtiene la longitud del controlador de excepciones en bytes.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

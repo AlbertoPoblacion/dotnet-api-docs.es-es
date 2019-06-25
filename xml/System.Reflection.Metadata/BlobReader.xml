@@ -1,5 +1,5 @@
 <Type Name="BlobReader" FullName="System.Reflection.Metadata.BlobReader">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="e2c5323265b913959dae35db83d5cff57b291e1e" /><Meta Name="ms.sourcegitcommit" Value="7555c040bd7cb677d117ddf03e647aa7bf625bfc" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/08/2019" /><Meta Name="ms.locfileid" Value="65440111" /></Metadata><TypeSignature Language="C#" Value="public struct BlobReader" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="4326d8e60dc4288069af3d6be3e9db2b23ff88ed" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67249950" /></Metadata><TypeSignature Language="C#" Value="public struct BlobReader" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit BlobReader extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.BlobReader" />
   <TypeSignature Language="VB.NET" Value="Public Structure BlobReader" />
@@ -49,7 +49,7 @@
         <Parameter Name="length" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="buffer">Un puntero al principio del bloque de memoria.</param>
+        <param name="buffer">Puntero al inicio del bloque de memoria.</param>
         <param name="length">Longitud en bytes del bloque de memoria.</param>
         <summary>Crea un lector del bloque de memoria especificado.</summary>
         <remarks>To be added.</remarks>
@@ -81,7 +81,7 @@
       </Parameters>
       <Docs>
         <param name="alignment">To be added.</param>
-        <summary>Cambia de posición el lector avance por el número de bytes necesarios para satisfacer la alineación especificada.</summary>
+        <summary>Cambia de posición del lector hacia adelante según el número de bytes necesarios para satisfacer la alineación especificada.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,7 +103,7 @@
         <ReturnType>System.Byte*</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un puntero al byte la posición actual del lector.</summary>
+        <summary>Obtiene un puntero al byte en la posición actual del lector.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -129,9 +129,9 @@
         <Parameter Name="value" Type="System.Byte" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="value">El valor de byte para buscar.</param>
-        <summary>Busca un byte especificado en el blob sigue la posición actual.</summary>
-        <returns>El índice relativo a la posición actual, o -1 si el byte no se encuentra en el blob sigue la posición actual.</returns>
+        <param name="value">Valor del byte que se buscará.</param>
+        <summary>Busca un byte especificado en el blob siguiente a la posición actual.</summary>
+        <returns>Índice relativo a la posición actual, o -1 si el byte no se encuentra en el blob siguiente a la posición actual.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,10 +182,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el desplazamiento desde el principio del blob en la posición actual.</summary>
+        <summary>Obtiene o establece el desplazamiento desde el principio del blob hasta la posición actual.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.BadImageFormatException">Se establece el desplazamiento fuera de los límites del lector subyacente.</exception>
+        <exception cref="T:System.BadImageFormatException">El desplazamiento se establece fuera de los límites del lector subyacente.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadBlobHandle">
@@ -209,7 +209,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Lecturas de un Blob en el montón identificador codificado como un entero comprimido.</summary>
+        <summary>Lee un controlador de montón de blobs codificado como un entero comprimido.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -296,7 +296,7 @@
         <summary>Lee los bytes a partir de la posición actual.</summary>
         <returns>Matriz de bytes.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.BadImageFormatException"><paramref name="byteCount" /> bytes no está disponible.</exception>
+        <exception cref="T:System.BadImageFormatException"><paramref name="byteCount" /> bytes no están disponibles.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadBytes">
@@ -324,11 +324,11 @@
       </Parameters>
       <Docs>
         <param name="byteCount">Número de bytes que se va a leer.</param>
-        <param name="buffer">El búfer de destino se escribirán los bytes leídos en.</param>
-        <param name="bufferOffset">El desplazamiento en el búfer de destino cuando se leen los bytes se escribirán.</param>
+        <param name="buffer">Búfer de destino en el que se escribirán los bytes leídos.</param>
+        <param name="bufferOffset">Desplazamiento en el búfer de destino donde se escribirán los bytes leídos.</param>
         <summary>Lee los bytes a partir de la posición actual y los escribe en el búfer especificado, comenzando en el desplazamiento especificado.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.BadImageFormatException"><paramref name="byteCount" /> bytes no está disponible.</exception>
+        <exception cref="T:System.BadImageFormatException"><paramref name="byteCount" /> bytes no están disponibles.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadChar">
@@ -380,10 +380,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Lee un valor entero sin signo de comprimido. Consulte la sección II.23.2 de especificación de metadatos: Los blobs y las firmas.</summary>
-        <returns>El valor del entero comprimido que se leyó.</returns>
+        <summary>Lee un valor entero comprimido sin signo. Consulte la sección II.23.2 de la especificación de metadatos: Blobs y firmas.</summary>
+        <returns>Valor del entero comprimido que se ha leído.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.BadImageFormatException">Los datos en la posición actual no es un entero válido comprimido.</exception>
+        <exception cref="T:System.BadImageFormatException">Los datos en la posición actual no son un entero comprimido válido.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadCompressedSignedInteger">
@@ -408,10 +408,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Lee un valor entero con signo de comprimido. Consulte la sección II.23.2 de especificación de metadatos: Los blobs y las firmas.</summary>
-        <returns>El valor del entero comprimido que se leyó.</returns>
+        <summary>Lee un valor entero comprimido con signo. Consulte la sección II.23.2 de la especificación de metadatos: Blobs y firmas.</summary>
+        <returns>Valor del entero comprimido que se ha leído.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.BadImageFormatException">Los datos en la posición actual no es un entero válido comprimido.</exception>
+        <exception cref="T:System.BadImageFormatException">Los datos en la posición actual no son un entero comprimido válido.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadConstant">
@@ -438,8 +438,8 @@
       </Parameters>
       <Docs>
         <param name="typeCode">To be added.</param>
-        <summary>Lee un valor constante (consulte la sección 22,9 de ECMA-335 Partition II) desde la posición actual.</summary>
-        <returns>Un valor constante con conversión boxing. Para evitar la asignación el uso del objeto lectura * métodos directamente.</returns>
+        <summary>Lee un valor constante (consulte la sección 22.9 de ECMA-335 Partition II) desde la posición actual.</summary>
+        <returns>Valor constante con conversión boxing. Para evitar la asignación el use métodos Read* directamente.</returns>
         <remarks>Constantes de tipo <see cref="F:System.Reflection.Metadata.ConstantTypeCode.String" /> se codifican como cadenas UTF16, use <see cref="M:System.Reflection.Metadata.BlobReader.ReadUTF16(System.Int32)" /> leerlos.</remarks>
         <exception cref="T:System.BadImageFormatException">Error al leer el blob.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="typeCode" /> no es un <see cref="T:System.Reflection.Metadata.ConstantTypeCode" /> válido.</exception>
@@ -492,10 +492,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Lee un <see cref="T:System.Decimal" /> número.</summary>
+        <summary>Lee un número <see cref="T:System.Decimal" />.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.BadImageFormatException">Los datos en la posición actual no eran válido <see cref="T:System.Decimal" /> número.</exception>
+        <exception cref="T:System.BadImageFormatException">Los datos en la posición actual no eran un número <see cref="T:System.Decimal" /> válido.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadDouble">
@@ -682,7 +682,7 @@
       <Parameters />
       <Docs>
         <summary>Lee un código de tipo codificado en un valor de atributo personalizado serializado.</summary>
-        <returns><see cref="F:System.Reflection.Metadata.SerializationTypeCode.Invalid" /> Si la codificación no es válida.</returns>
+        <returns><see cref="F:System.Reflection.Metadata.SerializationTypeCode.Invalid" /> si la codificación no es válida.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -708,8 +708,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Lee una cadena codificada como un entero comprimido que contiene su longitud seguido de su contenido en UTF8. Cadenas nulas se codifican como un solo byte de 0xFF.</summary>
-        <returns>Un valor de cadena, o <see langword="null" />.</returns>
+        <summary>Lee una cadena codificada como un entero comprimido que contiene su longitud seguido de su contenido en UTF8. Las cadenas nulas se codifican como un solo byte de 0xFF.</summary>
+        <returns>Valor de cadena o <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.BadImageFormatException">La codificación no es válida.</exception>
       </Docs>
@@ -764,7 +764,7 @@
       <Parameters />
       <Docs>
         <summary>Lee un código de tipo que se codifica en una firma.</summary>
-        <returns>El código de tipo codificado en el valor del atributo personalizado serializada si la codificación es válida, o <see cref="F:System.Reflection.Metadata.SignatureTypeCode.Invalid" /> si la codificación no es válida.</returns>
+        <returns>Código de tipo codificado en el valor del atributo personalizado serializado si la codificación es válida, o <see cref="F:System.Reflection.Metadata.SignatureTypeCode.Invalid" /> si la codificación no es válida.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -817,8 +817,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Lee un identificador de tipo que se codifica en una firma como TypeDefOrRefOrSpecEncoded (consulte II.23.2.8 ECMA-335).</summary>
-        <returns>El identificador cuando la codificación es válida. En caso contrario, un identificador donde el <see cref="P:System.Reflection.Metadata.EntityHandle.IsNil" /> propiedad es <see langword="true" />.</returns>
+        <summary>Lee un controlador de tipo codificado en una firma como TypeDefOrRefOrSpecEncoded (consulte ECMA-335 II.23.2.8).</summary>
+        <returns>Controlador cuando la codificación es válida. En caso contrario, controlador donde la propiedad <see cref="P:System.Reflection.Metadata.EntityHandle.IsNil" /> es <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -929,9 +929,9 @@
       <Docs>
         <param name="byteCount">Número de bytes que se va a leer.</param>
         <summary>Lee una cadena codificada en UTF16 (little-endian) a partir de la posición actual.</summary>
-        <returns>La cadena.</returns>
+        <returns>Cadena.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.BadImageFormatException"><paramref name="byteCount" /> bytes no está disponible.</exception>
+        <exception cref="T:System.BadImageFormatException"><paramref name="byteCount" /> bytes no están disponibles.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadUTF8">
@@ -959,10 +959,10 @@
       </Parameters>
       <Docs>
         <param name="byteCount">Número de bytes que se va a leer.</param>
-        <summary>Lee una cadena de codificación UTF8 a partir de la posición actual.</summary>
-        <returns>La cadena.</returns>
+        <summary>Lee una cadena codificada en UTF8 a partir de la posición actual.</summary>
+        <returns>Cadena.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.BadImageFormatException"><paramref name="byteCount" /> bytes no está disponible.</exception>
+        <exception cref="T:System.BadImageFormatException"><paramref name="byteCount" /> bytes no están disponibles.</exception>
       </Docs>
     </Member>
     <Member MemberName="RemainingBytes">
@@ -986,7 +986,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el número de bytes restantes de la posición actual hasta el final del bloque de memoria subyacente.</summary>
+        <summary>Obtiene el número de bytes restantes desde la posición actual hasta el final del bloque de memoria subyacente.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1013,7 +1013,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>El inicio del bloque de memoria subyacente se sitúa el lector.</summary>
+        <summary>Cambia la posición del lector al inicio del bloque de memoria subyacente.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1083,7 +1083,7 @@
         <ReturnType>System.Byte*</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un puntero a los bytes al principio del bloque de memoria subyacente.</summary>
+        <summary>Obtiene un puntero al byte al inicio del bloque de memoria subyacente.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1112,9 +1112,9 @@
         <Parameter Name="value" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">El valor del entero comprimido que se leyó.</param>
-        <summary>Lee un valor entero sin signo de comprimido. Consulte la sección II.23.2 de especificación de metadatos: Los blobs y las firmas.</summary>
-        <returns><see langword="true" /> Si el valor se leyó correctamente. <see langword="false" /> Si los datos en la posición actual no es un entero válido comprimido.</returns>
+        <param name="value">Valor del entero comprimido que se ha leído.</param>
+        <summary>Lee un valor entero comprimido sin signo. Consulte la sección II.23.2 de la especificación de metadatos: Blobs y firmas.</summary>
+        <returns><see langword="true" /> si el valor se leyó correctamente. <see langword="false" /> si los datos en la posición actual no son un entero comprimido válido.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1142,9 +1142,9 @@
         <Parameter Name="value" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="value">El valor del entero comprimido que se leyó.</param>
-        <summary>Lee un valor entero con signo de comprimido. Consulte la sección II.23.2 de especificación de metadatos: Los blobs y las firmas.</summary>
-        <returns><see langword="true" /> Si el valor se leyó correctamente. <see langword="false" /> Si los datos en la posición actual no es un entero válido comprimido.</returns>
+        <param name="value">Valor del entero comprimido que se ha leído.</param>
+        <summary>Lee un valor entero comprimido con signo. Consulte la sección II.23.2 de la especificación de metadatos: Blobs y firmas.</summary>
+        <returns><see langword="true" /> si el valor se leyó correctamente. <see langword="false" /> si los datos en la posición actual no son un entero comprimido válido.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

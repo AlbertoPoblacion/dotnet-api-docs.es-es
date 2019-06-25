@@ -1,5 +1,5 @@
 <Type Name="BlobBuilder" FullName="System.Reflection.Metadata.BlobBuilder">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ea2a4628800ba0921240de267cdda967425075df" /><Meta Name="ms.sourcegitcommit" Value="7555c040bd7cb677d117ddf03e647aa7bf625bfc" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/08/2019" /><Meta Name="ms.locfileid" Value="65440120" /></Metadata><TypeSignature Language="C#" Value="public class BlobBuilder" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8a1cae5c11aa2db467f139a5e937ab7da04af04a" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67249939" /></Metadata><TypeSignature Language="C#" Value="public class BlobBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlobBuilder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.BlobBuilder" />
   <TypeSignature Language="VB.NET" Value="Public Class BlobBuilder" />
@@ -74,7 +74,7 @@
         <param name="alignment">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">El generador no es modificable; que se haya vinculado por otro.</exception>
+        <exception cref="T:System.InvalidOperationException">El generador no es modificable; se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="AllocateChunk">
@@ -175,11 +175,11 @@
         <Parameter Name="other" Type="System.Reflection.Metadata.BlobBuilder" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="other">Un <see cref="T:System.Reflection.Metadata.BlobBuilder" /> instancia va a comparar con éste.</param>
-        <summary>Compara el contenido actual de este sistema de escritura por otro.</summary>
-        <returns><see langword="true" /> Si son iguales; en caso contrario, <see langword="false" />.</returns>
+        <param name="other">Instancia de <see cref="T:System.Reflection.Metadata.BlobBuilder" /> para compararla con esta.</param>
+        <summary>Compara el contenido actual de este sistema de escritura con otro.</summary>
+        <returns><see langword="true" /> si son iguales; en caso contrario, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">Contenido no está disponible; el generador se ha vinculado con otro.</exception>
+        <exception cref="T:System.InvalidOperationException">El contenido no está disponible; el generador se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -299,9 +299,9 @@
       <Parameters />
       <Docs>
         <summary>Devuelve una secuencia de todos los blobs que representan el contenido del generador.</summary>
-        <returns>Una secuencia de blobs.</returns>
+        <returns>Secuencia de blobs.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">Contenido no está disponible; el generador se ha vinculado con otro.</exception>
+        <exception cref="T:System.InvalidOperationException">El contenido no está disponible; el generador se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="LinkPrefix">
@@ -329,8 +329,8 @@
         <param name="prefix">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="prefix" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">El generador no es modificable; que se haya vinculado por otro.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="prefix" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">El generador no es modificable; se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="LinkSuffix">
@@ -358,8 +358,8 @@
         <param name="suffix">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="suffix" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">El generador no es modificable; que se haya vinculado por otro.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="suffix" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">El generador no es modificable; se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="PadTo">
@@ -387,7 +387,7 @@
         <param name="position">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">El generador no es modificable; que se haya vinculado por otro.</exception>
+        <exception cref="T:System.InvalidOperationException">El generador no es modificable; se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReserveBytes">
@@ -413,11 +413,11 @@
       </Parameters>
       <Docs>
         <param name="byteCount">To be added.</param>
-        <summary>Se reserva un bloque contiguo de bytes.</summary>
+        <summary>Reserva un bloque contiguo de bytes.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="byteCount" /> es negativo.</exception>
-        <exception cref="T:System.InvalidOperationException">El generador no es modificable; que se haya vinculado por otro.</exception>
+        <exception cref="T:System.InvalidOperationException">El generador no es modificable; se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToArray">
@@ -443,7 +443,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">Contenido no está disponible; el generador se ha vinculado con otro.</exception>
+        <exception cref="T:System.InvalidOperationException">El contenido no está disponible; el generador se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToArray">
@@ -474,8 +474,8 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">El intervalo especificado por <paramref name="start" /> y <paramref name="byteCount" /> fuera de los límites del contenido del búfer.</exception>
-        <exception cref="T:System.InvalidOperationException">Contenido no está disponible; el generador se ha vinculado con otro.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El intervalo especificado por <paramref name="start" /> y <paramref name="byteCount" /> está fuera de los límites del contenido del búfer.</exception>
+        <exception cref="T:System.InvalidOperationException">El contenido no está disponible; el generador se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToImmutableArray">
@@ -501,7 +501,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">Contenido no está disponible; el generador se ha vinculado con otro.</exception>
+        <exception cref="T:System.InvalidOperationException">El contenido no está disponible; el generador se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToImmutableArray">
@@ -532,8 +532,8 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">El intervalo especificado por <paramref name="start" /> y <paramref name="byteCount" /> fuera de los límites del contenido del búfer.</exception>
-        <exception cref="T:System.InvalidOperationException">Contenido no está disponible; el generador se ha vinculado con otro.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El intervalo especificado por <paramref name="start" /> y <paramref name="byteCount" /> está fuera de los límites del contenido del búfer.</exception>
+        <exception cref="T:System.InvalidOperationException">El contenido no está disponible; el generador se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryWriteBytes">
@@ -562,11 +562,11 @@
         <param name="source">To be added.</param>
         <param name="byteCount">To be added.</param>
         <summary>Intenta escribir una secuencia de bytes en el generador. Un valor devuelto indica el número de bytes escritos correctamente.</summary>
-        <returns>El número de bytes escritos correctamente desde <paramref name="source" />.</returns>
+        <returns>Número de bytes escritos correctamente desde <paramref name="source" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="source" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="byteCount" /> es negativo.</exception>
-        <exception cref="T:System.InvalidOperationException">El generador no es modificable; que se haya vinculado por otro.</exception>
+        <exception cref="T:System.InvalidOperationException">El generador no es modificable; se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBoolean">
@@ -592,9 +592,9 @@
       </Parameters>
       <Docs>
         <param name="value">Valor que se va a escribir.</param>
-        <summary>Escribe un <see cref="T:System.Boolean" /> valor para el generador.</summary>
+        <summary>Escribe un valor <see cref="T:System.Boolean" /> en el generador.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">El generador no es modificable; que se haya vinculado por otro.</exception>
+        <exception cref="T:System.InvalidOperationException">El generador no es modificable; se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteByte">
@@ -620,9 +620,9 @@
       </Parameters>
       <Docs>
         <param name="value">Valor que se va a escribir.</param>
-        <summary>Escribe un <see cref="T:System.Byte" /> valor para el generador.</summary>
+        <summary>Escribe un valor <see cref="T:System.Byte" /> en el generador.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">El generador no es modificable; que se haya vinculado por otro.</exception>
+        <exception cref="T:System.InvalidOperationException">El generador no es modificable; se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBytes">
@@ -650,8 +650,8 @@
         <param name="buffer">Matriz de bytes que se va a escribir.</param>
         <summary>Escribe el contenido de una matriz de bytes en el generador.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="buffer" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">El generador no es modificable; que se haya vinculado por otro.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">El generador no es modificable; se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBytes">
@@ -676,11 +676,11 @@
         <Parameter Name="buffer" Type="System.Collections.Immutable.ImmutableArray&lt;System.Byte&gt;" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="buffer">La matriz para escribir.</param>
+        <param name="buffer">Matriz que se va a escribir.</param>
         <summary>Escribe el contenido de una matriz de bytes inmutable en el generador.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="buffer" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">El generador no es modificable; que se haya vinculado por otro.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">El generador no es modificable; se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBytes">
@@ -707,8 +707,8 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <param name="byteCount">El número de repeticiones de <paramref name="value" /> a escribir.</param>
-        <summary>Escribe un número de apariciones de un valor de bytes especificado en el generador.</summary>
+        <param name="byteCount">Número de repeticiones de <paramref name="value" /> que se va a escribir.</param>
+        <summary>Escribe un número especificado de apariciones de un valor de bytes en el generador.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="byteCount" /> es negativo.</exception>
         <exception cref="T:System.InvalidOperationException">El generador no es modificable, se ha vinculado con otro.</exception>
@@ -738,9 +738,9 @@
       <Docs>
         <param name="buffer">To be added.</param>
         <param name="byteCount">Número de bytes que se van a escribir.</param>
-        <summary>Escribe un número especificado de bytes de un búfer en el generador.</summary>
+        <summary>Escribe un número especificado de bytes desde un búfer en el generador.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="buffer" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="byteCount" /> es negativo.</exception>
         <exception cref="T:System.InvalidOperationException">El generador no es modificable, se ha vinculado con otro.</exception>
       </Docs>
@@ -774,9 +774,9 @@
         <param name="byteCount">Número de bytes que se van a escribir.</param>
         <summary>Escribe un número especificado de bytes a partir de un índice especificado en una matriz de bytes en el generador.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="buffer" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El intervalo especificado por <paramref name="start" /> y <paramref name="byteCount" /> fuera de los límites de <paramref name="buffer" />.</exception>
-        <exception cref="T:System.InvalidOperationException">El generador no es modificable; que se haya vinculado por otro.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El intervalo especificado por <paramref name="start" /> y <paramref name="byteCount" /> está fuera de los límites de <paramref name="buffer" />.</exception>
+        <exception cref="T:System.InvalidOperationException">El generador no es modificable; se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBytes">
@@ -808,9 +808,9 @@
         <param name="byteCount">Número de bytes que se van a escribir.</param>
         <summary>Escribe un número especificado de bytes a partir de un índice especificado de una matriz inmutable en el generador.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="buffer" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">El intervalo especificado por <paramref name="start" /> y <paramref name="byteCount" /> fuera de los límites de la <paramref name="buffer" />.</exception>
-        <exception cref="T:System.InvalidOperationException">El generador no es modificable; que se haya vinculado por otro.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El intervalo especificado por <paramref name="start" /> y <paramref name="byteCount" /> está fuera de los límites de <paramref name="buffer" />.</exception>
+        <exception cref="T:System.InvalidOperationException">El generador no es modificable; se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteCompressedInteger">
@@ -836,10 +836,10 @@
       </Parameters>
       <Docs>
         <param name="value">Valor que se va a escribir.</param>
-        <summary>Implementa comprime entero sin signo de codificación como se define en el capítulo 23.2 ECMA-335-II: Los blobs y las firmas.</summary>
+        <summary>Implementa codificación de enteros sin signo comprimidos según se define en el capítulo 23.2 de ECMA-335-II: Blobs y firmas.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="value" /> no se puede representar como un entero sin signo comprimido.</exception>
-        <exception cref="T:System.InvalidOperationException">El generador no es modificable; que se haya vinculado por otro.</exception>
+        <exception cref="T:System.InvalidOperationException">El generador no es modificable; se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteCompressedSignedInteger">
@@ -865,10 +865,10 @@
       </Parameters>
       <Docs>
         <param name="value">Valor que se va a escribir.</param>
-        <summary>Implementa comprime entero con signo de codificación como se define en el capítulo 23.2 ECMA-335-II: Los blobs y las firmas.</summary>
+        <summary>Implementa codificación de enteros con signo comprimidos según se define en el capítulo 23.2 de ECMA-335-II: Blobs y firmas.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="value" /> no se puede representar como un entero con signo comprimido.</exception>
-        <exception cref="T:System.InvalidOperationException">El generador no es modificable; que se haya vinculado por otro.</exception>
+        <exception cref="T:System.InvalidOperationException">El generador no es modificable; se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteConstant">
@@ -893,11 +893,11 @@
         <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="value">El valor constante para escribir.</param>
-        <summary>Escribe un valor constante (consulte la sección 22,9 de ECMA-335 Partition II) en la posición actual.</summary>
+        <param name="value">Valor constante que se va a escribir.</param>
+        <summary>Escribe un valor constante (vea la sección 22.9 de ECMA-335 Partition II) en la posición actual.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException"><paramref name="value" /> no es un tipo de constante.</exception>
-        <exception cref="T:System.InvalidOperationException">El generador no es modificable; que se haya vinculado por otro.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="value" /> no es un tipo constante.</exception>
+        <exception cref="T:System.InvalidOperationException">El generador no es modificable; se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteContentTo">
@@ -925,8 +925,8 @@
         <param name="destination">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="destination" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">Contenido no está disponible, el generador se ha vinculado con otro.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="destination" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">El contenido no está disponible, el generador se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteContentTo">
@@ -954,8 +954,8 @@
         <param name="destination">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="destination" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">Contenido no está disponible, el generador se ha vinculado con otro.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="destination" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">El contenido no está disponible, el generador se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteContentTo">
@@ -983,8 +983,8 @@
         <param name="destination">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException"><paramref name="destination" /> valor predeterminado es (<see cref="T:System.Reflection.Metadata.BlobWriter" />).</exception>
-        <exception cref="T:System.InvalidOperationException">Contenido no está disponible, el generador se ha vinculado con otro.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="destination" /> es el valor predeterminado (<see cref="T:System.Reflection.Metadata.BlobWriter" />).</exception>
+        <exception cref="T:System.InvalidOperationException">El contenido no está disponible, el generador se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteDateTime">
@@ -1262,9 +1262,9 @@
         <Parameter Name="isSmall" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="reference">Número de fila de tabla o de desplazamiento de montón.</param>
-        <param name="isSmall"><see langword="true" /> para codificar la referencia como un entero de 16 bits; <see langword="false" /> a codificarlos como un entero de 32 bits.</param>
-        <summary>Escribe una referencia a un montón (desplazamiento del montón) o una tabla (número de fila).</summary>
+        <param name="reference">Número de fila de tabla o desplazamiento de montón.</param>
+        <param name="isSmall"><see langword="true" /> para codificar la referencia como un entero de 16 bits; <see langword="false" /> para codificarla como un entero de 32 bits.</param>
+        <summary>Escribe una referencia en un montón (desplazamiento de montón) o una tabla (número de fila).</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">El generador no es modificable, se ha vinculado con otro.</exception>
       </Docs>
@@ -1320,7 +1320,7 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>Escribe una cadena en SerString formato (vea los atributos personalizados de ECMA-335-II 23.3).</summary>
+        <summary>Escribe una cadena en formato SerString (vea ECMA-335-II 23.3 Custom attributes).</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">El generador no es modificable, se ha vinculado con otro.</exception>
       </Docs>
@@ -1516,7 +1516,7 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>Escribe una cadena en formato de montón de cadena de usuario (#US) (consulte ECMA-335-II 24.2.4 #US y #Blob).</summary>
+        <summary>Escribe una cadena en formato de montón de cadena de usuario (#US) (vea ECMA-335-II 24.2.4 #US and #Blob heaps).</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">El generador no es modificable, se ha vinculado con otro.</exception>
       </Docs>
@@ -1544,9 +1544,9 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>Escribe una matriz de caracteres codificados (little-endian) UTF16 en la posición actual.</summary>
+        <summary>Escribe una matriz de caracteres codificados en UTF16 (little-endian) en la posición actual.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="value" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="value" /> es <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">El generador no es modificable, se ha vinculado con otro.</exception>
       </Docs>
     </Member>
@@ -1573,9 +1573,9 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>Escribe la cadena codificada en UTF16 (little-endian) en la posición actual.</summary>
+        <summary>Escribe una cadena codificada en UTF16 (little-endian) en la posición actual.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="value" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="value" /> es <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">El generador no es modificable, se ha vinculado con otro.</exception>
       </Docs>
     </Member>
@@ -1602,10 +1602,10 @@
       </Parameters>
       <Docs>
         <param name="value">Valor constante.</param>
-        <param name="allowUnpairedSurrogates"><see langword="true" /> para codificar a los suplentes sin par tal como se especifica; <see langword="false" /> para reemplazarlos por un carácter U+FFFD.</param>
-        <summary>Escribe una cadena de codificación UTF8 en la posición actual.</summary>
+        <param name="allowUnpairedSurrogates"><see langword="true" /> para codificar suplentes sin asociar tal como se especifica; <see langword="false" /> para reemplazarlos por un carácter U+FFFD.</param>
+        <summary>Escribe una cadena codificada en UTF8 en la posición actual.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="value" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="value" /> es <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">El generador no es modificable, se ha vinculado con otro.</exception>
       </Docs>
     </Member>

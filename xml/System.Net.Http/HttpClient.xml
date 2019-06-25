@@ -1,5 +1,5 @@
 <Type Name="HttpClient" FullName="System.Net.Http.HttpClient">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d9319b2d0de48a69903d40028a432927e8ab759c" /><Meta Name="ms.sourcegitcommit" Value="f61362e4134a78bac27d2c8136823a467216f4ab" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/15/2019" /><Meta Name="ms.locfileid" Value="65629422" /></Metadata><TypeSignature Language="C#" Value="public class HttpClient : System.Net.Http.HttpMessageInvoker" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="e4f47e4ef7c0b519b889bd2a0533b9644056da47" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67237867" /></Metadata><TypeSignature Language="C#" Value="public class HttpClient : System.Net.Http.HttpMessageInvoker" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpClient extends System.Net.Http.HttpMessageInvoker" />
   <TypeSignature Language="DocId" Value="T:System.Net.Http.HttpClient" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpClient&#xA;Inherits HttpMessageInvoker" />
@@ -343,6 +343,30 @@ public class GoodController : ApiController
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="DefaultProxy">
+      <MemberSignature Language="C#" Value="public static System.Net.IWebProxy DefaultProxy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Net.IWebProxy DefaultProxy" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClient.DefaultProxy" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property DefaultProxy As IWebProxy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Net::IWebProxy ^ DefaultProxy { System::Net::IWebProxy ^ get(); void set(System::Net::IWebProxy ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultProxy : System.Net.IWebProxy with get, set" Usage="System.Net.Http.HttpClient.DefaultProxy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.IWebProxy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DefaultRequestHeaders">
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpRequestHeaders DefaultRequestHeaders { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpRequestHeaders DefaultRequestHeaders" />
@@ -378,6 +402,30 @@ public class GoodController : ApiController
   
  ]]></format>
         </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultRequestVersion">
+      <MemberSignature Language="C#" Value="public Version DefaultRequestVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Version DefaultRequestVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Http.HttpClient.DefaultRequestVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultRequestVersion As Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ DefaultRequestVersion { Version ^ get(); void set(Version ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultRequestVersion : Version with get, set" Usage="System.Net.Http.HttpClient.DefaultRequestVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <MemberGroup MemberName="DeleteAsync">
@@ -598,7 +646,7 @@ public class GoodController : ApiController
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">Es <see langword="true" /> para liberar tanto recursos administrados como no administrados; es <see langword="false" /> para liberar únicamente recursos no administrados.</param>
+        <param name="disposing">Es <see langword="true" /> para liberar los recursos administrados y no administrados; es <see langword="false" /> para liberar sólo los recursos no administrados.</param>
         <summary>Libera los recursos no administrados que usa el objeto <see cref="T:System.Net.Http.HttpClient" /> y, de forma opcional, desecha los recursos administrados.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1400,7 +1448,7 @@ public class GoodController : ApiController
       <Docs>
         <param name="requestUri">URI al que se envía la solicitud.</param>
         <param name="content">Contenido de la solicitud HTTP que se envía al servidor.</param>
-        <summary>Envía una solicitud de revisión a un Uri que se designa como una cadena como una operación asincrónica.</summary>
+        <summary>Envía una solicitud PATCH a un URI designado como una cadena como una operación asincrónica.</summary>
         <returns>Objeto de tarea que representa la operación asincrónica.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1438,7 +1486,7 @@ public class GoodController : ApiController
       <Docs>
         <param name="requestUri">URI al que se envía la solicitud.</param>
         <param name="content">Contenido de la solicitud HTTP que se envía al servidor.</param>
-        <summary>Envía una solicitud de revisión como una operación asincrónica.</summary>
+        <summary>Envía una solicitud PATCH como una operación asincrónica.</summary>
         <returns>Objeto de tarea que representa la operación asincrónica.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1478,7 +1526,7 @@ public class GoodController : ApiController
         <param name="requestUri">URI al que se envía la solicitud.</param>
         <param name="content">Contenido de la solicitud HTTP que se envía al servidor.</param>
         <param name="cancellationToken">Token de cancelación que pueden usar otros objetos o subprocesos para recibir el aviso de cancelación.</param>
-        <summary>Envía una solicitud de revisión con un token de cancelación a un Uri que se representa como una cadena como una operación asincrónica.</summary>
+        <summary>Envía una solicitud PATCH con un token de cancelación a un URI representado como una cadena como una operación asincrónica.</summary>
         <returns>Objeto de tarea que representa la operación asincrónica.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1518,7 +1566,7 @@ public class GoodController : ApiController
         <param name="requestUri">URI al que se envía la solicitud.</param>
         <param name="content">Contenido de la solicitud HTTP que se envía al servidor.</param>
         <param name="cancellationToken">Token de cancelación que pueden usar otros objetos o subprocesos para recibir el aviso de cancelación.</param>
-        <summary>Envía una solicitud de revisión con un token de cancelación como operación asincrónica.</summary>
+        <summary>Envía una solicitud PATCH con un token de cancelación como una operación asincrónica.</summary>
         <returns>Objeto de tarea que representa la operación asincrónica.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

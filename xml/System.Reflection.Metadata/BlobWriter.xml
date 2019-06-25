@@ -1,5 +1,5 @@
 <Type Name="BlobWriter" FullName="System.Reflection.Metadata.BlobWriter">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="f02985e60a972c4e8074e36812a90e46d83add0d" /><Meta Name="ms.sourcegitcommit" Value="7555c040bd7cb677d117ddf03e647aa7bf625bfc" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/08/2019" /><Meta Name="ms.locfileid" Value="65440101" /></Metadata><TypeSignature Language="C#" Value="public struct BlobWriter" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="81b56973089792eaff7c43b079f3550bf0ac566e" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67249913" /></Metadata><TypeSignature Language="C#" Value="public struct BlobWriter" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit BlobWriter extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.BlobWriter" />
   <TypeSignature Language="VB.NET" Value="Public Structure BlobWriter" />
@@ -218,7 +218,7 @@
       </Parameters>
       <Docs>
         <param name="other">To be added.</param>
-        <summary>Compara el contenido actual de este sistema de escritura por otro.</summary>
+        <summary>Compara el contenido actual de este sistema de escritura con otro.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -375,7 +375,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">El intervalo especificado por <paramref name="start" /> y <paramref name="byteCount" /> fuera de los límites del contenido del búfer.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">El intervalo especificado por <paramref name="start" /> y <paramref name="byteCount" /> está fuera de los límites del contenido del búfer.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToImmutableArray">
@@ -513,7 +513,7 @@
         <param name="buffer">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="buffer" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> es <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBytes">
@@ -541,7 +541,7 @@
         <param name="buffer">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="buffer" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> es <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBytes">
@@ -569,7 +569,7 @@
         <param name="source">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="source" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> es <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBytes">
@@ -628,7 +628,7 @@
         <param name="byteCount">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="buffer" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="byteCount" /> es negativo.</exception>
       </Docs>
     </Member>
@@ -660,7 +660,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="source" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="source" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="byteCount" /> es negativo.</exception>
       </Docs>
     </Member>
@@ -693,8 +693,8 @@
         <param name="byteCount">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="buffer" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">Intervalo especificado por <paramref name="start" /> y <paramref name="byteCount" /> fuera de los límites de la <paramref name="buffer" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">Intervalo especificado por <paramref name="start" /> y <paramref name="byteCount" /> fuera de los límites de <paramref name="buffer" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBytes">
@@ -726,8 +726,8 @@
         <param name="byteCount">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="buffer" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">Intervalo especificado por <paramref name="start" /> y <paramref name="byteCount" /> fuera de los límites de la <paramref name="buffer" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="buffer" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">Intervalo especificado por <paramref name="start" /> y <paramref name="byteCount" /> fuera de los límites de <paramref name="buffer" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteCompressedInteger">
@@ -753,7 +753,7 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>Implementa comprime entero sin signo de codificación como se define en el capítulo 23.2 ECMA-335-II: Los blobs y las firmas.</summary>
+        <summary>Implementa codificación de enteros sin signo comprimidos según se define en el capítulo 23.2 de ECMA-335-II: Blobs y firmas.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="value" /> no se puede representar como un entero sin signo comprimido.</exception>
       </Docs>
@@ -781,7 +781,7 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>Implementa comprime entero con signo de codificación como se define en el capítulo 23.2 ECMA-335-II: Los blobs y las firmas.</summary>
+        <summary>Implementa codificación de enteros con signo comprimidos según se define en el capítulo 23.2 de ECMA-335-II: Blobs y firmas.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="value" /> no se puede representar como un entero con signo comprimido.</exception>
       </Docs>
@@ -809,9 +809,9 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>Escribe un valor constante (consulte la sección 22,9 de ECMA-335 Partition II) en la posición actual.</summary>
+        <summary>Escribe un valor constante (vea la sección 22.9 de ECMA-335 Partition II) en la posición actual.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException"><paramref name="value" /> no es un tipo de constante.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="value" /> no es un tipo constante.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteDateTime">
@@ -1080,9 +1080,9 @@
         <Parameter Name="isSmall" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="reference">Número de fila de tabla o de desplazamiento de montón.</param>
-        <param name="isSmall"><see langword="true" /> para codificar la referencia como entero de 16 bits, <see langword="false" /> para codificar como entero de 32 bits.</param>
-        <summary>Escribe una referencia a un montón (desplazamiento del montón) o una tabla (número de fila).</summary>
+        <param name="reference">Número de fila de tabla o desplazamiento de montón.</param>
+        <param name="isSmall"><see langword="true" /> para codificar la referencia como entero de 16 bits, <see langword="false" /> para codificarla como entero de 32 bits.</param>
+        <summary>Escribe una referencia en un montón (desplazamiento de montón) o una tabla (número de fila).</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1136,9 +1136,9 @@
       </Parameters>
       <Docs>
         <param name="str">To be added.</param>
-        <summary>Escribe una cadena en SerString formato (vea los atributos personalizados de ECMA-335-II 23.3).</summary>
+        <summary>Escribe una cadena en formato SerString (vea ECMA-335-II 23.3 Custom attributes).</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">El generador no es modificable; que se haya vinculado por otro.</exception>
+        <exception cref="T:System.InvalidOperationException">El generador no es modificable; se ha vinculado con otro.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteSingle">
@@ -1326,7 +1326,7 @@
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
-        <summary>Escribe una cadena en formato de montón de cadena de usuario (#US) (consulte ECMA-335-II 24.2.4 #US y #Blob).</summary>
+        <summary>Escribe una cadena en formato de montón de cadena de usuario (#US) (vea ECMA-335-II 24.2.4 #US and #Blob heaps).</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">El generador no es modificable, se ha vinculado con otro.</exception>
       </Docs>
@@ -1356,7 +1356,7 @@
         <param name="value">To be added.</param>
         <summary>Escribe una cadena codificada en UTF16 (little-endian) en la posición actual.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="value" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="value" /> es <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteUTF16">
@@ -1384,7 +1384,7 @@
         <param name="value">To be added.</param>
         <summary>Escribe una cadena codificada en UTF16 (little-endian) en la posición actual.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="value" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="value" /> es <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteUTF8">
@@ -1412,9 +1412,9 @@
       <Docs>
         <param name="value">To be added.</param>
         <param name="allowUnpairedSurrogates">To be added.</param>
-        <summary>Escribe una cadena de codificación UTF8 en la posición actual.</summary>
+        <summary>Escribe una cadena codificada en UTF8 en la posición actual.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="value" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="value" /> es <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

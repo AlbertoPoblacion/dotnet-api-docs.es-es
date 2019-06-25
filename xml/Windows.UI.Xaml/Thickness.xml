@@ -1,5 +1,5 @@
 <Type Name="Thickness" FullName="Windows.UI.Xaml.Thickness">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="394268971b8e3a8cabd783c067e4b1fc6979f62b" /><Meta Name="ms.sourcegitcommit" Value="5ebd9691c6f7d50c4730e997fba69e54bdd7cc0c" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="65829987" /></Metadata><TypeSignature Language="C#" Value="public struct Thickness" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="a51baf2354b68ee00349d3898bb93dd71637cd14" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67250139" /></Metadata><TypeSignature Language="C#" Value="public struct Thickness" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Thickness extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:Windows.UI.Xaml.Thickness" />
   <TypeSignature Language="VB.NET" Value="Public Structure Thickness" />
@@ -42,7 +42,7 @@
       </Parameters>
       <Docs>
         <param name="uniformLength">Longitud uniforme aplicada a los cuatro lados del rectángulo delimitador.</param>
-        <summary>Inicializa un <see cref="T:Windows.UI.Xaml.Thickness" /> estructura que tiene la longitud uniforme especificada en cada lado.</summary>
+        <summary>Inicializa una estructura <see cref="T:Windows.UI.Xaml.Thickness" /> que tiene la longitud uniforme especificada en cada lado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,7 +70,7 @@
         <param name="top">Grosor del lado superior del rectángulo.</param>
         <param name="right">Grosor del lado derecho del rectángulo.</param>
         <param name="bottom">Grosor del lado inferior del rectángulo.</param>
-        <summary>Inicializa un <see cref="T:Windows.UI.Xaml.Thickness" /> estructura que tiene longitudes específicas (proporcionado como un <see cref="T:System.Double" />) aplicadas a cada lado del rectángulo.</summary>
+        <summary>Inicializa una estructura <see cref="T:Windows.UI.Xaml.Thickness" /> que tiene longitudes específicas (se proporcionan como valor de tipo <see cref="T:System.Double" />) aplicadas a cada lado del rectángulo.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,7 +122,7 @@
       </Parameters>
       <Docs>
         <param name="obj">Objeto que se va a comparar.</param>
-        <summary>Compara este <see cref="T:Windows.UI.Xaml.Thickness" /> estructura a otro <see cref="T:System.Object" /> igualdad.</summary>
+        <summary>Compara la igualdad de esta estructura <see cref="T:Windows.UI.Xaml.Thickness" /> con otro objeto <see cref="T:System.Object" />.</summary>
         <returns>Es <see langword="true" /> si los dos objetos son iguales; en caso contrario, es <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,9 +146,9 @@
         <Parameter Name="thickness" Type="Windows.UI.Xaml.Thickness" />
       </Parameters>
       <Docs>
-        <param name="thickness">Una instancia de <see cref="T:Windows.UI.Xaml.Thickness" /> para comparar la igualdad.</param>
-        <summary>Compara este <see cref="T:Windows.UI.Xaml.Thickness" /> estructura a otro <see cref="T:Windows.UI.Xaml.Thickness" /> estructura para igualdad.</summary>
-        <returns><see langword="true" /> Si las dos instancias de <see cref="T:Windows.UI.Xaml.Thickness" /> son iguales; en caso contrario, <see langword="false" />.</returns>
+        <param name="thickness">Instancia de <see cref="T:Windows.UI.Xaml.Thickness" /> cuya igualdad se va a comparar.</param>
+        <summary>Compara la igualdad de esta estructura <see cref="T:Windows.UI.Xaml.Thickness" /> con otra estructura <see cref="T:Windows.UI.Xaml.Thickness" />.</summary>
+        <returns>Es <see langword="true" /> si las dos instancias de la clase <see cref="T:Windows.UI.Xaml.Thickness" /> son iguales; de lo contrario, es <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -223,10 +223,10 @@
         <Parameter Name="t2" Type="Windows.UI.Xaml.Thickness" />
       </Parameters>
       <Docs>
-        <param name="t1">La primera estructura para comparar.</param>
-        <param name="t2">La otra estructura para comparar.</param>
-        <summary>Compara el valor de dos <see cref="T:Windows.UI.Xaml.Thickness" /> structs de igualdad.</summary>
-        <returns><see langword="true" /> Si las dos instancias de <see cref="T:Windows.UI.Xaml.Thickness" /> son iguales; en caso contrario, <see langword="false" />.</returns>
+        <param name="t1">Primera estructura que se va a comparar.</param>
+        <param name="t2">La otra estructura que se va a comparar.</param>
+        <summary>Compara el valor de dos estructuras <see cref="T:Windows.UI.Xaml.Thickness" /> para determinar si son iguales.</summary>
+        <returns>Es <see langword="true" /> si las dos instancias de la clase <see cref="T:Windows.UI.Xaml.Thickness" /> son iguales; de lo contrario, es <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,10 +251,10 @@
         <Parameter Name="t2" Type="Windows.UI.Xaml.Thickness" />
       </Parameters>
       <Docs>
-        <param name="t1">La primera estructura para comparar.</param>
-        <param name="t2">La otra estructura para comparar.</param>
-        <summary>Compara dos <see cref="T:Windows.UI.Xaml.Thickness" /> structs no son iguales.</summary>
-        <returns><see langword="true" /> Si las dos instancias de <see cref="T:Windows.UI.Xaml.Thickness" /> no son iguales; en caso contrario, <see langword="false" />.</returns>
+        <param name="t1">Primera estructura que se va a comparar.</param>
+        <param name="t2">La otra estructura que se va a comparar.</param>
+        <summary>Compara dos estructuras <see cref="T:Windows.UI.Xaml.Thickness" /> para determinar si no son iguales.</summary>
+        <returns>Es <see langword="true" /> si las dos instancias de <see cref="T:Windows.UI.Xaml.Thickness" /> no son iguales; de lo contrario, es <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -325,8 +325,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Devuelve la representación de cadena de la <see cref="T:Windows.UI.Xaml.Thickness" /> estructura.</summary>
-        <returns>Una cadena que representa el <see cref="T:Windows.UI.Xaml.Thickness" /> valor.</returns>
+        <summary>Devuelve la representación de cadena de la estructura <see cref="T:Windows.UI.Xaml.Thickness" />.</summary>
+        <returns>Cadena que representa el valor <see cref="T:Windows.UI.Xaml.Thickness" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

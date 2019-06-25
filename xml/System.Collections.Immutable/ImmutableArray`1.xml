@@ -1,5 +1,5 @@
 <Type Name="ImmutableArray&lt;T&gt;" FullName="System.Collections.Immutable.ImmutableArray&lt;T&gt;">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="49f0a984728e2cf2059345c067e97447669077c1" /><Meta Name="ms.sourcegitcommit" Value="2767b5903996fbd7e2b81eda1114dfc9d0d9db63" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/02/2019" /><Meta Name="ms.locfileid" Value="65002490" /></Metadata><TypeSignature Language="C#" Value="public struct ImmutableArray&lt;T&gt; : IEquatable&lt;System.Collections.Immutable.ImmutableArray&lt;T&gt;&gt;, System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IList&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.Generic.IReadOnlyList&lt;T&gt;, System.Collections.IList, System.Collections.Immutable.IImmutableList&lt;T&gt;, System.Collections.IStructuralComparable, System.Collections.IStructuralEquatable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="027c6d8f68a52aac9379902201e9e746f10990f9" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67242194" /></Metadata><TypeSignature Language="C#" Value="public struct ImmutableArray&lt;T&gt; : IEquatable&lt;System.Collections.Immutable.ImmutableArray&lt;T&gt;&gt;, System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IList&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.Generic.IReadOnlyList&lt;T&gt;, System.Collections.IList, System.Collections.Immutable.IImmutableList&lt;T&gt;, System.Collections.IStructuralComparable, System.Collections.IStructuralEquatable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ImmutableArray`1&lt;T&gt; extends System.ValueType implements class System.Collections.Generic.ICollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IList`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyList`1&lt;!T&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.Collections.Immutable.IImmutableList`1&lt;!T&gt;, class System.Collections.IStructuralComparable, class System.Collections.IStructuralEquatable, class System.IEquatable`1&lt;valuetype System.Collections.Immutable.ImmutableArray`1&lt;!T&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Immutable.ImmutableArray`1" />
   <TypeSignature Language="VB.NET" Value="Public Structure ImmutableArray(Of T)&#xA;Implements ICollection(Of T), IEnumerable(Of T), IEquatable(Of ImmutableArray(Of T)), IImmutableList(Of T), IList, IList(Of T), IReadOnlyCollection(Of T), IReadOnlyList(Of T), IStructuralComparable, IStructuralEquatable" />
@@ -235,6 +235,50 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="AsMemory">
+      <MemberSignature Language="C#" Value="public ReadOnlyMemory&lt;T&gt; AsMemory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.ReadOnlyMemory`1&lt;!T&gt; AsMemory() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableArray`1.AsMemory" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsMemory () As ReadOnlyMemory(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlyMemory&lt;T&gt; AsMemory();" />
+      <MemberSignature Language="F#" Value="member this.AsMemory : unit -&gt; ReadOnlyMemory&lt;'T&gt;" Usage="immutableArray.AsMemory " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsSpan">
+      <MemberSignature Language="C#" Value="public ReadOnlySpan&lt;T&gt; AsSpan ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.ReadOnlySpan`1&lt;!T&gt; AsSpan() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Immutable.ImmutableArray`1.AsSpan" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsSpan () As ReadOnlySpan(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReadOnlySpan&lt;T&gt; AsSpan();" />
+      <MemberSignature Language="F#" Value="member this.AsSpan : unit -&gt; ReadOnlySpan&lt;'T&gt;" Usage="immutableArray.AsSpan " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Immutable</AssemblyName>
+        <AssemblyVersion>1.2.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CastArray&lt;TOther&gt;">
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;TOther&gt; CastArray&lt;TOther&gt; () where TOther : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;!!TOther&gt; CastArray&lt;class TOther&gt;() cil managed" />
@@ -435,7 +479,7 @@
       </Parameters>
       <Docs>
         <param name="destination">Matriz en la que se va a copiar.</param>
-        <param name="destinationIndex">El índice de <paramref name="array" /> donde comienza la copia.</param>
+        <param name="destinationIndex">Índice de <paramref name="array" /> donde se inicia la copia.</param>
         <summary>Copia el contenido de la matriz en la matriz especificada, empezando por el índice de destino especificado.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -469,7 +513,7 @@
       <Docs>
         <param name="sourceIndex">Índice de la matriz en que se inicia la copia.</param>
         <param name="destination">Matriz en la que se va a copiar.</param>
-        <param name="destinationIndex">El índice de <paramref name="array" /> donde comienza la copia.</param>
+        <param name="destinationIndex">Índice de <paramref name="array" /> donde se inicia la copia.</param>
         <param name="length">Número de elementos que se van a copiar desde esta matriz.</param>
         <summary>Copia los elementos especificados en esta matriz en la matriz especificada en el índice de inicio especificado.</summary>
         <remarks>To be added.</remarks>
@@ -1035,9 +1079,9 @@
         <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.1" />
       </Parameters>
       <Docs>
-        <param name="index">Índice de base cero del elemento que se obtiene una referencia a.</param>
-        <summary>Obtiene una referencia al elemento de solo lectura en el índice especificado <paramref name="index" /> en la lista de solo lectura.</summary>
-        <returns>Una referencia al elemento en el índice especificado de solo lectura <paramref name="index" /> en la lista de solo lectura.</returns>
+        <param name="index">Índice de base cero del elemento del que se va a obtener una referencia.</param>
+        <summary>Obtiene una referencia de solo lectura al elemento en el elemento <paramref name="index" /> especificado en la lista de solo lectura.</summary>
+        <returns>Referencia de solo lectura al elemento en el valor <paramref name="index" /> especificado en la lista de solo lectura.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1425,7 +1469,7 @@
         <param name="equalityComparer">Comparador de igualdad que se va a usar en la búsqueda.</param>
         <summary>Devuelve una matriz con la primera aparición del elemento especificado que se quita de la matriz.  
   
-Si no se encuentra ninguna coincidencia, se devuelve la matriz actual.</summary>
+ Si no se encuentra ninguna coincidencia, se devuelve la matriz actual.</summary>
         <returns>Nueva matriz con el elemento especificado quitado.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2428,7 +2472,7 @@ Si no se encuentra ninguna coincidencia, se devuelve la matriz actual.</summary>
         <summary>Devuelve un enumerador que recorre en iteración la matriz inmutable.</summary>
         <returns>Enumerador que recorre en iteración la matriz inmutable.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">El <see cref="P:System.Collections.Immutable.ImmutableArray`1.IsDefault" /> propiedad devuelve <see langword="true" />.</exception>
+        <exception cref="T:System.InvalidOperationException">La propiedad <see cref="P:System.Collections.Immutable.ImmutableArray`1.IsDefault" /> devuelve <see langword="true" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IList.Add">

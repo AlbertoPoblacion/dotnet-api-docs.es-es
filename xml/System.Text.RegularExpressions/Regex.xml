@@ -1,5 +1,5 @@
 <Type Name="Regex" FullName="System.Text.RegularExpressions.Regex">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="517657d5c9b0e58ce68b4057b652e59f2b7ef87d" /><Meta Name="ms.sourcegitcommit" Value="2767b5903996fbd7e2b81eda1114dfc9d0d9db63" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/02/2019" /><Meta Name="ms.locfileid" Value="65014350" /></Metadata><TypeSignature Language="C#" Value="public class Regex : System.Runtime.Serialization.ISerializable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3c08141570b114082146d0cd7184fc89c6417b48" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67243666" /></Metadata><TypeSignature Language="C#" Value="public class Regex : System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Regex extends System.Object implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.Regex" />
   <TypeSignature Language="VB.NET" Value="Public Class Regex&#xA;Implements ISerializable" />
@@ -196,8 +196,8 @@
     <altmember cref="T:System.Configuration.RegexStringValidator" />
     <related type="Article" href="~/docs/standard/base-types/regular-expressions.md">Expresiones regulares de .NET Framework</related>
     <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Elementos de lenguaje de expresiones regulares</related>
-    <related type="ExternalDocumentation" href="https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular expressions quick reference.docx">Expresiones regulares: referencia rápida (descarga en formato Word)</related>
-    <related type="ExternalDocumentation" href="https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular expressions quick reference.pdf">Expresiones regulares: referencia rápida (descarga en formato PDF)</related>
+    <related type="ExternalDocumentation" href="https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx">Expresiones regulares: referencia rápida (descarga en formato Word)</related>
+    <related type="ExternalDocumentation" href="https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf">Expresiones regulares: referencia rápida (descarga en formato PDF)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -325,7 +325,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">Se produjo un error de análisis de expresión regular.</exception>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="pattern" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="pattern" /> es <see langword="null" />.</exception>
         <block subset="none" type="usage"><para>Este constructor crea un <see cref="T:System.Text.RegularExpressions.Regex" /> objeto que utiliza el valor de tiempo de espera predeterminado del dominio de aplicación en el que se crea. Si no se ha definido un valor de tiempo de espera para el dominio de aplicación, el <see cref="T:System.Text.RegularExpressions.Regex" /> objeto usa el valor <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout" />, lo que impide que la operación de tiempo de espera. El constructor recomendados para la creación de un <see cref="T:System.Text.RegularExpressions.Regex" /> objeto es <see cref="M:System.Text.RegularExpressions.Regex.#ctor(System.String,System.Text.RegularExpressions.RegexOptions,System.TimeSpan)" />, que permite establecer el intervalo de tiempo de espera.</para></block>
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Elementos de lenguaje de expresiones regulares</related>
       </Docs>
@@ -516,7 +516,7 @@
         <exception cref="T:System.ArgumentNullException"><paramref name="pattern" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="options" /> no es un valor <see cref="T:System.Text.RegularExpressions.RegexOptions" /> válido.  
   
--o bien- 
+O bien 
  <paramref name="matchTimeout" /> es negativo, cero o mayor que 24 días aproximadamente.</exception>
         <block subset="none" type="usage"><para>Se recomienda que establezca el <paramref name="matchTimeout" /> parámetro a un valor apropiado, como dos segundos. Si deshabilita los tiempos de espera mediante la especificación de <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout" />, el motor de expresiones regulares ofrece un rendimiento ligeramente mejor. Sin embargo, debe deshabilitar los tiempos de espera solo en las siguientes condiciones: 
 -Cuando la entrada procesada por una expresión regular se deriva de una fuente conocida y de confianza o consta de texto estático. Excluye el texto que ha sido dinámicamente por usuarios.  
@@ -909,8 +909,8 @@ En .NET Core, las llamadas a la `Regex.CompileToAssembly` método throw un <xref
         </remarks>
         <exception cref="T:System.ArgumentException">El valor de la propiedad <see cref="P:System.Reflection.AssemblyName.Name" /> del parámetro <paramref name="assemblyname" /> es una cadena vacía o NULL.  
   
--o bien- 
-El patrón de expresión regular de uno o más objetos en <paramref name="regexinfos" /> contiene sintaxis no válida.</exception>
+O bien 
+El modelo de expresión regular de uno o varios objetos de <paramref name="regexinfos" /> contiene una sintaxis no válida.</exception>
         <exception cref="T:System.ArgumentNullException"><paramref name="assemblyname" /> o <paramref name="regexinfos" /> es <see langword="null" />.</exception>
         <exception cref="T:System.PlatformNotSupportedException">Solo .NET Core: No se admite la creación de un ensamblado de expresiones regulares compiladas.</exception>
         <block subset="none" type="usage"><para>Si está desarrollando en un sistema que tiene [!INCLUDE[net_v45](~/includes/net-v45-md.md)] o sus versiones secundarias instalados, tener como destino [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], y usar el <see cref="M:System.Text.RegularExpressions.Regex.CompileToAssembly(System.Text.RegularExpressions.RegexCompilationInfo[],System.Reflection.AssemblyName)" /> método para crear un ensamblado que contiene expresiones regulares compiladas. Intentando usar una de las expresiones regulares de ese ensamblado en un sistema que tiene [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] produce una excepción. Para evitar este problema, realice una de las acciones siguientes: 
@@ -1008,8 +1008,8 @@ El patrón de expresión regular de uno o más objetos en <paramref name="regexi
         </remarks>
         <exception cref="T:System.ArgumentException">El valor de la propiedad <see cref="P:System.Reflection.AssemblyName.Name" /> del parámetro <paramref name="assemblyname" /> es una cadena vacía o NULL.  
   
--o bien- 
-El patrón de expresión regular de uno o más objetos en <paramref name="regexinfos" /> contiene sintaxis no válida.</exception>
+O bien 
+El modelo de expresión regular de uno o varios objetos de <paramref name="regexinfos" /> contiene una sintaxis no válida.</exception>
         <exception cref="T:System.ArgumentNullException"><paramref name="assemblyname" /> o <paramref name="regexinfos" /> es <see langword="null" />.</exception>
         <exception cref="T:System.PlatformNotSupportedException">Solo .NET Core: No se admite la creación de un ensamblado de expresiones regulares compiladas.</exception>
         <block subset="none" type="usage"><para>Si está desarrollando en un sistema que tiene [!INCLUDE[net_v45](~/includes/net-v45-md.md)] o sus versiones secundarias instalados, tener como destino [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)], y usar el <see cref="M:System.Text.RegularExpressions.Regex.CompileToAssembly(System.Text.RegularExpressions.RegexCompilationInfo[],System.Reflection.AssemblyName)" /> método para crear un ensamblado que contiene expresiones regulares compiladas. Intentando usar una de las expresiones regulares de ese ensamblado en un sistema que tiene [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] produce una excepción. Para evitar este problema, realice una de las acciones siguientes: 
@@ -1092,8 +1092,8 @@ El patrón de expresión regular de uno o más objetos en <paramref name="regexi
         </remarks>
         <exception cref="T:System.ArgumentException">El valor de la propiedad <see cref="P:System.Reflection.AssemblyName.Name" /> del parámetro <paramref name="assemblyname" /> es una cadena vacía o NULL.  
   
--o bien- 
-El patrón de expresión regular de uno o más objetos en <paramref name="regexinfos" /> contiene sintaxis no válida.</exception>
+O bien 
+El modelo de expresión regular de uno o varios objetos de <paramref name="regexinfos" /> contiene una sintaxis no válida.</exception>
         <exception cref="T:System.ArgumentNullException"><paramref name="assemblyname" /> o <paramref name="regexinfos" /> es <see langword="null" />.</exception>
         <exception cref="T:System.Runtime.InteropServices.COMException">El parámetro <paramref name="resourceFile" /> designa un archivo de recursos de Win32 no válido.</exception>
         <exception cref="T:System.IO.FileNotFoundException">No se pudo encontrar el archivo designado por el parámetro <paramref name="resourceFile" />.</exception>
@@ -1175,7 +1175,7 @@ El patrón de expresión regular de uno o más objetos en <paramref name="regexi
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="str" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="str" /> es <see langword="null" />.</exception>
         <altmember cref="M:System.Text.RegularExpressions.Regex.Unescape(System.String)" />
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Lenguaje de expresiones regulares - Referencia rápida</related>
         <related type="Article" href="https://msdn.microsoft.com/library/f49cc9cc-db7d-4058-8b8a-422bc08b29b0">Escapes de carácter en expresiones regulares</related>
@@ -1241,7 +1241,7 @@ El patrón de expresión regular de uno o más objetos en <paramref name="regexi
       <Docs>
         <summary>Este miembro reemplaza a <see cref="M:System.Object.Finalize" />; puede haber documentación más completa en ese tema.
 
-Permite un <see cref="T:System.Object" /> para liberar recursos y realizar otras operaciones de limpieza antes de intentar la <see cref="T:System.Object" /> sea reclamado por la recolección de elementos.</summary>
+Permite que un objeto <see cref="T:System.Object" /> intente liberar recursos y realizar otras operaciones de limpieza antes de que el objeto <see cref="T:System.Object" /> sea reclamado por la recolección de elementos no utilizados.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1511,7 +1511,7 @@ Permite un <see cref="T:System.Object" /> para liberar recursos y realizar otras
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="name" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="name" /> es <see langword="null" />.</exception>
         <altmember cref="T:System.Text.RegularExpressions.GroupCollection" />
         <altmember cref="M:System.Text.RegularExpressions.Regex.GetGroupNames" />
         <related type="Article" href="https://msdn.microsoft.com/library/0fc18634-f590-4062-8d5c-f0b71abe405b">Construcciones de agrupamiento</related>
@@ -1749,7 +1749,7 @@ Permite un <see cref="T:System.Object" /> para liberar recursos y realizar otras
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="input" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="input" /> es <see langword="null" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">Se agotó el tiempo de espera. Para más información sobre los tiempos de espera, vea la sección Comentarios.</exception>
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Elementos de lenguaje de expresiones regulares</related>
       </Docs>
@@ -1832,7 +1832,7 @@ Permite un <see cref="T:System.Object" /> para liberar recursos y realizar otras
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="input" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="input" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="startat" /> es menor que cero o mayor que la longitud de <paramref name="input" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">Se agotó el tiempo de espera. Para más información sobre los tiempos de espera, vea la sección Comentarios.</exception>
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Elementos de lenguaje de expresiones regulares</related>
@@ -2126,7 +2126,7 @@ Permite un <see cref="T:System.Object" /> para liberar recursos y realizar otras
         <exception cref="T:System.ArgumentNullException">El valor de <paramref name="input" /> o <paramref name="pattern" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="options" /> no es un valor <see cref="T:System.Text.RegularExpressions.RegexOptions" /> válido.  
   
--o bien- 
+O bien 
  <paramref name="matchTimeout" /> es negativo, cero o mayor que 24 días aproximadamente.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">Se agotó el tiempo de espera.</exception>
         <block subset="none" type="usage"><para>Se recomienda que establezca el <paramref name="matchTimeout" /> parámetro a un valor apropiado, como dos segundos. Si deshabilita los tiempos de espera mediante la especificación de <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout" />, el motor de expresiones regulares ofrece un rendimiento ligeramente mejor. Sin embargo, debe deshabilitar los tiempos de espera solo en las siguientes condiciones: 
@@ -2289,7 +2289,7 @@ Permite un <see cref="T:System.Object" /> para liberar recursos y realizar otras
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="input" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="input" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="startat" /> es menor que cero o mayor que la longitud de <paramref name="input" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">Se agotó el tiempo de espera. Para más información sobre los tiempos de espera, vea la sección Comentarios.</exception>
         <altmember cref="M:System.Text.RegularExpressions.Match.NextMatch" />
@@ -2440,13 +2440,13 @@ Permite un <see cref="T:System.Object" /> para liberar recursos y realizar otras
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="input" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="input" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="beginning" /> es menor que cero o mayor que la longitud de <paramref name="input" />.  
   
--o bien- 
+O bien 
  <paramref name="length" /> es menor que cero o mayor que la longitud de <paramref name="input" />.  
   
--o bien- 
+O bien 
  <paramref name="beginning" /><see langword="+" /><paramref name="length" /><see langword="-1" /> identifica una posición que está fuera del intervalo de <paramref name="input" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">Se agotó el tiempo de espera. Para más información sobre los tiempos de espera, vea la sección Comentarios.</exception>
         <altmember cref="M:System.Text.RegularExpressions.Match.NextMatch" />
@@ -2605,7 +2605,7 @@ Permite un <see cref="T:System.Object" /> para liberar recursos y realizar otras
         <exception cref="T:System.ArgumentNullException">El valor de <paramref name="input" /> o <paramref name="pattern" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="options" /> no es una combinación bit a bit válida de valores <see cref="T:System.Text.RegularExpressions.RegexOptions" />.  
   
--o bien- 
+O bien 
  <paramref name="matchTimeout" /> es negativo, cero o mayor que 24 días aproximadamente.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">Se agotó el tiempo de espera. Para más información sobre los tiempos de espera, vea la sección Comentarios.</exception>
         <block subset="none" type="usage"><para>Se recomienda que establezca el <paramref name="matchTimeout" /> parámetro a un valor apropiado, como dos segundos. Si deshabilita los tiempos de espera mediante la especificación de <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout" />, el motor de expresiones regulares ofrece un rendimiento ligeramente mejor. Sin embargo, debe deshabilitar los tiempos de espera solo en las siguientes condiciones: 
@@ -2711,7 +2711,7 @@ En el ejemplo siguiente, el patrón de expresión regular <c>un *</c> Busca cero
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="input" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="input" /> es <see langword="null" />.</exception>
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Elementos de lenguaje de expresiones regulares</related>
       </Docs>
     </Member>
@@ -3047,7 +3047,7 @@ En el ejemplo siguiente, el patrón de expresión regular <c>un *</c> Busca cero
         <exception cref="T:System.ArgumentNullException">El valor de <paramref name="input" /> o <paramref name="pattern" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="options" /> no es una combinación bit a bit válida de valores <see cref="T:System.Text.RegularExpressions.RegexOptions" />.  
   
--o bien- 
+O bien 
  <paramref name="matchTimeout" /> es negativo, cero o mayor que 24 días aproximadamente.</exception>
         <block subset="none" type="usage"><para>Se recomienda que establezca el <paramref name="matchTimeout" /> parámetro a un valor apropiado, como dos segundos. Si deshabilita los tiempos de espera mediante la especificación de <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout" />, el motor de expresiones regulares ofrece un rendimiento ligeramente mejor. Sin embargo, debe deshabilitar los tiempos de espera solo en las siguientes condiciones: 
 -Cuando la entrada procesada por una expresión regular se deriva de una fuente conocida y de confianza o consta de texto estático. Excluye el texto que ha sido dinámicamente por usuarios.  
@@ -4204,7 +4204,7 @@ En el ejemplo siguiente, el patrón de expresión regular <c>un *</c> Busca cero
         <exception cref="T:System.ArgumentNullException"><paramref name="input" />, <paramref name="pattern" /> o <paramref name="replacement" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="options" /> no es una combinación bit a bit válida de valores <see cref="T:System.Text.RegularExpressions.RegexOptions" />.  
   
--o bien- 
+O bien 
  <paramref name="matchTimeout" /> es negativo, cero o mayor que 24 días aproximadamente.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">Se agotó el tiempo de espera. Para más información sobre los tiempos de espera, vea la sección Comentarios.</exception>
         <block subset="none" type="usage"><para>Se recomienda que establezca el <paramref name="matchTimeout" /> parámetro a un valor apropiado, como dos segundos. Si deshabilita los tiempos de espera mediante la especificación de <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout" />, el motor de expresiones regulares ofrece un rendimiento ligeramente mejor. Sin embargo, debe deshabilitar los tiempos de espera solo en las siguientes condiciones: 
@@ -4308,7 +4308,7 @@ En el ejemplo siguiente, el patrón de expresión regular <c>un *</c> Busca cero
         <exception cref="T:System.ArgumentNullException"><paramref name="input" />, <paramref name="pattern" /> o <paramref name="evaluator" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="options" /> no es una combinación bit a bit válida de valores <see cref="T:System.Text.RegularExpressions.RegexOptions" />.  
   
--o bien- 
+O bien 
  <paramref name="matchTimeout" /> es negativo, cero o mayor que 24 días aproximadamente.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">Se agotó el tiempo de espera. Para más información sobre los tiempos de espera, vea la sección Comentarios.</exception>
         <block subset="none" type="usage"><para>Se recomienda que establezca el <paramref name="matchTimeout" /> parámetro a un valor apropiado, como dos segundos. Si deshabilita los tiempos de espera mediante la especificación de <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout" />, el motor de expresiones regulares ofrece un rendimiento ligeramente mejor. Sin embargo, debe deshabilitar los tiempos de espera solo en las siguientes condiciones: 
@@ -4499,7 +4499,7 @@ En el ejemplo siguiente, el patrón de expresión regular <c>un *</c> Busca cero
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="input" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="input" /> es <see langword="null" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">Se agotó el tiempo de espera. Para más información sobre los tiempos de espera, vea la sección Comentarios.</exception>
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Lenguaje de expresiones regulares - Referencia rápida</related>
       </Docs>
@@ -4574,7 +4574,7 @@ En el ejemplo siguiente, el patrón de expresión regular <c>un *</c> Busca cero
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="input" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="input" /> es <see langword="null" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">Se agotó el tiempo de espera. Para más información sobre los tiempos de espera, vea la sección Comentarios.</exception>
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Lenguaje de expresiones regulares - Referencia rápida</related>
       </Docs>
@@ -4743,7 +4743,7 @@ En el ejemplo siguiente, el patrón de expresión regular <c>un *</c> Busca cero
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="input" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="input" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="startat" /> es menor que cero o mayor que la longitud de <paramref name="input" />.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">Se agotó el tiempo de espera. Para más información sobre los tiempos de espera, vea la sección Comentarios.</exception>
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Lenguaje de expresiones regulares - Referencia rápida</related>
@@ -4915,7 +4915,7 @@ En el ejemplo siguiente, el patrón de expresión regular <c>un *</c> Busca cero
         <exception cref="T:System.ArgumentNullException">El valor de <paramref name="input" /> o <paramref name="pattern" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="options" /> no es una combinación bit a bit válida de valores <see cref="T:System.Text.RegularExpressions.RegexOptions" />.  
   
--o bien- 
+O bien 
  <paramref name="matchTimeout" /> es negativo, cero o mayor que 24 días aproximadamente.</exception>
         <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">Se agotó el tiempo de espera. Para más información sobre los tiempos de espera, vea la sección Comentarios.</exception>
         <block subset="none" type="usage"><para>Se recomienda que establezca el <paramref name="matchTimeout" /> parámetro a un valor apropiado, como dos segundos. Si deshabilita los tiempos de espera mediante la especificación de <see cref="F:System.Text.RegularExpressions.Regex.InfiniteMatchTimeout" />, el motor de expresiones regulares ofrece un rendimiento ligeramente mejor. Sin embargo, debe deshabilitar los tiempos de espera solo en las siguientes condiciones: 
@@ -5073,7 +5073,7 @@ En el ejemplo siguiente, el patrón de expresión regular <c>un *</c> Busca cero
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException"><paramref name="str" /> incluye una secuencia de escape desconocida.</exception>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="str" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="str" /> es <see langword="null" />.</exception>
         <altmember cref="M:System.Text.RegularExpressions.Regex.Escape(System.String)" />
         <related type="Article" href="~/docs/standard/base-types/regular-expression-language-quick-reference.md">Lenguaje de expresiones regulares - Referencia rápida</related>
       </Docs>
