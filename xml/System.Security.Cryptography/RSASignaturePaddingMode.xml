@@ -1,5 +1,5 @@
 <Type Name="RSASignaturePaddingMode" FullName="System.Security.Cryptography.RSASignaturePaddingMode">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7ea20b0f468795bd8b58bd0552ba568bde13af8e" /><Meta Name="ms.sourcegitcommit" Value="a3e01ec36374fac54a55add0dcc1e754e394abeb" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="03/30/2019" /><Meta Name="ms.locfileid" Value="58691386" /></Metadata><TypeSignature Language="C#" Value="public enum RSASignaturePaddingMode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3f54d3b9a5566a21ebb0665b48fe4988606ed297" /><Meta Name="ms.sourcegitcommit" Value="24dc380b0d43e8919d4e0d50409e8f0aeae98713" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/27/2019" /><Meta Name="ms.locfileid" Value="67411454" /></Metadata><TypeSignature Language="C#" Value="public enum RSASignaturePaddingMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RSASignaturePaddingMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RSASignaturePaddingMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum RSASignaturePaddingMode" />
@@ -28,7 +28,17 @@
   </Base>
   <Docs>
     <summary>Especifica el modo de relleno que se va a usar con operaciones de comprobación o creación de firmas RSA.</summary>
-    <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks
+
+`Pkcs1` se corresponde con el esquema de firma RSASSA-PKCS1-v1.5 del [PKCS #1: Estándar de cifrado RSA](http://www.emc.com/emc-plus/rsa-labs/standards-initiatives/pkcs-rsa-cryptography-standard.htm). Se admite por compatibilidad con aplicaciones existentes.  
+
+`Pss` corresponde a la esquema de firma probabilística (PSS) de la [PKCS #1: Estándar de cifrado RSA](http://www.emc.com/emc-plus/rsa-labs/standards-initiatives/pkcs-rsa-cryptography-standard.htm). Se recomienda para las aplicaciones nuevas.
+
+ ]]></format>
+        </remarks>
   </Docs>
   <Members>
     <Member MemberName="Pkcs1">
@@ -63,14 +73,6 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>PKCS #1 v1.5</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Pkcs1 se corresponde con el esquema de firma RSASSA-PKCS1-v1.5 del [PKCS #1: Estándar de cifrado RSA](http://www.emc.com/emc-plus/rsa-labs/standards-initiatives/pkcs-rsa-cryptography-standard.htm). Se admite por compatibilidad con aplicaciones existentes.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Pss">
@@ -105,14 +107,6 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>Esquema de firma probabilística</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- PSS corresponde al esquema de firma probabilística (PSS) de la [PKCS #1: Estándar de cifrado RSA](http://www.emc.com/emc-plus/rsa-labs/standards-initiatives/pkcs-rsa-cryptography-standard.htm). Se recomienda para las aplicaciones nuevas.  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
   </Members>

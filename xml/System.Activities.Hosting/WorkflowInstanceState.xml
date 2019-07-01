@@ -1,5 +1,5 @@
 <Type Name="WorkflowInstanceState" FullName="System.Activities.Hosting.WorkflowInstanceState">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="c9f4b56c38e4ef29bd33dc87dbd6a3b2b6413251" /><Meta Name="ms.sourcegitcommit" Value="f1d16425528e237257ca3b58eb49217a514849ea" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="04/24/2019" /><Meta Name="ms.locfileid" Value="63926177" /></Metadata><TypeSignature Language="C#" Value="public enum WorkflowInstanceState" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="dcb7ee14e1397ebeb03fff0c77a9012879485b77" /><Meta Name="ms.sourcegitcommit" Value="feb111e137a41d186aef01d83f04819d820520eb" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/21/2019" /><Meta Name="ms.locfileid" Value="67308141" /></Metadata><TypeSignature Language="C#" Value="public enum WorkflowInstanceState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WorkflowInstanceState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Hosting.WorkflowInstanceState" />
   <TypeSignature Language="VB.NET" Value="Public Enum WorkflowInstanceState" />
@@ -34,15 +34,7 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>La instancia <see cref="T:System.Activities.Hosting.WorkflowInstance" /> está anulada.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- La instancia de flujo de trabajo será en este estado después de <xref:System.Activities.WorkflowApplication.Abort%2A> se ha llamado. Un flujo de trabajo en este estado es capaz de reanudarse mediante <xref:System.Activities.WorkflowApplication.Run%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary>La instancia <see cref="T:System.Activities.Hosting.WorkflowInstance" /> está anulada. La instancia de flujo de trabajo estará en este estado después de haber llamado a <see cref="Overload:System.Activities.WorkflowApplication.Abort" />. Un flujo de trabajo en este estado es capaz de reanudarse mediante <see cref="Overload:System.Activities.WorkflowApplication.Run" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Complete">
@@ -62,15 +54,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>La instancia <see cref="T:System.Activities.Hosting.WorkflowInstance" /> se ha completado.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Se ha cerrado un flujo de trabajo en este estado y su <xref:System.Activities.WorkflowApplication.Completed%2A> o <xref:System.Activities.WorkflowInvoker.InvokeCompleted> ha ejecutado el evento.  
-  
- ]]></format>
-        </remarks>
+        <summary>La instancia <see cref="T:System.Activities.Hosting.WorkflowInstance" /> se ha completado. Un flujo de trabajo en este estado se ha cerrado y su delegado <see cref="P:System.Activities.WorkflowApplication.Completed" /> o evento <see cref="E:System.Activities.WorkflowInvoker.InvokeCompleted" /> se ha ejecutado.</summary>
       </Docs>
     </Member>
     <Member MemberName="Idle">
@@ -90,15 +74,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>La clase <see cref="T:System.Activities.Hosting.WorkflowInstance" /> está inactiva.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Un flujo de trabajo en este estado está esperando un evento de entrada, como cuando se ejecuta un <xref:System.Activities.Statements.Pick> actividad, o está esperando para la caducidad de tiempo de espera, como cuando se ejecuta un <xref:System.Activities.Statements.Delay> actividad.  
-  
- ]]></format>
-        </remarks>
+        <summary>La clase <see cref="T:System.Activities.Hosting.WorkflowInstance" /> está inactiva. Un flujo de trabajo en este estado está esperando un evento entrante, como cuando se ejecuta una actividad <see cref="T:System.Activities.Statements.Pick" />, o está esperando a que un tiempo de espera espire, como cuando se ejecuta una actividad <see cref="T:System.Activities.Statements.Delay" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="Runnable">
@@ -118,15 +94,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>La instancia <see cref="T:System.Activities.Hosting.WorkflowInstance" /> no se puede ejecutar.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Se ha creado un flujo de trabajo en este estado, pero <xref:System.Activities.WorkflowApplication.Run%2A> no se ha llamado.  
-  
- ]]></format>
-        </remarks>
+        <summary>La instancia <see cref="T:System.Activities.Hosting.WorkflowInstance" /> no se puede ejecutar. Se ha creado un flujo de trabajo en este estado pero no se ha llamado a <see cref="Overload:System.Activities.WorkflowApplication.Run" />.</summary>
       </Docs>
     </Member>
   </Members>

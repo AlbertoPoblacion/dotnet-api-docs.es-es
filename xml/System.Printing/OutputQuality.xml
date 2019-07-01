@@ -1,5 +1,5 @@
 <Type Name="OutputQuality" FullName="System.Printing.OutputQuality">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="662130fd5671bf17e652174931864697a3ab0ad8" /><Meta Name="ms.sourcegitcommit" Value="16d2d159872fd213cae4b8f371d7ae9c8b027c89" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="11/17/2018" /><Meta Name="ms.locfileid" Value="51867082" /></Metadata><TypeSignature Language="C#" Value="public enum OutputQuality" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2c21abd39a5e9f81e875b38ea9953b7e606eeff2" /><Meta Name="ms.sourcegitcommit" Value="087e7080a3f8a7cb9729f7cd398931df8ca81797" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/26/2019" /><Meta Name="ms.locfileid" Value="67399542" /></Metadata><TypeSignature Language="C#" Value="public enum OutputQuality" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OutputQuality extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Printing.OutputQuality" />
   <TypeSignature Language="VB.NET" Value="Public Enum OutputQuality" />
@@ -29,10 +29,10 @@
   
  Nunca debe establecer un <xref:System.Printing.PrintTicket> propiedad `Unknown`. Si algún otro <xref:System.Printing.PrintTicket> generar la aplicación ha creado un *documento PrintTicket* que establece la característica de calidad de salida en una opción no reconocida (es decir, una opción que no está definida en el [delesquemadeimpresión](https://go.microsoft.com/fwlink/?LinkId=186397)), un <xref:System.Printing.PrintTicket> objeto en la aplicación que se construye con ese documento tendrá `Unknown` como el valor de la <xref:System.Printing.PrintTicket.OutputQuality%2A> propiedad.  
   
- Aunque el <xref:System.Printing.PrintTicket> y <xref:System.Printing.PrintCapabilities> no se puede heredar las clases, puede ampliar el [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) para reconocer las características del dispositivo de impresión que no se recogen en el <xref:System.Printing.PrintTicket> o <xref:System.Printing.PrintCapabilities> clases. Para obtener más información, consulte [NOTINBUILD: Cómo: Extender el esquema de impresión y crear nuevas clases de sistema de impresión](https://msdn.microsoft.com/library/a3600218-1ea5-478a-9853-6560464f2885).  
+ Aunque el <xref:System.Printing.PrintTicket> y <xref:System.Printing.PrintCapabilities> no se puede heredar las clases, puede ampliar el [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) para reconocer las características del dispositivo de impresión que no se recogen en el <xref:System.Printing.PrintTicket> o <xref:System.Printing.PrintCapabilities> clases. Para obtener más información, vea [Cómo: Extender el esquema de impresión y crear nuevas clases de sistema de impresión](https://docs.microsoft.com/previous-versions/aa970573(v=vs.100)).  
   
 <a name="Photographic"></a>   
-## <a name="notes-on-outputqualityphotographic"></a>Notas sobre OutputQuality.Photographic  
+## <a name="notes-on-outputqualityphotographic"></a>Notes on OutputQuality.Photographic  
  A partir de la [!INCLUDE[net_v461](~/includes/net-v461-md.md)], se mejora la calidad del resultado obtenida con el valor de papel fotográfico (en comparación con versiones anteriores de .NET Framework) al imprimir en una impresora basada en GDI y cuando se ejecuta en Windows 7 y versiones anteriores de la Windows Sistema operativo.  
   
  Generar documentos con una mejor calidad de salida requiere archivos de mayor tamaño de impresión y los tiempos de espera. Si se encuentran estos efectos no deseados, puede usar en su lugar el valor superior.  

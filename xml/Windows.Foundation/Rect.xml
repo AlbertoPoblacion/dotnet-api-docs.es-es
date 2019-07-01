@@ -1,5 +1,5 @@
 <Type Name="Rect" FullName="Windows.Foundation.Rect">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="3dab06c622d082eab9b23c59037447b312c3d578" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67250207" /></Metadata><TypeSignature Language="C#" Value="public struct Rect : IFormattable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7572aa16152b91ed796f0c8c0913c2a5d507ee13" /><Meta Name="ms.sourcegitcommit" Value="61757d0366a172cdbc11436deb1c1ffa49d97238" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/28/2019" /><Meta Name="ms.locfileid" Value="67458468" /></Metadata><TypeSignature Language="C#" Value="public struct Rect : IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Rect extends System.ValueType implements class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:Windows.Foundation.Rect" />
   <TypeSignature Language="VB.NET" Value="Public Structure Rect&#xA;Implements IFormattable" />
@@ -25,9 +25,36 @@
   </Attributes>
   <Docs>
     <summary>Describe el ancho, el alto y el punto de origen de un rectángulo.</summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Rect` struct. Para obtener más información, consulte [Rect](https://docs.microsoft.com/uwp/api/windows.foundation.rect) en la referencia de API de UWP.  
+ 
+ ]]></format>
+    </remarks>
+    <related type="Article" href="https://docs.microsoft.com/uwp/api/windows.foundation.rect">Rect (UWP)</related>
+    <related type="Article" href="https://docs.microsoft.com/dotnet/api/system.windows.rect">System.Windows.Rect (.NET)</related>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Rect` struct. Para obtener más información, consulte [Rect](https://docs.microsoft.com/uwp/api/windows.foundation.rect) en la referencia de API de UWP.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Rect (Windows.Foundation.Point point1, Windows.Foundation.Point point2);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Windows.Foundation.Point point1, valuetype Windows.Foundation.Point point2) cil managed" />
@@ -123,7 +150,16 @@
       <Docs>
         <summary>Obtiene el valor del eje Y de la parte inferior del rectángulo.</summary>
         <value>Valor del eje Y de la parte inferior del rectángulo. Si el rectángulo está vacío, el valor es <see cref="F:System.Double.NegativeInfinity" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Rect` struct. Para obtener más información, consulte [Rect](https://docs.microsoft.com/uwp/api/windows.foundation.rect) en la referencia de API de UWP.  
+
+ Para obtener más información y ejemplos de este miembro, vea <xref:System.Windows.Rect.Bottom?displayProperty=nameWithType> en la referencia de API de .NET Framework. (Los ejemplos muestran el uso WPF y no se pueden traducir directamente a UWP XAML).
+
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -148,7 +184,16 @@
         <param name="point">Punto que se va a comprobar.</param>
         <summary>Indica si el rectángulo descrito por <see cref="T:Windows.Foundation.Rect" /> contiene el punto especificado.</summary>
         <returns><see langword="true" /> si el rectángulo descrito por <see cref="T:Windows.Foundation.Rect" /> contiene el punto especificado; de lo contrario, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Rect` struct. Para obtener más información, consulte [Rect](https://docs.microsoft.com/uwp/api/windows.foundation.rect) en la referencia de API de UWP.  
+
+ Para obtener más información y ejemplos de este miembro, vea < System.Windows.Rect.Contains%2A?displayProperty=nameWithType > en la referencia de API de .NET Framework. (Los ejemplos muestran el uso WPF y no se pueden traducir directamente a UWP XAML).
+
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -170,9 +215,38 @@
       <Docs>
         <summary>Obtiene un valor especial que representa un rectángulo sin posición ni área.</summary>
         <value>Rectángulo vacío, que tiene los valores de las propiedades <see cref="P:Windows.Foundation.Rect.X" /> y <see cref="P:Windows.Foundation.Rect.Y" /> de <see cref="F:System.Double.PositiveInfinity" />, así como los valores de las propiedades <see cref="P:Windows.Foundation.Rect.Width" /> y <see cref="P:Windows.Foundation.Rect.Height" /> de <see cref="F:System.Double.NegativeInfinity" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Rect` struct. Para obtener más información, consulte [Rect](https://docs.microsoft.com/uwp/api/windows.foundation.rect) en la referencia de API de UWP.  
+
+ Para obtener más información sobre este miembro, vea < System.Windows.Rect.Empty?displayProperty=nameWithType > en la referencia de API de .NET Framework.
+
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Rect` struct. Para obtener más información, consulte [Rect](https://docs.microsoft.com/uwp/api/windows.foundation.rect) en la referencia de API de UWP.  
+
+ Para obtener más información y ejemplos de este miembro, vea < System.Windows.Rect.Equals%2A?displayProperty=nameWithType > en la referencia de API de .NET Framework. (Los ejemplos muestran el uso WPF y no se pueden traducir directamente a UWP XAML).
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
@@ -255,7 +329,16 @@
       <Docs>
         <summary>Crea un código hash para <see cref="T:Windows.Foundation.Rect" />.</summary>
         <returns>Código hash de la estructura <see cref="T:Windows.Foundation.Rect" /> actual.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Rect` struct. Para obtener más información, consulte [Rect](https://docs.microsoft.com/uwp/api/windows.foundation.rect) en la referencia de API de UWP.  
+
+ Para obtener más información y ejemplos de este miembro, vea <xref:System.Windows.Rect.GetHashCode%2A?displayProperty=nameWithType> en la referencia de API de .NET Framework. (Los ejemplos muestran el uso WPF y no se pueden traducir directamente a UWP XAML).
+
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
     <Member MemberName="Height">
@@ -277,7 +360,16 @@
       <Docs>
         <summary>Obtiene o establece la altura del rectángulo.</summary>
         <value>Valor que representa el alto del rectángulo. El valor predeterminado es 0.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Rect` struct. Para obtener más información, consulte [Rect](https://docs.microsoft.com/uwp/api/windows.foundation.rect) en la referencia de API de UWP.  
+
+ Para obtener más información y ejemplos de este miembro, vea < System.Windows.Rect.Height?displayProperty=nameWithType > en la referencia de API de .NET Framework. (Los ejemplos muestran el uso WPF y no se pueden traducir directamente a UWP XAML).
+
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
     <Member MemberName="Intersect">
@@ -301,7 +393,16 @@
       <Docs>
         <param name="rect">Rectángulo que se va a intersecar con el rectángulo actual.</param>
         <summary>Busca la intersección del rectángulo representado por el objeto <see cref="T:Windows.Foundation.Rect" /> actual y el rectángulo representado por el objeto <see cref="T:Windows.Foundation.Rect" /> especificado, y almacena el resultado como el objeto <see cref="T:Windows.Foundation.Rect" /> actual.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Rect` struct. Para obtener más información, consulte [Rect](https://docs.microsoft.com/uwp/api/windows.foundation.rect) en la referencia de API de UWP.  
+
+ Para obtener más información y ejemplos de este miembro, vea < System.Windows.Rect.Intersect%2A?displayProperty=nameWithType > en la referencia de API de .NET Framework. (Los ejemplos muestran el uso WPF y no se pueden traducir directamente a UWP XAML).
+
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEmpty">
@@ -323,7 +424,16 @@
       <Docs>
         <summary>Obtiene un valor que indica si el rectángulo es el rectángulo de la propiedad <see cref="P:Windows.Foundation.Rect.Empty" />.</summary>
         <value>Es <see langword="true" /> si el rectángulo es el rectángulo de la propiedad <see cref="P:Windows.Foundation.Rect.Empty" />; de lo contrario, es <see langword="false" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Rect` struct. Para obtener más información, consulte [Rect](https://docs.microsoft.com/uwp/api/windows.foundation.rect) en la referencia de API de UWP.  
+
+ Para obtener más información sobre este miembro, vea < System.Windows.Rect.IsEmpty?displayProperty=nameWithType > en la referencia de API de .NET Framework.
+
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -345,7 +455,16 @@
       <Docs>
         <summary>Obtiene el valor del eje X del lado izquierdo del rectángulo.</summary>
         <value>Valor del eje X del lado izquierdo del rectángulo.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Rect` struct. Para obtener más información, consulte [Rect](https://docs.microsoft.com/uwp/api/windows.foundation.rect) en la referencia de API de UWP.  
+
+ Para obtener más información y ejemplos de este miembro, vea <xref:System.Windows.Rect.Left?displayProperty=nameWithType> en la referencia de API de .NET Framework. (Los ejemplos muestran el uso WPF y no se pueden traducir directamente a UWP XAML).
+
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -373,7 +492,16 @@
         <param name="rect2">Segundo rectángulo que se va a comparar.</param>
         <summary>Compara dos estructuras <see cref="T:Windows.Foundation.Rect" /> para determinar si son iguales.</summary>
         <returns>Es <see langword="true" /> si las estructuras <see cref="T:Windows.Foundation.Rect" /> tienen los mismos valores de propiedad X, Y, Width y Heigh; de lo contrario, es <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Rect` struct. Para obtener más información, consulte [Rect](https://docs.microsoft.com/uwp/api/windows.foundation.rect) en la referencia de API de UWP.  
+
+ Para obtener más información y ejemplos de este miembro, vea <xref:System.Windows.Rect.op_Equality%2A?displayProperty=nameWithType> en la referencia de API de .NET Framework. (Los ejemplos muestran el uso WPF y no se pueden traducir directamente a UWP XAML).
+
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -401,7 +529,16 @@
         <param name="rect2">Segundo rectángulo que se va a comparar.</param>
         <summary>Compara dos estructuras <see cref="T:Windows.Foundation.Rect" /> para determinar si no son iguales.</summary>
         <returns>Es <see langword="true" /> si las estructuras <see cref="T:Windows.Foundation.Rect" /> no tienen los mismos valores de propiedad X, Y, Width y Heigh; de lo contrario, es <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Rect` struct. Para obtener más información, consulte [Rect](https://docs.microsoft.com/uwp/api/windows.foundation.rect) en la referencia de API de UWP.  
+
+ Para obtener más información y ejemplos de este miembro, vea <xref:System.Windows.Rect.op_Inequality%2A?displayProperty=nameWithType> en la referencia de API de .NET Framework. (Los ejemplos muestran el uso WPF y no se pueden traducir directamente a UWP XAML).
+
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -423,7 +560,16 @@
       <Docs>
         <summary>Obtiene el valor del eje X del lado derecho del rectángulo.</summary>
         <value>Valor del eje X del lado derecho del rectángulo.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Rect` struct. Para obtener más información, consulte [Rect](https://docs.microsoft.com/uwp/api/windows.foundation.rect) en la referencia de API de UWP.  
+
+ Para obtener más información y ejemplos de este miembro, vea <xref:System.Windows.Rect.Right?displayProperty=nameWithType> en la referencia de API de .NET Framework. (Los ejemplos muestran el uso WPF y no se pueden traducir directamente a UWP XAML).
+
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.IFormattable.ToString">
@@ -456,9 +602,16 @@
       <Docs>
         <param name="format">Cadena que especifica el formato que se va a usar o <see langword="null" /> para utilizar el formato predeterminado que se define para el tipo de implementación de IFormattable.</param>
         <param name="provider">Objeto que proporciona información de formato o <see langword="null" /> para obtener la información de formato numérico de la referencia cultural actual.</param>
-        <summary>Para obtener una descripción de este miembro, vea <see cref="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" />.</summary>
+        <summary>Para una descripción de este miembro, vea <see cref="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" />.</summary>
         <returns>Cadena que contiene el valor de la instancia actual con el formato especificado.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Rect` struct. Para obtener más información, consulte [Rect](https://docs.microsoft.com/uwp/api/windows.foundation.rect) en la referencia de API de UWP.  
+
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -480,9 +633,38 @@
       <Docs>
         <summary>Obtiene la posición del eje Y de la parte superior del rectángulo.</summary>
         <value>Posición del eje Y de la parte superior del rectángulo.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Rect` struct. Para obtener más información, consulte [Rect](https://docs.microsoft.com/uwp/api/windows.foundation.rect) en la referencia de API de UWP.  
+
+ Para obtener más información y ejemplos de este miembro, vea <xref:System.Windows.Rect.Top?displayProperty=nameWithType> en la referencia de API de .NET Framework. (Los ejemplos muestran el uso WPF y no se pueden traducir directamente a UWP XAML).
+
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Rect` struct. Para obtener más información, consulte [Rect](https://docs.microsoft.com/uwp/api/windows.foundation.rect) en la referencia de API de UWP.  
+
+ Para obtener más información y ejemplos de este miembro, vea <xref:System.Windows.Rect.ToString%2A?displayProperty=nameWithType> en la referencia de API de .NET Framework. (Los ejemplos muestran el uso WPF y no se pueden traducir directamente a UWP XAML).
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
@@ -537,6 +719,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Union">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Rect` struct. Para obtener más información, consulte [Rect](https://docs.microsoft.com/uwp/api/windows.foundation.rect) en la referencia de API de UWP.  
+
+ Para obtener más información y ejemplos de este miembro, vea <xref:System.Windows.Rect.Union%2A?displayProperty=nameWithType> en la referencia de API de .NET Framework. (Los ejemplos muestran el uso WPF y no se pueden traducir directamente a UWP XAML).
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Union">
       <MemberSignature Language="C#" Value="public void Union (Windows.Foundation.Point point);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Union(valuetype Windows.Foundation.Point point) cil managed" />
@@ -604,7 +806,16 @@
       <Docs>
         <summary>Obtiene o establece el ancho del rectángulo.</summary>
         <value>Valor que representa el ancho del rectángulo en píxeles. El valor predeterminado es 0.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Rect` struct. Para obtener más información, consulte [Rect](https://docs.microsoft.com/uwp/api/windows.foundation.rect) en la referencia de API de UWP.  
+
+ Para obtener más información y ejemplos de este miembro, vea <xref:System.Windows.Rect.Width?displayProperty=nameWithType> en la referencia de API de .NET Framework. (Los ejemplos muestran el uso WPF y no se pueden traducir directamente a UWP XAML).
+
+ ]]></format>
+    </remarks>
         <exception cref="T:System.ArgumentException">Se ha especificado un valor menor que 0.</exception>
       </Docs>
     </Member>
@@ -627,7 +838,16 @@
       <Docs>
         <summary>Obtiene o establece el valor del eje X del lado izquierdo del rectángulo.</summary>
         <value>Valor del eje X del lado izquierdo del rectángulo. Este valor se interpreta como píxeles dentro del espacio de coordenadas.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Rect` struct. Para obtener más información, consulte [Rect](https://docs.microsoft.com/uwp/api/windows.foundation.rect) en la referencia de API de UWP.  
+
+ Para obtener más información y ejemplos de este miembro, vea <xref:System.Windows.Rect.X?displayProperty=nameWithType> en la referencia de API de .NET Framework. (Los ejemplos muestran el uso WPF y no se pueden traducir directamente a UWP XAML).
+
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -649,7 +869,16 @@
       <Docs>
         <summary>Obtiene o establece el valor del eje Y del lado superior del rectángulo.</summary>
         <value>Valor del eje Y del lado superior del rectángulo. Este valor se interpreta como píxeles dentro del espacio de coordenadas.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Rect` struct. Para obtener más información, consulte [Rect](https://docs.microsoft.com/uwp/api/windows.foundation.rect) en la referencia de API de UWP.  
+
+ Para obtener más información y ejemplos de este miembro, vea <xref:System.Windows.Rect.Y?displayProperty=nameWithType> en la referencia de API de .NET Framework. (Los ejemplos muestran el uso WPF y no se pueden traducir directamente a UWP XAML).
+
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
   </Members>

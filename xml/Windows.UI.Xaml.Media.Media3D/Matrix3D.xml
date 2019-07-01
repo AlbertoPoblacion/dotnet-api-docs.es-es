@@ -1,5 +1,5 @@
 <Type Name="Matrix3D" FullName="Windows.UI.Xaml.Media.Media3D.Matrix3D">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="39acc5cae7852c2b767eb8a75e07c89893d23ee0" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67250158" /></Metadata><TypeSignature Language="C#" Value="public struct Matrix3D : IFormattable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5b1e9f93284e316c3593106144fe08b6435ff610" /><Meta Name="ms.sourcegitcommit" Value="61757d0366a172cdbc11436deb1c1ffa49d97238" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/28/2019" /><Meta Name="ms.locfileid" Value="67457948" /></Metadata><TypeSignature Language="C#" Value="public struct Matrix3D : IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Matrix3D extends System.ValueType implements class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />
   <TypeSignature Language="VB.NET" Value="Public Structure Matrix3D&#xA;Implements IFormattable" />
@@ -25,7 +25,16 @@
   </Attributes>
   <Docs>
     <summary>Representa una matriz de 4 × 4 que se utiliza para transformaciones en un espacio tridimensional (3D).</summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+ 
+ ]]></format>
+    </remarks>
+    <related type="Article" href="https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d">Matrix3D (UWP)</related>
+    <related type="Article" href="https://docs.microsoft.com/dotnet/api/system.windows.media.media3d.matrix3d">System.Windows.Media.Media3D.Matrix3D (.NET)</related>    
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -77,9 +86,34 @@
         <param name="offsetZ">Valor del campo de desplazamiento Z de la nueva matriz.</param>
         <param name="m44">Valor del campo (4,4) de la nueva matriz.</param>
         <summary>Inicializa una nueva instancia de la clase <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime.UI.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
@@ -162,7 +196,14 @@
       <Docs>
         <summary>Devuelve el código hash de esta matriz.</summary>
         <returns>Código hash de esta matriz.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="HasInverse">
@@ -184,7 +225,14 @@
       <Docs>
         <summary>Obtiene un valor que indica si <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> se puede invertir.</summary>
         <value><see langword="true" /> Si el <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> tiene un inverso; de lo contrario, false. El valor predeterminado es true.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Identity">
@@ -206,7 +254,14 @@
       <Docs>
         <summary>Cambia una estructura <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> en un identidad de <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
         <value><see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> de identidad.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Invert">
@@ -228,7 +283,14 @@
       <Parameters />
       <Docs>
         <summary>Invierte esta estructura <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
         <exception cref="T:System.InvalidOperationException">La matriz no se puede invertir.</exception>
       </Docs>
     </Member>
@@ -251,7 +313,14 @@
       <Docs>
         <summary>Determina si esta estructura <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> es un objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> de identidad.</summary>
         <value><see langword="true" /> Si el <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> es una identidad <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />; de lo contrario, false. El valor predeterminado es true.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="M11">
@@ -273,7 +342,14 @@
       <Docs>
         <summary>Obtiene o establece el valor de la primera fila y la primera columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
         <value>El valor de la primera fila y primera columna de esta <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> struct.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="M12">
@@ -295,7 +371,14 @@
       <Docs>
         <summary>Obtiene o establece el valor de la primera fila y la segunda columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
         <value>Valor de la primera fila y segunda columna de esta <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="M13">
@@ -317,7 +400,14 @@
       <Docs>
         <summary>Obtiene o establece el valor de la primera fila y la tercera columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
         <value>Valor de la primera fila y la tercera columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="M14">
@@ -339,7 +429,14 @@
       <Docs>
         <summary>Obtiene o establece el valor de la primera fila y la cuarta columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
         <value>Valor de la primera fila y la cuarta columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="M21">
@@ -361,7 +458,14 @@
       <Docs>
         <summary>Obtiene o establece el valor de la segunda fila y la primera columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
         <value>Valor de la segunda fila y primera columna de esta <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="M22">
@@ -383,7 +487,14 @@
       <Docs>
         <summary>Obtiene o establece el valor de la segunda fila y la segunda columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
         <value>Valor de la segunda fila y la segunda columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="M23">
@@ -405,7 +516,14 @@
       <Docs>
         <summary>Obtiene o establece el valor de la segunda fila y la tercera columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
         <value>Valor de la segunda fila y la tercera columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="M24">
@@ -427,7 +545,14 @@
       <Docs>
         <summary>Obtiene o establece el valor de la segunda fila y la cuarta columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
         <value>Valor de la segunda fila y la cuarta columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="M31">
@@ -449,7 +574,14 @@
       <Docs>
         <summary>Obtiene o establece el valor de la tercera fila y la primera columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
         <value>Valor de la tercera fila y la primera columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="M32">
@@ -471,7 +603,14 @@
       <Docs>
         <summary>Obtiene o establece el valor de la tercera fila y la segunda columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
         <value>Valor de la tercera fila y la segunda columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="M33">
@@ -493,7 +632,14 @@
       <Docs>
         <summary>Obtiene o establece el valor de la tercera fila y la tercera columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
         <value>Valor de la tercera fila y la tercera columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="M34">
@@ -515,7 +661,14 @@
       <Docs>
         <summary>Obtiene o establece el valor de la tercera fila y la cuarta columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
         <value>Valor de la tercera fila y la cuarta columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="M44">
@@ -537,7 +690,14 @@
       <Docs>
         <summary>Obtiene o establece el valor de la cuarta fila y la cuarta columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
         <value>Valor de la cuarta fila y la cuarta columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OffsetX">
@@ -559,7 +719,14 @@
       <Docs>
         <summary>Obtiene o establece el valor de la cuarta fila y la primera columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
         <value>Valor de la cuarta fila y la primera columna de esta <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OffsetY">
@@ -581,7 +748,14 @@
       <Docs>
         <summary>Obtiene o establece el valor de la cuarta fila y la segunda columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
         <value>Valor de la cuarta fila y la segunda columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="OffsetZ">
@@ -603,7 +777,14 @@
       <Docs>
         <summary>Obtiene o establece el valor de la cuarta fila y la tercera columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</summary>
         <value>Valor de la cuarta fila y la tercera columna de este objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -631,7 +812,14 @@
         <param name="matrix2">Segunda matriz que se va a comparar.</param>
         <summary>Compara dos instancias de <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> para determinar si sus valores son iguales.</summary>
         <returns>Es <see langword="true" /> si las matrices son iguales; de lo contrario, es <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -659,7 +847,14 @@
         <param name="matrix2">Segunda matriz que se va a comparar.</param>
         <summary>Compara dos instancias de <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> para determinar si no son iguales.</summary>
         <returns>Es <see langword="true" /> si las matrices son diferentes; de lo contrario, es <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
@@ -687,7 +882,14 @@
         <param name="matrix2">Matriz por la que se multiplica la primera matriz.</param>
         <summary>Multiplica las matrices especificadas.</summary>
         <returns>Objeto <see cref="T:Windows.UI.Xaml.Media.Media3D.Matrix3D" /> que es el resultado de la multiplicación.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.IFormattable.ToString">
@@ -722,7 +924,14 @@
         <param name="provider">Proveedor que se va a usar.</param>
         <summary>Para obtener una descripción de este miembro, vea <see cref="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" />.</summary>
         <returns>Valor de la instancia actual en el formato especificado.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Matrix3D` struct. Para obtener más información, consulte [Matrix3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d.matrix3d) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">

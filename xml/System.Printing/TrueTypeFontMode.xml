@@ -1,5 +1,5 @@
 <Type Name="TrueTypeFontMode" FullName="System.Printing.TrueTypeFontMode">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="784e87cde35ad0c6bc7c472f75972a4780c572b7" /><Meta Name="ms.sourcegitcommit" Value="16d2d159872fd213cae4b8f371d7ae9c8b027c89" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="11/17/2018" /><Meta Name="ms.locfileid" Value="51891157" /></Metadata><TypeSignature Language="C#" Value="public enum TrueTypeFontMode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="989d54c2028017e4ea85f1897d118ee3336f4d44" /><Meta Name="ms.sourcegitcommit" Value="087e7080a3f8a7cb9729f7cd398931df8ca81797" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/26/2019" /><Meta Name="ms.locfileid" Value="67399473" /></Metadata><TypeSignature Language="C#" Value="public enum TrueTypeFontMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TrueTypeFontMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Printing.TrueTypeFontMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum TrueTypeFontMode" />
@@ -41,7 +41,7 @@
   
  Nunca debe establecer un <xref:System.Printing.PrintTicket> propiedad **desconocido**. Si algún otro <xref:System.Printing.PrintTicket> generar la aplicación ha creado un *documento PrintTicket* que establece la característica de control de fuentes TrueType en una opción no reconocida (es decir, una opción que no está definida en el [esquema de impresión ](https://go.microsoft.com/fwlink/?LinkId=186397), un <xref:System.Printing.PrintTicket> objeto en la aplicación que se construye con ese documento tendrá **desconocido** como el valor de la <xref:System.Printing.PrintTicket.TrueTypeFontMode%2A> propiedad.  
   
- Aunque el <xref:System.Printing.PrintTicket> y <xref:System.Printing.PrintCapabilities> no se puede heredar las clases, puede ampliar el [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) para reconocer las características del dispositivo de impresión que no se recogen en el <xref:System.Printing.PrintTicket> o <xref:System.Printing.PrintCapabilities> clases. Para obtener más información, consulte [NOTINBUILD: Cómo: Extender el esquema de impresión y crear nuevas clases de sistema de impresión](https://msdn.microsoft.com/library/a3600218-1ea5-478a-9853-6560464f2885).  
+ Aunque el <xref:System.Printing.PrintTicket> y <xref:System.Printing.PrintCapabilities> no se puede heredar las clases, puede ampliar el [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) para reconocer las características del dispositivo de impresión que no se recogen en el <xref:System.Printing.PrintTicket> o <xref:System.Printing.PrintCapabilities> clases. Para obtener más información, vea [Cómo: Extender el esquema de impresión y crear nuevas clases de sistema de impresión](https://docs.microsoft.com/previous-versions/aa970573(v=vs.100)).  
   
    
   

@@ -1,5 +1,5 @@
 <Type Name="PrintTicket" FullName="System.Printing.PrintTicket">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="30870fea93418d1e9437127307d88c34a609a751" /><Meta Name="ms.sourcegitcommit" Value="42a3c35677e9d87eeb503607ae50c9d39827d414" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="12/17/2018" /><Meta Name="ms.locfileid" Value="53481787" /></Metadata><TypeSignature Language="C#" Value="public sealed class PrintTicket : System.ComponentModel.INotifyPropertyChanged" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="bf1898213ff76011bca0be93e6177c17361537c8" /><Meta Name="ms.sourcegitcommit" Value="087e7080a3f8a7cb9729f7cd398931df8ca81797" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/26/2019" /><Meta Name="ms.locfileid" Value="67399451" /></Metadata><TypeSignature Language="C#" Value="public sealed class PrintTicket : System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintTicket extends System.Object implements class System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintTicket" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrintTicket&#xA;Implements INotifyPropertyChanged" />
@@ -28,7 +28,7 @@
   
  El <xref:System.Printing.PrintTicket> clase permite que la aplicación configurar las características de la impresora sin tener que escribir directamente en los de XML <xref:System.IO.Stream> objetos.  
   
- Todas las características más populares de impresoras de archivo y la fotografía empresariales y domésticas se representan mediante las propiedades de <xref:System.Printing.PrintTicket> la clase. Pero la [esquema de impresión](https://go.microsoft.com/fwlink/?LinkId=186397) define muchos más, es menos común, las características y pueden ampliarse para controlar las características de dispositivos de impresión de Especialidad. Por lo tanto, aunque el <xref:System.Printing.PrintTicket> y <xref:System.Printing.PrintCapabilities> no se puede heredar las clases, puede ampliar el [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) para reconocer las características del dispositivo de impresión que no se recogen en el <xref:System.Printing.PrintTicket> o <xref:System.Printing.PrintCapabilities> clases. Para obtener más información, consulte [NOTINBUILD: Procedimiento Extender el esquema de impresión y crear nuevas clases de sistema de impresión](https://msdn.microsoft.com/library/a3600218-1ea5-478a-9853-6560464f2885).  
+ Todas las características más populares de impresoras de archivo y la fotografía empresariales y domésticas se representan mediante las propiedades de <xref:System.Printing.PrintTicket> la clase. Pero la [esquema de impresión](https://go.microsoft.com/fwlink/?LinkId=186397) define muchos más, es menos común, las características y pueden ampliarse para controlar las características de dispositivos de impresión de Especialidad. Por lo tanto, aunque el <xref:System.Printing.PrintTicket> y <xref:System.Printing.PrintCapabilities> no se puede heredar las clases, puede ampliar el [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) para reconocer las características del dispositivo de impresión que no se recogen en el <xref:System.Printing.PrintTicket> o <xref:System.Printing.PrintCapabilities> clases. Para obtener más información, vea [Cómo: Extender el esquema de impresión y crear nuevas clases de sistema de impresión](https://docs.microsoft.com/previous-versions/aa970573(v=vs.100)).  
   
  **Tenga en cuenta** cuando el <xref:System.Printing.PrintTicket> objeto se crea con el constructor que toma un documento PrintTicket (como un <xref:System.IO.Stream>) parámetro, ese documento completo se almacena en un campo no público en el objeto, incluidos los elementos XML dentro de él que Express menos características comunes que no están representadas por cualquiera de las propiedades públicas de la <xref:System.Printing.PrintTicket> clase. De hecho, si el controlador que generó el documento PrintTicket utiliza una extensión privada de la [esquema de impresión](https://go.microsoft.com/fwlink/?LinkId=186397), ese definido marcado también se almacena como parte del documento PrintTicket no público.  
   
@@ -122,7 +122,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">El valor de <paramref name="xmlStream" /> es <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="xmlStream" /> es <see langword="null" />.</exception>
         <exception cref="T:System.FormatException"><paramref name="xmlStream" /> no es un XML válido.</exception>
         <related type="ExternalDocumentation" href="https://go.microsoft.com/fwlink/?LinkId=186397">Esquema de impresión</related>
       </Docs>
@@ -677,10 +677,10 @@ El código de llamada ha intentado establecer la propiedad con un objeto <see cr
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">El código de llamada ha intentado establecer la propiedad con un objeto <see cref="T:System.Printing.PageResolution" /> que tiene por lo menos una propiedad <see langword="null" />.  
   
-O bien 
+o bien 
 El código de llamada ha intentado establecer la propiedad con un objeto <see cref="T:System.Printing.PageMediaSize" /> cuya propiedad <see cref="P:System.Printing.PageResolution.QualitativeResolution" /> está establecida en un valor que no está en la enumeración <see cref="T:System.Printing.PageQualitativeResolution" />.  
   
-O bien 
+o bien 
 El código de llamada ha intentado establecer la propiedad con un objeto <see cref="T:System.Printing.PageResolution" /> cuya propiedad <see cref="P:System.Printing.PageResolution.X" /> o <see cref="P:System.Printing.PageResolution.Y" /> está establecida en un valor menor que 1.</exception>
         <altmember cref="T:System.Printing.PageResolution" />
       </Docs>

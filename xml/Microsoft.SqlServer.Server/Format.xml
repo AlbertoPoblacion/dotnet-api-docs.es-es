@@ -1,5 +1,5 @@
 <Type Name="Format" FullName="Microsoft.SqlServer.Server.Format">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="1bc93c473dbd520c0a3c09482d4690ad6df0e29c" /><Meta Name="ms.sourcegitcommit" Value="220917117f9d774aaa482439aa7324e39dc1f5b6" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="02/25/2019" /><Meta Name="ms.locfileid" Value="56760875" /></Metadata><TypeSignature Language="C#" Value="public enum Format" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ffca0cda31e32a79ce7ab852c13be008741be0df" /><Meta Name="ms.sourcegitcommit" Value="feb111e137a41d186aef01d83f04819d820520eb" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/21/2019" /><Meta Name="ms.locfileid" Value="67307959" /></Metadata><TypeSignature Language="C#" Value="public enum Format" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Format extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.Format" />
   <TypeSignature Language="VB.NET" Value="Public Enum Format" />
@@ -26,15 +26,43 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Lo utilizan <xref:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute> y <xref:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute> para indicar el formato de serialización de un tipo definido por el usuario (UDT) o agregado.  
+
+Esta enumeración se utiliza por <xref:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute> y <xref:Microsoft.SqlServer.Server.SqlUserDefinedAggregateAttribute> para indicar el formato de serialización de un tipo definido por el usuario (UDT) o un agregado. El uso de la `Native` y `UserDefined` los miembros de enumeración tiene requisitos especiales.   
+
+- `Format.Native`
+
+   Los requisitos para la `Format.Native` formato son:  
   
-   
+   - El <xref:System.Runtime.InteropServices.StructLayoutAttribute> con un <xref:System.Runtime.InteropServices.StructLayoutAttribute.Value> el valor de propiedad <xref:System.Runtime.InteropServices.LayoutKind.Sequential?displayProperty=nameWithType> deben aplicarse al agregado o UDT si está definido en una clase y no en una estructura. Esto controla el diseño físico de los campos de datos y se usa para imponer a los miembros que se disponen secuencialmente en el orden en que aparecen. SQL Server usa este atributo para determinar el orden de campo para los UDT con varios campos.
   
+   - El tipo debe contener al menos un miembro (los valores serializados no pueden ser cero bytes de tamaño).  
+  
+   - Todos los campos del agregado deben ser *bits/bytes*; es decir, que deben tener una representación común en la memoria administrada y y no requieren un tratamiento especial por el serializador de interoperabilidad.  
+  
+   - Todos los campos del UDT deben ser de uno de los siguientes tipos que se pueden serializar: `bool`, `byte`, `sbyte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float` , `double`, <xref:System.Data.SqlTypes.SqlByte>, <xref:System.Data.SqlTypes.SqlInt16>, <xref:System.Data.SqlTypes.SqlInt32>, <xref:System.Data.SqlTypes.SqlInt64>, <xref:System.Data.SqlTypes.SqlDateTime>, <xref:System.Data.SqlTypes.SqlSingle>, <xref:System.Data.SqlTypes.SqlDouble>, <xref:System.Data.SqlTypes.SqlMoney>, u otros tipos de valor definidos por el usuario que contienen campos de uno de estos tipos.  
+
+   - El agregado no debe especificar un valor para `MaxByteSize`.  
+  
+   - El agregado no debe tener ningún campo [NonSerialized].  
+  
+   - Los campos no deben marcarse como un diseño explícito (con un <xref:System.Runtime.InteropServices.StructLayoutAttribute.Value?displayProperty=nameWithType> de <xref:System.Runtime.InteropServices.LayoutKind.Explicit?displayProperty=nameWithType>).  
+
+- `Format.UserDefined`
+
+   Los requisitos para la `Format.UserDefined` formato son:
+
+   - El agregado debe especificar un valor para `MaxByteSize`.  
+  
+   - Especifique el <xref:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute.IsByteOrdered%2A?displayProperty=nameWithType> propiedad de atributo. El valor predeterminado es `false`.  
+  
+   - Si se omite cualquier campo en el <xref:Microsoft.SqlServer.Server.IBinarySerialize.Read%2A?displayProperty=nameWithType> o <xref:Microsoft.SqlServer.Server.IBinarySerialize.Write%2A?displayProperty=nameWithType> métodos, el estado de ese campo no está serializado.  
+
 ## Examples  
- El ejemplo siguiente se muestra el `UserDefinedType` atributo del punto de UDT.  El UDT es el orden de bytes, se denomina "Punto", tiene un método de validación denominado "ValidatePoint" y usa el formato de serialización nativa.  
+
+El ejemplo siguiente se muestra el `UserDefinedType` atributo del punto de UDT.  El UDT es el orden de bytes, se denomina "Punto", tiene un método de validación denominado "ValidatePoint" y usa el formato de serialización nativa.  
   
- [!code-csharp[DataWorks SqlUserDefinedTypeAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlUserDefinedTypeAttribute Example/CS/source.cs#1)]
- [!code-vb[DataWorks SqlUserDefinedTypeAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlUserDefinedTypeAttribute Example/VB/source.vb#1)]  
+[!code-csharp[DataWorks SqlUserDefinedTypeAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SqlUserDefinedTypeAttribute Example/CS/source.cs#1)]
+[!code-vb[DataWorks SqlUserDefinedTypeAttribute Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlUserDefinedTypeAttribute Example/VB/source.vb#1)]  
   
  ]]></format>
     </remarks>
@@ -65,29 +93,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>El formato de serialización <see langword="Native" /> utiliza un algoritmo muy simple que permite SQL Server almacenar en disco una representación eficaz del UDT. Los tipos marcados para la serialización <see langword="Native" /> solo pueden tener como miembros tipos de valor ("structs" en Microsoft Visual C# y estructuras en Microsoft Visual Basic .NET). Los miembros de los tipos de referencia (como clases en Visual C# y Visual Basic), ya sean definidos por el usuario o existentes en Framework (como <see cref="T:System.String" />), no se admiten.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Son los requisitos para este formato:  
-  
--   El `StructLayout.LayoutKindSequential` atributo debe aplicarse al agregado o UDT si está definido en una clase y no en una estructura. Esto controla el diseño físico de los campos de datos y se usa para imponer a los miembros que se disponen secuencialmente en el orden en que aparecen. SQL Server usa este atributo para determinar el orden de campo para los UDT con varios campos.  
-  
--   El tipo debe contener al menos un miembro (los valores serializados no pueden ser cero bytes de tamaño).  
-  
--   Todos los campos del agregado deben ser *bits/bytes*, es decir, que deben tener una representación común en la memoria administrada y y no requieren un tratamiento especial por el serializador de interoperabilidad.  
-  
--   Todos los campos del UDT deben ser de uno de los siguientes tipos que se pueden serializar: `bool`, `byte`, `sbyte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float` , `double`, <xref:System.Data.SqlTypes.SqlByte>, <xref:System.Data.SqlTypes.SqlInt16>, <xref:System.Data.SqlTypes.SqlInt32>, <xref:System.Data.SqlTypes.SqlInt64>, <xref:System.Data.SqlTypes.SqlDateTime>, <xref:System.Data.SqlTypes.SqlSingle>, <xref:System.Data.SqlTypes.SqlDouble>, <xref:System.Data.SqlTypes.SqlMoney>, u otros tipos de valor definidos por el usuario que contienen campos de uno de estos tipos.  
-  
--   El agregado no debe especificar un valor para `MaxByteSize`.  
-  
--   El agregado no debe tener ningún campo [NonSerialized].  
-  
--   Los campos no deben marcarse como un diseño explícito (<xref:System.Runtime.InteropServices.StructLayoutAttribute>).  
-  
- ]]></format>
-        </remarks>
+        <summary>Este formato de serialización utiliza un algoritmo muy simple que permite a SQL Server almacenar en disco una representación eficaz del UDT. Los tipos marcados para la serialización <see langword="Native" /> solo pueden tener como miembros tipos de valor ("structs" en Microsoft Visual C# y estructuras en Microsoft Visual Basic .NET). Los miembros de los tipos de referencia (como clases en Visual C# y Visual Basic), ya sean definidos por el usuario o existentes en las bibliotecas de clases de .NET (como <see cref="T:System.String" />), no se admiten.</summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -143,19 +149,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>El formato de serialización <see langword="UserDefined" /> otorga al desarrollador pleno control sobre el formato binario a través del método <see cref="T:Microsoft.SqlServer.Server.IBinarySerialize" /><see langword=".Write" /> y del método <see cref="T:Microsoft.SqlServer.Server.IBinarySerialize" /><see langword=".Read" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- El agregado debe especificar un valor para `MaxByteSize`.  
-  
- Especifique el <xref:Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute.IsByteOrdered%2A> propiedad de atributo. El valor predeterminado es false.  
-  
- Si se omite cualquier campo en el <xref:Microsoft.SqlServer.Server.IBinarySerialize.Read%2A> o <xref:Microsoft.SqlServer.Server.IBinarySerialize.Write%2A> métodos, el estado de ese campo no está serializado.  
-  
- ]]></format>
-        </remarks>
+        <summary>Este formato de serialización otorga al desarrollador pleno control sobre el formato binario a través de los métodos <see cref="M:Microsoft.SqlServer.Server.IBinarySerialize.Write(System.IO.BinaryWriter)" /> y <see cref="M:Microsoft.SqlServer.Server.IBinarySerialize.Read(System.IO.BinaryReader)" />.</summary>
       </Docs>
     </Member>
   </Members>

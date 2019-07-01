@@ -1,5 +1,5 @@
 <Type Name="Utf8JsonWriter" FullName="System.Text.Json.Utf8JsonWriter">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="62c74e1a16feb068cd31fa111578712e034182a9" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67243683" /></Metadata><TypeSignature Language="C#" Value="public sealed class Utf8JsonWriter : IAsyncDisposable, IDisposable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="385cb760a73c83246471a467d05aea4d0123e51b" /><Meta Name="ms.sourcegitcommit" Value="61757d0366a172cdbc11436deb1c1ffa49d97238" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/28/2019" /><Meta Name="ms.locfileid" Value="67458298" /></Metadata><TypeSignature Language="C#" Value="public sealed class Utf8JsonWriter : IAsyncDisposable, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Utf8JsonWriter extends System.Object implements class System.IAsyncDisposable, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Text.Json.Utf8JsonWriter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Utf8JsonWriter&#xA;Implements IAsyncDisposable, IDisposable" />
@@ -193,6 +193,8 @@ En el caso de IBufferWriter, esto hace avanzar subyacente <xref:System.Buffers.I
 
 En el caso de Stream, este escribe los datos en la secuencia y la vuelca.
 
+El <xref:System.Text.Json.Utf8JsonWriter> instancia no se puede reutilizar después de desechar.
+
           ]]></format>
         </remarks>
       </Docs>
@@ -225,6 +227,8 @@ En el caso de Stream, este escribe los datos en la secuencia y la vuelca.
 En el caso de IBufferWriter, esto hace avanzar subyacente <xref:System.Buffers.IBufferWriter`1> según lo que se ha escrito hasta ahora.
           
 En el caso de Stream, este escribe los datos en la secuencia y la vuelca.
+
+El <xref:System.Text.Json.Utf8JsonWriter> instancia no se puede reutilizar después de desechar.
             
             ]]></format>
         </remarks>
@@ -786,7 +790,7 @@ El valor de comentario no se aplicará escape antes de la escritura.
         </remarks>
         <exception cref="T:System.ArgumentException">El valor especificado es demasiado grande.
         
-O bien
+o bien
 
 <paramref name="value" /> contiene un delimitador de comentario (es decir, */).</exception>
       </Docs>
@@ -1001,10 +1005,10 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como un número de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como intervalo de bytes de solo lectura y el valor <see cref="T:System.Decimal" /> (como un número JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
-          
-El nombre de propiedad es de escape antes de la escritura.
-          
+          <format><![CDATA[  
+
+Escribe el <xref:System.Decimal> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, "G"). El nombre de propiedad es de escape antes de la escritura.
+
           ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">El nombre de propiedad especificado es demasiado grande.</exception>
@@ -1035,10 +1039,10 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como un número de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como intervalo de bytes de solo lectura y el valor <see cref="T:System.Double" /> (como un número JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
-          
-El nombre de propiedad es de escape antes de la escritura.
-          
+          <format><![CDATA[  
+
+Escribe el <xref:System.Double> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, "G"). El nombre de propiedad es de escape antes de la escritura.
+
           ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">El nombre de propiedad especificado es demasiado grande.</exception>
@@ -1069,10 +1073,10 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como un número de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como intervalo de bytes de solo lectura y el valor <see cref="T:System.Int32" /> (como un número JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
-          
-El nombre de propiedad es de escape antes de la escritura.
-          
+          <format><![CDATA[  
+
+Escribe el <xref:System.Int32> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, "G"), por ejemplo: 32767. El nombre de propiedad es de escape antes de la escritura.
+
           ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">El nombre de propiedad especificado es demasiado grande.</exception>
@@ -1103,10 +1107,10 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como un número de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como intervalo de bytes de solo lectura y el valor <see cref="T:System.Int64" /> (como un número JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
-          
-El nombre de propiedad es de escape antes de la escritura.
-          
+          <format><![CDATA[  
+
+Escribe el <xref:System.Int64> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, "G"), por ejemplo: 32767. El nombre de propiedad es de escape antes de la escritura.
+
           ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">El nombre de propiedad especificado es demasiado grande.</exception>
@@ -1137,10 +1141,10 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como un número de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como intervalo de bytes de solo lectura y el valor <see cref="T:System.Single" /> (como un número JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
-          
-El nombre de propiedad es de escape antes de la escritura.
-          
+          <format><![CDATA[  
+
+Escribe el <xref:System.Single> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, "G"). El nombre de propiedad es de escape antes de la escritura.
+
           ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">El nombre de propiedad especificado es demasiado grande.</exception>
@@ -1176,10 +1180,10 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como un número de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como intervalo de bytes de solo lectura y el valor <see cref="T:System.UInt32" /> (como un número JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
-          
-El nombre de propiedad es de escape antes de la escritura.
-          
+          <format><![CDATA[  
+
+Escribe el <xref:System.UInt32> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, "G"), por ejemplo: 32767. El nombre de propiedad es de escape antes de la escritura.
+
           ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">El nombre de propiedad especificado es demasiado grande.</exception>
@@ -1215,10 +1219,10 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como un número de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como intervalo de bytes de solo lectura y el valor <see cref="T:System.UInt64" /> (como un número JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
-          
-El nombre de propiedad es de escape antes de la escritura.
-          
+          <format><![CDATA[  
+
+Escribe el <xref:System.UInt64> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, "G"), por ejemplo: 32767. El nombre de propiedad es de escape antes de la escritura.
+
           ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">El nombre de propiedad especificado es demasiado grande.</exception>
@@ -1249,10 +1253,10 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como un número de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como intervalo de caracteres de solo lectura y el valor <see cref="T:System.Decimal" /> (como un número JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
-          
-El nombre de propiedad es de escape antes de la escritura.
-          
+          <format><![CDATA[  
+
+Escribe el <xref:System.Decimal> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, "G"). El nombre de propiedad es de escape antes de la escritura.
+
           ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">El nombre de propiedad especificado es demasiado grande.</exception>
@@ -1283,10 +1287,10 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como un número de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como intervalo de caracteres de solo lectura y el valor <see cref="T:System.Double" /> (como un número JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
-          
-El nombre de propiedad es de escape antes de la escritura.
-          
+          <format><![CDATA[  
+
+Escribe el <xref:System.Double> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, "G"). El nombre de propiedad es de escape antes de la escritura.
+
           ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">El nombre de propiedad especificado es demasiado grande.</exception>
@@ -1317,9 +1321,9 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como un número de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como intervalo de caracteres de solo lectura y el valor <see cref="T:System.Int32" /> (como un número JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
+          <format><![CDATA[  
 
-El nombre de propiedad es de escape antes de la escritura.
+Escribe el <xref:System.Int32> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, "G"), por ejemplo: 32767. El nombre de propiedad es de escape antes de la escritura.
 
           ]]></format>
         </remarks>
@@ -1351,9 +1355,9 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como un número de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como intervalo de caracteres de solo lectura y el valor <see cref="T:System.Int64" /> (como un número JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
+          <format><![CDATA[  
 
-El nombre de propiedad es de escape antes de la escritura.
+Escribe el <xref:System.Int64> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, "G"), por ejemplo: 32767. El nombre de propiedad es de escape antes de la escritura.
 
           ]]></format>
         </remarks>
@@ -1385,9 +1389,9 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como un número de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como intervalo de caracteres de solo lectura y el valor <see cref="T:System.Single" /> (como un número JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
+          <format><![CDATA[  
 
-El nombre de propiedad es de escape antes de la escritura.
+Escribe el <xref:System.Single> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, "G"). El nombre de propiedad es de escape antes de la escritura.
 
           ]]></format>
         </remarks>
@@ -1424,9 +1428,9 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como un número de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como intervalo de caracteres de solo lectura y el valor <see cref="T:System.UInt32" /> (como un número JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
+          <format><![CDATA[  
 
-El nombre de propiedad es de escape antes de la escritura.
+Escribe el <xref:System.UInt32> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, "G"), por ejemplo: 32767. El nombre de propiedad es de escape antes de la escritura.
 
           ]]></format>
         </remarks>
@@ -1463,9 +1467,9 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como un número de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como intervalo de caracteres de solo lectura y el valor <see cref="T:System.UInt64" /> (como un número JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
+          <format><![CDATA[  
 
-El nombre de propiedad es de escape antes de la escritura.
+Escribe el <xref:System.UInt64> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, "G"), por ejemplo: 32767. El nombre de propiedad es de escape antes de la escritura.
 
           ]]></format>
         </remarks>
@@ -1497,9 +1501,9 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como un número de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como cadena y el valor <see cref="T:System.Decimal" /> (como un número JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
+          <format><![CDATA[  
 
-El nombre de propiedad es de escape antes de la escritura.
+Escribe el <xref:System.Decimal> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, "G"). El nombre de propiedad es de escape antes de la escritura.
 
           ]]></format>
         </remarks>
@@ -1531,9 +1535,9 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como un número de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como cadena y el valor <see cref="T:System.Double" /> (como un número JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
+          <format><![CDATA[  
 
-El nombre de propiedad es de escape antes de la escritura.
+Escribe el <xref:System.Double> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, "G"). El nombre de propiedad es de escape antes de la escritura.
 
           ]]></format>
         </remarks>
@@ -1565,9 +1569,9 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como un número de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como cadena y el valor <see cref="T:System.Int32" /> (como un número JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
+          <format><![CDATA[  
 
-El nombre de propiedad es de escape antes de la escritura.
+Escribe el <xref:System.Int32> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, "G"), por ejemplo: 32767. El nombre de propiedad es de escape antes de la escritura.
 
           ]]></format>
         </remarks>
@@ -1599,9 +1603,9 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como un número de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como cadena y el valor <see cref="T:System.Int64" /> (como un número JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
+          <format><![CDATA[  
 
-El nombre de propiedad es de escape antes de la escritura.
+Escribe el <xref:System.Int64> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, "G"), por ejemplo: 32767. El nombre de propiedad es de escape antes de la escritura.
 
           ]]></format>
         </remarks>
@@ -1633,9 +1637,9 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como un número de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como cadena y el valor <see cref="T:System.Single" /> (como un número JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
+          <format><![CDATA[  
 
-El nombre de propiedad es de escape antes de la escritura.
+Escribe el <xref:System.Single> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, "G"). El nombre de propiedad es de escape antes de la escritura.
 
           ]]></format>
         </remarks>
@@ -1672,9 +1676,9 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como un número de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como cadena y el valor <see cref="T:System.UInt32" /> (como un número JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
+          <format><![CDATA[  
 
-El nombre de propiedad es de escape antes de la escritura.
+Escribe el <xref:System.UInt32> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, "G"), por ejemplo: 32767. El nombre de propiedad es de escape antes de la escritura.
 
           ]]></format>
         </remarks>
@@ -1711,9 +1715,9 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como un número de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como cadena y el valor <see cref="T:System.UInt64" /> (como un número JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
+          <format><![CDATA[  
 
-El nombre de propiedad es de escape antes de la escritura.
+Escribe el <xref:System.UInt64> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, "G"), por ejemplo: 32767. El nombre de propiedad es de escape antes de la escritura.
 
           ]]></format>
         </remarks>
@@ -1934,7 +1938,13 @@ El nombre de propiedad es de escape antes de la escritura.
       <Docs>
         <param name="value">Valor que se va a escribir como un número de JSON como un elemento de una matriz de JSON.</param>
         <summary>Escribe el valor <see cref="T:System.Decimal" /> (como un número JSON) como elemento de una matriz JSON.</summary>
-        <remarks>Este método escribe el <see cref="T:System.Decimal" /> con el valor predeterminado de valor <see cref="T:System.Buffers.StandardFormat" /> (es decir, "G").</remarks>
+        <remarks>
+          <format><![CDATA[  
+
+Este método escribe el <xref:System.Decimal> con el valor predeterminado de valor <xref:System.Buffers.StandardFormat> (es decir, "G").
+
+          ]]></format>
+        </remarks>
         <exception cref="T:System.InvalidOperationException">La validación está habilitada y la operación daría lugar a la escritura de JSON no válido.</exception>
       </Docs>
     </Member>
@@ -1959,7 +1969,13 @@ El nombre de propiedad es de escape antes de la escritura.
       <Docs>
         <param name="value">Valor que se va a escribir como un número de JSON como un elemento de una matriz de JSON.</param>
         <summary>Escribe el valor <see cref="T:System.Double" /> (como un número JSON) como elemento de una matriz JSON.</summary>
-        <remarks>Este método escribe el <see cref="T:System.Double" /> con el valor predeterminado de valor <see cref="T:System.Buffers.StandardFormat" /> (es decir, "G").</remarks>
+        <remarks>
+          <format><![CDATA[  
+
+Este método escribe el <xref:System.Double> con el valor predeterminado de valor <xref:System.Buffers.StandardFormat> (es decir, "G").
+
+          ]]></format>
+        </remarks>
         <exception cref="T:System.InvalidOperationException">La validación está habilitada y la operación daría lugar a la escritura de JSON no válido.</exception>
       </Docs>
     </Member>
@@ -1984,7 +2000,13 @@ El nombre de propiedad es de escape antes de la escritura.
       <Docs>
         <param name="value">Valor que se va a escribir como un número de JSON como un elemento de una matriz de JSON.</param>
         <summary>Escribe el valor <see cref="T:System.Int32" /> (como un número JSON) como elemento de una matriz JSON.</summary>
-        <remarks>Este método escribe el <see cref="T:System.Int32" /> con el valor predeterminado de valor <see cref="T:System.Buffers.StandardFormat" /> (es decir, "G"). Por ejemplo, 32767.</remarks>
+        <remarks>
+          <format><![CDATA[  
+
+Este método escribe el <xref:System.Int32> con el valor predeterminado de valor <xref:System.Buffers.StandardFormat> (es decir, "G"). Por ejemplo, 32767.
+
+          ]]></format>
+        </remarks>
         <exception cref="T:System.InvalidOperationException">La validación está habilitada y la operación daría lugar a la escritura de JSON no válido.</exception>
       </Docs>
     </Member>
@@ -2009,7 +2031,13 @@ El nombre de propiedad es de escape antes de la escritura.
       <Docs>
         <param name="value">Valor que se va a escribir como un número de JSON como un elemento de una matriz de JSON.</param>
         <summary>Escribe el valor <see cref="T:System.Int64" /> (como un número JSON) como elemento de una matriz JSON.</summary>
-        <remarks>Este método escribe el <see cref="T:System.Int64" /> con el valor predeterminado de valor <see cref="T:System.Buffers.StandardFormat" /> (es decir, "G"). Por ejemplo, 32767.</remarks>
+        <remarks>
+          <format><![CDATA[  
+
+Este método escribe el <xref:System.Int64> con el valor predeterminado de valor <xref:System.Buffers.StandardFormat> (es decir, "G"). Por ejemplo, 32767.
+
+          ]]></format>
+        </remarks>
         <exception cref="T:System.InvalidOperationException">La validación está habilitada y la operación daría lugar a la escritura de JSON no válido.</exception>
       </Docs>
     </Member>
@@ -2034,7 +2062,13 @@ El nombre de propiedad es de escape antes de la escritura.
       <Docs>
         <param name="value">Valor que se va a escribir como un número de JSON como un elemento de una matriz de JSON.</param>
         <summary>Escribe el valor <see cref="T:System.Single" /> (como un número JSON) como elemento de una matriz JSON.</summary>
-        <remarks>Este método escribe el <see cref="T:System.Single" /> con el valor predeterminado de valor <see cref="T:System.Buffers.StandardFormat" /> (es decir, "G").</remarks>
+        <remarks>
+          <format><![CDATA[  
+
+Este método escribe el <xref:System.Single> con el valor predeterminado de valor <xref:System.Buffers.StandardFormat> (es decir, "G").
+
+          ]]></format>
+        </remarks>
         <exception cref="T:System.InvalidOperationException">La validación está habilitada y la operación daría lugar a la escritura de JSON no válido.</exception>
       </Docs>
     </Member>
@@ -2064,7 +2098,13 @@ El nombre de propiedad es de escape antes de la escritura.
       <Docs>
         <param name="value">Valor que se va a escribir como un número de JSON como un elemento de una matriz de JSON.</param>
         <summary>Escribe el valor <see cref="T:System.UInt32" /> (como un número JSON) como elemento de una matriz JSON.</summary>
-        <remarks>Este método escribe el <see cref="T:System.UInt32" /> con el valor predeterminado de valor <see cref="T:System.Buffers.StandardFormat" /> (es decir, "G"). Por ejemplo, 32767.</remarks>
+        <remarks>
+          <format><![CDATA[  
+
+Este método escribe el <xref:System.UInt32> con el valor predeterminado de valor <xref:System.Buffers.StandardFormat> (es decir, "G"). Por ejemplo, 32767.
+
+          ]]></format>
+        </remarks>
         <exception cref="T:System.InvalidOperationException">La validación está habilitada y la operación daría lugar a la escritura de JSON no válido.</exception>
       </Docs>
     </Member>
@@ -2094,7 +2134,13 @@ El nombre de propiedad es de escape antes de la escritura.
       <Docs>
         <param name="value">Valor que se va a escribir como un número de JSON como un elemento de una matriz de JSON.</param>
         <summary>Escribe el valor <see cref="T:System.UInt64" /> (como un número JSON) como elemento de una matriz JSON.</summary>
-        <remarks>Este método escribe el <see cref="T:System.UInt64" /> con el valor predeterminado de valor <see cref="T:System.Buffers.StandardFormat" /> (es decir, "G"). Por ejemplo, 32767.</remarks>
+        <remarks>
+          <format><![CDATA[  
+
+Este método escribe el <xref:System.UInt64> con el valor predeterminado de valor <xref:System.Buffers.StandardFormat> (es decir, "G"). Por ejemplo, 32767.
+
+          ]]></format>
+        </remarks>
         <exception cref="T:System.InvalidOperationException">La validación está habilitada y la operación daría lugar a la escritura de JSON no válido.</exception>
       </Docs>
     </Member>
@@ -2155,7 +2201,7 @@ El nombre de propiedad es de escape antes de la escritura.
         <exception cref="T:System.ArgumentException">El nombre de propiedad especificado es demasiado grande.</exception>
         <exception cref="T:System.InvalidOperationException">La profundidad del archivo JSON supera la profundidad máxima de 1000.
 
-O bien
+o bien
        
 La validación está habilitada y esta operación de escritura generaría un JSON no válido.</exception>
       </Docs>
@@ -2191,7 +2237,7 @@ El nombre de propiedad es de escape antes de la escritura.
         <exception cref="T:System.ArgumentException">El nombre de propiedad especificado es demasiado grande.</exception>
         <exception cref="T:System.InvalidOperationException">La profundidad del archivo JSON supera la profundidad máxima de 1000.
 
-O bien
+o bien
        
 La validación está habilitada y esta operación de escritura generaría un JSON no válido.</exception>
       </Docs>
@@ -2227,7 +2273,7 @@ El nombre de propiedad es de escape antes de la escritura.
         <exception cref="T:System.ArgumentException">El nombre de propiedad especificado es demasiado grande.</exception>
         <exception cref="T:System.InvalidOperationException">La profundidad del archivo JSON supera la profundidad máxima de 1000.
 
-O bien
+o bien
        
 La validación está habilitada y esta operación de escritura generaría un JSON no válido.</exception>
       </Docs>
@@ -2277,7 +2323,7 @@ La validación está habilitada y esta operación de escritura generaría un JSO
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">La profundidad del archivo JSON supera la profundidad máxima de 1000.
 
-O bien
+o bien
 
 La validación está habilitada y la operación daría lugar a la escritura de JSON no válido.</exception>
       </Docs>
@@ -2313,7 +2359,7 @@ El nombre de propiedad es de escape antes de la escritura.
         <exception cref="T:System.ArgumentException">El nombre de propiedad especificado es demasiado grande.</exception>
         <exception cref="T:System.InvalidOperationException">La profundidad del archivo JSON supera la profundidad máxima de 1000. 
 
-O bien
+o bien
        
 La validación está habilitada y esta operación de escritura generaría un JSON no válido.</exception>
       </Docs>
@@ -2438,9 +2484,9 @@ La validación está habilitada y esta operación de escritura generaría un JSO
         <param name="value">Valor que se va escribir como una cadena de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad UTF-8 y el valor <see cref="T:System.DateTime" /> (como una cadena JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
+          <format><![CDATA[  
 
-El nombre de propiedad es de escape antes de la escritura.
+Escribe el <xref:System.DateTime> utilizando la ida y vuelta (' o ') <xref:System.Buffers.StandardFormat>. Por ejemplo, 2017-06-12T05:30:45.7680000. El nombre de propiedad es de escape antes de la escritura.
 
           ]]></format>
         </remarks>
@@ -2472,9 +2518,9 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como una cadena de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad UTF-8 y el valor <see cref="T:System.DateTimeOffset" /> (como una cadena JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
+          <format><![CDATA[  
 
-El nombre de propiedad es de escape antes de la escritura.
+Escribe el <xref:System.DateTimeOffset> utilizando la ida y vuelta (' o ') <xref:System.Buffers.StandardFormat> , por ejemplo: 2017-06-12T05:30:45.7680000-07:00. El nombre de propiedad es de escape antes de la escritura.
 
           ]]></format>
         </remarks>
@@ -2506,9 +2552,9 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como una cadena de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad UTF-8 y el valor <see cref="T:System.Guid" /> (como una cadena JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
+          <format><![CDATA[  
 
-El nombre de propiedad es de escape antes de la escritura.
+Escribe el <xref:System.Guid> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, Tenía '), como el formulario: nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn. El nombre de propiedad es de escape antes de la escritura.
 
           ]]></format>
         </remarks>
@@ -2668,9 +2714,9 @@ El nombre de propiedad y el valor es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como una cadena de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como intervalo de caracteres de solo lectura y el valor <see cref="T:System.DateTime" /> (como una cadena JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
+          <format><![CDATA[  
 
-El nombre de propiedad es de escape antes de la escritura.
+Escribe el <xref:System.DateTime> utilizando la ida y vuelta (' o ') <xref:System.Buffers.StandardFormat> , por ejemplo: 2017-06-12T05:30:45.7680000. El nombre de propiedad es de escape antes de la escritura.
 
           ]]></format>
         </remarks>
@@ -2702,9 +2748,9 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como una cadena de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como intervalo de caracteres de solo lectura y el valor <see cref="T:System.DateTimeOffset" /> (como una cadena JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
+          <format><![CDATA[  
 
-El nombre de propiedad es de escape antes de la escritura.
+Escribe el <xref:System.DateTimeOffset> utilizando la ida y vuelta (' o ') <xref:System.Buffers.StandardFormat> , por ejemplo: 2017-06-12T05:30:45.7680000-07:00. El nombre de propiedad es de escape antes de la escritura.
 
           ]]></format>
         </remarks>
@@ -2736,9 +2782,9 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como una cadena de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como intervalo de caracteres de solo lectura y el valor <see cref="T:System.Guid" /> (como una cadena JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
+          <format><![CDATA[  
 
-El nombre de propiedad es de escape antes de la escritura.
+Escribe el <xref:System.Guid> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, Tenía '), como el formulario: nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn. El nombre de propiedad es de escape antes de la escritura.
 
           ]]></format>
         </remarks>
@@ -2898,9 +2944,9 @@ El nombre de propiedad y el valor es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como una cadena de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como cadena y el valor <see cref="T:System.DateTime" /> (como una cadena JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
+          <format><![CDATA[  
 
-El nombre de propiedad es de escape antes de la escritura.
+Escribe el <xref:System.DateTime> utilizando la ida y vuelta (' o ') <xref:System.Buffers.StandardFormat> , por ejemplo: 2017-06-12T05:30:45.7680000. El nombre de propiedad es de escape antes de la escritura.
 
           ]]></format>
         </remarks>
@@ -2932,9 +2978,9 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como una cadena de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como cadena y el valor <see cref="T:System.DateTimeOffset" /> (como una cadena JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
+          <format><![CDATA[  
 
-El nombre de propiedad es de escape antes de la escritura.
+Escribe el <xref:System.DateTimeOffset> utilizando la ida y vuelta (' o ') <xref:System.Buffers.StandardFormat> , por ejemplo: 2017-06-12T05:30:45.7680000-07:00. El nombre de propiedad es de escape antes de la escritura.
 
           ]]></format>
         </remarks>
@@ -2966,9 +3012,9 @@ El nombre de propiedad es de escape antes de la escritura.
         <param name="value">Valor que se va escribir como una cadena de JSON como parte del par nombre-valor.</param>
         <summary>Escribe el nombre de propiedad especificado como cadena y el valor <see cref="T:System.Guid" /> (como una cadena JSON) como parte de un par nombre-valor de un objeto JSON.</summary>
         <remarks>
-          <format><![CDATA[
+          <format><![CDATA[  
 
-El nombre de propiedad es de escape antes de la escritura.
+Escribe el <xref:System.Guid> con el valor predeterminado <xref:System.Buffers.StandardFormat> (es decir, Tenía '), como el formulario: nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn. El nombre de propiedad es de escape antes de la escritura.
 
           ]]></format>
         </remarks>
@@ -3307,7 +3353,13 @@ El nombre de propiedad y el valor es de escape antes de la escritura.
       <Docs>
         <param name="value">Valor que se va a escribir como una cadena de JSON como un elemento de una matriz de JSON.</param>
         <summary>Escribe el valor <see cref="T:System.DateTime" /> (como una cadena JSON) como elemento de una matriz JSON.</summary>
-        <remarks>Este método escribe el <see cref="T:System.DateTime" /> utilizando la ida y vuelta (' o ') <see cref="T:System.Buffers.StandardFormat" />. Por ejemplo, 2017-06-12T05:30:45.7680000.</remarks>
+        <remarks>
+          <format><![CDATA[  
+
+Este método escribe el <xref:System.DateTime> utilizando la ida y vuelta (' o ') <xref:System.Buffers.StandardFormat>. Por ejemplo, 2017-06-12T05:30:45.7680000.
+
+          ]]></format>
+        </remarks>
         <exception cref="T:System.InvalidOperationException">La validación está habilitada y la operación daría lugar a la escritura de JSON no válido.</exception>
       </Docs>
     </Member>
@@ -3332,7 +3384,13 @@ El nombre de propiedad y el valor es de escape antes de la escritura.
       <Docs>
         <param name="value">Valor que se va a escribir como una cadena de JSON como un elemento de una matriz de JSON.</param>
         <summary>Escribe el valor <see cref="T:System.DateTimeOffset" /> (como una cadena JSON) como elemento de una matriz JSON.</summary>
-        <remarks>Este método escribe el <see cref="T:System.DateTimeOffset" /> utilizando la ida y vuelta (' o ') <see cref="T:System.Buffers.StandardFormat" />. Por ejemplo, 2017-06-12T05:30:45.7680000-07:00.</remarks>
+        <remarks>
+          <format><![CDATA[  
+
+Este método escribe el <xref:System.DateTimeOffset> utilizando la ida y vuelta (' o ') <xref:System.Buffers.StandardFormat>. Por ejemplo, 2017-06-12T05:30:45.7680000-07:00.
+
+          ]]></format>
+        </remarks>
         <exception cref="T:System.InvalidOperationException">La validación está habilitada y la operación daría lugar a la escritura de JSON no válido.</exception>
       </Docs>
     </Member>
@@ -3357,7 +3415,13 @@ El nombre de propiedad y el valor es de escape antes de la escritura.
       <Docs>
         <param name="value">Valor que se va a escribir como una cadena de JSON como un elemento de una matriz de JSON.</param>
         <summary>Escribe el valor <see cref="T:System.Guid" /> (como una cadena JSON) como elemento de una matriz JSON.</summary>
-        <remarks>Este método escribe el <see cref="T:System.Guid" /> con el valor predeterminado de valor <see cref="T:System.Buffers.StandardFormat" /> (es decir, tenía '), como el formulario: nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn.</remarks>
+        <remarks>
+          <format><![CDATA[  
+
+Este método escribe el <xref:System.Guid> con el valor predeterminado de valor <xref:System.Buffers.StandardFormat> (es decir, tenía '), como el formulario: nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn.
+
+          ]]></format>
+        </remarks>
         <exception cref="T:System.InvalidOperationException">La validación está habilitada y la operación daría lugar a la escritura de JSON no válido.</exception>
       </Docs>
     </Member>

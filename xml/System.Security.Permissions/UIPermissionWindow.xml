@@ -1,5 +1,5 @@
 <Type Name="UIPermissionWindow" FullName="System.Security.Permissions.UIPermissionWindow">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="da5150dc855b16fa31ab302c372e38b08ee4bbdb" /><Meta Name="ms.sourcegitcommit" Value="220917117f9d774aaa482439aa7324e39dc1f5b6" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="02/25/2019" /><Meta Name="ms.locfileid" Value="56791373" /></Metadata><TypeSignature Language="C#" Value="public enum UIPermissionWindow" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0b15e3f65d21ed3debba7e75607723f77aa3e55c" /><Meta Name="ms.sourcegitcommit" Value="24dc380b0d43e8919d4e0d50409e8f0aeae98713" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/27/2019" /><Meta Name="ms.locfileid" Value="67411657" /></Metadata><TypeSignature Language="C#" Value="public enum UIPermissionWindow" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed UIPermissionWindow extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.UIPermissionWindow" />
   <TypeSignature Language="VB.NET" Value="Public Enum UIPermissionWindow" />
@@ -34,8 +34,45 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- Esta enumeración se utiliza por <xref:System.Security.Permissions.UIPermission>.  
+## Remarks
+
+Esta enumeración se utiliza por <xref:System.Security.Permissions.UIPermission>.  
+
+Cuando se ejecuta una aplicación con el `SafeTopLevelWindows` permiso,:  
+
+- Muestra el nombre DNS o dirección IP del sitio Web desde el que se cargó la aplicación en la barra de título.  
+  
+- Muestra información sobre herramientas de globo cuando se muestra en primer lugar, informa al usuario que se está ejecutando en un nivel de confianza restringida.  
+  
+- Debe mostrar la barra de título en todo momento.  
+  
+- Debe mostrar controles de ventana en sus formularios.  
+  
+- No se puede minimizar su ventana principal en el inicio.  
+  
+- No se puede mover sus ventanas fuera de la pantalla.  
+  
+- No se puede usar el <xref:System.Windows.Forms.Form.Opacity%2A?displayProperty=nameWithType> propiedad para hacer su windows menor del 50% transparente.  
+
+- Debe usar sólo windows rectangulares y debe incluir el marco de ventana. Windows Forms no respeta la configuración <xref:System.Windows.Forms.Form.FormBorderStyle%2A?displayProperty=nameWithType> a <xref:System.Windows.Forms.FormBorderStyle.None?displayProperty=nameWithType>.  
+ 
+- No se puede hacer que windows sea invisible. Cualquier intento por parte de la aplicación para establecer el <xref:System.Windows.Forms.Control.Visible%2A?displayProperty=nameWithType> propiedad `False` se pasará por alto.  
+  
+- Debe tener una entrada en la barra de tareas.  
+  
+- Tiene sus controles prohibidos el acceso a la <xref:System.Windows.Forms.Control.Parent%2A> propiedad. En consecuencia, los controles tampoco tendrán acceso a elementos del mismo nivel: es decir, otros controles del mismo nivel de anidamiento.  
+  
+- No se puede controlar el foco mediante el <xref:System.Windows.Forms.Control.Focus%2A?displayProperty=nameWithType> método.  
+  
+- Ha restringido el acceso de entrada de teclado, para que un formulario o control solo puede acceder a los eventos de teclado para sí mismo y sus elementos secundarios.  
+  
+- Ha restringido el acceso a las coordenadas del mouse, para que un formulario o control sólo puede leer las coordenadas del mouse si el mouse está encima de su área visible.  
+  
+- No se puede establecer el <xref:System.Windows.Forms.Form.TopMost%2A?displayProperty=nameWithType> propiedad.  
+  
+- No se puede controlar el orden z de los controles en el formulario mediante el <xref:System.Windows.Forms.Control.BringToFront%2A?displayProperty=nameWithType> y <xref:System.Windows.Forms.Control.SendToBack%2A?displayProperty=nameWithType> métodos.  
+  
+ Estas restricciones ayudan a evitar que el código potencialmente peligroso ataques, como la imitación de cuadros de diálogo del sistema de confianza de suplantación.  
   
  ]]></format>
     </remarks>
@@ -157,47 +194,11 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Los usuarios sólo pueden utilizar <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /> y <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /> para dibujar, a la vez que sólo pueden utilizar eventos de entrada de usuario para la interfaz de usuario de las ventanas secundarias y las ventanas de nivel superior.</summary>
+        <summary>Los usuarios sólo pueden utilizar <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /> y <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /> para dibujar, a la vez que sólo pueden utilizar eventos de entrada de usuario para la interfaz de usuario de las ventanas secundarias y las ventanas de nivel superior. Vea la sección Comentarios para obtener más información.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Cuando se ejecuta bajo SafeTopLevelWindows permiso, la aplicación:  
-  
--   Se mostrará el nombre DNS o dirección IP del sitio Web desde el que se cargó la aplicación en la barra de título.  
-  
--   Se mostrará el globo de información sobre herramientas cuando se muestra en primer lugar, informa al usuario que se está ejecutando en un nivel de confianza restringida.  
-  
--   Debe mostrar la barra de título en todo momento.  
-  
--   Debe mostrar controles de ventana en sus formularios.  
-  
--   No se puede minimizar su ventana principal en el inicio.  
-  
--   No se puede mover sus ventanas fuera de la pantalla.  
-  
--   No se puede usar el <xref:System.Windows.Forms.Form.Opacity%2A> propiedad <xref:System.Windows.Forms.Form.Opacity%2A> para hacer su windows menor del 50% transparente.  
-  
--   Debe usar sólo windows rectangulares y debe incluir el marco de ventana. Windows Forms no respeta la configuración <xref:System.Windows.Forms.Form.FormBorderStyle%2A> a `None`.  
-  
--   No se puede hacer que windows sea invisible. Cualquier intento por parte de la aplicación para establecer el <xref:System.Windows.Forms.Control.Visible%2A> propiedad en su <xref:System.Windows.Forms.Form> objetos `False` se pasará por alto.  
-  
--   Debe tener una entrada en la barra de tareas.  
-  
--   Tendrán sus controles prohibidos el acceso a la <xref:System.Windows.Forms.Control.Parent%2A> propiedad. En consecuencia, los controles tampoco tendrán acceso a elementos del mismo nivel: es decir, otros controles del mismo nivel de anidamiento.  
-  
--   No se puede controlar el foco mediante el <xref:System.Windows.Forms.Control.Focus%2A> método.  
-  
--   Habrá restringido las entradas mediante teclado acceso, para que un formulario o control solo puede acceder a los eventos de teclado para sí mismo y sus elementos secundarios.  
-  
--   Tendrá restringido el acceso a las coordenadas del mouse, por lo que un formulario o control sólo puede leer las coordenadas del mouse si el mouse está encima de su área visible.  
-  
--   No se puede establecer el <xref:System.Windows.Forms.Form.TopMost%2A> propiedad.  
-  
--   No se puede controlar el orden z de los controles en el formulario mediante el <xref:System.Windows.Forms.Control.BringToFront%2A> y <xref:System.Windows.Forms.Control.SendToBack%2A> métodos.  
-  
- Estas restricciones ayudan a evitar que el código potencialmente peligroso ataques, como la imitación de cuadros de diálogo del sistema de confianza de suplantación.  
-  
  ]]></format>
         </remarks>
       </Docs>

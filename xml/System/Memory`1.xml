@@ -1,5 +1,5 @@
 <Type Name="Memory&lt;T&gt;" FullName="System.Memory&lt;T&gt;">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="8410f56d097790f1efaea0840bc654647754beef" /><Meta Name="ms.sourcegitcommit" Value="3575d47a0ba065e8986f03d99279f478811907b8" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/20/2019" /><Meta Name="ms.locfileid" Value="65922667" /></Metadata><TypeSignature Language="C#" Value="public struct Memory&lt;T&gt;" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="82c6fb63b15d0f264ad1fc3fbf06251cc130b1f2" /><Meta Name="ms.sourcegitcommit" Value="61757d0366a172cdbc11436deb1c1ffa49d97238" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/28/2019" /><Meta Name="ms.locfileid" Value="67458482" /></Metadata><TypeSignature Language="C#" Value="public struct Memory&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Memory`1&lt;T&gt; extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Memory`1" />
   <TypeSignature Language="VB.NET" Value="Public Structure Memory(Of T)" />
@@ -82,7 +82,7 @@ Si `array` es `null`, este constructor devuelve una <xref:System.Memory%601> obj
         </remarks>
         <exception cref="T:System.ArrayTypeMismatchException"><paramref name="T" /> es un tipo de referencia y <paramref name="array" /> no es una matriz de tipo <paramref name="T" />.
         
--o bien-
+O bien
 
 La matriz es <see href="~/docs/csharp/programming-guide/concepts/covariance-contravariance/index.md">covariante.</see></exception>
       </Docs>
@@ -126,11 +126,11 @@ Si `array` es `null`, este constructor devuelve una <xref:System.Memory%601> obj
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="array" /> es <see langword="null" />, pero <paramref name="start" /> o <paramref name="length" /> es distinto de cero.
 
 
--o bien-
+O bien
 
 <paramref name="start" /> está fuera de los límites de la matriz.
 
--o bien-
+O bien
 
 <paramref name="start" /> y <paramref name="length" /> superan el número de elementos de la matriz.</exception>
         <exception cref="T:System.ArrayTypeMismatchException"><paramref name="T" /> es un tipo de referencia y <paramref name="array" /> no es una matriz de tipo <paramref name="T" />.</exception>
@@ -197,7 +197,7 @@ Este método copia todo el contenido del elemento actual <xref:System.Memory%601
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Devuelve un valor vacío <see cref="T:System.Memory`1" /> objeto.</summary>
+        <summary>Devuelve un objeto <see cref="T:System.Memory`1" /> vacío.</summary>
         <value>Un objeto vacío.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -439,7 +439,7 @@ Dos <xref:System.Memory%601> objetos son iguales si ambos objetos apunte a la mi
       <Docs>
         <param name="segment">Objeto que se va a convertir.</param>
         <summary>Define una conversión implícita de un objeto <see cref="T:System.ArraySegment`1" /> en un objeto <see cref="T:System.Memory`1" />.</summary>
-        <returns>Convertido <see cref="T:System.ArraySegment`1" /> objeto.</returns>
+        <returns>Objeto convertido <see cref="T:System.ArraySegment`1" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -470,7 +470,7 @@ Dos <xref:System.Memory%601> objetos son iguales si ambos objetos apunte a la mi
       </Parameters>
       <Docs>
         <param name="memory">Objeto que se va a convertir.</param>
-        <summary>Define una conversión implícita de un <see cref="T:System.Memory`1" /> objeto a un <see cref="T:System.ReadOnlyMemory`1" /> objeto.</summary>
+        <summary>Define una conversión implícita de un objeto <see cref="T:System.Memory`1" /> en un objeto <see cref="T:System.ReadOnlyMemory`1" />.</summary>
         <returns>El objeto convertido.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -611,7 +611,7 @@ El recolector de elementos no se moverá la memoria hasta que el valor devuelto 
         <summary>Forma un segmento fuera de la memoria actual que comienza en un índice especificado.</summary>
         <returns>Un objeto que contiene todos los elementos de la instancia actual desde <paramref name="start" /> hasta el final de la instancia.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeExceptionException"><paramref name="start" /> es menor que cero o mayor que <see cref="P:System.Memory`1.Length" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="start" /> es menor que cero o mayor que <see cref="P:System.Memory`1.Length" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Slice">
@@ -677,9 +677,9 @@ El recolector de elementos no se moverá la memoria hasta que el valor devuelto 
         <summary>Forma un segmento fuera de la memoria actual a partir de un índice especificado durante una longitud determinada.</summary>
         <returns>Un objeto que contiene <paramref name="length" /> elementos desde el inicio de instancia actual en <paramref name="start" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentOutOfRangeExceptionException"><paramref name="start" /> es menor que cero o mayor que <see cref="P:System.Memory`1.Length" />.
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="start" /> es menor que cero o mayor que <see cref="P:System.Memory`1.Length" />.
 
--o bien-
+o bien
 
 <paramref name="length" /> es mayor que <see cref="P:System.Memory`1.Length" /> - <paramref name="start" /></exception>
       </Docs>

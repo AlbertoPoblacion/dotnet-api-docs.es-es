@@ -1,5 +1,5 @@
 <Type Name="CommittableTransaction" FullName="System.Transactions.CommittableTransaction">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="464fc828a29932c8cf9248a436410338281d32e0" /><Meta Name="ms.sourcegitcommit" Value="2767b5903996fbd7e2b81eda1114dfc9d0d9db63" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/02/2019" /><Meta Name="ms.locfileid" Value="65014205" /></Metadata><TypeSignature Language="C#" Value="public sealed class CommittableTransaction : System.Transactions.Transaction, IAsyncResult, IDisposable, System.Runtime.Serialization.ISerializable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="051e7170b311f9af83680067a1edb706570cb5af" /><Meta Name="ms.sourcegitcommit" Value="61757d0366a172cdbc11436deb1c1ffa49d97238" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/28/2019" /><Meta Name="ms.locfileid" Value="67458322" /></Metadata><TypeSignature Language="C#" Value="public sealed class CommittableTransaction : System.Transactions.Transaction, IAsyncResult, IDisposable, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit CommittableTransaction extends System.Transactions.Transaction implements class System.IAsyncResult, class System.IDisposable, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Transactions.CommittableTransaction" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CommittableTransaction&#xA;Inherits Transaction&#xA;Implements IAsyncResult, IDisposable, ISerializable" />
@@ -46,24 +46,17 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- La clase <xref:System.Transactions.CommittableTransaction> proporciona a las aplicaciones una manera explícita de utilizar una transacción, a diferencia de utilizar implícitamente la clase <xref:System.Transactions.TransactionScope>. A diferencia de la clase <xref:System.Transactions.TransactionScope>, el sistema de escritura de la aplicación ha de llamar específicamente a los métodos <xref:System.Transactions.CommittableTransaction.Commit%2A> y <xref:System.Transactions.Transaction.Rollback%2A> para confirmar o anular la transacción. Sin embargo, solo el creador de una transacción puede confirmar la transacción. Por lo tanto, copias de una transacción confirmable, se obtiene a través de la <xref:System.Transactions.Transaction.Clone%2A> método no son confirmable.  
+ La clase `CommittableTransaction` proporciona a las aplicaciones una manera explícita de utilizar una transacción, a diferencia de utilizar implícitamente la clase <xref:System.Transactions.TransactionScope>. A diferencia de la clase <xref:System.Transactions.TransactionScope>, el sistema de escritura de la aplicación ha de llamar específicamente a los métodos <xref:System.Transactions.CommittableTransaction.Commit%2A> y <xref:System.Transactions.Transaction.Rollback%2A> para confirmar o anular la transacción. Sin embargo, solo el creador de una transacción puede confirmar la transacción. Por lo tanto, copias de una transacción confirmable obtienen a través de la <xref:System.Transactions.Transaction.Clone%2A?displayProperty=nameWithType> método no son confirmable.  
   
 > [!NOTE]
->  Se recomienda crear transacciones implícitas mediante la <xref:System.Transactions.TransactionScope> clase, por lo que el contexto de transacción de ambiente se administra automáticamente. También se debe utilizar el <xref:System.Transactions.TransactionScope> y <xref:System.Transactions.DependentTransaction> clase para las aplicaciones que requieren el uso de la misma transacción entre varias llamadas de función o varias llamadas del subproceso. Para obtener más información sobre este modelo, vea el [Implementing An implícita transacción Using transacción Scope](~/docs/framework/data/transactions/implementing-an-implicit-transaction-using-transaction-scope.md) tema.  
+>  Se recomienda crear transacciones implícitas mediante la <xref:System.Transactions.TransactionScope> clase, por lo que el contexto de transacción de ambiente se administra automáticamente. También se debe utilizar el <xref:System.Transactions.TransactionScope> y <xref:System.Transactions.DependentTransaction> clases para las aplicaciones que requieren el uso de la misma transacción entre varias llamadas de función o varias llamadas del subproceso. Para obtener más información sobre este modelo, vea el [Implementing An implícita transacción Using transacción Scope](~/docs/framework/data/transactions/implementing-an-implicit-transaction-using-transaction-scope.md) tema.  
   
  Creación de un <xref:System.Transactions.CommittableTransaction> no se establece automáticamente la transacción ambiente, que es la transacción se ejecuta en el código. Puede obtener o establecer la transacción ambiente llamando estático <xref:System.Transactions.Transaction.Current%2A?displayProperty=nameWithType> propiedad de la información global <xref:System.Transactions.Transaction> objeto. Para obtener más información sobre transacciones de ambiente, vea la sección "Flujo de transacción de administración utilizando TransactionScopeOption" de la [Implementing An implícita transacción Using transacción Scope](~/docs/framework/data/transactions/implementing-an-implicit-transaction-using-transaction-scope.md) tema. Si no se establece la transacción de ambiente, cualquier operación en un administrador de recursos no es parte de esa transacción. Debe establecer explícitamente y restablecer la transacción ambiente para asegurarse de que los administradores de recursos funcionan bajo el contexto de transacción correcto.  
   
  Hasta que un <xref:System.Transactions.CommittableTransaction> tiene ha confirmado, todos los recursos relacionados con la transacción todavía están bloqueados.  
   
  No se puede reutilizar un objeto <xref:System.Transactions.CommittableTransaction>. Una vez que se ha confirmado o revertido, no puede volver a usar en una transacción ni establecer como el contexto de transacción de ambiente actual.  
-  
-   
-  
-## Examples  
- El ejemplo siguiente crea dos nuevas instancias de <xref:System.Transactions.CommittableTransaction>, confirma y deshacen respectivamente.  
-  
-  
-  
+
  ]]></format>
     </remarks>
     <threadsafe>Este tipo es seguro para la ejecución de subprocesos.</threadsafe>
@@ -118,7 +111,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.PlatformNotSupportedException">Se intenta crear una transacción bajo Windows 98, Windows 98 Second Edition o Windows Millennium Edition.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">Se intenta crear una transacción bajo Windows 98, Windows 98 Segunda Edición o Windows Millennium Edition.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -149,10 +142,10 @@
         <Parameter Name="timeout" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeout">La cantidad máxima de tiempo de que la transacción puede existir, antes de anularse.</param>
+        <param name="timeout">El tiempo máximo que la transacción puede existir, antes de anularse.</param>
         <summary>Inicializa una nueva instancia de la clase <see cref="T:System.Transactions.CommittableTransaction" /> con el valor <paramref name="timeout" /> especificado.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.PlatformNotSupportedException">Se intenta crear una transacción bajo Windows 98, Windows 98 Second Edition o Windows Millennium Edition.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">Se intenta crear una transacción bajo Windows 98, Windows 98 Segunda Edición o Windows Millennium Edition.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -183,8 +176,8 @@
         <Parameter Name="options" Type="System.Transactions.TransactionOptions" />
       </Parameters>
       <Docs>
-        <param name="options">Un <see cref="T:System.Transactions.TransactionOptions" /> estructura que describe las opciones de transacción que se usará para la nueva transacción.</param>
-        <summary>Inicializa una nueva instancia de la <see cref="T:System.Transactions.CommittableTransaction" /> clase con las opciones de transacción especificado.</summary>
+        <param name="options">Estructura <see cref="T:System.Transactions.TransactionOptions" /> que describe las opciones de transacción que se van a utilizar para la nueva transacción.</param>
+        <summary>Inicializa una nueva instancia de la clase <see cref="T:System.Transactions.CommittableTransaction" /> con las opciones de transacción especificadas.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -195,7 +188,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.PlatformNotSupportedException">Se intenta crear una transacción bajo Windows 98, Windows 98 Second Edition o Windows Millennium Edition.</exception>
+        <exception cref="T:System.PlatformNotSupportedException">Se intenta crear una transacción bajo Windows 98, Windows 98 Segunda Edición o Windows Millennium Edition.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="options" /> no es válido.</exception>
       </Docs>
     </Member>
@@ -239,12 +232,12 @@
         <Parameter Name="user_defined_state" Type="System.Object" Index="1" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="asyncCallback">El <see cref="T:System.AsyncCallback" /> delegado que se invoca cuando finaliza la transacción. Este parámetro puede ser <see langword="null" />, en cuyo caso no se notifica la aplicación de la finalización de la transacción. En su lugar, la aplicación debe utilizar el <see cref="T:System.IAsyncResult" /> interfaz para comprobar la finalización y esperar en consecuencia, o llamar a <see cref="M:System.Transactions.CommittableTransaction.EndCommit(System.IAsyncResult)" /> para esperar la finalización.</param>
-        <param name="callback">El <see cref="T:System.AsyncCallback" /> delegado que se invoca cuando finaliza la transacción. Este parámetro puede ser <see langword="null" />, en cuyo caso no se notifica la aplicación de la finalización de la transacción. En su lugar, la aplicación debe utilizar el <see cref="T:System.IAsyncResult" /> interfaz para comprobar la finalización y esperar en consecuencia, o llamar a <see cref="M:System.Transactions.CommittableTransaction.EndCommit(System.IAsyncResult)" /> para esperar la finalización.</param>
-        <param name="asyncState">Un objeto, que podría contener información de estado arbitraria, asociado con la confirmación asincrónica. Este objeto se pasa a la devolución de llamada y no interpreta <see cref="N:System.Transactions" />. Se permite una referencia nula.</param>
-        <param name="user_defined_state">Un objeto, que podría contener información de estado arbitraria, asociado con la confirmación asincrónica. Este objeto se pasa a la devolución de llamada y no interpreta <see cref="N:System.Transactions" />. Se permite una referencia nula.</param>
+        <param name="asyncCallback">El delegado <see cref="T:System.AsyncCallback" /> que se invoca cuando finaliza la transacción. Este parámetro puede ser <see langword="null" />, en cuyo caso no se notifica a la aplicación de la finalización de la transacción. En lugar de ello, la aplicación debe utilizar la interfaz de <see cref="T:System.IAsyncResult" /> para esperar a que la transacción haya finalizado o llamar al método <see cref="M:System.Transactions.CommittableTransaction.EndCommit(System.IAsyncResult)" /> para esperar a que finalice.</param>
+        <param name="callback">El delegado <see cref="T:System.AsyncCallback" /> que se invoca cuando finaliza la transacción. Este parámetro puede ser <see langword="null" />, en cuyo caso no se notifica a la aplicación de la finalización de la transacción. En lugar de ello, la aplicación debe utilizar la interfaz de <see cref="T:System.IAsyncResult" /> para esperar a que la transacción haya finalizado o llamar al método <see cref="M:System.Transactions.CommittableTransaction.EndCommit(System.IAsyncResult)" /> para esperar a que finalice.</param>
+        <param name="asyncState">Un objeto, que podría contener la información de estado arbitraria, asociado a la confirmación asincrónica. Se pasa este objeto en la devolución de llamada y <see cref="N:System.Transactions" /> no lo interpreta. Se permiten las referencias null.</param>
+        <param name="user_defined_state">Un objeto, que podría contener la información de estado arbitraria, asociado a la confirmación asincrónica. Se pasa este objeto en la devolución de llamada y <see cref="N:System.Transactions" /> no lo interpreta. Se permiten las referencias null.</param>
         <summary>Comienza un intento de confirmar la transacción de forma asincrónica.</summary>
-        <returns>Un <see cref="T:System.IAsyncResult" /> interfaz que puede utilizar el llamador para comprobar el estado de la operación asincrónica o esperar a que se complete la operación.</returns>
+        <returns>El llamador puede utilizar una interfaz <see cref="T:System.IAsyncResult" /> para comprobar el estado de la operación asincrónica o esperar a que se realice la operación.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -301,8 +294,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Transactions.TransactionInDoubtException"><see cref="M:System.Transactions.CommittableTransaction.Commit" /> se llama en una transacción y la transacción se convierte en <see cref="F:System.Transactions.TransactionStatus.InDoubt" />.</exception>
-        <exception cref="T:System.Transactions.TransactionAbortedException"><see cref="M:System.Transactions.CommittableTransaction.Commit" /> se llama y revierte la transacción por primera vez.</exception>
+        <exception cref="T:System.Transactions.TransactionInDoubtException">Se llama al método <see cref="M:System.Transactions.CommittableTransaction.Commit" /> en una transacción y la transacción pasa a ser <see cref="F:System.Transactions.TransactionStatus.InDoubt" />.</exception>
+        <exception cref="T:System.Transactions.TransactionAbortedException">Se llama al método <see cref="M:System.Transactions.CommittableTransaction.Commit" /> y se deshace la transacción por primera vez.</exception>
       </Docs>
     </Member>
     <Member MemberName="EndCommit">
@@ -343,8 +336,8 @@
         <Parameter Name="ar" Type="System.IAsyncResult" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="asyncResult">La <see cref="T:System.IAsyncResult" /> objeto asociado a la confirmación asincrónica.</param>
-        <param name="ar">La <see cref="T:System.IAsyncResult" /> objeto asociado a la confirmación asincrónica.</param>
+        <param name="asyncResult">Objeto <see cref="T:System.IAsyncResult" /> asociado a la confirmación asincrónica.</param>
+        <param name="ar">Objeto <see cref="T:System.IAsyncResult" /> asociado a la confirmación asincrónica.</param>
         <summary>Finaliza un intento de confirmar la transacción de forma asincrónica.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -359,7 +352,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Transactions.TransactionAbortedException"><see cref="M:System.Transactions.CommittableTransaction.BeginCommit(System.AsyncCallback,System.Object)" /> se llama y revierte la transacción por primera vez.</exception>
+        <exception cref="T:System.Transactions.TransactionAbortedException">Se llama al método <see cref="M:System.Transactions.CommittableTransaction.BeginCommit(System.AsyncCallback,System.Object)" /> y se deshace la transacción por primera vez.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.IAsyncResult.AsyncState">
@@ -393,8 +386,8 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el objeto proporcionado como el último parámetro de la <see cref="M:System.Transactions.CommittableTransaction.BeginCommit(System.AsyncCallback,System.Object)" /> llamada al método.</summary>
-        <value>El objeto proporcionado como el último parámetro de la <see cref="M:System.Transactions.CommittableTransaction.BeginCommit(System.AsyncCallback,System.Object)" /> llamada al método.</value>
+        <summary>Obtiene el objeto proporcionado como el último parámetro de la llamada al método <see cref="M:System.Transactions.CommittableTransaction.BeginCommit(System.AsyncCallback,System.Object)" />.</summary>
+        <value>Objeto proporcionado como el último parámetro de la llamada al método <see cref="M:System.Transactions.CommittableTransaction.BeginCommit(System.AsyncCallback,System.Object)" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -465,8 +458,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene una indicación de si la operación de confirmación asincrónica ha finalizado sincrónicamente.</summary>
-        <value><see langword="true" /> Si la operación de confirmación asincrónica ha finalizado sincrónicamente; en caso contrario, <see langword="false" />. Esta propiedad siempre devuelve <see langword="false" /> incluso si la operación finalice sincrónicamente.</value>
+        <summary>Obtiene una indicación que especifica si la operación de confirmación asincrónica ha finalizado sincrónicamente.</summary>
+        <value><see langword="true" /> si la operación de confirmación asincrónica ha finalizado sincrónicamente; en caso contrario, <see langword="false" />. Esta propiedad siempre devuelve <see langword="false" /> aún cuando la operación finalice sincrónicamente.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -501,8 +494,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un valor que indica si la operación de confirmación asincrónica ha finalizado.</summary>
-        <value><see langword="true" /> si la operación ha finalizado; de lo contrario, <see langword="false" />.</value>
+        <summary>Obtiene una indicación que especifica si la operación de confirmación asincrónica ha finalizado.</summary>
+        <value><see langword="true" /> si la operación se ha completado; en caso contrario, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

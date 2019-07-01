@@ -1,5 +1,5 @@
 <Type Name="String" FullName="System.String">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="aa874c4bbfa09d88cc21a07aa1c7ad4600db6168" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67245112" /></Metadata><TypeSignature Language="C#" Value="public sealed class String : ICloneable, IComparable, IComparable&lt;string&gt;, IConvertible, IEquatable&lt;string&gt;, System.Collections.Generic.IEnumerable&lt;char&gt;" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="85748a5d2e105db4b82a837cc0709055e87b7b59" /><Meta Name="ms.sourcegitcommit" Value="24dc380b0d43e8919d4e0d50409e8f0aeae98713" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/27/2019" /><Meta Name="ms.locfileid" Value="67411752" /></Metadata><TypeSignature Language="C#" Value="public sealed class String : ICloneable, IComparable, IComparable&lt;string&gt;, IConvertible, IEquatable&lt;string&gt;, System.Collections.Generic.IEnumerable&lt;char&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit string extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;char&gt;, class System.Collections.IEnumerable, class System.ICloneable, class System.IComparable, class System.IComparable`1&lt;string&gt;, class System.IConvertible, class System.IEquatable`1&lt;string&gt;" />
   <TypeSignature Language="DocId" Value="T:System.String" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class String&#xA;Implements ICloneable, IComparable, IComparable(Of String), IConvertible, IEnumerable(Of Char), IEquatable(Of String)" />
@@ -643,13 +643,13 @@ Puede descargar las [tablas de pesos de ordenación](https://www.microsoft.com/d
 |Excepción|Condición|Iniciada por|  
 |---------------|---------------|---------------|  
 |<xref:System.ArgumentNullException>|`value` es `null`.|<xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29>|  
-|<xref:System.ArgumentOutOfRangeException>|`startIndex`,`length`, o `count` es menor que cero.<br /><br /> O bien<br /><br /> La suma de `startIndex` y `length` es mayor que el número de elementos de `value`.<br /><br /> O bien<br /><br /> `count` es menor que cero.|<xref:System.String.%23ctor%28System.Char%2CSystem.Int32%29><br /><br /> <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29>|  
+|<xref:System.ArgumentOutOfRangeException>|`startIndex`,`length`, o `count` es menor que cero.<br /><br /> O bien<br /><br /> La suma de `startIndex` y `length` es mayor que el número de elementos de `value`.<br /><br /> o bien<br /><br /> `count` es menor que cero.|<xref:System.String.%23ctor%28System.Char%2CSystem.Int32%29><br /><br /> <xref:System.String.%23ctor%28System.Char%5B%5D%2CSystem.Int32%2CSystem.Int32%29>|  
   
  Presentamos una lista de excepciones producidas por los constructores que incluyen los parámetros de puntero.  
   
 |Excepción|Condición|Iniciada por|  
 |---------------|---------------|---------------|  
-|<xref:System.ArgumentException>|`value` Especifica una matriz que contiene un carácter Unicode no válido.<br /><br /> O bien<br /><br /> `value` o `value`  +  `startIndex` especifica una dirección que es menor que 64 KB.<br /><br /> O bien<br /><br /> Un nuevo <xref:System.String> no se pudo inicializar la instancia de la `value` matriz de bytes porque `value` no utiliza la codificación de página de código de forma predeterminada.|Todos los constructores con punteros.|  
+|<xref:System.ArgumentException>|`value` Especifica una matriz que contiene un carácter Unicode no válido.<br /><br /> o bien<br /><br /> `value` o `value`  +  `startIndex` especifica una dirección que es menor que 64 KB.<br /><br /> O bien<br /><br /> Un nuevo <xref:System.String> no se pudo inicializar la instancia de la `value` matriz de bytes porque `value` no utiliza la codificación de página de código de forma predeterminada.|Todos los constructores con punteros.|  
 |<xref:System.ArgumentNullException>|`value` es null.|<xref:System.String.%23ctor%28System.SByte%2A%29><br /><br /> <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%29><br /><br /> <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%2CSystem.Text.Encoding%29>|  
 |<xref:System.ArgumentOutOfRangeException>|El proceso actual no tiene acceso de lectura a todos los caracteres tratados.<br /><br /> O bien<br /><br /> `startIndex` o `length` es menor que cero, `value` + `startIndex` produce un desbordamiento de puntero o el proceso actual no tiene acceso de lectura a todos los caracteres tratados.<br /><br /> O bien<br /><br /> La longitud de la nueva cadena es demasiado grande para asignar.|Todos los constructores con punteros.|  
 |<xref:System.AccessViolationException>|`value`, o `value`  +  `startIndex`  +  `length` -1, especifica una dirección no válida.|<xref:System.String.%23ctor%28System.SByte%2A%29><br /><br /> <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%29><br /><br /> <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%2CSystem.Text.Encoding%29>|  
@@ -665,7 +665,7 @@ Puede descargar las [tablas de pesos de ordenación](https://www.microsoft.com/d
 |Crear una cadena que se repite el mismo carácter varias veces.|<xref:System.String.%23ctor%28System.Char%2CSystem.Int32%29> ([ejemplo](#Ctor3_Example))|  
 |Cree una cadena de un puntero a una matriz de caracteres anchos o Unicode.|<xref:System.String.%23ctor%28System.Char%2A%29>|  
 |Crear una cadena de una parte de una matriz de caracteres anchos o Unicode mediante su puntero.|<xref:System.String.%23ctor%28System.Char%2A%2CSystem.Int32%2CSystem.Int32%29>|  
-|Crear una cadena de C++ `char` matriz.|<xref:System.String.%23ctor%28System.SByte%2A%29>, <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%29><br /><br /> O bien<br /><br /> <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%2CSystem.Text.Encoding%29>|  
+|Crear una cadena de C++ `char` matriz.|<xref:System.String.%23ctor%28System.SByte%2A%29>, <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%29><br /><br /> o bien<br /><br /> <xref:System.String.%23ctor%28System.SByte%2A%2CSystem.Int32%2CSystem.Int32%2CSystem.Text.Encoding%29>|  
 |Crear una cadena de caracteres ASCII.|<xref:System.Text.ASCIIEncoding.GetString%2A?displayProperty=nameWithType>|  
   
 <a name="Creating_Strings"></a>   
@@ -1138,7 +1138,7 @@ Puede descargar las [tablas de pesos de ordenación](https://www.microsoft.com/d
         <exception cref="T:System.ArgumentNullException"><paramref name="value" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="startIndex" /> o <paramref name="length" /> es menor que cero.  
   
-O bien 
+o bien 
 La suma de <paramref name="startIndex" /> y <paramref name="length" /> es mayor que el número de elementos de <paramref name="value" />.</exception>
       </Docs>
     </Member>
@@ -1267,10 +1267,10 @@ No se ha podido inicializar una nueva instancia de <see cref="T:System.String" /
         <exception cref="T:System.ArgumentNullException"><paramref name="value" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="startIndex" /> o <paramref name="length" /> es menor que cero.  
   
-O bien 
+o bien 
 La dirección especificada por <paramref name="value" /> + <paramref name="startIndex" /> es demasiado grande para la plataforma actual, es decir, se ha desbordado el cálculo de la dirección.  
   
-O bien 
+o bien 
 La longitud de la nueva cadena que se va a inicializar es demasiado grande para asignarla.</exception>
         <exception cref="T:System.ArgumentException">La dirección especificada por <paramref name="value" /> + <paramref name="startIndex" /> es inferior a 64 000.  
   
@@ -2235,7 +2235,7 @@ O bien
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="indexA" /> es mayor que <paramref name="strA" /> <see cref="P:System.String.Length" />.  
   
-O bien 
+o bien 
  <paramref name="indexB" /> es mayor que <paramref name="strB" /> <see cref="P:System.String.Length" />.  
   
 O bien 
@@ -2354,10 +2354,10 @@ O bien
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="indexA" /> es mayor que <paramref name="strA" /> <see cref="P:System.String.Length" />.  
   
-O bien 
+o bien 
  <paramref name="indexB" /> es mayor que <paramref name="strB" /> <see cref="P:System.String.Length" />.  
   
-O bien 
+o bien 
  <paramref name="indexA" />, <paramref name="indexB" /> o <paramref name="length" /> es negativo.  
   
 O bien 
@@ -2470,7 +2470,7 @@ O bien
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="indexA" /> es mayor que <paramref name="strA" /> <see cref="P:System.String.Length" />.  
   
-O bien 
+o bien 
  <paramref name="indexB" /> es mayor que <paramref name="strB" /> <see cref="P:System.String.Length" />.  
   
 O bien 
@@ -2576,13 +2576,13 @@ O bien
         <exception cref="T:System.ArgumentException"><paramref name="options" /> no es un valor <see cref="T:System.Globalization.CompareOptions" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="indexA" /> es mayor que <paramref name="strA" /><see langword=".Length" />.  
   
-O bien 
+o bien 
  <paramref name="indexB" /> es mayor que <paramref name="strB" /><see langword=".Length" />.  
   
-O bien 
+o bien 
  <paramref name="indexA" />, <paramref name="indexB" /> o <paramref name="length" /> es negativo.  
   
-O bien 
+o bien 
 <paramref name="strA" /> o <paramref name="strB" /> es <see langword="null" /> y <paramref name="length" /> es mayor que cero.</exception>
         <exception cref="T:System.ArgumentNullException"><paramref name="culture" /> es <see langword="null" />.</exception>
         <block subset="none" type="usage"><para>Los juegos de caracteres incluyen caracteres que se pueden pasar por alto. El <see cref="M:System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32,System.Globalization.CultureInfo,System.Globalization.CompareOptions)" /> método no tiene en cuenta estos caracteres cuando realiza una comparación lingüística o la referencia cultural. Para que reconozca los caracteres pueden pasar por alto en la comparación, proporcione un valor de <see cref="F:System.Globalization.CompareOptions.Ordinal" /> o <see cref="F:System.Globalization.CompareOptions.OrdinalIgnoreCase" /> para el <paramref name="options" /> parámetro.</para></block>
@@ -2778,8 +2778,8 @@ O bien
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="strA" /> no es <see langword="null" /> y <paramref name="indexA" /> es mayor que <paramref name="strA" /><see cref="P:System.String.Length" />.  
   
-O bien 
- <paramref name="strB" /> no es <see langword="null" /> y <paramref name="indexB" /> es mayor que <paramref name="strB" /><see cref="P:System.String.Length" />.  
+o bien 
+ <paramref name="strB" /> no es <see langword="null" /> y <paramref name="indexB" /> es mayor que <paramref name="strB" />.<see cref="P:System.String.Length" />.  
   
 O bien 
  <paramref name="indexA" />, <paramref name="indexB" /> o <paramref name="length" /> es negativo.</exception>
@@ -2861,7 +2861,7 @@ O bien
  </description></item><item><term> Mayor que cero 
  </term><description> Esta instancia es posterior a <paramref name="value" />.  
   
-O bien 
+o bien 
  <paramref name="value" /> es <see langword="null" />.  
   
  </description></item></list></returns>
@@ -3070,7 +3070,7 @@ Para que reconozca los caracteres pueden pasar por alto en una comparación de c
   
  Un <xref:System.String.Empty> cadena se usa en lugar de cualquier elemento null en `values`.  
   
- Si `values` está vacío `IEnumerable(Of String)`, el método devuelve <xref:System.String.Empty?displayProperty=nameWithType>. Si `values` es `null`, el método produce una <xref:System.ArgumentNullException> excepción.  
+ Si `values` es un valor de `IEnumerable(Of String)`, el método devuelve <xref:System.String.Empty?displayProperty=nameWithType>. Si `values` es `null`, el método produce una <xref:System.ArgumentNullException> excepción.  
   
  <xref:System.String.Concat%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%29> es un método de conveniencia que le permite concatenar cada elemento de un `IEnumerable(Of String)` colección sin convertir primero los elementos en una matriz de cadenas. Es especialmente útil con expresiones de consulta de Language-Integrated Query (LINQ). En el ejemplo siguiente se pasa un `List(Of String)` objeto que contiene las letras mayúsculas o minúsculas del alfabeto a una expresión lambda que selecciona las letras que sean igual o mayor que una letra determinada (que, en el ejemplo, es "M"). El `IEnumerable(Of String)` colección devuelto por la <xref:System.Linq.Enumerable.Where%2A?displayProperty=nameWithType> método se pasa a la <xref:System.String.Concat%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%29> método para mostrar el resultado como una sola cadena.  
   
@@ -4205,10 +4205,10 @@ O bien
 O bien 
  <paramref name="destinationIndex" /> no identifica un índice válido en la matriz <paramref name="destination" />.  
   
-O bien 
+o bien 
  <paramref name="count" /> es mayor que la longitud de la subcadena desde <paramref name="sourceIndex" /> hasta el final de esta instancia. 
-O bien 
- <paramref name="count" /> es mayor que la longitud de la submatriz desde <paramref name="destinationIndex" /> hasta el final de la matriz <paramref name="destination" />.</exception>
+o bien 
+ <paramref name="count" /> es mayor que la longitud de la submatriz desde <paramref name="destinationIndex" /> hasta el final de la matriz <paramref name="destination" /> .</exception>
         <altmember cref="T:System.Char" />
         <altmember cref="T:System.Int32" />
         <altmember cref="M:System.String.Insert(System.Int32,System.String)" />
@@ -4844,7 +4844,7 @@ O bien
  [!code-csharp[System.String.Equals#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.equals/cs/eqcmp.cs#1)]
  [!code-vb[System.String.Equals#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.equals/vb/eqcmp.vb#1)]  
   
- En el ejemplo siguiente se comparan cuatro conjuntos de palabras mediante el uso de cada miembro de la <xref:System.StringComparison> enumeración.  Las comparaciones usan las convenciones del inglés (Estados Unidos) y referencias culturales Sami (Suecia superior). Tenga en cuenta que las cadenas "encyclopædia" y "enciclopedia" se consideran equivalentes en la referencia cultural en-US, pero no en la referencia cultural Sami (septentrional Suecia).  
+ En el ejemplo siguiente se comparan cuatro conjuntos de palabras mediante el uso de cada miembro de la <xref:System.StringComparison> enumeración.  Las comparaciones usan las convenciones del inglés (Estados Unidos) y referencias culturales Sami (Suecia superior). Tenga en cuenta que las cadenas "encyclopædia" y "enciclopedias" se consideran equivalentes en la referencia cultural en-US, pero no en la referencia cultural Sami (septentrional Suecia).  
   
  [!code-csharp[System.String.Equals#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.equals/cs/equals_ex4.cs#4)]
  [!code-vb[System.String.Equals#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.equals/vb/equals_ex4.vb#4)]  
@@ -4911,7 +4911,7 @@ O bien
    
   
 ## Examples  
- En el ejemplo siguiente se comparan cuatro conjuntos de palabras mediante el uso de cada miembro de la <xref:System.StringComparison> enumeración.  Las comparaciones usan las convenciones del inglés (Estados Unidos) y referencias culturales Sami (Suecia superior). Tenga en cuenta que las cadenas "encyclopædia" y "enciclopedia" se consideran equivalentes en la referencia cultural en-US, pero no en la referencia cultural Sami (septentrional Suecia).  
+ En el ejemplo siguiente se comparan cuatro conjuntos de palabras mediante el uso de cada miembro de la <xref:System.StringComparison> enumeración.  Las comparaciones usan las convenciones del inglés (Estados Unidos) y referencias culturales Sami (Suecia superior). Tenga en cuenta que las cadenas "encyclopædia" y "enciclopedias" se consideran equivalentes en la referencia cultural en-US, pero no en la referencia cultural Sami (septentrional Suecia).  
   
  [!code-csharp[System.String.Equals#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.string.equals/cs/equals_ex3.cs#3)]
  [!code-vb[System.String.Equals#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.string.equals/vb/equals_ex3.vb#3)]  
@@ -5353,7 +5353,7 @@ Este método usa la [característica de formato compuesto](~/docs/standard/base-
         <exception cref="T:System.ArgumentNullException"><paramref name="format" /> es <see langword="null" />.</exception>
         <exception cref="T:System.FormatException">El elemento de formato de <paramref name="format" /> no es válido.  
   
-O bien 
+o bien 
 El índice de un elemento de formato no es cero.</exception>
         <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Aplicar formato a tipos en .NET</related>
         <related type="Article" href="~/docs/standard/base-types/composite-formatting.md">Formatos compuestos</related>
@@ -5815,7 +5815,7 @@ Este método usa la [característica de formato compuesto](~/docs/standard/base-
         <exception cref="T:System.ArgumentNullException"><paramref name="format" /> es <see langword="null" />.</exception>
         <exception cref="T:System.FormatException"><paramref name="format" /> no es válido.  
   
-O bien 
+o bien 
 El índice de un elemento de formato es menor que cero o mayor que dos.</exception>
         <related type="Article" href="~/docs/standard/base-types/formatting-types.md">Aplicar formato a tipos en .NET</related>
         <related type="Article" href="~/docs/standard/base-types/composite-formatting.md">Formatos compuestos</related>
@@ -5880,7 +5880,7 @@ Este método usa la [característica de formato compuesto](~/docs/standard/base-
         <exception cref="T:System.ArgumentNullException"><paramref name="format" /> es <see langword="null" />.</exception>
         <exception cref="T:System.FormatException"><paramref name="format" /> no es válido.  
   
-O bien 
+o bien 
 El índice de un elemento de formato es menor que cero o mayor que dos.</exception>
       </Docs>
     </Member>
@@ -6744,7 +6744,7 @@ En el ejemplo siguiente, la <see cref="M:System.String.IndexOf(System.String,Sys
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="count" /> o <paramref name="startIndex" /> es negativo.  
   
-O bien 
+o bien 
  <paramref name="startIndex" /> es mayor que la longitud de esta cadena.  
   
 O bien 
@@ -6826,7 +6826,7 @@ O bien
         <exception cref="T:System.ArgumentNullException"><paramref name="value" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="count" /> o <paramref name="startIndex" /> es negativo.  
   
-O bien 
+o bien 
  <paramref name="startIndex" /> es mayor que la longitud de esta cadena.  
   
 O bien 
@@ -6986,7 +6986,7 @@ En el ejemplo siguiente, la <see cref="M:System.String.IndexOf(System.String,Sys
         <exception cref="T:System.ArgumentNullException"><paramref name="value" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="count" /> o <paramref name="startIndex" /> es negativo.  
   
-O bien 
+o bien 
  <paramref name="startIndex" /> es mayor que la longitud de esta instancia.  
   
 O bien 
@@ -8169,7 +8169,7 @@ Una cadena está vacía si se asigna explícitamente una cadena vacía ("") o <x
         <summary>Concatena los elementos especificados de una matriz de cadenas, usando el separador indicado entre todos los elementos.</summary>
         <returns>Cadena que consta de las cadenas de <paramref name="value" /> delimitadas por la cadena de <paramref name="separator" />.  
   
-O bien 
+o bien 
  <see cref="F:System.String.Empty" /> si el valor de <paramref name="count" /> es cero, <paramref name="value" /> no tiene elementos, o <paramref name="separator" /> y todos los elementos de <paramref name="value" /> tienen el valor <see cref="F:System.String.Empty" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -8193,7 +8193,7 @@ O bien
         <exception cref="T:System.ArgumentNullException"><paramref name="value" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="startIndex" /> o <paramref name="count" /> es menor que 0.  
   
-O bien 
+o bien 
  <paramref name="startIndex" /> más <paramref name="count" /> es mayor que el número de elementos de <paramref name="value" />.</exception>
         <exception cref="T:System.OutOfMemoryException">Memoria insuficiente</exception>
         <altmember cref="M:System.String.Split(System.Char[])" />
@@ -8849,13 +8849,13 @@ La instancia actual no es igual a <see cref="F:System.String.Empty" /> y <paramr
         <exception cref="T:System.ArgumentNullException"><paramref name="value" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="count" /> es negativo.  
   
-O bien 
+o bien 
 La instancia actual no es igual a <see cref="F:System.String.Empty" /> y <paramref name="startIndex" /> es negativo.  
   
 O bien 
 La instancia actual no es igual a <see cref="F:System.String.Empty" /> y <paramref name="startIndex" /> es mayor que la longitud de esta instancia.  
   
-O bien 
+o bien 
 La instancia actual no es igual a <see cref="F:System.String.Empty" /> y <paramref name="startIndex" /> - <paramref name="count" />+ 1 especifica una posición que no se encuentra dentro de esta instancia.  
   
 O bien 
@@ -9023,13 +9023,13 @@ La instancia actual no es igual a <see cref="F:System.String.Empty" /> y <paramr
 O bien 
 La instancia actual no es igual a <see cref="F:System.String.Empty" /> y <paramref name="startIndex" /> es mayor que la longitud de esta instancia.  
   
-O bien 
+o bien 
 La instancia actual no es igual a <see cref="F:System.String.Empty" />, y <paramref name="startIndex" /> + 1 - <paramref name="count" /> especifica una posición que no se encuentra dentro de esta instancia.  
   
-O bien 
+o bien 
 La instancia actual es igual a <see cref="F:System.String.Empty" /> y <paramref name="start" /> es menor que -1 o mayor que cero.  
   
-O bien 
+o bien 
 La instancia actual es igual a <see cref="F:System.String.Empty" /> y <paramref name="count" /> es mayor que 1.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="comparisonType" /> no es un valor <see cref="T:System.StringComparison" /> válido.</exception>
         <block subset="none" type="usage"><para>Los juegos de caracteres incluyen caracteres que se pueden pasar por alto, que son los caracteres que no se tienen en cuenta al realizar una comparación lingüística o en la que se tiene en cuenta la referencia cultural. En una búsqueda que tiene en cuenta la referencia cultural (es decir, si <paramref name="comparisonType" /> no es <see cref="F:System.StringComparison.Ordinal" /> o <see cref="F:System.StringComparison.OrdinalIgnoreCase" />), si <paramref name="value" /> contiene un carácter que se puede pasar por alto, el resultado es equivalente a buscar sin ese carácter. Si <paramref name="value" /> consta solo de uno o varios caracteres puede pasar por alto el <see cref="M:System.String.LastIndexOf(System.String,System.Int32,System.Int32,System.StringComparison)" /> método siempre devuelve <paramref name="startIndex" />, que es la posición del carácter donde comienza la búsqueda.  
@@ -10037,7 +10037,7 @@ La instancia actual no es igual a <see cref="F:System.String.Empty" /> y <paramr
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="startIndex" /> es menor que cero.  
   
-O bien 
+o bien 
  <paramref name="startIndex" /> especifica una posición que no está dentro de esta cadena.</exception>
         <altmember cref="T:System.Int32" />
         <altmember cref="M:System.String.Concat(System.Object)" />
@@ -11769,7 +11769,7 @@ O bien
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="startIndex" /> más <paramref name="length" /> indica una posición fuera de esta instancia.  
   
-O bien 
+o bien 
  <paramref name="startIndex" /> o <paramref name="length" /> es menor que cero.</exception>
         <altmember cref="M:System.String.Remove(System.Int32,System.Int32)" />
         <altmember cref="M:System.String.Replace(System.Char,System.Char)" />
@@ -12029,7 +12029,7 @@ O bien
       </Parameters>
       <Docs>
         <param name="provider">Objeto que proporciona información de formato específica de la referencia cultural.</param>
-        <summary>Para obtener una descripción de este miembro, vea <see cref="M:System.IConvertible.ToByte(System.IFormatProvider)" />.</summary>
+        <summary>Para una descripción de este miembro, vea <see cref="M:System.IConvertible.ToByte(System.IFormatProvider)" />.</summary>
         <returns>Valor convertido del objeto <see cref="T:System.String" /> actual.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -12080,7 +12080,7 @@ O bien
       </Parameters>
       <Docs>
         <param name="provider">Objeto que proporciona información de formato específica de la referencia cultural.</param>
-        <summary>Para obtener una descripción de este miembro, vea <see cref="M:System.IConvertible.ToChar(System.IFormatProvider)" />.</summary>
+        <summary>Para una descripción de este miembro, vea <see cref="M:System.IConvertible.ToChar(System.IFormatProvider)" />.</summary>
         <returns>Carácter en el índice 0 del objeto <see cref="T:System.String" /> actual.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -12134,7 +12134,7 @@ O bien
       </Parameters>
       <Docs>
         <param name="provider">Objeto que proporciona información de formato específica de la referencia cultural.</param>
-        <summary>Para obtener una descripción de este miembro, vea <see cref="M:System.IConvertible.ToDateTime(System.IFormatProvider)" />.</summary>
+        <summary>Para una descripción de este miembro, vea <see cref="M:System.IConvertible.ToDateTime(System.IFormatProvider)" />.</summary>
         <returns>Valor convertido del objeto <see cref="T:System.String" /> actual.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -12188,7 +12188,7 @@ O bien
       </Parameters>
       <Docs>
         <param name="provider">Objeto que proporciona información de formato específica de la referencia cultural.</param>
-        <summary>Para obtener una descripción de este miembro, vea <see cref="M:System.IConvertible.ToDecimal(System.IFormatProvider)" />.</summary>
+        <summary>Para una descripción de este miembro, vea <see cref="M:System.IConvertible.ToDecimal(System.IFormatProvider)" />.</summary>
         <returns>Valor convertido del objeto <see cref="T:System.String" /> actual.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -12244,7 +12244,7 @@ O bien
       </Parameters>
       <Docs>
         <param name="provider">Objeto que proporciona información de formato específica de la referencia cultural.</param>
-        <summary>Para obtener una descripción de este miembro, vea <see cref="M:System.IConvertible.ToDouble(System.IFormatProvider)" />.</summary>
+        <summary>Para una descripción de este miembro, vea <see cref="M:System.IConvertible.ToDouble(System.IFormatProvider)" />.</summary>
         <returns>Valor convertido del objeto <see cref="T:System.String" /> actual.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -12300,7 +12300,7 @@ O bien
       </Parameters>
       <Docs>
         <param name="provider">Objeto que proporciona información de formato específica de la referencia cultural.</param>
-        <summary>Para obtener una descripción de este miembro, vea <see cref="M:System.IConvertible.ToInt16(System.IFormatProvider)" />.</summary>
+        <summary>Para una descripción de este miembro, vea <see cref="M:System.IConvertible.ToInt16(System.IFormatProvider)" />.</summary>
         <returns>Valor convertido del objeto <see cref="T:System.String" /> actual.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -12410,7 +12410,7 @@ O bien
       </Parameters>
       <Docs>
         <param name="provider">Objeto que proporciona información de formato específica de la referencia cultural.</param>
-        <summary>Para obtener una descripción de este miembro, vea <see cref="M:System.IConvertible.ToInt64(System.IFormatProvider)" />.</summary>
+        <summary>Para una descripción de este miembro, vea <see cref="M:System.IConvertible.ToInt64(System.IFormatProvider)" />.</summary>
         <returns>Valor convertido del objeto <see cref="T:System.String" /> actual.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -12467,7 +12467,7 @@ O bien
       </Parameters>
       <Docs>
         <param name="provider">Objeto que proporciona información de formato específica de la referencia cultural.</param>
-        <summary>Para obtener una descripción de este miembro, vea <see cref="M:System.IConvertible.ToSByte(System.IFormatProvider)" />.</summary>
+        <summary>Para una descripción de este miembro, vea <see cref="M:System.IConvertible.ToSByte(System.IFormatProvider)" />.</summary>
         <returns>Valor convertido del objeto <see cref="T:System.String" /> actual.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -12523,7 +12523,7 @@ O bien
       </Parameters>
       <Docs>
         <param name="provider">Objeto que proporciona información de formato específica de la referencia cultural.</param>
-        <summary>Para obtener una descripción de este miembro, vea <see cref="M:System.IConvertible.ToSingle(System.IFormatProvider)" />.</summary>
+        <summary>Para una descripción de este miembro, vea <see cref="M:System.IConvertible.ToSingle(System.IFormatProvider)" />.</summary>
         <returns>Valor convertido del objeto <see cref="T:System.String" /> actual.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -12607,7 +12607,7 @@ O bien
       <Docs>
         <param name="type">Tipo del objeto devuelto.</param>
         <param name="provider">Objeto que proporciona información de formato específica de la referencia cultural.</param>
-        <summary>Para obtener una descripción de este miembro, vea <see cref="M:System.IConvertible.ToType(System.Type,System.IFormatProvider)" />.</summary>
+        <summary>Para una descripción de este miembro, vea <see cref="M:System.IConvertible.ToType(System.Type,System.IFormatProvider)" />.</summary>
         <returns>Valor convertido del objeto <see cref="T:System.String" /> actual.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -12666,7 +12666,7 @@ O bien
       </Parameters>
       <Docs>
         <param name="provider">Objeto que proporciona información de formato específica de la referencia cultural.</param>
-        <summary>Para obtener una descripción de este miembro, vea <see cref="M:System.IConvertible.ToUInt16(System.IFormatProvider)" />.</summary>
+        <summary>Para una descripción de este miembro, vea <see cref="M:System.IConvertible.ToUInt16(System.IFormatProvider)" />.</summary>
         <returns>Valor convertido del objeto <see cref="T:System.String" /> actual.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -12725,7 +12725,7 @@ O bien
       </Parameters>
       <Docs>
         <param name="provider">Objeto que proporciona información de formato específica de la referencia cultural.</param>
-        <summary>Para obtener una descripción de este miembro, vea <see cref="M:System.IConvertible.ToUInt32(System.IFormatProvider)" />.</summary>
+        <summary>Para una descripción de este miembro, vea <see cref="M:System.IConvertible.ToUInt32(System.IFormatProvider)" />.</summary>
         <returns>Valor convertido del objeto <see cref="T:System.String" /> actual.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -12784,7 +12784,7 @@ O bien
       </Parameters>
       <Docs>
         <param name="provider">Objeto que proporciona información de formato específica de la referencia cultural.</param>
-        <summary>Para obtener una descripción de este miembro, vea <see cref="M:System.IConvertible.ToUInt64(System.IFormatProvider)" />.</summary>
+        <summary>Para una descripción de este miembro, vea <see cref="M:System.IConvertible.ToUInt64(System.IFormatProvider)" />.</summary>
         <returns>Valor convertido del objeto <see cref="T:System.String" /> actual.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -12971,7 +12971,7 @@ O bien
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="startIndex" /> o <paramref name="length" /> es menor que cero.  
   
-O bien 
+o bien 
  <paramref name="startIndex" /> más <paramref name="length" /> es mayor que la longitud de esta instancia.</exception>
         <altmember cref="T:System.Array" />
         <altmember cref="T:System.Char" />

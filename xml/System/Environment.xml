@@ -1,5 +1,5 @@
 <Type Name="Environment" FullName="System.Environment">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="8f90cd75a7a7c70b077c46759736bd53d521320e" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67250299" /></Metadata><TypeSignature Language="C#" Value="public static class Environment" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="2befc53c964784ef05f9a3c02e361d9e6aed9618" /><Meta Name="ms.sourcegitcommit" Value="61757d0366a172cdbc11436deb1c1ffa49d97238" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/28/2019" /><Meta Name="ms.locfileid" Value="67458497" /></Metadata><TypeSignature Language="C#" Value="public static class Environment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Environment extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Environment" />
   <TypeSignature Language="VB.NET" Value="Public Class Environment" />
@@ -505,15 +505,15 @@ goto :EOF
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Este método finaliza un proceso sin ejecutar cualquier activo `try` / `finally` finalizadores ni bloques.  
+ Este método finaliza un proceso sin ejecutar cualquier activo `try` / `finally` finalizadores ni bloques.
   
- El <xref:System.Environment.FailFast%2A> método escribe el `message` cadena para el registro de eventos de aplicación de Windows, crea un volcado de la aplicación y, a continuación, finaliza el proceso actual. El `message` cadena también se incluye en el informe de errores para Microsoft.  
+ El `Environment.FailFast` método escribe el `message` cadena para el registro de eventos de aplicación de Windows, crea un volcado de la aplicación y, a continuación, finaliza el proceso actual. El `message` cadena también se incluye en el informe de errores para Microsoft.  
   
- Use la <xref:System.Environment.FailFast%2A> método en lugar de la <xref:System.Environment.Exit%2A> método para finalizar la aplicación si el estado de la aplicación es irreparable y ejecutar la aplicación `try` / `finally` finalizadores y bloques va a dañar recursos del programa.  
+ Use la `Environment.FailFast` método en lugar de la <xref:System.Environment.Exit%2A> método para finalizar la aplicación si el estado de la aplicación es irreparable y ejecutar la aplicación `try` / `finally` finalizadores y bloques va a dañar recursos del programa.  
   
  Información se notifica a Microsoft mediante el uso de informes de errores de Windows. Para obtener más información, consulte [Windows Error Reporting: Introducción a](https://msdn.microsoft.com/library/windows/hardware/dn641144.aspx).  
-  
-   
+
+Una llamada a la `Environment.FailFast` método para finalizar la ejecución de una aplicación que se ejecuta en Visual Studio inicia el depurador un <xref:System.ExecutionEngineException> y desencadena automáticamente la [FatalExecutionError Asistente para depuración administrada (MDA)](https://github.com/dotnet/docs/blob/master/docs/framework/debug-trace-profile/fatalexecutionengineerror-mda.md).
   
 ## Examples  
  El ejemplo siguiente escribe una entrada de registro en el registro de eventos de aplicación de Windows y finaliza el proceso actual.  
@@ -573,13 +573,15 @@ goto :EOF
 ## Remarks  
  Este método finaliza el proceso sin ejecutar cualquier activo `try` / `finally` finalizadores ni bloques.  
   
- El <xref:System.Environment.FailFast%2A> método escribe el `message` cadena para el registro de eventos de aplicación de Windows, crea un volcado de la aplicación y, a continuación, finaliza el proceso actual.  
+ El `Environment.FailFast` método escribe el `message` cadena para el registro de eventos de aplicación de Windows, crea un volcado de la aplicación y, a continuación, finaliza el proceso actual.  
   
  Información se notifica a Microsoft mediante el uso de informes de errores de Windows. Para obtener más información, consulte [Windows Error Reporting: Introducción a](https://msdn.microsoft.com/library/windows/hardware/dn641144.aspx). Incluyen informes de errores para Microsoft `message` y `exception` información, que proporciona los detalles para clasificar el error. Aunque `exception` no es controlado porque se finaliza el proceso, se obtiene todavía la información contextual que provocó la excepción.  
   
  Si `exception` es `null`, o si `exception` no es se produce, este método funciona igual que el <xref:System.Environment.FailFast%28System.String%29> sobrecarga del método.  
   
- Use la <xref:System.Environment.FailFast%2A> método en lugar de la <xref:System.Environment.Exit%2A> método para finalizar la aplicación si el estado de la aplicación es irreparable y ejecutar la aplicación `try` / `finally` finalizadores y bloques va a dañar recursos del programa.  
+ Use la `Environment.FailFast` método en lugar de la <xref:System.Environment.Exit%2A> método para finalizar la aplicación si el estado de la aplicación es irreparable y ejecutar la aplicación `try` / `finally` finalizadores y bloques va a dañar recursos del programa.  
+
+Una llamada a la `Environment.FailFast` método para finalizar la ejecución de una aplicación que se ejecuta en Visual Studio inicia el depurador un <xref:System.ExecutionEngineException> y desencadena automáticamente la [FatalExecutionError Asistente para depuración administrada (MDA)](https://github.com/dotnet/docs/blob/master/docs/framework/debug-trace-profile/fatalexecutionengineerror-mda.md).
   
  ]]></format>
         </remarks>
@@ -1151,7 +1153,7 @@ Para obtener acceso completo a las variables de entorno si <paramref name="targe
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException"><paramref name="folder" /> no es un miembro de <see cref="T:System.Environment.SpecialFolder" />.
-O bien
+o bien
 
 <paramref name="options" /> no es un miembro de <see cref="T:System.Environment.SpecialFolderOption" />.</exception>
         <exception cref="T:System.PlatformNotSupportedException">No se admite la plataforma actual.</exception>
@@ -1503,7 +1505,7 @@ El `Environment.OSVersion` propiedad no proporciona un método confiable para id
         </remarks>
         <exception cref="T:System.InvalidOperationException">Esta propiedad no pudo obtener la versión del sistema.  
   
-O bien 
+o bien 
 El identificador de plataforma obtenido no es un miembro de <see cref="T:System.PlatformID" /></exception>
       </Docs>
     </Member>
@@ -1652,7 +1654,7 @@ El ejemplo siguiente se intenta recuperar el valor de una variable de entorno de
 O bien 
 La longitud de <paramref name="variable" /> o <paramref name="value" /> es mayor o igual que 32.767 caracteres.  
   
-O bien 
+o bien 
 Error durante la ejecución de esta operación.</exception>
         <exception cref="T:System.Security.SecurityException">El autor de la llamada no tiene el permiso requerido para llevar a cabo esta operación.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Para obtener acceso completo a las variables de entorno. Enumeración asociada: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
@@ -1751,19 +1753,19 @@ El siguiente ejemplo crea variables de entorno para la <xref:System.EnvironmentV
         <exception cref="T:System.ArgumentNullException"><paramref name="variable" /> es <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException"><paramref name="variable" /> contiene una cadena de longitud cero, un carácter  de cero hexadecimal (0x00) o un signo de igual ("=").  
   
-O bien 
+o bien 
 La longitud de <paramref name="variable" /> es mayor o igual que 32.767 caracteres.  
   
 O bien 
- <paramref name="target" /> no es un miembro de la enumeración <see cref="T:System.EnvironmentVariableTarget" />.  
+ <paramref name="target" /> no es un miembro de la enumeración <see cref="T:System.EnvironmentVariableTarget" /> .  
   
 O bien 
- <paramref name="target" /> es <see cref="F:System.EnvironmentVariableTarget.Machine" /> o <see cref="F:System.EnvironmentVariableTarget.User" /> y la longitud de <paramref name="variable" /> es igual o mayor que 255.  
+ <paramref name="target" /> es <see cref="F:System.EnvironmentVariableTarget.Machine" /> o <see cref="F:System.EnvironmentVariableTarget.User" />y la longitud de <paramref name="variable" /> es igual o mayor que 255.  
   
 O bien 
  <paramref name="target" /> es <see cref="F:System.EnvironmentVariableTarget.Process" /> y la longitud de <paramref name="value" /> es igual o mayor que 32.767 caracteres.  
   
-O bien 
+o bien 
 Error durante la ejecución de esta operación.</exception>
         <exception cref="T:System.Security.SecurityException">El autor de la llamada no tiene el permiso requerido para llevar a cabo esta operación.</exception>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Para obtener acceso completo a las variables de entorno. Enumeración asociada: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>

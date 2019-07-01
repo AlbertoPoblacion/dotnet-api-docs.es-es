@@ -1,5 +1,5 @@
 <Type Name="BuildRequestDataFlags" FullName="Microsoft.Build.Execution.BuildRequestDataFlags">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="7c2e6a9f03a7016efe533e8cb6266f51acbe7490" /><Meta Name="ms.sourcegitcommit" Value="1bb00d2f4343e73ae8d58668f02297a3cf10a4c1" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/15/2019" /><Meta Name="ms.locfileid" Value="63880514" /></Metadata><TypeSignature Language="C#" Value="public enum BuildRequestDataFlags" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="8bead5ce5519a9bc7b64966094278b2ecb525294" /><Meta Name="ms.sourcegitcommit" Value="feb111e137a41d186aef01d83f04819d820520eb" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/21/2019" /><Meta Name="ms.locfileid" Value="67308000" /></Metadata><TypeSignature Language="C#" Value="public enum BuildRequestDataFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildRequestDataFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.BuildRequestDataFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum BuildRequestDataFlags" />
@@ -19,7 +19,17 @@
   </Attributes>
   <Docs>
     <summary>Marcas que proporcionan control adicional sobre la solicitud de compilación.</summary>
-    <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks 
+
+El `IgnoreExistingProjectState` marca únicamente se proporciona para los casos donde el cliente sabe que la nueva solicitud de compilación no depende del estado del proyecto generado por una solicitud anterior. Establecer este indicador puede proporcionar una mejora del rendimiento en el caso de las afinidades de nodo no compatible, porque MSBuild tendría que serializar el estado del proyecto de un nodo a otro. Serializar el estado del proyecto puede ser costoso, dependiendo de la cantidad de datos que anteriormente ha generado el proyecto.  
+  
+El `IgnoreExistingProjectState` marca no tiene ningún efecto en los resultados de destino, por lo que si una solicitud anterior ha creado un destino, la nueva solicitud no se volverá a generar el destino. Además, ninguna de las mutaciones de estado del proyecto que se ha producido como consecuencia de compilar previamente que tienen como destino se volverá a aplicar.  
+  
+ ]]></format>
+        </remarks>
   </Docs>
   <Members>
     <Member MemberName="IgnoreExistingProjectState">
@@ -39,17 +49,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Cuando esta marca está presente y el proyecto se ha compilado previamente en un nodo cuya afinidad es incompatible con la afinidad que esta solicitud necesita, esta solicitud de compilación omite el estado del proyecto (pero no los resultados de destino) que se generó previamente.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Este comportamiento, cuando esta marca está presente, normalmente no deseado. Esta marca únicamente se proporciona para los casos donde el cliente sabe que la nueva solicitud de compilación no depende del estado del proyecto generado por una solicitud anterior. Establecer este indicador puede proporcionar una mejora del rendimiento en el caso de las afinidades de nodo no compatible, porque MSBuild tendría que serializar el estado del proyecto de un nodo a otro, al serializar el estado del proyecto puede ser costoso, según la cantidad de datos del proyecto se ha generado anteriormente.  
-  
- Esta marca no tiene ningún efecto en los resultados de destino, por lo que si una solicitud anterior ha creado un destino, la nueva solicitud se vuelve a compilar el destino. Además, ninguna de las mutaciones de estado del proyecto que se ha producido como consecuencia de compilar previamente que tienen como destino se debe volver a aplicar.  
-  
- ]]></format>
-        </remarks>
+        <summary>Cuando esta marca está presente y el proyecto se ha compilado previamente en un nodo cuya afinidad es incompatible con la afinidad que esta solicitud necesita, esta solicitud de compilación omite el estado del proyecto (pero no los resultados de destino) que se generó previamente. Normalmente no se desea este comportamiento; consulte la sección [Comentarios](#remarks) para obtener más información.</summary>
       </Docs>
     </Member>
     <Member MemberName="None">

@@ -1,5 +1,5 @@
 <Type Name="GeneratorPosition" FullName="Windows.UI.Xaml.Controls.Primitives.GeneratorPosition">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="144fdf7fe72d81e624095ea514b56b2719323802" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67244713" /></Metadata><TypeSignature Language="C#" Value="public struct GeneratorPosition" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="81253573476c4021cb8e332977eafab1c027838e" /><Meta Name="ms.sourcegitcommit" Value="61757d0366a172cdbc11436deb1c1ffa49d97238" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/28/2019" /><Meta Name="ms.locfileid" Value="67458459" /></Metadata><TypeSignature Language="C#" Value="public struct GeneratorPosition" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit GeneratorPosition extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:Windows.UI.Xaml.Controls.Primitives.GeneratorPosition" />
   <TypeSignature Language="VB.NET" Value="Public Structure GeneratorPosition" />
@@ -21,7 +21,16 @@
   </Attributes>
   <Docs>
     <summary>Describe la posición de un elemento que está administrado por <see cref="T:Windows.UI.Xaml.Controls.ItemContainerGenerator" />.</summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `GeneratorPosition` struct. Para obtener más información, consulte [objeto GeneratorPosition](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.primitives.generatorposition) en la referencia de API de UWP.  
+ 
+ ]]></format>
+    </remarks>
+    <related type="Article" href="https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.primitives.generatorposition">Objeto GeneratorPosition (UWP)</related>
+    <related type="Article" href="https://docs.microsoft.com/dotnet/api/system.windows.controls.primitives.generatorposition">System.Windows.Controls.Primitives.GeneratorPosition (. NET)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,7 +54,14 @@
         <param name="index">Índice relativo a los elementos generados (realizados). -1 es un valor especial que hace referencia a un elemento ficticio al principio o al final de la lista de elementos.</param>
         <param name="offset">Desplazamiento relativo a los elementos no generados (no realizados) cerca del elemento indexado. Un desplazamiento de 0 hace referencia al propio elemento indexado, un desplazamiento de 1 hace referencia al siguiente elemento no generado (no realizado) y un desplazamiento de -1 hace referencia al elemento anterior.</param>
         <summary>Inicializa una nueva instancia de <see cref="T:Windows.UI.Xaml.Controls.Primitives.GeneratorPosition" /> con el índice y el desplazamiento especificados.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `GeneratorPosition` struct. Para obtener más información, consulte [objeto GeneratorPosition](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.primitives.generatorposition) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -73,10 +89,17 @@
         <Parameter Name="o" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="o">Instancia <see cref="T:Windows.UI.Xaml.Controls.Primitives.GeneratorPosition" /> que se va a comparar.</param>
+        <param name="o">Instancia de <see cref="T:Windows.UI.Xaml.Controls.Primitives.GeneratorPosition" /> que se va a comparar.</param>
         <summary>Compara la instancia especificada y la instancia actual de <see cref="T:Windows.UI.Xaml.Controls.Primitives.GeneratorPosition" /> para determinar si sus valores son iguales.</summary>
-        <returns><see langword="true" /> si <paramref name="o" /> y esta instancia de <see cref="T:Windows.UI.Xaml.Controls.Primitives.GeneratorPosition" /> tienen los mismos valores.</returns>
-        <remarks>To be added.</remarks>
+        <returns>Es <see langword="true" /> si <paramref name="o" /> y esta instancia de <see cref="T:Windows.UI.Xaml.Controls.Primitives.GeneratorPosition" /> tienen los mismos valores.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `GeneratorPosition` struct. Para obtener más información, consulte [objeto GeneratorPosition](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.primitives.generatorposition) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -102,9 +125,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Devuelve el código hash de este objeto <see cref="T:Windows.UI.Xaml.Controls.Primitives.GeneratorPosition" />.</summary>
+        <summary>Devuelve el código hash para esta estructura <see cref="T:Windows.UI.Xaml.Controls.Primitives.GeneratorPosition" />.</summary>
         <returns>Código hash de esta <see cref="T:Windows.UI.Xaml.Controls.Primitives.GeneratorPosition" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `GeneratorPosition` struct. Para obtener más información, consulte [objeto GeneratorPosition](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.primitives.generatorposition) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -126,7 +156,16 @@
       <Docs>
         <summary>Obtiene o establece el índice relativo a los elementos generados (realizados).</summary>
         <value>El índice relativo a generado (realizado) elementos.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `GeneratorPosition` struct. Para obtener más información, consulte [objeto GeneratorPosition](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.primitives.generatorposition) en la referencia de API de UWP.  
+
+ **-1** es un valor especial que hace referencia a un elemento ficticio al principio o final de la lista de elementos.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Offset">
@@ -148,7 +187,16 @@
       <Docs>
         <summary>Obtiene o establece el desplazamiento relativo a los elementos no generados (no realizados) cerca del elemento indexado.</summary>
         <value>El desplazamiento relativo a los elementos no generados (no realizados) cerca del elemento indizado.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `GeneratorPosition` struct. Para obtener más información, consulte [objeto GeneratorPosition](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.primitives.generatorposition) en la referencia de API de UWP.  
+
+ Un desplazamiento de **0** hace referencia al propio elemento indizado, un desplazamiento **1** hace referencia al siguiente elemento no generado (no realizado) y un desplazamiento de **-1** hace referencia al elemento anterior.
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -176,7 +224,14 @@
         <param name="gp2">Segunda instancia que se va a comparar.</param>
         <summary>Compara dos objetos <see cref="T:Windows.UI.Xaml.Controls.Primitives.GeneratorPosition" /> para determinar si sus valores son iguales.</summary>
         <returns>Es <see langword="true" /> si los dos objetos son iguales; en caso contrario, es <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `GeneratorPosition` struct. Para obtener más información, consulte [objeto GeneratorPosition](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.primitives.generatorposition) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -204,7 +259,14 @@
         <param name="gp2">Segunda instancia que se va a comparar.</param>
         <summary>Compara dos objetos <see cref="T:Windows.UI.Xaml.Controls.Primitives.GeneratorPosition" /> para determinar si sus valores no son iguales.</summary>
         <returns><see langword="true" /> si los valores no son iguales; en caso contrario, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `GeneratorPosition` struct. Para obtener más información, consulte [objeto GeneratorPosition](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.primitives.generatorposition) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -232,7 +294,14 @@
       <Docs>
         <summary>Devuelve una representación de cadena de esta instancia de <see cref="T:Windows.UI.Xaml.Controls.Primitives.GeneratorPosition" />.</summary>
         <returns>Representación de cadena de esta instancia de <see cref="T:Windows.UI.Xaml.Controls.Primitives.GeneratorPosition" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `GeneratorPosition` struct. Para obtener más información, consulte [objeto GeneratorPosition](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.primitives.generatorposition) en la referencia de API de UWP.  
+
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
   </Members>

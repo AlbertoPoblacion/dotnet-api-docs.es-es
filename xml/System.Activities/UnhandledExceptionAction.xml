@@ -1,5 +1,5 @@
 <Type Name="UnhandledExceptionAction" FullName="System.Activities.UnhandledExceptionAction">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="5ef7a0a32b99e9ac13071b3e26f38aa2e7ad640e" /><Meta Name="ms.sourcegitcommit" Value="f1d16425528e237257ca3b58eb49217a514849ea" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="04/24/2019" /><Meta Name="ms.locfileid" Value="63917114" /></Metadata><TypeSignature Language="C#" Value="public enum UnhandledExceptionAction" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f85bd9656126b16f24a4471014ee80048c8764d3" /><Meta Name="ms.sourcegitcommit" Value="feb111e137a41d186aef01d83f04819d820520eb" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/21/2019" /><Meta Name="ms.locfileid" Value="67307975" /></Metadata><TypeSignature Language="C#" Value="public enum UnhandledExceptionAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UnhandledExceptionAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Activities.UnhandledExceptionAction" />
   <TypeSignature Language="VB.NET" Value="Public Enum UnhandledExceptionAction" />
@@ -22,11 +22,20 @@
   
    
   
-## Examples  
- En el ejemplo siguiente se invoca un flujo de trabajo que produce una excepción. El flujo de trabajo no controla la excepción y se invoca el controlador de la propiedad <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A>. El objeto <xref:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs> se inspecciona para proporcionar información acerca de la excepción y se termina el flujo de trabajo.  
+## Examples
+
+En el ejemplo siguiente se invoca un flujo de trabajo que produce una excepción. El flujo de trabajo no controla la excepción y se invoca el controlador de la propiedad <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A>. El objeto <xref:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs> se inspecciona para proporcionar información acerca de la excepción y se termina el flujo de trabajo.  
   
- [!code-csharp[CFX_WorkflowApplicationExample#6](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#6)]  
+[!code-csharp[CFX_WorkflowApplicationExample#6](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#6)]  
+
+En el ejemplo siguiente se invoca un flujo de trabajo que produce una excepción. El flujo de trabajo no controla la excepción y se invoca el controlador de la propiedad <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A>. La clase <xref:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs> se inspecciona para proporcionar información sobre la excepción y se anula el flujo de trabajo.  
   
+[!code-csharp[CFX_WorkflowApplicationExample#7](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#7)]  
+
+En el ejemplo siguiente se invoca un flujo de trabajo que produce una excepción. El flujo de trabajo no controla la excepción y se invoca el controlador de la propiedad <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A>. La clase <xref:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs> se inspecciona para proporcionar información sobre la excepción y se cancela el flujo de trabajo.  
+  
+ [!code-csharp[CFX_WorkflowApplicationExample#8](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#8)]  
+
  ]]></format>
     </remarks>
   </Docs>
@@ -48,22 +57,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Especifica que la clase <see cref="T:System.Activities.WorkflowApplication" /> debe anular el flujo de trabajo.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Esto hace que se llame a la propiedad <xref:System.Activities.WorkflowApplication.Aborted%2A> cuando se complete el proceso de anulación. Como razón de la anulación se usa la excepción no controlada.  
-  
-   
-  
-## Examples  
- En el ejemplo siguiente se invoca un flujo de trabajo que produce una excepción. El flujo de trabajo no controla la excepción y se invoca el controlador de la propiedad <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A>. La clase <xref:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs> se inspecciona para proporcionar información sobre la excepción y se anula el flujo de trabajo.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#7](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#7)]  
-  
- ]]></format>
-        </remarks>
+        <summary>Especifica que la clase <see cref="T:System.Activities.WorkflowApplication" /> debe anular el flujo de trabajo. El resultado es que <see cref="P:System.Activities.WorkflowApplication.Aborted" /> devuelve la llamada realizada al delegado cuando el proceso de anulación se completa. Como razón de la anulación se usa la excepción no controlada.</summary>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -83,22 +77,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Especifica que la clase <see cref="T:System.Activities.WorkflowApplication" /> debe programar la cancelación de la actividad raíz y reanudar la ejecución.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Esto hace que se llame a <xref:System.Activities.WorkflowApplication.Completed%2A> una vez completado el proceso de cancelación.  
-  
-   
-  
-## Examples  
- En el ejemplo siguiente se invoca un flujo de trabajo que produce una excepción. El flujo de trabajo no controla la excepción y se invoca el controlador de la propiedad <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A>. La clase <xref:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs> se inspecciona para proporcionar información sobre la excepción y se cancela el flujo de trabajo.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#8](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#8)]  
-  
- ]]></format>
-        </remarks>
+        <summary>Especifica que la clase <see cref="T:System.Activities.WorkflowApplication" /> debe programar la cancelación de la actividad raíz y reanudar la ejecución. El resultado es que la propiedad <see cref="P:System.Activities.WorkflowApplication.Completed" /> devuelve la llamada realizada al delegado cuando el proceso de cancelación se completa.</summary>
       </Docs>
     </Member>
     <Member MemberName="Terminate">
@@ -118,22 +97,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Especifica que la clase <see cref="T:System.Activities.WorkflowApplication" /> debe programar la terminación de la actividad raíz y reanudar la ejecución.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Esto hace que se llame a <xref:System.Activities.WorkflowApplication.Completed%2A> una vez finalizado el proceso de terminación. Como razón de la finalización se usa la excepción no controlada. Terminate es la acción predeterminada si no hay ningún <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A> se especificó un controlador.  
-  
-   
-  
-## Examples  
- En el ejemplo siguiente se invoca un flujo de trabajo que produce una excepción. El flujo de trabajo no controla la excepción y se invoca el controlador de la propiedad <xref:System.Activities.WorkflowApplication.OnUnhandledException%2A>. El objeto <xref:System.Activities.WorkflowApplicationUnhandledExceptionEventArgs> se inspecciona para proporcionar información acerca de la excepción y se termina el flujo de trabajo.  
-  
- [!code-csharp[CFX_WorkflowApplicationExample#6](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#6)]  
-  
- ]]></format>
-        </remarks>
+        <summary>Especifica que la clase <see cref="T:System.Activities.WorkflowApplication" /> debe programar la terminación de la actividad raíz y reanudar la ejecución. El resultado es una llamada al delegado asignado a la propiedad <see cref="P:System.Activities.WorkflowApplication.Completed" /> cuando el proceso de cancelación se completa. Como razón de la finalización se usa la excepción no controlada. <see langword="Terminate" /> es la acción predeterminada si no se especifica ningún controlador <see cref="P:System.Activities.WorkflowApplication.OnUnhandledException" />.</summary>
       </Docs>
     </Member>
   </Members>
