@@ -1,5 +1,5 @@
 <Type Name="ECDiffieHellmanKeyDerivationFunction" FullName="System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="bbf71cf032ec91bba5c847d230bd5a72aa8047a6" /><Meta Name="ms.sourcegitcommit" Value="220917117f9d774aaa482439aa7324e39dc1f5b6" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="02/25/2019" /><Meta Name="ms.locfileid" Value="56773875" /></Metadata><TypeSignature Language="C#" Value="public enum ECDiffieHellmanKeyDerivationFunction" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="3ed127925410dbb843c22bcecca12eec046f7dca" /><Meta Name="ms.sourcegitcommit" Value="24dc380b0d43e8919d4e0d50409e8f0aeae98713" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/27/2019" /><Meta Name="ms.locfileid" Value="67411610" /></Metadata><TypeSignature Language="C#" Value="public enum ECDiffieHellmanKeyDerivationFunction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ECDiffieHellmanKeyDerivationFunction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction" />
   <TypeSignature Language="VB.NET" Value="Public Enum ECDiffieHellmanKeyDerivationFunction" />
@@ -24,9 +24,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- El <xref:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction> enumeración define el tipo de algoritmo que se usará para transformar un acuerdo confidencial sin procesar en material de clave. El acuerdo confidencial es el valor que se genera a partir de una clave privada y clave pública de la otra parte, como parte del intercambio de claves. Es el valor de inicialización para el material de clave generado por el <xref:System.Security.Cryptography.ECDiffieHellmanCng.DeriveKeyMaterial%2A> método.  
+ El `ECDiffieHellmanKeyDerivationFunction` enumeración define el tipo de algoritmo que se usará para transformar un acuerdo confidencial sin procesar en material de clave. El acuerdo confidencial es el valor que se genera a partir de una clave privada y clave pública de la otra parte, como parte del intercambio de claves. Es el valor de inicialización para el material de clave generado por el <xref:System.Security.Cryptography.ECDiffieHellmanCng.DeriveKeyMaterial%2A?displayProperty=nameWithType> método.  
   
- El <xref:System.Security.Cryptography.ECDiffieHellmanCng.KeyDerivationFunction%2A> propiedad utiliza esta enumeración para obtener la función de derivación de claves para el <xref:System.Security.Cryptography.ECDiffieHellmanCng> clase.  
+ El <xref:System.Security.Cryptography.ECDiffieHellmanCng.KeyDerivationFunction%2A?displayProperty=nameWithType> propiedad utiliza esta enumeración para obtener la función de derivación de claves para el <xref:System.Security.Cryptography.ECDiffieHellmanCng> clase.  
   
  ]]></format>
     </remarks>
@@ -55,17 +55,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Se utiliza un algoritmo hash para generar el material de clave. La propiedad <see cref="P:System.Security.Cryptography.ECDiffieHellmanCng.HashAlgorithm" /> especifica el nombre del algoritmo que se va a utilizar. Si no se especifica el nombre del algoritmo, se utiliza <see cref="T:System.Security.Cryptography.SHA256" /> como algoritmo predeterminado.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- También puede especificar el <xref:System.Security.Cryptography.ECDiffieHellmanCng.SecretPrepend%2A> y <xref:System.Security.Cryptography.ECDiffieHellmanCng.SecretAppend%2A> propiedades, pero no son necesarios.  
-  
- La cantidad de material de clave que se genera es equivalente al tamaño del valor hash para el algoritmo especificado.  
-  
- ]]></format>
-        </remarks>
+        <summary>Se utiliza un algoritmo hash para generar el material de clave. La propiedad <see cref="P:System.Security.Cryptography.ECDiffieHellmanCng.HashAlgorithm" /> especifica el nombre del algoritmo que se va a utilizar. Si no se especifica el nombre del algoritmo, se utiliza <see cref="T:System.Security.Cryptography.SHA256" /> como algoritmo predeterminado. También puede especificar las propiedades <see cref="P:System.Security.Cryptography.ECDiffieHellmanCng.SecretPrepend" /> y <see cref="P:System.Security.Cryptography.ECDiffieHellmanCng.SecretAppend" />, pero no son necesarios. La cantidad de material clave que se genera es equivalente al tamaño del código hash para el algoritmo especificado.</summary>
       </Docs>
     </Member>
     <Member MemberName="Hmac">
@@ -91,17 +81,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Se utiliza un algoritmo de código de autenticación de mensajes basado en hash (HMAC) para generar el material de clave. La propiedad <see cref="P:System.Security.Cryptography.ECDiffieHellmanCng.HmacKey" /> especifica la clave que se va a utilizar. Se debe establecer esta propiedad o la propiedad <see cref="P:System.Security.Cryptography.ECDiffieHellmanCng.UseSecretAgreementAsHmacKey" /> debe estar establecida en <see langword="true" />; de lo contrario, se genera una <see cref="T:System.Security.Cryptography.CryptographicException" /> cuando se utiliza <see cref="F:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Hmac" />. Si se establecen ambas propiedades, el acuerdo confidencial se utiliza como clave HMAC.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- También puede especificar el <xref:System.Security.Cryptography.ECDiffieHellmanCng.SecretPrepend%2A> y <xref:System.Security.Cryptography.ECDiffieHellmanCng.SecretAppend%2A> propiedades, pero no son necesarios.  
-  
- La cantidad de material de clave que se genera es equivalente al tamaño del valor HMAC.  
-  
- ]]></format>
-        </remarks>
+        <summary>Se utiliza un algoritmo de código de autenticación de mensajes basado en hash (HMAC) para generar el material de clave. La propiedad <see cref="P:System.Security.Cryptography.ECDiffieHellmanCng.HmacKey" /> especifica la clave que se va a utilizar. Se debe establecer esta propiedad o la propiedad <see cref="P:System.Security.Cryptography.ECDiffieHellmanCng.UseSecretAgreementAsHmacKey" /> debe estar establecida en <see langword="true" />; de lo contrario, se genera una <see cref="T:System.Security.Cryptography.CryptographicException" /> cuando se utiliza <see cref="F:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Hmac" />. Si se establecen ambas propiedades, el acuerdo confidencial se utiliza como clave HMAC. También puede especificar las propiedades <see cref="P:System.Security.Cryptography.ECDiffieHellmanCng.SecretPrepend" /> y <see cref="P:System.Security.Cryptography.ECDiffieHellmanCng.SecretAppend" />, pero no son necesarias. La cantidad de material clave que se genera es equivalente al tamaño del valor HMAC.</summary>
       </Docs>
     </Member>
     <Member MemberName="Tls">
@@ -127,15 +107,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Se utiliza el protocolo Seguridad de la capa de transporte (TLS) para generar el material de clave. Se deben establecer las propiedades <see cref="P:System.Security.Cryptography.ECDiffieHellmanCng.Seed" /> y <see cref="P:System.Security.Cryptography.ECDiffieHellmanCng.Label" />; de lo contrario, se genera una <see cref="T:System.Security.Cryptography.CryptographicException" /> cuando se utiliza <see cref="F:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Tls" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Este valor genera 160 bits del material de clave.  
-  
- ]]></format>
-        </remarks>
+        <summary>Se utiliza el protocolo Seguridad de la capa de transporte (TLS) para generar el material de clave. Se deben establecer las propiedades <see cref="P:System.Security.Cryptography.ECDiffieHellmanCng.Seed" /> y <see cref="P:System.Security.Cryptography.ECDiffieHellmanCng.Label" />; de lo contrario, se genera una <see cref="T:System.Security.Cryptography.CryptographicException" /> cuando se utiliza <see cref="F:System.Security.Cryptography.ECDiffieHellmanKeyDerivationFunction.Tls" />. Este valor genera 160 bits del material de clave.</summary>
       </Docs>
     </Member>
   </Members>

@@ -1,5 +1,5 @@
 <Type Name="RSAEncryptionPaddingMode" FullName="System.Security.Cryptography.RSAEncryptionPaddingMode">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="1cf3688ec70c397afc67d507dc8c43cb7c3efcf4" /><Meta Name="ms.sourcegitcommit" Value="a3e01ec36374fac54a55add0dcc1e754e394abeb" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="03/30/2019" /><Meta Name="ms.locfileid" Value="58717838" /></Metadata><TypeSignature Language="C#" Value="public enum RSAEncryptionPaddingMode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="07f906baaacfb8c935fffc43827ea95d7a3be204" /><Meta Name="ms.sourcegitcommit" Value="24dc380b0d43e8919d4e0d50409e8f0aeae98713" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/27/2019" /><Meta Name="ms.locfileid" Value="67411467" /></Metadata><TypeSignature Language="C#" Value="public enum RSAEncryptionPaddingMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RSAEncryptionPaddingMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RSAEncryptionPaddingMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum RSAEncryptionPaddingMode" />
@@ -28,7 +28,15 @@
   </Base>
   <Docs>
     <summary>Especifica el modo de relleno que se va a usar con operaciones de cifrado o descifrado RSA.</summary>
-    <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks
+
+El `Oaep` modo se corresponde con el esquema de cifrado RSAES-OEAP se describe en el [PKCS #1: El estándar de cifrado RSA](http://www.emc.com/emc-plus/rsa-labs/standards-initiatives/pkcs-rsa-cryptography-standard.htm)y el `Pkcs1` modo se corresponde con el esquema de cifrado RSAES-PKCS1-v1_5 descrito en el [PKCS #1: Estándar de cifrado RSA](http://www.emc.com/emc-plus/rsa-labs/standards-initiatives/pkcs-rsa-cryptography-standard.htm). 
+
+ ]]></format>
+        </remarks>
   </Docs>
   <Members>
     <Member MemberName="Oaep">
@@ -62,15 +70,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Relleno óptimo de cifrado asimétrico.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- El modo de Oaep se corresponde con el esquema de cifrado RSAES-OEAP se describe en el [PKCS #1: Estándar de cifrado RSA](http://www.emc.com/emc-plus/rsa-labs/standards-initiatives/pkcs-rsa-cryptography-standard.htm). Se recomienda para las aplicaciones nuevas.  
-  
- ]]></format>
-        </remarks>
+        <summary>Relleno óptimo de cifrado asimétrico. Se recomienda para las aplicaciones nuevas.</summary>
       </Docs>
     </Member>
     <Member MemberName="Pkcs1">
@@ -104,15 +104,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>PKCS #1 v1.5.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- El modo de Pkcs1 corresponde al esquema de cifrado RSAES-PKCS1-v1_5 descrito en el [PKCS #1: Estándar de cifrado RSA](http://www.emc.com/emc-plus/rsa-labs/standards-initiatives/pkcs-rsa-cryptography-standard.htm). Se admite por compatibilidad con aplicaciones existentes.  
-  
- ]]></format>
-        </remarks>
+        <summary>PKCS #1 v1.5. Se admite por compatibilidad con las aplicaciones existentes.</summary>
       </Docs>
     </Member>
   </Members>

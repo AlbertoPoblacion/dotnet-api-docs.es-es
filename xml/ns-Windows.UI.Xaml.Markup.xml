@@ -1,0 +1,13 @@
+<Namespace Name="Windows.UI.Xaml.Markup">
+  <Metadata><Meta Name="ms.openlocfilehash" Value="210b081aa40d7377368b71073042b8df7c1bb5f1" /><Meta Name="ms.sourcegitcommit" Value="61757d0366a172cdbc11436deb1c1ffa49d97238" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/28/2019" /><Meta Name="ms.locfileid" Value="67457752" /></Metadata><Docs>
+    <summary>Proporciona una API de compatibilidad con el lenguaje XAML para aplicaciones UWP y Windows Runtime.</summary>
+        <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta documentación de espacio de nombres contiene solo las proyecciones de .NET de los tipos de Windows en tiempo de ejecución (WinRT) donde la proyección difiere el tipo de WinRT. Para ver una lista completa de tipos para este espacio de nombres, vea [Windows.UI.Xaml.Markup](https://docs.microsoft.com/uwp/api/windows.ui.xaml.markup) en la referencia de API de UWP.  
+  
+ ]]></format>
+ </remarks>
+  </Docs>
+</Namespace>

@@ -1,5 +1,5 @@
 <Type Name="ClassInterfaceType" FullName="System.Runtime.InteropServices.ClassInterfaceType">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="c55bd94569e878fad2cec7bcf03030a79c3a2aba" /><Meta Name="ms.sourcegitcommit" Value="a3e01ec36374fac54a55add0dcc1e754e394abeb" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="03/30/2019" /><Meta Name="ms.locfileid" Value="58693357" /></Metadata><TypeSignature Language="C#" Value="public enum ClassInterfaceType" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="75ca0204d36739b3a9668098ba6152c45622ab72" /><Meta Name="ms.sourcegitcommit" Value="24dc380b0d43e8919d4e0d50409e8f0aeae98713" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/27/2019" /><Meta Name="ms.locfileid" Value="67411623" /></Metadata><TypeSignature Language="C#" Value="public enum ClassInterfaceType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ClassInterfaceType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ClassInterfaceType" />
   <TypeSignature Language="VB.NET" Value="Public Enum ClassInterfaceType" />
@@ -106,15 +106,8 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Indica que la clase sólo admite enlaces en tiempo de ejecución para los clientes COM. Si se solicita, se expone automáticamente a los clientes COM una interfaz <see langword="dispinterface" /> para la clase. La biblioteca de tipos creada por [Tlbexp.exe (exportador de la biblioteca de tipos)](~/docs/framework/tools/tlbexp-exe-type-library-exporter.md) no contiene información de tipos para la interfaz <see langword="dispinterface" /> con el fin de impedir que los clientes almacenen en memoria caché los DISPID de la interfaz. La interfaz <see langword="dispinterface" /> no presenta los problemas de control de versiones descritos en <see cref="T:System.Runtime.InteropServices.ClassInterfaceAttribute" />, ya que los clientes solo se pueden enlazar a la interfaz en tiempo de ejecución.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Se trata de la configuración predeterminada para <xref:System.Runtime.InteropServices.ClassInterfaceAttribute>.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Indica que la clase sólo admite enlaces en tiempo de ejecución para los clientes COM. Si se solicita, se expone automáticamente a los clientes COM una interfaz <see langword="dispinterface" /> para la clase. La biblioteca de tipos creada por <see href="~/docs/framework/tools/tlbexp-exe-type-library-exporter.md">Tlbexp.exe (exportador de la biblioteca de tipos)</see> no contiene información de tipos para la interfaz <see langword="dispinterface" /> con el fin de impedir que los clientes almacenen en memoria caché los DISPID de la interfaz. La interfaz <see langword="dispinterface" /> no presenta los problemas de control de versiones descritos en <see cref="T:System.Runtime.InteropServices.ClassInterfaceAttribute" />, ya que los clientes solo se pueden enlazar a la interfaz en tiempo de ejecución.</para>
+        <para>Esta es la configuración predeterminada de <see cref="T:System.Runtime.InteropServices.ClassInterfaceAttribute" />. </para></summary>
       </Docs>
     </Member>
     <Member MemberName="AutoDual">

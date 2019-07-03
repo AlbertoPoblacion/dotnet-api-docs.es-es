@@ -1,5 +1,5 @@
 <Type Name="DurationType" FullName="Windows.UI.Xaml.DurationType">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="77fe4cae8c40a2cbeb161d925d16c16f214efa04" /><Meta Name="ms.sourcegitcommit" Value="5ebd9691c6f7d50c4730e997fba69e54bdd7cc0c" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/17/2019" /><Meta Name="ms.locfileid" Value="65830015" /></Metadata><TypeSignature Language="C#" Value="public enum DurationType" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0acde3e2e08931b2dd94508fde96edf07d1bcea8" /><Meta Name="ms.sourcegitcommit" Value="61757d0366a172cdbc11436deb1c1ffa49d97238" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/28/2019" /><Meta Name="ms.locfileid" Value="67458008" /></Metadata><TypeSignature Language="C#" Value="public enum DurationType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DurationType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Windows.UI.Xaml.DurationType" />
   <TypeSignature Language="VB.NET" Value="Public Enum DurationType" />
@@ -19,8 +19,15 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Especifica si un <see cref="T:Windows.UI.Xaml.Duration" /> tiene un valor especial de automático o siempre, o tiene información válida en su <see cref="T:System.TimeSpan" /> componente.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Especifica si <see cref="T:Windows.UI.Xaml.Duration" /> tiene el valor especial de Automatic o de Forever, o tiene información válida en el componente de <see cref="T:System.TimeSpan" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta enumeración representa la proyección de .NET de Windows Runtime (WinRT) `DurationType` enum. Para obtener más información, consulte [DurationType](https://docs.microsoft.com/uwp/api/windows.ui.xaml.durationtype) en la referencia de API de UWP.  
+
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Automatic">
@@ -41,7 +48,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Tiene el valor especial "Automatic".</summary>
+        <summary>Tiene el valor especial “Automatic”.</summary>
       </Docs>
     </Member>
     <Member MemberName="Forever">
@@ -62,7 +69,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Tiene el valor especial "Forever".</summary>
+        <summary>Tiene el valor especial “Forever”.</summary>
       </Docs>
     </Member>
     <Member MemberName="TimeSpan">
@@ -83,7 +90,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Tiene información válida en el <see cref="T:System.TimeSpan" /> componente.</summary>
+        <summary>Tiene información válida en el componente <see cref="T:System.TimeSpan" />.</summary>
       </Docs>
     </Member>
   </Members>

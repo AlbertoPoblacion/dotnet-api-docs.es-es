@@ -1,5 +1,5 @@
 <Type Name="Point" FullName="Windows.Foundation.Point">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="dbb92aa5db23bcc80e2b706eb7b1de8d4af0ef3c" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67250218" /></Metadata><TypeSignature Language="C#" Value="public struct Point : IFormattable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0b57a2ca1087cde7d1e11efe8b7b932b5d36582b" /><Meta Name="ms.sourcegitcommit" Value="61757d0366a172cdbc11436deb1c1ffa49d97238" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/28/2019" /><Meta Name="ms.locfileid" Value="67457965" /></Metadata><TypeSignature Language="C#" Value="public struct Point : IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Point extends System.ValueType implements class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:Windows.Foundation.Point" />
   <TypeSignature Language="VB.NET" Value="Public Structure Point&#xA;Implements IFormattable" />
@@ -25,7 +25,16 @@
   </Attributes>
   <Docs>
     <summary>Representa un par de coordenadas x e y en un espacio bidimensional. También puede representar un punto lógico para determinados usos de propiedad.</summary>
-    <remarks>To be added.</remarks>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esto representa la proyección de .NET de Windows Runtime (WinRT) `Point` struct. Para obtener más información, consulte [punto](https://docs.microsoft.com/uwp/api/windows.foundation.point) en la referencia de API de UWP.  
+
+ ]]></format>
+    </remarks>
+    <related type="Article" href="https://docs.microsoft.com/uwp/api/windows.foundation.point">Punto (UWP)</related>
+    <related type="Article" href="https://docs.microsoft.com/dotnet/api/system.windows.point">System.Windows.Point (.NET)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -49,9 +58,36 @@
         <param name="x">Valor de la coordenada X de la estructura <see cref="T:Windows.Foundation.Point" />.</param>
         <param name="y">Valor de la coordenada Y de la estructura <see cref="T:Windows.Foundation.Point" />.</param>
         <summary>Inicializa una estructura <see cref="T:Windows.Foundation.Point" /> que contiene los valores especificados.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Point` struct. Para obtener más información, consulte [punto](https://docs.microsoft.com/uwp/api/windows.foundation.point) en la referencia de API de UWP.
+  
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Point` struct. Para obtener más información, consulte [punto](https://docs.microsoft.com/uwp/api/windows.foundation.point) en la referencia de API de UWP.
+
+ Para obtener más información y ejemplos de este miembro, vea <xref:System.Windows.Point.Equals%2A?displayProperty=nameWithType> en la referencia de API de .NET Framework. (Los ejemplos muestran el uso WPF y no se pueden traducir directamente a UWP XAML).
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
@@ -134,7 +170,16 @@
       <Docs>
         <summary>Devuelve el código hash para esta estructura <see cref="T:Windows.Foundation.Point" />.</summary>
         <returns>Código hash para esta estructura <see cref="T:Windows.Foundation.Point" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Point` struct. Para obtener más información, consulte [punto](https://docs.microsoft.com/uwp/api/windows.foundation.point) en la referencia de API de UWP.
+
+ Para obtener más información y ejemplos de este miembro, vea <xref:System.Windows.Point.GetHashCode?displayProperty=nameWithType> en la referencia de API de .NET Framework. (Los ejemplos muestran el uso WPF y no se pueden traducir directamente a UWP XAML).
+  
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -162,7 +207,16 @@
         <param name="point2">Segunda estructura <see cref="T:Windows.Foundation.Point" /> que se va a comparar.</param>
         <summary>Compara dos estructuras <see cref="T:Windows.Foundation.Point" /> para determinar si son iguales.</summary>
         <returns><see langword="true" /> si los dos valores de <see cref="P:Windows.Foundation.Point.X" /> e <see cref="P:Windows.Foundation.Point.Y" /> de <paramref name="point1" /> y <paramref name="point2" /> son iguales; en caso contrario, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Point` struct. Para obtener más información, consulte [punto](https://docs.microsoft.com/uwp/api/windows.foundation.point) en la referencia de API de UWP.
+
+ Para obtener más información y ejemplos de este miembro, vea <xref:System.Windows.Point.op_Equality%2A?displayProperty=nameWithType> en la referencia de API de .NET Framework. (Los ejemplos muestran el uso WPF y no se pueden traducir directamente a UWP XAML).
+  
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -190,7 +244,16 @@
         <param name="point2">Segundo punto que se va a comparar.</param>
         <summary>Compara dos estructuras <see cref="T:Windows.Foundation.Point" /> para determinar si no son iguales.</summary>
         <returns>Es <see langword="true" /> si <paramref name="point1" /> y <paramref name="point2" /> tienen distintos valores <see cref="P:Windows.Foundation.Point.X" /> o <see cref="P:Windows.Foundation.Point.Y" />; es false si <paramref name="point1" /> y <paramref name="point2" /> tienen los mismos valores <see cref="P:Windows.Foundation.Point.X" /> e <see cref="P:Windows.Foundation.Point.Y" />.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Point` struct. Para obtener más información, consulte [punto](https://docs.microsoft.com/uwp/api/windows.foundation.point) en la referencia de API de UWP.
+
+ Para obtener más información y ejemplos de este miembro, vea <xref:System.Windows.Point.op_Inequality%2A?displayProperty=nameWithType> en la referencia de API de .NET Framework. (Los ejemplos muestran el uso WPF y no se pueden traducir directamente a UWP XAML).
+  
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.IFormattable.ToString">
@@ -225,9 +288,34 @@
         <param name="provider">Objeto que proporciona información de formato del valor o <see langword="null" /> para obtener la información de formato numérico de la referencia cultural actual.</param>
         <summary>Para obtener una descripción de este miembro, vea <see cref="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" />.</summary>
         <returns>Cadena que contiene el valor de la instancia actual con el formato especificado.</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Point` struct. Para obtener más información, consulte [punto](https://docs.microsoft.com/uwp/api/windows.foundation.point) en la referencia de API de UWP.
+  
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.WindowsRuntime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.14.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Point` struct. Para obtener más información, consulte [punto](https://docs.microsoft.com/uwp/api/windows.foundation.point) en la referencia de API de UWP.
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
@@ -277,7 +365,7 @@
       </Parameters>
       <Docs>
         <param name="provider">Información de formato específica de la referencia cultural.</param>
-        <summary>Crea una representación de tipo <see cref="T:System.String" /> de esta estructura <see cref="T:Windows.Foundation.Point" />.</summary>
+        <summary>Crea una representación <see cref="T:System.String" /> de <see cref="T:Windows.Foundation.Point" /> mediante la información de formato concreta de la referencia cultural especificada.</summary>
         <returns><see cref="T:System.String" /> que contiene los valores <see cref="P:Windows.Foundation.Point.X" /> y <see cref="P:Windows.Foundation.Point.Y" /> de esta estructura <see cref="T:Windows.Foundation.Point" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -301,7 +389,16 @@
       <Docs>
         <summary>Obtiene o establece el valor de la coordenada <see cref="P:Windows.Foundation.Point.X" /> de esta estructura <see cref="T:Windows.Foundation.Point" />.</summary>
         <value>El <see cref="P:Windows.Foundation.Point.X" />-coordinar el valor de este <see cref="T:Windows.Foundation.Point" /> struct. El valor predeterminado es 0.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Point` struct. Para obtener más información, consulte [punto](https://docs.microsoft.com/uwp/api/windows.foundation.point) en la referencia de API de UWP.
+
+ Para obtener más información y ejemplos de este miembro, vea <xref:System.Windows.Point.X?displayProperty=nameWithType> en la referencia de API de .NET Framework. (Los ejemplos muestran el uso WPF y no se pueden traducir directamente a UWP XAML).
+  
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -323,7 +420,16 @@
       <Docs>
         <summary>Obtiene o establece el valor de la coordenada <see cref="P:Windows.Foundation.Point.Y" /> de esta estructura <see cref="T:Windows.Foundation.Point" />.</summary>
         <value>El <see cref="P:Windows.Foundation.Point.Y" />-coordinar el valor de este <see cref="T:Windows.Foundation.Point" /> struct. El valor predeterminado es 0.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta estructura representa la proyección de .NET de Windows Runtime (WinRT) `Point` struct. Para obtener más información, consulte [punto](https://docs.microsoft.com/uwp/api/windows.foundation.point) en la referencia de API de UWP.
+
+ Para obtener más información y ejemplos de este miembro, vea <xref:System.Windows.Point.Y?displayProperty=nameWithType> en la referencia de API de .NET Framework. (Los ejemplos muestran el uso WPF y no se pueden traducir directamente a UWP XAML).
+  
+ ]]></format>
+    </remarks>
       </Docs>
     </Member>
   </Members>

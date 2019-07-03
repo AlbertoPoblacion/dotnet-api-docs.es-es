@@ -1,0 +1,13 @@
+<Namespace Name="Windows.UI.Xaml.Media.Media3D">
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1d392a971a53747424f1287c948a04bdd03f1105" /><Meta Name="ms.sourcegitcommit" Value="61757d0366a172cdbc11436deb1c1ffa49d97238" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/28/2019" /><Meta Name="ms.locfileid" Value="67457739" /></Metadata><Docs>
+    <summary>Contiene tipos que admiten la transformación de matriz o perspectiva.</summary>
+        <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta documentación de espacio de nombres contiene solo las proyecciones de .NET de los tipos de Windows en tiempo de ejecución (WinRT) donde la proyección difiere el tipo de WinRT. Para ver una lista completa de tipos para este espacio de nombres, vea [Windows.UI.Xaml.Media.Media3D](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.media3d) en la referencia de API de UWP.  
+  
+ ]]></format>
+ </remarks>
+  </Docs>
+</Namespace>

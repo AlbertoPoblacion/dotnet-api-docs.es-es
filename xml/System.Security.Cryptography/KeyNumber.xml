@@ -1,5 +1,5 @@
 <Type Name="KeyNumber" FullName="System.Security.Cryptography.KeyNumber">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="be55af48457e34f9e62f829ca74ae4f439cb4deb" /><Meta Name="ms.sourcegitcommit" Value="a3e01ec36374fac54a55add0dcc1e754e394abeb" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="03/30/2019" /><Meta Name="ms.locfileid" Value="58749163" /></Metadata><TypeSignature Language="C#" Value="public enum KeyNumber" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="751a7dea107ec93c397232190c3f85a4a05990c1" /><Meta Name="ms.sourcegitcommit" Value="24dc380b0d43e8919d4e0d50409e8f0aeae98713" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/27/2019" /><Meta Name="ms.locfileid" Value="67411635" /></Metadata><TypeSignature Language="C#" Value="public enum KeyNumber" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed KeyNumber extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.KeyNumber" />
   <TypeSignature Language="VB.NET" Value="Public Enum KeyNumber" />
@@ -39,9 +39,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use la <xref:System.Security.Cryptography.KeyNumber> enumeración con el <xref:System.Security.Cryptography.CspKeyContainerInfo.KeyNumber%2A> propiedad para inspeccionar un tipo de clave o con el <xref:System.Security.Cryptography.CspParameters.KeyNumber> campo para especificar un tipo de clave.  
-  
-   
+ Use la `KeyNumber` enumeración con el <xref:System.Security.Cryptography.CspKeyContainerInfo.KeyNumber%2A?displayProperty=nameWithType> propiedad para inspeccionar un tipo de clave o con el <xref:System.Security.Cryptography.CspParameters.KeyNumber?displayProperty=nameWithType> campo para especificar un tipo de clave.   
   
 ## Examples  
  En el ejemplo de código siguiente se muestra cómo usar el <xref:System.Security.Cryptography.KeyNumber> enumeración para especificar un tipo de clave para un <xref:System.Security.Cryptography.RSACryptoServiceProvider> objeto.  
@@ -84,15 +82,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Par de intercambio de claves que se usa para cifrar las claves de sesión de modo que se puedan almacenar de forma segura e intercambiar con otros usuarios.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Este valor corresponde al valor AT_KEYEXCHANGE utilizado en la API criptográfica de Microsoft (CAPI) no administrada.  
-  
- ]]></format>
-        </remarks>
+        <summary>Par de intercambio de claves que se usa para cifrar las claves de sesión de modo que se puedan almacenar de forma segura e intercambiar con otros usuarios. Este valor corresponde al valor AT_KEYEXCHANGE utilizado en la API de criptografía de Microsoft (CAPI) no administrada.</summary>
       </Docs>
     </Member>
     <Member MemberName="Signature">
@@ -125,15 +115,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Par de claves de firma usado para autenticar mensajes o archivos con firma digital.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Este valor corresponde al valor AT_SIGNATURE utilizado en la API criptográfica de Microsoft (CAPI) no administrada.  
-  
- ]]></format>
-        </remarks>
+        <summary>Par de claves de firma usado para autenticar mensajes o archivos con firma digital. Este valor corresponde al valor AT_SIGNATURE utilizado en la API de criptografía de Microsoft (CAPI) no administrada.</summary>
       </Docs>
     </Member>
   </Members>

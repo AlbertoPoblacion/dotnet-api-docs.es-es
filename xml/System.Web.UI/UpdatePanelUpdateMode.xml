@@ -1,5 +1,5 @@
 <Type Name="UpdatePanelUpdateMode" FullName="System.Web.UI.UpdatePanelUpdateMode">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="a9e5a9fad8308045a0550ce56dca768f1df0e774" /><Meta Name="ms.sourcegitcommit" Value="f1d16425528e237257ca3b58eb49217a514849ea" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="04/24/2019" /><Meta Name="ms.locfileid" Value="64061825" /></Metadata><TypeSignature Language="C#" Value="public enum UpdatePanelUpdateMode" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="103fd84d87f3c7c57b5bb2878b410659a4a35449" /><Meta Name="ms.sourcegitcommit" Value="24dc380b0d43e8919d4e0d50409e8f0aeae98713" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/27/2019" /><Meta Name="ms.locfileid" Value="67411721" /></Metadata><TypeSignature Language="C#" Value="public enum UpdatePanelUpdateMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UpdatePanelUpdateMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.UpdatePanelUpdateMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum UpdatePanelUpdateMode" />
@@ -18,15 +18,22 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- El <xref:System.Web.UI.UpdatePanelUpdateMode> enumeración define los posibles modos de actualización para el contenido de un <xref:System.Web.UI.UpdatePanel> control. El <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> propiedad debe establecerse en uno de los valores de la <xref:System.Web.UI.UpdatePanelUpdateMode> enumeración. El <xref:System.Web.UI.UpdatePanel> control requiere que el <xref:System.Web.UI.ScriptManager.EnablePartialRendering%2A> propiedad de la <xref:System.Web.UI.ScriptManager> control ser `true` para que se produzca la representación parcial de página.  
+## Remarks
+
+El `UpdatePanelUpdateMode` enumeración la utiliza el <xref:System.Web.UI.UpdatePanel.UpdateMode%2A?displayProperty=nameWithType> propiedad y define los posibles modos de actualización para el contenido de un <xref:System.Web.UI.UpdatePanel> control. El <xref:System.Web.UI.UpdatePanel> control requiere que el <xref:System.Web.UI.ScriptManager.EnablePartialRendering%2A?displayProperty=nameWithType> propiedad ser `true` para que se produzca la representación parcial de página.  
   
- El valor predeterminado de la <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> propiedad es siempre.  
+El valor predeterminado de la <xref:System.Web.UI.UpdatePanel.UpdateMode%2A?displayProperty=nameWithType> propiedad es `Always`.  
   
- Si el <xref:System.Web.UI.UpdatePanelUpdateMode.Always> control está dentro de otro <xref:System.Web.UI.UpdatePanel> se actualiza el control y el panel principal, también se actualizará el panel anidado, con independencia de la <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> valor de propiedad.  
+Si el <xref:System.Web.UI.UpdatePanel> control está dentro de otro <xref:System.Web.UI.UpdatePanel> se actualiza el control y el panel principal, también se actualizará el panel anidado, con independencia de la <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> valor de propiedad.  
   
-   
+El `Conditional` valor actualiza el contenido de la <xref:System.Web.UI.UpdatePanel> control en las siguientes condiciones:
+
+- El <xref:System.Web.UI.UpdatePanel.Update%2A?displayProperty=nameWithType> se llama al método explícitamente.  
   
+- Un control se define como un desencadenador mediante el uso de la <xref:System.Web.UI.UpdatePanel.Triggers?displayProperty=nameWithType> propiedad y se produce un postback. En este escenario, el control es un desencadenador explícito para actualizar el contenido del panel. El control del desencadenador puede ser dentro o fuera del <xref:System.Web.UI.UpdatePanel> control que define el desencadenador.  
+  
+- El <xref:System.Web.UI.UpdatePanel.ChildrenAsTriggers%2A?displayProperty=nameWithType> propiedad está establecida en `true` y un control secundario de la <xref:System.Web.UI.UpdatePanel> control produce un postback. En este escenario, los controles secundarios de la <xref:System.Web.UI.UpdatePanel> control son desencadenadores implícitos para actualizar el panel. De controles secundarios anidados <xref:System.Web.UI.UpdatePanel> controles no provocan el exterior <xref:System.Web.UI.UpdatePanel> control actualizarse a menos que se definan explícitamente como desencadenadores. 
+
 ## Examples  
  En el ejemplo siguiente se declara dos <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> controles. Los primeros conjuntos del panel la <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> propiedad de un <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> control condicionales. El segundo panel tiene <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> establecido en siempre de forma predeterminada. Un botón situado fuera de los dos paneles se registra como un control de postback asincrónico mediante el <xref:System.Web.UI.ScriptManager.RegisterAsyncPostBackControl%2A> método de la <xref:System.Web.UI.ScriptManager> control. En el botón, haga clic en el controlador de eventos, el <xref:System.Web.UI.UpdatePanel.Update%2A> se llama el método del primer panel si han transcurrido más de cinco segundos desde la última actualización. En este escenario, el contenido del panel se actualiza sólo si la última actualización del panel se produjo hace más de cinco segundos. Siempre se actualiza el contenido del segundo panel.  
   
@@ -78,18 +85,13 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>El contenido del control <see cref="T:System.Web.UI.UpdatePanel" /> se actualiza en los casos siguientes:</summary>
+        <summary>Especifica una serie de condiciones bajo las cuales se actualiza el contenido del control <see cref="T:System.Web.UI.UpdatePanel" />; consulte la sección de comentarios para obtener más información.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
--   Si el <xref:System.Web.UI.UpdatePanel.Update%2A> método de la <xref:System.Web.UI.UpdatePanel> control se llama explícitamente.  
-  
--   Si un control se define como un desencadenador mediante la propiedad de los desencadenadores de la <xref:System.Web.UI.UpdatePanel> controlar y produce un postback. En este escenario, el control es un desencadenador explícito para actualizar el contenido del panel. El control del desencadenador puede ser dentro o fuera del <xref:System.Web.UI.UpdatePanel> control que define el desencadenador.  
-  
--   Si el <xref:System.Web.UI.UpdatePanel.ChildrenAsTriggers%2A> propiedad está establecida en `true` y un control secundario de la <xref:System.Web.UI.UpdatePanel> control produce un postback. En este escenario, los controles secundarios de la <xref:System.Web.UI.UpdatePanel> control son desencadenadores implícitos para actualizar el panel. De controles secundarios anidados <xref:System.Web.UI.UpdatePanel> controles no provocan el exterior <xref:System.Web.UI.UpdatePanel> control actualizarse a menos que se definan explícitamente como desencadenadores.  
-  
+
  ]]></format>
         </remarks>
       </Docs>

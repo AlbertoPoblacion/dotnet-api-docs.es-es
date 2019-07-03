@@ -1,5 +1,5 @@
 <Type Name="StorePermissionFlags" FullName="System.Security.Permissions.StorePermissionFlags">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="523bd072d2af96c86e1e2dbf77889787d083b9d3" /><Meta Name="ms.sourcegitcommit" Value="220917117f9d774aaa482439aa7324e39dc1f5b6" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="02/25/2019" /><Meta Name="ms.locfileid" Value="56771250" /></Metadata><TypeSignature Language="C#" Value="public enum StorePermissionFlags" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="0f0ef07ca3745c13093fb1875854facf6bdec763" /><Meta Name="ms.sourcegitcommit" Value="24dc380b0d43e8919d4e0d50409e8f0aeae98713" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/27/2019" /><Meta Name="ms.locfileid" Value="67411678" /></Metadata><TypeSignature Language="C#" Value="public enum StorePermissionFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed StorePermissionFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.StorePermissionFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum StorePermissionFlags" />
@@ -32,10 +32,9 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- Muchos de estos permisos de acceso plantean posibles amenazas de seguridad y privacidad. Debe tener mucho cuidado al conceder acceso a los almacenes. Una breve descripción del tipo de amenaza expuesto por un acceso puede encontrarse en el resumen para el acceso.  
-  
-   
+## Remarks
+
+Muchos de estos permisos de acceso plantean posibles amenazas de seguridad y privacidad. Debe tener mucho cuidado al conceder acceso a los almacenes. Una breve descripción del tipo de amenaza expuesto por un acceso puede encontrarse en el resumen del miembro de enumeración individuales.   
   
 ## Examples  
  En el ejemplo de código siguiente se muestra el uso de la <xref:System.Security.Permissions.StorePermissionFlags> enumeración.  
@@ -72,15 +71,7 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>Capacidad para agregar un certificado a un almacén.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Por motivos de seguridad, esta capacidad se debería conceder únicamente al código de plena confianza.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Capacidad para agregar un certificado a un almacén.</para><para>Por razones de seguridad, esta capacidad debe ser otorgada solo al código de plena confianza.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="AllFlags">
@@ -134,15 +125,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Capacidad para crear un nuevo almacén.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Tiendas nuevas se crean mediante una llamada a la <xref:System.Security.Cryptography.X509Certificates.X509Store.Open%2A?displayProperty=nameWithType> método.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Capacidad para crear un nuevo almacén.</para><para>Las nuevas tiendas se crean mediante la llamada al método <see cref="M:System.Security.Cryptography.X509Certificates.X509Store.Open(System.Security.Cryptography.X509Certificates.OpenFlags)" />.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="DeleteStore">
@@ -169,15 +152,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Capacidad para eliminar un almacén.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Esta funcionalidad no se expone mediante el <xref:System.Security.Cryptography.X509Certificates.X509Store> clase.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Capacidad para eliminar un almacén.</para><para>Esta funcionalidad no se expone mediante la clase <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" />.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="EnumerateCertificates">
@@ -204,15 +179,7 @@
       </ReturnValue>
       <MemberValue>128</MemberValue>
       <Docs>
-        <summary>Capacidad para enumerar los certificados de un almacén.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Por motivos de privacidad, esta capacidad se debería conceder únicamente al código de plena confianza.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Capacidad para enumerar los certificados de un almacén.</para><para>Por motivos de privacidad, esta capacidad debe concederse solo al código de plena confianza.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="EnumerateStores">
@@ -239,15 +206,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Capacidad para enumerar los almacenes de un equipo.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Esta funcionalidad no se expone mediante el <xref:System.Security.Cryptography.X509Certificates.X509Store> clase.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Capacidad para enumerar los almacenes de un equipo.</para><para>Esta funcionalidad no se expone mediante la clase <see cref="T:System.Security.Cryptography.X509Certificates.X509Store" />. </para></summary>
       </Docs>
     </Member>
     <Member MemberName="NoFlags">
@@ -301,15 +260,7 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>Capacidad para abrir un almacén.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- La capacidad de abrir un almacén no incluye la capacidad de enumerar los certificados (lo que provoca problemas de privacidad) o para agregar o quitar certificados (lo que provoca problemas de seguridad).  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Capacidad para abrir un almacén.</para><para>La posibilidad de abrir una tienda no incluye la posibilidad de enumerar certificados (lo que plantea problemas de privacidad) o de agregar o quitar certificados (lo que plantea problemas de seguridad).</para></summary>
       </Docs>
     </Member>
     <Member MemberName="RemoveFromStore">
@@ -336,15 +287,7 @@
       </ReturnValue>
       <MemberValue>64</MemberValue>
       <Docs>
-        <summary>Capacidad para quitar un certificado de un almacén.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Esta capacidad se debería conceder únicamente a código de plena confianza porque cuando se quita un certificado puede producir una denegación de servicio.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Capacidad para quitar un certificado de un almacén.</para><para>Esta capacidad solo se debe conceder a los códigos de plena confianza, ya que la eliminación de un certificado puede dar lugar a una denegación de servicio.</para></summary>
       </Docs>
     </Member>
   </Members>

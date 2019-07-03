@@ -1,0 +1,13 @@
+<Namespace Name="Windows.UI.Xaml.Controls.Primitives">
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ecd57e8de8daad4723f2904429e726446f1faef1" /><Meta Name="ms.sourcegitcommit" Value="61757d0366a172cdbc11436deb1c1ffa49d97238" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/28/2019" /><Meta Name="ms.locfileid" Value="67458154" /></Metadata><Docs>
+    <summary>Define las clases que representan los componentes de los controles de la interfaz de usuario o admite el modelo de composición de controles de alguna otra forma. También define las interfaces para los patrones de control como el ajuste y la selección.</summary>
+        <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta documentación de espacio de nombres contiene solo las proyecciones de .NET de los tipos de Windows en tiempo de ejecución (WinRT) donde la proyección difiere el tipo de WinRT. Para ver una lista completa de tipos para este espacio de nombres, vea [Windows.UI.Xaml.Controls.Primitives](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.primitives) en la referencia de API de UWP.  
+  
+ ]]></format>
+ </remarks>
+  </Docs>
+</Namespace>

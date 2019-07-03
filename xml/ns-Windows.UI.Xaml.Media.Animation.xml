@@ -1,0 +1,13 @@
+<Namespace Name="Windows.UI.Xaml.Media.Animation">
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f29c4f2e9b888911eaae82e0dab2b7593d7c8756" /><Meta Name="ms.sourcegitcommit" Value="61757d0366a172cdbc11436deb1c1ffa49d97238" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/28/2019" /><Meta Name="ms.locfileid" Value="67458107" /></Metadata><Docs>
+    <summary>Proporciona API de animación y guiones gráficos para animaciones de transición, estados visuales o componentes de la interfaz de usuario animada.</summary>
+        <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Esta documentación de espacio de nombres contiene solo las proyecciones de .NET de los tipos de Windows en tiempo de ejecución (WinRT) donde la proyección difiere el tipo de WinRT. Para ver una lista completa de tipos para este espacio de nombres, vea [Windows.UI.Xaml.Media.Animation](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.animation) en la referencia de API de UWP.  
+  
+ ]]></format>
+ </remarks>
+  </Docs>
+</Namespace>

@@ -1,5 +1,5 @@
 <Type Name="SecurityPermissionFlag" FullName="System.Security.Permissions.SecurityPermissionFlag">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ed3a9e5963b665fa61b179ec680330247535ff80" /><Meta Name="ms.sourcegitcommit" Value="a3e01ec36374fac54a55add0dcc1e754e394abeb" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="03/30/2019" /><Meta Name="ms.locfileid" Value="58721475" /></Metadata><TypeSignature Language="C#" Value="public enum SecurityPermissionFlag" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="5b1c12f6ddf23f3e15ff8212acffc96b5059b783" /><Meta Name="ms.sourcegitcommit" Value="24dc380b0d43e8919d4e0d50409e8f0aeae98713" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/27/2019" /><Meta Name="ms.locfileid" Value="67411685" /></Metadata><TypeSignature Language="C#" Value="public enum SecurityPermissionFlag" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed SecurityPermissionFlag extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.SecurityPermissionFlag" />
   <TypeSignature Language="VB.NET" Value="Public Enum SecurityPermissionFlag" />
@@ -48,7 +48,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Esta enumeración tiene un atributo <xref:System.FlagsAttribute> que permite una combinación bit a bit de sus valores miembro.  
   
  Esta enumeración se utiliza por <xref:System.Security.Permissions.SecurityPermission>.  
   
@@ -58,7 +57,8 @@
    
   
 ## Examples  
- En el ejemplo de código siguiente se muestra el uso de la <xref:System.Security.Permissions.SecurityPermissionFlag> enumeración para denegar y solicitar permisos de seguridad.  
+
+El ejemplo siguiente muestra el uso de la <xref:System.Security.Permissions.SecurityPermissionFlag> enumeración para denegar y solicitar permisos de seguridad:
   
  [!code-cpp[System.Security.Permissions.SecurityPermissionAttribute#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.SecurityPermissionAttribute/CPP/securitypermissionattribute.cpp#1)]
  [!code-csharp[System.Security.Permissions.SecurityPermissionAttribute#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.SecurityPermissionAttribute/CS/securitypermissionattribute.cs#1)]
@@ -283,15 +283,7 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>Posibilidad de proporcionar pruebas, que incluye la posibilidad de modificar las pruebas proporcionadas por Common Language Runtime.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Se trata de un permiso eficaz que solo debe concederse al código de plena confianza.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Posibilidad de proporcionar pruebas, que incluye la posibilidad de modificar las pruebas proporcionadas por Common Language Runtime.</para><para>Es un permiso eficaz que solo debe concederse al código de plena confianza.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="ControlPolicy">
@@ -327,15 +319,7 @@
       </ReturnValue>
       <MemberValue>64</MemberValue>
       <Docs>
-        <summary>Posibilidad de ver y modificar la directiva.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Se trata de un permiso eficaz que solo debe concederse al código de plena confianza.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Posibilidad de ver y modificar la directiva.</para><para>Es un permiso eficaz que solo debe concederse al código de plena confianza.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="ControlPrincipal">
@@ -443,15 +427,7 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>Permiso para ejecutar el código. Sin este permiso el código administrado no se ejecutará.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Esta marca no tiene ningún efecto cuando se utiliza de forma dinámica con modificadores de la pila como <xref:System.Security.CodeAccessPermission.Deny%2A>, <xref:System.Security.CodeAccessPermission.Assert%2A>, y <xref:System.Security.CodeAccessPermission.PermitOnly%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Permiso para ejecutar el código. Sin este permiso el código administrado no se ejecutará.</para><para>Esta marca no tiene efecto cuando se usa dinámicamente con modificadores de pila como <see cref="M:System.Security.CodeAccessPermission.Deny" />, <see cref="M:System.Security.CodeAccessPermission.Assert" /> y <see cref="M:System.Security.CodeAccessPermission.PermitOnly" />.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="Infrastructure">
@@ -631,17 +607,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Posibilidad de omitir la comprobación del código en este ensamblado. El código que no se puede comprobar se puede ejecutar si se concede este permiso.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Se trata de un permiso eficaz que se debería conceder únicamente a código de plena confianza.  
-  
- Esta marca no tiene ningún efecto cuando se utiliza de forma dinámica con modificadores de la pila como <xref:System.Security.CodeAccessPermission.Deny%2A>, <xref:System.Security.CodeAccessPermission.Assert%2A>, y <xref:System.Security.CodeAccessPermission.PermitOnly%2A>.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Posibilidad de omitir la comprobación del código en este ensamblado. El código que no se puede comprobar se puede ejecutar si se concede este permiso.</para><para>Es un permiso eficaz que solo debe concederse al código de plena confianza.</para><para>Esta marca no tiene efecto cuando se usa dinámicamente con modificadores de pila como <see cref="M:System.Security.CodeAccessPermission.Deny" />, <see cref="M:System.Security.CodeAccessPermission.Assert" /> y <see cref="M:System.Security.CodeAccessPermission.PermitOnly" />.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="UnmanagedCode">
@@ -677,15 +643,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Posibilidad de llamar a código no administrado.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Puesto que el código no administrado potencialmente permite que otros permisos que se omita, esto es un permiso peligroso que solo debe concederse al código de plena confianza. Se usa para aplicaciones tales como llamar a código nativo mediante PInvoke o mediante la interoperabilidad COM.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Posibilidad de llamar a código no administrado.</para><para> Dado que el código no administrado permite potencialmente que se omitan otros permisos, se trata de un permiso peligroso que solo debería concederse a un código de plena confianza. Se utiliza para aplicaciones tales como la llamada a código nativo mediante PInvoke o COM interop.</para></summary>
       </Docs>
     </Member>
   </Members>

@@ -1,5 +1,5 @@
 <Type Name="FileIOPermissionAccess" FullName="System.Security.Permissions.FileIOPermissionAccess">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="b040b528be39b52b4cd1b70f377d694f4e9e371b" /><Meta Name="ms.sourcegitcommit" Value="220917117f9d774aaa482439aa7324e39dc1f5b6" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="02/25/2019" /><Meta Name="ms.locfileid" Value="56779075" /></Metadata><TypeSignature Language="C#" Value="public enum FileIOPermissionAccess" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6d406434bd34f53c2034d75305354dc75e987a76" /><Meta Name="ms.sourcegitcommit" Value="24dc380b0d43e8919d4e0d50409e8f0aeae98713" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/27/2019" /><Meta Name="ms.locfileid" Value="67411713" /></Metadata><TypeSignature Language="C#" Value="public enum FileIOPermissionAccess" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed FileIOPermissionAccess extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.FileIOPermissionAccess" />
   <TypeSignature Language="VB.NET" Value="Public Enum FileIOPermissionAccess" />
@@ -37,17 +37,18 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- Esta enumeración se utiliza con el <xref:System.Security.Permissions.FileIOPermission> clase.  
-  
+## Remarks
+
+Esta enumeración se utiliza con el <xref:System.Security.Permissions.FileIOPermission> clase.
+
 > [!NOTE]
->  Aunque NoAccess y AllAccess son miembros de <xref:System.Security.Permissions.FileIOPermissionAccess.NoAccess>, no son válidos para su uso como el parámetro <xref:System.Security.Permissions.FileIOPermission.GetPathList%2A> porque describen ningún tipo de acceso de archivo o todos los tipos de acceso de archivo, respectivamente, y <xref:System.Security.Permissions.FileIOPermission.GetPathList%2A> espera un tipo de acceso de archivo único.  
-  
-> [!NOTE]
->  Concesión de acceso de escritura a un ensamblado es similar a la conceder plena confianza. Si una aplicación no debe escribir en el sistema de archivos no debe tener acceso de escritura.  
-  
+>  Lo que ofrece `Write` acceso a un ensamblado es similar a la conceder plena confianza. Si una aplicación no debe escribir en el sistema de archivos, no debe tener acceso de escritura.  
+
+Aunque `NoAccess` y `AllAccess` son miembros de `FileIOPermissionAccess`, no son válidos para su uso como el parámetro <xref:System.Security.Permissions.FileIOPermission.GetPathList%2A?displayProperty=nameWithtype> porque describen ningún tipo de acceso de archivo o todos los tipos de acceso de archivo, respectivamente. <xref:System.Security.Permissions.FileIOPermission.GetPathList%2A?displayProperty=nameWithType> espera un tipo de acceso de archivo único.
+
  ]]></format>
     </remarks>
+    <altmember cref="T:System.IO.FileMode" />
     <altmember cref="T:System.Security.Permissions.FileIOPermission" />
     <altmember cref="T:System.Security.Permissions.FileIOPermissionAttribute" />
   </Docs>
@@ -107,17 +108,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Acceso para anexar material a un archivo o un directorio. El acceso <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Append" /> proporciona capacidad para crear nuevos archivos o directorios.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Para crear archivos, código deben concederse tanto Append y escritura o acceso de lectura. Para obtener más información, consulte <xref:System.IO.FileMode>.  
-  
- ]]></format>
-        </remarks>
+        <summary>Acceso para anexar material a un archivo o un directorio. El acceso <see langword="FileIOPermissionAccess.Append" /> proporciona capacidad para crear nuevos archivos o directorios. Para crear archivos, el código también debe tener acceso tanto a <see langword="Append" /> como a <see langword="Write" /> o <see langword="Read" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="NoAccess">
@@ -175,17 +166,8 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>Acceso a la información de la propia ruta. De esta forma, se ayuda a proteger la información confidencial de la ruta de acceso, como los nombres de usuario, así como la información sobre la estructura de directorios que aparece en la ruta. Este valor no concede acceso a los archivos o las carpetas que representa la ruta de acceso.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!NOTE]
->  Por motivos de rendimiento `PathDiscovery` solo debe concederse a los directorios, no a los archivos. Por ejemplo, `PathDiscovery` se deben conceder permisos a rutas de acceso como C:\test y C:\test\\, no C:\test\example.txt.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Acceso a la información de la propia ruta. De esta forma, se ayuda a proteger la información confidencial de la ruta de acceso, como los nombres de usuario, así como la información sobre la estructura de directorios que aparece en la ruta. Este valor no concede acceso a los archivos o las carpetas que representa la ruta de acceso.</para>
+        <para>Por razones de rendimiento, <see langword="PathDiscovery" /> solo debe concederse a los directorios, no a los ficheros. Por ejemplo, el permiso <see langword="PathDiscovery" /> debería concederse a rutas de acceso como C:\test y C:\test\\, no a C:\test\example.txt.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="Read">

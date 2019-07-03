@@ -1,5 +1,5 @@
 <Type Name="KeyContainerPermissionFlags" FullName="System.Security.Permissions.KeyContainerPermissionFlags">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="cd7d28ba77b8c7315873cef7432da026aeabb74e" /><Meta Name="ms.sourcegitcommit" Value="220917117f9d774aaa482439aa7324e39dc1f5b6" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="02/25/2019" /><Meta Name="ms.locfileid" Value="56782065" /></Metadata><TypeSignature Language="C#" Value="public enum KeyContainerPermissionFlags" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="af63e4bf963dc2014c98da44bcc809720fee5241" /><Meta Name="ms.sourcegitcommit" Value="24dc380b0d43e8919d4e0d50409e8f0aeae98713" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/27/2019" /><Meta Name="ms.locfileid" Value="67411702" /></Metadata><TypeSignature Language="C#" Value="public enum KeyContainerPermissionFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed KeyContainerPermissionFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.KeyContainerPermissionFlags" />
   <TypeSignature Language="VB.NET" Value="Public Enum KeyContainerPermissionFlags" />
@@ -40,18 +40,17 @@
  Esta enumeración se usa por los miembros de la <xref:System.Security.Permissions.KeyContainerPermissionAccessEntry> clase.  
   
 > [!CAUTION]
->  Muchos de estos indicadores pueden tener efectos eficaces y deben concederse sólo a código de plena confianza.  
-  
- Crear, eliminar, importar, exportar, inicio de sesión, descifrar y AllFlags son lo más eficaces de las marcas. Para obtener información sobre las amenazas específicas que puede presentar el uso de estas marcas, vea las descripciones de miembro.  
-  
-   
-  
+> Muchos de estos indicadores pueden tener efectos eficaces y deben concederse sólo a código de plena confianza.
+>   
+> Las marcas más eficaces son `Create`, `Delete`, `Import`, `Export`, `Sign`, `Decrypt`, y `AllFlags`. Para obtener información sobre las amenazas específicas que puede presentar el uso de estas marcas, vea las descripciones de miembro.
+
 ## Examples  
- En el ejemplo de código siguiente se muestra el uso de la <xref:System.Security.Permissions.KeyContainerPermissionFlags.Create> enumeración.  
-  
- [!code-cpp[System.Security.Permissions.KeyContainerPermission#20](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/CPP/keycontainerpermission.cpp#20)]
- [!code-csharp[System.Security.Permissions.KeyContainerPermission#20](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/CS/keycontainerpermission.cs#20)]
- [!code-vb[System.Security.Permissions.KeyContainerPermission#20](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/VB/Form1.vb#20)]  
+
+El ejemplo siguiente muestra el uso de la `KeyContainerPermissionFlags` enumeración.  
+
+[!code-cpp[System.Security.Permissions.KeyContainerPermission#20](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/CPP/keycontainerpermission.cpp#20)]
+[!code-csharp[System.Security.Permissions.KeyContainerPermission#20](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/CS/keycontainerpermission.cs#20)]
+[!code-vb[System.Security.Permissions.KeyContainerPermission#20](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Permissions.KeyContainerPermission/VB/Form1.vb#20)]  
   
  ]]></format>
     </remarks>
@@ -138,15 +137,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Cree un contenedor de claves.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Crear un contenedor de claves, también crea un archivo en disco. Es muy importante que se quita cualquier contenedor de claves que se crea cuando ya no está en uso.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Cree un contenedor de claves.</para><para>La creación de un contenedor de claves también crea un archivo en el disco. Es muy importante que cualquier contenedor de claves que se cree se quite cuando ya no se utilice.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="Decrypt">
@@ -174,15 +165,8 @@
       </ReturnValue>
       <MemberValue>512</MemberValue>
       <Docs>
-        <summary>Descifre un contenedor de claves.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- El descifrado es una operación privilegiada porque usa la clave privada.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Descifre un contenedor de claves.</para>
+        <para>El descifrado es una operación privilegiada porque utiliza la clave privada. </para></summary>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -210,15 +194,7 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Elimine un contenedor de claves.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Eliminar un contenedor de claves puede constituir un ataque de denegación de servicio porque evita el uso de archivos cifrados o firmados con la clave. Por lo tanto, la eliminación es una operación privilegiada.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Elimine un contenedor de claves.</para><para>La eliminación de un contenedor de claves puede constituir un ataque por denegación de servicio porque impide el uso de archivos cifrados o firmados con la clave. Por lo tanto, la eliminación es una operación privilegiada.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="Export">
@@ -246,15 +222,7 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>Exporte una clave de un contenedor de claves.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- La capacidad de exportar una clave es potencialmente peligroso porque elimina la exclusividad de la clave.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Exporte una clave de un contenedor de claves.</para><para>La capacidad de exportar una clave es potencialmente dañina porque quita la exclusividad de la clave.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="Import">
@@ -282,15 +250,7 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>Importe una clave en un contenedor de claves.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- La capacidad para importar una clave puede ser tan perjudicial como la capacidad de eliminar un contenedor porque importar una clave en un contenedor de claves con nombre reemplaza la clave existente.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Importe una clave en un contenedor de claves.</para>La capacidad de importar una clave puede ser tan dañina como la capacidad de eliminar un contenedor, ya que la importación de una clave en un contenedor de claves con nombre reemplaza la clave existente.<para></para></summary>
       </Docs>
     </Member>
     <Member MemberName="NoFlags">
@@ -346,15 +306,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Abra un contenedor de claves y utilice la clave pública.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- `Open` no conceder permisos para firmar o descifrar los archivos mediante la clave privada, pero permite un usuario para comprobar las firmas de archivo y para cifrar los archivos. Solo el propietario de la clave es capaz de descifrar estos archivos mediante la clave privada.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Abra un contenedor de claves y utilice la clave pública.</para><para><see langword="Open" /> no da permiso para firmar o descifrar archivos mediante la clave privada, pero permite al usuario comprobar las firmas de los archivos y cifrarlos. Solo el propietario de la clave puede descifrar estos archivos mediante la clave privada.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="Sign">
@@ -382,15 +334,7 @@
       </ReturnValue>
       <MemberValue>256</MemberValue>
       <Docs>
-        <summary>Firme un archivo mediante una clave.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- La capacidad para firmar un archivo es potencialmente dañina, puede permitir que un usuario inicie un archivo mediante la clave de otro usuario.  
-  
- ]]></format>
-        </remarks>
+        <summary><para>Firme un archivo mediante una clave.</para><para>La capacidad de firmar un archivo es potencialmente dañina porque puede permitir que un usuario firme un archivo mediante la clave de otro usuario.</para></summary>
       </Docs>
     </Member>
     <Member MemberName="ViewAcl">
