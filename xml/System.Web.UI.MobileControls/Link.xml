@@ -1,5 +1,5 @@
 <Type Name="Link" FullName="System.Web.UI.MobileControls.Link">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2d6cfd06f1dade72eb2e3db19da096d039642b71" /><Meta Name="ms.sourcegitcommit" Value="7461f9e28c2f184bd1596e6f07c25a3f34984516" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="03/28/2019" /><Meta Name="ms.locfileid" Value="58547476" /></Metadata><TypeSignature Language="C#" Value="public class Link : System.Web.UI.MobileControls.TextControl, System.Web.UI.IPostBackEventHandler" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="f45fa2da3427a17941053916161ea97d65a3b0ef" /><Meta Name="ms.sourcegitcommit" Value="93667418e6e77da6ba7109a407c61b8969cec4ec" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="07/05/2019" /><Meta Name="ms.locfileid" Value="67571190" /></Metadata><TypeSignature Language="C#" Value="public class Link : System.Web.UI.MobileControls.TextControl, System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Link extends System.Web.UI.MobileControls.TextControl implements class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Link" />
   <TypeSignature Language="VB.NET" Value="Public Class Link&#xA;Inherits TextControl&#xA;Implements IPostBackEventHandler" />
@@ -60,7 +60,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- En todos los dispositivos, el vínculo se representa de manera que el <xref:System.Web.UI.MobileControls.TextControl.Text%2A> propiedad se muestra en el dispositivo del usuario. Cuando el usuario invoca el vínculo, el explorador se desplaza a la especificada <xref:System.Web.UI.MobileControls.Link.NavigateUrl%2A> propiedad. La aplicación debe contener código que comprueba que un vínculo es explorable en un dispositivo determinado. Por ejemplo, el vínculo http://www.microsoft.com no es explorable en un dispositivo compatible con WML.  
+ En todos los dispositivos, el vínculo se representa de manera que el <xref:System.Web.UI.MobileControls.TextControl.Text%2A> propiedad se muestra en el dispositivo del usuario. Cuando el usuario invoca el vínculo, el explorador se desplaza a la especificada <xref:System.Web.UI.MobileControls.Link.NavigateUrl%2A> propiedad. La aplicación debe contener código que comprueba que un vínculo es explorable en un dispositivo determinado. Por ejemplo, el vínculo <http://www.microsoft.com> no es explorable en un dispositivo compatible con WML.  
   
  Si el <xref:System.Web.UI.MobileControls.TextControl.Text%2A> propiedad está vacía, el valor de la <xref:System.Web.UI.MobileControls.Link.NavigateUrl%2A> propiedad también se utiliza para la <xref:System.Web.UI.MobileControls.TextControl.Text%2A> propiedad. En concreto, cuando el escritor de texto representa un vínculo, en primer lugar comprueba el <xref:System.Web.UI.MobileControls.TextControl.Text%2A> propiedad para el texto mostrar; si esa propiedad está vacía, muestra el valor de la <xref:System.Web.UI.MobileControls.Link.NavigateUrl%2A> propiedad.  
   
@@ -277,7 +277,7 @@
       <Docs>
         <param name="eventArgument">El argumento de evento opcional que se va a pasar al controlador de eventos.</param>
         <param name="argument">El argumento de evento opcional que se va a pasar al controlador de eventos.</param>
-        <summary>Para obtener una descripción de este miembro, vea <see cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />. Esta API está obsoleta. Para obtener información sobre cómo desarrollar aplicaciones ASP.NET para dispositivos móviles, vea <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps y sitios con ASP.NET</see>.</summary>
+        <summary>Para una descripción de este miembro, vea <see cref="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />. Esta API está obsoleta. Para obtener información sobre cómo desarrollar aplicaciones ASP.NET para dispositivos móviles, vea <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps y sitios con ASP.NET</see>.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[
 

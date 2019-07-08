@@ -1,5 +1,5 @@
 <Type Name="LegendItem" FullName="System.Web.UI.DataVisualization.Charting.LegendItem">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="1cb0ef5399d540dff1db79bdd5bbb8a0271e718c" /><Meta Name="ms.sourcegitcommit" Value="756d085f27705e86604f1bba5f2086ee23761acf" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="01/30/2019" /><Meta Name="ms.locfileid" Value="55326641" /></Metadata><TypeSignature Language="C#" Value="public class LegendItem : System.Web.UI.DataVisualization.Charting.ChartNamedElement, System.Web.UI.DataVisualization.Charting.IChartMapArea" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="fb27a95d9620f168b6c9a0816e99f9643b4f0bf3" /><Meta Name="ms.sourcegitcommit" Value="93667418e6e77da6ba7109a407c61b8969cec4ec" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="07/05/2019" /><Meta Name="ms.locfileid" Value="67571221" /></Metadata><TypeSignature Language="C#" Value="public class LegendItem : System.Web.UI.DataVisualization.Charting.ChartNamedElement, System.Web.UI.DataVisualization.Charting.IChartMapArea" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LegendItem extends System.Web.UI.DataVisualization.Charting.ChartNamedElement implements class System.Web.UI.DataVisualization.Charting.IChartMapArea" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.LegendItem" />
   <TypeSignature Language="VB.NET" Value="Public Class LegendItem&#xA;Inherits ChartNamedElement&#xA;Implements IChartMapArea" />
@@ -764,7 +764,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece el estilo de presentación de la imagen de elemento de leyenda.</summary>
-        <value>Un valor de enumeración <see cref="T:System.Web.UI.DataVisualization.Charting.LegendImageStyle" />.</value>
+        <value>Valor de enumeración <see cref="T:System.Web.UI.DataVisualization.Charting.LegendImageStyle" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -857,9 +857,12 @@
  Si establece la <xref:System.Web.UI.DataVisualization.Charting.LegendItem.MapAreaAttributes%2A> propiedad, un mapa de imágenes de cliente se creará automáticamente. Un área de mapa también se creará, con su cadena de atributo anexada a la \<map > etiqueta que se corresponde con el objeto de gráfico para el que se establece esta propiedad.  
   
  Por ejemplo, estableciendo el atributo de destino mediante esta propiedad y el <xref:System.Web.UI.DataVisualization.Charting.LegendItem.Url%2A> dará como resultado la propiedad del primer punto de datos en el código HTML similar al siguiente código:  
-  
- \<IMG id = "Chart1" usemap = "#Chart1ImageMap" src = "ChartPic_000002.jpg? 6735e83b-f0cd-4225-8be4-047695a61040" border = "0" / >... \<nombre de asignación = "Chart1ImageMap" >\<forma del área = "rect" href = "http://www.SomeDomain.ca" COORDS = "69,120,106,309" target\=_blank > \< /map >  
-  
+
+```html  
+<img id="Chart1" usemap="#Chart1ImageMap" src="ChartPic_000002.jpg?6735e83b-f0cd-4225-8be4-047695a61040" border="0" />...
+<map name="Chart1ImageMap"><area shape="rect" href="http://www.SomeDomain.ca" COORDS="69,120,106,309" target=_blank></map>
+```
+
  Dado que toda la cadena se anexa a la \<mapa > etiqueta, varios atributos se deben separar con un espacio.  
   
  El <xref:System.Web.UI.DataVisualization.Charting.LegendItem.MapAreaAttributes%2A> propiedad puede utilizarse junto con el <xref:System.Web.UI.DataVisualization.Charting.LegendItem.Url%2A> para especificar el área de mapa de atributos de propiedad, por ejemplo, target = _blank, así como los controladores de eventos del lado cliente, por ejemplo, MyEvent () ".  
@@ -1410,7 +1413,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece el estilo del separador de elementos de leyenda.</summary>
-        <value>Un valor de enumeración <see cref="T:System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle" />.</value>
+        <value>Valor de enumeración <see cref="T:System.Web.UI.DataVisualization.Charting.LegendSeparatorStyle" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1731,8 +1734,11 @@
 ## Remarks  
  Si establece esta propiedad, se creará automáticamente un mapa de imágenes de cliente. También se creará un área de mapa con su atributo HREF establecido en la dirección URL o el delimitador especificado. Esta área de mapa también usa las dimensiones que se corresponden con el elemento de gráfico relevante. Por ejemplo, si la <xref:System.Web.UI.DataVisualization.Charting.LegendItem.Url%2A> propiedad está establecida para un punto de datos, a continuación, se generará código HTML similar al siguiente en tiempo de ejecución:  
   
- \<IMG id = "Chart1" USEMAP = "#Chart1ImageMap" src = "ChartPic_000002.jpg? 6735e83b-f0cd-4225-8be4-047695a61040" border = "0" / >... \<Mapa nombre = "Chart1ImageMap" >\<forma del área = "rect" HREF = "http://www.healthquotes.ca" COORDS = "69,120,106,309" > \< /MAP >  
-  
+```html
+<img id="Chart1" USEMAP="#Chart1ImageMap" src="ChartPic_000002.jpg?6735e83b-f0cd-4225-8be4-047695a61040" border="0" />...
+<MAP NAME="Chart1ImageMap"><AREA SHAPE="rect" HREF="http://www.healthquotes.ca" COORDS= "69,120,106,309"></MAP>  
+```
+
  Al establecer esta propiedad no tendrá ningún efecto, si el <xref:System.Web.UI.DataVisualization.Charting.Chart.IsMapEnabled%2A> propiedad está establecida en `false`. El valor predeterminado es `true`.  
   
  > [!IMPORTANT] 

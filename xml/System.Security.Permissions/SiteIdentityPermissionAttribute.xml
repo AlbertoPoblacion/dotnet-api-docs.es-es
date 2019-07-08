@@ -1,5 +1,5 @@
 <Type Name="SiteIdentityPermissionAttribute" FullName="System.Security.Permissions.SiteIdentityPermissionAttribute">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="39ee55590fbb56a475de8f130143bae0b599dda1" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67246473" /></Metadata><TypeSignature Language="C#" Value="public sealed class SiteIdentityPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="7a55948cae70a7d9ce2119de98600f688051314e" /><Meta Name="ms.sourcegitcommit" Value="93667418e6e77da6ba7109a407c61b8969cec4ec" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="07/05/2019" /><Meta Name="ms.locfileid" Value="67571089" /></Metadata><TypeSignature Language="C#" Value="public sealed class SiteIdentityPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SiteIdentityPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.SiteIdentityPermissionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SiteIdentityPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
@@ -42,9 +42,9 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Identidad del sitio está definida para el código de las direcciones URL con los protocolos HTTP, HTTPS y FTP. Un sitio es la cadena entre el "/ /" después del protocolo de una dirección URL y la siguiente barra oblicua "/", si está presente, por ejemplo, www.fourthcoffee.com en la dirección URL http://www.fourthcoffee.com/process/grind.htm. Esto excluye los números de puerto. Si es una dirección URL determinada http://www.fourthcoffee.com:8000/, el sitio será www.fourthcoffee.com, no www.fourthcoffee.com: 8000.  
+ Identidad del sitio está definida para el código de las direcciones URL con los protocolos HTTP, HTTPS y FTP. Un sitio es la cadena entre el "/ /" después del protocolo de una dirección URL y la siguiente barra oblicua "/", si está presente, por ejemplo, `www.fourthcoffee.com` en la dirección URL `http://www.fourthcoffee.com/process/grind.htm`. Esto excluye los números de puerto. Si es una dirección URL determinada `http://www.fourthcoffee.com:8000/`, el sitio es `www.fourthcoffee.com`, no `www.fourthcoffee.com:8000`.  
   
- Los sitios pueden coincidir exactamente o un carácter comodín ("*") el prefijo en el delimitador de punto. Por ejemplo, la cadena de nombre de sitio *. fourthcoffee.com coincide tanto con fourthcoffee.com como www.fourthcoffee.com. Sin un carácter comodín, el nombre del sitio debe ser una coincidencia exacta. La cadena de nombre de sitio * coincidirá con cualquier sitio, pero no coincidirá con código que no tiene ninguna evidencia de sitio.  
+ Los sitios pueden coincidir exactamente o un carácter comodín ("\*") el prefijo en el delimitador de punto. Por ejemplo, la cadena de nombre de sitio `*.fourthcoffee.com` coincide con `fourthcoffee.com` como `www.fourthcoffee.com`. Sin un carácter comodín, el nombre del sitio debe ser una coincidencia exacta. La cadena de nombre de sitio \* coincidirá con cualquier sitio, pero no coincidirá con código que no tiene ninguna evidencia de sitio.  
   
 > [!IMPORTANT]
 >  A partir de la [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], no se utilizan los permisos de identidad.  
@@ -164,9 +164,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Identidad del sitio está definida para el código de las direcciones URL con los protocolos HTTP, HTTPS y FTP. Un sitio es la cadena entre el "/ /" después del protocolo de una dirección URL y la siguiente barra oblicua "/", si está presente, por ejemplo, www.fourthcoffee.com en la dirección URL http://www.fourthcoffee.com/process/grind.htm. Esto excluye los números de puerto. Si es una dirección URL determinada http://www.fourthcoffee.com:8000/, el sitio será www.fourthcoffee.com, no www.fourthcoffee.com: 8000.  
+ Identidad del sitio está definida para el código de las direcciones URL con los protocolos HTTP, HTTPS y FTP. Un sitio es la cadena entre el "/ /" después del protocolo de una dirección URL y la siguiente barra oblicua "/", si está presente, por ejemplo, `www.fourthcoffee.com` en la dirección URL `http://www.fourthcoffee.com/process/grind.htm`. Esto excluye los números de puerto. Si es una dirección URL determinada `http://www.fourthcoffee.com:8000/`, el sitio es `www.fourthcoffee.com`, no `www.fourthcoffee.com:8000`.  
   
- Los sitios pueden coincidir exactamente o un carácter comodín ("*") el prefijo en el delimitador de punto. Por ejemplo, la cadena de nombre de sitio *. fourthcoffee.com coincide tanto con fourthcoffee.com como www.fourthcoffee.com. Sin un carácter comodín, el nombre del sitio debe ser una coincidencia exacta.  
+ Los sitios pueden coincidir exactamente o un carácter comodín ("\*") el prefijo en el delimitador de punto. Por ejemplo, la cadena de nombre de sitio `*.fourthcoffee.com` coincide con `fourthcoffee.com` como `www.fourthcoffee.com`. Sin un carácter comodín, el nombre del sitio debe ser una coincidencia exacta.  
   
  ]]></format>
         </remarks>

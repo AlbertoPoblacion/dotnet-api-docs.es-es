@@ -1,5 +1,5 @@
 <Type Name="GC" FullName="System.GC">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="676c88be65c8b9bd8db22e8bf5ebde86f4ac0aa2" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67245139" /></Metadata><TypeSignature Language="C#" Value="public static class GC" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b44a711ee888d1ea3c30d724e1959d5c05b1be32" /><Meta Name="ms.sourcegitcommit" Value="93667418e6e77da6ba7109a407c61b8969cec4ec" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="07/05/2019" /><Meta Name="ms.locfileid" Value="67571238" /></Metadata><TypeSignature Language="C#" Value="public static class GC" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit GC extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.GC" />
   <TypeSignature Language="VB.NET" Value="Public Class GC" />
@@ -155,7 +155,7 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="bytesAllocated" /> es menor o igual que 0.  
   
-O bien 
+o bien 
 En un equipo de 32 bits, <paramref name="bytesAllocated" /> es mayor que <see cref="F:System.Int32.MaxValue" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Para poder llamar a código no administrado al manipular la prioridad de la colección de elementos no utilizados. Enumeración asociada: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requiere plena confianza para el llamador inmediato. Este miembro no se puede usar código de confianza parcial o transparente.</permission>
@@ -502,7 +502,7 @@ O bien
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="generation" /> no es válido.  
   
 O bien 
- <paramref name="mode" /> no es uno de los valores de <see cref="T:System.GCCollectionMode" />.</exception>
+ <paramref name="mode" /> no es uno de los valores de <see cref="T:System.GCCollectionMode" /> .</exception>
       </Docs>
     </Member>
     <Member MemberName="Collect">
@@ -1266,7 +1266,7 @@ Use la <see cref="P:System.GC.MaxGeneration" /> propiedad para determinar el val
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="bytesAllocated" /> es menor o igual que 0.  
   
-O bien 
+o bien 
 En un equipo de 32 bits, <paramref name="bytesAllocated" /> es mayor que <see cref="F:System.Int32.MaxValue" />.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">Para poder llamar a código no administrado al manipular la prioridad de la colección de elementos no utilizados. Enumeración asociada: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requiere plena confianza para el llamador inmediato. Este miembro no se puede usar código de confianza parcial o transparente.</permission>
@@ -1402,7 +1402,7 @@ En un equipo de 32 bits, <paramref name="bytesAllocated" /> es mayor que <see cr
    
   
 ## Examples  
- En el ejemplo siguiente se muestra cómo usar el <xref:System.GC.SuppressFinalize%2A> método en una clase de recurso para evitar que una recolección redundantes desde que se llama. El ejemplo se usa el [dispose](~/docs/standard/garbage-collection/implementing-dispose.md) patrón para liberar tanto recursos administrados (es decir, los objetos que implementan <xref:System.IDisposable>) y los recursos no administrados.  
+ En el ejemplo siguiente se muestra cómo usar el <xref:System.GC.SuppressFinalize%2A> método en una clase de recurso para evitar que una recolección redundantes desde que se llama. El ejemplo se usa el [patrón de dispose](~/docs/standard/garbage-collection/implementing-dispose.md) liberar tanto recursos administrados (es decir, los objetos que implementan <xref:System.IDisposable>) y los recursos no administrados.  
   
  [!code-csharp[System.GC.SuppressFinalize#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.gc.suppressfinalize/cs/suppressfinalize1.cs#1)]
  [!code-vb[System.GC.SuppressFinalize#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.gc.suppressfinalize/vb/suppressfinalize1.vb#1)]  

@@ -1,5 +1,5 @@
 <Type Name="Point" FullName="Windows.Foundation.Point">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="0b57a2ca1087cde7d1e11efe8b7b932b5d36582b" /><Meta Name="ms.sourcegitcommit" Value="61757d0366a172cdbc11436deb1c1ffa49d97238" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/28/2019" /><Meta Name="ms.locfileid" Value="67457965" /></Metadata><TypeSignature Language="C#" Value="public struct Point : IFormattable" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ee475045ec8260bed9cc2ce00cc47ed686b9a8bb" /><Meta Name="ms.sourcegitcommit" Value="93667418e6e77da6ba7109a407c61b8969cec4ec" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="07/05/2019" /><Meta Name="ms.locfileid" Value="67571228" /></Metadata><TypeSignature Language="C#" Value="public struct Point : IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Point extends System.ValueType implements class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:Windows.Foundation.Point" />
   <TypeSignature Language="VB.NET" Value="Public Structure Point&#xA;Implements IFormattable" />
@@ -115,7 +115,7 @@
       <Docs>
         <param name="o">Objeto que se va a comparar.</param>
         <summary>Determina si el objeto especificado es una estructura <see cref="T:Windows.Foundation.Point" /> y si contiene los mismos valores que esta estructura <see cref="T:Windows.Foundation.Point" />.</summary>
-        <returns>Es <see langword="true" /> si <paramref name="obj" /> es una estructura <see cref="T:Windows.Foundation.Point" /> y contiene los mismos valores de <see cref="P:Windows.Foundation.Point.X" /> e <see cref="P:Windows.Foundation.Point.Y" /> que esta estructura <see cref="T:Windows.Foundation.Point" />; en caso contrario, es <see langword="false" />.</returns>
+        <returns>Es <see langword="true" /> si <paramref name="o" /> es una estructura <see cref="T:Windows.Foundation.Point" /> y contiene los mismos valores de <see cref="P:Windows.Foundation.Point.X" /> e <see cref="P:Windows.Foundation.Point.Y" /> que esta estructura <see cref="T:Windows.Foundation.Point" />; en caso contrario, es <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -286,7 +286,7 @@
       <Docs>
         <param name="format">La cadena que especifica el formato que se va a usar o <see langword="null" /> para utilizar el formato predeterminado que se define para el tipo de la implementación de <see cref="T:System.IFormattable" />.</param>
         <param name="provider">Objeto que proporciona información de formato del valor o <see langword="null" /> para obtener la información de formato numérico de la referencia cultural actual.</param>
-        <summary>Para obtener una descripción de este miembro, vea <see cref="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" />.</summary>
+        <summary>Para una descripción de este miembro, vea <see cref="M:System.IFormattable.ToString(System.String,System.IFormatProvider)" />.</summary>
         <returns>Cadena que contiene el valor de la instancia actual con el formato especificado.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

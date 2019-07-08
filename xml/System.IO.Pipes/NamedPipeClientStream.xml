@@ -1,5 +1,5 @@
 <Type Name="NamedPipeClientStream" FullName="System.IO.Pipes.NamedPipeClientStream">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="2269e0a9e20c5a853354daa11834a510c0c01e8f" /><Meta Name="ms.sourcegitcommit" Value="a3e01ec36374fac54a55add0dcc1e754e394abeb" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="03/30/2019" /><Meta Name="ms.locfileid" Value="58720050" /></Metadata><TypeSignature Language="C#" Value="public sealed class NamedPipeClientStream : System.IO.Pipes.PipeStream" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="ed394c38fc9f4975a6ffe8e36662a4baef781399" /><Meta Name="ms.sourcegitcommit" Value="efa3ad59f4ee23bbc2824414ef546bbf142c360e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="07/02/2019" /><Meta Name="ms.locfileid" Value="67506400" /></Metadata><TypeSignature Language="C#" Value="public sealed class NamedPipeClientStream : System.IO.Pipes.PipeStream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NamedPipeClientStream extends System.IO.Pipes.PipeStream" />
   <TypeSignature Language="DocId" Value="T:System.IO.Pipes.NamedPipeClientStream" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NamedPipeClientStream&#xA;Inherits PipeStream" />
@@ -35,11 +35,6 @@
  Las canalizaciones con nombre proporcionan canalizaciones unidireccionales o bidireccionales para la comunicación entre un servidor de canalización y uno o varios clientes de canalización. Canalizaciones con nombre se pueden usar para la comunicación entre procesos localmente o a través de una red. Un nombre de canalización solo puede compartirse entre varios <xref:System.IO.Pipes.NamedPipeClientStream> objetos.  
   
  Cualquier proceso puede actuar como un servidor de canalización con nombre o cliente o ambos.  
-  
-> [!NOTE]
->  Para [!INCLUDE[winxppro](~/includes/winxppro-md.md)] y [!INCLUDE[win2kserver](~/includes/win2kserver-md.md)], un máximo de 10 canalizaciones puede conectarse simultáneamente a través de la red.  
-  
-   
   
 ## Examples  
  El ejemplo siguiente muestra una manera de enviar una cadena de un proceso primario a un proceso secundario en el mismo equipo con canalizaciones con nombre. Este ejemplo se crea un <xref:System.IO.Pipes.NamedPipeServerStream> objeto en un proceso primario. El <xref:System.IO.Pipes.NamedPipeServerStream> objeto tiene un <xref:System.IO.Pipes.PipeDirection> valor <xref:System.IO.Pipes.PipeDirection.Out>. El servidor, a continuación, espera un <xref:System.IO.Pipes.NamedPipeClientStream> objeto en un proceso secundario para conectarse a él. En este ejemplo, ambos procesos están en el mismo equipo y el <xref:System.IO.Pipes.NamedPipeClientStream> objeto tiene un <xref:System.IO.Pipes.PipeDirection> valor <xref:System.IO.Pipes.PipeDirection.In>. El proceso primario envía a continuación una cadena proporcionada por usuario al proceso secundario. La cadena se muestra en la consola.  
@@ -121,7 +116,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException"><paramref name="pipeName" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="pipeName" /> es cadena de longitud cero.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="pipeName" /> es una cadena de longitud cero.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="pipeName" /> se establece en "anónimo".</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.Demand">para plena confianza para el llamador inmediato. Un código de confianza parcial no puede utilizar este miembro.</permission>
       </Docs>
@@ -258,7 +253,7 @@
         <exception cref="T:System.ArgumentException"><paramref name="pipeName" /> o <paramref name="serverName" /> es una cadena de longitud cero.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="pipeName" /> se establece en "anónimo".  
   
-O bien 
+o bien 
  <paramref name="direction" /> no es un valor <see cref="T:System.IO.Pipes.PipeDirection" /> válido.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.Demand">para plena confianza para el llamador inmediato. Un código de confianza parcial no puede utilizar este miembro.</permission>
       </Docs>
@@ -376,7 +371,7 @@ O bien
         <exception cref="T:System.ArgumentException"><paramref name="pipeName" /> o <paramref name="serverName" /> es una cadena de longitud cero.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="pipeName" /> se establece en "anónimo".  
   
-O bien 
+o bien 
  <paramref name="direction" /> no es un valor <see cref="T:System.IO.Pipes.PipeDirection" /> válido.  
   
 O bien 
@@ -446,10 +441,10 @@ O bien
 O bien 
  <paramref name="direction" /> no es un valor <see cref="T:System.IO.Pipes.PipeDirection" /> válido.  
   
-O bien 
+o bien 
  <paramref name="options" /> no es un valor <see cref="T:System.IO.Pipes.PipeOptions" /> válido.  
   
-O bien 
+o bien 
  <paramref name="impersonationLevel" /> no es un valor <see cref="T:System.Security.Principal.TokenImpersonationLevel" /> válido.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.Demand">para plena confianza para el llamador inmediato. Un código de confianza parcial no puede utilizar este miembro.</permission>
       </Docs>
@@ -513,7 +508,7 @@ O bien
 O bien 
  <paramref name="impersonationLevel" /> no es un valor <see cref="T:System.Security.Principal.TokenImpersonationLevel" /> válido.  
   
-O bien 
+o bien 
  <paramref name="inheritability" /> no es un valor <see cref="T:System.IO.HandleInheritability" /> válido.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.Demand">para plena confianza para el llamador inmediato. Un código de confianza parcial no puede utilizar este miembro.</permission>
       </Docs>
@@ -571,13 +566,13 @@ O bien
 O bien 
  <paramref name="direction" /> no es un valor <see cref="T:System.IO.Pipes.PipeDirection" /> válido.  
   
-O bien 
+o bien 
  <paramref name="options" /> no es un valor <see cref="T:System.IO.Pipes.PipeOptions" /> válido.  
   
 O bien 
  <paramref name="impersonationLevel" /> no es un valor <see cref="T:System.Security.Principal.TokenImpersonationLevel" /> válido.  
   
-O bien 
+o bien 
  <paramref name="inheritability" /> no es un valor <see cref="T:System.IO.HandleInheritability" /> válido.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.Demand">para plena confianza para el llamador inmediato. Un código de confianza parcial no puede utilizar este miembro.</permission>
       </Docs>
@@ -985,7 +980,7 @@ O bien
         </remarks>
         <exception cref="T:System.InvalidOperationException">No se ha establecido el identificador de la canalización.  
   
-O bien 
+o bien 
 El objeto <see cref="T:System.IO.Pipes.NamedPipeClientStream" /> actual no se ha conectado todavía a un objeto <see cref="T:System.IO.Pipes.NamedPipeServerStream" />.</exception>
         <exception cref="T:System.IO.IOException">La canalización se ha roto o se ha producido un error de E/S.</exception>
         <exception cref="T:System.ObjectDisposedException">El controlador de la canalización subyacente está cerrado.</exception>

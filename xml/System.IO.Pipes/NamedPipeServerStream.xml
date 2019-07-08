@@ -1,5 +1,5 @@
 <Type Name="NamedPipeServerStream" FullName="System.IO.Pipes.NamedPipeServerStream">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="38e24628006068de0f4b7e5ea29051fe63b51227" /><Meta Name="ms.sourcegitcommit" Value="a3e01ec36374fac54a55add0dcc1e754e394abeb" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="03/30/2019" /><Meta Name="ms.locfileid" Value="58746065" /></Metadata><TypeSignature Language="C#" Value="public sealed class NamedPipeServerStream : System.IO.Pipes.PipeStream" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="94f8192c842f2f70729cdaab1f54470312bceede" /><Meta Name="ms.sourcegitcommit" Value="efa3ad59f4ee23bbc2824414ef546bbf142c360e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="07/02/2019" /><Meta Name="ms.locfileid" Value="67506432" /></Metadata><TypeSignature Language="C#" Value="public sealed class NamedPipeServerStream : System.IO.Pipes.PipeStream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NamedPipeServerStream extends System.IO.Pipes.PipeStream" />
   <TypeSignature Language="DocId" Value="T:System.IO.Pipes.NamedPipeServerStream" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NamedPipeServerStream&#xA;Inherits PipeStream" />
@@ -35,11 +35,6 @@
  Las canalizaciones con nombre proporcionan canalizaciones unidireccionales o bidireccionales para la comunicación entre un servidor de canalización y uno o varios clientes de canalización. Canalizaciones con nombre se pueden usar para la comunicación entre procesos localmente o a través de una red. Un nombre de canalización solo puede compartirse entre varios <xref:System.IO.Pipes.NamedPipeClientStream> objetos.  
   
  Cualquier proceso puede actuar como un servidor de canalización con nombre o cliente o ambos.  
-  
-> [!NOTE]
->  Para [!INCLUDE[winxppro](~/includes/winxppro-md.md)] y [!INCLUDE[win2kserver](~/includes/win2kserver-md.md)], un máximo de 10 canalizaciones puede conectarse simultáneamente a través de la red.  
-  
-   
   
 ## Examples  
  El ejemplo siguiente muestra una manera de enviar una cadena de un proceso primario a un proceso secundario en el mismo equipo con canalizaciones con nombre. Este ejemplo se crea un <xref:System.IO.Pipes.NamedPipeServerStream> objeto en un proceso primario con un <xref:System.IO.Pipes.PipeDirection> valor <xref:System.IO.Pipes.PipeDirection.Out>. El servidor, a continuación, espera un <xref:System.IO.Pipes.NamedPipeClientStream> objeto en un proceso secundario para conectarse a él. En este ejemplo, ambos procesos están en el mismo equipo y el <xref:System.IO.Pipes.NamedPipeClientStream> objeto tiene un <xref:System.IO.Pipes.PipeDirection> valor <xref:System.IO.Pipes.PipeDirection.In>. El proceso primario envía a continuación una cadena proporcionada por usuario al proceso secundario. La cadena se muestra en la consola.  
@@ -127,8 +122,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException"><paramref name="pipeName" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="pipeName" /> es cadena de longitud cero.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="pipeName" /> se establece en "anónimo".</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="pipeName" /> es una cadena de longitud cero.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="pipeName" /> se establece en "anonymous".</exception>
         <exception cref="T:System.NotSupportedException"><paramref name="pipeName" /> contiene un carácter de dos puntos (":").</exception>
         <exception cref="T:System.PlatformNotSupportedException">El sistema operativo no es Windows Millennium Edition, Windows 98 o Windows 95, los cuales no se admiten.</exception>
         <exception cref="T:System.IO.IOException">Se ha superado el número máximo instancias de servidor.</exception>
@@ -205,10 +200,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException"><paramref name="pipeName" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="pipeName" /> es cadena de longitud cero.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="pipeName" /> es una cadena de longitud cero.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="pipeName" /> se establece en "anónimo".  
   
-O bien 
+o bien 
  <paramref name="direction" /> no es un valor <see cref="T:System.IO.Pipes.PipeDirection" /> válido.</exception>
         <exception cref="T:System.NotSupportedException"><paramref name="pipeName" /> contiene un carácter de dos puntos (":").</exception>
         <exception cref="T:System.PlatformNotSupportedException">El sistema operativo no es Windows Millennium Edition, Windows 98 o Windows 95, los cuales no se admiten.</exception>
@@ -282,21 +277,21 @@ O bien
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException"><paramref name="pipeName" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="pipeName" /> es cadena de longitud cero.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="pipeName" /> es una cadena de longitud cero.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="pipeName" /> se establece en "anónimo".  
   
-O bien 
+o bien 
  <paramref name="direction" /> no es un valor <see cref="T:System.IO.Pipes.PipeDirection" /> válido.  
   
 O bien 
 Se requiere un número no negativo.  
   
-O bien 
+o bien 
  El valor de <paramref name="maxNumberofServerInstances" /> es menor que -1 o mayor que 254 (-1 indica <see cref="F:System.IO.Pipes.NamedPipeServerStream.MaxAllowedServerInstances" />) 
-O bien 
+o bien 
  Es necesario <see cref="F:System.IO.HandleInheritability.None" /> o <see cref="F:System.IO.HandleInheritability.Inheritable" />.  
   
-O bien 
+o bien 
 Los derechos de acceso se limitan a las marcas <see cref="F:System.IO.Pipes.PipeAccessRights.ChangePermissions" />, <see cref="F:System.IO.Pipes.PipeAccessRights.TakeOwnership" /> y <see cref="F:System.IO.Pipes.PipeAccessRights.AccessSystemSecurity" />.</exception>
         <exception cref="T:System.NotSupportedException"><paramref name="pipeName" /> contiene un carácter de dos puntos (":").</exception>
         <exception cref="T:System.PlatformNotSupportedException">El sistema operativo no es Windows Millennium Edition, Windows 98 o Windows 95, los cuales no se admiten.</exception>
@@ -423,13 +418,13 @@ Se ha superado el número máximo instancias de servidor.</exception>
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException"><paramref name="pipeName" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="pipeName" /> es cadena de longitud cero.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="pipeName" /> es una cadena de longitud cero.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="pipeName" /> se establece en "anónimo".  
   
 O bien 
  <paramref name="direction" /> no es un valor <see cref="T:System.IO.Pipes.PipeDirection" /> válido.  
   
-O bien 
+o bien 
  El valor de <paramref name="maxNumberofServerInstances" /> es menor que -1 o mayor que 254 (-1 indica <see cref="F:System.IO.Pipes.NamedPipeServerStream.MaxAllowedServerInstances" />)</exception>
         <exception cref="T:System.NotSupportedException"><paramref name="pipeName" /> contiene un carácter de dos puntos (":").</exception>
         <exception cref="T:System.PlatformNotSupportedException">El sistema operativo no es Windows Millennium Edition, Windows 98 o Windows 95, los cuales no se admiten.</exception>
@@ -501,7 +496,7 @@ O bien
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException"><paramref name="pipeName" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="pipeName" /> es cadena de longitud cero.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="pipeName" /> es una cadena de longitud cero.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="pipeName" /> se establece en "anónimo".  
   
 O bien 
@@ -509,7 +504,7 @@ O bien
   
 O bien 
  El valor de <paramref name="maxNumberofServerInstances" /> es menor que -1 o mayor que 254 (-1 indica <see cref="F:System.IO.Pipes.NamedPipeServerStream.MaxAllowedServerInstances" />) 
-O bien 
+o bien 
  <paramref name="options" /> no es un valor <see cref="T:System.IO.Pipes.PipeOptions" /> válido.</exception>
         <exception cref="T:System.NotSupportedException"><paramref name="pipeName" /> contiene un carácter de dos puntos (":").</exception>
         <exception cref="T:System.PlatformNotSupportedException">El sistema operativo no es Windows Millennium Edition, Windows 98 o Windows 95, los cuales no se admiten.</exception>
@@ -583,18 +578,18 @@ O bien
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException"><paramref name="pipeName" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="pipeName" /> es cadena de longitud cero.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="pipeName" /> es una cadena de longitud cero.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="pipeName" /> se establece en "anónimo".  
   
 O bien 
  <paramref name="direction" /> no es un valor <see cref="T:System.IO.Pipes.PipeDirection" /> válido.  
   
-O bien 
+o bien 
  El valor de <paramref name="maxNumberofServerInstances" /> es menor que -1 o mayor que 254 (-1 indica <see cref="F:System.IO.Pipes.NamedPipeServerStream.MaxAllowedServerInstances" />) 
 O bien 
  <paramref name="options" /> no es un valor <see cref="T:System.IO.Pipes.PipeOptions" /> válido.  
   
-O bien 
+o bien 
  <paramref name="inBufferSize" /> es negativo.</exception>
         <exception cref="T:System.NotSupportedException"><paramref name="pipeName" /> contiene un carácter de dos puntos (":").</exception>
         <exception cref="T:System.PlatformNotSupportedException">El sistema operativo no es Windows Millennium Edition, Windows 98 o Windows 95, los cuales no se admiten.</exception>
@@ -662,15 +657,15 @@ O bien
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException"><paramref name="pipeName" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="pipeName" /> es cadena de longitud cero.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="pipeName" /> es una cadena de longitud cero.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="pipeName" /> se establece en "anónimo".  
   
 O bien 
  <paramref name="direction" /> no es un valor <see cref="T:System.IO.Pipes.PipeDirection" /> válido.  
   
-O bien 
+o bien 
  El valor de <paramref name="maxNumberofServerInstances" /> es menor que -1 o mayor que 254 (-1 indica <see cref="F:System.IO.Pipes.NamedPipeServerStream.MaxAllowedServerInstances" />) 
-O bien 
+o bien 
  <paramref name="options" /> no es un valor <see cref="T:System.IO.Pipes.PipeOptions" /> válido.  
   
 O bien 
@@ -739,7 +734,7 @@ O bien
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException"><paramref name="pipeName" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="pipeName" /> es cadena de longitud cero.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="pipeName" /> es una cadena de longitud cero.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="pipeName" /> se establece en "anónimo".  
   
 O bien 
@@ -750,7 +745,7 @@ O bien
 O bien 
  <paramref name="options" /> no es un valor <see cref="T:System.IO.Pipes.PipeOptions" /> válido.  
   
-O bien 
+o bien 
  <paramref name="inBufferSize" /> es negativo.  
   
 O bien 
@@ -814,7 +809,7 @@ O bien
         <summary>Inicializa una nueva instancia de la clase <see cref="T:System.IO.Pipes.NamedPipeServerStream" /> con las características nombre de canalización, dirección de canalización, número máximo de instancias de servidor, modo de transmisión y opciones de canalización especificadas, tamaños de búfer de entrada y salida recomendados, seguridad de canalización, modo de herencia y derechos de acceso de canalización.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException"><paramref name="pipeName" /> es <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException"><paramref name="pipeName" /> es cadena de longitud cero.</exception>
+        <exception cref="T:System.ArgumentException"><paramref name="pipeName" /> es una cadena de longitud cero.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="pipeName" /> se establece en "anónimo".  
   
 O bien 
@@ -892,11 +887,13 @@ O bien
         </remarks>
         <exception cref="T:System.InvalidOperationException">No se abrió la canalización de forma asincrónica.  
   
-O bien 
-Ya se ha establecido una conexión de canalización.  
+ O bien  
   
-O bien 
-No se ha establecido el identificador de la canalización.</exception>
+ Ya se ha establecido una conexión de canalización.  
+  
+ O bien  
+  
+ No se ha establecido el identificador de la canalización.</exception>
         <exception cref="T:System.IO.IOException">Se ha interrumpido la conexión de canalización.</exception>
         <exception cref="T:System.ObjectDisposedException">Se ha cerrado la canalización.</exception>
       </Docs>
@@ -947,11 +944,13 @@ No se ha establecido el identificador de la canalización.</exception>
         </remarks>
         <exception cref="T:System.InvalidOperationException">No se ha realizado aún ninguna conexión de canalización.  
   
-O bien 
-La canalización conectada ya se ha desconectado.  
+ O bien  
   
-O bien 
-No se ha establecido el identificador de la canalización.</exception>
+ La canalización conectada ya se ha desconectado.  
+  
+ O bien  
+  
+ No se ha establecido el identificador de la canalización.</exception>
         <exception cref="T:System.ObjectDisposedException">Se ha cerrado la canalización.</exception>
       </Docs>
     </Member>
@@ -1004,8 +1003,9 @@ No se ha establecido el identificador de la canalización.</exception>
         <exception cref="T:System.ArgumentNullException"><paramref name="asyncResult" /> es <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">No se abrió la canalización de forma asincrónica.  
   
-O bien 
-No se ha establecido el identificador de la canalización.</exception>
+ o bien  
+  
+ No se ha establecido el identificador de la canalización.</exception>
         <exception cref="T:System.IO.IOException">Se ha interrumpido la conexión de canalización.</exception>
         <exception cref="T:System.ObjectDisposedException">Se ha cerrado la canalización.</exception>
       </Docs>
@@ -1098,16 +1098,19 @@ No se ha establecido el identificador de la canalización.</exception>
         </remarks>
         <exception cref="T:System.InvalidOperationException">No se ha realizado aún ninguna conexión de canalización.  
   
-O bien 
-La canalización conectada ya se ha desconectado.  
+ o bien  
   
-O bien 
-No se ha establecido el identificador de la canalización.</exception>
+ La canalización conectada ya se ha desconectado.  
+  
+ o bien  
+  
+ No se ha establecido el identificador de la canalización.</exception>
         <exception cref="T:System.ObjectDisposedException">Se ha cerrado la canalización.</exception>
         <exception cref="T:System.IO.IOException">Se ha interrumpido la conexión de canalización.  
   
-O bien 
-El nombre de usuario del cliente es más largo de 19 caracteres.</exception>
+ O bien  
+  
+ El nombre de usuario del cliente es más largo de 19 caracteres.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermissionFlag">la capacidad de manipular el objeto principal. Acción de seguridad: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Enumeración asociada: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" /></permission>
       </Docs>
     </Member>
@@ -1208,16 +1211,19 @@ El nombre de usuario del cliente es más largo de 19 caracteres.</exception>
         </remarks>
         <exception cref="T:System.InvalidOperationException">No se ha realizado aún ninguna conexión de canalización.  
   
-O bien 
-La canalización conectada ya se ha desconectado.  
+ O bien  
   
-O bien 
-No se ha establecido el identificador de la canalización.</exception>
+ La canalización conectada ya se ha desconectado.  
+  
+ O bien  
+  
+ No se ha establecido el identificador de la canalización.</exception>
         <exception cref="T:System.ObjectDisposedException">Se ha cerrado la canalización.</exception>
         <exception cref="T:System.IO.IOException">Se ha interrumpido la conexión de canalización.  
   
-O bien 
-Error de E/S.</exception>
+ o bien  
+  
+ Error de E/S.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermissionFlag">la capacidad de manipular el objeto principal. Acción de seguridad: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Enumeración asociada: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" /></permission>
       </Docs>
     </Member>
@@ -1275,8 +1281,9 @@ Error de E/S.</exception>
         </remarks>
         <exception cref="T:System.InvalidOperationException">Ya se ha establecido una conexión de canalización.  
   
-O bien 
-No se ha establecido el identificador de la canalización.</exception>
+ o bien  
+  
+ No se ha establecido el identificador de la canalización.</exception>
         <exception cref="T:System.ObjectDisposedException">Se ha cerrado la canalización.</exception>
         <exception cref="T:System.IO.IOException">Se ha interrumpido la conexión de canalización.</exception>
       </Docs>

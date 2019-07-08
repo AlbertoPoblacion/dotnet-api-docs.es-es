@@ -1,5 +1,5 @@
 <Type Name="WSDualHttpBinding" FullName="System.ServiceModel.WSDualHttpBinding">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="ad4410b4316514e47528a0bfe11779173ba0bf3b" /><Meta Name="ms.sourcegitcommit" Value="42a3c35677e9d87eeb503607ae50c9d39827d414" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="12/17/2018" /><Meta Name="ms.locfileid" Value="53465759" /></Metadata><TypeSignature Language="C#" Value="public class WSDualHttpBinding : System.ServiceModel.Channels.Binding, System.ServiceModel.Channels.IBindingRuntimePreferences" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="d6bd260082a875976d1b5f3b261b0b5f1fa388b9" /><Meta Name="ms.sourcegitcommit" Value="93667418e6e77da6ba7109a407c61b8969cec4ec" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="07/05/2019" /><Meta Name="ms.locfileid" Value="67570887" /></Metadata><TypeSignature Language="C#" Value="public class WSDualHttpBinding : System.ServiceModel.Channels.Binding, System.ServiceModel.Channels.IBindingRuntimePreferences" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WSDualHttpBinding extends System.ServiceModel.Channels.Binding implements class System.ServiceModel.Channels.IBindingRuntimePreferences" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WSDualHttpBinding" />
   <TypeSignature Language="VB.NET" Value="Public Class WSDualHttpBinding&#xA;Inherits Binding&#xA;Implements IBindingRuntimePreferences" />
@@ -178,7 +178,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Un recurso de Internet es local si tiene una dirección local. Una dirección local es aquella que se encuentra en el mismo equipo, la LAN local o intranet y se identifica, sintácticamente, por la ausencia de un punto (.) como se muestra en el URI "http://webserver/"y"http://localhost/".  
+ Un recurso de Internet es local si tiene una dirección local. Una dirección local es aquel que se encuentra en el mismo equipo, la LAN local o intranet y se identifica, sintácticamente, por la ausencia de un punto (.), como se muestra en el URI `http://webserver/` y `http://localhost/`.  
   
  La configuración de la propiedad <xref:System.ServiceModel.WSDualHttpBinding.BypassProxyOnLocal%2A> determina si los puntos de conexión configurados con <xref:System.ServiceModel.WSDualHttpBinding> usan el servidor proxy al obtener acceso a los recursos locales.  
   
@@ -373,7 +373,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece la cantidad máxima de memoria, en bytes, que se puede asignar al administrador de búferes de mensajes, que reciben los mensajes en los extremos configurados con este enlace.</summary>
-        <value>Tamaño máximo, en bytes, para el grupo de búferes que usa un punto de conexión configurado con este enlace. El valor predeterminado es 524288 bytes.</value>
+        <value>Tamaño máximo, en bytes, para el grupo de búferes que usa un extremo configurado con este enlace. El valor predeterminado es 524288 bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -505,7 +505,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece la dirección URI del proxy HTTP.</summary>
-        <value><see cref="T:System.Uri" /> que se usa como la dirección del proxy HTTP. El valor predeterminado es <see langword="null" />.</value>
+        <value><see cref="T:System.Uri" /> que se usa como dirección del proxy HTTP. El valor predeterminado es <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -541,7 +541,7 @@
         <ReturnType>System.Xml.XmlDictionaryReaderQuotas</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece restricciones en la complejidad de mensajes SOAP que pueden ser procesados por puntos de conexión configurados con este enlace.</summary>
+        <summary>Obtiene o establece restricciones en la complejidad de mensajes SOAP que pueden ser procesados por extremos configurados con este enlace.</summary>
         <value><see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> que especifica las restricciones de complejidad.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -851,7 +851,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece la codificación de caracteres que se usa para el texto del mensaje.</summary>
-        <value><see cref="T:System.Text.Encoding" /> que indica la codificación de caracteres que se usa. De manera predeterminada, es <see cref="T:System.Text.UTF8Encoding" />.</value>
+        <value>El objeto <see cref="T:System.Text.Encoding" /> que indica la codificación de caracteres que se utiliza. De manera predeterminada, es <see cref="T:System.Text.UTF8Encoding" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -929,7 +929,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece un valor que indica si se debería usar el proxy HTTP del sistema configurado automáticamente, si está disponible.</summary>
+        <summary>Obtiene o establece un valor que indica si se debe usar el proxy HTTP del sistema configurado automáticamente, si está disponible.</summary>
         <value><see langword="true" /> si se debería usar el proxy HTTP configurado automáticamente del sistema, si está disponible; de lo contrario, <see langword="false" />. El valor predeterminado es <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

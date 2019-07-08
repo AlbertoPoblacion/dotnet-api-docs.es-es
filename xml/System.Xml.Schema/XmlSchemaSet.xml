@@ -1,5 +1,5 @@
 <Type Name="XmlSchemaSet" FullName="System.Xml.Schema.XmlSchemaSet">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="f30f1db21188a7eac7a5e558ed97c529a2799eae" /><Meta Name="ms.sourcegitcommit" Value="bc24a3ba616ee1df8b858f9400cae4f058ea3a7e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="06/19/2019" /><Meta Name="ms.locfileid" Value="67245683" /></Metadata><TypeSignature Language="C#" Value="public class XmlSchemaSet" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="1a45077dfb90b7e4827cf8ae93bea7ce6947bc87" /><Meta Name="ms.sourcegitcommit" Value="93667418e6e77da6ba7109a407c61b8969cec4ec" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="07/05/2019" /><Meta Name="ms.locfileid" Value="67570924" /></Metadata><TypeSignature Language="C#" Value="public class XmlSchemaSet" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaSet extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaSet" />
   <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaSet" />
@@ -392,7 +392,7 @@ foreach(XmlSchema schema in schemaSet.Schemas("http://www.contoso.com/books"))
 }  
 ```  
   
- En el ejemplo de código anterior, `null` se especifica como el `targetNamespace` parámetro para el <xref:System.Xml.Schema.XmlSchemaSet.Add%2A> método. Como resultado, el `targetNamespace` definido en el archivo books.xml se utiliza el archivo. En este caso, el resultado de llamar a la <xref:System.Xml.Schema.XmlSchemaSet.Add%2A> método sería idéntico si http://www.contoso.com/books se hubiera especificado como el `targetNamespace` parámetro.  
+ En el ejemplo de código anterior, `null` se especifica como el `targetNamespace` parámetro para el <xref:System.Xml.Schema.XmlSchemaSet.Add%2A> método. Como resultado, el `targetNamespace` definido en el archivo books.xml se utiliza el archivo. En este caso, el resultado de llamar a la <xref:System.Xml.Schema.XmlSchemaSet.Add%2A> método sería idéntico si `http://www.contoso.com/books` se hubiera especificado como el `targetNamespace` parámetro.  
   
 -   Esquema XML de W3C permite esquemas sin un espacio de nombres de destino que se incluirán en los esquemas con un espacio de nombres de destino definido. En este caso, se convierte en el esquema sin un espacio de nombres de destino definido en el espacio de nombres de destino del esquema incluido. El esquema incluido se trata como si tuviera definido ese espacio de nombres de destino. De forma similar, los esquemas sin un espacio de nombres de destino se pueden agregar a la <xref:System.Xml.Schema.XmlSchemaSet> y convertido en el espacio de nombres de destino especificada por el <xref:System.Xml.Schema.XmlSchemaSet.Add%2A> método, como se muestra en el ejemplo siguiente.  
   
@@ -402,7 +402,7 @@ foreach(XmlSchema schema in schemaSet.Schemas("http://www.contoso.com/books"))
 </xs:schema>  
 ```  
   
- Si se agrega el esquema anterior a la <xref:System.Xml.Schema.XmlSchemaSet> con el espacio de nombres de destino http://www.contoso.com/new/targetnamespace (como se muestra en el código siguiente), se trata como si fuera el espacio de nombres declarado en el esquema `http://www.contoso.com/new/targetnamespace`.  
+ Si se agrega el esquema anterior a la <xref:System.Xml.Schema.XmlSchemaSet> con el espacio de nombres de destino `http://www.contoso.com/new/targetnamespace` (como se muestra en el código siguiente), se trata como si fuera el espacio de nombres declarado en el esquema `http://www.contoso.com/new/targetnamespace`.  
   
 ```vb  
 Dim schemaSet As XmlSchemaSet = New XmlSchemaSet()  
@@ -429,7 +429,7 @@ foreach(XmlSchema schema in schemaSet.Schemas())
    
   
 ## Examples  
- En el ejemplo de código siguiente se agrega el http://www.contoso.com/books.xsd esquema con un espacio de nombres de destino de http://www.contoso.com/books a la <xref:System.Xml.Schema.XmlSchemaSet>.  
+ En el ejemplo de código siguiente se agrega el `http://www.contoso.com/books.xsd` esquema con un espacio de nombres de destino de `http://www.contoso.com/books` a la <xref:System.Xml.Schema.XmlSchemaSet>.  
   
 ```vb  
 Dim schemaSet As XmlSchemaSet = New XmlSchemaSet()  
@@ -516,7 +516,7 @@ schemaSet.Add("http://www.contoso.com/books", "http://www.contoso.com/books.xsd"
    
   
 ## Examples  
- El ejemplo de código siguiente agrega el esquema books.xsd incluido en el <xref:System.Xml.XmlTextReader> con un espacio de nombres de destino de http://www.contoso.com/books a la <xref:System.Xml.Schema.XmlSchemaSet>.  
+ El ejemplo de código siguiente agrega el esquema books.xsd incluido en el <xref:System.Xml.XmlTextReader> con un espacio de nombres de destino de `http://www.contoso.com/books` a la <xref:System.Xml.Schema.XmlSchemaSet>.  
   
 ```vb  
 Dim schemaSet As XmlSchemaSet = New XmlSchemaSet()  
@@ -692,7 +692,7 @@ schemaSet.Compile();
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Los esquemas que se agregan indirectamente a la <xref:System.Xml.Schema.XmlSchemaSet> se detectan mediante el <xref:System.Xml.Schema.XmlSchemaSet.Contains%2A> método; por ejemplo, los esquemas importados. Como resultado, si un esquema para el http://www.contoso.com/retail espacio de nombres que importa un esquema para el http://www.contoso.com/books espacio de nombres se agrega a la <xref:System.Xml.Schema.XmlSchemaSet>, al llamar a <xref:System.Xml.Schema.XmlSchemaSet.Contains%2A> con `http://www.contoso.com/books` como un parámetro, devuelve `true`.  
+ Los esquemas que se agregan indirectamente a la <xref:System.Xml.Schema.XmlSchemaSet> se detectan mediante el <xref:System.Xml.Schema.XmlSchemaSet.Contains%2A> método; por ejemplo, los esquemas importados. Como resultado, si un esquema para el `http://www.contoso.com/retail` espacio de nombres que importa un esquema para el `http://www.contoso.com/books` espacio de nombres se agrega a la <xref:System.Xml.Schema.XmlSchemaSet>, al llamar a <xref:System.Xml.Schema.XmlSchemaSet.Contains%2A> con `http://www.contoso.com/books` como un parámetro, devuelve `true`.  
   
  ]]></format>
         </remarks>
@@ -1456,7 +1456,7 @@ foreach (XmlSchema schema in schemaSet.Schemas())
    
   
 ## Examples  
- El ejemplo siguiente muestra cómo recorrer en iteración todos los esquemas en el http://www.contoso.com/books espacio de nombres en el <xref:System.Xml.Schema.XmlSchemaSet>.  
+ El ejemplo siguiente muestra cómo recorrer en iteración todos los esquemas en el `http://www.contoso.com/books` espacio de nombres en el <xref:System.Xml.Schema.XmlSchemaSet>.  
   
 ```vb  
 Dim schemaSet As XmlSchemaSet = New XmlSchemaSet  

@@ -1,5 +1,5 @@
 <Type Name="AnonymousPipeServerStream" FullName="System.IO.Pipes.AnonymousPipeServerStream">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d0e982690f510c68030f4bade1b3c0d8537f4f5b" /><Meta Name="ms.sourcegitcommit" Value="a3e01ec36374fac54a55add0dcc1e754e394abeb" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="03/30/2019" /><Meta Name="ms.locfileid" Value="58742921" /></Metadata><TypeSignature Language="C#" Value="public sealed class AnonymousPipeServerStream : System.IO.Pipes.PipeStream" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="175e6102008b962b2e1714db11ebd2d9530bff64" /><Meta Name="ms.sourcegitcommit" Value="efa3ad59f4ee23bbc2824414ef546bbf142c360e" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="07/02/2019" /><Meta Name="ms.locfileid" Value="67506457" /></Metadata><TypeSignature Language="C#" Value="public sealed class AnonymousPipeServerStream : System.IO.Pipes.PipeStream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AnonymousPipeServerStream extends System.IO.Pipes.PipeStream" />
   <TypeSignature Language="DocId" Value="T:System.IO.Pipes.AnonymousPipeServerStream" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AnonymousPipeServerStream&#xA;Inherits PipeStream" />
@@ -36,25 +36,21 @@
   
  Las canalizaciones anónimas son unidireccionales, sin nombre canalizaciones que normalmente se transfieren datos entre procesos primarios y secundarios. Las canalizaciones anónimas son siempre locales; no pueden utilizarse a través de una red. Un <xref:System.IO.Pipes.PipeDirection> valor de <xref:System.IO.Pipes.PipeDirection.InOut> no se admite porque las canalizaciones anónimas se definen para ser unidireccional.  
   
- Las canalizaciones anónimas no admiten <xref:System.IO.Pipes.PipeTransmissionMode.Message> modos de lectura.  
+ Las canalizaciones anónimas no admiten el <xref:System.IO.Pipes.PipeTransmissionMode.Message?displayProperty=nameWithType> en modo de lectura.  
   
  El cliente de una canalización anónima se debe crear desde un identificador de canalización proporcionado por el lado del servidor mediante una llamada a la <xref:System.IO.Pipes.AnonymousPipeServerStream.GetClientHandleAsString%2A> método. La cadena, a continuación, se pasa como parámetro al crear el proceso del cliente. El proceso de cliente, a continuación, se pasa a la <xref:System.IO.Pipes.AnonymousPipeClientStream> constructor como el `pipeHandleAsString` parámetro.  
   
  El <xref:System.IO.Pipes.AnonymousPipeServerStream> objeto debe desechar el identificador de cliente mediante el <xref:System.IO.Pipes.AnonymousPipeServerStream.DisposeLocalCopyOfClientHandle%2A> método con el fin de recibir una notificación cuando se cierra el cliente.  
   
-> [!NOTE]
->  Para [!INCLUDE[winxppro](~/includes/winxppro-md.md)] y [!INCLUDE[win2kserver](~/includes/win2kserver-md.md)], un máximo de 10 canalizaciones puede conectarse simultáneamente a través de la red.  
-  
-   
-  
 ## Examples  
- En el ejemplo siguiente se muestra una manera de enviar una cadena de un proceso primario a un proceso secundario mediante canalizaciones anónimas. En este ejemplo se crea un objeto <xref:System.IO.Pipes.AnonymousPipeServerStream> en un proceso primario con un valor <xref:System.IO.Pipes.PipeDirection> de <xref:System.IO.Pipes.PipeDirection.Out>. También crea un <xref:System.IO.Pipes.AnonymousPipeClientStream> objeto en un proceso secundario con un <xref:System.IO.Pipes.PipeDirection> valor <xref:System.IO.Pipes.PipeDirection.In>. El proceso primario envía a continuación una cadena proporcionada por usuario al proceso secundario. La cadena se muestra en la consola.  
+
+El ejemplo siguiente envía una cadena de un proceso primario a un proceso secundario mediante canalizaciones anónimas. En este ejemplo se crea un objeto <xref:System.IO.Pipes.AnonymousPipeServerStream> en un proceso primario con un valor <xref:System.IO.Pipes.PipeDirection> de <xref:System.IO.Pipes.PipeDirection.Out?displayProperty=nameWithType>. También crea un <xref:System.IO.Pipes.AnonymousPipeClientStream> objeto en un proceso secundario con un <xref:System.IO.Pipes.PipeDirection> valor <xref:System.IO.Pipes.PipeDirection.In?displayProperty=nameWithType>. El proceso primario envía a continuación una cadena proporcionada por usuario al proceso secundario. La cadena se muestra en la consola.  
   
  En este ejemplo es para el proceso de servidor, que usa el <xref:System.IO.Pipes.AnonymousPipeServerStream> clase. El ejemplo de código completo, incluido el código para el cliente de la canalización y el servidor, vea [Cómo: Usar canalizaciones anónimas para la comunicación local entre procesos](~/docs/standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md).  
   
- [!code-cpp[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cpp/program.cpp#01)]
- [!code-csharp[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cs/Program.cs#01)]
- [!code-vb[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/vb/program.vb#01)]  
+ [!code-cpp[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cpp/program.cpp)]
+ [!code-csharp[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cs/Program.cs)]
+ [!code-vb[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/vb/program.vb)]  
   
  ]]></format>
     </remarks>
@@ -229,9 +225,9 @@ Las canalizaciones anónimas solo pueden ser en una dirección, por lo que <para
 ## Examples  
  El ejemplo siguiente muestra un método para enviar una cadena de un proceso primario a un proceso secundario mediante canalizaciones anónimas. En este ejemplo, un <xref:System.IO.Pipes.AnonymousPipeServerStream> objeto se crea en un proceso primario con un <xref:System.IO.Pipes.PipeDirection> valor <xref:System.IO.Pipes.PipeDirection.Out>.  
   
- [!code-cpp[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cpp/program.cpp#01)]
- [!code-csharp[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cs/Program.cs#01)]
- [!code-vb[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/vb/program.vb#01)]  
+ [!code-cpp[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cpp/program.cpp)]
+ [!code-csharp[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cs/Program.cs)]
+ [!code-vb[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/vb/program.vb)]  
   
  ]]></format>
         </remarks>
@@ -298,8 +294,9 @@ Las canalizaciones anónimas solo pueden ser en una dirección, por lo que <para
         <exception cref="T:System.NotSupportedException">El valor de <paramref name="direction" /> está establecido en <see cref="F:System.IO.Pipes.PipeDirection.InOut" />.</exception>
         <exception cref="T:System.IO.IOException">Se ha producido un error de E/S, como un error de disco.  
   
-O bien 
-Se ha cerrado la secuencia.</exception>
+ o bien  
+  
+ Se ha cerrado la secuencia.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.Demand">para plena confianza para el llamador inmediato. Un código de confianza parcial no puede utilizar este miembro.</permission>
       </Docs>
     </Member>
@@ -417,7 +414,7 @@ Las canalizaciones anónimas solo pueden ser en una dirección, por lo que <para
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="inheritability" /> no está establecido en <see cref="F:System.IO.HandleInheritability.None" /> o <see cref="F:System.IO.HandleInheritability.Inheritable" />.  
   
-O bien 
+o bien 
  <paramref name="bufferSize" /> es menor que 0.</exception>
         <exception cref="T:System.NotSupportedException">El valor de <paramref name="direction" /> está establecido en <see cref="F:System.IO.Pipes.PipeDirection.InOut" />.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.Demand">para plena confianza para el llamador inmediato. Un código de confianza parcial no puede utilizar este miembro.</permission>
@@ -557,9 +554,9 @@ O bien
 ## Examples  
  El ejemplo siguiente muestra una manera de enviar una cadena de un proceso primario a un proceso secundario mediante canalizaciones anónimas. En este ejemplo, un <xref:System.IO.Pipes.AnonymousPipeServerStream> objeto se crea en un proceso primario con un <xref:System.IO.Pipes.PipeDirection> valor <xref:System.IO.Pipes.PipeDirection.Out>.  
   
- [!code-cpp[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cpp/program.cpp#01)]
- [!code-csharp[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cs/Program.cs#01)]
- [!code-vb[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/vb/program.vb#01)]  
+ [!code-cpp[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cpp/program.cpp)]
+ [!code-csharp[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cs/Program.cs)]
+ [!code-vb[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/vb/program.vb)]  
   
  ]]></format>
         </remarks>
@@ -645,9 +642,9 @@ O bien
 ## Examples  
  El ejemplo siguiente muestra una manera de enviar una cadena de un proceso primario a un proceso secundario mediante canalizaciones anónimas. En este ejemplo, un <xref:System.IO.Pipes.AnonymousPipeServerStream> objeto se crea en un proceso primario con un <xref:System.IO.Pipes.PipeDirection> valor <xref:System.IO.Pipes.PipeDirection.Out>.  
   
- [!code-cpp[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cpp/program.cpp#01)]
- [!code-csharp[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cs/Program.cs#01)]
- [!code-vb[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/vb/program.vb#01)]  
+ [!code-cpp[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cpp/program.cpp)]
+ [!code-csharp[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cs/Program.cs)]
+ [!code-vb[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/vb/program.vb)]  
   
  ]]></format>
         </remarks>
@@ -693,17 +690,9 @@ O bien
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Las canalizaciones anónimas no admiten <xref:System.IO.Pipes.PipeTransmissionMode.Message> en modo de lectura.  
-  
-   
-  
-## Examples  
- El ejemplo siguiente muestra una manera de enviar una cadena de un proceso primario a un proceso secundario mediante canalizaciones anónimas. En este ejemplo, el <xref:System.NotSupportedException> se detecta cuando el <xref:System.IO.Pipes.AnonymousPipeServerStream.ReadMode%2A> propiedad está establecida en <xref:System.IO.Pipes.PipeTransmissionMode.Message>.  
-  
- [!code-cpp[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cpp/program.cpp#01)]
- [!code-csharp[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cs/Program.cs#01)]
- [!code-vb[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/vb/program.vb#01)]  
-  
+
+Las canalizaciones anónimas no admiten el <xref:System.IO.Pipes.PipeTransmissionMode.Message?displayProperty=nameWithType> en modo de lectura. Dado que el valor predeterminado de esta propiedad es <xref:System.IO.Pipes.PipeTransmissionMode.Byte?displayProperty=nameWithType>, nunca hay una razón para establecer esta propiedad en el código.    
+
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">El modo de transmisión no es válido. Solo se admite <see cref="F:System.IO.Pipes.PipeTransmissionMode.Byte" /> para canalizaciones anónimas.</exception>
@@ -751,17 +740,16 @@ O bien
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- Las canalizaciones anónimas no admiten <xref:System.IO.Pipes.PipeTransmissionMode.Message> en modo de lectura.  
-  
-   
+## Remarks
+
+Las canalizaciones anónimas no admiten el <xref:System.IO.Pipes.PipeTransmissionMode.Message?displayProperty=nameWithType> en modo de lectura.  
   
 ## Examples  
  El ejemplo siguiente muestra una manera de enviar una cadena de un proceso primario a un proceso secundario mediante canalizaciones anónimas. En este ejemplo, un <xref:System.IO.Pipes.AnonymousPipeServerStream> objeto se crea en un proceso primario y el <xref:System.IO.Pipes.AnonymousPipeServerStream.TransmissionMode%2A> propiedad se muestra en la consola.  
   
- [!code-cpp[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cpp/program.cpp#01)]
- [!code-csharp[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cs/Program.cs#01)]
- [!code-vb[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/vb/program.vb#01)]  
+ [!code-cpp[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cpp/program.cpp)]
+ [!code-csharp[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/cs/Program.cs)]
+ [!code-vb[System.IO.Pipes.AnonymousPipeServerStream_Sample#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.AnonymousPipeServerStream_Sample/vb/program.vb)]  
   
  ]]></format>
         </remarks>

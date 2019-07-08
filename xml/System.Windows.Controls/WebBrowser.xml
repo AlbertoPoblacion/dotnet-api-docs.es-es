@@ -1,5 +1,5 @@
 <Type Name="WebBrowser" FullName="System.Windows.Controls.WebBrowser">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="d3dd2b0b4615183b59259c697928fe43c6127f85" /><Meta Name="ms.sourcegitcommit" Value="2767b5903996fbd7e2b81eda1114dfc9d0d9db63" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/02/2019" /><Meta Name="ms.locfileid" Value="65006217" /></Metadata><TypeSignature Language="C#" Value="public sealed class WebBrowser : System.Windows.Interop.ActiveXHost" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="6e4be15dcc4b886ee2ca78fae22f6dead3f1981d" /><Meta Name="ms.sourcegitcommit" Value="93667418e6e77da6ba7109a407c61b8969cec4ec" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="07/05/2019" /><Meta Name="ms.locfileid" Value="67570879" /></Metadata><TypeSignature Language="C#" Value="public sealed class WebBrowser : System.Windows.Interop.ActiveXHost" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebBrowser extends System.Windows.Interop.ActiveXHost" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.WebBrowser" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebBrowser&#xA;Inherits ActiveXHost" />
@@ -71,7 +71,7 @@ private void goNavigateButton_Click(object sender, RoutedEventArgs e)
     // Only absolute URIs can be navigated to  
     if (!uri.IsAbsoluteUri)  
     {  
-        MessageBox.Show("The Address URI must be absolute eg 'http://www.microsoft.com'");  
+        MessageBox.Show("The Address URI must be absolute. For example, 'http://www.microsoft.com'");  
         return;  
     }  
   
@@ -162,7 +162,7 @@ internal interface IServiceProvider
       </ReturnValue>
       <Docs>
         <summary>Obtiene un valor que indica si hay un documento anterior al que navegar.</summary>
-        <value>Un <see cref="T:System.Boolean" /> valor que indica si hay un documento anterior al que navegar.</value>
+        <value>Valor <see cref="T:System.Boolean" /> que indica si hay un documento anterior al que navegar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -204,7 +204,7 @@ private void backButton_Click(object sender, RoutedEventArgs e)
       </ReturnValue>
       <Docs>
         <summary>Obtiene un valor que indica si hay un documento posterior al que navegar.</summary>
-        <value>Un <see cref="T:System.Boolean" /> valor que indica si hay un documento posterior al que navegar.</value>
+        <value>Valor <see cref="T:System.Boolean" /> que indica si hay un documento posterior al que navegar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -250,7 +250,7 @@ private void forwardButton_Click(object sender, RoutedEventArgs e)
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene el objeto de documento que representa el hospedado [!INCLUDE[TLA2#tla_html](~/includes/tla2sharptla-html-md.md)] página.</summary>
+        <summary>Obtiene el objeto de documento que representa la página [!INCLUDE[TLA2#tla_html](~/includes/tla2sharptla-html-md.md)] hospedada.</summary>
         <value>Objeto de documento.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -260,7 +260,7 @@ private void forwardButton_Click(object sender, RoutedEventArgs e)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">La instancia <see cref="T:System.Windows.Controls.WebBrowser" /> del extensor ya no es válida.</exception>
+        <exception cref="T:System.ObjectDisposedException">La instancia de <see cref="T:System.Windows.Controls.WebBrowser" /> ya no es válida.</exception>
         <exception cref="T:System.InvalidOperationException">No se ha podido recuperar una referencia al valor de <c>WebBrowser</c> nativo subyacente.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">para llamar a esta propiedad. Enumeración asociada: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
@@ -313,9 +313,9 @@ private void backButton_Click(object sender, RoutedEventArgs e)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">La instancia <see cref="T:System.Windows.Controls.WebBrowser" /> del extensor ya no es válida.</exception>
+        <exception cref="T:System.ObjectDisposedException">La instancia de <see cref="T:System.Windows.Controls.WebBrowser" /> ya no es válida.</exception>
         <exception cref="T:System.InvalidOperationException">No se ha podido recuperar una referencia al valor de <c>WebBrowser</c> nativo subyacente.</exception>
-        <exception cref="T:System.Runtime.InteropServices.COMException">No hay ningún documento anterior al que navegar.</exception>
+        <exception cref="T:System.Runtime.InteropServices.COMException">No hay ningún documento previo hasta el que navegar.</exception>
         <altmember cref="P:System.Windows.Controls.WebBrowser.CanGoBack" />
         <altmember cref="M:System.Windows.Controls.WebBrowser.GoForward" />
       </Docs>
@@ -368,9 +368,9 @@ private void forwardButton_Click(object sender, RoutedEventArgs e)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">La instancia <see cref="T:System.Windows.Controls.WebBrowser" /> del extensor ya no es válida.</exception>
+        <exception cref="T:System.ObjectDisposedException">La instancia de <see cref="T:System.Windows.Controls.WebBrowser" /> ya no es válida.</exception>
         <exception cref="T:System.InvalidOperationException">No se ha podido recuperar una referencia al valor de <c>WebBrowser</c> nativo subyacente.</exception>
-        <exception cref="T:System.Runtime.InteropServices.COMException">No hay ningún documento posterior al que navegar.</exception>
+        <exception cref="T:System.Runtime.InteropServices.COMException">No hay ningún documento posterior hasta el que navegar.</exception>
         <altmember cref="P:System.Windows.Controls.WebBrowser.CanGoForward" />
         <altmember cref="M:System.Windows.Controls.WebBrowser.GoBack" />
       </Docs>
@@ -471,7 +471,7 @@ private void callScriptFunctionNoParamButton_Click(object sender, RoutedEventArg
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">La instancia <see cref="T:System.Windows.Controls.WebBrowser" /> del extensor ya no es válida.</exception>
+        <exception cref="T:System.ObjectDisposedException">La instancia de <see cref="T:System.Windows.Controls.WebBrowser" /> ya no es válida.</exception>
         <exception cref="T:System.InvalidOperationException">No se ha podido recuperar una referencia al valor de <c>WebBrowser</c> nativo subyacente.</exception>
         <exception cref="T:System.Runtime.InteropServices.COMException">La función de script no existe.</exception>
       </Docs>
@@ -573,7 +573,7 @@ private void callScriptFunctionNoParamButton_Click(object sender, RoutedEventArg
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">La instancia <see cref="T:System.Windows.Controls.WebBrowser" /> del extensor ya no es válida.</exception>
+        <exception cref="T:System.ObjectDisposedException">La instancia de <see cref="T:System.Windows.Controls.WebBrowser" /> ya no es válida.</exception>
         <exception cref="T:System.InvalidOperationException">No se ha podido recuperar una referencia al valor de <c>WebBrowser</c> nativo subyacente.</exception>
         <exception cref="T:System.Runtime.InteropServices.COMException">La función de script no existe.</exception>
       </Docs>
@@ -616,7 +616,7 @@ private void callScriptFunctionNoParamButton_Click(object sender, RoutedEventArg
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
-        <summary>Navegue asincrónicamente al documento en el índice especificado <see cref="T:System.Uri" />.</summary>
+        <summary>Navega de forma asincrónica hasta el documento que se encuentra en el <see cref="T:System.Uri" /> especificado.</summary>
       </Docs>
     </MemberGroup>
     <Member MemberName="Navigate">
@@ -680,8 +680,8 @@ private void callScriptFunctionNoParamButton_Click(object sender, RoutedEventArg
         <Parameter Name="source" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="source">El <see cref="T:System.Uri" /> para navegar a.</param>
-        <summary>Navegue asincrónicamente al documento en el índice especificado <see cref="T:System.Uri" />.</summary>
+        <param name="source"><see cref="T:System.Uri" /> hasta el que se navega.</param>
+        <summary>Navega de forma asincrónica hasta el documento que se encuentra en el <see cref="T:System.Uri" /> especificado.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -714,7 +714,7 @@ private void goNavigateButton_Click(object sender, RoutedEventArgs e)
     // Only absolute URIs can be navigated to  
     if (!uri.IsAbsoluteUri)  
     {  
-        MessageBox.Show("The Address URI must be absolute eg 'http://www.microsoft.com'");  
+        MessageBox.Show("The Address URI must be absolute. For example, 'http://www.microsoft.com'");  
         return;  
     }  
   
@@ -725,9 +725,9 @@ private void goNavigateButton_Click(object sender, RoutedEventArgs e)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">La instancia <see cref="T:System.Windows.Controls.WebBrowser" /> del extensor ya no es válida.</exception>
+        <exception cref="T:System.ObjectDisposedException">La instancia de <see cref="T:System.Windows.Controls.WebBrowser" /> ya no es válida.</exception>
         <exception cref="T:System.InvalidOperationException">No se ha podido recuperar una referencia al valor de <c>WebBrowser</c> nativo subyacente.</exception>
-        <exception cref="T:System.Security.SecurityException">Navegación desde una aplicación que se está ejecutando en confianza parcial hasta un <see cref="T:System.Uri" /> que no se encuentra en el sitio de origen.</exception>
+        <exception cref="T:System.Security.SecurityException">Se navega desde una aplicación que se está ejecutando en confianza parcial hasta un <see cref="T:System.Uri" /> que no se encuentra en el sitio de origen.</exception>
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -756,7 +756,7 @@ private void goNavigateButton_Click(object sender, RoutedEventArgs e)
         <param name="targetFrameName">Nombre del marco en el que se muestra el contenido del documento.</param>
         <param name="postData">Datos HTTP POST que se van a enviar al servidor cuando se solicite el origen.</param>
         <param name="additionalHeaders">Encabezados HTTP que se van a enviar al servidor cuando se solicite el origen.</param>
-        <summary>Navega de forma asincrónica hasta el documento que se encuentra en la dirección URL indicada y especifica el marco de destino en el que se cargará el contenido del documento. Se pueden enviar datos HTTP POST y encabezados HTTP adicionales al servidor como parte de la solicitud de navegación.</summary>
+        <summary>Navega de forma asincrónica hasta el documento que se encuentra en la dirección indicada y especifica el marco de destino en el que se cargará el contenido del documento. Se pueden enviar datos HTTP POST y encabezados HTTP adicionales al servidor como parte de la solicitud de navegación.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -790,11 +790,11 @@ private void goNavigateButton_Click(object sender, RoutedEventArgs e)
         <Parameter Name="additionalHeaders" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="source">El <see cref="T:System.Uri" /> para navegar a.</param>
+        <param name="source"><see cref="T:System.Uri" /> hasta el que se navega.</param>
         <param name="targetFrameName">Nombre del marco en el que se muestra el contenido del documento.</param>
         <param name="postData">Datos HTTP POST que se van a enviar al servidor cuando se solicite el origen.</param>
         <param name="additionalHeaders">Encabezados HTTP que se van a enviar al servidor cuando se solicite el origen.</param>
-        <summary>Navegue asincrónicamente al documento en el índice especificado <see cref="T:System.Uri" /> y especifica el marco de destino para cargar el contenido del documento. Se pueden enviar datos HTTP POST y encabezados HTTP adicionales al servidor como parte de la solicitud de navegación.</summary>
+        <summary>Navega de forma asincrónica hasta el documento que se encuentra en el <see cref="T:System.Uri" /> especificado y especifica el marco de destino en el que se cargará el contenido del documento. Se pueden enviar datos HTTP POST y encabezados HTTP adicionales al servidor como parte de la solicitud de navegación.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -825,7 +825,7 @@ private void goNavigateButton_Click(object sender, RoutedEventArgs e)
     // Only absolute URIs can be navigated to  
     if (!uri.IsAbsoluteUri)  
     {  
-        MessageBox.Show("The Address URI must be absolute eg 'http://www.microsoft.com'");  
+        MessageBox.Show("The Address URI must be absolute. For example, 'http://www.microsoft.com'");  
         return;  
     }  
   
@@ -836,7 +836,7 @@ private void goNavigateButton_Click(object sender, RoutedEventArgs e)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">La instancia <see cref="T:System.Windows.Controls.WebBrowser" /> del extensor ya no es válida.</exception>
+        <exception cref="T:System.ObjectDisposedException">La instancia de <see cref="T:System.Windows.Controls.WebBrowser" /> ya no es válida.</exception>
         <exception cref="T:System.InvalidOperationException">No se ha podido recuperar una referencia al valor de <c>WebBrowser</c> nativo subyacente.</exception>
         <exception cref="T:System.Security.SecurityException">Navegación desde una aplicación que se está ejecutando en confianza parcial: 
 -   Hasta un objeto <see cref="T:System.Uri" /> que no se encuentra en el sitio de origen o El nombre 
@@ -894,8 +894,8 @@ private void goNavigateButton_Click(object sender, RoutedEventArgs e)
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
-        <param name="stream">El <see cref="T:System.IO.Stream" /> que contiene el contenido de un documento.</param>
-        <summary>Navega de forma asincrónica hasta un <see cref="T:System.IO.Stream" /> que contiene el contenido de un documento.</summary>
+        <param name="stream"><see cref="T:System.IO.Stream" /> que incluye el contenido de un documento.</param>
+        <summary>Navega de forma asincrónica hasta un objeto <see cref="T:System.IO.Stream" /> que incluye el contenido de un documento.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -925,7 +925,7 @@ private void goNavigateToStreamButton_Click(object sender, RoutedEventArgs e)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">La instancia <see cref="T:System.Windows.Controls.WebBrowser" /> del extensor ya no es válida.</exception>
+        <exception cref="T:System.ObjectDisposedException">La instancia de <see cref="T:System.Windows.Controls.WebBrowser" /> ya no es válida.</exception>
         <exception cref="T:System.InvalidOperationException">No se ha podido recuperar una referencia al valor de <c>WebBrowser</c> nativo subyacente.</exception>
         <altmember cref="M:System.Windows.Controls.WebBrowser.NavigateToString(System.String)" />
       </Docs>
@@ -950,8 +950,8 @@ private void goNavigateToStreamButton_Click(object sender, RoutedEventArgs e)
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="text">El <see cref="T:System.String" /> que contiene el contenido de un documento.</param>
-        <summary>Navega de forma asincrónica hasta un <see cref="T:System.String" /> que contiene el contenido de un documento.</summary>
+        <param name="text"><see cref="T:System.String" /> que incluye el contenido de un documento.</param>
+        <summary>Navega de forma asincrónica hasta un objeto <see cref="T:System.String" /> que incluye el contenido de un documento.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -983,7 +983,7 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">La instancia <see cref="T:System.Windows.Controls.WebBrowser" /> del extensor ya no es válida.</exception>
+        <exception cref="T:System.ObjectDisposedException">La instancia de <see cref="T:System.Windows.Controls.WebBrowser" /> ya no es válida.</exception>
         <exception cref="T:System.InvalidOperationException">No se ha podido recuperar una referencia al valor de <c>WebBrowser</c> nativo subyacente.</exception>
         <altmember cref="M:System.Windows.Controls.WebBrowser.NavigateToStream(System.IO.Stream)" />
       </Docs>
@@ -1043,7 +1043,7 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece una instancia de una clase pública, implementada por la aplicación host, a la que el script puede tener acceso desde un documento hospedado.</summary>
-        <value>El <see cref="T:System.Object" /> que es una instancia de un <see langword="public" /> (clase), implementado por la aplicación host, que se puede acceder mediante la secuencia de comandos desde un documento hospedado.</value>
+        <value><see cref="T:System.Object" /> que es una instancia de una clase <see langword="public" />, implementada por la aplicación host, a la que el script puede tener acceso desde un documento hospedado.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1054,7 +1054,7 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException"><see cref="P:System.Windows.Controls.WebBrowser.ObjectForScripting" /> se establece con una instancia del tipo que no sea <see langword="COMVisible" />.</exception>
+        <exception cref="T:System.ArgumentException"><see cref="P:System.Windows.Controls.WebBrowser.ObjectForScripting" /> se establece con una instancia de tipo que no es <see langword="COMVisible" />.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="Refresh">
@@ -1091,7 +1091,7 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
       <Docs>
         <summary>Recarga la página actual.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ObjectDisposedException">La instancia <see cref="T:System.Windows.Controls.WebBrowser" /> del extensor ya no es válida.</exception>
+        <exception cref="T:System.ObjectDisposedException">La instancia de <see cref="T:System.Windows.Controls.WebBrowser" /> ya no es válida.</exception>
         <exception cref="T:System.InvalidOperationException">No se ha podido recuperar una referencia al valor de <c>WebBrowser</c> nativo subyacente.</exception>
       </Docs>
     </Member>
@@ -1130,7 +1130,7 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">La instancia <see cref="T:System.Windows.Controls.WebBrowser" /> del extensor ya no es válida.</exception>
+        <exception cref="T:System.ObjectDisposedException">La instancia de <see cref="T:System.Windows.Controls.WebBrowser" /> ya no es válida.</exception>
         <exception cref="T:System.InvalidOperationException">No se ha podido recuperar una referencia al valor de <c>WebBrowser</c> nativo subyacente.</exception>
       </Docs>
     </Member>
@@ -1156,7 +1156,7 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el <see cref="T:System.Uri" /> del documento actual hospedado en la <see cref="T:System.Windows.Controls.WebBrowser" />.</summary>
+        <summary>Obtiene o establece el <see cref="T:System.Uri" /> del documento actual que está hospedado en <see cref="T:System.Windows.Controls.WebBrowser" />.</summary>
         <value>El <see cref="T:System.Uri" /> actual [!INCLUDE[TLA2#tla_html](~/includes/tla2sharptla-html-md.md)] documento.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1177,9 +1177,9 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">La instancia <see cref="T:System.Windows.Controls.WebBrowser" /> del extensor ya no es válida.</exception>
+        <exception cref="T:System.ObjectDisposedException">La instancia de <see cref="T:System.Windows.Controls.WebBrowser" /> ya no es válida.</exception>
         <exception cref="T:System.InvalidOperationException">No se ha podido recuperar una referencia al valor de <c>WebBrowser</c> nativo subyacente.</exception>
-        <exception cref="T:System.Security.SecurityException">Navegación desde una aplicación que se está ejecutando en confianza parcial hasta un <see cref="T:System.Uri" /> que no se encuentra en el sitio de origen.</exception>
+        <exception cref="T:System.Security.SecurityException">Se navega desde una aplicación que se está ejecutando en confianza parcial hasta un <see cref="T:System.Uri" /> que no se encuentra en el sitio de origen.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Windows.Interop.IKeyboardInputSink.TabInto">
@@ -1208,9 +1208,9 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
         <Parameter Name="request" Type="System.Windows.Input.TraversalRequest" Index="0" FrameworkAlternate="netframework-3.0;netframework-3.5" />
       </Parameters>
       <Docs>
-        <param name="request">Especifica si se debe establecer el foco a la primera o última posición de tabulación.</param>
+        <param name="request">Especifica si el foco debería establecerse en la primera o última posición de tabulación.</param>
         <summary>Para una descripción de este miembro, vea <see cref="M:System.Windows.Interop.IKeyboardInputSink.TabInto(System.Windows.Input.TraversalRequest)" />.</summary>
-        <returns><see langword="true" /> Si se ha establecido el foco cuando se le solicite; <see langword="false" />, si no hay ninguna posición de tabulación.</returns>
+        <returns><see langword="true" /> si el foco se ha establecido tal y como se solicitó; <see langword="false" />, si no hay ninguna posición de tabulación.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[
 
@@ -1253,10 +1253,10 @@ Este miembro es una implementación explícita de un miembro de interfaz. Solo s
         <Parameter Name="modifiers" Type="System.Windows.Input.ModifierKeys" Index="1" FrameworkAlternate="netframework-3.0;netframework-3.5" />
       </Parameters>
       <Docs>
-        <param name="msg">El mensaje y los datos asociados. No modifique esta estructura. Se pasa por referencia solo con fines de rendimiento.</param>
+        <param name="msg">El mensaje y los datos asociados. No modifique esta estructura. Se pasa por referencia debido únicamente a razones de rendimiento.</param>
         <param name="modifiers">Teclas modificadoras.</param>
         <summary>Para una descripción de este miembro, vea <see cref="M:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />.</summary>
-        <returns><see langword="true" /> Si se ha controlado el mensaje mediante la implementación del método; en caso contrario, <see langword="false" />.</returns>
+        <returns><see langword="true" /> si el mensaje está controlado por la implementación del método; de lo contrario, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[
 

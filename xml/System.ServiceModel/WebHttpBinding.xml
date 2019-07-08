@@ -1,5 +1,5 @@
 <Type Name="WebHttpBinding" FullName="System.ServiceModel.WebHttpBinding">
-  <Metadata><Meta Name="ms.openlocfilehash" Value="6baaa6def6b6805b02b4bc56e6f64a7ee3c41715" /><Meta Name="ms.sourcegitcommit" Value="2767b5903996fbd7e2b81eda1114dfc9d0d9db63" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="05/02/2019" /><Meta Name="ms.locfileid" Value="65014374" /></Metadata><TypeSignature Language="C#" Value="public class WebHttpBinding : System.ServiceModel.Channels.Binding, System.ServiceModel.Channels.IBindingRuntimePreferences" />
+  <Metadata><Meta Name="ms.openlocfilehash" Value="b6fdf371732c51a5dbab57fb2286c3935baeb5eb" /><Meta Name="ms.sourcegitcommit" Value="93667418e6e77da6ba7109a407c61b8969cec4ec" /><Meta Name="ms.translationtype" Value="MT" /><Meta Name="ms.contentlocale" Value="es-ES" /><Meta Name="ms.lasthandoff" Value="07/05/2019" /><Meta Name="ms.locfileid" Value="67570931" /></Metadata><TypeSignature Language="C#" Value="public class WebHttpBinding : System.ServiceModel.Channels.Binding, System.ServiceModel.Channels.IBindingRuntimePreferences" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebHttpBinding extends System.ServiceModel.Channels.Binding implements class System.ServiceModel.Channels.IBindingRuntimePreferences" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.WebHttpBinding" />
   <TypeSignature Language="VB.NET" Value="Public Class WebHttpBinding&#xA;Inherits Binding&#xA;Implements IBindingRuntimePreferences" />
@@ -122,8 +122,8 @@
         <Parameter Name="mode" Type="System.ServiceModel.WebHttpSecurityMode" Index="0" FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
-        <param name="securityMode">El valor de <see cref="T:System.ServiceModel.WebHttpSecurityMode" /> que especifica el tipo de seguridad que se utiliza para configurar un punto de conexión de servicio para que reciba las solicitudes HTTP.</param>
-        <param name="mode">El valor de <see cref="T:System.ServiceModel.WebHttpSecurityMode" /> que especifica el tipo de seguridad que se utiliza para configurar un punto de conexión de servicio para que reciba las solicitudes HTTP.</param>
+        <param name="securityMode">El valor de <see cref="T:System.ServiceModel.WebHttpSecurityMode" /> que especifica el tipo de seguridad que se utiliza para configurar un extremo de servicio para que reciba las solicitudes HTTP.</param>
+        <param name="mode">El valor de <see cref="T:System.ServiceModel.WebHttpSecurityMode" /> que especifica el tipo de seguridad que se utiliza para configurar un extremo de servicio para que reciba las solicitudes HTTP.</param>
         <summary>Inicializa una nueva instancia de la clase <see cref="T:System.ServiceModel.WebHttpBinding" /> con el tipo de seguridad utilizado por el enlace especificado de forma explícita.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -199,7 +199,7 @@
         <typeparam name="TChannel">El tipo de canal que produce el generador de canales.</typeparam>
         <param name="parameters"><see cref="T:System.ServiceModel.Channels.BindingParameterCollection" /> que especifica los requisitos para el generador del canal compilado.</param>
         <summary>Compila la pila de generador de canales en el cliente que crea un tipo especificado de canal y satisface las características especificadas por una colección de parámetros de enlace.</summary>
-        <returns>Un <see cref="T:System.ServiceModel.Channels.IChannelFactory`1" /> de tipo TChannel que satisface las características especificadas por la colección.</returns>
+        <returns><see cref="T:System.ServiceModel.Channels.IChannelFactory`1" /> de tipo TChannel que satisface las características especificadas por la colección.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,7 +231,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Un recurso de Internet es local si tiene una dirección local. Una dirección local es aquella que se encuentra en el mismo equipo, la LAN local o intranet y se identifica, sintácticamente, por la ausencia de un punto (.) como en los URI "http://webserver/" y "http://localhost/".  
+ Un recurso de Internet es local si tiene una dirección local. Una dirección local es aquella que se encuentra en el mismo equipo, local LAN o intranet y se identifica, sintácticamente, por la ausencia de un punto (.), como se muestra en el URI `http://webserver/` y `http://localhost/`.  
   
  La configuración de la propiedad <xref:System.ServiceModel.WebHttpBinding.BypassProxyOnLocal%2A> determina si los puntos de conexión configurados con <xref:System.ServiceModel.WebHttpBinding> usan el servidor proxy al obtener acceso a los recursos locales.  
   
@@ -310,7 +310,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece un valor que determina si el acceso de script entre dominios está habilitado.</summary>
-        <value><see langword="true" /> Si entre dominios scripting está habilitado; en caso contrario <see langword="false" />.</value>
+        <value><see langword="true" /> si el scripting entre dominios está habilitado; de lo contrario, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -332,7 +332,7 @@
         <ReturnType>System.ServiceModel.EnvelopeVersion</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene la versión de envoltura que utilizan los puntos de conexión que son configurados por este enlace para recibir las solicitudes HTTP.</summary>
+        <summary>Obtiene la versión de envoltura que utilizan los extremos que este enlace configura para recibir las solicitudes HTTP.</summary>
         <value><see cref="T:System.ServiceModel.EnvelopeVersion" /> con la propiedad <see cref="P:System.ServiceModel.EnvelopeVersion.None" /> que se utiliza con extremos configurados con este enlace para recibir las solicitudes HTTP.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -387,8 +387,8 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece la cantidad máxima de memoria asignada, en bytes, para el Administrador de búfer que administra los búferes requeridos por los extremos que usan este enlace.</summary>
-        <value>Tamaño máximo, en bytes, para el grupo de búferes que usa un punto de conexión configurado con este enlace. El valor predeterminado es 65.536 bytes.</value>
+        <summary>Obtiene o establece la cantidad de memoria máxima que se asigna, en bytes, para el administrador del búfer que administra los búferes requeridos por los extremos que usan este enlace.</summary>
+        <value>Tamaño máximo, en bytes, para el grupo de búferes que usa un extremo configurado con este enlace. El valor predeterminado es 65.536 bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -425,7 +425,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece la cantidad máxima de memoria, en bytes, que está asignada para su uso por el Administrador de los búferes de mensajes que reciben los mensajes del canal.</summary>
+        <summary>Obtiene o establece la cantidad de memoria máxima, en bytes, que se asigna para que la use el administrador de los búferes de mensajes que reciben los mensajes del canal.</summary>
         <value>Cantidad de memoria máxima, en bytes, disponible para que la use el administrador de búferes de mensajes. El valor predeterminado es 524.288 (0x80000) bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -461,7 +461,7 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece el tamaño máximo, en bytes, para un mensaje que pueden ser procesados por el enlace.</summary>
+        <summary>Obtiene o establece el tamaño máximo, en bytes, para un mensaje que puede ser procesado por el enlace.</summary>
         <value>El tamaño máximo, en bytes, de un mensaje que procesa el enlace. El valor predeterminado es 65.536 bytes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -498,7 +498,7 @@
       </ReturnValue>
       <Docs>
         <summary>Obtiene o establece la dirección URI del proxy HTTP.</summary>
-        <value><see cref="T:System.Uri" /> que se usa como la dirección del proxy HTTP. El valor predeterminado es <see langword="null" />.</value>
+        <value><see cref="T:System.Uri" /> que se usa como dirección del proxy HTTP. El valor predeterminado es <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -527,7 +527,7 @@
         <ReturnType>System.Xml.XmlDictionaryReaderQuotas</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece restricciones en la complejidad de mensajes SOAP que pueden ser procesados por puntos de conexión configurados con este enlace.</summary>
+        <summary>Obtiene o establece restricciones en la complejidad de mensajes SOAP que pueden ser procesados por extremos configurados con este enlace.</summary>
         <value><see cref="T:System.Xml.XmlDictionaryReaderQuotas" /> que especifica las restricciones de complejidad.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -635,7 +635,7 @@
       <Parameters />
       <Docs>
         <summary>Determina si se deberían serializar las cuotas del lector.</summary>
-        <returns><see langword="true" /> Si se deben serializar las cuotas del lector; en caso contrario <see langword="false" />.</returns>
+        <returns><see langword="true" /> si las cuotas del lector se deben serializar; de lo contrario, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -666,7 +666,7 @@
       <Parameters />
       <Docs>
         <summary>Determina si se debería serializar la configuración de seguridad.</summary>
-        <returns><see langword="true" /> Si se debe serializar la configuración de seguridad; en caso contrario <see langword="false" />.</returns>
+        <returns><see langword="true" /> si se debe serializar la configuración de seguridad; en caso contrario, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -697,7 +697,7 @@
       <Parameters />
       <Docs>
         <summary>Determina si se debería serializar la codificación utilizada para la serialización.</summary>
-        <returns><see langword="true" /> Si se debe serializar la codificación; en caso contrario <see langword="false" />.</returns>
+        <returns><see langword="true" /> si se debe serializar la codificación; de lo contrario, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -722,7 +722,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene un valor que indica si las solicitudes de entrada se administran de forma sincrónica o asincrónica.</summary>
+        <summary>Obtiene un valor que indica si las solicitudes de entrada se pueden administrar de forma sincrónica o asincrónica.</summary>
         <value><see langword="true" /> si se administran las solicitudes entrantes sincrónicamente; <see langword="false" /> si se administran las solicitudes entrantes de forma asincrónica. El valor predeterminado es <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -784,7 +784,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece un valor que indica si se debería usar el proxy HTTP del sistema configurado automáticamente, si está disponible.</summary>
+        <summary>Obtiene o establece un valor que indica si se debe usar el proxy HTTP del sistema configurado automáticamente, si está disponible.</summary>
         <value><see langword="true" /> si se debería usar el proxy HTTP configurado automáticamente del sistema, si está disponible; de lo contrario, <see langword="false" />. El valor predeterminado es <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -819,8 +819,8 @@
         <ReturnType>System.Text.Encoding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Obtiene o establece la codificación de caracteres que se usa para el texto del mensaje.</summary>
-        <value><see cref="T:System.Text.Encoding" /> que indica la codificación de caracteres que se usa. De manera predeterminada, es <see cref="T:System.Text.UTF8Encoding" />.</value>
+        <summary>Obtiene o establece la codificación de caracteres que se utiliza para el texto del mensaje.</summary>
+        <value>El objeto <see cref="T:System.Text.Encoding" /> que indica la codificación de caracteres que se utiliza. De manera predeterminada, es <see cref="T:System.Text.UTF8Encoding" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">El valor establecido es <see langword="null" />.</exception>
       </Docs>
